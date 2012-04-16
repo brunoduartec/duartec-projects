@@ -219,27 +219,18 @@ namespace SimuladorPropulsivo
 
 
                 myExport.AddRow();
-                myExport["B"] = xval;
+                myExport["Pr"] = xval;
 
 
+
+                int T = 1300;
                 #region T1300
-                solver.SolveSystem(radioButton2.Checked, false, double.Parse(textM.Text), double.Parse(textPa.Text), double.Parse(textTa.Text), double.Parse(textPC.Text), double.Parse(textR.Text), double.Parse(textCP.Text), 1300, double.Parse(textTposqueima.Text), double.Parse(textPrf.Text), double.Parse(textPrc.Text), xval);
+
+                solver.SolveSystem(radioButton2.Checked, false, double.Parse(textM.Text), double.Parse(textPa.Text), double.Parse(textTa.Text), double.Parse(textPC.Text), double.Parse(textR.Text), double.Parse(textCP.Text), T, double.Parse(textTposqueima.Text), 1, xval,0);
 
                 ytemp = solver.Empuxo;
 
 
-
-                //if (ytemp.Equals(double.NaN)) // nesse caso acabou o ponto em que o grafico tem pontos validos
-                //{
-                //    xGraphMax = i - 1;
-
-                //    break;
-                //}
-
-                //else
-                //{
-                //    tempvals.Add(ytemp);
-                //}
 
 
                 if (!ytemp.Equals(double.NaN)) // nesse caso acabou o ponto em que o grafico tem pontos validos
@@ -257,7 +248,8 @@ namespace SimuladorPropulsivo
                 #endregion
 
                 #region T1500
-                solver.SolveSystem(radioButton2.Checked, false, double.Parse(textM.Text), double.Parse(textPa.Text), double.Parse(textTa.Text), double.Parse(textPC.Text), double.Parse(textR.Text), double.Parse(textCP.Text), 1500, double.Parse(textTposqueima.Text), double.Parse(textPrf.Text), double.Parse(textPrc.Text), xval);
+                T = 1500;
+                solver.SolveSystem(radioButton2.Checked, false, double.Parse(textM.Text), double.Parse(textPa.Text), double.Parse(textTa.Text), double.Parse(textPC.Text), double.Parse(textR.Text), double.Parse(textCP.Text), T, double.Parse(textTposqueima.Text), 1, xval, 0);
 
                 ytemp = solver.Empuxo;
 
@@ -272,7 +264,8 @@ namespace SimuladorPropulsivo
 
 
                 #region T1700
-                solver.SolveSystem(radioButton2.Checked, false, double.Parse(textM.Text), double.Parse(textPa.Text), double.Parse(textTa.Text), double.Parse(textPC.Text), double.Parse(textR.Text), double.Parse(textCP.Text),1700, double.Parse(textTposqueima.Text), double.Parse(textPrf.Text), double.Parse(textPrc.Text), xval);
+                T = 1700;
+                solver.SolveSystem(radioButton2.Checked, false, double.Parse(textM.Text), double.Parse(textPa.Text), double.Parse(textTa.Text), double.Parse(textPC.Text), double.Parse(textR.Text), double.Parse(textCP.Text), T, double.Parse(textTposqueima.Text), 1, xval, 0);
 
                 ytemp = solver.Empuxo;
 
@@ -339,24 +332,16 @@ namespace SimuladorPropulsivo
                 myExport["B"] = xval;
 
 
+
+                int T = 1300;
                 #region T1300
-                solver.SolveSystem(radioButton2.Checked, false, double.Parse(textM.Text), double.Parse(textPa.Text), double.Parse(textTa.Text), double.Parse(textPC.Text), double.Parse(textR.Text), double.Parse(textCP.Text), 1300, double.Parse(textTposqueima.Text), double.Parse(textPrf.Text), double.Parse(textPrc.Text), xval);
+
+                solver.SolveSystem(radioButton2.Checked, false, double.Parse(textM.Text), double.Parse(textPa.Text), double.Parse(textTa.Text), double.Parse(textPC.Text), double.Parse(textR.Text), double.Parse(textCP.Text), T, double.Parse(textTposqueima.Text), 1, xval, 0);
+                
 
                 ytemp = solver.TSFC;
 
 
-
-                //if (ytemp.Equals(double.NaN)) // nesse caso acabou o ponto em que o grafico tem pontos validos
-                //{
-                //    xGraphMax = i - 1;
-
-                //    break;
-                //}
-
-                //else
-                //{
-                //    tempvals.Add(ytemp);
-                //}
 
 
                 if (!ytemp.Equals(double.NaN)) // nesse caso acabou o ponto em que o grafico tem pontos validos
@@ -374,7 +359,8 @@ namespace SimuladorPropulsivo
                 #endregion
 
                 #region T1500
-                solver.SolveSystem(radioButton2.Checked, false, double.Parse(textM.Text), double.Parse(textPa.Text), double.Parse(textTa.Text), double.Parse(textPC.Text), double.Parse(textR.Text), double.Parse(textCP.Text), 1500, double.Parse(textTposqueima.Text), double.Parse(textPrf.Text), double.Parse(textPrc.Text), xval);
+                T = 1500;
+                solver.SolveSystem(radioButton2.Checked, false, double.Parse(textM.Text), double.Parse(textPa.Text), double.Parse(textTa.Text), double.Parse(textPC.Text), double.Parse(textR.Text), double.Parse(textCP.Text), T, double.Parse(textTposqueima.Text), 1, xval, 0);
 
                 ytemp = solver.TSFC;
 
@@ -389,7 +375,8 @@ namespace SimuladorPropulsivo
 
 
                 #region T1700
-                solver.SolveSystem(radioButton2.Checked, false, double.Parse(textM.Text), double.Parse(textPa.Text), double.Parse(textTa.Text), double.Parse(textPC.Text), double.Parse(textR.Text), double.Parse(textCP.Text), 1700, double.Parse(textTposqueima.Text), double.Parse(textPrf.Text), double.Parse(textPrc.Text), xval);
+                T = 1700;
+                solver.SolveSystem(radioButton2.Checked, false, double.Parse(textM.Text), double.Parse(textPa.Text), double.Parse(textTa.Text), double.Parse(textPC.Text), double.Parse(textR.Text), double.Parse(textCP.Text), T, double.Parse(textTposqueima.Text), 1, xval, 0);
 
                 ytemp = solver.TSFC;
 
@@ -405,65 +392,13 @@ namespace SimuladorPropulsivo
 
 
 
-                //if (ytemp.Equals(double.NaN)) // nesse caso acabou o ponto em que o grafico tem pontos validos
-                //{
-                //    xGraphMax = i - 1;
-
-                //    break;
-                //}
-
-                //else
-                //{
-                //    tempvals.Add(ytemp);
-                //}
-
-
-
-
 
             }
 
 
-            //List<double> ttval = tempvals;
-
-
-            //ttval.Sort();
-
-            //double ymin = ttval[0];
-            //double ymax = ttval[ttval.Count - 1];
-
-
-            //xval = 0;
-
-
-
-            //for (int ii = 0; ii < xGraphMax; ii++)
-            //{
-
-            //    //float xp = (float)((ImageBox1.Width / xmax) * xval);
-            //    xval += delta;
-
-            //    //float yp = (float)((tempvals[ii] - ymin) * ImageBox1.Height / (ymax - ymin));
-
-            //    //PointF pp = new PointF(xp, ImageBox1.Height - yp);
-            //    //listb.Add(pp);
-
-            //    myExport.AddRow();
-            //    myExport["B"] = xval;
-            //    myExport["Empuxo"] = tempvals[ii];
-
-            //}
-
             myExport.ExportToFile(AppDomain.CurrentDomain.BaseDirectory + "TSFC-" + solver.actualtype.ToString() + ".csv");
 
-            //Graphics g = ImageBox1.CreateGraphics();
-
-            //Pen myPen = new Pen(Color.Red);
-            //myPen.Width = 2;
-
-            //g.Clear(Color.White);
-
-            //g.DrawLines(myPen, listb.ToArray());
+          
 
         }
 
