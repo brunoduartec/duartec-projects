@@ -188,7 +188,7 @@ namespace SimuladorPropulsivo
 
         private void button2_Click(object sender, EventArgs e)
         {
-            double Btemp = double.Parse(textB.Text);
+            double PRCtemp = double.Parse(textPrc.Text);
 
 
             List<PointF> listb = new List<PointF>();
@@ -288,66 +288,17 @@ namespace SimuladorPropulsivo
 
                 
 
-                //if (ytemp.Equals(double.NaN)) // nesse caso acabou o ponto em que o grafico tem pontos validos
-                //{
-                //    xGraphMax = i - 1;
-
-                //    break;
-                //}
-
-                //else
-                //{
-                //    tempvals.Add(ytemp);
-                //}
-
-
-              
+                           
 
 
             }
 
 
-            //List<double> ttval = tempvals;
+          
 
+            myExport.ExportToFile(AppDomain.CurrentDomain.BaseDirectory + "EMPUXOxPR-"+solver.actualtype.ToString()+".csv");
 
-            //ttval.Sort();
-
-            //double ymin = ttval[0];
-            //double ymax = ttval[ttval.Count - 1];
-
-
-            //xval = 0;
-
-
-         
-            //for (int ii = 0; ii < xGraphMax; ii++)
-            //{
-
-            //    //float xp = (float)((ImageBox1.Width / xmax) * xval);
-            //    xval += delta;
-
-            //    //float yp = (float)((tempvals[ii] - ymin) * ImageBox1.Height / (ymax - ymin));
-
-            //    //PointF pp = new PointF(xp, ImageBox1.Height - yp);
-            //    //listb.Add(pp);
-
-            //    myExport.AddRow();
-            //    myExport["B"] = xval;
-            //    myExport["Empuxo"] = tempvals[ii];
-
-            //}
-
-            myExport.ExportToFile(AppDomain.CurrentDomain.BaseDirectory + "EMPUXO-"+solver.actualtype.ToString()+".csv");
-
-            //Graphics g = ImageBox1.CreateGraphics();
-
-            //Pen myPen = new Pen(Color.Red);
-            //myPen.Width = 2;
-
-            //g.Clear(Color.White);
-
-            //g.DrawLines(myPen, listb.ToArray());
-
+          
 
 
         }
@@ -515,6 +466,12 @@ namespace SimuladorPropulsivo
             //g.DrawLines(myPen, listb.ToArray());
 
         }
+
+     
+
+     
+
+       
 
 
 
