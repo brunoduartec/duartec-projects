@@ -76,6 +76,9 @@
             this.label15 = new System.Windows.Forms.Label();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.button6 = new System.Windows.Forms.Button();
+            this.textU = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.ImageBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -106,6 +109,9 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.comboBox3);
+            this.panel1.Controls.Add(this.textU);
+            this.panel1.Controls.Add(this.label16);
             this.panel1.Controls.Add(this.groupBox3);
             this.panel1.Controls.Add(this.groupBox2);
             this.panel1.Controls.Add(this.groupBox1);
@@ -146,7 +152,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(827, 514);
+            this.panel1.Size = new System.Drawing.Size(827, 533);
             this.panel1.TabIndex = 4;
             // 
             // groupBox1
@@ -159,6 +165,7 @@
             this.groupBox1.TabIndex = 57;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Ex 2";
+            this.groupBox1.Visible = false;
             // 
             // button3
             // 
@@ -182,7 +189,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(195, 438);
+            this.label13.Location = new System.Drawing.Point(191, 505);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(39, 13);
             this.label13.TabIndex = 54;
@@ -190,7 +197,7 @@
             // 
             // textPontos
             // 
-            this.textPontos.Location = new System.Drawing.Point(232, 434);
+            this.textPontos.Location = new System.Drawing.Point(228, 501);
             this.textPontos.Name = "textPontos";
             this.textPontos.Size = new System.Drawing.Size(45, 20);
             this.textPontos.TabIndex = 53;
@@ -199,7 +206,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(196, 412);
+            this.label12.Location = new System.Drawing.Point(192, 479);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(31, 13);
             this.label12.TabIndex = 52;
@@ -207,7 +214,7 @@
             // 
             // textxmax
             // 
-            this.textxmax.Location = new System.Drawing.Point(232, 408);
+            this.textxmax.Location = new System.Drawing.Point(228, 475);
             this.textxmax.Name = "textxmax";
             this.textxmax.Size = new System.Drawing.Size(45, 20);
             this.textxmax.TabIndex = 51;
@@ -216,7 +223,7 @@
             // radioButton3
             // 
             this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(30, 456);
+            this.radioButton3.Location = new System.Drawing.Point(24, 504);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(61, 17);
             this.radioButton3.TabIndex = 48;
@@ -227,7 +234,7 @@
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(30, 433);
+            this.radioButton2.Location = new System.Drawing.Point(24, 481);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(73, 17);
             this.radioButton2.TabIndex = 47;
@@ -239,7 +246,7 @@
             // 
             this.radioButton1.AutoSize = true;
             this.radioButton1.Checked = true;
-            this.radioButton1.Location = new System.Drawing.Point(30, 410);
+            this.radioButton1.Location = new System.Drawing.Point(24, 458);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(71, 17);
             this.radioButton1.TabIndex = 46;
@@ -250,7 +257,7 @@
             // 
             // textB
             // 
-            this.textB.Location = new System.Drawing.Point(234, 288);
+            this.textB.Location = new System.Drawing.Point(105, 322);
             this.textB.Name = "textB";
             this.textB.Size = new System.Drawing.Size(74, 20);
             this.textB.TabIndex = 37;
@@ -259,7 +266,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(196, 291);
+            this.label11.Location = new System.Drawing.Point(20, 325);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(14, 13);
             this.label11.TabIndex = 36;
@@ -267,7 +274,7 @@
             // 
             // textPrc
             // 
-            this.textPrc.Location = new System.Drawing.Point(194, 330);
+            this.textPrc.Location = new System.Drawing.Point(105, 395);
             this.textPrc.Name = "textPrc";
             this.textPrc.Size = new System.Drawing.Size(74, 20);
             this.textPrc.TabIndex = 35;
@@ -275,7 +282,7 @@
             // 
             // textPrf
             // 
-            this.textPrf.Location = new System.Drawing.Point(41, 330);
+            this.textPrf.Location = new System.Drawing.Point(105, 360);
             this.textPrf.Name = "textPrf";
             this.textPrf.Size = new System.Drawing.Size(74, 20);
             this.textPrf.TabIndex = 34;
@@ -356,7 +363,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(18, 371);
+            this.button1.Location = new System.Drawing.Point(228, 434);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 49;
@@ -385,7 +392,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(156, 333);
+            this.label10.Location = new System.Drawing.Point(19, 393);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(23, 13);
             this.label10.TabIndex = 21;
@@ -394,7 +401,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(15, 333);
+            this.label7.Location = new System.Drawing.Point(20, 367);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(20, 13);
             this.label7.TabIndex = 19;
@@ -464,6 +471,7 @@
             this.groupBox2.TabIndex = 58;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Ex 3";
+            this.groupBox2.Visible = false;
             // 
             // button4
             // 
@@ -568,12 +576,45 @@
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
+            // textU
+            // 
+            this.textU.Location = new System.Drawing.Point(105, 429);
+            this.textU.Name = "textU";
+            this.textU.Size = new System.Drawing.Size(74, 20);
+            this.textU.TabIndex = 63;
+            this.textU.Text = "20.00";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(19, 427);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(13, 13);
+            this.label16.TabIndex = 62;
+            this.label16.Text = "u";
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Items.AddRange(new object[] {
+            "0",
+            "0.85",
+            "2.0",
+            "3.0"});
+            this.comboBox3.Location = new System.Drawing.Point(185, 23);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(102, 21);
+            this.comboBox3.TabIndex = 64;
+            this.comboBox3.Text = "Select the Mach";
+            this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(827, 514);
+            this.ClientSize = new System.Drawing.Size(827, 533);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Form1";
             this.Text = "Simulator";
             ((System.ComponentModel.ISupportInitialize)(this.ImageBox1)).EndInit();
@@ -637,6 +678,9 @@
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox textU;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.ComboBox comboBox3;
     }
 }
 
