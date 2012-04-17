@@ -5,15 +5,152 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using CarlosAg.ExcelXmlWriter;
 
 namespace SimuladorPropulsivo
 {
     public partial class Form1 : Form
     {
+
+
+
+        struct PaTaPair
+        {
+
+           public  double Pa;
+           public  double Ta;
+
+            public PaTaPair(double pa, double ta)
+            {
+                this.Pa = pa;
+                this.Ta = ta;
+            }
+        
+        }
+
+        private Dictionary<double, PaTaPair> MachSituation = new Dictionary<double, PaTaPair>();
+
+
+        private void SaveExcel(string filename, string collum1, string collum2,string collum3,string collum4, List<double> XAxis, List<double> YAxis1, List<double> YAxis2, List<double> YAxis3)
+        {
+
+            Workbook book = new Workbook();
+
+            // Specify which Sheet should be opened and the size of window by default
+            book.ExcelWorkbook.ActiveSheetIndex = 1;
+            book.ExcelWorkbook.WindowTopX = 100;
+            book.ExcelWorkbook.WindowTopY = 200;
+            book.ExcelWorkbook.WindowHeight = 7000;
+            book.ExcelWorkbook.WindowWidth = 8000;
+
+            // Some optional properties of the Document
+            book.Properties.Author = "CarlosAg";
+            book.Properties.Title = "My Document";
+            book.Properties.Created = DateTime.Now;
+
+            // Add some styles to the Workbook
+            WorksheetStyle style = book.Styles.Add("HeaderStyle");
+            style.Font.FontName = "Tahoma";
+            style.Font.Size = 14;
+            style.Font.Bold = true;
+            style.Alignment.Horizontal = StyleHorizontalAlignment.Center;
+            style.Font.Color = "White";
+            style.Interior.Color = "Blue";
+            style.Interior.Pattern = StyleInteriorPattern.DiagCross;
+
+            // Create the Default Style to use for everyone
+            style = book.Styles.Add("Default");
+            style.Font.FontName = "Tahoma";
+            style.Font.Size = 10;
+
+            // Add a Worksheet with some data
+            Worksheet sheet = book.Worksheets.Add("Some Data");
+
+            // we can optionally set some column settings
+            sheet.Table.Columns.Add(new WorksheetColumn(150));
+            sheet.Table.Columns.Add(new WorksheetColumn(100));
+
+            WorksheetRow row = sheet.Table.Rows.Add();
+            row.Cells.Add(new WorksheetCell(collum1, "HeaderStyle"));
+            row.Cells.Add(new WorksheetCell(collum2, "HeaderStyle"));
+            row.Cells.Add(new WorksheetCell(collum3, "HeaderStyle"));
+            row.Cells.Add(new WorksheetCell(collum4, "HeaderStyle"));
+            
+
+            //row = sheet.Table.Rows.Add();
+            //// Skip one row, and add some text
+            //row.Index = 3;
+            //row.Cells.Add("Data");
+            //row.Cells.Add("Data 1");
+            //row.Cells.Add("Data 2");
+            //row.Cells.Add("Data 3");
+
+            // Generate 30 rows
+            for (int i = 0; i < XAxis.Count; i++)
+            {
+                row = sheet.Table.Rows.Add();
+              
+                //row.Cells.Add(XAxis[i].ToString());
+                row.Cells.Add(XAxis[i].ToString(), DataType.Number, "Default"); 
+
+                if (YAxis1.Count>i)
+                {
+                   // row.Cells.Add(YAxis1[i].ToString()); 
+                    row.Cells.Add(YAxis1[i].ToString(), DataType.Number, "Default"); 
+                }
+                else
+                {
+                    row.Cells.Add();
+                }
+
+                if (YAxis2.Count>i)
+                {
+
+                    row.Cells.Add(YAxis2[i].ToString(),DataType.Number,"Default"); 
+                    //row.Cells.Add(YAxis2[i].ToString()); 
+                }
+                else
+                {
+                    row.Cells.Add();
+                }
+
+                if (YAxis3.Count>i)
+                {
+                    //row.Cells.Add(YAxis3[i].ToString()); 
+                    row.Cells.Add(YAxis3[i].ToString(), DataType.Number, "Default"); 
+                }
+                else
+                {
+                    row.Cells.Add();
+                    
+                }
+            
+            
+            }
+
+          
+
+            // Save the file and open it
+            book.Save(filename);
+
+
+        }
+
+
         public Form1()
         {
             InitializeComponent();
             Init();
+
+
+            // Setting some Mach situations
+            MachSituation.Add(0, new PaTaPair(101.3, 288.2));
+            MachSituation.Add(0.85, new PaTaPair(18.75, 216.7));
+            MachSituation.Add(2, new PaTaPair(7.170, 216.7));
+            MachSituation.Add(3, new PaTaPair(2.097, 216.7));
+
+
+
         }
 
 
@@ -413,6 +550,34 @@ namespace SimuladorPropulsivo
 
 
                 case "MACH":
+
+
+                    //gambimaster
+
+                    if (xval==0)
+                    {
+                        xval = 0;
+                    }
+                    else if (xval == 1)
+                    {
+                        xval = 0.85;
+                    }
+                    else if (xval == 2)
+                    {
+
+                        xval = 2;
+                    }
+                    else if (xval == 3)
+                    {
+                        xval = 3;
+                    }
+
+
+
+
+                    textTa.Text = MachSituation[xval].Ta.ToString();
+                    textPa.Text = MachSituation[xval].Pa.ToString();
+
                     solver.SolveSystem(radioButton2.Checked, false, xval, double.Parse(textPa.Text), double.Parse(textTa.Text), double.Parse(textPC.Text), double.Parse(textR.Text), double.Parse(textCP.Text), T, double.Parse(textTposqueima.Text), double.Parse(textPrf.Text), double.Parse(textPrc.Text), double.Parse(textB.Text));
                     break;
                 case "Pa":
@@ -455,6 +620,14 @@ namespace SimuladorPropulsivo
 
         private void button6_Click(object sender, EventArgs e)
         {
+
+
+            List<double> Xaxis = new List<double>();
+            List<double> Yaxix1 = new List<double>();
+            List<double> Yaxix2 = new List<double>();
+            List<double> Yaxix3 = new List<double>();
+
+
             if (comboBox1.SelectedIndex == -1 || comboBox2.SelectedIndex == -1)
             {
                 MessageBox.Show("Please select the X and Y axis value", "Problem");
@@ -464,6 +637,14 @@ namespace SimuladorPropulsivo
             int pontos = int.Parse(textPontos.Text);
             int xmax = int.Parse(textxmax.Text);
             float delta = (float)xmax / pontos;
+            if (comboBox1.SelectedItem.Equals("MACH"))
+            {
+                pontos = 4;
+                xmax = 3;
+                delta = 1;
+            }
+
+            
             float xval = 0;
 
             int i = 0;
@@ -474,120 +655,195 @@ namespace SimuladorPropulsivo
             double ytemp;
 
             CsvExport myExport = new CsvExport();
-            bool flag = false;
-            while (i < pontos && !flag)
+            
+            while (i < pontos )
             {
 
                 i++;
-                xval += delta;
+                
 
 
-                myExport.AddRow();
-                myExport[comboBox1.SelectedItem.ToString()] = xval;
+                //myExport.AddRow();
+                //myExport[comboBox1.SelectedItem.ToString()] = xval;
+
+                Xaxis.Add(xval);
 
 
 
                 #region T1300
 
-                    int T = 1300;
+                int T = 1300;
 
 
-                    CalcSolutionByDropDowns(T, xval);
+                CalcSolutionByDropDowns(T, xval);
 
-                    ytemp = 0;
+                ytemp = 0;
 
-                    switch (comboBox2.SelectedItem.ToString())
-                    {
-                        case "TSFC":
-                            ytemp = solver.TSFC;
-                            break;
-                        case "Empuxo":
-                            ytemp = solver.Empuxo;
-                            break;
-                    
-                    }
+                switch (comboBox2.SelectedItem.ToString())
+                {
+                    case "TSFC":
+                        ytemp = solver.TSFC;
+                        break;
+                    case "Empuxo":
+                        ytemp = solver.Empuxo;
+                        break;
+                    case "Nth":
+                        ytemp = solver.Variables["Nth"];
+                        break;
+                    case "Nt":
+                        ytemp = solver.Variables["Nt"];
+                        break;
+
+                    case "u sobre us":
+                        ytemp = double.Parse(textU.Text) / double.Parse(solver.Variables["Usf"].ToString());
+                        break;
+
+                }
                 
-                    if (!ytemp.Equals(double.NaN)) // nesse caso acabou o ponto em que o grafico tem pontos validos
-                    {
+                if (!ytemp.Equals(double.NaN) && !double.IsInfinity(ytemp)) // nesse caso acabou o ponto em que o grafico tem pontos validos
+                {
 
-                        myExport[comboBox2.SelectedItem.ToString()+"-1.3k"] = ytemp;
-                    }
-                    else
-                    {
-                        myExport[comboBox2.SelectedItem.ToString() + "-1.3k"] = "";
-                    }
+                    Yaxix1.Add(ytemp);
+                   
+                }
+                //else
+                //{
+                //    Yaxix1.Add(0);
+                   
+                //}
                 #endregion
 
 
                 #region T1500
 
-                    T = 1500;
+                T = 1500;
 
 
-                    CalcSolutionByDropDowns(T, xval);
+                CalcSolutionByDropDowns(T, xval);
 
-                    ytemp = 0;
+                ytemp = 0;
 
-                    switch (comboBox2.SelectedItem.ToString())
-                    {
-                        case "TSFC":
-                            ytemp = solver.TSFC;
-                            break;
-                        case "Empuxo":
-                            ytemp = solver.Empuxo;
-                            break;
+                switch (comboBox2.SelectedItem.ToString())
+                {
+                    case "TSFC":
+                        ytemp = solver.TSFC;
+                        break;
+                    case "Empuxo":
+                        ytemp = solver.Empuxo;
+                        break;
+                    case "Nth":
+                        ytemp = solver.Variables["Nth"];
+                        break;
+                    case "Nt":
+                        ytemp = solver.Variables["Nt"];
+                        break;
 
-                    }
+                    case "u sobre us":
+                        ytemp = double.Parse(textU.Text) / double.Parse(solver.Variables["Usf"].ToString());
+                        break;
 
-                    if (!ytemp.Equals(double.NaN)) // nesse caso acabou o ponto em que o grafico tem pontos validos
-                    {
+                }
 
-                        myExport[comboBox2.SelectedItem.ToString() + "-1.5k"] = ytemp;
-                    }
-                    else
-                    {
-                        myExport[comboBox2.SelectedItem.ToString() + "-1.5k"] = "";
-                    }
+                //if (!ytemp.Equals(double.NaN)) // nesse caso acabou o ponto em que o grafico tem pontos validos
+                //{
+
+                //    myExport[comboBox2.SelectedItem.ToString() + "-1.5k"] = ytemp;
+                //}
+                //else
+                //{
+                //    myExport[comboBox2.SelectedItem.ToString() + "-1.5k"] = "";
+                //}
+                if (!ytemp.Equals(double.NaN) && !double.IsInfinity(ytemp)) // nesse caso acabou o ponto em que o grafico tem pontos validos
+                {
+
+                    Yaxix2.Add(ytemp);
+                    //myExport[comboBox2.SelectedItem.ToString() + "-1.3k"] = ytemp;
+                }
+                //else
+                //{
+                //    Yaxix2.Add("");
+                //    //myExport[comboBox2.SelectedItem.ToString() + "-1.3k"] = "";
+                //}
                 #endregion
 
 
 
                 #region T1700
 
-                    T = 1700;
+                T = 1700;
 
 
-                    CalcSolutionByDropDowns(T, xval);
+                CalcSolutionByDropDowns(T, xval);
 
-                    ytemp = 0;
+                ytemp = 0;
 
-                    switch (comboBox2.SelectedItem.ToString())
-                    {
-                        case "TSFC":
-                            ytemp = solver.TSFC;
-                            break;
-                        case "Empuxo":
-                            ytemp = solver.Empuxo;
-                            break;
+                switch (comboBox2.SelectedItem.ToString())
+                {
+                    case "TSFC":
+                        ytemp = solver.TSFC;
+                        break;
+                    case "Empuxo":
+                        ytemp = solver.Empuxo;
+                        break;
+                    case "Nth":
+                        ytemp = solver.Variables["Nth"];
+                        break;
+                    case "Nt":
+                        ytemp = solver.Variables["Nt"];
+                        break;
 
-                    }
+                    case "u sobre us":
+                        ytemp = double.Parse(textU.Text) / double.Parse(solver.Variables["Usf"].ToString());
+                        break;
 
-                    if (!ytemp.Equals(double.NaN)) // nesse caso acabou o ponto em que o grafico tem pontos validos
-                    {
+                }
 
-                        myExport[comboBox2.SelectedItem.ToString() + "-1.7k"] = ytemp;
-                    }
-                    else
-                    {
-                        myExport[comboBox2.SelectedItem.ToString() + "-1.7k"] = "";
-                    }
+                //if (!ytemp.Equals(double.NaN)) // nesse caso acabou o ponto em que o grafico tem pontos validos
+                //{
+
+                //    myExport[comboBox2.SelectedItem.ToString() + "-1.7k"] = ytemp;
+                //}
+                //else
+                //{
+                //    myExport[comboBox2.SelectedItem.ToString() + "-1.7k"] = "";
+                //}
+                if (!ytemp.Equals(double.NaN) && !double.IsInfinity(ytemp)) // nesse caso acabou o ponto em que o grafico tem pontos validos
+                {
+
+                    Yaxix3.Add(ytemp);
+                    //myExport[comboBox2.SelectedItem.ToString() + "-1.3k"] = ytemp;
+                }
+                //else
+                //{
+                //    Yaxix3.Add("");
+                //    //myExport[comboBox2.SelectedItem.ToString() + "-1.3k"] = "";
+                //}
                 #endregion
 
-
+                xval += delta;
             }
 
-            myExport.ExportToFile(AppDomain.CurrentDomain.BaseDirectory + comboBox2.SelectedItem.ToString() + "-" + solver.actualtype.ToString() + "MACH-" + textM.Text.ToString() + ".csv");
+            string actualtype = "TURBOFAN";
 
+            if (radioButton2.Checked)
+            {
+                actualtype = "TURBOJATO";
+            }
+            else if (radioButton3.Checked)
+            {
+                actualtype = "RAMJET";
+            }    
+
+            SaveExcel(AppDomain.CurrentDomain.BaseDirectory + comboBox2.SelectedItem.ToString() + "-" + actualtype+ "MACH-" + textM.Text.ToString() + ".xls", comboBox1.SelectedItem.ToString(), comboBox2.SelectedItem.ToString() + "1.3k", comboBox2.SelectedItem.ToString() + "1.5k", comboBox2.SelectedItem.ToString() + "1.7k", Xaxis, Yaxix1, Yaxix2, Yaxix3);
+
+            //myExport.ExportToFile(AppDomain.CurrentDomain.BaseDirectory + comboBox2.SelectedItem.ToString() + "-" + solver.actualtype.ToString() + "MACH-" + textM.Text.ToString() + ".csv");
+
+        }
+
+        private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            textPa.Text = MachSituation[ double.Parse(comboBox3.SelectedItem.ToString()) ].Pa.ToString();
+            textTa.Text = MachSituation[double.Parse(comboBox3.SelectedItem.ToString())].Ta.ToString();
         }
 
 

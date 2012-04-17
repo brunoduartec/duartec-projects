@@ -129,6 +129,8 @@ namespace SimuladorPropulsivo
             variables.Add("P08", P08);
 
             double Usf = Math.Sqrt(2 * Nfh * (gamaf / (gamaf - 1)) * R * T08 * (1 - Math.Pow((Pa / P08), ((gamaf - 1) / gamaf))));
+            variables.Add("Usf", Usf);
+
 
             double P03;
             double T03;
@@ -191,6 +193,12 @@ namespace SimuladorPropulsivo
             Empuxo = ((1 + f) * us + B * Usf - (B + 1) * u); // considerando kilonewtons
             TSFC = f / Empuxo * 1000;
 
+
+            double Nth = ((1+f)*(Math.Pow(us,2)/2)  - Math.Pow(u,2)/2 )/(f*PC);
+            variables.Add("Nth", Nth);
+
+            double Ntcalc = u / (empuxo*PC);
+            variables.Add("Nt", Ntcalc);
 
             
         }
