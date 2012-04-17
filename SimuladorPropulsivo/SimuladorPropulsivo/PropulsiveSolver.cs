@@ -190,6 +190,9 @@ namespace SimuladorPropulsivo
 
             Empuxo = ((1 + f) * us + B * Usf - (B + 1) * u); // considerando kilonewtons
             TSFC = f / Empuxo * 1000;
+
+
+            
         }
 
 

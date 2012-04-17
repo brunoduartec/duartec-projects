@@ -34,21 +34,21 @@ namespace SimuladorPropulsivo
         {
 
 
-            
+
 
             Graphics g = pictureBox1.CreateGraphics();
-  g.Clear(Color.White);
+            g.Clear(Color.White);
 
 
             Pen PressurePen = new Pen(Color.Red);
             PressurePen.Width = 2;
 
-          
+
 
             float total = pictureBox1.Width;
             float cima = pictureBox1.Height;
 
-            float yfact = (float)( pictureBox1.Height / (solver.MaxP));
+            float yfact = (float)(pictureBox1.Height / (solver.MaxP));
 
             float fixval = 10000;
             g.DrawLines(PressurePen, new PointF[] 
@@ -73,7 +73,7 @@ namespace SimuladorPropulsivo
 
 
             fixval = 10;
-          
+
             g.DrawLines(TemperaturePen, new PointF[] 
             {
                 new PointF(0,cima - float.Parse(solver.Variables["TA"].ToString())/fixval), 
@@ -108,7 +108,7 @@ namespace SimuladorPropulsivo
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            solver.SolveSystem(radioButton2.Checked,false,double.Parse(textM.Text), double.Parse(textPa.Text), double.Parse(textTa.Text), double.Parse(textPC.Text), double.Parse(textR.Text), double.Parse(textCP.Text), double.Parse(textTqueima.Text), double.Parse(textTposqueima.Text), double.Parse(textPrf.Text), double.Parse(textPrc.Text), double.Parse(textB.Text));
+            solver.SolveSystem(radioButton2.Checked, false, double.Parse(textM.Text), double.Parse(textPa.Text), double.Parse(textTa.Text), double.Parse(textPC.Text), double.Parse(textR.Text), double.Parse(textCP.Text), double.Parse(textTqueima.Text), double.Parse(textTposqueima.Text), double.Parse(textPrf.Text), double.Parse(textPrc.Text), double.Parse(textB.Text));
 
             //solver.SolveSystem(0.85,18750,216.70,45000,288.3,1.08,1600,0,1.5,20,0,0);
 
@@ -134,7 +134,7 @@ namespace SimuladorPropulsivo
             textPrc.Enabled = true;
             textB.Enabled = true;
             solver.actualtype = PropulsiveSolver.TYPE.TURBOFAN;
-            
+
         }
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
@@ -199,7 +199,7 @@ namespace SimuladorPropulsivo
 
 
             int pontos = int.Parse(textPontos.Text);
-            int xmax = int.Parse( textxmax.Text);
+            int xmax = int.Parse(textxmax.Text);
             float delta = (float)xmax / pontos;
             float xval = 0;
 
@@ -226,7 +226,7 @@ namespace SimuladorPropulsivo
                 int T = 1300;
                 #region T1300
 
-                solver.SolveSystem(radioButton2.Checked, false, double.Parse(textM.Text), double.Parse(textPa.Text), double.Parse(textTa.Text), double.Parse(textPC.Text), double.Parse(textR.Text), double.Parse(textCP.Text), T, double.Parse(textTposqueima.Text), 1, xval,0);
+                solver.SolveSystem(radioButton2.Checked, false, double.Parse(textM.Text), double.Parse(textPa.Text), double.Parse(textTa.Text), double.Parse(textPC.Text), double.Parse(textR.Text), double.Parse(textCP.Text), T, double.Parse(textTposqueima.Text), 1, xval, 0);
 
                 ytemp = solver.Empuxo;
 
@@ -235,7 +235,7 @@ namespace SimuladorPropulsivo
 
                 if (!ytemp.Equals(double.NaN)) // nesse caso acabou o ponto em que o grafico tem pontos validos
                 {
-                 
+
                     myExport["Empuxo1.3k"] = ytemp;
                 }
                 else
@@ -243,8 +243,8 @@ namespace SimuladorPropulsivo
                     myExport["Empuxo1.3k"] = "";
                 }
 
-                
-                
+
+
                 #endregion
 
                 #region T1500
@@ -254,7 +254,7 @@ namespace SimuladorPropulsivo
                 ytemp = solver.Empuxo;
 
                 if (!ytemp.Equals(double.NaN)) // nesse caso acabou o ponto em que o grafico tem pontos validos
-                myExport["Empuxo1.5k"] = ytemp;
+                    myExport["Empuxo1.5k"] = ytemp;
                 else
                 {
                     myExport["Empuxo1.5k"] = "";
@@ -270,7 +270,7 @@ namespace SimuladorPropulsivo
                 ytemp = solver.Empuxo;
 
                 if (!ytemp.Equals(double.NaN)) // nesse caso acabou o ponto em que o grafico tem pontos validos
-                myExport["Empuxo1.7k"] = ytemp;
+                    myExport["Empuxo1.7k"] = ytemp;
                 else
                 {
                     myExport["Empuxo1.7k"] = "";
@@ -279,19 +279,19 @@ namespace SimuladorPropulsivo
                 #endregion
 
 
-                
 
-                           
+
+
 
 
             }
 
 
-          
 
-            myExport.ExportToFile(AppDomain.CurrentDomain.BaseDirectory + "EMPUXOxPR-"+solver.actualtype.ToString()+".csv");
 
-          
+            myExport.ExportToFile(AppDomain.CurrentDomain.BaseDirectory + "EMPUXOxPR-" + solver.actualtype.ToString() + "MACH-" + textM.Text.ToString() + ".csv");
+
+
 
 
         }
@@ -337,7 +337,7 @@ namespace SimuladorPropulsivo
                 #region T1300
 
                 solver.SolveSystem(radioButton2.Checked, false, double.Parse(textM.Text), double.Parse(textPa.Text), double.Parse(textTa.Text), double.Parse(textPC.Text), double.Parse(textR.Text), double.Parse(textCP.Text), T, double.Parse(textTposqueima.Text), 1, xval, 0);
-                
+
 
                 ytemp = solver.TSFC;
 
@@ -396,17 +396,205 @@ namespace SimuladorPropulsivo
             }
 
 
-            myExport.ExportToFile(AppDomain.CurrentDomain.BaseDirectory + "TSFC-" + solver.actualtype.ToString() + ".csv");
+            myExport.ExportToFile(AppDomain.CurrentDomain.BaseDirectory + "TSFC-" + solver.actualtype.ToString() + "MACH-" + textM.Text.ToString() + ".csv");
 
-          
+
 
         }
 
-     
 
-     
+        private void CalcSolutionByDropDowns(int T, double xval)
+        {
 
-       
+
+
+            switch (comboBox1.SelectedItem.ToString())
+            {
+
+
+                case "MACH":
+                    solver.SolveSystem(radioButton2.Checked, false, xval, double.Parse(textPa.Text), double.Parse(textTa.Text), double.Parse(textPC.Text), double.Parse(textR.Text), double.Parse(textCP.Text), T, double.Parse(textTposqueima.Text), double.Parse(textPrf.Text), double.Parse(textPrc.Text), double.Parse(textB.Text));
+                    break;
+                case "Pa":
+                    solver.SolveSystem(radioButton2.Checked, false, double.Parse(textM.Text), xval, double.Parse(textTa.Text), double.Parse(textPC.Text), double.Parse(textR.Text), double.Parse(textCP.Text), T, double.Parse(textTposqueima.Text), double.Parse(textPrf.Text), double.Parse(textPrc.Text), double.Parse(textB.Text));
+                    break;
+                case "Ta":
+                    solver.SolveSystem(radioButton2.Checked, false, double.Parse(textM.Text), double.Parse(textPa.Text), xval, double.Parse(textPC.Text), double.Parse(textR.Text), double.Parse(textCP.Text), T, double.Parse(textTposqueima.Text), double.Parse(textPrf.Text), double.Parse(textPrc.Text), double.Parse(textB.Text));
+                    break;
+                case "PC":
+                    solver.SolveSystem(radioButton2.Checked, false, double.Parse(textM.Text), double.Parse(textPa.Text), double.Parse(textTa.Text), xval, double.Parse(textR.Text), double.Parse(textCP.Text), T, double.Parse(textTposqueima.Text), double.Parse(textPrf.Text), double.Parse(textPrc.Text), double.Parse(textB.Text));
+                    break;
+                case "R":
+                    solver.SolveSystem(radioButton2.Checked, false, double.Parse(textM.Text), double.Parse(textPa.Text), double.Parse(textTa.Text), double.Parse(textPC.Text), xval, double.Parse(textCP.Text), T, double.Parse(textTposqueima.Text), double.Parse(textPrf.Text), double.Parse(textPrc.Text), double.Parse(textB.Text));
+                    break;
+                case "Cp":
+                    solver.SolveSystem(radioButton2.Checked, false, double.Parse(textM.Text), double.Parse(textPa.Text), double.Parse(textTa.Text), double.Parse(textPC.Text), double.Parse(textR.Text), xval, T, double.Parse(textTposqueima.Text), double.Parse(textPrf.Text), double.Parse(textPrc.Text), double.Parse(textB.Text));
+                    break;
+                case "T pós queima":
+                    solver.SolveSystem(radioButton2.Checked, false, double.Parse(textM.Text), double.Parse(textPa.Text), double.Parse(textTa.Text), double.Parse(textPC.Text), double.Parse(textR.Text), double.Parse(textCP.Text), T, xval, double.Parse(textPrf.Text), double.Parse(textPrc.Text), double.Parse(textB.Text));
+                    break;
+                case "Prf":
+                    solver.SolveSystem(radioButton2.Checked, false, double.Parse(textM.Text), double.Parse(textPa.Text), double.Parse(textTa.Text), double.Parse(textPC.Text), double.Parse(textR.Text), double.Parse(textCP.Text), T, double.Parse(textTposqueima.Text), xval, double.Parse(textPrc.Text), double.Parse(textB.Text));
+                    break;
+                case "Prc":
+                    solver.SolveSystem(radioButton2.Checked, false, double.Parse(textM.Text), double.Parse(textPa.Text), double.Parse(textTa.Text), double.Parse(textPC.Text), double.Parse(textR.Text), double.Parse(textCP.Text), T, double.Parse(textTposqueima.Text), double.Parse(textPrf.Text), xval, double.Parse(textB.Text));
+                    break;
+                case "B":
+                    solver.SolveSystem(radioButton2.Checked, false, double.Parse(textM.Text), double.Parse(textPa.Text), double.Parse(textTa.Text), double.Parse(textPC.Text), double.Parse(textR.Text), double.Parse(textCP.Text), T, double.Parse(textTposqueima.Text), double.Parse(textPrf.Text), double.Parse(textPrc.Text), xval);
+                    break;
+
+                default:
+                    break;
+            }
+
+
+
+
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            if (comboBox1.SelectedIndex == -1 || comboBox2.SelectedIndex == -1)
+            {
+                MessageBox.Show("Please select the X and Y axis value", "Problem");
+                return;
+
+            }
+            int pontos = int.Parse(textPontos.Text);
+            int xmax = int.Parse(textxmax.Text);
+            float delta = (float)xmax / pontos;
+            float xval = 0;
+
+            int i = 0;
+
+            float xGraphMax = pontos;
+            //for (int i = 0; i < 9*passo; i++)
+
+            double ytemp;
+
+            CsvExport myExport = new CsvExport();
+            bool flag = false;
+            while (i < pontos && !flag)
+            {
+
+                i++;
+                xval += delta;
+
+
+                myExport.AddRow();
+                myExport[comboBox1.SelectedItem.ToString()] = xval;
+
+
+
+                #region T1300
+
+                    int T = 1300;
+
+
+                    CalcSolutionByDropDowns(T, xval);
+
+                    ytemp = 0;
+
+                    switch (comboBox2.SelectedItem.ToString())
+                    {
+                        case "TSFC":
+                            ytemp = solver.TSFC;
+                            break;
+                        case "Empuxo":
+                            ytemp = solver.Empuxo;
+                            break;
+                    
+                    }
+                
+                    if (!ytemp.Equals(double.NaN)) // nesse caso acabou o ponto em que o grafico tem pontos validos
+                    {
+
+                        myExport[comboBox2.SelectedItem.ToString()+"-1.3k"] = ytemp;
+                    }
+                    else
+                    {
+                        myExport[comboBox2.SelectedItem.ToString() + "-1.3k"] = "";
+                    }
+                #endregion
+
+
+                #region T1500
+
+                    T = 1500;
+
+
+                    CalcSolutionByDropDowns(T, xval);
+
+                    ytemp = 0;
+
+                    switch (comboBox2.SelectedItem.ToString())
+                    {
+                        case "TSFC":
+                            ytemp = solver.TSFC;
+                            break;
+                        case "Empuxo":
+                            ytemp = solver.Empuxo;
+                            break;
+
+                    }
+
+                    if (!ytemp.Equals(double.NaN)) // nesse caso acabou o ponto em que o grafico tem pontos validos
+                    {
+
+                        myExport[comboBox2.SelectedItem.ToString() + "-1.5k"] = ytemp;
+                    }
+                    else
+                    {
+                        myExport[comboBox2.SelectedItem.ToString() + "-1.5k"] = "";
+                    }
+                #endregion
+
+
+
+                #region T1700
+
+                    T = 1700;
+
+
+                    CalcSolutionByDropDowns(T, xval);
+
+                    ytemp = 0;
+
+                    switch (comboBox2.SelectedItem.ToString())
+                    {
+                        case "TSFC":
+                            ytemp = solver.TSFC;
+                            break;
+                        case "Empuxo":
+                            ytemp = solver.Empuxo;
+                            break;
+
+                    }
+
+                    if (!ytemp.Equals(double.NaN)) // nesse caso acabou o ponto em que o grafico tem pontos validos
+                    {
+
+                        myExport[comboBox2.SelectedItem.ToString() + "-1.7k"] = ytemp;
+                    }
+                    else
+                    {
+                        myExport[comboBox2.SelectedItem.ToString() + "-1.7k"] = "";
+                    }
+                #endregion
+
+
+            }
+
+            myExport.ExportToFile(AppDomain.CurrentDomain.BaseDirectory + comboBox2.SelectedItem.ToString() + "-" + solver.actualtype.ToString() + "MACH-" + textM.Text.ToString() + ".csv");
+
+        }
+
+
+
+
+
+
 
 
 
