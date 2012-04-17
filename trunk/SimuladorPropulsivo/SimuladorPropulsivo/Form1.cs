@@ -552,31 +552,31 @@ namespace SimuladorPropulsivo
                 case "MACH":
 
 
-                    //gambimaster
+                    ////gambimaster
 
-                    if (xval==0)
-                    {
-                        xval = 0;
-                    }
-                    else if (xval == 1)
-                    {
-                        xval = 0.85;
-                    }
-                    else if (xval == 2)
-                    {
+                    //if (xval==0)
+                    //{
+                    //    xval = 0;
+                    //}
+                    //else if (xval == 1)
+                    //{
+                    //    xval = 0.85;
+                    //}
+                    //else if (xval == 2)
+                    //{
 
-                        xval = 2;
-                    }
-                    else if (xval == 3)
-                    {
-                        xval = 3;
-                    }
-
-
+                    //    xval = 2;
+                    //}
+                    //else if (xval == 3)
+                    //{
+                    //    xval = 3;
+                    //}
 
 
-                    textTa.Text = MachSituation[xval].Ta.ToString();
-                    textPa.Text = MachSituation[xval].Pa.ToString();
+
+
+                    //textTa.Text = MachSituation[xval].Ta.ToString();
+                    //textPa.Text = MachSituation[xval].Pa.ToString();
 
                     solver.SolveSystem(radioButton2.Checked, false, xval, double.Parse(textPa.Text), double.Parse(textTa.Text), double.Parse(textPC.Text), double.Parse(textR.Text), double.Parse(textCP.Text), T, double.Parse(textTposqueima.Text), double.Parse(textPrf.Text), double.Parse(textPrc.Text), double.Parse(textB.Text));
                     break;
@@ -637,12 +637,9 @@ namespace SimuladorPropulsivo
             int pontos = int.Parse(textPontos.Text);
             int xmax = int.Parse(textxmax.Text);
             float delta = (float)xmax / pontos;
-            if (comboBox1.SelectedItem.Equals("MACH"))
-            {
-                pontos = 4;
-                xmax = 3;
-                delta = 1;
-            }
+            
+            
+            
 
             
             float xval = 0;
