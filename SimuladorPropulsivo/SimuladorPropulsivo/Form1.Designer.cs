@@ -181,7 +181,7 @@
             this.tbXfim.Location = new System.Drawing.Point(57, 55);
             this.tbXfim.Name = "tbXfim";
             this.tbXfim.Size = new System.Drawing.Size(45, 20);
-            this.tbXfim.TabIndex = 67;
+            this.tbXfim.TabIndex = 31;
             this.tbXfim.Text = "100";
             // 
             // label30
@@ -198,7 +198,7 @@
             this.button6.Location = new System.Drawing.Point(397, 53);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(75, 23);
-            this.button6.TabIndex = 65;
+            this.button6.TabIndex = 35;
             this.button6.Text = "Go!";
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
@@ -223,6 +223,7 @@
             // 
             // comboBox2
             // 
+            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
             "TSFC",
@@ -233,8 +234,7 @@
             this.comboBox2.Location = new System.Drawing.Point(153, 55);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(121, 21);
-            this.comboBox2.TabIndex = 63;
-            this.comboBox2.Text = "Select the Y";
+            this.comboBox2.TabIndex = 33;
             // 
             // label14
             // 
@@ -250,11 +250,12 @@
             this.tbXinicio.Location = new System.Drawing.Point(57, 23);
             this.tbXinicio.Name = "tbXinicio";
             this.tbXinicio.Size = new System.Drawing.Size(45, 20);
-            this.tbXinicio.TabIndex = 51;
+            this.tbXinicio.TabIndex = 30;
             this.tbXinicio.Text = "100";
             // 
             // comboBox1
             // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "MACH",
@@ -271,8 +272,7 @@
             this.comboBox1.Location = new System.Drawing.Point(153, 23);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 61;
-            this.comboBox1.Text = "Select the X";
+            this.comboBox1.TabIndex = 32;
             // 
             // label13
             // 
@@ -288,7 +288,7 @@
             this.textPontos.Location = new System.Drawing.Point(355, 23);
             this.textPontos.Name = "textPontos";
             this.textPontos.Size = new System.Drawing.Size(45, 20);
-            this.textPontos.TabIndex = 53;
+            this.textPontos.TabIndex = 34;
             this.textPontos.Text = "900";
             // 
             // groupBox6
@@ -313,7 +313,7 @@
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(269, 246);
-            this.tabControl1.TabIndex = 69;
+            this.tabControl1.TabIndex = 10;
             // 
             // tabPage1
             // 
@@ -330,7 +330,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(261, 200);
+            this.tabPage1.Size = new System.Drawing.Size(261, 220);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Características";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -358,7 +358,7 @@
             this.textPrc.Location = new System.Drawing.Point(85, 118);
             this.textPrc.Name = "textPrc";
             this.textPrc.Size = new System.Drawing.Size(100, 20);
-            this.textPrc.TabIndex = 35;
+            this.textPrc.TabIndex = 15;
             this.textPrc.Text = "20.00";
             // 
             // textTqueima
@@ -366,7 +366,7 @@
             this.textTqueima.Location = new System.Drawing.Point(85, 14);
             this.textTqueima.Name = "textTqueima";
             this.textTqueima.Size = new System.Drawing.Size(100, 20);
-            this.textTqueima.TabIndex = 31;
+            this.textTqueima.TabIndex = 11;
             this.textTqueima.Text = "1600.00";
             // 
             // textPrf
@@ -374,7 +374,7 @@
             this.textPrf.Location = new System.Drawing.Point(85, 92);
             this.textPrf.Name = "textPrf";
             this.textPrf.Size = new System.Drawing.Size(100, 20);
-            this.textPrf.TabIndex = 34;
+            this.textPrf.TabIndex = 14;
             this.textPrf.Text = "1.50";
             // 
             // label8
@@ -401,7 +401,7 @@
             this.textTposqueima.Location = new System.Drawing.Point(85, 40);
             this.textTposqueima.Name = "textTposqueima";
             this.textTposqueima.Size = new System.Drawing.Size(100, 20);
-            this.textTposqueima.TabIndex = 32;
+            this.textTposqueima.TabIndex = 12;
             this.textTposqueima.Text = "1600.00";
             // 
             // textB
@@ -409,7 +409,7 @@
             this.textB.Location = new System.Drawing.Point(85, 66);
             this.textB.Name = "textB";
             this.textB.Size = new System.Drawing.Size(100, 20);
-            this.textB.TabIndex = 37;
+            this.textB.TabIndex = 13;
             this.textB.Text = "5";
             // 
             // label11
@@ -461,7 +461,7 @@
             this.tbNn.Location = new System.Drawing.Point(85, 170);
             this.tbNn.Name = "tbNn";
             this.tbNn.Size = new System.Drawing.Size(100, 20);
-            this.tbNn.TabIndex = 12;
+            this.tbNn.TabIndex = 22;
             this.tbNn.Text = "0.98";
             // 
             // label23
@@ -479,7 +479,7 @@
             this.tbNab.Location = new System.Drawing.Point(85, 144);
             this.tbNab.Name = "tbNab";
             this.tbNab.Size = new System.Drawing.Size(100, 20);
-            this.tbNab.TabIndex = 10;
+            this.tbNab.TabIndex = 21;
             this.tbNab.Text = "1.00";
             // 
             // label22
@@ -514,7 +514,7 @@
             this.tbNt.Location = new System.Drawing.Point(85, 118);
             this.tbNt.Name = "tbNt";
             this.tbNt.Size = new System.Drawing.Size(100, 20);
-            this.tbNt.TabIndex = 6;
+            this.tbNt.TabIndex = 20;
             this.tbNt.Text = "0.90";
             // 
             // tbNb
@@ -522,7 +522,7 @@
             this.tbNb.Location = new System.Drawing.Point(85, 92);
             this.tbNb.Name = "tbNb";
             this.tbNb.Size = new System.Drawing.Size(100, 20);
-            this.tbNb.TabIndex = 5;
+            this.tbNb.TabIndex = 19;
             this.tbNb.Text = "1.00";
             // 
             // tbNc
@@ -530,7 +530,7 @@
             this.tbNc.Location = new System.Drawing.Point(85, 66);
             this.tbNc.Name = "tbNc";
             this.tbNc.Size = new System.Drawing.Size(100, 20);
-            this.tbNc.TabIndex = 4;
+            this.tbNc.TabIndex = 18;
             this.tbNc.Text = "0.85";
             // 
             // tbNf
@@ -538,7 +538,7 @@
             this.tbNf.Location = new System.Drawing.Point(85, 40);
             this.tbNf.Name = "tbNf";
             this.tbNf.Size = new System.Drawing.Size(100, 20);
-            this.tbNf.TabIndex = 3;
+            this.tbNf.TabIndex = 17;
             this.tbNf.Text = "0.85";
             // 
             // tbNd
@@ -546,8 +546,9 @@
             this.tbNd.Location = new System.Drawing.Point(85, 14);
             this.tbNd.Name = "tbNd";
             this.tbNd.Size = new System.Drawing.Size(100, 20);
-            this.tbNd.TabIndex = 2;
+            this.tbNd.TabIndex = 16;
             this.tbNd.Text = "0.97";
+            this.tbNd.TextChanged += new System.EventHandler(this.tbNd_TextChanged);
             // 
             // label19
             // 
@@ -581,7 +582,7 @@
             this.tabPage3.Controls.Add(this.tbYd);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(261, 200);
+            this.tabPage3.Size = new System.Drawing.Size(261, 220);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Gamas";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -636,35 +637,40 @@
             this.tbYn.Location = new System.Drawing.Point(85, 118);
             this.tbYn.Name = "tbYn";
             this.tbYn.Size = new System.Drawing.Size(100, 20);
-            this.tbYn.TabIndex = 7;
+            this.tbYn.TabIndex = 28;
+            this.tbYn.Text = "1.36";
             // 
             // tbYt
             // 
             this.tbYt.Location = new System.Drawing.Point(85, 92);
             this.tbYt.Name = "tbYt";
             this.tbYt.Size = new System.Drawing.Size(100, 20);
-            this.tbYt.TabIndex = 6;
+            this.tbYt.TabIndex = 27;
+            this.tbYt.Text = "1.33";
             // 
             // tbYc
             // 
             this.tbYc.Location = new System.Drawing.Point(85, 66);
             this.tbYc.Name = "tbYc";
             this.tbYc.Size = new System.Drawing.Size(100, 20);
-            this.tbYc.TabIndex = 5;
+            this.tbYc.TabIndex = 26;
+            this.tbYc.Text = "1.37";
             // 
             // tbYf
             // 
             this.tbYf.Location = new System.Drawing.Point(85, 40);
             this.tbYf.Name = "tbYf";
             this.tbYf.Size = new System.Drawing.Size(100, 20);
-            this.tbYf.TabIndex = 4;
+            this.tbYf.TabIndex = 25;
+            this.tbYf.Text = "1.40";
             // 
             // tbYd
             // 
             this.tbYd.Location = new System.Drawing.Point(85, 14);
             this.tbYd.Name = "tbYd";
             this.tbYd.Size = new System.Drawing.Size(100, 20);
-            this.tbYd.TabIndex = 3;
+            this.tbYd.TabIndex = 24;
+            this.tbYd.Text = "1.40";
             // 
             // label16
             // 
@@ -686,7 +692,7 @@
             this.cbMotor.Location = new System.Drawing.Point(84, 27);
             this.cbMotor.Name = "cbMotor";
             this.cbMotor.Size = new System.Drawing.Size(100, 21);
-            this.cbMotor.TabIndex = 64;
+            this.cbMotor.TabIndex = 8;
             this.cbMotor.SelectedIndexChanged += new System.EventHandler(this.cbMotor_SelectedIndexChanged);
             // 
             // cxAfterburn
@@ -695,7 +701,7 @@
             this.cxAfterburn.Location = new System.Drawing.Point(18, 54);
             this.cxAfterburn.Name = "cxAfterburn";
             this.cxAfterburn.Size = new System.Drawing.Size(81, 17);
-            this.cxAfterburn.TabIndex = 65;
+            this.cxAfterburn.TabIndex = 9;
             this.cxAfterburn.Text = "Pós-queima";
             this.cxAfterburn.UseVisualStyleBackColor = true;
             this.cxAfterburn.CheckedChanged += new System.EventHandler(this.cxAfterburn_CheckedChanged);
@@ -729,7 +735,7 @@
             this.textPC.Location = new System.Drawing.Point(81, 22);
             this.textPC.Name = "textPC";
             this.textPC.Size = new System.Drawing.Size(100, 20);
-            this.textPC.TabIndex = 28;
+            this.textPC.TabIndex = 5;
             this.textPC.Text = "45000.00\r\n";
             // 
             // label5
@@ -755,7 +761,7 @@
             this.textR.Location = new System.Drawing.Point(81, 48);
             this.textR.Name = "textR";
             this.textR.Size = new System.Drawing.Size(100, 20);
-            this.textR.TabIndex = 29;
+            this.textR.TabIndex = 6;
             this.textR.Text = "288.30";
             // 
             // textCP
@@ -763,7 +769,7 @@
             this.textCP.Location = new System.Drawing.Point(81, 74);
             this.textCP.Name = "textCP";
             this.textCP.Size = new System.Drawing.Size(100, 20);
-            this.textCP.TabIndex = 30;
+            this.textCP.TabIndex = 7;
             this.textCP.Text = "1.08";
             // 
             // groupBox4
@@ -805,7 +811,7 @@
             this.comboBox3.Location = new System.Drawing.Point(81, 49);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(100, 21);
-            this.comboBox3.TabIndex = 64;
+            this.comboBox3.TabIndex = 2;
             this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
             // 
             // label2
@@ -831,7 +837,7 @@
             this.textM.Location = new System.Drawing.Point(81, 23);
             this.textM.Name = "textM";
             this.textM.Size = new System.Drawing.Size(100, 20);
-            this.textM.TabIndex = 25;
+            this.textM.TabIndex = 1;
             this.textM.Text = "0.85";
             // 
             // textPa
@@ -839,7 +845,7 @@
             this.textPa.Location = new System.Drawing.Point(81, 76);
             this.textPa.Name = "textPa";
             this.textPa.Size = new System.Drawing.Size(100, 20);
-            this.textPa.TabIndex = 26;
+            this.textPa.TabIndex = 3;
             this.textPa.Text = "18.750";
             // 
             // textTa
@@ -847,7 +853,7 @@
             this.textTa.Location = new System.Drawing.Point(81, 102);
             this.textTa.Name = "textTa";
             this.textTa.Size = new System.Drawing.Size(100, 20);
-            this.textTa.TabIndex = 27;
+            this.textTa.TabIndex = 4;
             this.textTa.Text = "216.70";
             // 
             // groupBox3
@@ -877,7 +883,7 @@
             this.button1.Location = new System.Drawing.Point(396, 48);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 49;
+            this.button1.TabIndex = 29;
             this.button1.Text = "Go!";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
@@ -905,7 +911,7 @@
             this.tbNnf.Location = new System.Drawing.Point(85, 196);
             this.tbNnf.Name = "tbNnf";
             this.tbNnf.Size = new System.Drawing.Size(100, 20);
-            this.tbNnf.TabIndex = 14;
+            this.tbNnf.TabIndex = 23;
             this.tbNnf.Text = "0.97";
             // 
             // label31
