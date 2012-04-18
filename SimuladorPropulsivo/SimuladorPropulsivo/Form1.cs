@@ -18,15 +18,15 @@ namespace SimuladorPropulsivo
         struct PaTaPair
         {
 
-           public  double Pa;
-           public  double Ta;
+            public double Pa;
+            public double Ta;
 
             public PaTaPair(double pa, double ta)
             {
                 this.Pa = pa;
                 this.Ta = ta;
             }
-        
+
         }
 
         private Dictionary<double, PaTaPair> AltitudeSituation = new Dictionary<double, PaTaPair>();
@@ -37,7 +37,7 @@ namespace SimuladorPropulsivo
             InitializeComponent();
             Init();
 
-            
+
             // Setting some Mach situations
             AltitudeSituation.Add(0, new PaTaPair(101.3, 288.2));
             AltitudeSituation.Add(12200, new PaTaPair(18.75, 216.7));
@@ -50,7 +50,7 @@ namespace SimuladorPropulsivo
 
         }
 
-        private void SaveExcel(string filename, string collum1, string collum2,string collum3,string collum4, List<double> XAxis, List<double> YAxis1, List<double> YAxis2, List<double> YAxis3)
+        private void SaveExcel(string filename, string collum1, string collum2, string collum3, string collum4, List<double> XAxis, List<double> YAxis1, List<double> YAxis2, List<double> YAxis3)
         {
             Workbook book = new Workbook();
 
@@ -93,7 +93,7 @@ namespace SimuladorPropulsivo
             row.Cells.Add(new WorksheetCell(collum2, "HeaderStyle"));
             row.Cells.Add(new WorksheetCell(collum3, "HeaderStyle"));
             row.Cells.Add(new WorksheetCell(collum4, "HeaderStyle"));
-            
+
 
             //row = sheet.Table.Rows.Add();
             //// Skip one row, and add some text
@@ -107,24 +107,24 @@ namespace SimuladorPropulsivo
             for (int i = 0; i < XAxis.Count; i++)
             {
                 row = sheet.Table.Rows.Add();
-              
-                //row.Cells.Add(XAxis[i].ToString());
-                row.Cells.Add(XAxis[i].ToString(), DataType.Number, "Default"); 
 
-                if (YAxis1.Count>i)
+                //row.Cells.Add(XAxis[i].ToString());
+                row.Cells.Add(XAxis[i].ToString(), DataType.Number, "Default");
+
+                if (YAxis1.Count > i)
                 {
-                   // row.Cells.Add(YAxis1[i].ToString()); 
-                    row.Cells.Add(YAxis1[i].ToString(), DataType.Number, "Default"); 
+                    // row.Cells.Add(YAxis1[i].ToString()); 
+                    row.Cells.Add(YAxis1[i].ToString(), DataType.Number, "Default");
                 }
                 else
                 {
                     row.Cells.Add();
                 }
 
-                if (YAxis2.Count>i)
+                if (YAxis2.Count > i)
                 {
 
-                    row.Cells.Add(YAxis2[i].ToString(),DataType.Number,"Default"); 
+                    row.Cells.Add(YAxis2[i].ToString(), DataType.Number, "Default");
                     //row.Cells.Add(YAxis2[i].ToString()); 
                 }
                 else
@@ -132,21 +132,21 @@ namespace SimuladorPropulsivo
                     row.Cells.Add();
                 }
 
-                if (YAxis3.Count>i)
+                if (YAxis3.Count > i)
                 {
                     //row.Cells.Add(YAxis3[i].ToString()); 
-                    row.Cells.Add(YAxis3[i].ToString(), DataType.Number, "Default"); 
+                    row.Cells.Add(YAxis3[i].ToString(), DataType.Number, "Default");
                 }
                 else
                 {
                     row.Cells.Add();
-                    
+
                 }
-            
-            
+
+
             }
 
-          
+
 
             // Save the file and open it
             book.Save(filename);
@@ -170,12 +170,12 @@ namespace SimuladorPropulsivo
 
         float LocalFloatParse(string val)
         {
-          
+
 
 
             // Creates and initializes the CultureInfo which uses the international sort.
             CultureInfo myCIintl = new CultureInfo("en-US", false);
-                        
+
             return float.Parse(val, myCIintl.NumberFormat);
         }
 
@@ -250,7 +250,7 @@ namespace SimuladorPropulsivo
 
         }
 
-      
+
 
         private void button1_Click_1(object sender, EventArgs e)
         {
@@ -401,7 +401,7 @@ namespace SimuladorPropulsivo
 
                 #region T1500
                 T = 1500;
-                
+
 
                 solver.SolveSystem(isramjet, hasfan, cxAfterburn.Checked, LocalDoubleParse(textM.Text), LocalDoubleParse(textPa.Text), LocalDoubleParse(textTa.Text), LocalDoubleParse(textPC.Text), LocalDoubleParse(textR.Text), LocalDoubleParse(textCP.Text), T, LocalDoubleParse(textTposqueima.Text), 1, xval, 0);
 
@@ -419,7 +419,7 @@ namespace SimuladorPropulsivo
 
                 #region T1700
                 T = 1700;
-                
+
 
                 solver.SolveSystem(isramjet, hasfan, cxAfterburn.Checked, LocalDoubleParse(textM.Text), LocalDoubleParse(textPa.Text), LocalDoubleParse(textTa.Text), LocalDoubleParse(textPC.Text), LocalDoubleParse(textR.Text), LocalDoubleParse(textCP.Text), T, LocalDoubleParse(textTposqueima.Text), 1, xval, 0);
 
@@ -518,7 +518,7 @@ namespace SimuladorPropulsivo
 
                 #region T1500
                 T = 1500;
-                
+
 
                 solver.SolveSystem(isramjet, hasfan, cxAfterburn.Checked, LocalDoubleParse(textM.Text), LocalDoubleParse(textPa.Text), LocalDoubleParse(textTa.Text), LocalDoubleParse(textPC.Text), LocalDoubleParse(textR.Text), LocalDoubleParse(textCP.Text), T, LocalDoubleParse(textTposqueima.Text), 1, xval, 0);
 
@@ -536,7 +536,7 @@ namespace SimuladorPropulsivo
 
                 #region T1700
                 T = 1700;
-                
+
                 solver.SolveSystem(isramjet, hasfan, cxAfterburn.Checked, LocalDoubleParse(textM.Text), LocalDoubleParse(textPa.Text), LocalDoubleParse(textTa.Text), LocalDoubleParse(textPC.Text), LocalDoubleParse(textR.Text), LocalDoubleParse(textCP.Text), T, LocalDoubleParse(textTposqueima.Text), 1, xval, 0);
 
                 ytemp = solver.TSFC;
@@ -570,7 +570,7 @@ namespace SimuladorPropulsivo
             bool isramjet = cbMotor.SelectedItem.Equals("RamJet");
             bool hasfan = cbMotor.SelectedItem.Equals("TurboFan");
 
-            
+
 
             switch (comboBox1.SelectedItem.ToString())
             {
@@ -638,14 +638,23 @@ namespace SimuladorPropulsivo
             int pontos = int.Parse(textPontos.Text);
             int xmax = int.Parse(textxmax.Text);
             float delta = (float)xmax / pontos;
-            
-            
-            
 
-            
+
+
+            // isso porque a razao de compressão nunca pode ser 0
             float xval = 0;
+            if (comboBox1.SelectedItem.Equals("Prc") || comboBox1.SelectedItem.Equals("Prf"))
+            {
+                xval = 1;
+            }
+
 
             int i = 0;
+
+
+
+
+
 
             float xGraphMax = pontos;
             //for (int i = 0; i < 9*passo; i++)
@@ -653,12 +662,12 @@ namespace SimuladorPropulsivo
             double ytemp;
 
             CsvExport myExport = new CsvExport();
-            
-            while (i < pontos )
+
+            while (i < pontos)
             {
 
                 i++;
-                
+
 
 
                 //myExport.AddRow();
@@ -697,17 +706,17 @@ namespace SimuladorPropulsivo
                         break;
 
                 }
-                
+
                 if (!ytemp.Equals(double.NaN) && !double.IsInfinity(ytemp)) // nesse caso acabou o ponto em que o grafico tem pontos validos
                 {
 
                     Yaxix1.Add(ytemp);
-                   
+
                 }
                 //else
                 //{
                 //    Yaxix1.Add(0);
-                   
+
                 //}
                 #endregion
 
@@ -791,7 +800,7 @@ namespace SimuladorPropulsivo
                         break;
 
                     case "u sobre us":
-                        ytemp =  LocalDoubleParse(solver.Variables["u/us"].ToString());
+                        ytemp = LocalDoubleParse(solver.Variables["u/us"].ToString());
                         break;
 
                 }
@@ -830,9 +839,9 @@ namespace SimuladorPropulsivo
             else if (radioButton3.Checked)
             {
                 actualtype = "RAMJET";
-            }    
+            }
 
-            SaveExcel(AppDomain.CurrentDomain.BaseDirectory + comboBox2.SelectedItem.ToString() + "-" + actualtype+ "MACH-" + textM.Text.ToString() + ".xls", comboBox1.SelectedItem.ToString(), comboBox2.SelectedItem.ToString() + "1.3k", comboBox2.SelectedItem.ToString() + "1.5k", comboBox2.SelectedItem.ToString() + "1.7k", Xaxis, Yaxix1, Yaxix2, Yaxix3);
+            SaveExcel(AppDomain.CurrentDomain.BaseDirectory + comboBox2.SelectedItem.ToString() + "-" + actualtype + "MACH-" + textM.Text.ToString() + ".xls", comboBox1.SelectedItem.ToString(), comboBox2.SelectedItem.ToString() + "1.3k", comboBox2.SelectedItem.ToString() + "1.5k", comboBox2.SelectedItem.ToString() + "1.7k", Xaxis, Yaxix1, Yaxix2, Yaxix3);
 
             //myExport.ExportToFile(AppDomain.CurrentDomain.BaseDirectory + comboBox2.SelectedItem.ToString() + "-" + solver.actualtype.ToString() + "MACH-" + textM.Text.ToString() + ".csv");
 
@@ -846,7 +855,7 @@ namespace SimuladorPropulsivo
 
             textPa.Text = AltitudeSituation[LocalDoubleParse(comboBox3.SelectedItem.ToString())].Pa.ToString(myCIintl.NumberFormat);
             textTa.Text = AltitudeSituation[LocalDoubleParse(comboBox3.SelectedItem.ToString())].Ta.ToString(myCIintl.NumberFormat);
-            
+
         }
 
         private void textTa_TextChanged(object sender, EventArgs e)
