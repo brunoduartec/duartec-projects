@@ -45,6 +45,7 @@ namespace SimuladorPropulsivo
 
         double Nd;
         double Nf;
+        double Nnf;
         double Nc;
         double Nt;
         double Nn;
@@ -87,7 +88,7 @@ namespace SimuladorPropulsivo
             this.gaman = gaman;
         }
 
-        public void InitGains(double Nd, double Nc, double Nb, double Nt, double Nn, double Nab, double Nf, double Nfh)
+        public void InitGains(double Nd, double Nc, double Nb, double Nt, double Nn, double Nab, double Nf,double Nnf)
         {
 
 
@@ -96,6 +97,7 @@ namespace SimuladorPropulsivo
             this.Nb = Nb;
             this.Nt = Nt;
             this.Nn = Nn;
+            this.Nnf = Nnf;
             this.Nab = Nab;       
             
             this.Nf = Nf;
@@ -130,7 +132,7 @@ namespace SimuladorPropulsivo
             variables.Add("T08", T08);
             variables.Add("P08", P08);
 
-            double Usf = Math.Sqrt(2 * Nf * (gamaf / (gamaf - 1)) * R * T08 * (1 - Math.Pow((Pa / P08), ((gamaf - 1) / gamaf))));
+            double Usf = Math.Sqrt(2 * Nnf * (gamaf / (gamaf - 1)) * R * T08 * (1 - Math.Pow((Pa / P08), ((gamaf - 1) / gamaf))));
             variables.Add("Usf", Usf);
 
 
