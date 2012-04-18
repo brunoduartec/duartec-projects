@@ -28,7 +28,7 @@ namespace SimuladorPropulsivo
         
         }
 
-        private Dictionary<double, PaTaPair> MachSituation = new Dictionary<double, PaTaPair>();
+        private Dictionary<double, PaTaPair> AltitudeSituation = new Dictionary<double, PaTaPair>();
 
 
         private void SaveExcel(string filename, string collum1, string collum2,string collum3,string collum4, List<double> XAxis, List<double> YAxis1, List<double> YAxis2, List<double> YAxis3)
@@ -144,10 +144,10 @@ namespace SimuladorPropulsivo
 
 
             // Setting some Mach situations
-            MachSituation.Add(0, new PaTaPair(101.3, 288.2));
-            MachSituation.Add(0.85, new PaTaPair(18.75, 216.7));
-            MachSituation.Add(2, new PaTaPair(7.170, 216.7));
-            MachSituation.Add(3, new PaTaPair(2.097, 216.7));
+            AltitudeSituation.Add(0, new PaTaPair(101.3, 288.2));//
+            AltitudeSituation.Add(12200, new PaTaPair(18.75, 216.7));//0.85
+            AltitudeSituation.Add(18300, new PaTaPair(7.170, 216.7));
+            AltitudeSituation.Add(24400, new PaTaPair(2.097, 216.7));
 
 
 
@@ -226,22 +226,7 @@ namespace SimuladorPropulsivo
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-
-
-        private void trackBar2_Scroll(object sender, EventArgs e)
-        {
-
-        }
+      
 
         private void button1_Click_1(object sender, EventArgs e)
         {
@@ -692,7 +677,7 @@ namespace SimuladorPropulsivo
                         break;
 
                     case "u sobre us":
-                        ytemp = double.Parse(textU.Text) / double.Parse(solver.Variables["Usf"].ToString());
+                        ytemp = double.Parse(solver.Variables["u/us"].ToString());
                         break;
 
                 }
@@ -736,7 +721,7 @@ namespace SimuladorPropulsivo
                         break;
 
                     case "u sobre us":
-                        ytemp = double.Parse(textU.Text) / double.Parse(solver.Variables["Usf"].ToString());
+                        ytemp = double.Parse(solver.Variables["u/us"].ToString());
                         break;
 
                 }
@@ -790,7 +775,7 @@ namespace SimuladorPropulsivo
                         break;
 
                     case "u sobre us":
-                        ytemp = double.Parse(textU.Text) / double.Parse(solver.Variables["Usf"].ToString());
+                        ytemp =  double.Parse(solver.Variables["u/us"].ToString());
                         break;
 
                 }
@@ -839,8 +824,9 @@ namespace SimuladorPropulsivo
 
         private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
         {
-            textPa.Text = MachSituation[ double.Parse(comboBox3.SelectedItem.ToString()) ].Pa.ToString();
-            textTa.Text = MachSituation[double.Parse(comboBox3.SelectedItem.ToString())].Ta.ToString();
+            textPa.Text = AltitudeSituation[ double.Parse(comboBox3.SelectedItem.ToString()) ].Pa.ToString();
+            textTa.Text = AltitudeSituation[double.Parse(comboBox3.SelectedItem.ToString())].Ta.ToString();
+            
         }
 
 
