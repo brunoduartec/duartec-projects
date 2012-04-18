@@ -91,6 +91,18 @@
     </Compile>
     <Compile Include="PropulsiveSolver.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\TurboJato.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\RamJet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\TurboFan.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
