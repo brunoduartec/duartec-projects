@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using CarlosAg.ExcelXmlWriter;
+using System.Globalization;
 
 namespace SimuladorPropulsivo
 {
@@ -167,6 +168,27 @@ namespace SimuladorPropulsivo
 
 
 
+        float LocalFloatParse(string val)
+        {
+          
+
+
+            // Creates and initializes the CultureInfo which uses the international sort.
+            CultureInfo myCIintl = new CultureInfo("en-US", false);
+                        
+            return float.Parse(val, myCIintl.NumberFormat);
+        }
+
+        double LocalDoubleParse(string val)
+        {
+
+            // Creates and initializes the CultureInfo which uses the international sort.
+            CultureInfo myCIintl = new CultureInfo("en-US", false);
+
+            return double.Parse(val, myCIintl.NumberFormat);
+
+        }
+
         public void DrawGraph()
         {
 
@@ -190,14 +212,16 @@ namespace SimuladorPropulsivo
             float fixval = 10000;
             g.DrawLines(PressurePen, new PointF[] 
             {
-
+                
+                
+                
                   
-                new PointF(0,cima - float.Parse(solver.Variables["PA"].ToString())/fixval), 
-                new PointF (4*total/15.0f,cima - float.Parse(solver.Variables["P02"].ToString())*yfact), 
-                new PointF (7*total/15.0f,cima - float.Parse(solver.Variables["P03"].ToString())*yfact), 
-                new PointF (9*total/15.0f,cima - float.Parse(solver.Variables["P04"].ToString())*yfact), 
-                new PointF (10*total/15.0f,cima - float.Parse(solver.Variables["P05"].ToString())*yfact), 
-                new PointF (15*total/15.0f,cima - float.Parse(solver.Variables["P06"].ToString())*yfact)
+                new PointF(0,cima - LocalFloatParse(solver.Variables["PA"].ToString())/fixval), 
+                new PointF (4*total/15.0f,cima - LocalFloatParse(solver.Variables["P02"].ToString())*yfact), 
+                new PointF (7*total/15.0f,cima - LocalFloatParse(solver.Variables["P03"].ToString())*yfact), 
+                new PointF (9*total/15.0f,cima - LocalFloatParse(solver.Variables["P04"].ToString())*yfact), 
+                new PointF (10*total/15.0f,cima - LocalFloatParse(solver.Variables["P05"].ToString())*yfact), 
+                new PointF (15*total/15.0f,cima - LocalFloatParse(solver.Variables["P06"].ToString())*yfact)
               
                
             });
@@ -213,12 +237,12 @@ namespace SimuladorPropulsivo
 
             g.DrawLines(TemperaturePen, new PointF[] 
             {
-                new PointF(0,cima - float.Parse(solver.Variables["TA"].ToString())/fixval), 
-                new PointF (4*total/15.0f,cima - float.Parse(solver.Variables["T02"].ToString())*yfact), 
-                new PointF (7*total/15.0f,cima - float.Parse(solver.Variables["T03"].ToString())*yfact), 
-                new PointF (9*total/15.0f,cima - float.Parse(solver.Variables["T04"].ToString())*yfact), 
-                new PointF (10*total/15.0f,cima - float.Parse(solver.Variables["T05"].ToString())*yfact), 
-                new PointF (15*total/15.0f,cima - float.Parse(solver.Variables["T06"].ToString())*yfact)
+                new PointF(0,cima - LocalFloatParse(solver.Variables["TA"].ToString())/fixval), 
+                new PointF (4*total/15.0f,cima - LocalFloatParse(solver.Variables["T02"].ToString())*yfact), 
+                new PointF (7*total/15.0f,cima - LocalFloatParse(solver.Variables["T03"].ToString())*yfact), 
+                new PointF (9*total/15.0f,cima - LocalFloatParse(solver.Variables["T04"].ToString())*yfact), 
+                new PointF (10*total/15.0f,cima - LocalFloatParse(solver.Variables["T05"].ToString())*yfact), 
+                new PointF (15*total/15.0f,cima - LocalFloatParse(solver.Variables["T06"].ToString())*yfact)
               
                
             });
@@ -230,7 +254,7 @@ namespace SimuladorPropulsivo
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            solver.SolveSystem(radioButton2.Checked, false, double.Parse(textM.Text), double.Parse(textPa.Text), double.Parse(textTa.Text), double.Parse(textPC.Text), double.Parse(textR.Text), double.Parse(textCP.Text), double.Parse(textTqueima.Text), double.Parse(textTposqueima.Text), double.Parse(textPrf.Text), double.Parse(textPrc.Text), double.Parse(textB.Text));
+            solver.SolveSystem(radioButton2.Checked, false, LocalDoubleParse(textM.Text), LocalDoubleParse(textPa.Text), LocalDoubleParse(textTa.Text), LocalDoubleParse(textPC.Text), LocalDoubleParse(textR.Text), LocalDoubleParse(textCP.Text), LocalDoubleParse(textTqueima.Text), LocalDoubleParse(textTposqueima.Text), LocalDoubleParse(textPrf.Text), LocalDoubleParse(textPrc.Text), LocalDoubleParse(textB.Text));
 
             //solver.SolveSystem(0.85,18750,216.70,45000,288.3,1.08,1600,0,1.5,20,0,0);
 
@@ -310,7 +334,7 @@ namespace SimuladorPropulsivo
 
         private void button2_Click(object sender, EventArgs e)
         {
-            double PRCtemp = double.Parse(textPrc.Text);
+            double PRCtemp = LocalDoubleParse(textPrc.Text);
 
 
             List<PointF> listb = new List<PointF>();
@@ -348,7 +372,7 @@ namespace SimuladorPropulsivo
                 int T = 1300;
                 #region T1300
 
-                solver.SolveSystem(radioButton2.Checked, false, double.Parse(textM.Text), double.Parse(textPa.Text), double.Parse(textTa.Text), double.Parse(textPC.Text), double.Parse(textR.Text), double.Parse(textCP.Text), T, double.Parse(textTposqueima.Text), 1, xval, 0);
+                solver.SolveSystem(radioButton2.Checked, false, LocalDoubleParse(textM.Text), LocalDoubleParse(textPa.Text), LocalDoubleParse(textTa.Text), LocalDoubleParse(textPC.Text), LocalDoubleParse(textR.Text), LocalDoubleParse(textCP.Text), T, LocalDoubleParse(textTposqueima.Text), 1, xval, 0);
 
                 ytemp = solver.Empuxo;
 
@@ -371,7 +395,7 @@ namespace SimuladorPropulsivo
 
                 #region T1500
                 T = 1500;
-                solver.SolveSystem(radioButton2.Checked, false, double.Parse(textM.Text), double.Parse(textPa.Text), double.Parse(textTa.Text), double.Parse(textPC.Text), double.Parse(textR.Text), double.Parse(textCP.Text), T, double.Parse(textTposqueima.Text), 1, xval, 0);
+                solver.SolveSystem(radioButton2.Checked, false, LocalDoubleParse(textM.Text), LocalDoubleParse(textPa.Text), LocalDoubleParse(textTa.Text), LocalDoubleParse(textPC.Text), LocalDoubleParse(textR.Text), LocalDoubleParse(textCP.Text), T, LocalDoubleParse(textTposqueima.Text), 1, xval, 0);
 
                 ytemp = solver.Empuxo;
 
@@ -387,7 +411,7 @@ namespace SimuladorPropulsivo
 
                 #region T1700
                 T = 1700;
-                solver.SolveSystem(radioButton2.Checked, false, double.Parse(textM.Text), double.Parse(textPa.Text), double.Parse(textTa.Text), double.Parse(textPC.Text), double.Parse(textR.Text), double.Parse(textCP.Text), T, double.Parse(textTposqueima.Text), 1, xval, 0);
+                solver.SolveSystem(radioButton2.Checked, false, LocalDoubleParse(textM.Text), LocalDoubleParse(textPa.Text), LocalDoubleParse(textTa.Text), LocalDoubleParse(textPC.Text), LocalDoubleParse(textR.Text), LocalDoubleParse(textCP.Text), T, LocalDoubleParse(textTposqueima.Text), 1, xval, 0);
 
                 ytemp = solver.Empuxo;
 
@@ -420,7 +444,7 @@ namespace SimuladorPropulsivo
 
         private void button3_Click(object sender, EventArgs e)
         {
-            double Btemp = double.Parse(textB.Text);
+            double Btemp = LocalDoubleParse(textB.Text);
 
 
             List<PointF> listb = new List<PointF>();
@@ -457,7 +481,7 @@ namespace SimuladorPropulsivo
                 int T = 1300;
                 #region T1300
 
-                solver.SolveSystem(radioButton2.Checked, false, double.Parse(textM.Text), double.Parse(textPa.Text), double.Parse(textTa.Text), double.Parse(textPC.Text), double.Parse(textR.Text), double.Parse(textCP.Text), T, double.Parse(textTposqueima.Text), 1, xval, 0);
+                solver.SolveSystem(radioButton2.Checked, false, LocalDoubleParse(textM.Text), LocalDoubleParse(textPa.Text), LocalDoubleParse(textTa.Text), LocalDoubleParse(textPC.Text), LocalDoubleParse(textR.Text), LocalDoubleParse(textCP.Text), T, LocalDoubleParse(textTposqueima.Text), 1, xval, 0);
 
 
                 ytemp = solver.TSFC;
@@ -481,7 +505,7 @@ namespace SimuladorPropulsivo
 
                 #region T1500
                 T = 1500;
-                solver.SolveSystem(radioButton2.Checked, false, double.Parse(textM.Text), double.Parse(textPa.Text), double.Parse(textTa.Text), double.Parse(textPC.Text), double.Parse(textR.Text), double.Parse(textCP.Text), T, double.Parse(textTposqueima.Text), 1, xval, 0);
+                solver.SolveSystem(radioButton2.Checked, false, LocalDoubleParse(textM.Text), LocalDoubleParse(textPa.Text), LocalDoubleParse(textTa.Text), LocalDoubleParse(textPC.Text), LocalDoubleParse(textR.Text), LocalDoubleParse(textCP.Text), T, LocalDoubleParse(textTposqueima.Text), 1, xval, 0);
 
                 ytemp = solver.TSFC;
 
@@ -497,7 +521,7 @@ namespace SimuladorPropulsivo
 
                 #region T1700
                 T = 1700;
-                solver.SolveSystem(radioButton2.Checked, false, double.Parse(textM.Text), double.Parse(textPa.Text), double.Parse(textTa.Text), double.Parse(textPC.Text), double.Parse(textR.Text), double.Parse(textCP.Text), T, double.Parse(textTposqueima.Text), 1, xval, 0);
+                solver.SolveSystem(radioButton2.Checked, false, LocalDoubleParse(textM.Text), LocalDoubleParse(textPa.Text), LocalDoubleParse(textTa.Text), LocalDoubleParse(textPC.Text), LocalDoubleParse(textR.Text), LocalDoubleParse(textCP.Text), T, LocalDoubleParse(textTposqueima.Text), 1, xval, 0);
 
                 ytemp = solver.TSFC;
 
@@ -562,34 +586,34 @@ namespace SimuladorPropulsivo
                     //textTa.Text = MachSituation[xval].Ta.ToString();
                     //textPa.Text = MachSituation[xval].Pa.ToString();
 
-                    solver.SolveSystem(radioButton2.Checked, false, xval, double.Parse(textPa.Text), double.Parse(textTa.Text), double.Parse(textPC.Text), double.Parse(textR.Text), double.Parse(textCP.Text), T, double.Parse(textTposqueima.Text), double.Parse(textPrf.Text), double.Parse(textPrc.Text), double.Parse(textB.Text));
+                    solver.SolveSystem(radioButton2.Checked, false, xval, LocalDoubleParse(textPa.Text), LocalDoubleParse(textTa.Text), LocalDoubleParse(textPC.Text), LocalDoubleParse(textR.Text), LocalDoubleParse(textCP.Text), T, LocalDoubleParse(textTposqueima.Text), LocalDoubleParse(textPrf.Text), LocalDoubleParse(textPrc.Text), LocalDoubleParse(textB.Text));
                     break;
                 case "Pa":
-                    solver.SolveSystem(radioButton2.Checked, false, double.Parse(textM.Text), xval, double.Parse(textTa.Text), double.Parse(textPC.Text), double.Parse(textR.Text), double.Parse(textCP.Text), T, double.Parse(textTposqueima.Text), double.Parse(textPrf.Text), double.Parse(textPrc.Text), double.Parse(textB.Text));
+                    solver.SolveSystem(radioButton2.Checked, false, LocalDoubleParse(textM.Text), xval, LocalDoubleParse(textTa.Text), LocalDoubleParse(textPC.Text), LocalDoubleParse(textR.Text), LocalDoubleParse(textCP.Text), T, LocalDoubleParse(textTposqueima.Text), LocalDoubleParse(textPrf.Text), LocalDoubleParse(textPrc.Text), LocalDoubleParse(textB.Text));
                     break;
                 case "Ta":
-                    solver.SolveSystem(radioButton2.Checked, false, double.Parse(textM.Text), double.Parse(textPa.Text), xval, double.Parse(textPC.Text), double.Parse(textR.Text), double.Parse(textCP.Text), T, double.Parse(textTposqueima.Text), double.Parse(textPrf.Text), double.Parse(textPrc.Text), double.Parse(textB.Text));
+                    solver.SolveSystem(radioButton2.Checked, false, LocalDoubleParse(textM.Text), LocalDoubleParse(textPa.Text), xval, LocalDoubleParse(textPC.Text), LocalDoubleParse(textR.Text), LocalDoubleParse(textCP.Text), T, LocalDoubleParse(textTposqueima.Text), LocalDoubleParse(textPrf.Text), LocalDoubleParse(textPrc.Text), LocalDoubleParse(textB.Text));
                     break;
                 case "PC":
-                    solver.SolveSystem(radioButton2.Checked, false, double.Parse(textM.Text), double.Parse(textPa.Text), double.Parse(textTa.Text), xval, double.Parse(textR.Text), double.Parse(textCP.Text), T, double.Parse(textTposqueima.Text), double.Parse(textPrf.Text), double.Parse(textPrc.Text), double.Parse(textB.Text));
+                    solver.SolveSystem(radioButton2.Checked, false, LocalDoubleParse(textM.Text), LocalDoubleParse(textPa.Text), LocalDoubleParse(textTa.Text), xval, LocalDoubleParse(textR.Text), LocalDoubleParse(textCP.Text), T, LocalDoubleParse(textTposqueima.Text), LocalDoubleParse(textPrf.Text), LocalDoubleParse(textPrc.Text), LocalDoubleParse(textB.Text));
                     break;
                 case "R":
-                    solver.SolveSystem(radioButton2.Checked, false, double.Parse(textM.Text), double.Parse(textPa.Text), double.Parse(textTa.Text), double.Parse(textPC.Text), xval, double.Parse(textCP.Text), T, double.Parse(textTposqueima.Text), double.Parse(textPrf.Text), double.Parse(textPrc.Text), double.Parse(textB.Text));
+                    solver.SolveSystem(radioButton2.Checked, false, LocalDoubleParse(textM.Text), LocalDoubleParse(textPa.Text), LocalDoubleParse(textTa.Text), LocalDoubleParse(textPC.Text), xval, LocalDoubleParse(textCP.Text), T, LocalDoubleParse(textTposqueima.Text), LocalDoubleParse(textPrf.Text), LocalDoubleParse(textPrc.Text), LocalDoubleParse(textB.Text));
                     break;
                 case "Cp":
-                    solver.SolveSystem(radioButton2.Checked, false, double.Parse(textM.Text), double.Parse(textPa.Text), double.Parse(textTa.Text), double.Parse(textPC.Text), double.Parse(textR.Text), xval, T, double.Parse(textTposqueima.Text), double.Parse(textPrf.Text), double.Parse(textPrc.Text), double.Parse(textB.Text));
+                    solver.SolveSystem(radioButton2.Checked, false, LocalDoubleParse(textM.Text), LocalDoubleParse(textPa.Text), LocalDoubleParse(textTa.Text), LocalDoubleParse(textPC.Text), LocalDoubleParse(textR.Text), xval, T, LocalDoubleParse(textTposqueima.Text), LocalDoubleParse(textPrf.Text), LocalDoubleParse(textPrc.Text), LocalDoubleParse(textB.Text));
                     break;
                 case "T pós queima":
-                    solver.SolveSystem(radioButton2.Checked, false, double.Parse(textM.Text), double.Parse(textPa.Text), double.Parse(textTa.Text), double.Parse(textPC.Text), double.Parse(textR.Text), double.Parse(textCP.Text), T, xval, double.Parse(textPrf.Text), double.Parse(textPrc.Text), double.Parse(textB.Text));
+                    solver.SolveSystem(radioButton2.Checked, false, LocalDoubleParse(textM.Text), LocalDoubleParse(textPa.Text), LocalDoubleParse(textTa.Text), LocalDoubleParse(textPC.Text), LocalDoubleParse(textR.Text), LocalDoubleParse(textCP.Text), T, xval, LocalDoubleParse(textPrf.Text), LocalDoubleParse(textPrc.Text), LocalDoubleParse(textB.Text));
                     break;
                 case "Prf":
-                    solver.SolveSystem(radioButton2.Checked, false, double.Parse(textM.Text), double.Parse(textPa.Text), double.Parse(textTa.Text), double.Parse(textPC.Text), double.Parse(textR.Text), double.Parse(textCP.Text), T, double.Parse(textTposqueima.Text), xval, double.Parse(textPrc.Text), double.Parse(textB.Text));
+                    solver.SolveSystem(radioButton2.Checked, false, LocalDoubleParse(textM.Text), LocalDoubleParse(textPa.Text), LocalDoubleParse(textTa.Text), LocalDoubleParse(textPC.Text), LocalDoubleParse(textR.Text), LocalDoubleParse(textCP.Text), T, LocalDoubleParse(textTposqueima.Text), xval, LocalDoubleParse(textPrc.Text), LocalDoubleParse(textB.Text));
                     break;
                 case "Prc":
-                    solver.SolveSystem(radioButton2.Checked, false, double.Parse(textM.Text), double.Parse(textPa.Text), double.Parse(textTa.Text), double.Parse(textPC.Text), double.Parse(textR.Text), double.Parse(textCP.Text), T, double.Parse(textTposqueima.Text), double.Parse(textPrf.Text), xval, double.Parse(textB.Text));
+                    solver.SolveSystem(radioButton2.Checked, false, LocalDoubleParse(textM.Text), LocalDoubleParse(textPa.Text), LocalDoubleParse(textTa.Text), LocalDoubleParse(textPC.Text), LocalDoubleParse(textR.Text), LocalDoubleParse(textCP.Text), T, LocalDoubleParse(textTposqueima.Text), LocalDoubleParse(textPrf.Text), xval, LocalDoubleParse(textB.Text));
                     break;
                 case "B":
-                    solver.SolveSystem(radioButton2.Checked, false, double.Parse(textM.Text), double.Parse(textPa.Text), double.Parse(textTa.Text), double.Parse(textPC.Text), double.Parse(textR.Text), double.Parse(textCP.Text), T, double.Parse(textTposqueima.Text), double.Parse(textPrf.Text), double.Parse(textPrc.Text), xval);
+                    solver.SolveSystem(radioButton2.Checked, false, LocalDoubleParse(textM.Text), LocalDoubleParse(textPa.Text), LocalDoubleParse(textTa.Text), LocalDoubleParse(textPC.Text), LocalDoubleParse(textR.Text), LocalDoubleParse(textCP.Text), T, LocalDoubleParse(textTposqueima.Text), LocalDoubleParse(textPrf.Text), LocalDoubleParse(textPrc.Text), xval);
                     break;
 
                 default:
@@ -676,7 +700,7 @@ namespace SimuladorPropulsivo
                         break;
 
                     case "u sobre us":
-                        ytemp = double.Parse(solver.Variables["u/us"].ToString());
+                        ytemp = LocalDoubleParse(solver.Variables["u/us"].ToString());
                         break;
 
                 }
@@ -720,7 +744,7 @@ namespace SimuladorPropulsivo
                         break;
 
                     case "u sobre us":
-                        ytemp = double.Parse(solver.Variables["u/us"].ToString());
+                        ytemp = LocalDoubleParse(solver.Variables["u/us"].ToString());
                         break;
 
                 }
@@ -774,7 +798,7 @@ namespace SimuladorPropulsivo
                         break;
 
                     case "u sobre us":
-                        ytemp =  double.Parse(solver.Variables["u/us"].ToString());
+                        ytemp =  LocalDoubleParse(solver.Variables["u/us"].ToString());
                         break;
 
                 }
@@ -823,8 +847,8 @@ namespace SimuladorPropulsivo
 
         private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
         {
-            textPa.Text = AltitudeSituation[ double.Parse(comboBox3.SelectedItem.ToString()) ].Pa.ToString();
-            textTa.Text = AltitudeSituation[double.Parse(comboBox3.SelectedItem.ToString())].Ta.ToString();
+            textPa.Text = AltitudeSituation[ LocalDoubleParse(comboBox3.SelectedItem.ToString()) ].Pa.ToString();
+            textTa.Text = AltitudeSituation[LocalDoubleParse(comboBox3.SelectedItem.ToString())].Ta.ToString();
             
         }
 
