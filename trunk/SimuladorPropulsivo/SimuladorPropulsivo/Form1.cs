@@ -46,8 +46,8 @@ namespace SimuladorPropulsivo
 
             comboBox3.SelectedIndex = 0;
             cbMotor.SelectedIndex = 0;
-
-
+            comboBox1.SelectedIndex = 0;
+            comboBox2.SelectedIndex = 0;
         }
 
         private void SaveExcel(string filename, string collum1, string collum2, string collum3, string collum4, List<double> XAxis, List<double> YAxis1, List<double> YAxis2, List<double> YAxis3)
@@ -943,6 +943,21 @@ namespace SimuladorPropulsivo
                 textTposqueima.Enabled = false;
             }
         }
-        
+
+        private void tbNd_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+
+
+
+
+
+
+
+
+
+
     }
 }
