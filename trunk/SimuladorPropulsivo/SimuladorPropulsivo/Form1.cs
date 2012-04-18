@@ -636,20 +636,30 @@ namespace SimuladorPropulsivo
 
             }
             int pontos = int.Parse(textPontos.Text);
-            int xmax = int.Parse(tbXinicio.Text);
+
+
+
+            int xmin = int.Parse(tbXinicio.Text);
+            int xmax = int.Parse(tbXfim.Text);
+         
+
+
             float delta = (float)xmax / pontos;
 
 
 
             // isso porque a razao de compressão nunca pode ser 0
             float xval = 0;
-            if (comboBox1.SelectedItem.Equals("Prc") || comboBox1.SelectedItem.Equals("Prf"))
-            {
-                xval = 1;
-            }
 
 
-            int i = 0;
+            xval = xmin;
+            //if (comboBox1.SelectedItem.Equals("Prc") || comboBox1.SelectedItem.Equals("Prf"))
+            //{
+            //    xval = 1;
+            //}
+
+
+          //  int i = 0;
 
 
 
@@ -663,10 +673,10 @@ namespace SimuladorPropulsivo
 
             CsvExport myExport = new CsvExport();
 
-            while (i < pontos)
+            while (xval < xmax)
             {
 
-                i++;
+                //i++;
 
 
 
@@ -933,16 +943,6 @@ namespace SimuladorPropulsivo
                 textTposqueima.Enabled = false;
             }
         }
-
-
-
-
-
-
-
-
-
-
-
+        
     }
 }
