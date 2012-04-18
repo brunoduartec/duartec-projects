@@ -59,5 +59,26 @@ namespace SimuladorPropulsivo.Properties {
                 resourceCulture = value;
             }
         }
+        
+        internal static System.Drawing.Bitmap RamJet {
+            get {
+                object obj = ResourceManager.GetObject("RamJet", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap TurboFan {
+            get {
+                object obj = ResourceManager.GetObject("TurboFan", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        internal static System.Drawing.Bitmap TurboJato {
+            get {
+                object obj = ResourceManager.GetObject("TurboJato", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

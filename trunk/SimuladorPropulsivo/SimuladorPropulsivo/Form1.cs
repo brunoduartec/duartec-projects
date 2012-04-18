@@ -894,6 +894,10 @@ namespace SimuladorPropulsivo
                     textPrc.Text = "20";
                     textB.Text = "5";
                     solver.actualtype = PropulsiveSolver.TYPE.TURBOFAN;
+
+
+                    ImageBox1.Image = new Bitmap(SimuladorPropulsivo.Properties.Resources.TurboFan);
+                    
                     break;
                 case "TurboJato":
                     textPrf.Enabled = false;
@@ -905,6 +909,7 @@ namespace SimuladorPropulsivo
                     tbYf.Enabled = false;
                     tbNnf.Enabled = false;
                     solver.actualtype = PropulsiveSolver.TYPE.TURBOJATO;
+                    ImageBox1.Image = new Bitmap(SimuladorPropulsivo.Properties.Resources.TurboJato);
                     break;
                 case "RamJet":
                     textPrf.Enabled = false;
@@ -921,6 +926,7 @@ namespace SimuladorPropulsivo
                     tbYt.Enabled = false;
                     tbNnf.Enabled = false;
                     solver.actualtype = PropulsiveSolver.TYPE.RAMJET;
+                    ImageBox1.Image = new Bitmap(SimuladorPropulsivo.Properties.Resources.RamJet);
                     break;
             }
         }

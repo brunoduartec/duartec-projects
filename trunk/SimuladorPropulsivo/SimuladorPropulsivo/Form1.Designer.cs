@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.ImageBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -58,6 +57,8 @@
             this.textB = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.label31 = new System.Windows.Forms.Label();
+            this.tbNnf = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
             this.tbNn = new System.Windows.Forms.TextBox();
             this.label23 = new System.Windows.Forms.Label();
@@ -106,9 +107,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.LabelUs = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.tbNnf = new System.Windows.Forms.TextBox();
-            this.label31 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.ImageBox1)).BeginInit();
+            this.ImageBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox6.SuspendLayout();
@@ -120,17 +119,8 @@
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ImageBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // ImageBox1
-            // 
-            this.ImageBox1.Image = ((System.Drawing.Image)(resources.GetObject("ImageBox1.Image")));
-            this.ImageBox1.Location = new System.Drawing.Point(338, 212);
-            this.ImageBox1.Name = "ImageBox1";
-            this.ImageBox1.Size = new System.Drawing.Size(478, 126);
-            this.ImageBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ImageBox1.TabIndex = 1;
-            this.ImageBox1.TabStop = false;
             // 
             // label1
             // 
@@ -446,6 +436,23 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Rendimentos";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(3, 203);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(24, 13);
+            this.label31.TabIndex = 15;
+            this.label31.Text = "Nnf";
+            // 
+            // tbNnf
+            // 
+            this.tbNnf.Location = new System.Drawing.Point(85, 196);
+            this.tbNnf.Name = "tbNnf";
+            this.tbNnf.Size = new System.Drawing.Size(100, 20);
+            this.tbNnf.TabIndex = 23;
+            this.tbNnf.Text = "0.97";
             // 
             // label24
             // 
@@ -906,22 +913,15 @@
             this.pictureBox1.TabIndex = 55;
             this.pictureBox1.TabStop = false;
             // 
-            // tbNnf
+            // ImageBox1
             // 
-            this.tbNnf.Location = new System.Drawing.Point(85, 196);
-            this.tbNnf.Name = "tbNnf";
-            this.tbNnf.Size = new System.Drawing.Size(100, 20);
-            this.tbNnf.TabIndex = 23;
-            this.tbNnf.Text = "0.97";
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(3, 203);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(24, 13);
-            this.label31.TabIndex = 15;
-            this.label31.Text = "Nnf";
+            this.ImageBox1.Image = ((System.Drawing.Image)(resources.GetObject("ImageBox1.Image")));
+            this.ImageBox1.Location = new System.Drawing.Point(338, 212);
+            this.ImageBox1.Name = "ImageBox1";
+            this.ImageBox1.Size = new System.Drawing.Size(478, 194);
+            this.ImageBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ImageBox1.TabIndex = 1;
+            this.ImageBox1.TabStop = false;
             // 
             // Form1
             // 
@@ -932,7 +932,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Form1";
             this.Text = "Simulator";
-            ((System.ComponentModel.ISupportInitialize)(this.ImageBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -952,6 +951,7 @@
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ImageBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
