@@ -847,8 +847,12 @@ namespace SimuladorPropulsivo
 
         private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
         {
-            textPa.Text = AltitudeSituation[ LocalDoubleParse(comboBox3.SelectedItem.ToString()) ].Pa.ToString();
-            textTa.Text = AltitudeSituation[LocalDoubleParse(comboBox3.SelectedItem.ToString())].Ta.ToString();
+
+            // Creates and initializes the CultureInfo which uses the international sort.
+            CultureInfo myCIintl = new CultureInfo("en-US", false);
+
+            textPa.Text = AltitudeSituation[LocalDoubleParse(comboBox3.SelectedItem.ToString())].Pa.ToString(myCIintl.NumberFormat);
+            textTa.Text = AltitudeSituation[LocalDoubleParse(comboBox3.SelectedItem.ToString())].Ta.ToString(myCIintl.NumberFormat);
             
         }
 
