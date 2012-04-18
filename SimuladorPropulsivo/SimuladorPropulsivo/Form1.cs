@@ -210,21 +210,21 @@ namespace SimuladorPropulsivo
             float yfact = (float)(pictureBox1.Height / (solver.MaxP));
 
             float fixval = 10000;
-            g.DrawLines(PressurePen, new PointF[] 
-            {
+            //g.DrawLines(PressurePen, new PointF[] 
+            //{
                 
                 
                 
                   
-                new PointF(0,cima - LocalFloatParse(solver.Variables["PA"].ToString())/fixval), 
-                new PointF (4*total/15.0f,cima - LocalFloatParse(solver.Variables["P02"].ToString())*yfact), 
-                new PointF (7*total/15.0f,cima - LocalFloatParse(solver.Variables["P03"].ToString())*yfact), 
-                new PointF (9*total/15.0f,cima - LocalFloatParse(solver.Variables["P04"].ToString())*yfact), 
-                new PointF (10*total/15.0f,cima - LocalFloatParse(solver.Variables["P05"].ToString())*yfact), 
-                new PointF (15*total/15.0f,cima - LocalFloatParse(solver.Variables["P06"].ToString())*yfact)
+            //    new PointF(0,cima - LocalFloatParse(solver.Variables["PA"].ToString())/fixval), 
+            //    new PointF (4*total/15.0f,cima - LocalFloatParse(solver.Variables["P02"].ToString())*yfact), 
+            //    new PointF (7*total/15.0f,cima - LocalFloatParse(solver.Variables["P03"].ToString())*yfact), 
+            //    new PointF (9*total/15.0f,cima - LocalFloatParse(solver.Variables["P04"].ToString())*yfact), 
+            //    new PointF (10*total/15.0f,cima - LocalFloatParse(solver.Variables["P05"].ToString())*yfact), 
+            //    new PointF (15*total/15.0f,cima - LocalFloatParse(solver.Variables["P06"].ToString())*yfact)
               
                
-            });
+            //});
 
 
             yfact = (float)(pictureBox1.Height / (solver.MaxT));
@@ -235,17 +235,17 @@ namespace SimuladorPropulsivo
 
             fixval = 10;
 
-            g.DrawLines(TemperaturePen, new PointF[] 
-            {
-                new PointF(0,cima - LocalFloatParse(solver.Variables["TA"].ToString())/fixval), 
-                new PointF (4*total/15.0f,cima - LocalFloatParse(solver.Variables["T02"].ToString())*yfact), 
-                new PointF (7*total/15.0f,cima - LocalFloatParse(solver.Variables["T03"].ToString())*yfact), 
-                new PointF (9*total/15.0f,cima - LocalFloatParse(solver.Variables["T04"].ToString())*yfact), 
-                new PointF (10*total/15.0f,cima - LocalFloatParse(solver.Variables["T05"].ToString())*yfact), 
-                new PointF (15*total/15.0f,cima - LocalFloatParse(solver.Variables["T06"].ToString())*yfact)
+            //g.DrawLines(TemperaturePen, new PointF[] 
+            //{
+            //    new PointF(0,cima - LocalFloatParse(solver.Variables["TA"].ToString())/fixval), 
+            //    new PointF (4*total/15.0f,cima - LocalFloatParse(solver.Variables["T02"].ToString())*yfact), 
+            //    new PointF (7*total/15.0f,cima - LocalFloatParse(solver.Variables["T03"].ToString())*yfact), 
+            //    new PointF (9*total/15.0f,cima - LocalFloatParse(solver.Variables["T04"].ToString())*yfact), 
+            //    new PointF (10*total/15.0f,cima - LocalFloatParse(solver.Variables["T05"].ToString())*yfact), 
+            //    new PointF (15*total/15.0f,cima - LocalFloatParse(solver.Variables["T06"].ToString())*yfact)
               
                
-            });
+            //});
 
 
         }
@@ -348,7 +348,7 @@ namespace SimuladorPropulsivo
 
 
             int pontos = int.Parse(textPontos.Text);
-            int xmax = int.Parse(textxmax.Text);
+            int xmax = int.Parse(tbXinicio.Text);
             float delta = (float)xmax / pontos;
             float xval = 0;
 
@@ -464,7 +464,7 @@ namespace SimuladorPropulsivo
 
 
             int pontos = int.Parse(textPontos.Text);
-            int xmax = int.Parse(textxmax.Text);
+            int xmax = int.Parse(tbXinicio.Text);
             float delta = (float)xmax / pontos;
             float xval = 0;
 
@@ -636,7 +636,7 @@ namespace SimuladorPropulsivo
 
             }
             int pontos = int.Parse(textPontos.Text);
-            int xmax = int.Parse(textxmax.Text);
+            int xmax = int.Parse(tbXinicio.Text);
             float delta = (float)xmax / pontos;
 
 
@@ -832,11 +832,11 @@ namespace SimuladorPropulsivo
 
             string actualtype = "TURBOFAN";
 
-            if (radioButton2.Checked)
+            if (cbMotor.SelectedText.Equals("TurboJato"))
             {
                 actualtype = "TURBOJATO";
             }
-            else if (radioButton3.Checked)
+            else if (cbMotor.SelectedText.Equals("RamJet"))
             {
                 actualtype = "RAMJET";
             }
@@ -849,18 +849,89 @@ namespace SimuladorPropulsivo
 
         private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
         {
-
             // Creates and initializes the CultureInfo which uses the international sort.
             CultureInfo myCIintl = new CultureInfo("en-US", false);
+            if (!comboBox3.SelectedItem.ToString().Equals("Personalizado"))
+            {
+                textPa.Text = AltitudeSituation[LocalDoubleParse(comboBox3.SelectedItem.ToString())].Pa.ToString(myCIintl.NumberFormat);
+                textPa.Enabled = false;
+                textTa.Text = AltitudeSituation[LocalDoubleParse(comboBox3.SelectedItem.ToString())].Ta.ToString(myCIintl.NumberFormat);
+                textTa.Enabled = false;
+            }
+            else
+            {
+                textPa.Enabled = true;
+                textTa.Enabled = true;
+            }
+        }
 
-            textPa.Text = AltitudeSituation[LocalDoubleParse(comboBox3.SelectedItem.ToString())].Pa.ToString(myCIintl.NumberFormat);
-            textTa.Text = AltitudeSituation[LocalDoubleParse(comboBox3.SelectedItem.ToString())].Ta.ToString(myCIintl.NumberFormat);
+        private void cbMotor_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            textPrf.Enabled = true;
+            textPrc.Enabled = true;
+            textB.Enabled = true;
+            tbNf.Enabled = true;
+            tbYf.Enabled = true;
+            tbNc.Enabled = true;
+            tbYc.Enabled = true;
+            tbNt.Enabled = true;
+            tbYt.Enabled = true;
+            tbNnf.Enabled = true;
+            switch (cbMotor.SelectedItem.ToString())
+            {
+                case "TurboFan":
+                    textPrf.Text = "1.5";
+                    textPrc.Text = "20";
+                    textB.Text = "5";
+                    solver.actualtype = PropulsiveSolver.TYPE.TURBOFAN;
+                    break;
+                case "TurboJato":
+                    textPrf.Enabled = false;
+                    textPrf.Text = "1";
+                    textPrc.Text = "30";
+                    textB.Enabled = false;
+                    textB.Text = "0";
+                    tbNf.Enabled = false;
+                    tbYf.Enabled = false;
+                    tbNnf.Enabled = false;
+                    solver.actualtype = PropulsiveSolver.TYPE.TURBOJATO;
+                    break;
+                case "RamJet":
+                    textPrf.Enabled = false;
+                    textPrf.Text = "1";
+                    textPrc.Enabled = false;
+                    textPrc.Text = "1";
+                    textB.Enabled = false;
+                    textB.Text = "0";
+                    tbNf.Enabled = false;
+                    tbYf.Enabled = false;
+                    tbNc.Enabled = false;
+                    tbYc.Enabled = false;
+                    tbNt.Enabled = false;
+                    tbYt.Enabled = false;
+                    tbNnf.Enabled = false;
+                    solver.actualtype = PropulsiveSolver.TYPE.RAMJET;
+                    break;
+            }
+        }
+
+        private void groupBox3_Enter(object sender, EventArgs e)
+        {
 
         }
 
-        private void textTa_TextChanged(object sender, EventArgs e)
+        private void cxAfterburn_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (cxAfterburn.Checked)
+            {
+                tbNab.Enabled = true;
+                textTposqueima.Enabled = true;
+            }
+            else
+            {
+                tbNab.Enabled = false;
+                textTposqueima.Enabled = false;
+            }
         }
 
 
