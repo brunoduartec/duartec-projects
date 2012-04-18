@@ -31,9 +31,26 @@ namespace SimuladorPropulsivo
         private Dictionary<double, PaTaPair> AltitudeSituation = new Dictionary<double, PaTaPair>();
 
 
+        public Form1()
+        {
+            InitializeComponent();
+            Init();
+
+            
+            // Setting some Mach situations
+            AltitudeSituation.Add(0, new PaTaPair(101.3, 288.2));
+            AltitudeSituation.Add(12200, new PaTaPair(18.75, 216.7));
+            AltitudeSituation.Add(18300, new PaTaPair(7.170, 216.7));
+            AltitudeSituation.Add(24400, new PaTaPair(2.097, 216.7));
+
+            comboBox3.SelectedIndex = 0;
+            cbMotor.SelectedIndex = 0;
+
+
+        }
+
         private void SaveExcel(string filename, string collum1, string collum2,string collum3,string collum4, List<double> XAxis, List<double> YAxis1, List<double> YAxis2, List<double> YAxis3)
         {
-
             Workbook book = new Workbook();
 
             // Specify which Sheet should be opened and the size of window by default
@@ -132,23 +149,6 @@ namespace SimuladorPropulsivo
 
             // Save the file and open it
             book.Save(filename);
-
-
-        }
-
-
-        public Form1()
-        {
-            InitializeComponent();
-            Init();
-
-
-            // Setting some Mach situations
-            AltitudeSituation.Add(0, new PaTaPair(101.3, 288.2));//
-            AltitudeSituation.Add(12200, new PaTaPair(18.75, 216.7));//0.85
-            AltitudeSituation.Add(18300, new PaTaPair(7.170, 216.7));
-            AltitudeSituation.Add(24400, new PaTaPair(2.097, 216.7));
-
 
 
         }
@@ -427,7 +427,6 @@ namespace SimuladorPropulsivo
 
 
             List<double> tempvals = new List<double>();
-
 
 
             int pontos = int.Parse(textPontos.Text);
@@ -827,6 +826,11 @@ namespace SimuladorPropulsivo
             textPa.Text = AltitudeSituation[ double.Parse(comboBox3.SelectedItem.ToString()) ].Pa.ToString();
             textTa.Text = AltitudeSituation[double.Parse(comboBox3.SelectedItem.ToString())].Ta.ToString();
             
+        }
+
+        private void textTa_TextChanged(object sender, EventArgs e)
+        {
+
         }
 
 
