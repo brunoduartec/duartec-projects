@@ -44,13 +44,15 @@ namespace SimuladorPropulsivo
 
 
         double Nd;
+        double Nf;
         double Nc;
-        double Nb;
         double Nt;
         double Nn;
+
+
+        double Nb;
         double Nab;
-        double Nf;
-        double Nfh;
+        
 
 
         #endregion
@@ -94,9 +96,10 @@ namespace SimuladorPropulsivo
             this.Nb = Nb;
             this.Nt = Nt;
             this.Nn = Nn;
-            this.Nab = Nab;
+            this.Nab = Nab;       
+            
             this.Nf = Nf;
-            this.Nfh = Nfh;
+            
 
 
         }
@@ -104,9 +107,9 @@ namespace SimuladorPropulsivo
         bool afterburn;
 
 
-        public void SolveSystem(bool hasfan, bool afterburn, double M, double Pa, double Ta, double PC, double R, double Cp, double T04, double T06, double Prf, double Prc, double B)
+        public void SolveSystem(bool isRamjet, bool hasfan, bool afterburn, double M, double Pa, double Ta, double PC, double R, double Cp, double T04, double T06, double Prf, double Prc, double B)
         {
-            
+
             this.hasfan = hasfan;
             this.afterburn = afterburn;
             variables.Clear();
@@ -114,7 +117,7 @@ namespace SimuladorPropulsivo
             variables.Add("PA", Pa);
 
             double T02 = Ta * (1 + (gamad - 1) / 2 * Math.Pow(M, 2));
-            
+
             double P02 = Pa * Math.Pow((1 + Nd * (T02 / Ta - 1)), (gamad / (gamad - 1)));
 
 
@@ -127,7 +130,7 @@ namespace SimuladorPropulsivo
             variables.Add("T08", T08);
             variables.Add("P08", P08);
 
-            double Usf = Math.Sqrt(2 * Nfh * (gamaf / (gamaf - 1)) * R * T08 * (1 - Math.Pow((Pa / P08), ((gamaf - 1) / gamaf))));
+            double Usf = Math.Sqrt(2 * Nf * (gamaf / (gamaf - 1)) * R * T08 * (1 - Math.Pow((Pa / P08), ((gamaf - 1) / gamaf))));
             variables.Add("Usf", Usf);
 
 
@@ -136,7 +139,7 @@ namespace SimuladorPropulsivo
 
             if (hasfan)
             {
-                
+
                 P03 = P08 * Prc;
                 T03 = T08 * (1 + (1 / Nc) * (Math.Pow(Prc, ((gamac - 1) / gamac)) - 1));
             }
@@ -160,8 +163,23 @@ namespace SimuladorPropulsivo
             variables.Add("T04", T04);
             variables.Add("P04", P04);
 
-            double T05 = T04 - (T03 - T02) - B * (T08 - T02);
-            double P05 = P04 * Math.Pow((1 - (1 / Nt) * (1 - T05 / T04)), (gamat / (gamat - 1)));
+            double T05;
+            double P05;
+
+            if (!isRamjet)
+            {
+                T05 = T04 - (T03 - T02) - B * (T08 - T02);
+
+                P05 = P04 * Math.Pow((1 - (1 / Nt) * (1 - T05 / T04)), (gamat / (gamat - 1)));
+            }
+            else
+            {
+                T05 = T04;
+                P05 = P04;
+
+            }
+
+
 
 
             variables.Add("T05", T05);
@@ -198,15 +216,15 @@ namespace SimuladorPropulsivo
             variables.Add("u/us", uUs);
 
 
-            double Nth = ((1+f)*(Math.Pow(us,2)/2)  - Math.Pow(u,2)/2 )/(f*PC);
-            
-            
+            double Nth = ((1 + f) * (Math.Pow(us, 2) / 2) - Math.Pow(u, 2) / 2) / (f * PC);
+
+
             variables.Add("Nth", Nth);
 
-            double Ntcalc = u / (tSFC*PC);
+            double Ntcalc = u / (tSFC * PC);
             variables.Add("Nt", Ntcalc);
 
-            
+
         }
 
 

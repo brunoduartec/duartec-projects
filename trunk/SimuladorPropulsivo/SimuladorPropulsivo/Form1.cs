@@ -254,12 +254,15 @@ namespace SimuladorPropulsivo
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            solver.SolveSystem(radioButton2.Checked, false, LocalDoubleParse(textM.Text), LocalDoubleParse(textPa.Text), LocalDoubleParse(textTa.Text), LocalDoubleParse(textPC.Text), LocalDoubleParse(textR.Text), LocalDoubleParse(textCP.Text), LocalDoubleParse(textTqueima.Text), LocalDoubleParse(textTposqueima.Text), LocalDoubleParse(textPrf.Text), LocalDoubleParse(textPrc.Text), LocalDoubleParse(textB.Text));
+            bool isramjet = cbMotor.SelectedItem.Equals("RamJet");
+            bool hasfan = cbMotor.SelectedItem.Equals("TurboFan");
+
+            solver.SolveSystem(isramjet, hasfan, cxAfterburn.Checked, LocalDoubleParse(textM.Text), LocalDoubleParse(textPa.Text), LocalDoubleParse(textTa.Text), LocalDoubleParse(textPC.Text), LocalDoubleParse(textR.Text), LocalDoubleParse(textCP.Text), LocalDoubleParse(textTqueima.Text), LocalDoubleParse(textTposqueima.Text), LocalDoubleParse(textPrf.Text), LocalDoubleParse(textPrc.Text), LocalDoubleParse(textB.Text));
 
             //solver.SolveSystem(0.85,18750,216.70,45000,288.3,1.08,1600,0,1.5,20,0,0);
 
-            LabelEmpuxo.Text = "Empuxo = " + solver.Empuxo.ToString();
-            LabelUs.Text = "TSFC = " + solver.TSFC.ToString();
+            LabelEmpuxo.Text = "Empuxo = " + solver.Empuxo.ToString("#.0000");
+            LabelUs.Text = "TSFC = " + solver.TSFC.ToString("#.0000");
 
             DrawGraph();
 
@@ -372,7 +375,10 @@ namespace SimuladorPropulsivo
                 int T = 1300;
                 #region T1300
 
-                solver.SolveSystem(radioButton2.Checked, false, LocalDoubleParse(textM.Text), LocalDoubleParse(textPa.Text), LocalDoubleParse(textTa.Text), LocalDoubleParse(textPC.Text), LocalDoubleParse(textR.Text), LocalDoubleParse(textCP.Text), T, LocalDoubleParse(textTposqueima.Text), 1, xval, 0);
+                bool isramjet = cbMotor.SelectedItem.Equals("RamJet");
+                bool hasfan = cbMotor.SelectedItem.Equals("TurboFan");
+
+                solver.SolveSystem(isramjet, hasfan, cxAfterburn.Checked, LocalDoubleParse(textM.Text), LocalDoubleParse(textPa.Text), LocalDoubleParse(textTa.Text), LocalDoubleParse(textPC.Text), LocalDoubleParse(textR.Text), LocalDoubleParse(textCP.Text), T, LocalDoubleParse(textTposqueima.Text), 1, xval, 0);
 
                 ytemp = solver.Empuxo;
 
@@ -395,7 +401,9 @@ namespace SimuladorPropulsivo
 
                 #region T1500
                 T = 1500;
-                solver.SolveSystem(radioButton2.Checked, false, LocalDoubleParse(textM.Text), LocalDoubleParse(textPa.Text), LocalDoubleParse(textTa.Text), LocalDoubleParse(textPC.Text), LocalDoubleParse(textR.Text), LocalDoubleParse(textCP.Text), T, LocalDoubleParse(textTposqueima.Text), 1, xval, 0);
+                
+
+                solver.SolveSystem(isramjet, hasfan, cxAfterburn.Checked, LocalDoubleParse(textM.Text), LocalDoubleParse(textPa.Text), LocalDoubleParse(textTa.Text), LocalDoubleParse(textPC.Text), LocalDoubleParse(textR.Text), LocalDoubleParse(textCP.Text), T, LocalDoubleParse(textTposqueima.Text), 1, xval, 0);
 
                 ytemp = solver.Empuxo;
 
@@ -411,7 +419,9 @@ namespace SimuladorPropulsivo
 
                 #region T1700
                 T = 1700;
-                solver.SolveSystem(radioButton2.Checked, false, LocalDoubleParse(textM.Text), LocalDoubleParse(textPa.Text), LocalDoubleParse(textTa.Text), LocalDoubleParse(textPC.Text), LocalDoubleParse(textR.Text), LocalDoubleParse(textCP.Text), T, LocalDoubleParse(textTposqueima.Text), 1, xval, 0);
+                
+
+                solver.SolveSystem(isramjet, hasfan, cxAfterburn.Checked, LocalDoubleParse(textM.Text), LocalDoubleParse(textPa.Text), LocalDoubleParse(textTa.Text), LocalDoubleParse(textPC.Text), LocalDoubleParse(textR.Text), LocalDoubleParse(textCP.Text), T, LocalDoubleParse(textTposqueima.Text), 1, xval, 0);
 
                 ytemp = solver.Empuxo;
 
@@ -481,7 +491,10 @@ namespace SimuladorPropulsivo
                 int T = 1300;
                 #region T1300
 
-                solver.SolveSystem(radioButton2.Checked, false, LocalDoubleParse(textM.Text), LocalDoubleParse(textPa.Text), LocalDoubleParse(textTa.Text), LocalDoubleParse(textPC.Text), LocalDoubleParse(textR.Text), LocalDoubleParse(textCP.Text), T, LocalDoubleParse(textTposqueima.Text), 1, xval, 0);
+                bool isramjet = cbMotor.SelectedItem.Equals("RamJet");
+                bool hasfan = cbMotor.SelectedItem.Equals("TurboFan");
+
+                solver.SolveSystem(isramjet, hasfan, cxAfterburn.Checked, LocalDoubleParse(textM.Text), LocalDoubleParse(textPa.Text), LocalDoubleParse(textTa.Text), LocalDoubleParse(textPC.Text), LocalDoubleParse(textR.Text), LocalDoubleParse(textCP.Text), T, LocalDoubleParse(textTposqueima.Text), 1, xval, 0);
 
 
                 ytemp = solver.TSFC;
@@ -505,7 +518,9 @@ namespace SimuladorPropulsivo
 
                 #region T1500
                 T = 1500;
-                solver.SolveSystem(radioButton2.Checked, false, LocalDoubleParse(textM.Text), LocalDoubleParse(textPa.Text), LocalDoubleParse(textTa.Text), LocalDoubleParse(textPC.Text), LocalDoubleParse(textR.Text), LocalDoubleParse(textCP.Text), T, LocalDoubleParse(textTposqueima.Text), 1, xval, 0);
+                
+
+                solver.SolveSystem(isramjet, hasfan, cxAfterburn.Checked, LocalDoubleParse(textM.Text), LocalDoubleParse(textPa.Text), LocalDoubleParse(textTa.Text), LocalDoubleParse(textPC.Text), LocalDoubleParse(textR.Text), LocalDoubleParse(textCP.Text), T, LocalDoubleParse(textTposqueima.Text), 1, xval, 0);
 
                 ytemp = solver.TSFC;
 
@@ -521,7 +536,8 @@ namespace SimuladorPropulsivo
 
                 #region T1700
                 T = 1700;
-                solver.SolveSystem(radioButton2.Checked, false, LocalDoubleParse(textM.Text), LocalDoubleParse(textPa.Text), LocalDoubleParse(textTa.Text), LocalDoubleParse(textPC.Text), LocalDoubleParse(textR.Text), LocalDoubleParse(textCP.Text), T, LocalDoubleParse(textTposqueima.Text), 1, xval, 0);
+                
+                solver.SolveSystem(isramjet, hasfan, cxAfterburn.Checked, LocalDoubleParse(textM.Text), LocalDoubleParse(textPa.Text), LocalDoubleParse(textTa.Text), LocalDoubleParse(textPC.Text), LocalDoubleParse(textR.Text), LocalDoubleParse(textCP.Text), T, LocalDoubleParse(textTposqueima.Text), 1, xval, 0);
 
                 ytemp = solver.TSFC;
 
@@ -551,7 +567,10 @@ namespace SimuladorPropulsivo
         private void CalcSolutionByDropDowns(int T, double xval)
         {
 
+            bool isramjet = cbMotor.SelectedItem.Equals("RamJet");
+            bool hasfan = cbMotor.SelectedItem.Equals("TurboFan");
 
+            
 
             switch (comboBox1.SelectedItem.ToString())
             {
@@ -560,60 +579,34 @@ namespace SimuladorPropulsivo
                 case "MACH":
 
 
-                    ////gambimaster
-
-                    //if (xval==0)
-                    //{
-                    //    xval = 0;
-                    //}
-                    //else if (xval == 1)
-                    //{
-                    //    xval = 0.85;
-                    //}
-                    //else if (xval == 2)
-                    //{
-
-                    //    xval = 2;
-                    //}
-                    //else if (xval == 3)
-                    //{
-                    //    xval = 3;
-                    //}
-
-
-
-
-                    //textTa.Text = MachSituation[xval].Ta.ToString();
-                    //textPa.Text = MachSituation[xval].Pa.ToString();
-
-                    solver.SolveSystem(radioButton2.Checked, false, xval, LocalDoubleParse(textPa.Text), LocalDoubleParse(textTa.Text), LocalDoubleParse(textPC.Text), LocalDoubleParse(textR.Text), LocalDoubleParse(textCP.Text), T, LocalDoubleParse(textTposqueima.Text), LocalDoubleParse(textPrf.Text), LocalDoubleParse(textPrc.Text), LocalDoubleParse(textB.Text));
+                    solver.SolveSystem(isramjet, hasfan, cxAfterburn.Checked, xval, LocalDoubleParse(textPa.Text), LocalDoubleParse(textTa.Text), LocalDoubleParse(textPC.Text), LocalDoubleParse(textR.Text), LocalDoubleParse(textCP.Text), T, LocalDoubleParse(textTposqueima.Text), LocalDoubleParse(textPrf.Text), LocalDoubleParse(textPrc.Text), LocalDoubleParse(textB.Text));
                     break;
                 case "Pa":
-                    solver.SolveSystem(radioButton2.Checked, false, LocalDoubleParse(textM.Text), xval, LocalDoubleParse(textTa.Text), LocalDoubleParse(textPC.Text), LocalDoubleParse(textR.Text), LocalDoubleParse(textCP.Text), T, LocalDoubleParse(textTposqueima.Text), LocalDoubleParse(textPrf.Text), LocalDoubleParse(textPrc.Text), LocalDoubleParse(textB.Text));
+                    solver.SolveSystem(isramjet, hasfan, cxAfterburn.Checked, LocalDoubleParse(textM.Text), xval, LocalDoubleParse(textTa.Text), LocalDoubleParse(textPC.Text), LocalDoubleParse(textR.Text), LocalDoubleParse(textCP.Text), T, LocalDoubleParse(textTposqueima.Text), LocalDoubleParse(textPrf.Text), LocalDoubleParse(textPrc.Text), LocalDoubleParse(textB.Text));
                     break;
                 case "Ta":
-                    solver.SolveSystem(radioButton2.Checked, false, LocalDoubleParse(textM.Text), LocalDoubleParse(textPa.Text), xval, LocalDoubleParse(textPC.Text), LocalDoubleParse(textR.Text), LocalDoubleParse(textCP.Text), T, LocalDoubleParse(textTposqueima.Text), LocalDoubleParse(textPrf.Text), LocalDoubleParse(textPrc.Text), LocalDoubleParse(textB.Text));
+                    solver.SolveSystem(isramjet, hasfan, cxAfterburn.Checked, LocalDoubleParse(textM.Text), LocalDoubleParse(textPa.Text), xval, LocalDoubleParse(textPC.Text), LocalDoubleParse(textR.Text), LocalDoubleParse(textCP.Text), T, LocalDoubleParse(textTposqueima.Text), LocalDoubleParse(textPrf.Text), LocalDoubleParse(textPrc.Text), LocalDoubleParse(textB.Text));
                     break;
                 case "PC":
-                    solver.SolveSystem(radioButton2.Checked, false, LocalDoubleParse(textM.Text), LocalDoubleParse(textPa.Text), LocalDoubleParse(textTa.Text), xval, LocalDoubleParse(textR.Text), LocalDoubleParse(textCP.Text), T, LocalDoubleParse(textTposqueima.Text), LocalDoubleParse(textPrf.Text), LocalDoubleParse(textPrc.Text), LocalDoubleParse(textB.Text));
+                    solver.SolveSystem(isramjet, hasfan, cxAfterburn.Checked, LocalDoubleParse(textM.Text), LocalDoubleParse(textPa.Text), LocalDoubleParse(textTa.Text), xval, LocalDoubleParse(textR.Text), LocalDoubleParse(textCP.Text), T, LocalDoubleParse(textTposqueima.Text), LocalDoubleParse(textPrf.Text), LocalDoubleParse(textPrc.Text), LocalDoubleParse(textB.Text));
                     break;
                 case "R":
-                    solver.SolveSystem(radioButton2.Checked, false, LocalDoubleParse(textM.Text), LocalDoubleParse(textPa.Text), LocalDoubleParse(textTa.Text), LocalDoubleParse(textPC.Text), xval, LocalDoubleParse(textCP.Text), T, LocalDoubleParse(textTposqueima.Text), LocalDoubleParse(textPrf.Text), LocalDoubleParse(textPrc.Text), LocalDoubleParse(textB.Text));
+                    solver.SolveSystem(isramjet, hasfan, cxAfterburn.Checked, LocalDoubleParse(textM.Text), LocalDoubleParse(textPa.Text), LocalDoubleParse(textTa.Text), LocalDoubleParse(textPC.Text), xval, LocalDoubleParse(textCP.Text), T, LocalDoubleParse(textTposqueima.Text), LocalDoubleParse(textPrf.Text), LocalDoubleParse(textPrc.Text), LocalDoubleParse(textB.Text));
                     break;
                 case "Cp":
-                    solver.SolveSystem(radioButton2.Checked, false, LocalDoubleParse(textM.Text), LocalDoubleParse(textPa.Text), LocalDoubleParse(textTa.Text), LocalDoubleParse(textPC.Text), LocalDoubleParse(textR.Text), xval, T, LocalDoubleParse(textTposqueima.Text), LocalDoubleParse(textPrf.Text), LocalDoubleParse(textPrc.Text), LocalDoubleParse(textB.Text));
+                    solver.SolveSystem(isramjet, hasfan, cxAfterburn.Checked, LocalDoubleParse(textM.Text), LocalDoubleParse(textPa.Text), LocalDoubleParse(textTa.Text), LocalDoubleParse(textPC.Text), LocalDoubleParse(textR.Text), xval, T, LocalDoubleParse(textTposqueima.Text), LocalDoubleParse(textPrf.Text), LocalDoubleParse(textPrc.Text), LocalDoubleParse(textB.Text));
                     break;
                 case "T pós queima":
-                    solver.SolveSystem(radioButton2.Checked, false, LocalDoubleParse(textM.Text), LocalDoubleParse(textPa.Text), LocalDoubleParse(textTa.Text), LocalDoubleParse(textPC.Text), LocalDoubleParse(textR.Text), LocalDoubleParse(textCP.Text), T, xval, LocalDoubleParse(textPrf.Text), LocalDoubleParse(textPrc.Text), LocalDoubleParse(textB.Text));
+                    solver.SolveSystem(isramjet, hasfan, cxAfterburn.Checked, LocalDoubleParse(textM.Text), LocalDoubleParse(textPa.Text), LocalDoubleParse(textTa.Text), LocalDoubleParse(textPC.Text), LocalDoubleParse(textR.Text), LocalDoubleParse(textCP.Text), T, xval, LocalDoubleParse(textPrf.Text), LocalDoubleParse(textPrc.Text), LocalDoubleParse(textB.Text));
                     break;
                 case "Prf":
-                    solver.SolveSystem(radioButton2.Checked, false, LocalDoubleParse(textM.Text), LocalDoubleParse(textPa.Text), LocalDoubleParse(textTa.Text), LocalDoubleParse(textPC.Text), LocalDoubleParse(textR.Text), LocalDoubleParse(textCP.Text), T, LocalDoubleParse(textTposqueima.Text), xval, LocalDoubleParse(textPrc.Text), LocalDoubleParse(textB.Text));
+                    solver.SolveSystem(isramjet, hasfan, cxAfterburn.Checked, LocalDoubleParse(textM.Text), LocalDoubleParse(textPa.Text), LocalDoubleParse(textTa.Text), LocalDoubleParse(textPC.Text), LocalDoubleParse(textR.Text), LocalDoubleParse(textCP.Text), T, LocalDoubleParse(textTposqueima.Text), xval, LocalDoubleParse(textPrc.Text), LocalDoubleParse(textB.Text));
                     break;
                 case "Prc":
-                    solver.SolveSystem(radioButton2.Checked, false, LocalDoubleParse(textM.Text), LocalDoubleParse(textPa.Text), LocalDoubleParse(textTa.Text), LocalDoubleParse(textPC.Text), LocalDoubleParse(textR.Text), LocalDoubleParse(textCP.Text), T, LocalDoubleParse(textTposqueima.Text), LocalDoubleParse(textPrf.Text), xval, LocalDoubleParse(textB.Text));
+                    solver.SolveSystem(isramjet, hasfan, cxAfterburn.Checked, LocalDoubleParse(textM.Text), LocalDoubleParse(textPa.Text), LocalDoubleParse(textTa.Text), LocalDoubleParse(textPC.Text), LocalDoubleParse(textR.Text), LocalDoubleParse(textCP.Text), T, LocalDoubleParse(textTposqueima.Text), LocalDoubleParse(textPrf.Text), xval, LocalDoubleParse(textB.Text));
                     break;
                 case "B":
-                    solver.SolveSystem(radioButton2.Checked, false, LocalDoubleParse(textM.Text), LocalDoubleParse(textPa.Text), LocalDoubleParse(textTa.Text), LocalDoubleParse(textPC.Text), LocalDoubleParse(textR.Text), LocalDoubleParse(textCP.Text), T, LocalDoubleParse(textTposqueima.Text), LocalDoubleParse(textPrf.Text), LocalDoubleParse(textPrc.Text), xval);
+                    solver.SolveSystem(isramjet, hasfan, cxAfterburn.Checked, LocalDoubleParse(textM.Text), LocalDoubleParse(textPa.Text), LocalDoubleParse(textTa.Text), LocalDoubleParse(textPC.Text), LocalDoubleParse(textR.Text), LocalDoubleParse(textCP.Text), T, LocalDoubleParse(textTposqueima.Text), LocalDoubleParse(textPrf.Text), LocalDoubleParse(textPrc.Text), xval);
                     break;
 
                 default:
