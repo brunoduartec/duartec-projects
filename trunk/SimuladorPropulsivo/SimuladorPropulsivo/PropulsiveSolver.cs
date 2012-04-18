@@ -114,8 +114,7 @@ namespace SimuladorPropulsivo
             variables.Add("PA", Pa);
 
             double T02 = Ta * (1 + (gamad - 1) / 2 * Math.Pow(M, 2));
-
-
+            
             double P02 = Pa * Math.Pow((1 + Nd * (T02 / Ta - 1)), (gamad / (gamad - 1)));
 
 
@@ -137,12 +136,13 @@ namespace SimuladorPropulsivo
 
             if (hasfan)
             {
-                B = 0;
+                
                 P03 = P08 * Prc;
                 T03 = T08 * (1 + (1 / Nc) * (Math.Pow(Prc, ((gamac - 1) / gamac)) - 1));
             }
             else
             {
+                B = 0;
                 P03 = P02 * Prc;
                 T03 = T02 * (1 + (1 / Nc) * (Math.Pow(Prc, ((gamac - 1) / gamac)) - 1));
             }
@@ -194,10 +194,16 @@ namespace SimuladorPropulsivo
             TSFC = f / Empuxo * 1000;
 
 
+            double uUs = u / us;
+            variables.Add("u/us", uUs);
+
+
             double Nth = ((1+f)*(Math.Pow(us,2)/2)  - Math.Pow(u,2)/2 )/(f*PC);
+            
+            
             variables.Add("Nth", Nth);
 
-            double Ntcalc = u / (empuxo*PC);
+            double Ntcalc = u / (tSFC*PC);
             variables.Add("Nt", Ntcalc);
 
             
