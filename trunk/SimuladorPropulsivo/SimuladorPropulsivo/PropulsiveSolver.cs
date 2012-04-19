@@ -190,8 +190,7 @@ namespace SimuladorPropulsivo
             double f2 = (T06 / T05 - 1) / ((Nab * PC) / (Cp * T05) - T06 / T05);
             double P06 = P05;
 
-            variables.Add("T06", T06);
-            variables.Add("P06", P06);
+          
 
 
             maxT = T06;
@@ -201,11 +200,20 @@ namespace SimuladorPropulsivo
             if (afterburn)
             {
                 f = f1 + f2;
+
             }
             else
             {
+                T06 = T05;
+                P06 = P05;
                 f = f1;
             }
+
+
+            variables.Add("T06", T06);
+            variables.Add("P06", P06);
+
+
             double us = Math.Sqrt(2 * Nn * (gaman / (gaman - 1)) * R * T05 * (1 - Math.Pow((Pa / P05), ((gaman - 1) / gaman))));
 
             double u = M * Math.Sqrt(gamad * R * Ta);
