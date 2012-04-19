@@ -23,18 +23,26 @@ namespace SimuladorPropulsivo
 {
 	public partial class Form1 : Form
 	{
-        private PointPairList listT1 = new PointPairList();
-        private PointPairList listT2 = new PointPairList();
-        private PointPairList listT3 = new PointPairList();
+        private PointPairList listT1;
+        private PointPairList listT2;
+        private PointPairList listT3;
         private int xmin;
         private int xmax;
         private string xTitle;
         private string yTitle;
         private string Title;
+        private LineItem myCurve;
+        private LineItem myCurve2;
+        private LineItem myCurve3;
 
 		public Form1()
 		{
 			InitializeComponent();
+
+
+            listT1 = new PointPairList();
+            listT2 = new PointPairList();
+            listT3 = new PointPairList();
 		}
 
         public void Config(int xmin, int xmax,string Title,string Xtitle,string Ytitle)
@@ -112,17 +120,26 @@ namespace SimuladorPropulsivo
 
 
 
-			// Generate a red curve with diamond symbols, and "Alpha" in the legend
-			LineItem myCurve = myPane.AddCurve( "1.3k",listT1, Color.Red,SymbolType.None);
-			
+            if (myCurve == null)
+            {
+                // Generate a red curve with diamond symbols, and "Alpha" in the legend
+                 myCurve = myPane.AddCurve("1.3k", listT1, Color.Red, SymbolType.None);
 
-            // Generate a red curve with diamond symbols, and "Alpha" in the legend
-            LineItem myCurve2 = myPane.AddCurve("1.5k", listT2, Color.Green, SymbolType.None);
-        
+                // Generate a red curve with diamond symbols, and "Alpha" in the legend
+                 myCurve2 = myPane.AddCurve("1.5k", listT2, Color.Green, SymbolType.None);
 
-
-            // Generate a red curve with diamond symbols, and "Alpha" in the legend
-            LineItem myCurve3 = myPane.AddCurve("1.7k", listT3, Color.Blue, SymbolType.None);
+                // Generate a red curve with diamond symbols, and "Alpha" in the legend
+                 myCurve3 = myPane.AddCurve("1.7k", listT3, Color.Blue, SymbolType.None); 
+            }
+            else
+            {
+                myCurve.Clear();
+                myCurve2.Clear();
+                myCurve3.Clear();
+                myCurve.Points = listT1;
+                myCurve2.Points = listT2;
+                myCurve3.Points = listT3;
+            }
          
 
 
@@ -141,9 +158,6 @@ namespace SimuladorPropulsivo
             
             myPane.XAxis.Scale.Min = xmin;
             myPane.XAxis.Scale.Max = xmax;
-
-            
-
 
 			// Size the control to fit the window
 			SetSize();
