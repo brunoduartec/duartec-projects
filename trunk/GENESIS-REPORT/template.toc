@@ -1,149 +1,155 @@
-\contentsline {section}{\numberline {1}Introduction}{7}
-\contentsline {subsection}{\numberline {1.1}Embraer}{7}
-\contentsline {subsection}{\numberline {1.2}PEE}{9}
-\contentsline {subsection}{\numberline {1.3}The ERJ 145 Context}{11}
-\contentsline {subsection}{\numberline {1.4}Objective}{13}
-\contentsline {subsection}{\numberline {1.5}Solution Overview}{14}
-\contentsline {subsubsection}{\numberline {1.5.1}Revenue Increment}{14}
-\contentsline {subsubsection}{\numberline {1.5.2}Maintenance Costs Reduction}{14}
-\contentsline {subsubsection}{\numberline {1.5.3}Fuel Consumption Reduction}{15}
-\contentsline {subsubsection}{\numberline {1.5.4}Regulation}{15}
-\contentsline {subsection}{\numberline {1.6}Organizational}{16}
-\contentsline {subsubsection}{\numberline {1.6.1}Team Divisions}{16}
-\contentsline {subsubsection}{\numberline {1.6.2}Scrum}{22}
-\contentsline {subsubsection}{\numberline {1.6.3}Obeya}{23}
-\contentsline {subsubsection}{\numberline {1.6.4}5S Committee}{23}
-\contentsline {subsubsection}{\numberline {1.6.5}Information Management Committee}{23}
-\contentsline {subsubsection}{\numberline {1.6.6}Visual Communication Management Committee}{24}
-\contentsline {section}{\numberline {2}Market}{25}
-\contentsline {section}{\numberline {3}Technical Summary}{25}
-\contentsline {subsection}{\numberline {3.1}Revenue Increment Driven Modification Studies}{27}
-\contentsline {subsection}{\numberline {3.2}Maintenance Costs Reduction Modification Studies}{27}
-\contentsline {subsection}{\numberline {3.3}Fuel Consumption Reduction Modification Studies}{28}
-\contentsline {subsection}{\numberline {3.4}Regulation Driven Modification Studies}{28}
-\contentsline {section}{\numberline {4}Maintenance, Maintainability and Support}{29}
-\contentsline {subsection}{\numberline {4.1}Introduction}{29}
-\contentsline {subsection}{\numberline {4.2}Main Cost}{30}
-\contentsline {subsubsection}{\numberline {4.2.1}Operating Cost}{33}
-\contentsline {subsection}{\numberline {4.3}Factors That Influence The Maintenance}{34}
-\contentsline {subsection}{\numberline {4.4}Support, Services and Manufacturing}{35}
-\contentsline {subsection}{\numberline {4.5}Possibilities of DMC Reduction}{36}
-\contentsline {subsubsection}{\numberline {4.5.1}Business Plan}{37}
-\contentsline {subsubsection}{\numberline {4.5.2}Lead Time (Tasks Accessibility, Tasks Execution)}{41}
-\contentsline {subsubsection}{\numberline {4.5.3}Optimization of Checks Intervals}{44}
-\contentsline {subsubsection}{\numberline {4.5.4}Components Reliability}{52}
-\contentsline {subsubsection}{\numberline {4.5.5}Master Minimum Equipment List}{55}
-\contentsline {section}{\numberline {5}Interior}{64}
-\contentsline {subsection}{\numberline {5.1}Introduction}{64}
-\contentsline {subsection}{\numberline {5.2}Modification Studies}{64}
-\contentsline {subsubsection}{\numberline {5.2.1}PAX Increase}{64}
-\contentsline {subsubsection}{\numberline {5.2.2}IFE}{77}
-\contentsline {subsubsection}{\numberline {5.2.3}LED}{81}
-\contentsline {subsection}{\numberline {5.3}Mockup}{85}
-\contentsline {subsubsection}{\numberline {5.3.1}Planning}{85}
-\contentsline {subsubsection}{\numberline {5.3.2}Validation}{85}
-\contentsline {subsubsection}{\numberline {5.3.3}Pitch}{85}
-\contentsline {subsubsection}{\numberline {5.3.4}Galley size and position}{86}
-\contentsline {subsubsection}{\numberline {5.3.5}Wardrobe}{88}
-\contentsline {subsubsection}{\numberline {5.3.6}Conclusion}{89}
-\contentsline {subsection}{\numberline {5.4}Interior Costs Summary}{89}
-\contentsline {subsection}{\numberline {5.5}Conclusion}{91}
-\contentsline {section}{\numberline {6}Aeronautics}{91}
-\contentsline {subsection}{\numberline {6.1}Introduction}{91}
-\contentsline {subsection}{\numberline {6.2}Methodology}{92}
-\contentsline {subsubsection}{\numberline {6.2.1}Drag Polar}{92}
-\contentsline {subsubsection}{\numberline {6.2.2}Weight Balance Estimations}{95}
-\contentsline {subsubsection}{\numberline {6.2.3}Performance}{99}
-\contentsline {subsubsection}{\numberline {6.2.4}Flight Handling Qualities}{103}
-\contentsline {subsubsection}{\numberline {6.2.5}Gas Turbine Model}{103}
-\contentsline {subsection}{\numberline {6.3}Modification Studies}{106}
-\contentsline {subsubsection}{\numberline {6.3.1}Winglet (FA1)}{106}
-\contentsline {subsubsection}{\numberline {6.3.2}Active Winglet}{108}
-\contentsline {subsubsection}{\numberline {6.3.3}Aerodynamic Improvement (FA2)}{108}
-\contentsline {subsubsection}{\numberline {6.3.4}Fuselage Stretch (RI1-S1)}{115}
-\contentsline {subsubsection}{\numberline {6.3.5}Flap}{117}
-\contentsline {subsubsection}{\numberline {6.3.6}Single Pilot}{119}
-\contentsline {subsubsection}{\numberline {6.3.7}Tank Flamability}{119}
-\contentsline {subsubsection}{\numberline {6.3.8}Engine Selection}{121}
-\contentsline {subsubsection}{\numberline {6.3.9}Alternative Fuel}{124}
-\contentsline {subsection}{\numberline {6.4}Performance}{125}
-\contentsline {subsubsection}{\numberline {6.4.1}Takeoff}{125}
-\contentsline {subsubsection}{\numberline {6.4.2}Climb}{127}
-\contentsline {subsubsection}{\numberline {6.4.3}Cruise}{129}
-\contentsline {subsubsection}{\numberline {6.4.4}Hold}{130}
-\contentsline {subsubsection}{\numberline {6.4.5}Descent}{131}
-\contentsline {subsubsection}{\numberline {6.4.6}Landing}{132}
-\contentsline {subsubsection}{\numberline {6.4.7}Payload x Range}{132}
-\contentsline {subsubsection}{\numberline {6.4.8}Block Time \& Block Fuel}{134}
-\contentsline {subsection}{\numberline {6.5}Flight and Handling Qualities}{138}
-\contentsline {subsection}{\numberline {6.6}Flight and Handling Qualities}{138}
-\contentsline {subsubsection}{\numberline {6.6.1}Aerodynamic Coefficients}{139}
-\contentsline {subsubsection}{\numberline {6.6.2}Aircraft Load and Center of Gravity Envelope}{149}
-\contentsline {subsubsection}{\numberline {6.6.3}Stability and Maneuverability Characteristics}{151}
-\contentsline {subsubsection}{\numberline {6.6.4}Tab Modifications}{154}
-\contentsline {subsubsection}{\numberline {6.6.5}Aircraft Loading Restrictions}{166}
-\contentsline {subsection}{\numberline {6.7}Aeronautics Costs Sumary}{167}
-\contentsline {subsection}{\numberline {6.8}Conclusion}{168}
-\contentsline {section}{\numberline {7}Structures}{169}
-\contentsline {subsection}{\numberline {7.1}Introduction}{169}
-\contentsline {subsection}{\numberline {7.2}Modification Studies}{169}
-\contentsline {subsubsection}{\numberline {7.2.1}Winglet}{169}
-\contentsline {subsubsection}{\numberline {7.2.2}Fuselage}{173}
-\contentsline {subsection}{\numberline {7.3}Structures Costs Sumary}{177}
-\contentsline {subsection}{\numberline {7.4}Conclusion}{177}
-\contentsline {section}{\numberline {8}ECS}{177}
-\contentsline {subsection}{\numberline {8.1}Introduction}{177}
-\contentsline {subsection}{\numberline {8.2}Modification Studies}{178}
-\contentsline {subsubsection}{\numberline {8.2.1}Cabin Temperature Control}{178}
-\contentsline {subsubsection}{\numberline {8.2.2}Icing Protection System}{180}
-\contentsline {subsubsection}{\numberline {8.2.3}Bleed Temperature Control System}{185}
-\contentsline {subsubsection}{\numberline {8.2.4}Bleed Leak Monitoring System}{193}
-\contentsline {subsubsection}{\numberline {8.2.5}AMS Controller Inclusion}{201}
-\contentsline {subsection}{\numberline {8.3}ECS Costs Sumary}{201}
-\contentsline {subsection}{\numberline {8.4}Conclusion}{201}
-\contentsline {section}{\numberline {9}Avionics Systems}{202}
-\contentsline {subsection}{\numberline {9.1}Introduction}{202}
-\contentsline {subsubsection}{\numberline {9.1.1}ADS-B - Automatic dependent surveillance-broadcast}{203}
-\contentsline {subsubsection}{\numberline {9.1.2}CPDLC - Controller-pilot data link communications}{204}
-\contentsline {subsubsection}{\numberline {9.1.3}RNP - Required Navigation Performance}{205}
-\contentsline {subsection}{\numberline {9.2}Modification Studies}{206}
-\contentsline {subsubsection}{\numberline {9.2.1}VNAV - Vertical Navigation}{207}
-\contentsline {subsubsection}{\numberline {9.2.2}RNP - Required Navigation Performance}{208}
-\contentsline {subsubsection}{\numberline {9.2.3}LPV - Localizer Performance with Vertical Guidance}{208}
-\contentsline {subsubsection}{\numberline {9.2.4}ADS-B - Automatic dependent surveillance-broadcast}{210}
-\contentsline {subsubsection}{\numberline {9.2.5}Trade-off analysis}{210}
-\contentsline {subsection}{\numberline {9.3}Avionics Costs Summary}{211}
-\contentsline {subsection}{\numberline {9.4}Conclusion}{211}
-\contentsline {section}{\numberline {10}Electrical Systems}{211}
-\contentsline {subsection}{\numberline {10.1}Introduction}{211}
-\contentsline {subsection}{\numberline {10.2}Modification Studies}{212}
-\contentsline {subsubsection}{\numberline {10.2.1}Wiring Refit}{212}
-\contentsline {subsubsection}{\numberline {10.2.2}APU Starter Generator and GCU}{214}
-\contentsline {subsubsection}{\numberline {10.2.3}Ni-Cd Batteries}{216}
-\contentsline {subsubsection}{\numberline {10.2.4}Backup Battery}{217}
-\contentsline {subsubsection}{\numberline {10.2.5}Static Inverter}{217}
-\contentsline {subsection}{\numberline {10.3}Certification and Development}{218}
-\contentsline {subsection}{\numberline {10.4}Electrical Load Analysis}{220}
-\contentsline {subsection}{\numberline {10.5}Electrical Costs Sumary}{223}
-\contentsline {subsection}{\numberline {10.6}Conclusion}{223}
-\contentsline {section}{\numberline {11}Hidromechanical Systems}{224}
-\contentsline {subsection}{\numberline {11.1}Introduction}{224}
-\contentsline {subsection}{\numberline {11.2}Maintenance Driven Modifications (MH1)}{225}
-\contentsline {subsubsection}{\numberline {11.2.1}Break Temperature Sensor (MH1-H1)}{225}
-\contentsline {subsubsection}{\numberline {11.2.2}Break Control Unit (MH1-H2)}{229}
-\contentsline {subsubsection}{\numberline {11.2.3}Wheel Speed Coupling (MH1-H3)}{231}
-\contentsline {subsubsection}{\numberline {11.2.4}Aileron Damper Removal (MH1-H4)}{233}
-\contentsline {subsubsection}{\numberline {11.2.5}Flap Trasmission Break (MH1-H5)}{234}
-\contentsline {subsubsection}{\numberline {11.2.6}Gust-Lock Lubrication (MH1-H6)}{236}
-\contentsline {subsubsection}{\numberline {11.2.7}Spoiler Control Unit (MH1-H7)}{237}
-\contentsline {subsubsection}{\numberline {11.2.8}Angle of Attack Sensor (MH1-H8)}{239}
-\contentsline {subsubsection}{\numberline {11.2.9}Flight Control Cables Material Change (MH1-H9)}{239}
-\contentsline {subsubsection}{\numberline {11.2.10}Add Filter at Hydraulic System and Message in Eicas}{240}
-\contentsline {subsection}{\numberline {11.3}Revenue Increment Driven Modification Studies (RI1)}{242}
-\contentsline {subsubsection}{\numberline {11.3.1}Hydraulic Tubes Increase (RI1-H1)}{242}
-\contentsline {subsubsection}{\numberline {11.3.2}Flight Control Cables Increase (RI1-H2)}{244}
-\contentsline {subsection}{\numberline {11.4}Hydromechanical Costs Sumary}{244}
-\contentsline {subsection}{\numberline {11.5}Conclusion}{246}
-\contentsline {section}{\numberline {12}Finances}{252}
-\contentsline {subsection}{\numberline {12.1}Costs Estimatives}{252}
-\contentsline {section}{\numberline {13}Conclusion}{254}
+\contentsline {section}{\numberline {1}Introduction}{17}{section.1}
+\contentsline {subsection}{\numberline {1.1}Embraer}{17}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}PEE}{19}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}The ERJ 145 Context}{21}{subsection.1.3}
+\contentsline {subsection}{\numberline {1.4}Objective}{23}{subsection.1.4}
+\contentsline {subsection}{\numberline {1.5}Solution Overview}{24}{subsection.1.5}
+\contentsline {subsubsection}{\numberline {1.5.1}Revenue Increment}{24}{subsubsection.1.5.1}
+\contentsline {subsubsection}{\numberline {1.5.2}Maintenance Costs Reduction}{24}{subsubsection.1.5.2}
+\contentsline {subsubsection}{\numberline {1.5.3}Fuel Consumption Reduction}{25}{subsubsection.1.5.3}
+\contentsline {subsubsection}{\numberline {1.5.4}Regulation}{25}{subsubsection.1.5.4}
+\contentsline {subsection}{\numberline {1.6}Organizational}{26}{subsection.1.6}
+\contentsline {subsubsection}{\numberline {1.6.1}Team Divisions}{26}{subsubsection.1.6.1}
+\contentsline {subsubsection}{\numberline {1.6.2}Scrum}{32}{subsubsection.1.6.2}
+\contentsline {subsubsection}{\numberline {1.6.3}Obeya}{33}{subsubsection.1.6.3}
+\contentsline {subsubsection}{\numberline {1.6.4}5S Committee}{33}{subsubsection.1.6.4}
+\contentsline {subsubsection}{\numberline {1.6.5}Information Management Committee}{33}{subsubsection.1.6.5}
+\contentsline {subsubsection}{\numberline {1.6.6}Visual Communication Management Committee}{34}{subsubsection.1.6.6}
+\contentsline {section}{\numberline {2}Market}{35}{section.2}
+\contentsline {subsection}{\numberline {2.1}Market Context}{35}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}New Markets}{35}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Economic Model}{35}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Product Specification}{35}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Value and Price Determination}{39}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.6}Sales Estimative}{39}{subsection.2.6}
+\contentsline {section}{\numberline {3}Technical Summary}{39}{section.3}
+\contentsline {subsection}{\numberline {3.1}Revenue Increment Driven Modification Studies}{41}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Maintenance Costs Reduction Modification Studies}{41}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Fuel Consumption Reduction Modification Studies}{42}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Regulation Driven Modification Studies}{42}{subsection.3.4}
+\contentsline {section}{\numberline {4}Maintenance, Maintainability and Support}{43}{section.4}
+\contentsline {subsection}{\numberline {4.1}Introduction}{43}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Main Cost}{44}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}Operating Cost}{47}{subsubsection.4.2.1}
+\contentsline {subsection}{\numberline {4.3}Factors That Influence The Maintenance}{48}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Support, Services and Manufacturing}{49}{subsection.4.4}
+\contentsline {subsection}{\numberline {4.5}Possibilities of DMC Reduction}{50}{subsection.4.5}
+\contentsline {subsubsection}{\numberline {4.5.1}Business Plan}{51}{subsubsection.4.5.1}
+\contentsline {subsubsection}{\numberline {4.5.2}Lead Time (Tasks Accessibility, Tasks Execution)}{55}{subsubsection.4.5.2}
+\contentsline {subsubsection}{\numberline {4.5.3}Optimization of Checks Intervals}{58}{subsubsection.4.5.3}
+\contentsline {subsubsection}{\numberline {4.5.4}Components Reliability}{66}{subsubsection.4.5.4}
+\contentsline {subsubsection}{\numberline {4.5.5}Master Minimum Equipment List}{69}{subsubsection.4.5.5}
+\contentsline {section}{\numberline {5}Interior}{78}{section.5}
+\contentsline {subsection}{\numberline {5.1}Introduction}{78}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Modification Studies}{78}{subsection.5.2}
+\contentsline {subsubsection}{\numberline {5.2.1}PAX Increase}{78}{subsubsection.5.2.1}
+\contentsline {subsubsection}{\numberline {5.2.2}IFE}{92}{subsubsection.5.2.2}
+\contentsline {subsubsection}{\numberline {5.2.3}LED}{97}{subsubsection.5.2.3}
+\contentsline {subsection}{\numberline {5.3}Mockup}{101}{subsection.5.3}
+\contentsline {subsubsection}{\numberline {5.3.1}Planning}{101}{subsubsection.5.3.1}
+\contentsline {subsubsection}{\numberline {5.3.2}Validation}{101}{subsubsection.5.3.2}
+\contentsline {subsubsection}{\numberline {5.3.3}Pitch}{102}{subsubsection.5.3.3}
+\contentsline {subsubsection}{\numberline {5.3.4}Galley size and position}{103}{subsubsection.5.3.4}
+\contentsline {subsubsection}{\numberline {5.3.5}Wardrobe}{104}{subsubsection.5.3.5}
+\contentsline {subsubsection}{\numberline {5.3.6}Conclusion}{105}{subsubsection.5.3.6}
+\contentsline {subsection}{\numberline {5.4}Interior Costs Summary}{105}{subsection.5.4}
+\contentsline {subsection}{\numberline {5.5}Conclusion}{107}{subsection.5.5}
+\contentsline {section}{\numberline {6}Aeronautics}{107}{section.6}
+\contentsline {subsection}{\numberline {6.1}Introduction}{107}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Methodology}{108}{subsection.6.2}
+\contentsline {subsubsection}{\numberline {6.2.1}Drag Polar}{108}{subsubsection.6.2.1}
+\contentsline {subsubsection}{\numberline {6.2.2}Weight Balance Estimations}{111}{subsubsection.6.2.2}
+\contentsline {subsubsection}{\numberline {6.2.3}Performance}{115}{subsubsection.6.2.3}
+\contentsline {subsubsection}{\numberline {6.2.4}Flight Handling Qualities}{119}{subsubsection.6.2.4}
+\contentsline {subsubsection}{\numberline {6.2.5}Gas Turbine Model}{121}{subsubsection.6.2.5}
+\contentsline {subsection}{\numberline {6.3}Modification Studies}{125}{subsection.6.3}
+\contentsline {subsubsection}{\numberline {6.3.1}Winglet (FA1)}{125}{subsubsection.6.3.1}
+\contentsline {subsubsection}{\numberline {6.3.2}Active Winglet}{127}{subsubsection.6.3.2}
+\contentsline {subsubsection}{\numberline {6.3.3}Aerodynamic Improvement (FA2)}{127}{subsubsection.6.3.3}
+\contentsline {subsubsection}{\numberline {6.3.4}Fuselage Stretch (RI1-S1)}{134}{subsubsection.6.3.4}
+\contentsline {subsubsection}{\numberline {6.3.5}Flap}{136}{subsubsection.6.3.5}
+\contentsline {subsubsection}{\numberline {6.3.6}Single Pilot}{138}{subsubsection.6.3.6}
+\contentsline {subsubsection}{\numberline {6.3.7}Tank Flamability}{138}{subsubsection.6.3.7}
+\contentsline {subsubsection}{\numberline {6.3.8}Engine Selection}{140}{subsubsection.6.3.8}
+\contentsline {subsubsection}{\numberline {6.3.9}Alternative Fuel}{143}{subsubsection.6.3.9}
+\contentsline {subsection}{\numberline {6.4}Performance}{144}{subsection.6.4}
+\contentsline {subsubsection}{\numberline {6.4.1}Takeoff}{144}{subsubsection.6.4.1}
+\contentsline {subsubsection}{\numberline {6.4.2}Climb}{146}{subsubsection.6.4.2}
+\contentsline {subsubsection}{\numberline {6.4.3}Cruise}{148}{subsubsection.6.4.3}
+\contentsline {subsubsection}{\numberline {6.4.4}Hold}{149}{subsubsection.6.4.4}
+\contentsline {subsubsection}{\numberline {6.4.5}Descent}{150}{subsubsection.6.4.5}
+\contentsline {subsubsection}{\numberline {6.4.6}Landing}{151}{subsubsection.6.4.6}
+\contentsline {subsubsection}{\numberline {6.4.7}Payload x Range}{151}{subsubsection.6.4.7}
+\contentsline {subsubsection}{\numberline {6.4.8}Block Time \& Block Fuel}{153}{subsubsection.6.4.8}
+\contentsline {subsection}{\numberline {6.5}Flight and Handling Qualities}{157}{subsection.6.5}
+\contentsline {subsection}{\numberline {6.6}Flight and Handling Qualities}{157}{subsection.6.6}
+\contentsline {subsubsection}{\numberline {6.6.1}Aerodynamic Coefficients}{158}{subsubsection.6.6.1}
+\contentsline {subsubsection}{\numberline {6.6.2}Aircraft Load and Center of Gravity Envelope}{168}{subsubsection.6.6.2}
+\contentsline {subsubsection}{\numberline {6.6.3}Stability and Maneuverability Characteristics}{170}{subsubsection.6.6.3}
+\contentsline {subsubsection}{\numberline {6.6.4}Tab Modifications}{173}{subsubsection.6.6.4}
+\contentsline {subsubsection}{\numberline {6.6.5}Aircraft Loading Restrictions}{185}{subsubsection.6.6.5}
+\contentsline {subsection}{\numberline {6.7}Aeronautics Costs Sumary}{186}{subsection.6.7}
+\contentsline {subsection}{\numberline {6.8}Conclusion}{187}{subsection.6.8}
+\contentsline {section}{\numberline {7}Structures}{188}{section.7}
+\contentsline {subsection}{\numberline {7.1}Introduction}{188}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}Modification Studies}{188}{subsection.7.2}
+\contentsline {subsubsection}{\numberline {7.2.1}Winglet}{188}{subsubsection.7.2.1}
+\contentsline {subsubsection}{\numberline {7.2.2}Fuselage}{192}{subsubsection.7.2.2}
+\contentsline {subsection}{\numberline {7.3}Structures Costs Sumary}{196}{subsection.7.3}
+\contentsline {subsection}{\numberline {7.4}Conclusion}{196}{subsection.7.4}
+\contentsline {section}{\numberline {8}ECS}{196}{section.8}
+\contentsline {subsection}{\numberline {8.1}Introduction}{196}{subsection.8.1}
+\contentsline {subsection}{\numberline {8.2}Modification Studies}{197}{subsection.8.2}
+\contentsline {subsubsection}{\numberline {8.2.1}Cabin Temperature Control}{197}{subsubsection.8.2.1}
+\contentsline {subsubsection}{\numberline {8.2.2}Icing Protection System}{199}{subsubsection.8.2.2}
+\contentsline {subsubsection}{\numberline {8.2.3}Bleed Temperature Control System}{204}{subsubsection.8.2.3}
+\contentsline {subsubsection}{\numberline {8.2.4}Bleed Leak Monitoring System}{212}{subsubsection.8.2.4}
+\contentsline {subsubsection}{\numberline {8.2.5}AMS Controller Inclusion}{221}{subsubsection.8.2.5}
+\contentsline {subsection}{\numberline {8.3}ECS Costs Sumary}{221}{subsection.8.3}
+\contentsline {subsection}{\numberline {8.4}Conclusion}{221}{subsection.8.4}
+\contentsline {section}{\numberline {9}Avionics Systems}{222}{section.9}
+\contentsline {subsection}{\numberline {9.1}Introduction}{222}{subsection.9.1}
+\contentsline {subsubsection}{\numberline {9.1.1}ADS-B - Automatic dependent surveillance-broadcast}{223}{subsubsection.9.1.1}
+\contentsline {subsubsection}{\numberline {9.1.2}CPDLC - Controller-pilot data link communications}{224}{subsubsection.9.1.2}
+\contentsline {subsubsection}{\numberline {9.1.3}RNP - Required Navigation Performance}{225}{subsubsection.9.1.3}
+\contentsline {subsection}{\numberline {9.2}Modification Studies}{226}{subsection.9.2}
+\contentsline {subsubsection}{\numberline {9.2.1}VNAV - Vertical Navigation}{227}{subsubsection.9.2.1}
+\contentsline {subsubsection}{\numberline {9.2.2}RNP - Required Navigation Performance}{228}{subsubsection.9.2.2}
+\contentsline {subsubsection}{\numberline {9.2.3}LPV - Localizer Performance with Vertical Guidance}{228}{subsubsection.9.2.3}
+\contentsline {subsubsection}{\numberline {9.2.4}ADS-B - Automatic dependent surveillance-broadcast}{230}{subsubsection.9.2.4}
+\contentsline {subsubsection}{\numberline {9.2.5}Trade-off analysis}{230}{subsubsection.9.2.5}
+\contentsline {subsection}{\numberline {9.3}Avionics Costs Summary}{231}{subsection.9.3}
+\contentsline {subsection}{\numberline {9.4}Conclusion}{231}{subsection.9.4}
+\contentsline {section}{\numberline {10}Electrical Systems}{231}{section.10}
+\contentsline {subsection}{\numberline {10.1}Introduction}{231}{subsection.10.1}
+\contentsline {subsection}{\numberline {10.2}Modification Studies}{232}{subsection.10.2}
+\contentsline {subsubsection}{\numberline {10.2.1}Wiring Refit}{232}{subsubsection.10.2.1}
+\contentsline {subsubsection}{\numberline {10.2.2}APU Starter Generator and GCU}{234}{subsubsection.10.2.2}
+\contentsline {subsubsection}{\numberline {10.2.3}Ni-Cd Batteries}{236}{subsubsection.10.2.3}
+\contentsline {subsubsection}{\numberline {10.2.4}Backup Battery}{237}{subsubsection.10.2.4}
+\contentsline {subsubsection}{\numberline {10.2.5}Static Inverter}{237}{subsubsection.10.2.5}
+\contentsline {subsection}{\numberline {10.3}Certification and Development}{238}{subsection.10.3}
+\contentsline {subsection}{\numberline {10.4}Electrical Load Analysis}{240}{subsection.10.4}
+\contentsline {subsection}{\numberline {10.5}Electrical Costs Sumary}{243}{subsection.10.5}
+\contentsline {subsection}{\numberline {10.6}Conclusion}{243}{subsection.10.6}
+\contentsline {section}{\numberline {11}Hidromechanical Systems}{244}{section.11}
+\contentsline {subsection}{\numberline {11.1}Introduction}{244}{subsection.11.1}
+\contentsline {subsection}{\numberline {11.2}Maintenance Driven Modifications (MH1)}{245}{subsection.11.2}
+\contentsline {subsubsection}{\numberline {11.2.1}Break Temperature Sensor (MH1-H1)}{245}{subsubsection.11.2.1}
+\contentsline {subsubsection}{\numberline {11.2.2}Break Control Unit (MH1-H2)}{249}{subsubsection.11.2.2}
+\contentsline {subsubsection}{\numberline {11.2.3}Wheel Speed Coupling (MH1-H3)}{251}{subsubsection.11.2.3}
+\contentsline {subsubsection}{\numberline {11.2.4}Aileron Damper Removal (MH1-H4)}{253}{subsubsection.11.2.4}
+\contentsline {subsubsection}{\numberline {11.2.5}Flap Trasmission Break (MH1-H5)}{254}{subsubsection.11.2.5}
+\contentsline {subsubsection}{\numberline {11.2.6}Gust-Lock Lubrication (MH1-H6)}{256}{subsubsection.11.2.6}
+\contentsline {subsubsection}{\numberline {11.2.7}Spoiler Control Unit (MH1-H7)}{257}{subsubsection.11.2.7}
+\contentsline {subsubsection}{\numberline {11.2.8}Angle of Attack Sensor (MH1-H8)}{259}{subsubsection.11.2.8}
+\contentsline {subsubsection}{\numberline {11.2.9}Flight Control Cables Material Change (MH1-H9)}{259}{subsubsection.11.2.9}
+\contentsline {subsubsection}{\numberline {11.2.10}Add Filter at Hydraulic System and Message in Eicas}{260}{subsubsection.11.2.10}
+\contentsline {subsection}{\numberline {11.3}Revenue Increment Driven Modification Studies (RI1)}{262}{subsection.11.3}
+\contentsline {subsubsection}{\numberline {11.3.1}Hydraulic Tubes Increase (RI1-H1)}{262}{subsubsection.11.3.1}
+\contentsline {subsubsection}{\numberline {11.3.2}Flight Control Cables Increase (RI1-H2)}{264}{subsubsection.11.3.2}
+\contentsline {subsection}{\numberline {11.4}Hydromechanical Costs Sumary}{264}{subsection.11.4}
+\contentsline {subsection}{\numberline {11.5}Conclusion}{266}{subsection.11.5}
+\contentsline {section}{\numberline {12}Finances}{272}{section.12}
+\contentsline {subsection}{\numberline {12.1}Costs Estimatives}{272}{subsection.12.1}
+\contentsline {section}{\numberline {13}Conclusion}{274}{section.13}
