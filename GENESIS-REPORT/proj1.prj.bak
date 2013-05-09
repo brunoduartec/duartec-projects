@@ -4,13 +4,19 @@
 0
 1
 template.tex
-38
+39
 1
 0
 
 template.tex
 TeX
-286273531 0 -1 0 -1 4388 0 0 784 241 0 25 187 -1 -1 0 0 24 125 125 24 1 0 4388 -1   0
+286273531 0 -1 0 -1 1616 0 0 784 241 0 193 153 -1 -1 0 0 4122 -1 -1 4122 1 0 1616 -1   0
+:\Program Files (x86)\WinEdt Team\WinEdt 7\Exec\PDF\PDFCloseDoc.edt
+ASCII:EDT
+269494138 0 58 1018 56 53 0 0 930 284 1 489 153 -1 -1 0 0 21 0 0 21 1 0 53 56   0
+Parts\ECS\ModificationStudies\bleedtemperaturecontrolsystem.tex
+TeX
+1060859 0 -1 6519 -1 6519 125 125 1058 414 0 521 170 -1 -1 0 0 29 -1 -1 29 1 0 6519 -1   0
 Parts\Introduction\introduction.tex
 TeX
 1060859 0 -1 19441 -1 19414 22 22 1390 519 0 289 646 -1 -1 0 0 0 -1 -1 0 1 0 19414 -1   0
@@ -119,9 +125,6 @@ TeX
 Parts\ECS\ModificationStudies\icingprotectionsystem.tex
 TeX
 269496315 0 -1 0 -1 0 100 100 1033 408 0 25 0 -1 -1 0 0 -1 -1 -1 -1 1 0 0 -1   0
-Parts\ECS\ModificationStudies\bleedtemperaturecontrolsystem.tex
-TeX
-269496315 0 -1 0 -1 0 125 125 1058 414 0 25 0 -1 -1 0 0 -1 -1 -1 -1 1 0 0 -1   0
 
 *template.tex
 >
