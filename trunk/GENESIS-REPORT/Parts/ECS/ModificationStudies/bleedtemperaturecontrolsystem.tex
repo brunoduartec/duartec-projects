@@ -1,5 +1,4 @@
-\textbf{Proposed Modification
-}
+\textbf{Proposed Modification}\\
 Nowadays, in ERJ-145 there is an analog control to bleed temperature system. Thus, the proposed modification  in the system is the inclusion of digital control, as shown in  \ref{fig:BD}.
 The goal is to control the flow properly, which results in a better energy efficiency.
 
@@ -9,8 +8,7 @@ The goal is to control the flow properly, which results in a better energy effic
 \label{fig:BD}
 \end{figure}
 
-\textbf{Bleed Cooling
-}
+\textbf{Bleed Cooling}\\
 In the Bleed Cooling system, there are Dowstream Bleed Air Check Valve (BACV)/ High Stage Valve (HSV) branches junctions, a Pre-cooler limits bleed air temperature. This function of temperature limitation is performed jointly with associated Pre-cooler temperature control. This control is based on a Fan Air Valve (FAV) and a Temperature Sensor dowstream the Pre-cooler that modulates the Fan Air Valve controlling the cold airflow. As Pre-cooler dowstream temperature goes up, the valve is controlled to open, closing the loop for temperature limitation. If the Pre-cooler outlet bleed air temperature is below the FAV is closed. The scheme is shown in \ref{fig:arch}.
 
 \begin{figure}[H] % Example image
@@ -19,13 +17,11 @@ In the Bleed Cooling system, there are Dowstream Bleed Air Check Valve (BACV)/ H
 \label{fig:arch}
 \end{figure}
 
-\textbf{Amesim Model
-}
+\textbf{Amesim Model}\\
 The system was implemented in the Amesim software, considering only right engine.
 Pressure drop through the Pre-cooler coolant side, pressure drop through the coolant side ducting system, pressure drop through the Fan air valve are considered in the Amesim according to the parameters set in model.
 
-\textbf{Fan Air Valve
-}
+\textbf{Fan Air Valve}\\
 Nowadays, the fan air valve is a normally closed, 3 inch modulating valve powered by a single acting pneumatic actuator. Bleed air is brought into the actuator, through a reverse Pitot pressure pick-up, passes through a filter and then through an orifice to a supply pressure ball regulator. This regulated supply pressure becomes the power source for the actuator. Valve closing force is provided by the actuator spring which is opposed by an opening force supplied by servo pressure acting against the actuator piston.
 Servo pressure in the actuator chamber is created by a primary orifice downstream of the regulated supply in conjunction with a ball servo valve in the remotely located temperature sensor. A servo tube connects the actuator chamber to the bimetallic temperature sensor, located at the Pre-cooler outlet temperature to the required level.
 In this phase of design, the fan air valve will be replaced by digital butterfly valve. This valve should receive the signal from the controller to control its opening angle, as presented in \ref{fig:Valve}. In addition, digital temperature sensors are included.
@@ -36,10 +32,9 @@ In this phase of design, the fan air valve will be replaced by digital butterfly
 \label{fig:Valve}
 \end{figure}
 
-\textbf{Pre-cooler
-}
+\textbf{Pre-cooler}\\
 The pre-cooler is a stainless steel secondary surface type heat exchanger designed for a single pass of charge bleed air and cooling air, giving a single pass cross flow configuration.
-The pre-cooler cools engine bleed air utilizing fan air as a heat sink. the fan air (cooling) circuit extends from rectangular inlet glange through core to the outlet flange. Circular ducts with V-bands flanges are provided for bleed duct connection in hot side. The pre-cooler is designed to mount on 4 bolt hard mounting system. The mounting holes are in the fan outlet flange for easy installation and removal of the unit.
+The pre-cooler cools engine bleed air utilizing fan air as a heat sink. The fan air (cooling) circuit extends from rectangular inlet flange through core to the outlet flange. Circular ducts with V-bands flanges are provided for bleed duct connection in hot side. The pre-cooler is designed to mount on 4 bolt hard mounting system. The mounting holes are in the fan outlet flange for easy installation and removal of the unit.
 The \ref{fig:Precooler} illustrates the dimensions of pre-cooler.
 
 \begin{figure}[H] % Example image
@@ -48,29 +43,30 @@ The \ref{fig:Precooler} illustrates the dimensions of pre-cooler.
 \label{fig:Precooler}
 \end{figure}
 
-\textbf{Pre-cooler efficiency
-}
+\textbf{Pre-cooler efficiency}\\
 The efficiency values depending on the mass ratio between the bleed airflow and coolant airflow.
-One polynomial interpolation of the Pre-cooler efficiency graph has lead to the following equation for efficiency:
-
-$\varepsilon = \left ( -2.2060000736 * 10^{-23} * WBLEED^{6} + 1.5304145481 * 10^{-20} * WBLEED^{5} //
-- 4.1128660582 * 10^{-18} * WBLEED^{4} + 5.4055328989 * 10^{-16} * WBLEED^{3} - 3.6205321849 * 10-14 * WBLEED^{2} //
-+ 1.1887606580 * 10^{-12} * WBLEED - 1.6356287360 * 10-11 \right ) * WB13^{6} +\left (7.9965445313 *10^{-21} * WBLEED^{6} //
-- 5.6665115293 * 10^{-18} * WBLEED^{5} + 1.5538518402 * 10^{-15} * WBLEED^{4} - 2.0834072071 * 10^{-13} * WBLEED^{3} //
-+ 1.4249410471 * 10^{-11} * WBLEED^{2} - 4.7944042263 * 10^{-10} * WBLEED + 6.8373470825 * 10^{-9} \right )* WB13^{5} //
-+ \left (-1.0686442651 * 10^{-18} * WBLEED^{6} + 7.8378514008 * 10^{-16} * WBLEED^{5} - 2.2160267667 * 10^{-13} * WBLEED^{4} //
-+3.0575346911 * 10^{-11} * WBLEED^{3} - 2.1529715320 * 10^{-9} * WBLEED^{2} + 7.5015687777 * 10^{-8} * WBLEED //
-- 1.1299349206 * 10^{-6} \right )* WB13^{4}+\left (6.1318637940 * 10^{-17} * WBLEED^{6} - 4.8249650657 * 10^{-14} * WBLEED^{5} //
-+ 1.4424078434 * 10^{-11} * WBLEED^{4} - 2.0872181657 * 10^{-9} * WBLEED^{3} + 1.5387640939 * 10^{-7} * WBLEED^{2} //
-- 5.6704853374 * 10^{-6} * WBLEED + 9.3617430794 * 10^{-5} \right )* WB13^{3} + \left ( -1.0455052285 * 10^{-15} * WBLEED^{6} //
-+ 1.0796718214 * 10^{-12} * WBLEED^{5} - 3.7877902949 * 10^{-10} * WBLEED^{4} + 6.1279719939 * 10^{-8} * WBLEED^{3} //
-- 4.9655238423 * 10^{-6} * WBLEED^{2} + 2.0460287255 * 10^{-4} * WBLEED - 4.0527090343 * 10^{-3}  \right ) * WB13^{2} //
-+ \left ( -3.2081167405 * 10^{-14} * WBLEED^{6}+ 1.2335031617 * 10^{-11} * WBLEED^{5} - 9.4717868057 * 10^{-10} * WBLEED^{4} //
-- 1.6869019125 * 10^{-7} * WBLEED^{3} + 3.3270387030 * 10^{-5} * WBLEED^{2} - 2.3321626232 * 10^{-3} * WBLEED //
-+ 8.3812645671 * 10^{-2} \right )* WB13 + \left ( 9.1513341076 * 10^{-13} * WBLEED^{6} - 5.5869341673 * 10^{-10} * WBLEED^{5} //
-+ 1.3602596863 * 10^{-7} * WBLEED^{4} - 1.6944550619 * 10^{-5} * WBLEED^{3} + 1.1442890868 * 10^{-3} * WBLEED^{2} //
+One polynomial interpolation of the Pre-cooler efficiency graph has lead to the following equation for efficiency:\\
+\begingroup
+\everymath{\scriptstyle}
+\tiny
+$\varepsilon = \left ( -2.2060000736 * 10^{-23} * WBLEED^{6} + 1.5304145481 * 10^{-20} * WBLEED^{5}\\
+- 4.1128660582 * 10^{-18} * WBLEED^{4} + 5.4055328989 * 10^{-16} * WBLEED^{3} - 3.6205321849 * 10-14 * WBLEED^{2}\\
++ 1.1887606580 * 10^{-12} * WBLEED - 1.6356287360 * 10-11 \right ) * WB13^{6} +\left (7.9965445313 *10^{-21} * WBLEED^{6}
+- 5.6665115293 * 10^{-18} * WBLEED^{5} + 1.5538518402 * 10^{-15} * WBLEED^{4} - 2.0834072071 * 10^{-13} * WBLEED^{3}
++ 1.4249410471 * 10^{-11} * WBLEED^{2} - 4.7944042263 * 10^{-10} * WBLEED + 6.8373470825 * 10^{-9} \right )* WB13^{5}
++ \left (-1.0686442651 * 10^{-18} * WBLEED^{6} + 7.8378514008 * 10^{-16} * WBLEED^{5} - 2.2160267667 * 10^{-13} * WBLEED^{4}
++3.0575346911 * 10^{-11} * WBLEED^{3} - 2.1529715320 * 10^{-9} * WBLEED^{2} + 7.5015687777 * 10^{-8} * WBLEED
+- 1.1299349206 * 10^{-6} \right )* WB13^{4}+\left (6.1318637940 * 10^{-17} * WBLEED^{6} - 4.8249650657 * 10^{-14} * WBLEED^{5}
++ 1.4424078434 * 10^{-11} * WBLEED^{4} - 2.0872181657 * 10^{-9} * WBLEED^{3} + 1.5387640939 * 10^{-7} * WBLEED^{2}
+- 5.6704853374 * 10^{-6} * WBLEED + 9.3617430794 * 10^{-5} \right )* WB13^{3} + \left ( -1.0455052285 * 10^{-15} * WBLEED^{6}
++ 1.0796718214 * 10^{-12} * WBLEED^{5} - 3.7877902949 * 10^{-10} * WBLEED^{4} + 6.1279719939 * 10^{-8} * WBLEED^{3}
+- 4.9655238423 * 10^{-6} * WBLEED^{2} + 2.0460287255 * 10^{-4} * WBLEED - 4.0527090343 * 10^{-3}  \right ) * WB13^{2}
++ \left ( -3.2081167405 * 10^{-14} * WBLEED^{6}+ 1.2335031617 * 10^{-11} * WBLEED^{5} - 9.4717868057 * 10^{-10} * WBLEED^{4}
+- 1.6869019125 * 10^{-7} * WBLEED^{3} + 3.3270387030 * 10^{-5} * WBLEED^{2} - 2.3321626232 * 10^{-3} * WBLEED
++ 8.3812645671 * 10^{-2} \right )* WB13 + \left ( 9.1513341076 * 10^{-13} * WBLEED^{6} - 5.5869341673 * 10^{-10} * WBLEED^{5}
++ 1.3602596863 * 10^{-7} * WBLEED^{4} - 1.6944550619 * 10^{-5} * WBLEED^{3} + 1.1442890868 * 10^{-3} * WBLEED^{2}
 - 3.9492061807 * 10^{-2} * WBLEED+5.1309382599 * 10^{-1}) \right )$
-
+\endgroup
 The unit for the airflows WBLEED and WB13 shall be [lb/min].
 
 This equation was implemented in the Amesim software through of object called 'supercomponent', as shown \ref{fig:Efficiency} efficiency..
@@ -83,12 +79,10 @@ This equation was implemented in the Amesim software through of object called 's
 
 When the Anti-Ice System is OFF, the bleed air temperature dowstream the Pre-cooler is controlled within the low temperature range, respectively 370\degree F - 430\degree F (188\celsius- 221\celsius). When the Anti-Ice System is ON, the bleed air temperature downstream the Pre-cooler is controlled within the high temperature range, respectively 510\degree F-570\degree F (266\celsius - 299\celsius).
 
-\textbf{PID Controller
-}
+\textbf{PID Controller}\\
 The sensor measures the temperature at the exit of the pre-cooler and compares the determined value with the setpoint. Subtracting these signs generates the error. This error is input to the controller, a PID, which determines the signal in the Fan air valve. The exit of saturation element has a range from 0 to 90, to be a valid angle to the valve. The valve opening, determines the mass flow rate of cooling air properly to achieve the desired setpoint.
 
-\textbf{Optimization of Gains
-}
+\textbf{Optimization of Gains}\\
 The gains of controller were calculated through Integral of time multiplied by the squared error, ITSE.
 
 $\int_{0}^{T}t.e^{2}\left ( t \right )dt$
@@ -102,15 +96,14 @@ Using the option design exploration of the Amesim software, the controller gains
 \label{fig:ITSE}
 \end{figure}
 
-\textbf{Pressure Regulating Shut off Valve (PRSOV)
-}
+\textbf{Pressure Regulating Shut off Valve (PRSOV)}\\
 In order to increase the reliability of Pneumatic System, there is a PRSOV type to perform the Engine Bleed Valve function. Bleed system provides bleed pressure control in addition to current temperature control. The PRSOV regulates its downstream pressure within a range of:
 - Dual bleed (A/I OFF): 57 to 72 psig, 40 ppm and 80 psig upstream
 - Dual bleed (A/I ON): 57 to 72 psig, 100 ppm and 80 to 250 psig upstream
 - Mono bleed (A/I ON): 47 to 72 psig, 240 ppm and 80 to 200 psig upstream
 The PRSOV pressure set range has been chosen to provide enough pressure downstream to every pneumatic users
 
-\textbf{Results}
+\textbf{Results}\\
 
 The \ref{fig:PCT} presents the pre-cooler outlet temperature with required setpoint (539.15 K- 266\celsius) on ice conditions in 20,000 ft. The control provides a fast response, showing that t PID gains are adjusted.
 
@@ -193,7 +186,7 @@ The model in the Amesim considers only the right engine, because this was consid
   \label{tab:ResultsAmesim}%
 \end{table}%
 
-\textbf{Conclusion}
+\textbf{Conclusion}\\
 
 Comparing \ref{tab:ResultsIBPS} and \ref{tab:ResultsAmesim}, it is not justified to change the system of temperature control to reduce mass flow rate of fan air, that was initial proposal.
 This system consists the fan air valve and sensors. These equipments are problematic for maintenance. However, according to the Maintenance team does not justify the change, because the investment cost is higher than the benefit that would change.
