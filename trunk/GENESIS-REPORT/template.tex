@@ -52,7 +52,8 @@
 
 \graphicspath{{./Pictures/}} % Specifies the directory where pictures are stored
 
-\renewcommand{\thesection}{\thepart \arabic{section}}
+\renewcommand*{\thesection}{\arabic{section}}
+
 \usepackage{hyperref}
 \usepackage{amsmath}
     \numberwithin{figure}{section}
@@ -75,7 +76,7 @@
 %\end{figure}
 
 %\textsc{\Large Major Heading}\\[0.5cm] % Major heading such as course name
-\textsc{\large Relatório EP}\\[0.5cm] % Minor heading such as course title
+\textsc{\large EP Report}\\[0.5cm] % Minor heading such as course title
 
 \HRule \\[0.4cm]
 { \huge \bfseries Genesis}\\[.4cm] % Title of your document
@@ -97,7 +98,7 @@
 %                   Folha de Rosto                   %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
+\thispagestyle{empty}
 %\begin{center}
 
 \textbf{ISSUED BY:}
@@ -122,6 +123,9 @@ In order to validate this Report, the "Approval List" and the Technical Report f
 
 \newpage
 
+\setcounter{page}{1}
+\pagenumbering{roman}
+
 %----------------------------------------------------------------------------------------
 %	TABLE OF CONTENTS
 %----------------------------------------------------------------------------------------
@@ -131,7 +135,7 @@ In order to validate this Report, the "Approval List" and the Technical Report f
 \newpage % Begins the essay on a new page instead of on the same page as the table of contents
 
 %----------------------------------------------------------------------------------------
-%	TABLE OF CONTENTS
+%	LIST OF FIGURES
 %----------------------------------------------------------------------------------------
 
 \listoffigures
@@ -139,53 +143,67 @@ In order to validate this Report, the "Approval List" and the Technical Report f
 \newpage % Begins the essay on a new page instead of on the same page as the table of contents
 
 %----------------------------------------------------------------------------------------
-%	TABLE OF CONTENTS
+%	LIST OF TABLES
 %----------------------------------------------------------------------------------------
 
 \listoftables
 
 \newpage % Begins the essay on a new page instead of on the same page as the table of contents
 
+\renewcommand*{\thepage}{\arabic{section}-\arabic{page}}
+
 %----------------------------------------------------------------------------------------
 %	INTRODUCTION
 %----------------------------------------------------------------------------------------
-
+\setcounter{page}{1}
 \section{Introduction}
     \input{Parts/Introduction/introduction}
 
+\setcounter{page}{1}
 \section{Market}
     \input{Parts/market/market}
     
+\setcounter{page}{1}
 \section{Technical Summary}
     \input{Parts/Technical_Summary/Technical_Summary}
 
+\setcounter{page}{1}
 \section{Maintenance, Maintainability and Support}
     \input{Parts/3MASU/3MASU}
 
+\setcounter{page}{1}
 \section{Interior}
     \input{Parts/Interior/interior}
 
+\setcounter{page}{1}
 \section{Aeronautics}
     \input{Parts/Aeronautics/aeronautics}
 
+\setcounter{page}{1}
 \section{Structures}
     \input{Parts/Structures/structures}
 
+\setcounter{page}{1}
 \section{ECS}
     \input{Parts/ECS/ecs}
 
+\setcounter{page}{1}
 \section{Avionics Systems}
     \input{Parts/Avionics_Systems/Avionics_Systems}
 
+\setcounter{page}{1}
 \section{Electrical Systems}
     \input{Parts/Electrical_Systems/electrical}
 
+\setcounter{page}{1}
 \section{Hidromechanical Systems}
     \input{Parts/Hidromechanical_Systems/hidromec}
 
+\setcounter{page}{1}
 \section{Finances}
     \input{Parts/finances/finances}
 
+\setcounter{page}{1}
 \section{Conclusion}
     \input{Parts/Conclusion/conclusion}
 %----------------------------------------------------------------------------------------
