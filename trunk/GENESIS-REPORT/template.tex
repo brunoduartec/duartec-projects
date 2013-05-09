@@ -52,8 +52,11 @@
 
 \graphicspath{{./Pictures/}} % Specifies the directory where pictures are stored
 
-\renewcommand{\thesection}{\thepart .\arabic{section}}
+\renewcommand{\thesection}{\thepart \arabic{section}}
 \usepackage{hyperref}
+\usepackage{amsmath}
+    \numberwithin{figure}{section}
+    \numberwithin{table}{section}
 
 \begin{document}
 
@@ -124,6 +127,22 @@ In order to validate this Report, the "Approval List" and the Technical Report f
 %----------------------------------------------------------------------------------------
 
 \tableofcontents % Include a table of contents
+
+\newpage % Begins the essay on a new page instead of on the same page as the table of contents
+
+%----------------------------------------------------------------------------------------
+%	TABLE OF CONTENTS
+%----------------------------------------------------------------------------------------
+
+\listoffigures
+
+\newpage % Begins the essay on a new page instead of on the same page as the table of contents
+
+%----------------------------------------------------------------------------------------
+%	TABLE OF CONTENTS
+%----------------------------------------------------------------------------------------
+
+\listoftables
 
 \newpage % Begins the essay on a new page instead of on the same page as the table of contents
 
