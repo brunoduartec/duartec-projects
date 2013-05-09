@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=latex 2013.5.4)  9 MAY 2013 02:15
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=latex 2013.5.4)  9 MAY 2013 02:47
 entering extended mode
 **template.tex
 (F:\Projects\duartec-projects\GENESIS-REPORT\template.tex
@@ -622,47 +622,19 @@ Overfull \hbox (694.56975pt too wide) in paragraph at lines 53--83
  []
 
 ) [53] [54] (F:\Projects\duartec-projects\GENESIS-REPORT\Parts/3MASU/mel.tex
-Overfull \hbox (92.76048pt too wide) in paragraph at lines 10--63
- [][][][] 
- []
-
-[55]
-Overfull \vbox (364.53357pt too high) has occurred while \output is active []
-
-
-[56]
-Overfull \hbox (219.35759pt too wide) in paragraph at lines 73--95
- [][][][] 
- []
-
-[57]
+[55] [56]
 File: Pictures/3MASU/fig1.eps Graphic file (type eps)
- <Pictures/3MASU/fig1.eps>
+ <Pictures/3MASU/fig1.eps> [57]
 File: Pictures/3MASU/fig2.eps Graphic file (type eps)
  <Pictures/3MASU/fig2.eps> [58]
-Overfull \hbox (201.10355pt too wide) in paragraph at lines 120--165
- [][][][] 
- []
-
-
-LaTeX Warning: Float too large for page by 190.53369pt on input line 165.
-
 [59] [60]
 File: Pictures/3MASU/fig3.eps Graphic file (type eps)
  <Pictures/3MASU/fig3.eps>
-Overfull \hbox (401.50146pt too wide) in paragraph at lines 184--186
-[][][]
- []
-
 File: Pictures/3MASU/fig4.eps Graphic file (type eps)
-<Pictures/3MASU/fig4.eps>
-Overfull \hbox (401.50146pt too wide) in paragraph at lines 189--191
-[][][]
- []
-
-[61]
+ <Pictures/3MASU/fig4.eps> [61]
 File: Pictures/3MASU/fig5.eps Graphic file (type eps)
- <Pictures/3MASU/fig5.eps> [62]) [63])
+
+<Pictures/3MASU/fig5.eps> [62]) [63])
 (F:\Projects\duartec-projects\GENESIS-REPORT\Parts/Interior/interior.tex
 (F:\Projects\duartec-projects\GENESIS-REPORT\Parts/Interior/introduction.tex)
 (F:\Projects\duartec-projects\GENESIS-REPORT\Parts/Interior/ModificationStudies
@@ -1499,12 +1471,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5802 strings out of 493922
- 107767 string characters out of 3144894
- 387182 words of memory out of 3000000
- 8480 multiletter control sequences out of 15000+200000
- 20144 words of font info for 50 fonts, out of 3000000 for 9000
+ 5796 strings out of 493922
+ 107631 string characters out of 3144894
+ 388127 words of memory out of 3000000
+ 8473 multiletter control sequences out of 15000+200000
+ 20925 words of font info for 51 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 42i,12n,40p,199077b,415s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,12n,40p,199077b,351s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on template.dvi (256 pages, 657640 bytes).
+Output written on template.dvi (256 pages, 657468 bytes).
