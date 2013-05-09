@@ -1,0 +1,42 @@
+﻿The ERJ-145 Brake Temperature Monitoring System (BTMS) is based on thermo-resistive sensors that measure each main landing gear brake assembly. According to the Service Performance Monthly Report (SPMR) of December/2012, the Mean Time Between Unscheduled Removals (MTBUR) related to the Part Number (PN) 0132AFU-2, installed on ERJ-145 ER/LR airplanes, is 9,375 hours accumulated since November/1995. This number show how great failure rate this sensor performs. Regardless operating conditions and aircraft fleet number, the thermocouple temperature sensor installed in the E-170 have a failure rate estimated in just 7 unscheduled removals in 10 years. According to these facts, follows bellow a Product Change Review (PCR) that specifies the BTMS modification to increase its performance on the ERJ-145 aircraft.
+
+The following paragraphs describe the BTMS architecture, operation and components.
+
+The BTMS installed in the EMB-145 airplane consists of four single channel platinum resistor based temperature sensors (PRT's), and two temperature signal conditioners (dual channel transmitters). The system modification consists changing the sensor element to a thermocouple K type (Chromel vs. Alumel). It also requires cabling and signal conditioner replacement, due to electrical compatibility for transmitting and processing the signal from the new sensor.
+
+The temperature of each brake keeps being monitored. One temperature signal conditioner is connected to temperature sensors installed on the outboard wheels of left and right struts, while the other signal conditioner monitors the brake temperatures of the inboard wheels. The temperature sensors are installed on brake piston housing and extend into the brake stacks with the signal conditioners installed in the airplane wing stub (center part of the wing), as shown in the figure \ref{fig:BTMSassembly}:
+
+\begin{figure}[H] % Example image
+\center{\includegraphics[width=400px]{Pictures/Hidromechanical_Systems/BTMSassembly.eps}}
+\caption{Brake temperature sensor installation (Illustrated Parts Catalog)}
+\label{fig:BTMSassembly}
+\end{figure}
+
+
+The thermocouple sensor must mechanically fit exactly the same spot before occupied by the thermo-resistive one, so the brake assembly structure doesn't need any change that could increase the retrofit time and costs. Each sensor element shall be constructed such a way the temperature is measured in the same central stack brake part as before, due to maintain equal operating monitoring readings. Finally, the final component aspect must seem like the one illustrated in the following figure \ref{fig:BTMSsensor}.
+
+\begin{figure}[H] % Example image
+\center{\includegraphics[width=400px]{Pictures/Hidromechanical_Systems/BTMSsensor.eps}}
+\caption{Temperature sensor}
+\label{fig:BTMSsensor}
+\end{figure}
+
+
+The new sensor must continue accomplishing with:
+
+\begin{itemize}
+\item[-]The insulation resistance (IR) between the sensing element leads and the case is greater than 20 megohms at 500 VDC at 22\celsius with dry external surfaces;
+\item[-]The insulation between the case and the sensing element withstands 500 VAC (RMS at 60 Hz) for one minute with less than 1 mA of leakage;
+\item[-]The sensor output reaches 63.2 \% of the final response within 5 seconds maximum when subjected to a step change of 50\celsius minimum in water at 3 ft/s;
+\item[-]Output remains within the accuracy limits to meet the system requirements after exposure to 60,000 cycles from -54 to 650\celsius;
+\item[-]Output remains within the accuracy limits to meet the system requirements even after exposure to 20 cycles from -54 to 850\celsius at a ramp rate of 150\celsius / minute;
+\item[-]Withstands a limited number of short term exposures (up to 5 minutes) to temperatures up through 1,000\celsius. The connector withstands temperatures up to 200\celsius;
+\end{itemize}
+
+It's also important the new BTMS set to keep the same electric external characteristics due to systems interface compatibility. The signal conditioner excites each thermocouple sensor and uses this input information to produce a DC output voltage (1-6 VDC) proportional to the sensed temperature (0-1,000\celsius). This DC signal is transmitted to Engine Indication and Crew Alerting System (EICAS) for temperature displaying in the Multi-Function Displays (MFD's). In case of overheated brakes (temperatures above 550\celsius) also a caution message will be displayed in EICAS display. The BTMS shall accomplish accuracy of $\pm$ 3 \% to span over 0 to 1,000\celsius at an ambient temperature range of -30 to +65\celsius.
+
+Brakes temperatures processing shall be totally segregated inside of a given signal conditioner. In this case the only common elements are power supply and signal conditioner's housing. Outboard signal conditioner is feed by aircraft DC bus 1 (+28VDC) and the completely segregated inboard signal conditioner is fed by aircraft DC bus 2. It operates from input voltages of +18 to +32 VDC. Reverse polarity protection must be provided to prevent damage in case of reversed power application. Dedicated circuit breakers of 5A (five ampere) each provide over-current protection. EMI filters and transient suppressors provide protection against conducted and radiated EMI and lightning induced transient signals to prevent disruption of the temperature sensors performance.
+
+Besides, the project modification must also still provide built-in-test capability to ensure the signal conditioner is operating properly, also shorts or opens in any sensor or sensor wiring can be detected trough an invalid output from the signal conditioner which results in no temperature displaying for the affected channel.
+
+Although the proposed improves in the Brake Temperature Monitoring System, that could evaluate those components to a proven robust technology like in the E-170 airplanes, this modification will not be held because the high recurrent and no recurrent costs, as shown in the Costs section of this chapter.

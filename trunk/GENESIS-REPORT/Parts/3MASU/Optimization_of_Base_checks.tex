@@ -1,0 +1,247 @@
+
+EMBRAER is one of the many companies that uses the Maintenance Steering Group 3 (MSG3) guidelines to develop a maintenance program.
+These guidelines guarantee that regulatory authorities, operators and manufactures will agree and accept the scheduled maintenance plan for an aircraft.
+
+Based on a "top down" analysis of the potential effects of a functional failure, the ability to detect this failure, the costs and the maintenance actions, the
+maintenance tasks are defined and the intervals are determined. This program is evaluated by the Industry Steering Committee (ISC), the Industry Working Groups (IWGs)
+and the Maintenance Review Board (MRB) and approved by the regulatory agency.
+
+After being approved, the Maintenance Review Board Report (MRBR) is published and contains the recommended minimum initial maintenance requirements. The Maintenance Planning
+Document (MPD) is an adjustment made by the operator in the MRBR that arranges the maintenance tasks accordingly the operating experiences.
+
+The MRBR is developed together with the creation of the aircraft. The tasks are defined using data from other similar airplanes and the engineering judgment of the IWG. This
+analysis can be too conservative, sometimes because of the high level criticism of the engineering judgment and sometimes because of the type of operation of the aircraft. So
+its a practice used by some operators and OEM (Original Equipment Manufacturer) to, after many flight cycles, optimize the schedule maintenance plan accordingly to the collected data from the flet.
+
+Before 2009, the process of evolution / optimization of maintenance tasks was made using non-standardized data provided by the operators and with little statistical confiability. After April of 2009,
+EASA emitted the Issue Paper 44 \cite{ip44}. This document is intended to be utilized as the basis for a Policy and Procedures Handbook (PPH) procedure to increase or decrease the interval, or include or delete a task of the MRBP.
+
+The process is divided in at least five steps: data acquisition, data standardization, analysis, regulatory agency approval and publication. Data acquisition consists in collecting all sort of information regarding maintenance tasks (such as Job cards, Maintenance Reports, Pilot Reports, Number of component removals, Number of No Fault Found components and the Mean Time Between Unscheduled Removal).
+
+This collected data must be formatted in compliance with ATA SPEC 2000 chapter 11 or equivalent. After that, a statistical analysis is made to ensure that 95 \% level of confidence is achieved for a task by task basis. All tasks are revised using an engineering assessment and analysis to support the evolution of the checks, and according to the IP-44 the increase/decrease of the interval must be at most 20 \% of the current interval time.
+
+After all this analysis, a report is made and referred or mentioned in the PPH for ISC and regulatory agency approval. A diagram of the process is shown bellow.
+
+%Incluindo figuras
+\begin{figure}[H]
+	%comando para centralizara  figura
+	\centering
+	%comando para a inclusão da figura
+	\includegraphics[width=250px]{Pictures/3MASU/ip44process.eps}
+	%Legenda
+	\caption{IP-44 evolution process}
+	%Nome para se referir na figura no texto
+	\label{fig:ip44_evolution}
+\end{figure}
+
+The MRBR of ERJ 145 family provides a system of services, routine, A, C and structural checks. In each check there are several tasks that the maintenance team must execute, these tasks are divided in four categories:
+
+Structural Inspections, system and powerplant inspections, zonal inspections and corrosion prevention and control program (CPCP) inspections. The interval between tasks is defined as Flight Hours (FH), Flight Cycles (FC), Auxiliary Power Unit Hours (AH) or calendar time.
+
+In this document there are approximately 1230 tasks and, according to the MSG-3, each task has its type defined by the category of the functional failure associated. The table below shows the distribution of task types
+in the MRBR of the ERJ-145.
+
+%Montando uma tabela
+%Iniciando o ambiente de tabela
+\begin{table}[H]
+	%Indicando que ela deve ficar ao centro
+	\centering
+	%Legenda
+	\caption{Type of tasks in the ERJ-145}
+	%Desenhando a tabela
+	\begin{tabular}{|c|c|c|}
+		\hline
+		 \multicolumn{2}{|c|}{\textbf{Type Inspection}} & \textbf{Quantity} \\
+		\hline
+		VCK & Visual Check & 36 \\
+		\hline
+		DET &	Detail Inspections &	388\\
+		\hline
+		GVI &	General Visual Inspection &	357\\
+		\hline
+		DRC &	Download Record &	2\\
+		\hline
+		OPC &	Operational Check &	123\\
+		\hline
+		RST &	Restoration &	55\\
+		\hline
+		FNC &	Functional Check &	127\\
+		\hline
+		SVC &	Servicing &	30\\
+		\hline
+		DVI &	Detail Visual Inspection &	7\\
+		\hline
+		SDE &	Structural Detailed Inspection &	39\\
+		\hline
+		DIS &	Discard &	30\\
+		\hline
+		LUB &	Lubrification &	18\\
+		\hline
+		SDI &	Special Detailed Inspection &	14\\
+		\hline		
+		\multicolumn{2}{|c|}{ } & \textbf{1226} \\
+		\hline
+	\end{tabular}
+	%Dando um nome de referência a tabela
+	\label{tab:tasks_erj145_1}
+	%Para referenciar no texto
+	%\ref{tab:matriz_1}
+\end{table}
+
+%Incluindo figuras
+\begin{figure}[H]
+	%comando para centralizara  figura
+	\centering
+	%comando para a inclusão da figura
+	\includegraphics[width=0px]{Pictures/3MASU/typesinspections.eps}
+	%Legenda
+	\caption{Graph of the type of inspections}
+	%Nome para se referir na figura no texto
+	\label{fig:graph_inspections}
+\end{figure}
+
+In the first publication of the maintenance plan these were the checks intervals:
+
+\begin{itemize}	
+	\item Pre-flight checks (before every flight);
+	\item Routine tasks (48 hours and 14 days);
+	\item A checks (400 Flight Hours);
+	\item Base Checks (4000 Flight Hours).
+\end{itemize}	
+
+In 2004, EMBRAER revised the ERJ-145 MRBR and made possible to upgrade the checks intervals of 400 FH and 4000 FH to 500 FH and 5000 FH respectively, the Structural Inspections (SI) intervals from a multiple of 2000
+FC to 2500 FC and the Corrosion Prevention and Control Program (CPCP) tasks of 24 to 30 month intervals. This revision was made before IP-44, that's why the increase in the checks intervals is bigger than 20 \%. The
+cost reduction that time was about 14 \%.
+
+% Table generated by Excel2LaTeX from sheet 'Plan1'
+\begin{table}[htbp]
+  \centering
+  \caption{Cost reduction in the first MRBR evolution}
+    \begin{tabular}{cccc}
+    \toprule
+    \textbf{Checks} & \textbf{Cost Old (\$/FH)} & \textbf{Costs New (\$/FH)} & \textbf{Reduction} \\
+    \midrule
+    A     & \$18.83 & \$15.18 & 19.40\% \\
+    C     & \$67.50 & \$54.41 & 19.40\% \\
+    Routines & \$12.38 & \$12.38 & 0.00\% \\
+    14 Days & \$3.97 & \$3.97 & 0.00\% \\
+    Pre-Flight & \$17.94 & \$17.94 & 0.00\% \\
+    \textbf{Total} & \textbf{\$120.62} & \textbf{\$103.88} & \textbf{13.89\%} \\
+    \bottomrule
+    \end{tabular}%
+  \label{tab:cost_reduction_MRBR}%
+\end{table}%
+
+
+As MRBR is just a recommendation, operators usually adapt their maintenance plans according to their own experiences using the MSG-3 guidelines. For example, Flybe, an English low-cost regional airline, and Regional Express, another airline from Australia, recently optimized their maintenance plans on their own, and the regulatory agencies from both countries agreed with the new intervals. These new maintenance plans had the A and C checks increased to a maximum intervals time of 600 FH and 6000FH respectively.
+
+With this in mind, the Genesis Maintenance Team planned to increase the A and the C checks intervals according to IP-44, the same way done by Flybe and Regional Express. The process used in this activity was described earlier in this topic and, since this is only a educational project, the steps of collecting data, analyze it and judge the results were considered done only for a couple of task.
+
+In the first MRBR revision the number of tasks that could be optimized was approximately 97 \%. This was possible because, as said before, the MRBR contains some conservative analysis that can be evaluated and adapted accordingly to the operators uses. For this new revision in the MRBR, some of those already modified intervals could not be overpass because it would decrease the confiability and would create an unsafe product. EMBRAER engineers estimate that
+until 85 \% of all A and C check tasks could be optimized.
+
+The whole process takes between 20,000 to 25,000 Man-hour of engineering according to some of the employees of EMBRAER that had already worked in an evolution/optimization of the maintenance plans of the ERJ-145 and the E-Jets. The Genesis Maintenance Team planned to divide this workload between the operators involved in this analysis. This will not only speed up the process but also reduce EMBRAER’s non-recurrent costs.
+
+Analysing this evolution in the ERJ-145 fleet, is possible to see that the number of stops in the operations to perform an A check will drop an average of 17.3 \% and to perform a C check will drop an average of 21 \%.
+
+\begin{table}[htbp]
+  \centering
+  \caption{Fleet quantities of checks}
+    \begin{tabular}{cccccccc}
+    \toprule
+    \textit{\textbf{Year}} & \textit{\textbf{Delivered Aircrafts}} & \textit{\textbf{FH Accumulated per Aircraft}} & \textit{\textbf{Expected Remaining FH}} & \textit{\textbf{Old A Check Expected Qty}} & \textit{\textbf{New A Check Expected Qty}} & \textit{\textbf{Old C Expected Check Qty}} & \textit{\textbf{New C Check Expected Qty}} \\
+    \midrule
+    \textit{1996} & \textit{1} & \textit{42500} & \textit{17500} & \textit{35} & \textit{29} & \textit{3} & \textit{2} \\
+    \textit{1997} & \textit{24} & \textit{40000} & \textit{20000} & \textit{40} & \textit{33} & \textit{4} & \textit{3} \\
+    \textit{1998} & \textit{66} & \textit{37500} & \textit{22500} & \textit{45} & \textit{37} & \textit{4} & \textit{3} \\
+    \textit{1999} & \textit{68} & \textit{35000} & \textit{25000} & \textit{50} & \textit{41} & \textit{5} & \textit{4} \\
+    \textit{2000} & \textit{107} & \textit{32500} & \textit{27500} & \textit{55} & \textit{45} & \textit{5} & \textit{4} \\
+    \textit{2001} & \textit{134} & \textit{30000} & \textit{30000} & \textit{60} & \textit{50} & \textit{6} & \textit{5} \\
+    \textit{2002} & \textit{112} & \textit{27500} & \textit{32500} & \textit{65} & \textit{54} & \textit{6} & \textit{5} \\
+    \textit{2003} & \textit{81} & \textit{25000} & \textit{35000} & \textit{70} & \textit{58} & \textit{7} & \textit{5} \\
+    \textit{2004} & \textit{91} & \textit{22500} & \textit{37500} & \textit{75} & \textit{62} & \textit{7} & \textit{6} \\
+    \textit{2005} & \textit{43} & \textit{20000} & \textit{40000} & \textit{80} & \textit{66} & \textit{8} & \textit{6} \\
+    \textit{2006} & \textit{14} & \textit{17500} & \textit{42500} & \textit{85} & \textit{70} & \textit{8} & \textit{7} \\
+    \textit{2007} & \textit{4} & \textit{15000} & \textit{45000} & \textit{90} & \textit{75} & \textit{9} & \textit{7} \\
+    \textit{2008} & \textit{11} & \textit{12500} & \textit{47500} & \textit{95} & \textit{79} & \textit{9} & \textit{7} \\
+    \textit{2009} & \textit{7} & \textit{10000} & \textit{50000} & \textit{100} & \textit{83} & \textit{10} & \textit{8} \\
+    \textit{2010} & \textit{8} & \textit{7500} & \textit{52500} & \textit{105} & \textit{87} & \textit{10} & \textit{8} \\
+    \textit{2012} & \textit{2} & \textit{2500} & \textit{57500} & \textit{115} & \textit{95} & \textit{11} & \textit{9} \\
+    \bottomrule
+    \end{tabular}%
+  \label{tab:fleet_qtt_checks}%
+\end{table}%
+
+%Incluindo figuras
+\begin{figure}[H]
+	%comando para centralizara  figura
+	\centering
+	%comando para a inclusão da figura
+	\includegraphics[width=400px]{Pictures/3MASU/achecks.eps}
+	%Legenda
+	\caption{A check expected quantity in the fleet per delivered year}
+	%Nome para se referir na figura no texto
+	\label{fig:a_check_1}
+\end{figure}
+
+%Incluindo figuras
+\begin{figure}[H]
+	%comando para centralizara  figura
+	\centering
+	%comando para a inclusão da figura
+	\includegraphics[width=400px]{Pictures/3MASU/cchecks.eps}
+	%Legenda
+	\caption{C check expected quantity in the fleet per delivered year}
+	%Nome para se referir na figura no texto
+	\label{fig:c_check_1}
+\end{figure}
+
+The reduction of the stops shown above will not only increase aircraft availability but also reduce the costs per flight hours. These are shown in the table below:
+
+% Table generated by Excel2LaTeX from sheet 'Plan1'
+\begin{table}[htbp]
+  \centering
+  \caption{Cost reduction proposed by Genesis Maintenance Team}
+    \begin{tabular}{cccc}
+    \toprule
+    \textbf{Checks} & \textbf{Cost Old (\$/FH)} & \textbf{Costs New (\$/FH)} & \textbf{Reduction} \\
+    \midrule
+    A     & \$15.07 & \$12.93 & 14.17\% \\
+    C     & \$54.00 & \$46.35 & 14.17\% \\
+    Routines & \$12.38 & \$12.38 & 0.00\% \\
+    14 Days & \$3.97 & \$3.97 & 0.00\% \\
+    PF    & \$17.94 & \$17.94 & 0.00\% \\
+    \textbf{Total} & \textbf{\$103.36} & \textbf{\$93.57} & \textbf{9.47\%} \\
+    \bottomrule
+    \end{tabular}%
+  \label{tab:cost_reduction_GMT}%
+\end{table}%
+
+%Incluindo figuras
+\begin{figure}[H]
+	%comando para centralizara  figura
+	\centering
+	%comando para a inclusão da figura
+	\includegraphics[width=400px]{Pictures/3MASU/percentageCheckCosts.eps}
+	%Legenda
+	\caption{Percentage of the costs according to checks}
+	%Nome para se referir na figura no texto
+	\label{fig:percentage_check_1}
+\end{figure}
+
+As a conclusion, the evolution of the ERJ-145 schedule maintenance plans will reduce almost 9.5 \% of the costs in theses checks and consequently a total reduction of
+1.63 \% of the Direct Maintenance Costs. But as said before, this will only be done as operators show interest in this evolution and are willing to help in the process.
+
+% Table generated by Excel2LaTeX from sheet 'Plan2'
+\begin{table}[htbp]
+  \centering
+  \caption{Resume of the evolution of the checks intervals}
+    \begin{tabular}{ccc}
+    \toprule
+    Actual Checks Cost & New Checks Cost & DMC reduction \\
+    \midrule
+    \$103.36 & \$93.57 & 1.631\% \\
+    \bottomrule
+    \end{tabular}%
+  \label{tab:resume_check_intervals}%
+\end{table}%

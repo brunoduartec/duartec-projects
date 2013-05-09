@@ -1,0 +1,48 @@
+The fuselage increase impacts directly the hydraulic pipeline, requiring additional tubes for both hydraulic systems, counting four sections: two pressure lines and two return lines. The retrofit represents extra hydraulic resistance to the system, due to viscosity fluid effects in the tube wall and in the junction gloves. The aircraft loads affected by the hydraulic pipeline expansion are the aileron and landing gear actuators. Extra hydraulic resistance in series may cause pressure drop to those loads and consequently spoil its operating performance, which could affect flight quality aspects. Aiming to predict this scenario, calculations were made to estimate the line pressure drop for maximum flow at the hydraulic resistance section and a given load condition.
+
+The hydraulic pump Part Number is PV3-032-11 (nominal speed: 9,000 RPM), and its maximum flow capacity is:
+
+\[Q=0.32\ in^{3}/rev=0.0007866\ m^{3}/s\]
+
+Pipeline diameter:
+
+\[D=12.7\cdot 10^{-3}\ m\]
+
+Skydrol (500B-4, 37\celsius) density:
+
+\[\rho =1045\ kg/m^{3}\]
+
+Skydrol (500B-4, 38\celsius) viscosity:
+
+\[\mu =11.51\cdot 10^{-6}\ kg/ms\]
+
+Reynolds number:
+
+\[R_{e}=\frac{\rho vD}{\mu }=7.16\cdot 10^{6}\]
+
+The resulted Reynolds number characterizes a turbulent flow.
+
+Titanium pipe absolute roughness:
+
+\[\varepsilon =45.7\cdot 10^{-6}\]
+
+The Moody Diagram \ref{fig:moody} gives the friction factor:
+
+\begin{figure}[H] % Example image
+\center{\includegraphics[width=400px]{Pictures/Hidromechanical_Systems/MoodyDiagram.eps}}
+\caption{Estimating the friction factor through Moody Diagram}
+\label{fig:moody}
+\end{figure}
+
+
+\[f=0.0276\]
+
+Pipeline length increase:
+
+\[L=1.06\ m\]
+
+Estimated hydraulic pressure drop:
+
+\[\Delta p=f\frac{L}{D}\frac{\rho V^{2}}{2}=6.7241\ psi\]
+
+The resulting pressure drop value represents just 0.2241 \% from total 3000 psi hydraulic power, so the resistance friction due to the pipeline expanse can be neglected and discards other changes in the hydraulic system.
