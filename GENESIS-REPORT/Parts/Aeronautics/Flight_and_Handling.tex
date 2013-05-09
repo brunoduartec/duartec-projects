@@ -1,0 +1,918 @@
+
+\subsection{Flight and Handling Qualities}
+
+The flight and handling qualities in this design were an important and critical issue. With the new fuselage plug behind the original center of gravity, the modified airplane has an afterward CG,
+when comparing to the former aircraft.
+
+This let to reducing the static margin and pilot forces to maneuver the aircraft. To do the analysis of this section, the calculations were based on the ones presented in section 6.2.4.
+
+The first part is to determine the aerodynamic derivatives and the new CG envelope, then calculate the flight and handling qualities themselves, and finally propose modifications to maintain
+these qualities similar to the original airplane, guaranteeing the aircraft stability and maneuverability, reducing further pilot excessive training when changing from ERJ145 to ERJ145G.
+
+\subsubsection{Aerodynamic Coefficients}
+
+In order to calculate the flight and handling qualities of the airplane, the first step is to determine the aerodynamic derivatives of the main and control surfaces. The estimations were based in
+the charts presented by Etkin (1995).
+
+\begin{itemize}	
+	\item \begin{equation}
+			a_{wb} = \frac{\partial C_L}{\partial \alpha_{wb}}=6.48
+			\label{eq:6_1_a}
+		\end{equation}
+\end{itemize}
+	
+%Incluindo figuras
+\begin{figure}[H]
+	%comando para centralizara  figura
+	\centering
+	%comando para a inclusão da figura
+	\includegraphics[width=400pt]{Pictures/Aeronautics/DSA_03.eps}
+	%Legenda
+	\caption{Wing lift-curve slope estimation}
+	%Nome para se referir na figura no texto
+	\label{fig:wing_lift_curve}
+\end{figure}
+
+Considering:
+
+\begin{itemize}	
+	\item[-] A = 7.62
+	\item[-] $\Lambda$ = 22$\circ$
+	\item[-] M = 0.78
+\end{itemize}	
+
+\begin{itemize}	
+	\item \begin{equation}
+			a_{1} = \frac{\partial C_{Lh}}{\partial \alpha_{h}}=5.88
+			\label{eq:6_1_a_1}
+		\end{equation}
+\end{itemize}
+	
+%Incluindo figuras
+\begin{figure}[H]
+	%comando para centralizara  figura
+	\centering
+	%comando para a inclusão da figura
+	\includegraphics[width=400pt]{Pictures/Aeronautics/DSA_04.eps}
+	%Legenda
+	\caption{Horizontal tail lift-curve slope estimation}
+	%Nome para se referir na figura no texto
+	\label{fig:horizontal_tail_fift_1}
+\end{figure}
+
+Considering:
+
+\begin{itemize}	
+	\item[-] A = 5.12
+	\item[-] $\Lambda$ = 15$\circ$
+	\item[-] M = 0.78
+\end{itemize}
+
+\begin{itemize}	
+	\item \begin{equation}
+			a_{2} = \frac{\partial C_{Lh}}{\partial \alpha_{e}}=3.31
+			\label{eq:6_1_a_2}
+		\end{equation}
+\end{itemize}
+	
+%Incluindo figuras
+\begin{figure}[H]
+	%comando para centralizara  figura
+	\centering
+	%comando para a inclusão da figura
+	\includegraphics[width=400pt]{Pictures/Aeronautics/DSA_05.eps}
+	\includegraphics[width=400pt]{Pictures/Aeronautics/DSA_06.eps}
+	\includegraphics[width=400pt]{Pictures/Aeronautics/DSA_07.eps}
+	\includegraphics[width=400pt]{Pictures/Aeronautics/DSA_08.eps}
+	%Legenda
+	\caption{$a_2$ coefficient charts}
+	%Nome para se referir na figura no texto
+	\label{fig:coeficiente_charts_2}
+\end{figure}
+
+Considering:
+
+\begin{itemize}	
+	\item[-] A = 5.12
+	\item[-] $\Lambda$ = 15$\circ$
+	\item[-] M = 0.78
+	\item[-] $c_f/c$ = 0.425
+	\item[-] $t/c$ = 0.11
+\end{itemize}
+
+To calculate the $a_2$ coefficient, it is necessary to determine a sequence of coefficients using the charts below, then the ratios are multiplied to finally determine the derivative.
+
+\begin{itemize}	
+	\item \begin{equation}
+			b_{1} = \frac{\partial C_{H}}{\partial \alpha_{h}}=-0.317
+			\label{eq:6_1_b_1}
+		\end{equation}
+\end{itemize}
+	
+%Incluindo figuras
+\begin{figure}[H]
+	%comando para centralizara  figura
+	\centering
+	%comando para a inclusão da figura
+	\includegraphics[width=400pt]{Pictures/Aeronautics/DSA_09.eps}
+	\includegraphics[width=400pt]{Pictures/Aeronautics/DSA_10.eps}
+	%Legenda
+	\caption{$b_1$ coefficient charts}
+	%Nome para se referir na figura no texto
+	\label{fig:coeficiente_charts_3}
+\end{figure}
+
+Considering:
+
+\begin{itemize}	
+	\item[-] $c_f/c$ = 0.425
+	\item[-] $t/c$ = 0.11
+\end{itemize}
+
+\begin{itemize}	
+	\item \begin{equation}
+			b_{2} = \frac{\partial C_{H}}{\partial \delta_{e}}=-0.705
+			\label{eq:6_1_b_2}
+		\end{equation}
+\end{itemize}
+	
+%Incluindo figuras
+\begin{figure}[H]
+	%comando para centralizara  figura
+	\centering
+	%comando para a inclusão da figura
+	\includegraphics[width=400pt]{Pictures/Aeronautics/DSA_11.eps}
+	\includegraphics[width=400pt]{Pictures/Aeronautics/DSA_12.eps}
+	%Legenda
+	\caption{$b_2$ coefficient charts}
+	%Nome para se referir na figura no texto
+	\label{fig:coeficiente_charts_4}
+\end{figure}
+
+Considering:
+
+\begin{itemize}	
+	\item[-] $c_f/c$ = 0.425
+	\item[-] $t/c$ = 0.11
+\end{itemize}
+
+\begin{itemize}	
+	\item \begin{equation}
+			b_{3} = \frac{\partial C_{H}}{\partial \delta_{t}}=-0.417
+			\label{eq:6_1_b_3}
+		\end{equation}
+\end{itemize}
+	
+%Incluindo figuras
+\begin{figure}[H]
+	%comando para centralizara  figura
+	\centering
+	%comando para a inclusão da figura
+	\includegraphics[width=400pt]{Pictures/Aeronautics/DSA_13.eps}
+	\includegraphics[width=400pt]{Pictures/Aeronautics/DSA_14.eps}
+	%Legenda
+	\caption{$b_2$ coefficient charts}
+	%Nome para se referir na figura no texto
+	\label{fig:coeficiente_charts_5}
+\end{figure}
+
+Considering:
+
+\begin{itemize}	
+	\item[-] T = 11.4 $\circ$
+	\item[-] $c_f/c$ = 0.425
+	\item[-] $t/c$ = 0.11
+\end{itemize}
+
+\begin{itemize}	
+	\item \begin{equation}
+			\frac{\partial \varepsilon}{\partial \alpha}=0.34
+			\label{eq:6_1_b_4}
+		\end{equation}
+\end{itemize}
+	
+%Incluindo figuras
+\begin{figure}[H]
+	%comando para centralizara  figura
+	\centering
+	%comando para a inclusão da figura
+	\includegraphics[width=400pt]{Pictures/Aeronautics/DSA_15.eps}
+	%Legenda
+	\caption{$\frac{\partial \varepsilon}{\partial \alpha}$ coefficient charts}
+	%Nome para se referir na figura no texto
+	\label{fig:coeficiente_charts_6}
+\end{figure}
+
+Considering:
+
+\begin{itemize}	
+	\item[-] A = 7.62
+	\item[-] Taper: 3.9
+	\item[-] $x/s$ = 0.642
+	\item[-] $h/s$ = 0.255
+	\item[-] $C_{La}$ = 6.48
+\end{itemize}
+
+\subsubsection{Aircraft Load and Center of Gravity Envelope}
+
+To calculate the aircraft new weight and center of gravity, the methodology presented in section 6.2.2 was used and the weight build-up was divided in two parts:
+
+\begin{description}
+	\item[a. Fuselage Stretch:] some structures weights were maintained (tail, engine, nacelles, pylon, APU, landing gears, wing and systems) but the ones positioned behind the fuselage plug were shifted aftarwards,
+	changing the CG position. In other hand, the fuselage, interior and furnishing had their weight increased with this modification, as well as their center of gravity.\\
+	The weight and CG of this first calculation step is the 'EW1' and 'BOW1'
+	\item[b. Specific Modifications:] other modifications like systems, winglet and interior minor changes were considered separately, and the contribution of each one are expressed on Table \ref{tab:summary_mwcg}
+	, composing the final EW and BOW.
+\end{description}
+
+% Table generated by Excel2LaTeX from sheet 'Plan1'
+\begin{table}[htbp]
+  \centering
+  \caption{Summary of modifications weight and CG}
+    \begin{tabular}{rcc}
+    \toprule
+    \multicolumn{1}{c}{\textbf{Item}} & \textbf{Weight [kg]} & \textbf{CG (mm)} \\
+    \midrule
+    \multicolumn{1}{l}{\textbf{Original EW}} & \textbf{11596} & \textbf{15667} \\
+    \multicolumn{1}{l}{\textbf{Original BOW}} & \textbf{12114} & \textbf{15482} \\
+    \multicolumn{1}{l}{} &       &  \\
+    \multicolumn{1}{l}{Fuselage Plug Structure} & 77    &  \\
+    \multicolumn{1}{l}{Furnishing} & 32    &  \\
+    \multicolumn{1}{l}{Additional Seats} & 120   &  \\
+    \multicolumn{1}{l}{Additional O2 Masks} & 40    &  \\
+    \multicolumn{1}{l}{Flight Attendant} & 87    &  \\
+    \multicolumn{1}{l}{} &       &  \\
+    \multicolumn{1}{l}{\textbf{EW 1}} & \textbf{11865} & \textbf{16012} \\
+    \multicolumn{1}{l}{\textbf{BOW 1}} & \textbf{12470} & \textbf{15865} \\
+    \multicolumn{1}{l}{} &       &  \\
+    \multicolumn{1}{l}{Aerod. Improvements} & 35    & 14859 \\
+    \multicolumn{1}{l}{Winglet} & 42    & 17946 \\
+    \multicolumn{1}{l}{Fuselage Reinforcement} & 10    & 18255 \\
+    \multicolumn{1}{l}{Winglet Reinforcement} & 10    & 15717 \\
+    \multicolumn{1}{l}{} &       &  \\
+    \multicolumn{1}{l}{Galley+Wardrobe Modif.} & -142  & 5643 \\
+    \multicolumn{1}{l}{Old Seats} & -720  & 13485 \\
+    \multicolumn{1}{l}{New Seats} & 645   & 13485 \\
+    \multicolumn{1}{l}{IFE} & 0     & 12473 \\
+    \multicolumn{1}{l}{LED} & -20   & 12473 \\
+    \multicolumn{1}{l}{} &       &  \\
+    \multicolumn{1}{l}{Cables Extension} & 3     & 18255 \\
+    \multicolumn{1}{l}{Starter Generator Replacement} & -5    & 25581 \\
+    \multicolumn{1}{l}{AGCU} & 7     & 1482 \\
+    \multicolumn{1}{l}{LED Cables} & -5    & 12473 \\
+    \multicolumn{1}{l}{} &       &  \\
+    \multicolumn{1}{l}{AMS Controller} & 10    & 5643 \\
+    \multicolumn{1}{l}{} &       &  \\
+    \multicolumn{1}{l}{\textbf{New EW}} & \textbf{11735} & \textbf{16146} \\
+    \multicolumn{1}{l}{\textbf{New BOW}} & \textbf{12340} & \textbf{15990} \\
+    \bottomrule
+    \end{tabular}%
+  \label{tab:summary_mwcg}%
+\end{table}%
+
+With the new Basic Operating Weight, the passengers and fuel load can be done to evaluate the CG position in different conditions:
+
+\begin{itemize}	
+	\item[-] Back to Forward Pax Load: the passengers are loaded each row at a time (first one window, second the other and then the corridor seats) from backwards to forward.
+	\item[-] Forward to Back Pax Load: the same as the previous case, but in the inverse order.
+	\item[-] Back to Forward Full Load: the passengers are loaded from backward to forward, filling the three rows in the same time, this way, each point in the chart below represent 3 new passengers.
+	\item[-] Forward to Back Full Load: the same as the previous case, but in the inverse order.
+	\item[-] Ground Load: simulating the ground load, when firstly the baggage compartment is loaded with the baggage of all 60 passengers, and then the aircraft is loaded with the passengers beginning with the most
+	afterward seats. This is a condition during the turn-around and the center of gravity must not pass the main landing gear position.
+	\item[-] Fuel Load: is the fuel loaded according to Embraer Weight and Balance Manual.
+\end{itemize}
+
+All these passenger and fuel loads are shown in Figure \ref{fig:passenger_load_erj145g}, as well as the original airplane CG envelope.
+
+%Incluindo figuras
+\begin{figure}[H]
+	%comando para centralizara  figura
+	\centering
+	%comando para a inclusão da figura
+	\includegraphics[width=400pt]{Pictures/Aeronautics/DSA_16.eps}
+	%Legenda
+	\caption{Passenger and Fuel Load for the ERJ145G}
+	%Nome para se referir na figura no texto
+	\label{fig:passenger_load_erj145g}
+\end{figure}
+
+We can notice that the CG positions encountered in the ERJ145G are not into the original airplane CG envelope, this way some stability and maneuverability modifications should be done to change the CG envelope.
+
+Another important fact that should be noticed is that during the ground loading, the CG does not pass the landing gear limit, not imposing operational ground load limits to the operator.
+
+\subsubsection{Stability and Maneuverability Characteristics}
+
+To calculate the stability and maneuverability characteristics of the airplane, the methodology presented in section 6.2.4 was used and applied to the original and modified airplane in three flight conditions,
+in the four CG envelope extreme points:
+
+\textbf{Flight Conditions:}
+\begin{itemize}	
+	\item[-] F1: Clean Configuration - 1.4Vs
+	\item[-] F2: Clean Configuration - Normal Cruise (NC)
+	\item[-] F3: Landing Configuration - 1.3Vs
+\end{itemize}
+
+\textbf{Envelope Conditions:}
+\begin{itemize}	
+	\item[-] E1: MTOW - Fwd CG
+	\item[-] E2: MTOW - Aft CG
+	\item[-] E3: 13400 kg - Fwd CG
+	\item[-] E4: 13400 kg - Aft CG
+\end{itemize}
+
+\begin{itemize}
+	\item \textit{\textbf{Certification Regulations:}}
+\end{itemize}
+
+As any other aircraft design, an important attention must be taken to the certification regulations. Considering this design area, related to stability and maneuverability qualities, certification criteria related to
+pilot forces must be studied. Below we find some FAR regulations related to this knowledge area that will guide the flight qualities design.
+
+\begin{description}
+	\item[a. FAR 23.155:] although it is not a FAR25 regulation, this is an important criteria to guarantee minimum pilot forces to attain limit maneuvering load factors. For the ERJ145 a minimum force of 50 pounds
+	on the wheel control is needed to achieve the load factor of 2.5g\\
+	%Incluindo figuras
+	\begin{figure}[H]
+		%comando para centralizara  figura
+		\centering
+		%comando para a inclusão da figura
+		\includegraphics[width=400pt]{Pictures/Aeronautics/DSA_17.eps}
+		%Legenda
+		\caption{????}
+		%Nome para se referir na figura no texto
+		\label{fig:dsa_17}
+	\end{figure}
+	\item[b. FAR 25.143:] this section states a maximum pilot force that can occur during any flight condition. For the ERJ145, a force in the pitch control of 75 pounds must not occur.\\
+	\begin{figure}[H]
+		%comando para centralizara  figura
+		\centering
+		%comando para a inclusão da figura
+		\includegraphics[width=400pt]{Pictures/Aeronautics/DSA_18.eps}
+		%Legenda
+		\caption{????}
+		%Nome para se referir na figura no texto
+		\label{fig:dsa_18}
+	\end{figure}
+	\item[c. FAR 25.173:] this section states two conditions: the minimum gradient of 1pound for each 6 knots for the pitch control, and that the airplane must recover the initial speed with an error of 10\% after a pull up.\\
+	\begin{figure}[H]
+		%comando para centralizara  figura
+		\centering
+		%comando para a inclusão da figura
+		\includegraphics[width=400pt]{Pictures/Aeronautics/DSA_19.eps}
+		%Legenda
+		\caption{????}
+		%Nome para se referir na figura no texto
+		\label{fig:dsa_19}
+	\end{figure}
+\end{description}
+
+\begin{itemize}
+	\item \textit{\textbf{Special Considerations:}}
+\end{itemize}
+
+Before showing the results of the flight an handling qualities, it is necessary to establish some assumptions to do the final calculations:
+
+\begin{description}
+	\item[a. Force Limits:] based on the pacts presented in the section 6.5.3.1, two main considerations regarding the minimum pilot force were used. The first one is related to the FAR 23.155. The airplane
+	was calibrated to achieve the maximum load factor of 2.5 with a minimum pilot force of 50 pounds. The second regulation taken into account was the FAR 25.173b. The airplane has to return to the original
+	airspeed with an error of 10 \% after a stick control. With a control system friction around 3 pound, it was considered that the force to change 10 \% in the airspeed must be, at least, this value of 3 pounds.
+	\item[b. Automatic Tab Calibration:] in order to achieve the limit forces previously described, the automatic tab gain ( ) was adjusted. This calibration is to approximate de model to the real airplane and
+	try to do a more precise analysis. The value of  calculate was of -0.579.
+	\item[c. New CG Envelope:] in order to evaluate the flight and handling characteristics of the ERJ145G a new CG envelope was assumed. The original CG was firstly the same in its shape, but was shifted afterwards
+	11 \% of the aerodynamic chord. This was necessary and sufficient to insert the Back to Forward Load (purple curve in Figure \ref{fig:passenger_load_erj145g}) into the envelope.
+\end{description}
+
+\begin{itemize}
+	\item \textit{\textbf{Results:}}
+\end{itemize}
+
+Here are the final flight and maneuver characteristics for the original and modified airplane, in all envelope and flight conditions.
+
+\begin{description}
+	\item[a. Original Airplane]
+\end{description}
+
+% Table generated by Excel2LaTeX from sheet 'Plan2'
+\begin{table}[htbp]
+  \centering
+  \caption{Trim and Maneuver characteristics for flight condition F1 - Original Airplane (ERJ145)}
+    \begin{tabular}{rccccccccc}
+    \toprule
+    \multicolumn{1}{l}{} & \textbf{ENVELOPE} & \multicolumn{2}{c}{\textbf{E1}} & \multicolumn{2}{c}{\textbf{E2}} & \multicolumn{2}{c}{\textbf{E3}} & \multicolumn{2}{c}{\textbf{E4}} \\
+    \midrule
+    \multicolumn{1}{c}{\multirow{7}[0]{*}{\begin{sideways}\textbf{TRIM}\end{sideways}}} & \textbf{V (1.4Vs)} & \multicolumn{2}{c}{95} & \multicolumn{2}{c}{95} & \multicolumn{2}{c}{74} & \multicolumn{2}{c}{74} \\
+    \multicolumn{1}{c}{} & \textbf{$C_{Lh}$} & \multicolumn{2}{c}{-0.13} & \multicolumn{2}{c}{0.04} & \multicolumn{2}{c}{-0.18} & \multicolumn{2}{c}{0.07} \\
+    \multicolumn{1}{c}{} & \textbf{$C_{Lwb}$} & \multicolumn{2}{c}{0.77} & \multicolumn{2}{c}{0.74} & \multicolumn{2}{c}{0.78} & \multicolumn{2}{c}{0.73} \\
+    \multicolumn{1}{c}{} & \textbf{a} & \multicolumn{2}{c}{3.8} & \multicolumn{2}{c}{3.5} & \multicolumn{2}{c}{3.9} & \multicolumn{2}{c}{3.5} \\
+    \multicolumn{1}{c}{} & \textbf{e} & \multicolumn{2}{c}{2.3} & \multicolumn{2}{c}{2.2} & \multicolumn{2}{c}{2.4} & \multicolumn{2}{c}{2.2} \\
+    \multicolumn{1}{c}{} & \textbf{$a_h$} & \multicolumn{2}{c}{-1.9} & \multicolumn{2}{c}{0.6} & \multicolumn{2}{c}{-2.7} & \multicolumn{2}{c}{1} \\
+    \multicolumn{1}{c}{} & \textbf{$i_h$} & \multicolumn{2}{c}{-3.4} & \multicolumn{2}{c}{-0.7} & \multicolumn{2}{c}{-4.2} & \multicolumn{2}{c}{-0.3} \\
+    \multicolumn{1}{c}{\multirow{13}[2]{*}{\begin{sideways}\textbf{SPEED MANEUVER}\end{sideways}}} & \textbf{Condition} & 0.9Vi & 1.1Vi & 0.9Vi & 1.1Vi & 0.9Vi & 1.1Vi & 0.9Vi & 1.1Vi \\
+    \multicolumn{1}{c}{} & \textbf{V} & 85    & 104   & 85    & 104   & 66    & 81    & 66    & 81 \\
+    \multicolumn{1}{c}{} & \textbf{$C_{Lh}$} & -0.13 & -0.12 & 0.07  & 0.01  & -0.19 & -0.17 & 0.11  & 0.04 \\
+    \multicolumn{1}{c}{} & \textbf{$C_{Lwb}$} & 0.95  & 0.64  & 0.91  & 0.61  & 0.96  & 0.65  & 0.9   & 0.61 \\
+    \multicolumn{1}{c}{} & \textbf{a} & 5.4   & 2.7   & 5     & 2.4   & 5.5   & 2.8   & 5     & 2.4 \\
+    \multicolumn{1}{c}{} & \textbf{e} & 2.9   & 1.9   & 2.7   & 1.8   & 2.9   & 2     & 2.7   & 1.8 \\
+    \multicolumn{1}{c}{} & \textbf{$a_h$} & -0.9  & -2.6  & 1.6   & -0.1  & -1.6  & -3.4  & 2     & 0.3 \\
+    \multicolumn{1}{c}{} & \textbf{$\delta E$} & -0.8  & 2.8   & -1.7  & 0.5   & -0.5  & 3.6   & -1.8  & 0.1 \\
+    \multicolumn{1}{c}{} & \textbf{$\delta T$} & 0.5   & -1.6  & 1     & -0.3  & 0.3   & -2.1  & 1.1   & -0.1 \\
+    \multicolumn{1}{c}{} & \textbf{$C_H$} & 0.008 & -0.005 & 0.003 & -0.002 & 0.011 & -0.007 & 0.003 & -0.002 \\
+    \multicolumn{1}{c}{} & \textbf{H} & 45    & -44   & 19    & -19   & 37    & -37   & 10    & -10 \\
+    \multicolumn{1}{c}{} & \textbf{F column} & 18    & -17   & 8     & -7    & 15    & -15   & 4     & -4 \\
+    \multicolumn{1}{c}{} & \textbf{F/knots} & 3.7   & 3.5   & 1.6   & 1.5   & 3.8   & 3.8   & 1.1   & 1.1 \\
+    \multicolumn{1}{c}{\multirow{11}[1]{*}{\begin{sideways}\textbf{PULL UP MANEUVER}\end{sideways}}} & \textbf{n} & \multicolumn{2}{c}{2} & \multicolumn{2}{c}{2} & \multicolumn{2}{c}{2} & \multicolumn{2}{c}{2} \\
+    \multicolumn{1}{c}{} & \textbf{$C_{Lh}$} & \multicolumn{2}{c}{-0.14} & \multicolumn{2}{c}{0.18} & \multicolumn{2}{c}{-0.25} & \multicolumn{2}{c}{0.23} \\
+    \multicolumn{1}{c}{} & \textbf{$C_{Lwb}$} & \multicolumn{2}{c}{1.5} & \multicolumn{2}{c}{1.43} & \multicolumn{2}{c}{1.52} & \multicolumn{2}{c}{1.42} \\
+    \multicolumn{1}{c}{} & \textbf{a} & \multicolumn{2}{c}{10.2} & \multicolumn{2}{c}{9.6} & \multicolumn{2}{c}{10.4} & \multicolumn{2}{c}{9.5} \\
+    \multicolumn{1}{c}{} & \textbf{$a_h$} & \multicolumn{2}{c}{4.5} & \multicolumn{2}{c}{6.7} & \multicolumn{2}{c}{3.8} & \multicolumn{2}{c}{7} \\
+    \multicolumn{1}{c}{} & \textbf{$\delta E$} & \multicolumn{2}{c}{-11.5} & \multicolumn{2}{c}{-9.6} & \multicolumn{2}{c}{-12.1} & \multicolumn{2}{c}{-9.3} \\
+    \multicolumn{1}{c}{} & \textbf{$\delta T$} & \multicolumn{2}{c}{6.7} & \multicolumn{2}{c}{5.6} & \multicolumn{2}{c}{7} & \multicolumn{2}{c}{5.4} \\
+    \multicolumn{1}{c}{} & \textbf{$C_H$} & \multicolumn{2}{c}{0.045} & \multicolumn{2}{c}{0.027} & \multicolumn{2}{c}{0.058} & \multicolumn{2}{c}{0.028} \\
+    \multicolumn{1}{c}{} & \textbf{H} & \multicolumn{2}{c}{317} & \multicolumn{2}{c}{190} & \multicolumn{2}{c}{252} & \multicolumn{2}{c}{119} \\
+    \multicolumn{1}{c}{} & \textbf{Fmanche} & \multicolumn{2}{c}{124} & \multicolumn{2}{c}{74} & \multicolumn{2}{c}{99} & \multicolumn{2}{c}{47} \\
+    \multicolumn{1}{c}{} & \textbf{F/n} & \multicolumn{2}{c}{63} & \multicolumn{2}{c}{38} & \multicolumn{2}{c}{50} & \multicolumn{2}{c}{24} \\
+    \bottomrule
+    \end{tabular}%
+  \label{tab:tm_original_01}%
+\end{table}%
+
+
+
+% Table generated by Excel2LaTeX from sheet 'Plan2'
+\begin{table}[htbp]
+  \centering
+  \caption{Trim and Maneuver characteristics for flight condition F1 - Original Airplane (ERJ145)}
+    \begin{tabular}{rccccccccc}
+    \toprule
+    \multicolumn{1}{l}{} & \textbf{ENVELOPE} & \multicolumn{2}{c}{\textbf{E1}} & \multicolumn{2}{c}{\textbf{E2}} & \multicolumn{2}{c}{\textbf{E3}} & \multicolumn{2}{c}{\textbf{E4}} \\
+    \midrule
+    \multicolumn{1}{c}{\multirow{7}[0]{*}{\begin{sideways}\textbf{TRIM}\end{sideways}}} & \textbf{V (1.4Vs)} & \multicolumn{2}{c}{95} & \multicolumn{2}{c}{95} & \multicolumn{2}{c}{74} & \multicolumn{2}{c}{74} \\
+    \multicolumn{1}{c}{} & \textbf{$C_{Lh}$} & \multicolumn{2}{c}{-0.13} & \multicolumn{2}{c}{0.04} & \multicolumn{2}{c}{-0.18} & \multicolumn{2}{c}{0.07} \\
+    \multicolumn{1}{c}{} & \textbf{$C_{Lwb}$} & \multicolumn{2}{c}{0.77} & \multicolumn{2}{c}{0.74} & \multicolumn{2}{c}{0.78} & \multicolumn{2}{c}{0.73} \\
+    \multicolumn{1}{c}{} & \textbf{a} & \multicolumn{2}{c}{3.8} & \multicolumn{2}{c}{3.5} & \multicolumn{2}{c}{3.9} & \multicolumn{2}{c}{3.5} \\
+    \multicolumn{1}{c}{} & \textbf{e} & \multicolumn{2}{c}{2.3} & \multicolumn{2}{c}{2.2} & \multicolumn{2}{c}{2.4} & \multicolumn{2}{c}{2.2} \\
+    \multicolumn{1}{c}{} & \textbf{$a_h$} & \multicolumn{2}{c}{-1.9} & \multicolumn{2}{c}{0.6} & \multicolumn{2}{c}{-2.7} & \multicolumn{2}{c}{1} \\
+    \multicolumn{1}{c}{} & \textbf{$i_h$} & \multicolumn{2}{c}{-3.4} & \multicolumn{2}{c}{-0.7} & \multicolumn{2}{c}{-4.2} & \multicolumn{2}{c}{-0.3} \\
+    \multicolumn{1}{c}{\multirow{13}[2]{*}{\begin{sideways}\textbf{SPEED MANEUVER}\end{sideways}}} & \textbf{Condition} & 0.9Vi & 1.1Vi & 0.9Vi & 1.1Vi & 0.9Vi & 1.1Vi & 0.9Vi & 1.1Vi \\
+    \multicolumn{1}{c}{} & \textbf{V} & 85    & 104   & 85    & 104   & 66    & 81    & 66    & 81 \\
+    \multicolumn{1}{c}{} & \textbf{$C_{Lh}$} & -0.13 & -0.12 & 0.07  & 0.01  & -0.19 & -0.17 & 0.11  & 0.04 \\
+    \multicolumn{1}{c}{} & \textbf{$C_{Lwb}$} & 0.95  & 0.64  & 0.91  & 0.61  & 0.96  & 0.65  & 0.9   & 0.61 \\
+    \multicolumn{1}{c}{} & \textbf{a} & 5.4   & 2.7   & 5     & 2.4   & 5.5   & 2.8   & 5     & 2.4 \\
+    \multicolumn{1}{c}{} & \textbf{e} & 2.9   & 1.9   & 2.7   & 1.8   & 2.9   & 2     & 2.7   & 1.8 \\
+    \multicolumn{1}{c}{} & \textbf{$a_h$} & -0.9  & -2.6  & 1.6   & -0.1  & -1.6  & -3.4  & 2     & 0.3 \\
+    \multicolumn{1}{c}{} & \textbf{$\delta E$} & -0.8  & 2.8   & -1.7  & 0.5   & -0.5  & 3.6   & -1.8  & 0.1 \\
+    \multicolumn{1}{c}{} & \textbf{$\delta T$} & 0.5   & -1.6  & 1     & -0.3  & 0.3   & -2.1  & 1.1   & -0.1 \\
+    \multicolumn{1}{c}{} & \textbf{$C_H$} & 0.008 & -0.005 & 0.003 & -0.002 & 0.011 & -0.007 & 0.003 & -0.002 \\
+    \multicolumn{1}{c}{} & \textbf{H} & 45    & -44   & 19    & -19   & 37    & -37   & 10    & -10 \\
+    \multicolumn{1}{c}{} & \textbf{F column} & 18    & -17   & 8     & -7    & 15    & -15   & 4     & -4 \\
+    \multicolumn{1}{c}{} & \textbf{F/knots} & 3.7   & 3.5   & 1.6   & 1.5   & 3.8   & 3.8   & 1.1   & 1.1 \\
+    \multicolumn{1}{c}{\multirow{11}[1]{*}{\begin{sideways}\textbf{PULL UP MANEUVER}\end{sideways}}} & \textbf{n} & \multicolumn{2}{c}{2} & \multicolumn{2}{c}{2} & \multicolumn{2}{c}{2} & \multicolumn{2}{c}{2} \\
+    \multicolumn{1}{c}{} & \textbf{$C_{Lh}$} & \multicolumn{2}{c}{-0.14} & \multicolumn{2}{c}{0.18} & \multicolumn{2}{c}{-0.25} & \multicolumn{2}{c}{0.23} \\
+    \multicolumn{1}{c}{} & \textbf{$C_{Lwb}$} & \multicolumn{2}{c}{1.5} & \multicolumn{2}{c}{1.43} & \multicolumn{2}{c}{1.52} & \multicolumn{2}{c}{1.42} \\
+    \multicolumn{1}{c}{} & \textbf{a} & \multicolumn{2}{c}{10.2} & \multicolumn{2}{c}{9.6} & \multicolumn{2}{c}{10.4} & \multicolumn{2}{c}{9.5} \\
+    \multicolumn{1}{c}{} & \textbf{$a_h$} & \multicolumn{2}{c}{4.5} & \multicolumn{2}{c}{6.7} & \multicolumn{2}{c}{3.8} & \multicolumn{2}{c}{7} \\
+    \multicolumn{1}{c}{} & \textbf{$\delta E$} & \multicolumn{2}{c}{-11.5} & \multicolumn{2}{c}{-9.6} & \multicolumn{2}{c}{-12.1} & \multicolumn{2}{c}{-9.3} \\
+    \multicolumn{1}{c}{} & \textbf{$\delta T$} & \multicolumn{2}{c}{6.7} & \multicolumn{2}{c}{5.6} & \multicolumn{2}{c}{7} & \multicolumn{2}{c}{5.4} \\
+    \multicolumn{1}{c}{} & \textbf{$C_H$} & \multicolumn{2}{c}{0.045} & \multicolumn{2}{c}{0.027} & \multicolumn{2}{c}{0.058} & \multicolumn{2}{c}{0.028} \\
+    \multicolumn{1}{c}{} & \textbf{H} & \multicolumn{2}{c}{317} & \multicolumn{2}{c}{190} & \multicolumn{2}{c}{252} & \multicolumn{2}{c}{119} \\
+    \multicolumn{1}{c}{} & \textbf{Fmanche} & \multicolumn{2}{c}{124} & \multicolumn{2}{c}{74} & \multicolumn{2}{c}{99} & \multicolumn{2}{c}{47} \\
+    \multicolumn{1}{c}{} & \textbf{F/n} & \multicolumn{2}{c}{63} & \multicolumn{2}{c}{38} & \multicolumn{2}{c}{50} & \multicolumn{2}{c}{24} \\
+    \bottomrule
+    \end{tabular}%
+  \label{tab:tm_original_01}%
+\end{table}%
+
+% Table generated by Excel2LaTeX from sheet 'Plan2'
+\begin{table}[htbp]
+  \centering
+  \caption{Trim and Maneuver characteristics for flight condition F2 - Original Airplane (ERJ145)}
+    \begin{tabular}{rccccccccc}
+    \toprule
+    \multicolumn{1}{l}{} & \textbf{ENVELOPE} & \multicolumn{2}{c}{\textbf{E1}} & \multicolumn{2}{c}{\textbf{E2}} & \multicolumn{2}{c}{\textbf{E3}} & \multicolumn{2}{c}{\textbf{E4}} \\
+    \midrule
+    \multicolumn{1}{c}{\multirow{7}[0]{*}{\begin{sideways}\textbf{TRIM}\end{sideways}}} & \textbf{V (0.78M)} & \multicolumn{2}{c}{122} & \multicolumn{2}{c}{122} & \multicolumn{2}{c}{122} & \multicolumn{2}{c}{122} \\
+    \multicolumn{1}{c}{} & \textbf{$C_{Lh}$} & \multicolumn{2}{c}{-0.12} & \multicolumn{2}{c}{-0.02} & \multicolumn{2}{c}{-0.13} & \multicolumn{2}{c}{-0.04} \\
+    \multicolumn{1}{c}{} & \textbf{$C_{Lwb}$} & \multicolumn{2}{c}{0.47} & \multicolumn{2}{c}{0.45} & \multicolumn{2}{c}{0.3} & \multicolumn{2}{c}{0.28} \\
+    \multicolumn{1}{c}{} & \textbf{a} & \multicolumn{2}{c}{1.2} & \multicolumn{2}{c}{1} & \multicolumn{2}{c}{-0.3} & \multicolumn{2}{c}{-0.5} \\
+    \multicolumn{1}{c}{} & \textbf{e} & \multicolumn{2}{c}{1.4} & \multicolumn{2}{c}{1.4} & \multicolumn{2}{c}{0.9} & \multicolumn{2}{c}{0.8} \\
+    \multicolumn{1}{c}{} & \textbf{$a_h$} & \multicolumn{2}{c}{-1.8} & \multicolumn{2}{c}{-0.3} & \multicolumn{2}{c}{-2} & \multicolumn{2}{c}{-0.6} \\
+    \multicolumn{1}{c}{} & \textbf{$i_h$} & \multicolumn{2}{c}{-1.5} & \multicolumn{2}{c}{0.1} & \multicolumn{2}{c}{-0.7} & \multicolumn{2}{c}{0.7} \\
+    \multicolumn{1}{c}{\multirow{13}[2]{*}{\begin{sideways}\textbf{SPEED MANEUVER}\end{sideways}}} & \textbf{Condition} & 0.9Vi & 1.1Vi & 0.9Vi & 1.1Vi & 0.9Vi & 1.1Vi & 0.9Vi & 1.1Vi \\
+    \multicolumn{1}{c}{} & \textbf{V} & 110   & 134   & 110   & 134   & 110   & 134   & 110   & 134 \\
+    \multicolumn{1}{c}{} & \textbf{$C_{Lh}$} & -0.12 & -0.12 & 0     & -0.03 & -0.14 & -0.13 & -0.03 & -0.05 \\
+    \multicolumn{1}{c}{} & \textbf{$C_{Lwb}$} & 0.58  & 0.4   & 0.55  & 0.38  & 0.37  & 0.25  & 0.34  & 0.24 \\
+    \multicolumn{1}{c}{} & \textbf{a} & 2.1   & 0.5   & 1.9   & 0.3   & 0.2   & -0.8  & 0     & -0.9 \\
+    \multicolumn{1}{c}{} & \textbf{e} & 1.7   & 1.2   & 1.7   & 1.1   & 1.1   & 0.8   & 1     & 0.7 \\
+    \multicolumn{1}{c}{} & \textbf{$a_h$} & -1.1  & -2.2  & 0.3   & -0.7  & -1.6  & -2.3  & -0.3  & -0.9 \\
+    \multicolumn{1}{c}{} & \textbf{$\delta E$} & -0.1  & 2.1   & -0.6  & 0.8   & 0.5   & 2     & 0     & 0.7 \\
+    \multicolumn{1}{c}{} & \textbf{$\delta T$} & 0     & -1.2  & 0.3   & -0.4  & -0.3  & -1.2  & 0     & -0.4 \\
+    \multicolumn{1}{c}{} & \textbf{$C_H$} & 0.0039 & -0.0024 & 0.0017 & -0.001 & 0.0028 & -0.0017 & 0.0008 & -0.0005 \\
+    \multicolumn{1}{c}{} & \textbf{H} & 38    & -35   & 16    & -15   & 27    & -25   & 8     & -7 \\
+    \multicolumn{1}{c}{} & \textbf{F column} & 15    & -14   & 6     & -6    & 11    & -10   & 3     & -3 \\
+    \multicolumn{1}{c}{} & \textbf{F/knots} & 2.4   & 2.2   & 1     & 0.9   & 1.7   & 1.6   & 0.5   & 0.4 \\
+    \multicolumn{1}{c}{\multirow{11}[1]{*}{\begin{sideways}\textbf{PULL UP MANEUVER}\end{sideways}}} & \textbf{n} & \multicolumn{2}{c}{2.5} & \multicolumn{2}{c}{2.5} & \multicolumn{2}{c}{2.5} & \multicolumn{2}{c}{2.5} \\
+    \multicolumn{1}{c}{} & \textbf{$C_{Lh}$} & \multicolumn{2}{c}{-0.14} & \multicolumn{2}{c}{0.11} & \multicolumn{2}{c}{-0.17} & \multicolumn{2}{c}{0.05} \\
+    \multicolumn{1}{c}{} & \textbf{$C_{Lwb}$} & \multicolumn{2}{c}{1.15} & \multicolumn{2}{c}{1.1} & \multicolumn{2}{c}{0.72} & \multicolumn{2}{c}{0.67} \\
+    \multicolumn{1}{c}{} & \textbf{a} & \multicolumn{2}{c}{7.2} & \multicolumn{2}{c}{6.7} & \multicolumn{2}{c}{3.4} & \multicolumn{2}{c}{3} \\
+    \multicolumn{1}{c}{} & \textbf{$a_h$} & \multicolumn{2}{c}{4.2} & \multicolumn{2}{c}{5.4} & \multicolumn{2}{c}{1.7} & \multicolumn{2}{c}{2.8} \\
+    \multicolumn{1}{c}{} & \textbf{$\delta E$} & \multicolumn{2}{c}{-10.9} & \multicolumn{2}{c}{-8.5} & \multicolumn{2}{c}{-6.6} & \multicolumn{2}{c}{-4.5} \\
+    \multicolumn{1}{c}{} & \textbf{$\delta T$} & \multicolumn{2}{c}{6.3} & \multicolumn{2}{c}{4.9} & \multicolumn{2}{c}{3.8} & \multicolumn{2}{c}{2.6} \\
+    \multicolumn{1}{c}{} & \textbf{$C_H$} & \multicolumn{2}{c}{0.034} & \multicolumn{2}{c}{0.02} & \multicolumn{2}{c}{0.023} & \multicolumn{2}{c}{0.011} \\
+    \multicolumn{1}{c}{} & \textbf{H} & \multicolumn{2}{c}{402} & \multicolumn{2}{c}{241} & \multicolumn{2}{c}{276} & \multicolumn{2}{c}{130} \\
+    \multicolumn{1}{c}{} & \textbf{Fmanche} & \multicolumn{2}{c}{158} & \multicolumn{2}{c}{94} & \multicolumn{2}{c}{108} & \multicolumn{2}{c}{51} \\
+    \multicolumn{1}{c}{} & \textbf{F/n} & \multicolumn{2}{c}{63} & \multicolumn{2}{c}{38} & \multicolumn{2}{c}{43} & \multicolumn{2}{c}{20} \\
+    \bottomrule
+    \end{tabular}%
+  \label{tab:tm_original_02}%
+\end{table}%
+
+% Table generated by Excel2LaTeX from sheet 'Plan2'
+\begin{table}[htbp]
+  \centering
+  \caption{Trim and Maneuver characteristics for flight condition F3 - Original Airplane (ERJ145)}
+    \begin{tabular}{rccccccccc}
+    \toprule
+    \multicolumn{1}{l}{} & \textbf{ENVELOPE} & \multicolumn{2}{c}{\textbf{E1}} & \multicolumn{2}{c}{\textbf{E2}} & \multicolumn{2}{c}{\textbf{E3}} & \multicolumn{2}{c}{\textbf{E4}} \\
+    \midrule
+    \multicolumn{1}{c}{\multirow{7}[0]{*}{\begin{sideways}\textbf{TRIM}\end{sideways}}} & \textbf{V (1.3Vs)} & \multicolumn{2}{c}{75} & \multicolumn{2}{c}{75} & \multicolumn{2}{c}{59} & \multicolumn{2}{c}{59} \\
+    \multicolumn{1}{c}{} & \textbf{$C_{Lh}$} & \multicolumn{2}{c}{-0.14} & \multicolumn{2}{c}{0.13} & \multicolumn{2}{c}{-0.22} & \multicolumn{2}{c}{0.17} \\
+    \multicolumn{1}{c}{} & \textbf{$C_{Lwb}$} & \multicolumn{2}{c}{1.22} & \multicolumn{2}{c}{1.16} & \multicolumn{2}{c}{1.24} & \multicolumn{2}{c}{1.15} \\
+    \multicolumn{1}{c}{} & \textbf{a} & \multicolumn{2}{c}{7.8} & \multicolumn{2}{c}{7.3} & \multicolumn{2}{c}{7.9} & \multicolumn{2}{c}{7.2} \\
+    \multicolumn{1}{c}{} & \textbf{e} & \multicolumn{2}{c}{3.7} & \multicolumn{2}{c}{3.5} & \multicolumn{2}{c}{3.7} & \multicolumn{2}{c}{3.5} \\
+    \multicolumn{1}{c}{} & \textbf{$a_h$} & \multicolumn{2}{c}{-2.1} & \multicolumn{2}{c}{1.9} & \multicolumn{2}{c}{-3.3} & \multicolumn{2}{c}{2.5} \\
+    \multicolumn{1}{c}{} & \textbf{$i_h$} & \multicolumn{2}{c}{-6.2} & \multicolumn{2}{c}{-1.9} & \multicolumn{2}{c}{-7.5} & \multicolumn{2}{c}{-1.2} \\
+    \multicolumn{1}{c}{\multirow{13}[2]{*}{\begin{sideways}\textbf{SPEED MANEUVER}\end{sideways}}} & \textbf{Condition} & 0.9Vi & 1.1Vi & 0.9Vi & 1.1Vi & 0.9Vi & 1.1Vi & 0.9Vi & 1.1Vi \\
+    \multicolumn{1}{c}{} & \textbf{V} & 68    & 83    & 68    & 83    & 53    & 64    & 53    & 64 \\
+    \multicolumn{1}{c}{} & \textbf{$C_{Lh}$} & -0.14 & -0.13 & 0.18  & 0.09  & -0.25 & -0.2  & 0.23  & 0.12 \\
+    \multicolumn{1}{c}{} & \textbf{$C_{Lwb}$} & 1.5   & 1.01  & 1.43  & 0.96  & 1.52  & 1.02  & 1.42  & 0.96 \\
+    \multicolumn{1}{c}{} & \textbf{a} & 10.2  & 5.9   & 9.6   & 5.5   & 10.4  & 6.1   & 9.5   & 5.5 \\
+    \multicolumn{1}{c}{} & \textbf{e} & 4.5   & 3     & 4.3   & 2.9   & 4.6   & 3.1   & 4.3   & 2.9 \\
+    \multicolumn{1}{c}{} & \textbf{$a_h$} & -0.4  & -3.3  & 3.4   & 0.7   & -1.6  & -4.5  & 4.1   & 1.4 \\
+    \multicolumn{1}{c}{} & \textbf{$\delta E$} & -1.9  & 3.9   & -3.3  & 0.2   & -1.5  & 5     & -3.5  & -0.4 \\
+    \multicolumn{1}{c}{} & \textbf{$\delta T$} & 1.1   & -2.2  & 1.9   & -0.1  & 0.9   & -2.9  & 2     & 0.2 \\
+    \multicolumn{1}{c}{} & \textbf{$C_H$} & 0.0141 & -0.0094 & 0.006 & -0.004 & 0.0182 & -0.0126 & 0.0051 & -0.0035 \\
+    \multicolumn{1}{c}{} & \textbf{H} & 51    & -51   & 22    & -22   & 40    & -41   & 11    & -12 \\
+    \multicolumn{1}{c}{} & \textbf{F column} & 20    & -20   & 9     & -9    & 16    & -16   & 4     & -5 \\
+    \multicolumn{1}{c}{} & \textbf{F/knots} & 5.2   & 5.2   & 2.2   & 2.2   & 5.2   & 5.4   & 1.5   & 1.5 \\
+    \multicolumn{1}{c}{\multirow{11}[1]{*}{\begin{sideways}\textbf{PULL UP MANEUVER}\end{sideways}}} & \textbf{n} & \multicolumn{2}{c}{1.7} & \multicolumn{2}{c}{1.7} & \multicolumn{2}{c}{1.7} & \multicolumn{2}{c}{1.7} \\
+    \multicolumn{1}{c}{} & \textbf{$C_{Lh}$} & \multicolumn{2}{c}{-0.16} & \multicolumn{2}{c}{0.28} & \multicolumn{2}{c}{-0.3} & \multicolumn{2}{c}{0.36} \\
+    \multicolumn{1}{c}{} & \textbf{$C_{Lwb}$} & \multicolumn{2}{c}{2.04} & \multicolumn{2}{c}{1.95} & \multicolumn{2}{c}{2.07} & \multicolumn{2}{c}{1.93} \\
+    \multicolumn{1}{c}{} & \textbf{a} & \multicolumn{2}{c}{15.1} & \multicolumn{2}{c}{14.2} & \multicolumn{2}{c}{15.3} & \multicolumn{2}{c}{14.1} \\
+    \multicolumn{1}{c}{} & \textbf{$a_h$} & \multicolumn{2}{c}{5.2} & \multicolumn{2}{c}{8.8} & \multicolumn{2}{c}{4.1} & \multicolumn{2}{c}{9.4} \\
+    \multicolumn{1}{c}{} & \textbf{$\delta E$} & \multicolumn{2}{c}{-13.3} & \multicolumn{2}{c}{-11.8} & \multicolumn{2}{c}{-13.7} & \multicolumn{2}{c}{-11.6} \\
+    \multicolumn{1}{c}{} & \textbf{$\delta T$} & \multicolumn{2}{c}{7.7} & \multicolumn{2}{c}{6.8} & \multicolumn{2}{c}{7.9} & \multicolumn{2}{c}{6.7} \\
+    \multicolumn{1}{c}{} & \textbf{$C_H$} & \multicolumn{2}{c}{0.059} & \multicolumn{2}{c}{0.035} & \multicolumn{2}{c}{0.073} & \multicolumn{2}{c}{0.035} \\
+    \multicolumn{1}{c}{} & \textbf{H} & \multicolumn{2}{c}{262} & \multicolumn{2}{c}{157} & \multicolumn{2}{c}{199} & \multicolumn{2}{c}{94} \\
+    \multicolumn{1}{c}{} & \textbf{Fmanche} & \multicolumn{2}{c}{103} & \multicolumn{2}{c}{62} & \multicolumn{2}{c}{78} & \multicolumn{2}{c}{37} \\
+    \multicolumn{1}{c}{} & \textbf{F/n} & \multicolumn{2}{c}{61} & \multicolumn{2}{c}{36} & \multicolumn{2}{c}{46} & \multicolumn{2}{c}{22} \\
+    \bottomrule
+    \end{tabular}%
+  \label{tab:tm_original_03}%
+\end{table}%
+
+\begin{description}
+	\item[b. Modified Airplane - ERJ145G]
+\end{description}
+
+% Table generated by Excel2LaTeX from sheet 'Plan2'
+\begin{table}[htbp]
+  \centering
+  \caption{Trim and Maneuver characteristics for flight condition F1 - Modified Airplane (ERJ145G)}
+    \begin{tabular}{rccccccccc}
+    \toprule
+    \multicolumn{1}{l}{} & \textbf{ENVELOPE} & \multicolumn{2}{c}{\textbf{E1}} & \multicolumn{2}{c}{\textbf{E2}} & \multicolumn{2}{c}{\textbf{E3}} & \multicolumn{2}{c}{\textbf{E4}} \\
+    \midrule
+    \multicolumn{1}{c}{\multirow{7}[0]{*}{\begin{sideways}\textbf{TRIM}\end{sideways}}} & \textbf{V (1.4Vs)} & \multicolumn{2}{c}{95} & \multicolumn{2}{c}{95} & \multicolumn{2}{c}{75} & \multicolumn{2}{c}{75} \\
+    \multicolumn{1}{c}{} & \textbf{$C_{Lh}$} & \multicolumn{2}{c}{-0.04} & \multicolumn{2}{c}{0.12} & \multicolumn{2}{c}{-0.08} & \multicolumn{2}{c}{0.14} \\
+    \multicolumn{1}{c}{} & \textbf{$C_{Lwb}$} & \multicolumn{2}{c}{0.75} & \multicolumn{2}{c}{0.72} & \multicolumn{2}{c}{0.77} & \multicolumn{2}{c}{0.72} \\
+    \multicolumn{1}{c}{} & \textbf{a} & \multicolumn{2}{c}{3.7} & \multicolumn{2}{c}{3.4} & \multicolumn{2}{c}{3.8} & \multicolumn{2}{c}{3.3} \\
+    \multicolumn{1}{c}{} & \textbf{e} & \multicolumn{2}{c}{2.3} & \multicolumn{2}{c}{2.2} & \multicolumn{2}{c}{2.3} & \multicolumn{2}{c}{2.2} \\
+    \multicolumn{1}{c}{} & \textbf{$a_h$} & \multicolumn{2}{c}{-0.5} & \multicolumn{2}{c}{1.8} & \multicolumn{2}{c}{-1.3} & \multicolumn{2}{c}{2.1} \\
+    \multicolumn{1}{c}{} & \textbf{$i_h$} & \multicolumn{2}{c}{-1.9} & \multicolumn{2}{c}{0.5} & \multicolumn{2}{c}{-2.7} & \multicolumn{2}{c}{0.9} \\
+    \multicolumn{1}{c}{\multirow{13}[2]{*}{\begin{sideways}\textbf{SPEED MANEUVER}\end{sideways}}} & \textbf{Condition} & 0.9Vi & 1.1Vi & 0.9Vi & 1.1Vi & 0.9Vi & 1.1Vi & 0.9Vi & 1.1Vi \\
+    \multicolumn{1}{c}{} & \textbf{V} & 85    & 104   & 85    & 104   & 67    & 82    & 67    & 82 \\
+    \multicolumn{1}{c}{} & \textbf{$C_{Lh}$} & -0.02 & -0.05 & 0.17  & 0.08  & -0.08 & -0.09 & 0.2   & 0.1 \\
+    \multicolumn{1}{c}{} & \textbf{$C_{Lwb}$} & 0.93  & 0.63  & 0.89  & 0.6   & 0.94  & 0.64  & 0.88  & 0.6 \\
+    \multicolumn{1}{c}{} & \textbf{a} & 5.2   & 2.5   & 4.8   & 2.3   & 5.3   & 2.6   & 4.8   & 2.3 \\
+    \multicolumn{1}{c}{} & \textbf{e} & 2.8   & 1.9   & 2.7   & 1.8   & 2.8   & 1.9   & 2.6   & 1.8 \\
+    \multicolumn{1}{c}{} & \textbf{$a_h$} & 0.5   & -1.3  & 2.7   & 1     & -0.2  & -2    & 3.1   & 1.4 \\
+    \multicolumn{1}{c}{} & \textbf{$\delta E$} & -1.3  & 1.6   & -2.1  & -0.5  & -1.1  & 2.3   & -2.2  & -0.9 \\
+    \multicolumn{1}{c}{} & \textbf{$\delta T$} & 0.8   & -0.9  & 1.2   & 0.3   & 0.6   & -1.3  & 1.3   & 0.5 \\
+    \multicolumn{1}{c}{} & \textbf{$C_H$} & 0.0057 & -0.0036 & 0.0015 & -0.001 & 0.0079 & -0.0053 & 0.0009 & -0.0006 \\
+    \multicolumn{1}{c}{} & \textbf{H} & 33    & -31   & 9     & -8    & 28    & -28   & 3     & -3 \\
+    \multicolumn{1}{c}{} & \textbf{F column} & 13    & -12   & 3     & -3    & 11    & -11   & 1     & -1 \\
+    \multicolumn{1}{c}{} & \textbf{F/knots} & 2.6   & 2.5   & 0.7   & 0.7   & 2.9   & 2.9   & 0.3   & 0.3 \\
+    \multicolumn{1}{c}{\multirow{11}[1]{*}{\begin{sideways}\textbf{PULL UP MANEUVER}\end{sideways}}} & \textbf{n} & \multicolumn{2}{c}{2} & \multicolumn{2}{c}{2} & \multicolumn{2}{c}{2} & \multicolumn{2}{c}{2} \\
+    \multicolumn{1}{c}{} & \textbf{$C_{Lh}$} & \multicolumn{2}{c}{0.02} & \multicolumn{2}{c}{0.32} & \multicolumn{2}{c}{-0.07} & \multicolumn{2}{c}{0.37} \\
+    \multicolumn{1}{c}{} & \textbf{$C_{Lwb}$} & \multicolumn{2}{c}{1.46} & \multicolumn{2}{c}{1.4} & \multicolumn{2}{c}{1.48} & \multicolumn{2}{c}{1.39} \\
+    \multicolumn{1}{c}{} & \textbf{a} & \multicolumn{2}{c}{9.9} & \multicolumn{2}{c}{9.4} & \multicolumn{2}{c}{10.1} & \multicolumn{2}{c}{9.3} \\
+    \multicolumn{1}{c}{} & \textbf{$a_h$} & \multicolumn{2}{c}{5.7} & \multicolumn{2}{c}{7.7} & \multicolumn{2}{c}{5.1} & \multicolumn{2}{c}{8} \\
+    \multicolumn{1}{c}{} & \textbf{$\delta E$} & \multicolumn{2}{c}{-10.7} & \multicolumn{2}{c}{-8.9} & \multicolumn{2}{c}{-11.2} & \multicolumn{2}{c}{-8.6} \\
+    \multicolumn{1}{c}{} & \textbf{$\delta T$} & \multicolumn{2}{c}{6.2} & \multicolumn{2}{c}{5.2} & \multicolumn{2}{c}{6.5} & \multicolumn{2}{c}{5} \\
+    \multicolumn{1}{c}{} & \textbf{$C_H$} & \multicolumn{2}{c}{0.036} & \multicolumn{2}{c}{0.019} & \multicolumn{2}{c}{0.047} & \multicolumn{2}{c}{0.019} \\
+    \multicolumn{1}{c}{} & \textbf{H} & \multicolumn{2}{c}{254} & \multicolumn{2}{c}{137} & \multicolumn{2}{c}{210} & \multicolumn{2}{c}{84} \\
+    \multicolumn{1}{c}{} & \textbf{Fmanche} & \multicolumn{2}{c}{100} & \multicolumn{2}{c}{54} & \multicolumn{2}{c}{82} & \multicolumn{2}{c}{33} \\
+    \multicolumn{1}{c}{} & \textbf{F/n} & \multicolumn{2}{c}{51} & \multicolumn{2}{c}{27} & \multicolumn{2}{c}{42} & \multicolumn{2}{c}{17} \\
+    \bottomrule
+    \end{tabular}%
+  \label{tab:tm_modified_01}%
+\end{table}%
+
+% Table generated by Excel2LaTeX from sheet 'Plan2'
+\begin{table}[htbp]
+  \centering
+  \caption{Trim and Maneuver characteristics for flight condition F2 - Modified Airplane (ERJ145G)}
+    \begin{tabular}{rccccccccc}
+    \toprule
+    \multicolumn{1}{l}{} & \textbf{ENVELOPE} & \multicolumn{2}{c}{\textbf{E1}} & \multicolumn{2}{c}{\textbf{E2}} & \multicolumn{2}{c}{\textbf{E3}} & \multicolumn{2}{c}{\textbf{E4}} \\
+    \midrule
+    \multicolumn{1}{c}{\multirow{7}[0]{*}{\begin{sideways}\textbf{TRIM}\end{sideways}}} & \textbf{V (0.78M)} & \multicolumn{2}{c}{122} & \multicolumn{2}{c}{122} & \multicolumn{2}{c}{122} & \multicolumn{2}{c}{122} \\
+    \multicolumn{1}{c}{} & \textbf{$C_{Lh}$} & \multicolumn{2}{c}{-0.06} & \multicolumn{2}{c}{0.03} & \multicolumn{2}{c}{-0.09} & \multicolumn{2}{c}{-0.01} \\
+    \multicolumn{1}{c}{} & \textbf{$C_{Lwb}$} & \multicolumn{2}{c}{0.46} & \multicolumn{2}{c}{0.44} & \multicolumn{2}{c}{0.3} & \multicolumn{2}{c}{0.28} \\
+    \multicolumn{1}{c}{} & \textbf{a} & \multicolumn{2}{c}{1.1} & \multicolumn{2}{c}{0.9} & \multicolumn{2}{c}{-0.3} & \multicolumn{2}{c}{-0.5} \\
+    \multicolumn{1}{c}{} & \textbf{e} & \multicolumn{2}{c}{1.4} & \multicolumn{2}{c}{1.3} & \multicolumn{2}{c}{0.9} & \multicolumn{2}{c}{0.9} \\
+    \multicolumn{1}{c}{} & \textbf{$a_h$} & \multicolumn{2}{c}{-0.9} & \multicolumn{2}{c}{0.5} & \multicolumn{2}{c}{-1.4} & \multicolumn{2}{c}{-0.1} \\
+    \multicolumn{1}{c}{} & \textbf{$i_h$} & \multicolumn{2}{c}{-0.6} & \multicolumn{2}{c}{0.9} & \multicolumn{2}{c}{-0.1} & \multicolumn{2}{c}{1.2} \\
+    \multicolumn{1}{c}{\multirow{13}[2]{*}{\begin{sideways}\textbf{SPEED MANEUVER}\end{sideways}}} & \textbf{Condition} & 0.9Vi & 1.1Vi & 0.9Vi & 1.1Vi & 0.9Vi & 1.1Vi & 0.9Vi & 1.1Vi \\
+    \multicolumn{1}{c}{} & \textbf{V} & 110   & 134   & 110   & 134   & 110   & 134   & 110   & 134 \\
+    \multicolumn{1}{c}{} & \textbf{$C_{Lh}$} & -0.05 & -0.07 & 0.06  & 0.01  & -0.09 & -0.09 & 0.01  & -0.02 \\
+    \multicolumn{1}{c}{} & \textbf{$C_{Lwb}$} & 0.57  & 0.39  & 0.54  & 0.37  & 0.37  & 0.25  & 0.35  & 0.24 \\
+    \multicolumn{1}{c}{} & \textbf{a} & 2     & 0.4   & 1.8   & 0.3   & 0.2   & -0.8  & 0.1   & -0.9 \\
+    \multicolumn{1}{c}{} & \textbf{e} & 1.7   & 1.2   & 1.6   & 1.1   & 1.1   & 0.8   & 1     & 0.7 \\
+    \multicolumn{1}{c}{} & \textbf{$a_h$} & -0.3  & -1.4  & 1     & 0     & -1    & -1.7  & 0.3   & -0.4 \\
+    \multicolumn{1}{c}{} & \textbf{$\delta E$} & -0.4  & 1.4   & -0.9  & 0.1   & 0.2   & 1.5   & -0.2  & 0.3 \\
+    \multicolumn{1}{c}{} & \textbf{$\delta T$} & 0.2   & -0.8  & 0.5   & -0.1  & -0.1  & -0.9  & 0.1   & -0.2 \\
+    \multicolumn{1}{c}{} & \textbf{$C_H$} & 0.0028 & -0.0017 & 0.0007 & -0.0005 & 0.0022 & -0.0013 & 0.0002 & -0.0002 \\
+    \multicolumn{1}{c}{} & \textbf{H} & 27    & -25   & 7     & -7    & 21    & -19   & 2     & -2 \\
+    \multicolumn{1}{c}{} & \textbf{F column} & 11    & -10   & 3     & -3    & 8     & -8    & 1     & -1 \\
+    \multicolumn{1}{c}{} & \textbf{F/knots} & 1.7   & 1.5   & 0.4   & 0.4   & 1.3   & 1.2   & 0.1   & 0.1 \\
+    \multicolumn{1}{c}{\multirow{11}[1]{*}{\begin{sideways}\textbf{PULL UP MANEUVER}\end{sideways}}} & \textbf{n} & \multicolumn{2}{c}{2.5} & \multicolumn{2}{c}{2.5} & \multicolumn{2}{c}{2.5} & \multicolumn{2}{c}{2.5} \\
+    \multicolumn{1}{c}{} & \textbf{$C_{Lh}$} & \multicolumn{2}{c}{0} & \multicolumn{2}{c}{0.22} & \multicolumn{2}{c}{-0.09} & \multicolumn{2}{c}{0.13} \\
+    \multicolumn{1}{c}{} & \textbf{$C_{Lwb}$} & \multicolumn{2}{c}{1.12} & \multicolumn{2}{c}{1.08} & \multicolumn{2}{c}{0.72} & \multicolumn{2}{c}{0.68} \\
+    \multicolumn{1}{c}{} & \textbf{a} & \multicolumn{2}{c}{6.9} & \multicolumn{2}{c}{6.5} & \multicolumn{2}{c}{3.4} & \multicolumn{2}{c}{3} \\
+    \multicolumn{1}{c}{} & \textbf{$a_h$} & \multicolumn{2}{c}{5} & \multicolumn{2}{c}{6.1} & \multicolumn{2}{c}{2.3} & \multicolumn{2}{c}{3.4} \\
+    \multicolumn{1}{c}{} & \textbf{$\delta E$} & \multicolumn{2}{c}{-9.8} & \multicolumn{2}{c}{-7.6} & \multicolumn{2}{c}{-6.2} & \multicolumn{2}{c}{-4.2} \\
+    \multicolumn{1}{c}{} & \textbf{$\delta T$} & \multicolumn{2}{c}{5.6} & \multicolumn{2}{c}{4.4} & \multicolumn{2}{c}{3.6} & \multicolumn{2}{c}{2.4} \\
+    \multicolumn{1}{c}{} & \textbf{$C_H$} & \multicolumn{2}{c}{0.027} & \multicolumn{2}{c}{0.015} & \multicolumn{2}{c}{0.02} & \multicolumn{2}{c}{0.008} \\
+    \multicolumn{1}{c}{} & \textbf{H} & \multicolumn{2}{c}{322} & \multicolumn{2}{c}{173} & \multicolumn{2}{c}{232} & \multicolumn{2}{c}{93} \\
+    \multicolumn{1}{c}{} & \textbf{Fmanche} & \multicolumn{2}{c}{126} & \multicolumn{2}{c}{68} & \multicolumn{2}{c}{91} & \multicolumn{2}{c}{37} \\
+    \multicolumn{1}{c}{} & \textbf{F/n} & \multicolumn{2}{c}{51} & \multicolumn{2}{c}{27} & \multicolumn{2}{c}{36} & \multicolumn{2}{c}{15} \\
+    \bottomrule
+    \end{tabular}%
+  \label{tab:tm_modified_02}%
+\end{table}%
+
+% Table generated by Excel2LaTeX from sheet 'Plan2'
+\begin{table}[htbp]
+  \centering
+  \caption{Trim and Maneuver characteristics for flight condition F3 - Modified Airplane (ERJ145G)}
+    \begin{tabular}{rccccccccc}
+    \toprule
+    \multicolumn{1}{l}{} & \textbf{ENVELOPE} & \multicolumn{2}{c}{\textbf{E1}} & \multicolumn{2}{c}{\textbf{E2}} & \multicolumn{2}{c}{\textbf{E3}} & \multicolumn{2}{c}{\textbf{E4}} \\
+    \midrule
+    \multicolumn{1}{c}{\multirow{7}[0]{*}{\begin{sideways}\textbf{TRIM}\end{sideways}}} & \textbf{V (1.3Vs)} & \multicolumn{2}{c}{75} & \multicolumn{2}{c}{75} & \multicolumn{2}{c}{59} & \multicolumn{2}{c}{59} \\
+    \multicolumn{1}{c}{} & \textbf{$C_{Lh}$} & \multicolumn{2}{c}{0} & \multicolumn{2}{c}{0.24} & \multicolumn{2}{c}{-0.08} & \multicolumn{2}{c}{0.28} \\
+    \multicolumn{1}{c}{} & \textbf{$C_{Lwb}$} & \multicolumn{2}{c}{1.19} & \multicolumn{2}{c}{1.14} & \multicolumn{2}{c}{1.2} & \multicolumn{2}{c}{1.13} \\
+    \multicolumn{1}{c}{} & \textbf{a} & \multicolumn{2}{c}{7.5} & \multicolumn{2}{c}{7.1} & \multicolumn{2}{c}{7.7} & \multicolumn{2}{c}{7} \\
+    \multicolumn{1}{c}{} & \textbf{e} & \multicolumn{2}{c}{3.6} & \multicolumn{2}{c}{3.4} & \multicolumn{2}{c}{3.6} & \multicolumn{2}{c}{3.4} \\
+    \multicolumn{1}{c}{} & \textbf{$a_h$} & \multicolumn{2}{c}{0} & \multicolumn{2}{c}{3.6} & \multicolumn{2}{c}{-1.1} & \multicolumn{2}{c}{4.3} \\
+    \multicolumn{1}{c}{} & \textbf{$i_h$} & \multicolumn{2}{c}{-3.9} & \multicolumn{2}{c}{0} & \multicolumn{2}{c}{-5.2} & \multicolumn{2}{c}{0.7} \\
+    \multicolumn{1}{c}{\multirow{13}[2]{*}{\begin{sideways}\textbf{SPEED MANEUVER}\end{sideways}}} & \textbf{Condition} & 0.9Vi & 1.1Vi & 0.9Vi & 1.1Vi & 0.9Vi & 1.1Vi & 0.9Vi & 1.1Vi \\
+    \multicolumn{1}{c}{} & \textbf{V} & 68    & 83    & 68    & 83    & 53    & 64    & 53    & 64 \\
+    \multicolumn{1}{c}{} & \textbf{$C_{Lh}$} & 0.02  & -0.02 & 0.32  & 0.18  & -0.07 & -0.08 & 0.37  & 0.22 \\
+    \multicolumn{1}{c}{} & \textbf{$C_{Lwb}$} & 1.46  & 0.99  & 1.4   & 0.94  & 1.48  & 1     & 1.39  & 0.94 \\
+    \multicolumn{1}{c}{} & \textbf{a} & 9.9   & 5.7   & 9.4   & 5.3   & 10.1  & 5.8   & 9.3   & 5.3 \\
+    \multicolumn{1}{c}{} & \textbf{e} & 4.4   & 3     & 4.2   & 2.8   & 4.5   & 3     & 4.2   & 2.8 \\
+    \multicolumn{1}{c}{} & \textbf{$a_h$} & 1.6   & -1.2  & 5.2   & 2.5   & 0.5   & -2.3  & 5.8   & 3.1 \\
+    \multicolumn{1}{c}{} & \textbf{$\delta E$} & -2.7  & 2     & -4    & -1.4  & -2.3  & 3.1   & -4.2  & -2 \\
+    \multicolumn{1}{c}{} & \textbf{$\delta T$} & 1.6   & -1.1  & 2.3   & 0.8   & 1.3   & -1.8  & 2.4   & 1.1 \\
+    \multicolumn{1}{c}{} & \textbf{$C_H$} & 0.0101 & -0.0068 & 0.0027 & -0.0018 & 0.0136 & -0.0094 & 0.0015 & -0.0011 \\
+    \multicolumn{1}{c}{} & \textbf{H} & 37    & -37   & 10    & -10   & 30    & -31   & 3     & -4 \\
+    \multicolumn{1}{c}{} & \textbf{F column} & 14    & -14   & 4     & -4    & 12    & -12   & 1     & -1 \\
+    \multicolumn{1}{c}{} & \textbf{F/knots} & 3.7   & 3.7   & 1     & 1     & 3.9   & 4     & 0.4   & 0.5 \\
+    \multicolumn{1}{c}{\multirow{11}[1]{*}{\begin{sideways}\textbf{PULL UP MANEUVER}\end{sideways}}} & \textbf{n} & \multicolumn{2}{c}{1.7} & \multicolumn{2}{c}{1.7} & \multicolumn{2}{c}{1.7} & \multicolumn{2}{c}{1.7} \\
+    \multicolumn{1}{c}{} & \textbf{$C_{Lh}$} & \multicolumn{2}{c}{0.07} & \multicolumn{2}{c}{0.48} & \multicolumn{2}{c}{-0.06} & \multicolumn{2}{c}{0.55} \\
+    \multicolumn{1}{c}{} & \textbf{$C_{Lwb}$} & \multicolumn{2}{c}{1.99} & \multicolumn{2}{c}{1.91} & \multicolumn{2}{c}{2.02} & \multicolumn{2}{c}{1.89} \\
+    \multicolumn{1}{c}{} & \textbf{a} & \multicolumn{2}{c}{14.6} & \multicolumn{2}{c}{13.9} & \multicolumn{2}{c}{14.9} & \multicolumn{2}{c}{13.7} \\
+    \multicolumn{1}{c}{} & \textbf{$a_h$} & \multicolumn{2}{c}{7.1} & \multicolumn{2}{c}{10.5} & \multicolumn{2}{c}{6.1} & \multicolumn{2}{c}{11} \\
+    \multicolumn{1}{c}{} & \textbf{$\delta E$} & \multicolumn{2}{c}{-12.6} & \multicolumn{2}{c}{-11.3} & \multicolumn{2}{c}{-13.1} & \multicolumn{2}{c}{-11.1} \\
+    \multicolumn{1}{c}{} & \textbf{$\delta T$} & \multicolumn{2}{c}{7.3} & \multicolumn{2}{c}{6.6} & \multicolumn{2}{c}{7.6} & \multicolumn{2}{c}{6.4} \\
+    \multicolumn{1}{c}{} & \textbf{$C_H$} & \multicolumn{2}{c}{0.047} & \multicolumn{2}{c}{0.025} & \multicolumn{2}{c}{0.06} & \multicolumn{2}{c}{0.024} \\
+    \multicolumn{1}{c}{} & \textbf{H} & \multicolumn{2}{c}{210} & \multicolumn{2}{c}{113} & \multicolumn{2}{c}{163} & \multicolumn{2}{c}{65} \\
+    \multicolumn{1}{c}{} & \textbf{Fmanche} & \multicolumn{2}{c}{82} & \multicolumn{2}{c}{44} & \multicolumn{2}{c}{64} & \multicolumn{2}{c}{26} \\
+    \multicolumn{1}{c}{} & \textbf{F/n} & \multicolumn{2}{c}{49} & \multicolumn{2}{c}{26} & \multicolumn{2}{c}{38} & \multicolumn{2}{c}{15} \\
+    \bottomrule
+    \end{tabular}%
+  \label{tab:tm_modified_03}%
+\end{table}%
+
+\subsubsection{Tab Modifications}
+
+As noticed in Tables \ref{tab:tm_modified_01} to \ref{tab:tm_modified_03}, the minimum pilot forces are not satisfied for the modified airplane. Forces to change the airspeed in 10\% were about 1 pound,
+when the minimum stipulated was of 3 pound.
+
+This way, the automatic tab gain was changed, and a new value for was calculated in -0.175. This means that the tab automatism was reduced, increasing the pilot force, as required.
+
+With this, the final pilot forces for the ERJ145G were obtained:
+
+% Table generated by Excel2LaTeX from sheet 'Plan2'
+\begin{table}[htbp]
+  \centering
+  \caption{Trim and Maneuver characteristics for flight condition F1 - Modified Airplane (ERJ145G) and Modified Tab Automatism }
+    \begin{tabular}{rccccccccc}
+    \toprule
+    \multicolumn{1}{l}{} & \textbf{ENVELOPE} & \multicolumn{2}{c}{\textbf{E1}} & \multicolumn{2}{c}{\textbf{E2}} & \multicolumn{2}{c}{\textbf{E3}} & \multicolumn{2}{c}{\textbf{E4}} \\
+    \midrule
+    \multicolumn{1}{c}{\multirow{7}[0]{*}{\begin{sideways}\textbf{TRIM}\end{sideways}}} & \textbf{V (1.3Vs)} & \multicolumn{2}{c}{95} & \multicolumn{2}{c}{95} & \multicolumn{2}{c}{75} & \multicolumn{2}{c}{75} \\
+    \multicolumn{1}{c}{} & \textbf{$C_{Lh}$} & \multicolumn{2}{c}{-0.04} & \multicolumn{2}{c}{0.12} & \multicolumn{2}{c}{-0.08} & \multicolumn{2}{c}{0.14} \\
+    \multicolumn{1}{c}{} & \textbf{$C_{Lwb}$} & \multicolumn{2}{c}{0.75} & \multicolumn{2}{c}{0.72} & \multicolumn{2}{c}{0.77} & \multicolumn{2}{c}{0.72} \\
+    \multicolumn{1}{c}{} & \textbf{a} & \multicolumn{2}{c}{3.7} & \multicolumn{2}{c}{3.4} & \multicolumn{2}{c}{3.8} & \multicolumn{2}{c}{3.3} \\
+    \multicolumn{1}{c}{} & \textbf{e} & \multicolumn{2}{c}{2.3} & \multicolumn{2}{c}{2.2} & \multicolumn{2}{c}{2.3} & \multicolumn{2}{c}{2.2} \\
+    \multicolumn{1}{c}{} & \textbf{$a_h$} & \multicolumn{2}{c}{-0.5} & \multicolumn{2}{c}{1.5} & \multicolumn{2}{c}{-1.1} & \multicolumn{2}{c}{1.9} \\
+    \multicolumn{1}{c}{} & \textbf{$i_h$} & \multicolumn{2}{c}{-1.9} & \multicolumn{2}{c}{0.3} & \multicolumn{2}{c}{-2.6} & \multicolumn{2}{c}{0.7} \\
+    \multicolumn{1}{c}{\multirow{13}[2]{*}{\begin{sideways}\textbf{SPEED MANEUVER}\end{sideways}}} & \textbf{Condition} & 0.9Vi & 1.1Vi & 0.9Vi & 1.1Vi & 0.9Vi & 1.1Vi & 0.9Vi & 1.1Vi \\
+    \multicolumn{1}{c}{} & \textbf{V} & 85    & 104   & 85    & 104   & 67    & 82    & 67    & 82 \\
+    \multicolumn{1}{c}{} & \textbf{$C_{Lh}$} & -0.02 & -0.05 & 0.17  & 0.08  & -0.08 & -0.09 & 0.2   & 0.1 \\
+    \multicolumn{1}{c}{} & \textbf{$C_{Lwb}$} & 0.93  & 0.63  & 0.89  & 0.6   & 0.94  & 0.64  & 0.88  & 0.6 \\
+    \multicolumn{1}{c}{} & \textbf{a} & 5.2   & 2.5   & 4.8   & 2.3   & 5.3   & 2.6   & 4.8   & 2.3 \\
+    \multicolumn{1}{c}{} & \textbf{e} & 2.8   & 1.9   & 2.7   & 1.8   & 2.8   & 1.9   & 2.6   & 1.8 \\
+    \multicolumn{1}{c}{} & \textbf{$a_h$} & 0.5   & -1.2  & 2.5   & 0.8   & -0.1  & -1.9  & 2.8   & 1.2 \\
+    \multicolumn{1}{c}{} & \textbf{$\delta E$} & -1.5  & 1.5   & -1.7  & -0.1  & -1.4  & 2     & -1.7  & -0.4 \\
+    \multicolumn{1}{c}{} & \textbf{$\delta T$} & 0.3   & -0.3  & 0.3   & 0     & 0.2   & -0.3  & 0.3   & 0.1 \\
+    \multicolumn{1}{c}{} & \textbf{$C_H$} & 0.009 & -0.006 & 0.003 & -0.002 & 0.012 & -0.008 & 0.003 & -0.002 \\
+    \multicolumn{1}{c}{} & \textbf{H} & 52.4  & -50.3 & 19.4  & -18.6 & 44.4  & -44.4 & 9.8   & -9.8 \\
+    \multicolumn{1}{c}{} & \textbf{F column} & 20.5  & -19.7 & 7.6   & -7.3  & 17.4  & -17.4 & 3.8   & -3.8 \\
+    \multicolumn{1}{c}{} & \textbf{F/knots} & 4.2   & 4.1   & 1.6   & 1.5   & 4.5   & 4.5   & 1     & 1 \\
+    \multicolumn{1}{c}{\multirow{11}[1]{*}{\begin{sideways}\textbf{PULL UP MANEUVER}\end{sideways}}} & \textbf{n} & \multicolumn{2}{c}{1.96} & \multicolumn{2}{c}{1.96} & \multicolumn{2}{c}{1.96} & \multicolumn{2}{c}{1.96} \\
+    \multicolumn{1}{c}{} & \textbf{$C_{Lh}$} & \multicolumn{2}{c}{0.02} & \multicolumn{2}{c}{0.32} & \multicolumn{2}{c}{-0.07} & \multicolumn{2}{c}{0.37} \\
+    \multicolumn{1}{c}{} & \textbf{$C_{Lwb}$} & \multicolumn{2}{c}{1.46} & \multicolumn{2}{c}{1.4} & \multicolumn{2}{c}{1.48} & \multicolumn{2}{c}{1.39} \\
+    \multicolumn{1}{c}{} & \textbf{a} & \multicolumn{2}{c}{9.9} & \multicolumn{2}{c}{9.4} & \multicolumn{2}{c}{10.1} & \multicolumn{2}{c}{9.3} \\
+    \multicolumn{1}{c}{} & \textbf{$a_h$} & \multicolumn{2}{c}{5.8} & \multicolumn{2}{c}{7.5} & \multicolumn{2}{c}{5.2} & \multicolumn{2}{c}{7.8} \\
+    \multicolumn{1}{c}{} & \textbf{$\delta E$} & \multicolumn{2}{c}{-10.8} & \multicolumn{2}{c}{-8.5} & \multicolumn{2}{c}{-11.5} & \multicolumn{2}{c}{-8.1} \\
+    \multicolumn{1}{c}{} & \textbf{$\delta T$} & \multicolumn{2}{c}{1.9} & \multicolumn{2}{c}{1.5} & \multicolumn{2}{c}{2} & \multicolumn{2}{c}{1.4} \\
+    \multicolumn{1}{c}{} & \textbf{$C_H$} & \multicolumn{2}{c}{0.057} & \multicolumn{2}{c}{0.034} & \multicolumn{2}{c}{0.074} & \multicolumn{2}{c}{0.035} \\
+    \multicolumn{1}{c}{} & \textbf{H} & \multicolumn{2}{c}{404} & \multicolumn{2}{c}{241} & \multicolumn{2}{c}{328} & \multicolumn{2}{c}{155} \\
+    \multicolumn{1}{c}{} & \textbf{Fmanche} & \multicolumn{2}{c}{158} & \multicolumn{2}{c}{95} & \multicolumn{2}{c}{129} & \multicolumn{2}{c}{61} \\
+    \multicolumn{1}{c}{} & \textbf{F/n} & \multicolumn{2}{c}{81} & \multicolumn{2}{c}{48} & \multicolumn{2}{c}{66} & \multicolumn{2}{c}{31} \\
+    \bottomrule
+    \end{tabular}%
+  \label{tab:tm_modified_04}%
+\end{table}%
+
+% Table generated by Excel2LaTeX from sheet 'Plan2'
+\begin{table}[htbp]
+  \centering
+  \caption{Trim and Maneuver characteristics for flight condition F2 - Modified Airplane (ERJ145G) and Modified Tab Automatism }
+    \begin{tabular}{rccccccccc}
+    \toprule
+    \multicolumn{1}{l}{} & \textbf{ENVELOPE} & \multicolumn{2}{c}{\textbf{E1}} & \multicolumn{2}{c}{\textbf{E2}} & \multicolumn{2}{c}{\textbf{E3}} & \multicolumn{2}{c}{\textbf{E4}} \\
+    \midrule
+    \multicolumn{1}{c}{\multirow{7}[0]{*}{\begin{sideways}\textbf{TRIM}\end{sideways}}} & \textbf{V (1.3Vs)} & \multicolumn{2}{c}{122} & \multicolumn{2}{c}{122} & \multicolumn{2}{c}{122} & \multicolumn{2}{c}{122} \\
+    \multicolumn{1}{c}{} & \textbf{$C_{Lh}$} & \multicolumn{2}{c}{-0.06} & \multicolumn{2}{c}{0.03} & \multicolumn{2}{c}{-0.09} & \multicolumn{2}{c}{-0.01} \\
+    \multicolumn{1}{c}{} & \textbf{$C_{Lwb}$} & \multicolumn{2}{c}{0.46} & \multicolumn{2}{c}{0.44} & \multicolumn{2}{c}{0.3} & \multicolumn{2}{c}{0.28} \\
+    \multicolumn{1}{c}{} & \textbf{a} & \multicolumn{2}{c}{1.1} & \multicolumn{2}{c}{0.9} & \multicolumn{2}{c}{-0.3} & \multicolumn{2}{c}{-0.5} \\
+    \multicolumn{1}{c}{} & \textbf{e} & \multicolumn{2}{c}{1.4} & \multicolumn{2}{c}{1.3} & \multicolumn{2}{c}{0.9} & \multicolumn{2}{c}{0.9} \\
+    \multicolumn{1}{c}{} & \textbf{$a_h$} & \multicolumn{2}{c}{-0.8} & \multicolumn{2}{c}{0.4} & \multicolumn{2}{c}{-1.2} & \multicolumn{2}{c}{-0.1} \\
+    \multicolumn{1}{c}{} & \textbf{$i_h$} & \multicolumn{2}{c}{-0.5} & \multicolumn{2}{c}{0.8} & \multicolumn{2}{c}{0} & \multicolumn{2}{c}{1.3} \\
+    \multicolumn{1}{c}{\multirow{13}[2]{*}{\begin{sideways}\textbf{SPEED MANEUVER}\end{sideways}}} & \textbf{Condition} & 0.9Vi & 1.1Vi & 0.9Vi & 1.1Vi & 0.9Vi & 1.1Vi & 0.9Vi & 1.1Vi \\
+    \multicolumn{1}{c}{} & \textbf{V} & 110   & 134   & 110   & 134   & 110   & 134   & 110   & 134 \\
+    \multicolumn{1}{c}{} & \textbf{$C_{Lh}$} & -0.05 & -0.07 & 0.06  & 0.01  & -0.09 & -0.09 & 0.01  & -0.02 \\
+    \multicolumn{1}{c}{} & \textbf{$C_{Lwb}$} & 0.57  & 0.39  & 0.54  & 0.37  & 0.37  & 0.25  & 0.35  & 0.24 \\
+    \multicolumn{1}{c}{} & \textbf{a} & 2     & 0.4   & 1.8   & 0.3   & 0.2   & -0.8  & 0.1   & -0.9 \\
+    \multicolumn{1}{c}{} & \textbf{e} & 1.7   & 1.2   & 1.6   & 1.1   & 1.1   & 0.8   & 1     & 0.7 \\
+    \multicolumn{1}{c}{} & \textbf{$a_h$} & -0.2  & -1.2  & 1     & 0     & -0.8  & -1.5  & 0.3   & -0.4 \\
+    \multicolumn{1}{c}{} & \textbf{$\delta E$} & -0.6  & 1.1   & -0.8  & 0.2   & -0.1  & 1.1   & -0.3  & 0.3 \\
+    \multicolumn{1}{c}{} & \textbf{$\delta T$} & 0.1   & -0.2  & 0.1   & 0     & 0     & -0.2  & 0     & 0 \\
+    \multicolumn{1}{c}{} & \textbf{$C_H$} & 0.005 & -0.003 & 0.002 & -0.001 & 0.003 & -0.002 & 0.001 & 0 \\
+    \multicolumn{1}{c}{} & \textbf{H} & 43.6  & -39.9 & 16.1  & -14.8 & 32.8  & -30   & 7.2   & -6.6 \\
+    \multicolumn{1}{c}{} & \textbf{F column} & 17.1  & -15.7 & 6.3   & -5.8  & 12.9  & -11.8 & 2.8   & -2.6 \\
+    \multicolumn{1}{c}{} & \textbf{F/knots} & 2.7   & 2.5   & 1     & 0.9   & 2.1   & 1.9   & 0.5   & 0.4 \\
+    \multicolumn{1}{c}{\multirow{11}[1]{*}{\begin{sideways}\textbf{PULL UP MANEUVER}\end{sideways}}} & \textbf{n} & \multicolumn{2}{c}{2.5} & \multicolumn{2}{c}{2.5} & \multicolumn{2}{c}{2.5} & \multicolumn{2}{c}{2.5} \\
+    \multicolumn{1}{c}{} & \textbf{$C_{Lh}$} & \multicolumn{2}{c}{0} & \multicolumn{2}{c}{0.22} & \multicolumn{2}{c}{-0.09} & \multicolumn{2}{c}{0.13} \\
+    \multicolumn{1}{c}{} & \textbf{$C_{Lwb}$} & \multicolumn{2}{c}{1.12} & \multicolumn{2}{c}{1.08} & \multicolumn{2}{c}{0.72} & \multicolumn{2}{c}{0.68} \\
+    \multicolumn{1}{c}{} & \textbf{a} & \multicolumn{2}{c}{6.9} & \multicolumn{2}{c}{6.5} & \multicolumn{2}{c}{3.4} & \multicolumn{2}{c}{3} \\
+    \multicolumn{1}{c}{} & \textbf{$a_h$} & \multicolumn{2}{c}{5.1} & \multicolumn{2}{c}{6} & \multicolumn{2}{c}{2.5} & \multicolumn{2}{c}{3.4} \\
+    \multicolumn{1}{c}{} & \textbf{$\delta E$} & \multicolumn{2}{c}{-10} & \multicolumn{2}{c}{-7.5} & \multicolumn{2}{c}{-6.5} & \multicolumn{2}{c}{-4.2} \\
+    \multicolumn{1}{c}{} & \textbf{$\delta T$} & \multicolumn{2}{c}{1.7} & \multicolumn{2}{c}{1.3} & \multicolumn{2}{c}{1.1} & \multicolumn{2}{c}{0.7} \\
+    \multicolumn{1}{c}{} & \textbf{$C_H$} & \multicolumn{2}{c}{0.043} & \multicolumn{2}{c}{0.026} & \multicolumn{2}{c}{0.031} & \multicolumn{2}{c}{0.014} \\
+    \multicolumn{1}{c}{} & \textbf{H} & \multicolumn{2}{c}{512} & \multicolumn{2}{c}{306} & \multicolumn{2}{c}{362} & \multicolumn{2}{c}{170} \\
+    \multicolumn{1}{c}{} & \textbf{Fmanche} & \multicolumn{2}{c}{201} & \multicolumn{2}{c}{120} & \multicolumn{2}{c}{142} & \multicolumn{2}{c}{67} \\
+    \multicolumn{1}{c}{} & \textbf{F/n} & \multicolumn{2}{c}{80} & \multicolumn{2}{c}{48} & \multicolumn{2}{c}{57} & \multicolumn{2}{c}{27} \\
+    \bottomrule
+    \end{tabular}%
+  \label{tab:tm_modified_05}%
+\end{table}%
+
+% Table generated by Excel2LaTeX from sheet 'Plan2'
+\begin{table}[htbp]
+  \centering
+  \caption{Trim and Maneuver characteristics for flight condition F3 - Modified Airplane (ERJ145G) and Modified Tab Automatism}
+    \begin{tabular}{rccccccccc}
+    \toprule
+    \multicolumn{1}{l}{} & \textbf{ENVELOPE} & \multicolumn{2}{c}{\textbf{E1}} & \multicolumn{2}{c}{\textbf{E2}} & \multicolumn{2}{c}{\textbf{E3}} & \multicolumn{2}{c}{\textbf{E4}} \\
+    \midrule
+    \multicolumn{1}{c}{\multirow{7}[0]{*}{\begin{sideways}\textbf{TRIM}\end{sideways}}} & \textbf{V (1.3Vs)} & \multicolumn{2}{c}{75} & \multicolumn{2}{c}{75} & \multicolumn{2}{c}{59} & \multicolumn{2}{c}{59} \\
+    \multicolumn{1}{c}{} & \textbf{$C_{Lh}$} & \multicolumn{2}{c}{0} & \multicolumn{2}{c}{0.24} & \multicolumn{2}{c}{-0.08} & \multicolumn{2}{c}{0.28} \\
+    \multicolumn{1}{c}{} & \textbf{$C_{Lwb}$} & \multicolumn{2}{c}{1.19} & \multicolumn{2}{c}{1.14} & \multicolumn{2}{c}{1.2} & \multicolumn{2}{c}{1.13} \\
+    \multicolumn{1}{c}{} & \textbf{a} & \multicolumn{2}{c}{7.5} & \multicolumn{2}{c}{7.1} & \multicolumn{2}{c}{7.7} & \multicolumn{2}{c}{7} \\
+    \multicolumn{1}{c}{} & \textbf{e} & \multicolumn{2}{c}{3.6} & \multicolumn{2}{c}{3.4} & \multicolumn{2}{c}{3.6} & \multicolumn{2}{c}{3.4} \\
+    \multicolumn{1}{c}{} & \textbf{$a_h$} & \multicolumn{2}{c}{0} & \multicolumn{2}{c}{3.2} & \multicolumn{2}{c}{-1} & \multicolumn{2}{c}{3.7} \\
+    \multicolumn{1}{c}{} & \textbf{$i_h$} & \multicolumn{2}{c}{-3.9} & \multicolumn{2}{c}{-0.4} & \multicolumn{2}{c}{-5} & \multicolumn{2}{c}{0.1} \\
+    \multicolumn{1}{c}{\multirow{13}[2]{*}{\begin{sideways}\textbf{SPEED MANEUVER}\end{sideways}}} & \textbf{Condition} & 0.9Vi & 1.1Vi & 0.9Vi & 1.1Vi & 0.9Vi & 1.1Vi & 0.9Vi & 1.1Vi \\
+    \multicolumn{1}{c}{} & \textbf{V} & 68    & 83    & 68    & 83    & 53    & 64    & 53    & 64 \\
+    \multicolumn{1}{c}{} & \textbf{$C_{Lh}$} & 0.02  & -0.02 & 0.32  & 0.18  & -0.07 & -0.08 & 0.37  & 0.22 \\
+    \multicolumn{1}{c}{} & \textbf{$C_{Lwb}$} & 1.46  & 0.99  & 1.4   & 0.94  & 1.48  & 1     & 1.39  & 0.94 \\
+    \multicolumn{1}{c}{} & \textbf{a} & 9.9   & 5.7   & 9.4   & 5.3   & 10.1  & 5.8   & 9.3   & 5.3 \\
+    \multicolumn{1}{c}{} & \textbf{e} & 4.4   & 3     & 4.2   & 2.8   & 4.5   & 3     & 4.2   & 2.8 \\
+    \multicolumn{1}{c}{} & \textbf{$a_h$} & 1.6   & -1.2  & 4.7   & 2.1   & 0.6   & -2.2  & 5.2   & 2.6 \\
+    \multicolumn{1}{c}{} & \textbf{$\delta E$} & -2.7  & 2     & -3.1  & -0.5  & -2.6  & 2.8   & -3.1  & -0.9 \\
+    \multicolumn{1}{c}{} & \textbf{$\delta T$} & 0.5   & -0.3  & 0.5   & 0.1   & 0.4   & -0.5  & 0.5   & 0.2 \\
+    \multicolumn{1}{c}{} & \textbf{$C_H$} & 0.016 & -0.011 & 0.006 & -0.004 & 0.021 & -0.015 & 0.005 & -0.003 \\
+    \multicolumn{1}{c}{} & \textbf{H} & 59    & -59   & 21.8  & -21.8 & 47.1  & -48.6 & 10.4  & -10.7 \\
+    \multicolumn{1}{c}{} & \textbf{F column} & 23.2  & -23.1 & 8.6   & -8.6  & 18.5  & -19.1 & 4.1   & -4.2 \\
+    \multicolumn{1}{c}{} & \textbf{F/knots} & 6     & 6     & 2.2   & 2.2   & 6.1   & 6.3   & 1.4   & 1.4 \\
+    \multicolumn{1}{c}{\multirow{11}[1]{*}{\begin{sideways}\textbf{PULL UP MANEUVER}\end{sideways}}} & \textbf{n} & \multicolumn{2}{c}{1.69} & \multicolumn{2}{c}{1.69} & \multicolumn{2}{c}{1.69} & \multicolumn{2}{c}{1.69} \\
+    \multicolumn{1}{c}{} & \textbf{$C_{Lh}$} & \multicolumn{2}{c}{0.07} & \multicolumn{2}{c}{0.48} & \multicolumn{2}{c}{-0.06} & \multicolumn{2}{c}{0.55} \\
+    \multicolumn{1}{c}{} & \textbf{$C_{Lwb}$} & \multicolumn{2}{c}{1.99} & \multicolumn{2}{c}{1.91} & \multicolumn{2}{c}{2.02} & \multicolumn{2}{c}{1.89} \\
+    \multicolumn{1}{c}{} & \textbf{a} & \multicolumn{2}{c}{14.6} & \multicolumn{2}{c}{13.9} & \multicolumn{2}{c}{14.9} & \multicolumn{2}{c}{13.7} \\
+    \multicolumn{1}{c}{} & \textbf{$a_h$} & \multicolumn{2}{c}{7.1} & \multicolumn{2}{c}{10} & \multicolumn{2}{c}{6.2} & \multicolumn{2}{c}{10.5} \\
+    \multicolumn{1}{c}{} & \textbf{$\delta E$} & \multicolumn{2}{c}{-12.6} & \multicolumn{2}{c}{-10.4} & \multicolumn{2}{c}{-13.3} & \multicolumn{2}{c}{-10.1} \\
+    \multicolumn{1}{c}{} & \textbf{$\delta T$} & \multicolumn{2}{c}{2.2} & \multicolumn{2}{c}{1.8} & \multicolumn{2}{c}{2.3} & \multicolumn{2}{c}{1.8} \\
+    \multicolumn{1}{c}{} & \textbf{$C_H$} & \multicolumn{2}{c}{0.075} & \multicolumn{2}{c}{0.045} & \multicolumn{2}{c}{0.093} & \multicolumn{2}{c}{0.044} \\
+    \multicolumn{1}{c}{} & \textbf{H} & \multicolumn{2}{c}{334} & \multicolumn{2}{c}{199} & \multicolumn{2}{c}{254} & \multicolumn{2}{c}{120} \\
+    \multicolumn{1}{c}{} & \textbf{Fmanche} & \multicolumn{2}{c}{131} & \multicolumn{2}{c}{78} & \multicolumn{2}{c}{100} & \multicolumn{2}{c}{47} \\
+    \multicolumn{1}{c}{} & \textbf{F/n} & \multicolumn{2}{c}{77} & \multicolumn{2}{c}{46} & \multicolumn{2}{c}{59} & \multicolumn{2}{c}{28} \\
+    \bottomrule
+    \end{tabular}%
+  \label{tab:tm_modified_06}%
+\end{table}%
+
+\begin{itemize}
+	\item \textit{\textbf{Rotate Force:}}
+\end{itemize}
+
+The reduction in static margin could lead to a critical condition for pilot minimum force to change speed. In order to avoid this situation, the geared tab was modified to keep the minimum force within the limit prescribed by
+requirements.
+
+The geared tab modification increases pilot force for all flight conditions. Therefore the other limit must be verified. That is, the flight conditions that require the maximum pilot control forces. One critical condition is
+the force required to rotate the aircraft during takeoff at the most forward cg position and MTOW.
+
+In this analysis, the aircraft at most forward cg position was trimmed for $V_2$ with one engine inoperative. The force on the column for rotating aircraft at $V_R$ as a function of takeoff weight is shown in figure \ref{fig:force_rotate}.
+
+%Incluindo figuras
+\begin{figure}[H]
+	%comando para centralizara  figura
+	\centering
+	%comando para a inclusão da figura
+	\includegraphics[width=400pt]{Pictures/Aeronautics/force_rotate.eps}
+	%Legenda
+	\caption{Pilot Forces to Rotate the Aircraft}
+	%Nome para se referir na figura no texto
+	\label{fig:force_rotate}
+\end{figure}
+
+\begin{itemize}
+	\item \textit{\textbf{Horizontal Tail Incidence:}}
+\end{itemize}
+
+\begin{figure}[H]
+	%comando para centralizara  figura
+	\centering
+	%comando para a inclusão da figura
+	\includegraphics[width=400pt]{Pictures/Aeronautics/horizantal_tail_trim.eps}
+	%Legenda
+	\caption{Horizontal tail angle to trim x Speed}
+	%Nome para se referir na figura no texto
+	\label{fig:force_rotate}
+\end{figure}
+
+The graph above show the horizontal tail angle to trim as a function of  speed. Limits are between -10$\circ$ and 4$\circ$. The dark blue line is the angle for ERJ-145 LR in maximum forward center of gravity (CG) configuration and
+maximum thrust. As can be seen the line overcome slightly the limit, but  for the purpose of study, only the change angle from actual  aircraft configuration to new configuration is needed. Light blue line is the angle to trim
+the original aircraft configuration with aft center of gravity and minimum thrust.
+
+Red line show the horizontal tail angle to trim the modified aircraft. The change was roughly 3$\circ$ at approximated 125 knots with aircraft forward CG configuration. Against variation of 1$\circ$,  comparing the light blue line
+and yellow line ( modified aircraft with aft center of gravity), at 125 knots.
+
+So, the configuration with forward center of gravity had a better improve. The horizontal tail with a lower incidence angle, will generate lower drag and satisfy the physical limits of horizontal tail movement.
+
+
+\subsubsection{Aircraft Loading Restrictions}
+
+After all modifications and studies, the final CG Envelope for the ERJ145G stands in the Figure \ref{fig:dsa_20}:
+
+%Incluindo figuras
+\begin{figure}[H]
+	%comando para centralizara  figura
+	\centering
+	%comando para a inclusão da figura
+	\includegraphics[width=400pt]{Pictures/Aeronautics/DSA_20.eps}
+	%Legenda
+	\caption{Final CG Envelope - ERJ145G}
+	%Nome para se referir na figura no texto
+	\label{fig:dsa_20}
+\end{figure}
+
+Observing the chart we can notice that the new airplane has some limitations in the passenger load. The green and grey lines, representing the full passenger load (when the passengers are loaded filling the three rows in
+the same time), has points that stands out of the envelope the ERJ145G operator will need special attention when flying with less than 51 and more than passengers.
+
+In these cases the passengers cannot seat all in the front of the airplane, and the operator need to space then in the back of the airplane, a distribution that can be done with the ticket booking and seat reservation.
+
