@@ -54,7 +54,9 @@ namespace SimuladorPropulsivo
             this.ClientSize = new System.Drawing.Size(523, 357);
             this.Controls.Add(this.zg1);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gráficos";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Resize += new System.EventHandler(this.Form1_Resize);
             this.ResumeLayout(false);
