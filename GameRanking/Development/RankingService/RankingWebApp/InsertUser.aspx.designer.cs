@@ -10,7 +10,7 @@
 namespace RankingWebApp {
     
     
-    public partial class ViewItems {
+    public partial class InsertUser {
         
         /// <summary>
         /// form1 control.
@@ -22,30 +22,30 @@ namespace RankingWebApp {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// ScriptManager1 control.
+        /// textName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.ScriptManager ScriptManager1;
+        protected global::System.Web.UI.WebControls.TextBox textName;
         
         /// <summary>
-        /// UpdatePanel1 control.
+        /// textFacebook control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.UpdatePanel UpdatePanel1;
+        protected global::System.Web.UI.WebControls.TextBox textFacebook;
         
         /// <summary>
-        /// tabUsers control.
+        /// InsertButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.PlaceHolder tabUsers;
+        protected global::System.Web.UI.WebControls.Button InsertButton;
     }
 }

@@ -1,0 +1,4 @@
+Servidor: dbmy0052.whservidor.com
+Usuario: ploobs_8
+Pass: gameranking1
+Banco: ploobs_8
