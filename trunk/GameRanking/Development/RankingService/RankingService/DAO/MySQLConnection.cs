@@ -66,31 +66,31 @@ namespace RankingService.DAO
             connection.Close();
         }
 
-        public void SQLInsertImage(String Name, byte[] buffer)
+        //public void SQLInsertImage(String Name, byte[] buffer)
+        //{
+        //    String name_new = Name;
+        //    byte[] buffer_new = buffer;
+
+        //    connection.Open();
+        //    MySqlCommand command = new MySqlCommand("", connection);
+        //    command.CommandText = "insert into User(Name,Image) values(@name,@image);";
+
+        //    command.Parameters.AddWithValue("@name", name_new);
+        //    command.Parameters.AddWithValue("@image", buffer_new);
+
+        //    command.ExecuteNonQuery();
+
+        //    connection.Close();
+
+
+        //}
+
+
+        public  List<string>  SQLQueryReturn(string query)
         {
-            String name_new = Name;
-            byte[] buffer_new = buffer;
-
-            connection.Open();
-            MySqlCommand command = new MySqlCommand("", connection);
-            command.CommandText = "insert into User(Name,Image) values(@name,@image);";
-
-            command.Parameters.AddWithValue("@name", name_new);
-            command.Parameters.AddWithValue("@image", buffer_new);
-
-            command.ExecuteNonQuery();
-
-            connection.Close();
 
 
-        }
-
-
-        public List<Object> SQLQueryReturn(string query)
-        {
-
-
-            List<Object> fragments = new List<Object>();
+            List<string> fragments = new List<string>();
 
 
             MySqlCommand command = connection.CreateCommand();
@@ -99,25 +99,27 @@ namespace RankingService.DAO
             connection.Open();
             Reader = command.ExecuteReader();
 
-
+           
             int items = Reader.FieldCount;// retrieving the size of the object
+           // int i = 1;
             while (Reader.Read())
             {
-                string stringreturn = "";
-                List<Object> subitem = new List<object>();
 
+                string stringreturn = "";
                 for (int i = 1; i < items; i++)
                 {
-                    subitem.Add(Reader.GetValue(i));
-                    //stringreturn += (Reader.GetValue(i) + ",");
+
+                    stringreturn += (Reader.GetValue(i) + ",");
                 }
-
-               // stringreturn = stringreturn.Remove(stringreturn.Length - 1);
-                fragments.Add(subitem);
-
+                stringreturn = stringreturn.Remove(stringreturn.Length - 1);
+                fragments.Add(stringreturn);
             }
+
+
             connection.Close();
+
             return fragments;
+            
 
         }
 

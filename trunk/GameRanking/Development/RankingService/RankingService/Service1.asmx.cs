@@ -33,22 +33,32 @@ namespace RankingService
         public bool CreateUser(String Name, String FileName)
         {
 
-            bool ret = false;
-            
-            FileStream fs;
-            BinaryReader br;
-            byte[] ImageData;
-            fs = new FileStream(FileName, FileMode.Open, FileAccess.Read);
-            br = new BinaryReader(fs);
-            ImageData = br.ReadBytes((int)fs.Length);
-            br.Close();
-            fs.Close();
 
-            MySQLConnection.Instance().SQLInsertImage(Name, ImageData);
+            bool ret = false;
+            String query = "INSERT INTO User (Name, Image) VALUES('" + Name + "','" + FileName + "')";
+            MySQLConnection.Instance().SQLQuery(query);
+
+            return ret;
+            
+           
+        }
+
+
+        [WebMethod]
+        public bool CreateFaceBookUser(String Name, String FileName,string FaceBook)
+        {
+
+
+            bool ret = false;
+            String query = "INSERT INTO User (Name, Image,FaceBook) VALUES('" + Name + "','" + FileName + "','"+FaceBook+"')";
+            MySQLConnection.Instance().SQLQuery(query);
 
             return ret;
 
+
         }
+
+
 
 
         [WebMethod]
@@ -64,8 +74,18 @@ namespace RankingService
         }
 
         [WebMethod]
+        public string GetItem(string list,string field, string item)
+        {
 
-        public List<Object> GetList(String item)
+            String query = "Select * from " + list + " where "+field+"='"+item+"'";
+            return MySQLConnection.Instance().SQLQueryReturn(query).ToArray()[0];
+        
+        }
+
+
+        [WebMethod]
+
+        public List<string> GetList(string item)
         {
 
             String query = "Select * from " + item;
