@@ -1,8 +1,0 @@
-According to the market analysis described above, among the platform variation of ERJ145, 
-the best aircraft to be used as a basis of comparison is ERJ 145 LR due to
-it performance characteristics,  and the current situation of the global market.
-The table below, compares the product specification data. The first column
-describes the parameters analyzed, the second is the aircraft comparison basis data, third column describes the Genisis aircraft data, and
-the last column is the ERJ145 data calculated by the same methodology used by Genesis team.
-
-( colocar aqui a tabela product speficication.xls )

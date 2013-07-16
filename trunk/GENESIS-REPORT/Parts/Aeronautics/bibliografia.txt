@@ -1,9 +1,0 @@
-EMBRAER. EMB145 Airport Planning Manual. APM-145/1100.Original issue: May 30, 1997. Revision N of January 29, 2007.
-EMBRAER. ERJ145 European Weight and Balance Manual. Original issue: May 12, 1997. Revision 11 of December 16, 2005.
-EMBRAER . Métodos de Estimativa de Peso de Aviões. Rev B. Amarildo Milan. VTE/DEE/GAE/W&B. Agosto 2012.
-ETKIN, B., REID, L.D. Dynamics of Flight: Stability and Control. Wiley. 3rd Edition. 1995.
-RBAC 23. Requisitos de Aeronavegabilidade: Aviões de Categoria Normal, Utilidade, Acrobática e Transporte Regional. Emenda 59. 22 de Abril de 2009.
-RBAC 25. Requisitos de Aeronavegabilidade: Aviões de Categoria Transporte. Emenda 131. 24 de Abril de 2012.
-IRVING, F. G. Longitudinal Static Stability of Low-Speed Aircraft. International Series of Monographs in Aeronautics and Astronautics. Volume 5. Pergamon Press. First Edition. 1966.
-MELO, J.R.O. Estabilidade Estática e Controle Longitudinal - Conceitos Básicos. Notas de Aula PEE-19. Março de 2013.
-RAYMER, D. P. Aircraft Design: A Conceptual Approach. AIAA Educational Series. Second Edition. 1992.
