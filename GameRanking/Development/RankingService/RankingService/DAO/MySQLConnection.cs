@@ -66,26 +66,6 @@ namespace RankingService.DAO
             connection.Close();
         }
 
-        //public void SQLInsertImage(String Name, byte[] buffer)
-        //{
-        //    String name_new = Name;
-        //    byte[] buffer_new = buffer;
-
-        //    connection.Open();
-        //    MySqlCommand command = new MySqlCommand("", connection);
-        //    command.CommandText = "insert into User(Name,Image) values(@name,@image);";
-
-        //    command.Parameters.AddWithValue("@name", name_new);
-        //    command.Parameters.AddWithValue("@image", buffer_new);
-
-        //    command.ExecuteNonQuery();
-
-        //    connection.Close();
-
-
-        //}
-
-
         public  List<string>  SQLQueryReturn(string query)
         {
 
