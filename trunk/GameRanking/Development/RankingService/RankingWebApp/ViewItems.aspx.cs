@@ -25,7 +25,7 @@ namespace RankingWebApp
             //string username = "bruno.duartec";
 
 
-
+            
 
 
             Panel ptemp = new Panel();
@@ -49,39 +49,11 @@ namespace RankingWebApp
 
                 string username = localitems[2];
 
-                string userurl = "https://graph.facebook.com/" + username;
 
 
-                //https://graph.facebook.com/
-
-                string imageurl = localitems[1];
-                if (imageurl == String.Empty)
-                {
-                    imageurl = userurl + "/picture?type=normal";
-                }
-
-
-
-                #region removing info
-                WebClient webClient = new WebClient();
-                webClient.QueryString.Add("fields", "name");
-
-
-                string result = webClient.DownloadString(userurl);
-
-
-
-                string[] fieldsRaw = result.Split(',');
-
-                List<string> fields = new List<string>();
-
-                foreach (var itfield in fieldsRaw)
-                {
-                    fields.Add(itfield.Split(':')[1].ToString().Replace('"', ' '));
-                }
-                #endregion
-
-
+                
+                  
+                
 
                 if (cont%size ==0)
                 {
@@ -89,8 +61,8 @@ namespace RankingWebApp
                 }
                 //ltemp.Text += "<td>";
 
-               // ltemp.Text += "<tr><td>Usuario: " + fields[0] + "<td></tr>";
-                ltemp.Text += "<td class = \"user\">  <img src=" + imageurl + " /></td>";
+               ltemp.Text += "<tr><td>Usuario: " + username + "<td></tr>";
+                //ltemp.Text += "<td class = \"user\">  <img src=" + username + " /></td>";
 
                 //ltemp.Text += "</td>";
                 if (cont%size == 0)

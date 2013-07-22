@@ -17,19 +17,6 @@ namespace RankingService
     {
 
         [WebMethod]
-        public bool CreateGame(String Name, String Description, int Id)
-        {
-
-            bool ret = false;
-            String query = "INSERT INTO Game (Name, Description,CreatorId) VALUES('" + Name + "','" + Description + "','" + Id + "')";
-            MySQLConnection.Instance().SQLQuery(query);
-
-            return ret;
-
-        }
-
-
-        [WebMethod]
         public bool CreateUser(String Name, String FileName)
         {
 
@@ -41,6 +28,34 @@ namespace RankingService
             return ret;
             
            
+        }
+
+        [WebMethod]
+        public bool CreateMultiParamUser(string[] items, string[] values)
+        {
+
+            bool ret = false;
+
+
+            String query = "INSERT INTO User (";
+
+            string para="";
+            string vals="";
+            for (int i = 0; i < items.Length; i++)
+            {
+                para = para + items[i] + ",";
+                vals = vals + "'" + values[i] + "',"; 
+            }
+
+
+            para = para.Remove(para.Length - 1);
+            vals = vals.Remove(vals.Length - 1);
+            query = query + para + ") VALUES(" + vals + ")";
+
+            MySQLConnection.Instance().SQLQuery(query);
+
+            return ret;
+        
         }
 
 
@@ -61,24 +76,25 @@ namespace RankingService
 
 
 
-        [WebMethod]
-        public bool CreateRankingEntry(String GameId, String Time, String UserId, int Points)
-        {
-
-            bool ret = false;
-            String query = "INSERT INTO ranking (GameId,Time,UserId,Points) VALUES('" + GameId + "','" + Time + "','" + UserId + "','" + Points + "')";
-            MySQLConnection.Instance().SQLQuery(query);
-
-            return ret;
-
-        }
-
+      
         [WebMethod]
         public string GetItem(string list,string field, string item)
         {
 
             String query = "Select * from " + list + " where "+field+"='"+item+"'";
-            return MySQLConnection.Instance().SQLQueryReturn(query).ToArray()[0];
+            
+            var ret = MySQLConnection.Instance().SQLQueryReturn(query);
+            string strret = "";
+            if (ret.Count == 0)
+            {
+                strret = "NULL";
+            }
+            else
+            {
+                strret = ret[0];
+            }
+
+            return strret;
         
         }
 

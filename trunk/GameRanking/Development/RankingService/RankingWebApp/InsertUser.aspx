@@ -8,24 +8,16 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
-    <table>
-    <tr>
-    <td>
-    <label>Name</label>
-    </td>
-    <td><asp:TextBox runat=server ID="textName"></asp:TextBox></td>
-    </tr>
-    
-     <tr>
-    <td>
-    <label>Facebook</label>
-    </td>
-    <td><asp:TextBox runat=server ID="textFacebook"></asp:TextBox></td>
-    </tr>
-
-    </table>
-    </div>
+     <asp:ScriptManager ID="ScriptManager1" runat="server">
+    </asp:ScriptManager>
+    <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+        <ContentTemplate>
+        
+        <asp:PlaceHolder ID = "tabUsers" runat=server />
+        
+        
+        </ContentTemplate>
+    </asp:UpdatePanel>
     <asp:Button runat=server Text="Insert" ID="InsertButton" 
         onclick="InsertButton_Click" />
     </form>

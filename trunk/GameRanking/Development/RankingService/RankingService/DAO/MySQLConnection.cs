@@ -38,10 +38,8 @@ namespace RankingService.DAO
 
             try
             {
-                //string host = ConfigurationManager.ConnectionStrings["MySQLConnString"].ConnectionString;
 
-
-                string MyConString = "server=dbmy0052.whservidor.com;UID=ploobs_8; PASSWORD=gameranking1;database=ploobs_8";
+                string MyConString = "server=dbmy0052.whservidor.com;UID=ploobs_8; PASSWORD=gameranking1;database=ploobs_8;Allow Zero Datetime=True";
                 connection = new MySqlConnection(MyConString);
                 Connstatus = true;
             }
@@ -89,7 +87,7 @@ namespace RankingService.DAO
                 for (int i = 1; i < items; i++)
                 {
 
-                    stringreturn += (Reader.GetValue(i) + ",");
+                    stringreturn += (Reader.GetValue(i)+ ",");
                 }
                 stringreturn = stringreturn.Remove(stringreturn.Length - 1);
                 fragments.Add(stringreturn);
