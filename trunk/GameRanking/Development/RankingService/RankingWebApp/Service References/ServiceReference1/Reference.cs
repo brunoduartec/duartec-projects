@@ -20,6 +20,210 @@ namespace RankingWebApp.ServiceReference1 {
     public class ArrayOfString : System.Collections.Generic.List<string> {
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Seed", Namespace="http://tempuri.org/")]
+    [System.SerializableAttribute()]
+    public partial class Seed : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string NameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ImageField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string FacebookField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string CPFField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string FoneField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string Fone2Field;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string Fone3Field;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string AdressField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string EmailField;
+        
+        private System.DateTime BirthField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string vlausField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
+        public string Name {
+            get {
+                return this.NameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.NameField, value) != true)) {
+                    this.NameField = value;
+                    this.RaisePropertyChanged("Name");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public string Image {
+            get {
+                return this.ImageField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ImageField, value) != true)) {
+                    this.ImageField = value;
+                    this.RaisePropertyChanged("Image");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public string Facebook {
+            get {
+                return this.FacebookField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.FacebookField, value) != true)) {
+                    this.FacebookField = value;
+                    this.RaisePropertyChanged("Facebook");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
+        public string CPF {
+            get {
+                return this.CPFField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.CPFField, value) != true)) {
+                    this.CPFField = value;
+                    this.RaisePropertyChanged("CPF");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=4)]
+        public string Fone {
+            get {
+                return this.FoneField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.FoneField, value) != true)) {
+                    this.FoneField = value;
+                    this.RaisePropertyChanged("Fone");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=5)]
+        public string Fone2 {
+            get {
+                return this.Fone2Field;
+            }
+            set {
+                if ((object.ReferenceEquals(this.Fone2Field, value) != true)) {
+                    this.Fone2Field = value;
+                    this.RaisePropertyChanged("Fone2");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=6)]
+        public string Fone3 {
+            get {
+                return this.Fone3Field;
+            }
+            set {
+                if ((object.ReferenceEquals(this.Fone3Field, value) != true)) {
+                    this.Fone3Field = value;
+                    this.RaisePropertyChanged("Fone3");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=7)]
+        public string Adress {
+            get {
+                return this.AdressField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.AdressField, value) != true)) {
+                    this.AdressField = value;
+                    this.RaisePropertyChanged("Adress");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=8)]
+        public string Email {
+            get {
+                return this.EmailField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.EmailField, value) != true)) {
+                    this.EmailField = value;
+                    this.RaisePropertyChanged("Email");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=9)]
+        public System.DateTime Birth {
+            get {
+                return this.BirthField;
+            }
+            set {
+                if ((this.BirthField.Equals(value) != true)) {
+                    this.BirthField = value;
+                    this.RaisePropertyChanged("Birth");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=10)]
+        public string vlaus {
+            get {
+                return this.vlausField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.vlausField, value) != true)) {
+                    this.vlausField = value;
+                    this.RaisePropertyChanged("vlaus");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference1.Service1Soap")]
     public interface Service1Soap {
@@ -35,6 +239,10 @@ namespace RankingWebApp.ServiceReference1 {
         // CODEGEN: Generating message contract since element name Name from namespace http://tempuri.org/ is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/CreateFaceBookUser", ReplyAction="*")]
         RankingWebApp.ServiceReference1.CreateFaceBookUserResponse CreateFaceBookUser(RankingWebApp.ServiceReference1.CreateFaceBookUserRequest request);
+        
+        // CODEGEN: Generating message contract since element name field from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetSeed", ReplyAction="*")]
+        RankingWebApp.ServiceReference1.GetSeedResponse GetSeed(RankingWebApp.ServiceReference1.GetSeedRequest request);
         
         // CODEGEN: Generating message contract since element name list from namespace http://tempuri.org/ is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetItem", ReplyAction="*")]
@@ -269,6 +477,78 @@ namespace RankingWebApp.ServiceReference1 {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class GetSeedRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetSeed", Namespace="http://tempuri.org/", Order=0)]
+        public RankingWebApp.ServiceReference1.GetSeedRequestBody Body;
+        
+        public GetSeedRequest() {
+        }
+        
+        public GetSeedRequest(RankingWebApp.ServiceReference1.GetSeedRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class GetSeedRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string field;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public string item;
+        
+        public GetSeedRequestBody() {
+        }
+        
+        public GetSeedRequestBody(string field, string item) {
+            this.field = field;
+            this.item = item;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class GetSeedResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetSeedResponse", Namespace="http://tempuri.org/", Order=0)]
+        public RankingWebApp.ServiceReference1.GetSeedResponseBody Body;
+        
+        public GetSeedResponse() {
+        }
+        
+        public GetSeedResponse(RankingWebApp.ServiceReference1.GetSeedResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class GetSeedResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public RankingWebApp.ServiceReference1.Seed GetSeedResult;
+        
+        public GetSeedResponseBody() {
+        }
+        
+        public GetSeedResponseBody(RankingWebApp.ServiceReference1.Seed GetSeedResult) {
+            this.GetSeedResult = GetSeedResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
     public partial class GetItemRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="GetItem", Namespace="http://tempuri.org/", Order=0)]
@@ -477,6 +757,20 @@ namespace RankingWebApp.ServiceReference1 {
             inValue.Body.FaceBook = FaceBook;
             RankingWebApp.ServiceReference1.CreateFaceBookUserResponse retVal = ((RankingWebApp.ServiceReference1.Service1Soap)(this)).CreateFaceBookUser(inValue);
             return retVal.Body.CreateFaceBookUserResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        RankingWebApp.ServiceReference1.GetSeedResponse RankingWebApp.ServiceReference1.Service1Soap.GetSeed(RankingWebApp.ServiceReference1.GetSeedRequest request) {
+            return base.Channel.GetSeed(request);
+        }
+        
+        public RankingWebApp.ServiceReference1.Seed GetSeed(string field, string item) {
+            RankingWebApp.ServiceReference1.GetSeedRequest inValue = new RankingWebApp.ServiceReference1.GetSeedRequest();
+            inValue.Body = new RankingWebApp.ServiceReference1.GetSeedRequestBody();
+            inValue.Body.field = field;
+            inValue.Body.item = item;
+            RankingWebApp.ServiceReference1.GetSeedResponse retVal = ((RankingWebApp.ServiceReference1.Service1Soap)(this)).GetSeed(inValue);
+            return retVal.Body.GetSeedResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
