@@ -17,20 +17,7 @@ namespace RankingService
     public class Service1 : System.Web.Services.WebService
     {
 
-        [WebMethod]
-        public bool CreateUser(String Name, String FileName)
-        {
-
-
-            bool ret = false;
-            String query = "INSERT INTO User (Name, Image) VALUES('" + Name + "','" + FileName + "')";
-            MySQLConnection.Instance().SQLQuery(query);
-
-            return ret;
-            
-           
-        }
-
+       
         [WebMethod]
         public bool CreateMultiParamUser(string[] items, string[] values)
         {
@@ -59,52 +46,6 @@ namespace RankingService
         
         }
 
-
-        [WebMethod]
-        public bool CreateFaceBookUser(String Name, String FileName,string FaceBook)
-        {
-
-
-            bool ret = false;
-            String query = "INSERT INTO Seed (Name, Image,FaceBook) VALUES('" + Name + "','" + FileName + "','"+FaceBook+"')";
-            MySQLConnection.Instance().SQLQuery(query);
-
-            return ret;
-
-
-        }
-
-        [WebMethod]
-        public Seed GetSeed(string field, string item)
-        {
-
-
-            string it = GetItem("Seed", field, item);
-
-
-            Seed ret = new Seed();
-
-            if (it != "NULL")
-            {
-                string[] localitems = it.Split(',');
-
-                ret.Name = localitems[0];
-                ret.Image = localitems[1];
-                ret.Facebook = localitems[2];
-                ret.CPF = localitems[3];
-                ret.Fone = localitems[4];
-                ret.Fone2 = localitems[5];
-                ret.Fone3 = localitems[6];
-                ret.Adress = localitems[7]; 
-            }
-
-
-            
-           
-
-            return ret;
-        
-        }
 
       
         [WebMethod]
