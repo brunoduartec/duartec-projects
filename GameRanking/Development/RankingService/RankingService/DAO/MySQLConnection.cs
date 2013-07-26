@@ -16,7 +16,8 @@ namespace RankingService.DAO
         {
             if (instance == null)
             {
-                instance = new MySQLConnection();
+                string cnString = ConfigurationManager.ConnectionStrings["connection"].ConnectionString;
+                instance = new MySQLConnection(cnString);
             }
 
             return instance;
@@ -33,14 +34,14 @@ namespace RankingService.DAO
 
         }
 
-        private void CreateConnection()
+        private void CreateConnection(string connectionstring)
         {
 
             try
             {
 
-                string MyConString = "server=dbmy0052.whservidor.com;UID=ploobs_8; PASSWORD=gameranking1;database=ploobs_8;Allow Zero Datetime=True";
-                connection = new MySqlConnection(MyConString);
+                //string MyConString = "server=dbmy0052.whservidor.com;UID=ploobs_8; PASSWORD=gameranking1;database=ploobs_8;Allow Zero Datetime=True";
+                connection = new MySqlConnection(connectionstring);
                 Connstatus = true;
             }
             catch (Exception)
@@ -101,12 +102,9 @@ namespace RankingService.DAO
 
         }
 
-        protected MySQLConnection()
+        protected MySQLConnection(string connection)
         {
-            CreateConnection();
-
-
-
+            CreateConnection(connection);
         }
     }
 }
