@@ -4,6 +4,7 @@ using System.Web;
 using System.Web.Services;
 using RankingService.DAO;
 using System.IO;
+using SemearLibrary;
 
 namespace RankingService
 {
@@ -37,7 +38,7 @@ namespace RankingService
             bool ret = false;
 
 
-            String query = "INSERT INTO User (";
+            String query = "INSERT INTO Seed (";
 
             string para="";
             string vals="";
@@ -65,7 +66,7 @@ namespace RankingService
 
 
             bool ret = false;
-            String query = "INSERT INTO User (Name, Image,FaceBook) VALUES('" + Name + "','" + FileName + "','"+FaceBook+"')";
+            String query = "INSERT INTO Seed (Name, Image,FaceBook) VALUES('" + Name + "','" + FileName + "','"+FaceBook+"')";
             MySQLConnection.Instance().SQLQuery(query);
 
             return ret;
@@ -73,8 +74,37 @@ namespace RankingService
 
         }
 
+        [WebMethod]
+        public Seed GetSeed(string field, string item)
+        {
 
 
+            string it = GetItem("Seed", field, item);
+
+
+            Seed ret = new Seed();
+
+            if (it != "NULL")
+            {
+                string[] localitems = it.Split(',');
+
+                ret.Name = localitems[0];
+                ret.Image = localitems[1];
+                ret.Facebook = localitems[2];
+                ret.CPF = localitems[3];
+                ret.Fone = localitems[4];
+                ret.Fone2 = localitems[5];
+                ret.Fone3 = localitems[6];
+                ret.Adress = localitems[7]; 
+            }
+
+
+            
+           
+
+            return ret;
+        
+        }
 
       
         [WebMethod]

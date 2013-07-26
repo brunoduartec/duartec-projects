@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RankingWebApp", "RankingWeb
 		{C75B1433-7EC2-46AD-A798-9159B5F2CD19} = {C75B1433-7EC2-46AD-A798-9159B5F2CD19}
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SemearLibrary", "SemearLibrary\SemearLibrary.csproj", "{B7E5EEB5-B9BA-4D49-AC0F-0B65D39C8EDA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -22,6 +24,10 @@ Global
 		{8551E439-4A5C-4A3D-BCFA-DC09E951E389}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8551E439-4A5C-4A3D-BCFA-DC09E951E389}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8551E439-4A5C-4A3D-BCFA-DC09E951E389}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7E5EEB5-B9BA-4D49-AC0F-0B65D39C8EDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7E5EEB5-B9BA-4D49-AC0F-0B65D39C8EDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7E5EEB5-B9BA-4D49-AC0F-0B65D39C8EDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7E5EEB5-B9BA-4D49-AC0F-0B65D39C8EDA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -21,7 +21,7 @@ namespace RankingWebApp
 
             //string bb = a.GetItem("User", "Name", "Bruno");
 
-            var ll = a.GetList("User");
+            var ll = a.GetList("Seed");
             //string username = "bruno.duartec";
 
 
@@ -47,7 +47,7 @@ namespace RankingWebApp
 
                 string[] localitems = item.Split(',');
 
-                string username = localitems[2];
+                string username = localitems[0];
 
 
 

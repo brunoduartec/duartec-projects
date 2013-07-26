@@ -1,7 +1,7 @@
 F:\Projects\duartec-projects\GameRanking\Development\RankingService\RankingWebApp\bin\RankingWebApp.dll
 F:\Projects\duartec-projects\GameRanking\Development\RankingService\RankingWebApp\bin\RankingWebApp.pdb
+F:\Projects\duartec-projects\GameRanking\Development\RankingService\RankingWebApp\bin\Excel.dll
+F:\Projects\duartec-projects\GameRanking\Development\RankingService\RankingWebApp\bin\ICSharpCode.SharpZipLib.dll
 F:\Projects\duartec-projects\GameRanking\Development\RankingService\RankingWebApp\obj\Debug\ResolveAssemblyReference.cache
 F:\Projects\duartec-projects\GameRanking\Development\RankingService\RankingWebApp\obj\Debug\RankingWebApp.dll
 F:\Projects\duartec-projects\GameRanking\Development\RankingService\RankingWebApp\obj\Debug\RankingWebApp.pdb
-F:\Projects\duartec-projects\GameRanking\Development\RankingService\RankingWebApp\bin\Excel.dll
-F:\Projects\duartec-projects\GameRanking\Development\RankingService\RankingWebApp\bin\ICSharpCode.SharpZipLib.dll
