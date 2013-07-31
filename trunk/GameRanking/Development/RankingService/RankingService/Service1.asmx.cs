@@ -47,12 +47,20 @@ namespace RankingService
         }
 
 
+        [WebMethod]
+        public Seed GetSeed(string field, string item)
+        {
+
+            return new Seed(GetItem("Seed", field, item));
+        
+        }
+
       
         [WebMethod]
         public string GetItem(string list,string field, string item)
         {
 
-            String query = "Select * from " + list + " where "+field+"='"+item+"'";
+            String query = "Select * from " + list + " where "+field+" like '%"+item+"%'";
             
             var ret = MySQLConnection.Instance().SQLQueryReturn(query);
             string strret = "";
@@ -70,6 +78,29 @@ namespace RankingService
         }
 
 
+
+
+        [WebMethod]
+        public List<Seed> GetSeedSearch(string field, string item)
+        {
+
+            List<Seed> ret = new List<Seed>();
+
+            String query = "Select * from Seed where " + field + " like '%" + item + "%'";
+            List<string> lSeed = new List<string>();
+            
+            lSeed.AddRange( MySQLConnection.Instance().SQLQueryReturn(query));
+
+            foreach (var it in lSeed)
+            {
+                ret.Add(new Seed(it));
+            }
+
+            return ret;
+        
+        }
+
+
         [WebMethod]
 
         public List<string> GetList(string item)
@@ -81,6 +112,25 @@ namespace RankingService
         }
 
 
+        [WebMethod]
+        public List<Seed> GetSeedList()
+        {
+
+            List<Seed> ret = new List<Seed>();
+
+            String query = "Select * from Seed";
+            List<string> lSeed = new List<string>();
+
+            lSeed.AddRange(MySQLConnection.Instance().SQLQueryReturn(query));
+
+            foreach (var it in lSeed)
+            {
+                ret.Add(new Seed(it));
+            }
+
+            return ret;
+        
+        }
 
     }
 }
