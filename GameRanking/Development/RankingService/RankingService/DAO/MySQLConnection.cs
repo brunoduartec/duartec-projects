@@ -88,7 +88,7 @@ namespace RankingService.DAO
                 for (int i = 1; i < items; i++)
                 {
 
-                    stringreturn += (Reader.GetValue(i)+ ",");
+                    stringreturn += (Reader.GetValue(i)+ ";");
                 }
                 stringreturn = stringreturn.Remove(stringreturn.Length - 1);
                 fragments.Add(stringreturn);
