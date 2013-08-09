@@ -17,6 +17,12 @@ namespace RankingService
     public class Service1 : System.Web.Services.WebService
     {
 
+
+        [WebMethod]
+        public string GetAppName()
+        {
+            return "RankingService";
+        }
        
         [WebMethod]
         public bool CreateMultiParamUser(string[] items, string[] values)
@@ -118,7 +124,7 @@ namespace RankingService
 
             List<Seed> ret = new List<Seed>();
 
-            String query = "Select * from Seed";
+            String query = "Select * from Seed order by Name";
             List<string> lSeed = new List<string>();
 
             lSeed.AddRange(MySQLConnection.Instance().SQLQueryReturn(query));

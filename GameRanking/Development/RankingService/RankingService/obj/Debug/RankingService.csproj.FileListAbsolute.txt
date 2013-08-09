@@ -5,3 +5,4 @@ F:\Projects\duartec-projects\GameRanking\Development\RankingService\RankingServi
 F:\Projects\duartec-projects\GameRanking\Development\RankingService\RankingService\obj\Debug\ResolveAssemblyReference.cache
 F:\Projects\duartec-projects\GameRanking\Development\RankingService\RankingService\obj\Debug\RankingService.dll
 F:\Projects\duartec-projects\GameRanking\Development\RankingService\RankingService\obj\Debug\RankingService.pdb
+F:\Projects\duartec-projects\GameRanking\Development\RankingService\RankingService\bin\MySql.Data.dll

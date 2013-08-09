@@ -43,17 +43,43 @@ namespace RankingWebApp
             ptemp.Controls.Clear();
 
 
+            Label ltemp = new Label();
+
+
+            ltemp.Text = "<table class=\"datagrid\">";
+
+
+            int count = 0;
+            int size = 4;
             foreach (var item in sdList)
             {
-                Label ltemp = new Label();
-                ltemp.Text =Utils.ToStringAsTable(item);
 
-                ptemp.Controls.Add(ltemp);
+                if (count%size==0)
+                {
+                    ltemp.Text += "<tr>";
+                    
+                }
+                
 
-                tabUsers.Controls.Add(ptemp);
+                ltemp.Text +=("<td>"+Utils.ToStringAsTable(item,true)+"</td>");
+
+                count++;
+                if (count%size==0)
+                {
+                    ltemp.Text += "</tr>";
+                    count = 0;
+                }
+
+
+
+                
             }
 
 
+            ltemp.Text += "</table>";
+            ptemp.Controls.Add(ltemp);
+
+            tabUsers.Controls.Add(ptemp);
 
 
 
