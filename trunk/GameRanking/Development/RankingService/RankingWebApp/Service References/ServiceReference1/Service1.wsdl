@@ -2,6 +2,16 @@
 <wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
   <wsdl:types>
     <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetAppName">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAppNameResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAppNameResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
       <s:element name="CreateMultiParamUser">
         <s:complexType>
           <s:sequence>
@@ -122,6 +132,12 @@
       </s:element>
     </s:schema>
   </wsdl:types>
+  <wsdl:message name="GetAppNameSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAppName" />
+  </wsdl:message>
+  <wsdl:message name="GetAppNameSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAppNameResponse" />
+  </wsdl:message>
   <wsdl:message name="CreateMultiParamUserSoapIn">
     <wsdl:part name="parameters" element="tns:CreateMultiParamUser" />
   </wsdl:message>
@@ -159,6 +175,10 @@
     <wsdl:part name="parameters" element="tns:GetSeedListResponse" />
   </wsdl:message>
   <wsdl:portType name="Service1Soap">
+    <wsdl:operation name="GetAppName">
+      <wsdl:input message="tns:GetAppNameSoapIn" />
+      <wsdl:output message="tns:GetAppNameSoapOut" />
+    </wsdl:operation>
     <wsdl:operation name="CreateMultiParamUser">
       <wsdl:input message="tns:CreateMultiParamUserSoapIn" />
       <wsdl:output message="tns:CreateMultiParamUserSoapOut" />
@@ -186,6 +206,15 @@
   </wsdl:portType>
   <wsdl:binding name="Service1Soap" type="tns:Service1Soap">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetAppName">
+      <soap:operation soapAction="http://tempuri.org/GetAppName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="CreateMultiParamUser">
       <soap:operation soapAction="http://tempuri.org/CreateMultiParamUser" style="document" />
       <wsdl:input>
@@ -243,6 +272,15 @@
   </wsdl:binding>
   <wsdl:binding name="Service1Soap12" type="tns:Service1Soap">
     <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetAppName">
+      <soap12:operation soapAction="http://tempuri.org/GetAppName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="CreateMultiParamUser">
       <soap12:operation soapAction="http://tempuri.org/CreateMultiParamUser" style="document" />
       <wsdl:input>
@@ -300,10 +338,10 @@
   </wsdl:binding>
   <wsdl:service name="Service1">
     <wsdl:port name="Service1Soap" binding="tns:Service1Soap">
-      <soap:address location="http://localhost:2455/Service1.asmx" />
+      <soap:address location="http://www.ploobs.com.br/App/RankingWebApp/Service1.asmx" />
     </wsdl:port>
     <wsdl:port name="Service1Soap12" binding="tns:Service1Soap12">
-      <soap12:address location="http://localhost:2455/Service1.asmx" />
+      <soap12:address location="http://www.ploobs.com.br/App/RankingWebApp/Service1.asmx" />
     </wsdl:port>
   </wsdl:service>
 </wsdl:definitions>

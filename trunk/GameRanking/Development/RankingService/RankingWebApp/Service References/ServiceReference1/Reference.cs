@@ -354,6 +354,10 @@ namespace RankingWebApp.ServiceReference1 {
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference1.Service1Soap")]
     public interface Service1Soap {
         
+        // CODEGEN: Generating message contract since element name GetAppNameResult from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetAppName", ReplyAction="*")]
+        RankingWebApp.ServiceReference1.GetAppNameResponse GetAppName(RankingWebApp.ServiceReference1.GetAppNameRequest request);
+        
         // CODEGEN: Generating message contract since element name items from namespace http://tempuri.org/ is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/CreateMultiParamUser", ReplyAction="*")]
         RankingWebApp.ServiceReference1.CreateMultiParamUserResponse CreateMultiParamUser(RankingWebApp.ServiceReference1.CreateMultiParamUserRequest request);
@@ -377,6 +381,67 @@ namespace RankingWebApp.ServiceReference1 {
         // CODEGEN: Generating message contract since element name GetSeedListResult from namespace http://tempuri.org/ is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetSeedList", ReplyAction="*")]
         RankingWebApp.ServiceReference1.GetSeedListResponse GetSeedList(RankingWebApp.ServiceReference1.GetSeedListRequest request);
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class GetAppNameRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetAppName", Namespace="http://tempuri.org/", Order=0)]
+        public RankingWebApp.ServiceReference1.GetAppNameRequestBody Body;
+        
+        public GetAppNameRequest() {
+        }
+        
+        public GetAppNameRequest(RankingWebApp.ServiceReference1.GetAppNameRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute()]
+    public partial class GetAppNameRequestBody {
+        
+        public GetAppNameRequestBody() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class GetAppNameResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetAppNameResponse", Namespace="http://tempuri.org/", Order=0)]
+        public RankingWebApp.ServiceReference1.GetAppNameResponseBody Body;
+        
+        public GetAppNameResponse() {
+        }
+        
+        public GetAppNameResponse(RankingWebApp.ServiceReference1.GetAppNameResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class GetAppNameResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string GetAppNameResult;
+        
+        public GetAppNameResponseBody() {
+        }
+        
+        public GetAppNameResponseBody(string GetAppNameResult) {
+            this.GetAppNameResult = GetAppNameResult;
+        }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -825,6 +890,18 @@ namespace RankingWebApp.ServiceReference1 {
         
         public Service1SoapClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(binding, remoteAddress) {
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        RankingWebApp.ServiceReference1.GetAppNameResponse RankingWebApp.ServiceReference1.Service1Soap.GetAppName(RankingWebApp.ServiceReference1.GetAppNameRequest request) {
+            return base.Channel.GetAppName(request);
+        }
+        
+        public string GetAppName() {
+            RankingWebApp.ServiceReference1.GetAppNameRequest inValue = new RankingWebApp.ServiceReference1.GetAppNameRequest();
+            inValue.Body = new RankingWebApp.ServiceReference1.GetAppNameRequestBody();
+            RankingWebApp.ServiceReference1.GetAppNameResponse retVal = ((RankingWebApp.ServiceReference1.Service1Soap)(this)).GetAppName(inValue);
+            return retVal.Body.GetAppNameResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]

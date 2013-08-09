@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="b977933c-5ee3-4a22-91cb-68b9bdfba1cc" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="45d575e0-3862-40f5-bb0a-f6564e4e943f" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <EnableDataBinding>true</EnableDataBinding>
@@ -18,11 +18,11 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost:2455/Service1.asmx" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://www.ploobs.com.br/App/RankingWebApp/Service1.asmx" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="Service1.disco" MetadataType="Disco" ID="bf800d06-01c4-4bcf-91bd-c7e686c91779" SourceId="1" SourceUrl="http://localhost:2455/Service1.asmx?disco" />
-    <MetadataFile FileName="Service1.wsdl" MetadataType="Wsdl" ID="b0516104-47a7-4164-b55a-57482ab49852" SourceId="1" SourceUrl="http://localhost:2455/Service1.asmx?wsdl" />
+    <MetadataFile FileName="Service1.wsdl" MetadataType="Wsdl" ID="2ce498cc-9983-4449-b1e1-47aa27eee5ba" SourceId="1" SourceUrl="http://www.ploobs.com.br/App/RankingWebApp/Service1.asmx?wsdl" />
+    <MetadataFile FileName="Service1.disco" MetadataType="Disco" ID="0eb9d9ba-cd89-4984-a029-200b9179b98f" SourceId="1" SourceUrl="http://www.ploobs.com.br/App/RankingWebApp/Service1.asmx?disco" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
