@@ -15,7 +15,7 @@ body {
 	background-color: #fff;
 }
 #masthead {
-	width: 670px;
+	width: 80%;
 	margin-right: auto;
 	margin-left: auto;
 	overflow: hidden;
@@ -23,7 +23,7 @@ body {
 	padding-bottom: 15px;
 }
 #navigation {
-	width: 670px;
+	width: 80%;
 	margin-right: auto;
 	margin-left: auto;
 	clear: both;
@@ -32,7 +32,7 @@ body {
 }
 #page_content {
 	position: relative;
-	width: 670px;
+	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
 	padding: 0px;
@@ -41,6 +41,7 @@ body {
 	position: relative;
 	float: left;
 	width: 320px;
+
 	text-align: left;
 	padding-top: 5px;
 	padding-bottom: 5px;
@@ -54,7 +55,7 @@ body {
 }
 #footer {
 	clear: both;
-	width: 670px;
+	width: 80%;
 	margin-right: auto;
 	margin-left: auto;
 	padding-bottom: 10px;
@@ -81,9 +82,11 @@ body {
 	width: auto;
 	margin: 0;
 	padding: 0;
+	border:0;
 }
 #navigation li {
 	float: left;
+	border:0;
 }
 #navigation a {
 	text-decoration: none;
