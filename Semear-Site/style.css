@@ -1,0 +1,263 @@
+@charset "UTF-8";
+#header {
+	position:relative;
+	background-image:url(topo.png);
+	overflow:hidden;
+}
+.face{
+	float:right;
+	margin-top:35px;
+	margin-right:15px;
+}
+
+#logo {
+	float:left;
+	margin-left:4.444444%;
+	margin-right:2%;
+	margin-top:1%;
+}
+#content {
+	height:25%;
+	background: url(imagem.png);
+	background-size: 100% 100%;
+	padding-bottom: 40px;
+}
+#objetivo {
+	float: left;
+	background-color: #8a9792;
+	color: white;
+	padding-left: 3%;
+	margin-left: 4%;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-right:3%;
+	font-family: "Century Gothic";
+	font-size: 24px;
+	margin-bottom:40px;
+}
+#bloco_texto{
+	padding-left: 5.3%;
+	word-spacing: 4px;
+	font-family: "Century Gothic";
+	font-size: 24px;
+	line-height: 2px;
+	margin-bottom:50px;
+}
+#bloco_texto p{
+	color: white;
+}
+#bloco_texto p a{
+	color: white;
+}
+#letras{
+	font-size: 16px;
+}
+div.clear { 
+	clear: both; 
+}
+#menu ul {
+	padding:0px;
+	margin-top:45px;
+	float: left;
+	width: auto;
+	list-style:none;
+	font-family: "Century Gothic";
+}
+
+#menu ul li { 
+	display: inline; 
+	}
+
+#menu ul li a {
+	color: #674018;
+	text-decoration: none;
+	padding: 3px 12px 0px 20px;
+	font-weight:400;
+	float: left;
+	font-family: "Century Gothic";
+	font-size: 15px;
+}
+
+#menu ul li a:hover {
+}
+#retangulo {
+	background-color:#92a258;
+	padding-top:15px;
+	padding-bottom: 10px;
+	overflow: hidden;
+	border-bottom-style:groove;
+	border-bottom-width: 2px;
+	border-bottom-color: #899853;
+}
+.imagem {
+	margin-left: 5.3%;
+	margin-top: 2px;
+	float: left;
+}
+.texto{
+	float: left;
+	font-family: "Century Gothic";
+	margin-left: 20px;
+	margin-right:2%;
+	color: white;
+	font-size: 14px;
+}
+#noticia {
+	overflow: hidden;
+	background-color: #f7dcb2;
+	border-bottom-width:2px;
+	border-bottom-color:#96826b;
+}
+#menu2 ul {
+	padding:0px;
+	float: left;
+	width: auto;
+	list-style:none;
+	font-family: "Century Gothic";
+}
+#videos{
+	padding-bottom:15px;
+	padding-top:10px;
+}
+#videos iframe{
+	margin-left:5.5%;
+	border-width:2px;
+	border-color:#a68652;
+}
+#menu2 ul li { 
+	display: inline; 
+}
+
+#menu2 ul li a {
+	color: #a68652;
+	text-decoration:none;
+	font-weight:500;
+	margin-left:55px;
+	padding-left:20px;
+	padding-right:20px;
+	padding-top:10px;
+	padding-bottom:10px;
+	float: left;
+	font-family: "Century Gothic";
+	margin-top:10px;
+	font-size: 23px;
+}
+
+footer {
+	background-image:url(header.png);
+	overflow: hidden;
+	border-top-width:2px;
+	border-top-color:#96826b;
+}
+footer ul{
+	float: left;
+	width: auto;
+	list-style:none;
+	padding-left: 5.5%;
+	padding-top: 1%;
+	font-family: "Century Gothic";
+}
+footer li {
+	color: white;
+	font-size: 18px;
+}
+footer ul li a {
+	color: white;
+	text-decoration:underline;
+	padding-top: 5px;
+	float: left;
+	font-family: "Century Gothic";
+	font-size: 13px;
+}
+footer input{
+	text-height:10px;
+}
+#email{
+	float: left;
+	font-family: "Century Gothic";
+	color: white;
+	margin-left: 22.3%;
+	margin-top:26px;
+	font-size: 22px;
+}
+#endereco{
+	float: left;
+	font-family: "Century Gothic";
+	color: white;
+	margin-left: 10.5%;
+	margin-top:26px;
+	font-size: 22px;
+}
+.botao{
+	background-color: #92a158;
+	margin-left:85%;
+	color:#FFF;
+}
+.clicado{
+		background-color: #a68652;
+		color:#FFF;
+}
+#dados p {
+	height:100px;
+	font-family: "Century Gothic";
+	color: white;
+	margin-left: 60px;
+	padding-top: 1%;
+	font-size: 18px;
+}
+#legendas {
+	color:#40331d;
+	font-family: "Century Gothic";
+	overflow: hidden;
+	padding-left:5.5%;
+	padding-bottom:60px;
+}
+.legenda{
+	padding-left:16.3%;
+}
+.legenda2{
+	padding-left:15.8%;
+}
+#rodape {
+	padding-left: 40%;
+	padding-top: 20px;
+}
+#rodape p{
+	color: white;
+	font-family: "Century Gothic";
+	font-size: 12px;
+}
+#metodologia{
+}
+#texto_metodologia{
+	float:left;
+	padding-left:55px;
+	width:550px;
+	overflow:hidden;
+	padding-bottom:25px;
+	padding-top:15px;
+}
+#texto_metodologia p{
+	font-family: "Century Gothic";
+	font-size: 16px;
+	color: #a68652;
+}
+#inscrito{
+	background-color: #a68652;
+	color:#FFF;
+	text-decoration:none;
+	font-weight:500;
+	margin-left:120px;
+	padding-left:50px;
+	padding-right:50px;
+	padding-top:10px;
+	padding-bottom:10px;
+	float: left;
+	font-family: "Century Gothic";
+	margin-top:10px;
+	font-size: 23px;
+}
+#texto_metodologia input{
+	background-color:transparent;
+	border:none;
+}
