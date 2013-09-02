@@ -63,6 +63,8 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="EditItem.aspx" />
+    <Content Include="Images\edit.png" />
     <Content Include="ImportSeeds.aspx" />
     <Content Include="InsertUser.aspx" />
     <Content Include="SearchItem.aspx" />
@@ -80,6 +82,7 @@
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
     <Content Include="StyleSheet1.css" />
+    <Content Include="ViewItemDetails.aspx" />
     <Content Include="ViewItems.aspx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -96,6 +99,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Commons\Utils.cs" />
+    <Compile Include="EditItem.aspx.cs">
+      <DependentUpon>EditItem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditItem.aspx.designer.cs">
+      <DependentUpon>EditItem.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ImportSeeds.aspx.cs">
       <DependentUpon>ImportSeeds.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -128,6 +138,13 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="ViewItemDetails.aspx.cs">
+      <DependentUpon>ViewItemDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewItemDetails.aspx.designer.cs">
+      <DependentUpon>ViewItemDetails.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ViewItems.aspx.cs">
       <DependentUpon>ViewItems.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -146,6 +163,7 @@
     <ProjectReference Include="..\SemearLibrary\SemearLibrary.csproj">
       <Project>{B7E5EEB5-B9BA-4D49-AC0F-0B65D39C8EDA}</Project>
       <Name>SemearLibrary</Name>
+      <Private>True</Private>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

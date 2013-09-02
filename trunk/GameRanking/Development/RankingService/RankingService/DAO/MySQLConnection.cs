@@ -85,12 +85,13 @@ namespace RankingService.DAO
             {
 
                 string stringreturn = "";
-                for (int i = 1; i < items; i++)
+                for (int i = 0; i < items; i++)
                 {
 
                     stringreturn += (Reader.GetValue(i)+ ";");
                 }
-                stringreturn = stringreturn.Remove(stringreturn.Length - 1);
+                //stringreturn = stringreturn.Remove(stringreturn.Length - 1);
+               
                 fragments.Add(stringreturn);
             }
 

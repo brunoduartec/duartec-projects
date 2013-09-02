@@ -12,9 +12,10 @@
           </s:sequence>
         </s:complexType>
       </s:element>
-      <s:element name="CreateMultiParamUser">
+      <s:element name="EditMultiParamUser">
         <s:complexType>
           <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
             <s:element minOccurs="0" maxOccurs="1" name="items" type="tns:ArrayOfString" />
             <s:element minOccurs="0" maxOccurs="1" name="values" type="tns:ArrayOfString" />
           </s:sequence>
@@ -25,6 +26,17 @@
           <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
         </s:sequence>
       </s:complexType>
+      <s:element name="EditMultiParamUserResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="CreateMultiParamUser">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="items" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="values" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
       <s:element name="CreateMultiParamUserResponse">
         <s:complexType>
           <s:sequence>
@@ -49,6 +61,7 @@
       </s:element>
       <s:complexType name="Seed">
         <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ID" type="s:int" />
           <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
           <s:element minOccurs="0" maxOccurs="1" name="Image" type="s:string" />
           <s:element minOccurs="0" maxOccurs="1" name="Facebook" type="s:string" />
@@ -68,6 +81,7 @@
           <s:element minOccurs="0" maxOccurs="1" name="Preparatory" type="s:string" />
           <s:element minOccurs="0" maxOccurs="1" name="Reason" type="s:string" />
           <s:element minOccurs="1" maxOccurs="1" name="Subscription" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="Mentor" type="s:boolean" />
         </s:sequence>
       </s:complexType>
       <s:element name="GetItem">
@@ -130,6 +144,45 @@
           </s:sequence>
         </s:complexType>
       </s:element>
+      <s:element name="ConnectMentorSeed">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="mentorID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="seedID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConnectMentorSeedResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetMentorbySeed">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SeedId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMentorbySeedResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMentorbySeedResult" type="tns:Seed" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSeedID">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSeedIDResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GetSeedIDResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
     </s:schema>
   </wsdl:types>
   <wsdl:message name="GetAppNameSoapIn">
@@ -137,6 +190,12 @@
   </wsdl:message>
   <wsdl:message name="GetAppNameSoapOut">
     <wsdl:part name="parameters" element="tns:GetAppNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="EditMultiParamUserSoapIn">
+    <wsdl:part name="parameters" element="tns:EditMultiParamUser" />
+  </wsdl:message>
+  <wsdl:message name="EditMultiParamUserSoapOut">
+    <wsdl:part name="parameters" element="tns:EditMultiParamUserResponse" />
   </wsdl:message>
   <wsdl:message name="CreateMultiParamUserSoapIn">
     <wsdl:part name="parameters" element="tns:CreateMultiParamUser" />
@@ -174,10 +233,32 @@
   <wsdl:message name="GetSeedListSoapOut">
     <wsdl:part name="parameters" element="tns:GetSeedListResponse" />
   </wsdl:message>
+  <wsdl:message name="ConnectMentorSeedSoapIn">
+    <wsdl:part name="parameters" element="tns:ConnectMentorSeed" />
+  </wsdl:message>
+  <wsdl:message name="ConnectMentorSeedSoapOut">
+    <wsdl:part name="parameters" element="tns:ConnectMentorSeedResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetMentorbySeedSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMentorbySeed" />
+  </wsdl:message>
+  <wsdl:message name="GetMentorbySeedSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMentorbySeedResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSeedIDSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSeedID" />
+  </wsdl:message>
+  <wsdl:message name="GetSeedIDSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSeedIDResponse" />
+  </wsdl:message>
   <wsdl:portType name="Service1Soap">
     <wsdl:operation name="GetAppName">
       <wsdl:input message="tns:GetAppNameSoapIn" />
       <wsdl:output message="tns:GetAppNameSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EditMultiParamUser">
+      <wsdl:input message="tns:EditMultiParamUserSoapIn" />
+      <wsdl:output message="tns:EditMultiParamUserSoapOut" />
     </wsdl:operation>
     <wsdl:operation name="CreateMultiParamUser">
       <wsdl:input message="tns:CreateMultiParamUserSoapIn" />
@@ -203,11 +284,32 @@
       <wsdl:input message="tns:GetSeedListSoapIn" />
       <wsdl:output message="tns:GetSeedListSoapOut" />
     </wsdl:operation>
+    <wsdl:operation name="ConnectMentorSeed">
+      <wsdl:input message="tns:ConnectMentorSeedSoapIn" />
+      <wsdl:output message="tns:ConnectMentorSeedSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMentorbySeed">
+      <wsdl:input message="tns:GetMentorbySeedSoapIn" />
+      <wsdl:output message="tns:GetMentorbySeedSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSeedID">
+      <wsdl:input message="tns:GetSeedIDSoapIn" />
+      <wsdl:output message="tns:GetSeedIDSoapOut" />
+    </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="Service1Soap" type="tns:Service1Soap">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
     <wsdl:operation name="GetAppName">
       <soap:operation soapAction="http://tempuri.org/GetAppName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditMultiParamUser">
+      <soap:operation soapAction="http://tempuri.org/EditMultiParamUser" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -269,11 +371,47 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="ConnectMentorSeed">
+      <soap:operation soapAction="http://tempuri.org/ConnectMentorSeed" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMentorbySeed">
+      <soap:operation soapAction="http://tempuri.org/GetMentorbySeed" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSeedID">
+      <soap:operation soapAction="http://tempuri.org/GetSeedID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
   </wsdl:binding>
   <wsdl:binding name="Service1Soap12" type="tns:Service1Soap">
     <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
     <wsdl:operation name="GetAppName">
       <soap12:operation soapAction="http://tempuri.org/GetAppName" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EditMultiParamUser">
+      <soap12:operation soapAction="http://tempuri.org/EditMultiParamUser" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -328,6 +466,33 @@
     </wsdl:operation>
     <wsdl:operation name="GetSeedList">
       <soap12:operation soapAction="http://tempuri.org/GetSeedList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConnectMentorSeed">
+      <soap12:operation soapAction="http://tempuri.org/ConnectMentorSeed" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMentorbySeed">
+      <soap12:operation soapAction="http://tempuri.org/GetMentorbySeed" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSeedID">
+      <soap12:operation soapAction="http://tempuri.org/GetSeedID" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>

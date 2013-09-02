@@ -4,12 +4,14 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using RankingWebApp.ServiceReference1;
+
 using System.IO;
 using System.Drawing;
 using System.Net;
 using System.Globalization;
 using RankingWebApp.Commons;
+
+using RankingWebApp.ServiceReference1;
 
 namespace RankingWebApp
 {
@@ -25,17 +27,32 @@ namespace RankingWebApp
             Service1SoapClient a = new Service1SoapClient();
 
 
-            
+            Seed ass;
 
-            Seed[] sdList =  a.GetSeedList();
+
+            string itemtype = Request.QueryString["mentor"];
+            string items = Request.QueryString["n"];
+
+            if (items == null)
+            {
+                items = "4";
+            }
+
+            bool mentor = false;
+
+            if (itemtype !=  null)
+            {
+                mentor = bool.Parse(itemtype);
+            }
+
+
+            Seed[] sdList = a.GetSeedList().Where(p=> p.Mentor == mentor).ToArray();
 
 
             Panel ptemp = new Panel();
             ptemp.ID = "panelUsers";
 
-            //tabUsers.Controls.Clear(); //Cleaning the placeholder wich will handle  all the components
-
-
+                       
 
 
 
@@ -46,11 +63,11 @@ namespace RankingWebApp
             Label ltemp = new Label();
 
 
-            ltemp.Text = "<table class=\"datagrid\">";
+            ltemp.Text = "<table class=\"datagrid\" width = 100%>";
 
 
             int count = 0;
-            int size = 4;
+            int size = int.Parse(items);
             foreach (var item in sdList)
             {
 
@@ -61,7 +78,7 @@ namespace RankingWebApp
                 }
                 
 
-                ltemp.Text +=("<td>"+Utils.ToStringAsTable(item,true)+"</td>");
+                ltemp.Text +=("<td>"+  Utils.ToStringAsTable(item,true)+"</td>");
 
                 count++;
                 if (count%size==0)
