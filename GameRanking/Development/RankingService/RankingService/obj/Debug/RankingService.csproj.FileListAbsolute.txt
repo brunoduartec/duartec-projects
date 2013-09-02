@@ -1,8 +1,8 @@
+F:\Projects\duartec-projects\GameRanking\Development\RankingService\RankingService\obj\Debug\ResolveAssemblyReference.cache
 F:\Projects\duartec-projects\GameRanking\Development\RankingService\RankingService\bin\RankingService.dll
 F:\Projects\duartec-projects\GameRanking\Development\RankingService\RankingService\bin\RankingService.pdb
+F:\Projects\duartec-projects\GameRanking\Development\RankingService\RankingService\bin\MySql.Data.dll
 F:\Projects\duartec-projects\GameRanking\Development\RankingService\RankingService\bin\SemearLibrary.dll
 F:\Projects\duartec-projects\GameRanking\Development\RankingService\RankingService\bin\SemearLibrary.pdb
-F:\Projects\duartec-projects\GameRanking\Development\RankingService\RankingService\obj\Debug\ResolveAssemblyReference.cache
 F:\Projects\duartec-projects\GameRanking\Development\RankingService\RankingService\obj\Debug\RankingService.dll
 F:\Projects\duartec-projects\GameRanking\Development\RankingService\RankingService\obj\Debug\RankingService.pdb
-F:\Projects\duartec-projects\GameRanking\Development\RankingService\RankingService\bin\MySql.Data.dll

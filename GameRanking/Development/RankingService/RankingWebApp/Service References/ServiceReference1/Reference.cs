@@ -29,6 +29,8 @@ namespace RankingWebApp.ServiceReference1 {
         [System.NonSerializedAttribute()]
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
+        private int IDField;
+        
         [System.Runtime.Serialization.OptionalFieldAttribute()]
         private string NameField;
         
@@ -83,6 +85,8 @@ namespace RankingWebApp.ServiceReference1 {
         
         private System.DateTime SubscriptionField;
         
+        private bool MentorField;
+        
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
             get {
@@ -90,6 +94,19 @@ namespace RankingWebApp.ServiceReference1 {
             }
             set {
                 this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public int ID {
+            get {
+                return this.IDField;
+            }
+            set {
+                if ((this.IDField.Equals(value) != true)) {
+                    this.IDField = value;
+                    this.RaisePropertyChanged("ID");
+                }
             }
         }
         
@@ -106,7 +123,7 @@ namespace RankingWebApp.ServiceReference1 {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
         public string Image {
             get {
                 return this.ImageField;
@@ -119,7 +136,7 @@ namespace RankingWebApp.ServiceReference1 {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
         public string Facebook {
             get {
                 return this.FacebookField;
@@ -132,7 +149,7 @@ namespace RankingWebApp.ServiceReference1 {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=3)]
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=4)]
         public string CPF {
             get {
                 return this.CPFField;
@@ -145,7 +162,7 @@ namespace RankingWebApp.ServiceReference1 {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=4)]
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=5)]
         public string Fone {
             get {
                 return this.FoneField;
@@ -158,7 +175,7 @@ namespace RankingWebApp.ServiceReference1 {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=5)]
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=6)]
         public string Fone2 {
             get {
                 return this.Fone2Field;
@@ -171,7 +188,7 @@ namespace RankingWebApp.ServiceReference1 {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=6)]
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=7)]
         public string Fone3 {
             get {
                 return this.Fone3Field;
@@ -184,7 +201,7 @@ namespace RankingWebApp.ServiceReference1 {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=7)]
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=8)]
         public string Adress {
             get {
                 return this.AdressField;
@@ -197,7 +214,7 @@ namespace RankingWebApp.ServiceReference1 {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=8)]
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=9)]
         public string Email {
             get {
                 return this.EmailField;
@@ -210,7 +227,7 @@ namespace RankingWebApp.ServiceReference1 {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=9)]
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=10)]
         public System.DateTime Birth {
             get {
                 return this.BirthField;
@@ -223,7 +240,7 @@ namespace RankingWebApp.ServiceReference1 {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=10)]
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=11)]
         public string University {
             get {
                 return this.UniversityField;
@@ -236,7 +253,7 @@ namespace RankingWebApp.ServiceReference1 {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=11)]
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=12)]
         public string Course {
             get {
                 return this.CourseField;
@@ -249,7 +266,7 @@ namespace RankingWebApp.ServiceReference1 {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=12)]
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=13)]
         public System.DateTime StartDate {
             get {
                 return this.StartDateField;
@@ -262,7 +279,7 @@ namespace RankingWebApp.ServiceReference1 {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=13)]
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=14)]
         public string City {
             get {
                 return this.CityField;
@@ -275,7 +292,7 @@ namespace RankingWebApp.ServiceReference1 {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=14)]
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=15)]
         public string State {
             get {
                 return this.StateField;
@@ -288,7 +305,7 @@ namespace RankingWebApp.ServiceReference1 {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=15)]
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=16)]
         public string School {
             get {
                 return this.SchoolField;
@@ -301,7 +318,7 @@ namespace RankingWebApp.ServiceReference1 {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=16)]
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=17)]
         public string Preparatory {
             get {
                 return this.PreparatoryField;
@@ -314,7 +331,7 @@ namespace RankingWebApp.ServiceReference1 {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=17)]
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=18)]
         public string Reason {
             get {
                 return this.ReasonField;
@@ -327,7 +344,7 @@ namespace RankingWebApp.ServiceReference1 {
             }
         }
         
-        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=18)]
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=19)]
         public System.DateTime Subscription {
             get {
                 return this.SubscriptionField;
@@ -336,6 +353,19 @@ namespace RankingWebApp.ServiceReference1 {
                 if ((this.SubscriptionField.Equals(value) != true)) {
                     this.SubscriptionField = value;
                     this.RaisePropertyChanged("Subscription");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=20)]
+        public bool Mentor {
+            get {
+                return this.MentorField;
+            }
+            set {
+                if ((this.MentorField.Equals(value) != true)) {
+                    this.MentorField = value;
+                    this.RaisePropertyChanged("Mentor");
                 }
             }
         }
@@ -357,6 +387,10 @@ namespace RankingWebApp.ServiceReference1 {
         // CODEGEN: Generating message contract since element name GetAppNameResult from namespace http://tempuri.org/ is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetAppName", ReplyAction="*")]
         RankingWebApp.ServiceReference1.GetAppNameResponse GetAppName(RankingWebApp.ServiceReference1.GetAppNameRequest request);
+        
+        // CODEGEN: Generating message contract since element name items from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/EditMultiParamUser", ReplyAction="*")]
+        RankingWebApp.ServiceReference1.EditMultiParamUserResponse EditMultiParamUser(RankingWebApp.ServiceReference1.EditMultiParamUserRequest request);
         
         // CODEGEN: Generating message contract since element name items from namespace http://tempuri.org/ is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/CreateMultiParamUser", ReplyAction="*")]
@@ -381,6 +415,17 @@ namespace RankingWebApp.ServiceReference1 {
         // CODEGEN: Generating message contract since element name GetSeedListResult from namespace http://tempuri.org/ is not marked nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetSeedList", ReplyAction="*")]
         RankingWebApp.ServiceReference1.GetSeedListResponse GetSeedList(RankingWebApp.ServiceReference1.GetSeedListRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ConnectMentorSeed", ReplyAction="*")]
+        void ConnectMentorSeed(int mentorID, int seedID);
+        
+        // CODEGEN: Generating message contract since element name GetMentorbySeedResult from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetMentorbySeed", ReplyAction="*")]
+        RankingWebApp.ServiceReference1.GetMentorbySeedResponse GetMentorbySeed(RankingWebApp.ServiceReference1.GetMentorbySeedRequest request);
+        
+        // CODEGEN: Generating message contract since element name Name from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetSeedID", ReplyAction="*")]
+        RankingWebApp.ServiceReference1.GetSeedIDResponse GetSeedID(RankingWebApp.ServiceReference1.GetSeedIDRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -441,6 +486,75 @@ namespace RankingWebApp.ServiceReference1 {
         
         public GetAppNameResponseBody(string GetAppNameResult) {
             this.GetAppNameResult = GetAppNameResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class EditMultiParamUserRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="EditMultiParamUser", Namespace="http://tempuri.org/", Order=0)]
+        public RankingWebApp.ServiceReference1.EditMultiParamUserRequestBody Body;
+        
+        public EditMultiParamUserRequest() {
+        }
+        
+        public EditMultiParamUserRequest(RankingWebApp.ServiceReference1.EditMultiParamUserRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class EditMultiParamUserRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public int id;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public RankingWebApp.ServiceReference1.ArrayOfString items;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=2)]
+        public RankingWebApp.ServiceReference1.ArrayOfString values;
+        
+        public EditMultiParamUserRequestBody() {
+        }
+        
+        public EditMultiParamUserRequestBody(int id, RankingWebApp.ServiceReference1.ArrayOfString items, RankingWebApp.ServiceReference1.ArrayOfString values) {
+            this.id = id;
+            this.items = items;
+            this.values = values;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class EditMultiParamUserResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="EditMultiParamUserResponse", Namespace="http://tempuri.org/", Order=0)]
+        public RankingWebApp.ServiceReference1.EditMultiParamUserResponseBody Body;
+        
+        public EditMultiParamUserResponse() {
+        }
+        
+        public EditMultiParamUserResponse(RankingWebApp.ServiceReference1.EditMultiParamUserResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute()]
+    public partial class EditMultiParamUserResponseBody {
+        
+        public EditMultiParamUserResponseBody() {
         }
     }
     
@@ -865,6 +979,142 @@ namespace RankingWebApp.ServiceReference1 {
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class GetMentorbySeedRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetMentorbySeed", Namespace="http://tempuri.org/", Order=0)]
+        public RankingWebApp.ServiceReference1.GetMentorbySeedRequestBody Body;
+        
+        public GetMentorbySeedRequest() {
+        }
+        
+        public GetMentorbySeedRequest(RankingWebApp.ServiceReference1.GetMentorbySeedRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class GetMentorbySeedRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public int SeedId;
+        
+        public GetMentorbySeedRequestBody() {
+        }
+        
+        public GetMentorbySeedRequestBody(int SeedId) {
+            this.SeedId = SeedId;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class GetMentorbySeedResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetMentorbySeedResponse", Namespace="http://tempuri.org/", Order=0)]
+        public RankingWebApp.ServiceReference1.GetMentorbySeedResponseBody Body;
+        
+        public GetMentorbySeedResponse() {
+        }
+        
+        public GetMentorbySeedResponse(RankingWebApp.ServiceReference1.GetMentorbySeedResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class GetMentorbySeedResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public RankingWebApp.ServiceReference1.Seed GetMentorbySeedResult;
+        
+        public GetMentorbySeedResponseBody() {
+        }
+        
+        public GetMentorbySeedResponseBody(RankingWebApp.ServiceReference1.Seed GetMentorbySeedResult) {
+            this.GetMentorbySeedResult = GetMentorbySeedResult;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class GetSeedIDRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetSeedID", Namespace="http://tempuri.org/", Order=0)]
+        public RankingWebApp.ServiceReference1.GetSeedIDRequestBody Body;
+        
+        public GetSeedIDRequest() {
+        }
+        
+        public GetSeedIDRequest(RankingWebApp.ServiceReference1.GetSeedIDRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class GetSeedIDRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string Name;
+        
+        public GetSeedIDRequestBody() {
+        }
+        
+        public GetSeedIDRequestBody(string Name) {
+            this.Name = Name;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class GetSeedIDResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="GetSeedIDResponse", Namespace="http://tempuri.org/", Order=0)]
+        public RankingWebApp.ServiceReference1.GetSeedIDResponseBody Body;
+        
+        public GetSeedIDResponse() {
+        }
+        
+        public GetSeedIDResponse(RankingWebApp.ServiceReference1.GetSeedIDResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class GetSeedIDResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public int GetSeedIDResult;
+        
+        public GetSeedIDResponseBody() {
+        }
+        
+        public GetSeedIDResponseBody(int GetSeedIDResult) {
+            this.GetSeedIDResult = GetSeedIDResult;
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     public interface Service1SoapChannel : RankingWebApp.ServiceReference1.Service1Soap, System.ServiceModel.IClientChannel {
     }
@@ -902,6 +1152,20 @@ namespace RankingWebApp.ServiceReference1 {
             inValue.Body = new RankingWebApp.ServiceReference1.GetAppNameRequestBody();
             RankingWebApp.ServiceReference1.GetAppNameResponse retVal = ((RankingWebApp.ServiceReference1.Service1Soap)(this)).GetAppName(inValue);
             return retVal.Body.GetAppNameResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        RankingWebApp.ServiceReference1.EditMultiParamUserResponse RankingWebApp.ServiceReference1.Service1Soap.EditMultiParamUser(RankingWebApp.ServiceReference1.EditMultiParamUserRequest request) {
+            return base.Channel.EditMultiParamUser(request);
+        }
+        
+        public void EditMultiParamUser(int id, RankingWebApp.ServiceReference1.ArrayOfString items, RankingWebApp.ServiceReference1.ArrayOfString values) {
+            RankingWebApp.ServiceReference1.EditMultiParamUserRequest inValue = new RankingWebApp.ServiceReference1.EditMultiParamUserRequest();
+            inValue.Body = new RankingWebApp.ServiceReference1.EditMultiParamUserRequestBody();
+            inValue.Body.id = id;
+            inValue.Body.items = items;
+            inValue.Body.values = values;
+            RankingWebApp.ServiceReference1.EditMultiParamUserResponse retVal = ((RankingWebApp.ServiceReference1.Service1Soap)(this)).EditMultiParamUser(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -984,6 +1248,36 @@ namespace RankingWebApp.ServiceReference1 {
             inValue.Body = new RankingWebApp.ServiceReference1.GetSeedListRequestBody();
             RankingWebApp.ServiceReference1.GetSeedListResponse retVal = ((RankingWebApp.ServiceReference1.Service1Soap)(this)).GetSeedList(inValue);
             return retVal.Body.GetSeedListResult;
+        }
+        
+        public void ConnectMentorSeed(int mentorID, int seedID) {
+            base.Channel.ConnectMentorSeed(mentorID, seedID);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        RankingWebApp.ServiceReference1.GetMentorbySeedResponse RankingWebApp.ServiceReference1.Service1Soap.GetMentorbySeed(RankingWebApp.ServiceReference1.GetMentorbySeedRequest request) {
+            return base.Channel.GetMentorbySeed(request);
+        }
+        
+        public RankingWebApp.ServiceReference1.Seed GetMentorbySeed(int SeedId) {
+            RankingWebApp.ServiceReference1.GetMentorbySeedRequest inValue = new RankingWebApp.ServiceReference1.GetMentorbySeedRequest();
+            inValue.Body = new RankingWebApp.ServiceReference1.GetMentorbySeedRequestBody();
+            inValue.Body.SeedId = SeedId;
+            RankingWebApp.ServiceReference1.GetMentorbySeedResponse retVal = ((RankingWebApp.ServiceReference1.Service1Soap)(this)).GetMentorbySeed(inValue);
+            return retVal.Body.GetMentorbySeedResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        RankingWebApp.ServiceReference1.GetSeedIDResponse RankingWebApp.ServiceReference1.Service1Soap.GetSeedID(RankingWebApp.ServiceReference1.GetSeedIDRequest request) {
+            return base.Channel.GetSeedID(request);
+        }
+        
+        public int GetSeedID(string Name) {
+            RankingWebApp.ServiceReference1.GetSeedIDRequest inValue = new RankingWebApp.ServiceReference1.GetSeedIDRequest();
+            inValue.Body = new RankingWebApp.ServiceReference1.GetSeedIDRequestBody();
+            inValue.Body.Name = Name;
+            RankingWebApp.ServiceReference1.GetSeedIDResponse retVal = ((RankingWebApp.ServiceReference1.Service1Soap)(this)).GetSeedID(inValue);
+            return retVal.Body.GetSeedIDResult;
         }
     }
 }

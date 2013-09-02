@@ -23,7 +23,31 @@ namespace RankingService
         {
             return "RankingService";
         }
-       
+        [WebMethod]
+        public void EditMultiParamUser(int id,string[] items, string[] values)
+        {
+
+            String query = "UPDATE Seed Set ";
+
+            string para = "";
+            string vals = "";
+            for (int i = 0; i < items.Length; i++)
+            {
+                //para = para + items[i] + ",";
+                query += (" "+items[i] + " = ");
+                query += ("'"+values[i]+"' ");
+            }
+
+
+
+            query += ("where ID = " + id);
+
+            MySQLConnection.Instance().SQLQuery(query);
+
+        
+        
+        }
+
         [WebMethod]
         public bool CreateMultiParamUser(string[] items, string[] values)
         {
@@ -136,6 +160,63 @@ namespace RankingService
 
             return ret;
         
+        }
+
+        [WebMethod]
+        public void ConnectMentorSeed(int mentorID, int seedID)
+        {
+
+            String query = "INSERT INTO MentorMentoring ( idMentor,idMentoring) VALUES("+mentorID+","+seedID+")";
+
+            MySQLConnection.Instance().SQLQuery(query);
+
+        
+        
+        }
+
+
+        [WebMethod]
+        public Seed GetMentorbySeed(int SeedId)
+        {
+
+
+            
+            string query = "select Sd.Id as IdMentor from Seed as SS inner join MentorMentoring on idMentoring = Id inner join Seed as Sd on Sd.Id = idMentor where SS.Id ="+SeedId;
+           var sd = MySQLConnection.Instance().SQLQueryReturn(query);
+
+           string ret = "-1";
+           if (sd.Count >0)
+           {
+               ret = sd[0].Replace(";","");
+           }
+
+
+           return GetSeed("Id",ret);
+
+
+        }
+
+        [WebMethod]
+        public int GetSeedID(string Name)
+        {
+
+            int ret = 0;
+
+            String query = "Select * from Seed where Name like '%" + Name + "%'";
+
+            var sd = MySQLConnection.Instance().SQLQueryReturn(query);
+
+            if (sd.Count != 0)
+            {
+                string[] sdID = sd[0].Split(';');
+                ret = int.Parse(sdID[0]); 
+            }
+            else
+            {
+                ret = -1;
+            }
+            return ret;
+                
         }
 
     }
