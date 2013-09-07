@@ -251,20 +251,27 @@ return true;
 
 <!-- Begin Navigation -->
 	<div id="navigation">
-	<table>
-	<tr>
-			<td><img src="../images/semeares-logo.png" /></td>
-			<td><a href="../default.html">Home</a></td>
-			<td><a href="../about/default.html">Sobre o Semeares</a></td>
-			<td><a href="../news/default.html">Notícias</a></td>
-			<td><a href="../calendar/default.html">Calendário</a></td>
-			<td><a href="../photo_gallery/default.html">Galeria</a></td>
-			<td><a href="subscribe.php">Inscrição</a></td>
-			<td><a href="../palestrantes/palestrantes.php">Palestrantes</a></td>
-			<td><a href="../contact/default.html">Contatos</a></td>
-	</tr>
+	
+	
+	
+<table>
+	<tr>	
+	<td><img src="../images/semeares-logo.png" /></td>
+			<td style="width: 60px" align="center"><a href="../default.html">Home</a></td>
+			<td style="width: 100px" align="center">
+			<a href="../about/default.html">Sobre o Semeares</a></td>
+			<td style="width: 90px" align="center">
+			<a href="../service/default.html">Serviços</a></td>
+			<td style="width: 80px" align="center">
+			<a href="../photo_gallery/default.html">Galeria</a></td>
+			<td style="width: 80px" align="center"><a href="subscribe.php">Inscrição</a></td>
+			<td style="width: 100px" align="center">
+			<a href="../palestrantes/palestrantes.php">Palestrantes</a></td>
+			</tr>
 	
 	</table>
+			
+				
 		
 	</div>
 	
@@ -286,48 +293,10 @@ return true;
 		<!-- Begin Content -->
 		<div id="content">
 			<!-- #BeginEditable "content" -->
-<?
-if (getenv("REQUEST_METHOD") == "POST") {
-   // Configura as variáveis do método POST para virarem variáveis
-   // "normais" do PHP (Requer apenas nas versões do PHP acima da 4.1)
-	$nome = $_POST['nome'];
-	$email = $_POST['email'];
-	$telefone = $_POST['telefone'];
-	$escola = $_POST['escola'];
-	
-	
 
-	
-   // Caso todos os campos forem preenchidos, inclui a mensagem no
-   // banco de dados. Caso isso não aconteça, gera uma mensagem de
-   // erro que será impressa no browser mais a frente.
-   if ($nome and $email and $telefone and $escola) {
-    
-	//$conexao = mysql_connect("10.58.204.184","root","harpia");
-    //mysql_select_db("test",$conexao);
-	$conexao = mysql_connect("localhost","abraaoba_isemear","abraao123");
-    mysql_select_db("abraaoba_isemear",$conexao);
-	
-	
-	{
-		$query = "INSERT INTO encontro(enct_nome,enct_email,enct_telefone,enct_instituicao) values('$nome','$email','$telefone','$escola')";
-		mysql_query($query,$conexao);
-    
-		$err = "Dados Cadastrados com sucesso!";
-		mysql_close($conexao);	
-	}
-   } else {
-      $err = "Preencha todos os campos obrigatórios!";
-   }
-   
-   
-}
-
-?>
 <h1>Resultado:</h1>
 <p.page>
-<?=$err
-?>
+
 </p>
 			
 			
@@ -342,7 +311,7 @@ if (getenv("REQUEST_METHOD") == "POST") {
 	<div id="footer">
 		<p><a href="../default.html">Home</a> | <a href="../about/default.html">Sobre o Semeares</a> 
 		| <a href="../news/default.html">Notícias</a> | 
-		<a href="../calendar/default.html">
+		<a href="../service/default.html">
 		Calendário</a> | <a href="../photo_gallery/default.html">Galeria</a> |
 		<a href="../palestrantes/default.html">Palestrantes</a> | 
 		<a href="../contact/default.html">Contatos</a></p>

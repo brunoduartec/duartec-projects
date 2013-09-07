@@ -251,20 +251,27 @@ return true;
 
 <!-- Begin Navigation -->
 	<div id="navigation">
-	<table>
-	<tr>
-			<td><img src="../images/semeares-logo.png" /></td>
-			<td><a href="../default.html">Home</a></td>
-			<td><a href="../about/default.html">Sobre o Semeares</a></td>
-			<td><a href="../news/default.html">Notícias</a></td>
-			<td><a href="../calendar/default.html">Calendário</a></td>
-			<td><a href="../photo_gallery/default.html">Galeria</a></td>
-			<td><a href="subscribe.php">Inscrição</a></td>
-			<td><a href="../palestrantes/palestrantes.php">Palestrantes</a></td>
-			<td><a href="../contact/default.html">Contatos</a></td>
-	</tr>
+	
+	
+	
+<table>
+	<tr>	
+	<td><img src="../images/semeares-logo.png" /></td>
+			<td style="width: 60px" align="center"><a href="../default.html">Home</a></td>
+			<td style="width: 100px" align="center">
+			<a href="../about/default.html">Sobre o Semeares</a></td>
+			<td style="width: 90px" align="center">
+			<a href="../service/default.html">Serviços</a></td>
+			<td style="width: 80px" align="center">
+			<a href="../photo_gallery/default.html">Galeria</a></td>
+			<td style="width: 80px" align="center"><a href="subscribe.php">Inscrição</a></td>
+			<td style="width: 100px" align="center">
+			<a href="../palestrantes/palestrantes.php">Palestrantes</a></td>
+			</tr>
 	
 	</table>
+			
+				
 		
 	</div>
 	
@@ -334,6 +341,20 @@ return true;
 <tr>
    <td>&nbsp;</td>
 </tr>
+<tr>
+   <td>Porque deseja participar do Semeares:</td>
+   
+</tr>
+<tr>
+   <td>
+   <input type="text" size="30" name="motivo" maxlength="100" style="width: 301px; height: 134px"></td>
+   
+</tr>
+
+<tr>
+   <td>&nbsp;</td>
+</tr>
+
 
 </td></tr>
 </table>
@@ -352,7 +373,7 @@ return true;
 	<div id="footer">
 		<p><a href="../default.html">Home</a> | <a href="../about/default.html">Sobre o Semeares</a> 
 		| <a href="../news/default.html">Notícias</a> | 
-		<a href="../calendar/default.html">
+		<a href="../service/default.html">
 		Calendário</a> | <a href="../photo_gallery/default.html">Galeria</a> |
 		<a href="../palestrantes/default.html">Palestrantes</a> | 
 		<a href="../contact/default.html">Contatos</a></p>
