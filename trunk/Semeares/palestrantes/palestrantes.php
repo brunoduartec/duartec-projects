@@ -4,7 +4,8 @@
 <!-- #BeginTemplate "../master.dwt" -->
 
 <head>
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
 <script type="text/javascript">
 
 var agent = navigator.userAgent.toLowerCase();
@@ -85,7 +86,7 @@ function mascaraFone(campoData){
 		campoData.value = data;
       return true;              
      }
-     if (data.length == 7){
+     if (data.length == 8){
 		data = data + '.';
         campoData.value = data;
         return true;
@@ -143,20 +144,14 @@ function enviardados(){
 		return false;
 	}
 
-	if(document.dados.telefone1.value=="")
+	if(document.dados.telefone.value=="")
 	{
-		alert( "Preencha campo TELEFONE 1  corretamente!" );
+		alert( "Preencha campo TELEFONE  corretamente!" );
 		document.dados.telefone1.focus();
 		return false;
 	}
 	
 	
-	if(document.dados.telefone2.value=="")
-	{
-		alert( "Preencha campo TELEFONE 2  corretamente!" );
-		document.dados.telefone2.focus();
-		return false;
-	}
 	
 	if(document.dados.endereco.value=="")
 	{
@@ -256,10 +251,9 @@ return true;
 	
 <table>
 	<tr>	
-	<td><img src="../images/semeares-logo.png" /></td>
-			<td style="width: 60px" align="center"><a href="../default.html">Home</a></td>
-			<td style="width: 100px" align="center">
-			<a href="../about/default.html">Sobre o Semeares</a></td>
+	<td><a href="../default.html"><img src="../images/semeares-logo.png" /></a></td>
+
+			<td style="width: 100px" align="center"><a href="../default.html">Sobre o Semeares</a></td>
 			<td style="width: 90px" align="center">
 			<a href="../service/default.html">Serviços</a></td>
 			<td style="width: 80px" align="center">
@@ -294,11 +288,32 @@ return true;
 		<div id="content">
 			<!-- #BeginEditable "content" -->
 <title></title>
-			
+
 			<h2>Palestrantes</h2>
-			<table>
 			
+		<table>
 			
+			<?  
+	$conexao = mysql_connect("localhost","abraaoba_isemear","abraao123");
+    mysql_select_db("abraaoba_isemear",$conexao);
+	
+	$oResult = mysql_query("SELECT * from palestrante", $conexao);
+	
+	
+	
+/*
+	while($row = mysql_fetch_array($oResult))
+  {
+   
+	echo "<tr><td><img src=\"images/".$row['image']." \"/></td> <td>".sprintf('%011s',$row['info'])."</td></tr>"  ;
+	}
+  */ 
+   mysql_close($conexao);?>
+   
+   <tr>
+     <td><img src="images/feijao.png"</td>
+   	 <td>Thiago Feijão, 23, tem uma biografia que não cabe na sua idade. Aluno de engenharia mecânica-aeronáutica do ITA, já trabalhou em banco de investimento, foi consultor em um projeto do BID, foi presidente do CasD, uma ONG que prepara jovens financeiramente desfavorecidos por meio do acesso à educação de qualidade para o vestibular, e fundou outras duas – a Casdinho, para alunos do ensino fundamental, e o Instituto Semear, que apoia jovens universitários financeiramente desfavorecidos que querem solucionar desafios sociais. Hoje, Thiago reúne seus esforços no QMágico, um Startup de tecnologia educacional focada em trazer inteligência para o aprendizado que, no seu ano de lançamento, 2012, impactou mais de 100 mil pessoas.</td>
+   </tr>
 			
 </table>
 					
@@ -309,7 +324,7 @@ return true;
 	<!-- End Page Content -->
 	<!-- Begin Footer -->
 	<div id="footer">
-		<p><a href="../default.html">Home</a> | <a href="../about/default.html">Sobre o Semeares</a> 
+		<p><a href="../default.html">Home</a> | <a href="../default.html">Sobre o Semeares</a> 
 		| <a href="../news/default.html">Notícias</a> | 
 		<a href="../service/default.html">
 		Calendário</a> | <a href="../photo_gallery/default.html">Galeria</a> |
