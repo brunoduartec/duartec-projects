@@ -4,7 +4,8 @@
 <!-- #BeginTemplate "master.dwt" -->
 
 <head>
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
 <script type="text/javascript">
 
 var agent = navigator.userAgent.toLowerCase();
@@ -85,7 +86,7 @@ function mascaraFone(campoData){
 		campoData.value = data;
       return true;              
      }
-     if (data.length == 7){
+     if (data.length == 8){
 		data = data + '.';
         campoData.value = data;
         return true;
@@ -143,20 +144,14 @@ function enviardados(){
 		return false;
 	}
 
-	if(document.dados.telefone1.value=="")
+	if(document.dados.telefone.value=="")
 	{
-		alert( "Preencha campo TELEFONE 1  corretamente!" );
+		alert( "Preencha campo TELEFONE  corretamente!" );
 		document.dados.telefone1.focus();
 		return false;
 	}
 	
 	
-	if(document.dados.telefone2.value=="")
-	{
-		alert( "Preencha campo TELEFONE 2  corretamente!" );
-		document.dados.telefone2.focus();
-		return false;
-	}
 	
 	if(document.dados.endereco.value=="")
 	{
@@ -256,9 +251,9 @@ return true;
 	
 <table>
 	<tr>	
-	<td><img src="images/semeares-logo.png" /></td>
-			<td style="width: 60px" align="center"><a href="default.html">Home</a></td>
-			<td style="width: 100px" align="center"><a href="about/default.html">Sobre o Semeares</a></td>
+	<td><a href="default.html"><img src="images/semeares-logo.png" /></a></td>
+
+			<td style="width: 100px" align="center"><a href="default.html">Sobre o Semeares</a></td>
 			<td style="width: 90px" align="center">
 			<a href="service/default.html">Serviços</a></td>
 			<td style="width: 80px" align="center"><a href="photo_gallery/default.html">Galeria</a></td>
@@ -290,16 +285,58 @@ return true;
 		<!-- Begin Content -->
 		<div id="content">
 			<!-- #BeginEditable "content" -->
-<title></title>
-			<img alt="" height="189" src="images/garden_01.jpg" width="288" />
-			<h2>Heading 2</h2>
-			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam porta 
-			porttitor magna. Nunc urna. Vestibulum augue. Maecenas ipsum elit, rutrum 
-			id, iaculis ac, dictum ac, eros. Phasellus elit. Vestibulum semper cursus 
-			risus. Nunc consectetuer malesuada pede. Etiam ante. Pellentesque habitant 
-			morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
-			Phasellus non mi vel elit malesuada porttitor. Nunc euismod velit vitae 
-			mi. Suspendisse ac tellus. In et augue in nisl placerat cursus.</p>
+
+				<table>
+				<tr>
+				<td>
+			<h2>Sobre o Semeares</h2>
+			<p>
+			O SemeAres é um evento organizado
+
+pelo Instituto Semear e tem por objetivo disseminar os nossos valores, 
+
+difundir ideias, cultivar redes de contatos, inspirar, motivar e conscientizar 
+
+jovens e sociedade em busca de uma transformação positiva da 
+
+coletividade, como também colher novos colaboradores para este círculo 
+
+virtuoso.</p>
+
+<p>
+Sua idealização foi baseada no modelo TED/TEDx: investir em ideias que 
+
+valem a pena serem semeadas. Segue o padrão de palestras curtas (15 min), 
+
+ministradas por pessoas com propostas, práticas e histórias reconhecidas 
+
+como modelos de inspiração para outros. O tema desta 3ª edição, a 
+
+se realizar em 5 de outubro de 2013, busca promover uma discussão 
+
+transversal e multidisciplinar com variados pontos de vista sobre Educação.
+</p>
+
+Seus principais objetivos são:<br>
+
+- Inspirar, motivar e conscientizar comunidades, organizações e indivíduos 
+
+para transformar positivamente a sociedade<br>
+
+- Gerar e consolidar redes, inclusive com os palestrantes-semeadores, que 
+
+após suas falas permanecem durante todo o evento<br>
+
+- Difundir ideias, práticas e relatos inspiradores<br>
+
+- Construir e vivenciar um ambiente confortável e motivador para o intercâmbio de visões e de atuações no mundo<br>
+
+- Praticar os valores do Instituto Semear<br>
+			</p>
+			</td>
+			<td><iframe width="560" height="315" src="http://www.youtube.com/embed/xiMUv_HLsrg" frameborder="0" allowfullscreen></iframe></td>
+			</tr>
+			</table>				
 			<!-- #EndEditable --></div>
 		<!-- End Content -->
 		<!-- Begin Sidebar -->
@@ -307,7 +344,7 @@ return true;
 	<!-- End Page Content -->
 	<!-- Begin Footer -->
 	<div id="footer">
-		<p><a href="default.html">Home</a> | <a href="about/default.html">Sobre o Semeares</a> 
+		<p><a href="default.html">Home</a> | <a href="default.html">Sobre o Semeares</a> 
 		| <a href="news/default.html">Notícias</a> | 
 		<a href="service/default.html">
 		Calendário</a> | <a href="photo_gallery/default.html">Galeria</a> |

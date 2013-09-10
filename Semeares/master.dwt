@@ -2,7 +2,8 @@
 <html dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
 <script type="text/javascript">
 
 var agent = navigator.userAgent.toLowerCase();
@@ -83,7 +84,7 @@ function mascaraFone(campoData){
 		campoData.value = data;
       return true;              
      }
-     if (data.length == 7){
+     if (data.length == 8){
 		data = data + '.';
         campoData.value = data;
         return true;
@@ -141,20 +142,14 @@ function enviardados(){
 		return false;
 	}
 
-	if(document.dados.telefone1.value=="")
+	if(document.dados.telefone.value=="")
 	{
-		alert( "Preencha campo TELEFONE 1  corretamente!" );
+		alert( "Preencha campo TELEFONE  corretamente!" );
 		document.dados.telefone1.focus();
 		return false;
 	}
 	
 	
-	if(document.dados.telefone2.value=="")
-	{
-		alert( "Preencha campo TELEFONE 2  corretamente!" );
-		document.dados.telefone2.focus();
-		return false;
-	}
 	
 	if(document.dados.endereco.value=="")
 	{
@@ -254,9 +249,9 @@ return true;
 	
 <table>
 	<tr>	
-	<td><img src="images/semeares-logo.png" /></td>
-			<td style="width: 60px" align="center"><a href="default.html">Home</a></td>
-			<td style="width: 100px" align="center"><a href="about/default.html">Sobre o Semeares</a></td>
+	<td><a href="default.html"><img src="images/semeares-logo.png" /></a></td>
+
+			<td style="width: 100px" align="center"><a href="default.html">Sobre o Semeares</a></td>
 			<td style="width: 90px" align="center">
 			<a href="service/default.html">Serviços</a></td>
 			<td style="width: 80px" align="center"><a href="photo_gallery/default.html">Galeria</a></td>
@@ -288,6 +283,7 @@ return true;
 		<!-- Begin Content -->
 		<div id="content">
 			<!-- #BeginEditable "content" -->
+			feijão
 			<h2>Heading 2</h2>
 			<p>insert content here</p>
 			<!-- #EndEditable --></div>
@@ -297,7 +293,7 @@ return true;
 	<!-- End Page Content -->
 	<!-- Begin Footer -->
 	<div id="footer">
-		<p><a href="default.html">Home</a> | <a href="about/default.html">Sobre o Semeares</a> 
+		<p><a href="default.html">Home</a> | <a href="default.html">Sobre o Semeares</a> 
 		| <a href="news/default.html">Notícias</a> | 
 		<a href="service/default.html">
 		Calendário</a> | <a href="photo_gallery/default.html">Galeria</a> |
