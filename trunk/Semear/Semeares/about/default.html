@@ -4,7 +4,7 @@
 <!-- #BeginTemplate "../master.dwt" -->
 
 <head>
-<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
 <script type="text/javascript">
 
 var agent = navigator.userAgent.toLowerCase();
@@ -85,7 +85,7 @@ function mascaraFone(campoData){
 		campoData.value = data;
       return true;              
      }
-     if (data.length == 7){
+     if (data.length == 8){
 		data = data + '.';
         campoData.value = data;
         return true;
@@ -143,20 +143,14 @@ function enviardados(){
 		return false;
 	}
 
-	if(document.dados.telefone1.value=="")
+	if(document.dados.telefone.value=="")
 	{
-		alert( "Preencha campo TELEFONE 1  corretamente!" );
+		alert( "Preencha campo TELEFONE  corretamente!" );
 		document.dados.telefone1.focus();
 		return false;
 	}
 	
 	
-	if(document.dados.telefone2.value=="")
-	{
-		alert( "Preencha campo TELEFONE 2  corretamente!" );
-		document.dados.telefone2.focus();
-		return false;
-	}
 	
 	if(document.dados.endereco.value=="")
 	{
@@ -245,6 +239,7 @@ return true;
 <title></title>
 <!-- #EndEditable -->
 <link href="../styles/style4.css" media="screen" rel="stylesheet" title="CSS" type="text/css" />
+
 </head>
 
 <body>
@@ -256,11 +251,12 @@ return true;
 	
 <table>
 	<tr>	
-	<td><img src="../images/semeares-logo.png" /></td>
-			<td style="width: 60px" align="center"><a href="../default.html">Home</a></td>
-			<td style="width: 100px" align="center"><a href="default.html">Sobre o Semeares</a></td>
+	<td><a href="../default.html"><img src="../images/semeares-logo.png" /></a></td>
+
+			<td style="width: 100px" align="center"><a href="../default.html">Sobre o Semeares</a></td>
+			<td style="width: 100px" align="center"><a href="default.html">Sobre Nós</a></td>
 			<td style="width: 90px" align="center">
-			<a href="../service/default.html">Serviços</a></td>
+			<a href="../service/default.html">Serviço</a></td>
 			<td style="width: 80px" align="center">
 			<a href="../photo_gallery/default.html">Galeria</a></td>
 			<td style="width: 80px" align="center">
@@ -297,52 +293,39 @@ return true;
 				<table>
 				<tr>
 				<td>
-			<h2>Sobre o Semeares</h2>
-			<p>
-			O SemeAres é um evento organizado
-
-pelo Instituto Semear e tem por objetivo disseminar os nossos valores, 
-
-difundir ideias, cultivar redes de contatos, inspirar, motivar e conscientizar 
-
-jovens e sociedade em busca de uma transformação positiva da 
-
-coletividade, como também colher novos colaboradores para este círculo 
-
-virtuoso.</p>
-
-<p>
-Sua idealização foi baseada no modelo TED/TEDx: investir em ideias que 
-
-valem a pena serem semeadas. Segue o padrão de palestras curtas (15 min), 
-
-ministradas por pessoas com propostas, práticas e histórias reconhecidas 
-
-como modelos de inspiração para outros. O tema desta 3ª edição, a 
-
-se realizar em 5 de outubro de 2013, busca promover uma discussão 
-
-transversal e multidisciplinar com variados pontos de vista sobre Educação.
-</p>
-
-Seus principais objetivos são:<br>
-
-- Inspirar, motivar e conscientizar comunidades, organizações e indivíduos 
-
-para transformar positivamente a sociedade<br>
-
-- Gerar e consolidar redes, inclusive com os palestrantes-semeadores, que 
-
-após suas falas permanecem durante todo o evento<br>
-
-- Difundir ideias, práticas e relatos inspiradores<br>
-
-- Construir e vivenciar um ambiente confortável e motivador para o intercâmbio de visões e de atuações no mundo<br>
-
-- Praticar os valores do Instituto Semear<br>
+			<h2>Sobre os Realizadores</h2>
+				<p><strong>Equipe de produção:</strong><br />
+				<br />
+				Ana Luisa Signorelli<br />
+				Claudia Alvarenga<br />
+				Débora Tognozzi<br />
+				Marisa Nubile<br />
+				Myrna Máximo<br />
+				Natália Nogueira <br />
+				Raquel Machado<br />
+				Sonja Dias Andrade<br />
+				Bruno Duarte<br />
+				Yuri Duarte Corrêa<br />
+				<br />
+				<strong>Equipe de Sementes:<br />
+				</strong><br />
+				Camila Nogueira<br />
+				Yara Eleutério<br />
+				Guilherme Siqueira<br />
+				Mariano Alves<br />
+				<br />
+				<strong>Coordenação</strong><br />
+				<br />
+				André Mathias - Instituto Semear<br />
+				Bruno Conde - A.S.A. Agência editorial<br />
+				<br />
+				<strong>Estagiária Instituo Semear<br />
+				</strong><br />
+				Amanda Lechinski</p>
+				<br>
 			</p>
 			</td>
-			<td><iframe width="560" height="315" src="http://www.youtube.com/embed/xiMUv_HLsrg" frameborder="0" allowfullscreen></iframe></td>
+
 			</tr>
 			</table>				
 			<!-- #EndEditable --></div>
@@ -352,12 +335,10 @@ após suas falas permanecem durante todo o evento<br>
 	<!-- End Page Content -->
 	<!-- Begin Footer -->
 	<div id="footer">
-		<p><a href="../default.html">Home</a> | <a href="default.html">Sobre o Semeares</a> 
-		| <a href="../news/default.html">Notícias</a> | 
-		<a href="../service/default.html">
-		Calendário</a> | <a href="../photo_gallery/default.html">Galeria</a> |
-		<a href="../palestrantes/default.html">Palestrantes</a> | 
-		<a href="../contact/default.html">Contatos</a></p>
+		<p><a href="../default.html">Sobre o Semeares</a> 
+		| <a href="../service/default.html">Serviço</a> | 
+		 <a href="../photo_gallery/default.html">Galeria</a> |
+		<a href="../palestrantes/default.html">Palestrantes</a> </p>
 	</div>
 	<!-- End Footer --></div>
 <!-- End Container -->

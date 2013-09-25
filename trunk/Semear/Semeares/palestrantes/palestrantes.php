@@ -4,7 +4,6 @@
 <!-- #BeginTemplate "../master.dwt" -->
 
 <head>
-<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 
 <script type="text/javascript">
 
@@ -20,7 +19,7 @@ function validaTamanho(pElement,pSize){
 };
 
 function obterCodigo(pEvento){	
-	// pega o cÃ³digo de acordo com o browser
+	// pega o código de acordo com o browser
 	return isIE ? pEvento.keyCode : pEvento.which;
 };
 
@@ -57,7 +56,7 @@ function validaDat(campo,valor) {
 			erro = true;
 	}
 	if (erro) {
-		alert("\"" + valor + "\" não é uma data válida!");
+		alert("\"" + valor + "\" n�o � uma data v�lida!");
 		campo.focus();
 		campo.value = "";
 		return false;
@@ -99,7 +98,7 @@ function somenteNumeros(pEvento){
 	var keychar;
 	var reg;
 	
-	//retorna o cÃ³digo do caracter digitado
+	//retorna o código do caracter digitado
 	key = obterCodigo(pEvento);
 
 	//se key for diferente de: 
@@ -155,7 +154,7 @@ function enviardados(){
 	
 	if(document.dados.endereco.value=="")
 	{
-		alert( "Preencha campo ENDEREÇO  corretamente!" );
+		alert( "Preencha campo ENDERE�O  corretamente!" );
 		document.dados.endereco.focus();
 		return false;
 	}
@@ -200,7 +199,7 @@ function validaCPF (campo,valor) {
 		return true;
 		
 	if (!vercpf(valor)) {
-		alert("\"" + valor + "\" não é um cpf válido!");
+		alert("\"" + valor + "\" n�o � um cpf v�lido!");
 		campo.focus();
 		campo.value = "";
 		return false;
@@ -240,6 +239,7 @@ return true;
 <title></title>
 <!-- #EndEditable -->
 <link href="../styles/style4.css" media="screen" rel="stylesheet" title="CSS" type="text/css" />
+
 </head>
 
 <body>
@@ -254,12 +254,14 @@ return true;
 	<td><a href="../default.html"><img src="../images/semeares-logo.png" /></a></td>
 
 			<td style="width: 100px" align="center"><a href="../default.html">Sobre o Semeares</a></td>
+			<td style="width: 100px" align="center">
+			<a href="../about/default.html">Sobre N�s</a></td>
 			<td style="width: 90px" align="center">
-			<a href="../service/default.html">Serviço</a></td>
+			<a href="../service/default.html">Servi�o</a></td>
 			<td style="width: 80px" align="center">
 			<a href="../photo_gallery/default.html">Galeria</a></td>
 			<td style="width: 80px" align="center">
-			<a href="../subscribe/subscribe.php">Inscrição</a></td>
+			<a href="../subscribe/subscribe.php">Inscri��o</a></td>
 			<td style="width: 100px" align="center"><a href="palestrantes.php">Palestrantes</a></td>
 			</tr>
 	
@@ -307,13 +309,60 @@ return true;
    
 	echo "<tr><td><img src=\"images/".$row['image']." \"/></td> <td>".sprintf('%011s',$row['info'])."</td></tr>"  ;
 	}
-  */ 
-   mysql_close($conexao);?>
+  
+   mysql_close($conexao);
+   */
+   
+   ?>
+  <tr>
+     <td><img src="images/Carlos Branches.png"></td>
+   </tr>
+
+   <tr>
+     <td><img src="images/Ozires Silva.png"></td>
+   </tr>
+   
    
    <tr>
-     <td><img src="images/feijao.png"</td>
-   	 <td>Thiago Feijão, 23, tem uma biografia que não cabe na sua idade. Aluno de engenharia mecânica-aeronáutica do ITA, já trabalhou em banco de investimento, foi consultor em um projeto do BID, foi presidente do CasD, uma ONG que prepara jovens financeiramente desfavorecidos por meio do acesso à educação de qualidade para o vestibular, e fundou outras duas – a Casdinho, para alunos do ensino fundamental, e o Instituto Semear, que apoia jovens universitários financeiramente desfavorecidos que querem solucionar desafios sociais. Hoje, Thiago reúne seus esforços no QMágico, um Startup de tecnologia educacional focada em trazer inteligência para o aprendizado que, no seu ano de lançamento, 2012, impactou mais de 100 mil pessoas.</td>
+     <td><img src="images/Jonatas Artur.png"></td>
    </tr>
+   
+   <tr>
+     <td><img src="images/Tiago Bevilaqua.png"></td>
+   </tr>
+
+ <tr>
+     <td><img src="images/Andre Camargo Costa.png"></td>
+   </tr>
+
+   <tr>
+     <td><img src="images/Amanda Lechinski.png"></td>
+   </tr>
+
+<tr>
+     <td><img src="images/Sergio Walter Alexandrino.png"></td>
+   </tr>
+   
+   <tr>
+     <td><img src="images/Caio Dib.png"></td>
+   </tr>
+   <tr>
+     <td><img src="images/Ana Cristina Zuccaro.png"></td>
+   </tr>
+
+
+<tr>
+     <td><img src="images/Tiago Feijao.png"></td>
+   </tr>
+
+
+
+<tr>
+     <td><img src="images/Ana Elisa Siqueira.png"></td>
+   </tr>
+
+   
+
 			
 </table>
 					
@@ -324,12 +373,10 @@ return true;
 	<!-- End Page Content -->
 	<!-- Begin Footer -->
 	<div id="footer">
-		<p><a href="../default.html">Home</a> | <a href="../default.html">Sobre o Semeares</a> 
-		| <a href="../news/default.html">Notícias</a> | 
-		<a href="../service/default.html">
-		Calendário</a> | <a href="../photo_gallery/default.html">Galeria</a> |
-		<a href="default.html">Palestrantes</a> | 
-		<a href="../contact/default.html">Contatos</a></p>
+		<p><a href="../default.html">Sobre o Semeares</a> 
+		| <a href="../service/default.html">Servi�o</a> | 
+		 <a href="../photo_gallery/default.html">Galeria</a> |
+		<a href="default.html">Palestrantes</a> </p>
 	</div>
 	<!-- End Footer --></div>
 <!-- End Container -->
