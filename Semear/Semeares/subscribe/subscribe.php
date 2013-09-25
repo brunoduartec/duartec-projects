@@ -4,7 +4,6 @@
 <!-- #BeginTemplate "../master.dwt" -->
 
 <head>
-<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 
 <script type="text/javascript">
 
@@ -20,7 +19,7 @@ function validaTamanho(pElement,pSize){
 };
 
 function obterCodigo(pEvento){	
-	// pega o c√É¬≥digo de acordo com o browser
+	// pega o c√≥digo de acordo com o browser
 	return isIE ? pEvento.keyCode : pEvento.which;
 };
 
@@ -57,7 +56,7 @@ function validaDat(campo,valor) {
 			erro = true;
 	}
 	if (erro) {
-		alert("\"" + valor + "\" n√£o √© uma data v√°lida!");
+		alert("\"" + valor + "\" n„o È uma data v·lida!");
 		campo.focus();
 		campo.value = "";
 		return false;
@@ -99,7 +98,7 @@ function somenteNumeros(pEvento){
 	var keychar;
 	var reg;
 	
-	//retorna o c√É¬≥digo do caracter digitado
+	//retorna o c√≥digo do caracter digitado
 	key = obterCodigo(pEvento);
 
 	//se key for diferente de: 
@@ -155,7 +154,7 @@ function enviardados(){
 	
 	if(document.dados.endereco.value=="")
 	{
-		alert( "Preencha campo ENDERE√áO  corretamente!" );
+		alert( "Preencha campo ENDERE«O  corretamente!" );
 		document.dados.endereco.focus();
 		return false;
 	}
@@ -200,7 +199,7 @@ function validaCPF (campo,valor) {
 		return true;
 		
 	if (!vercpf(valor)) {
-		alert("\"" + valor + "\" n√£o √© um cpf v√°lido!");
+		alert("\"" + valor + "\" n„o È um cpf v·lido!");
 		campo.focus();
 		campo.value = "";
 		return false;
@@ -240,6 +239,7 @@ return true;
 <title></title>
 <!-- #EndEditable -->
 <link href="../styles/style4.css" media="screen" rel="stylesheet" title="CSS" type="text/css" />
+
 </head>
 
 <body>
@@ -254,11 +254,13 @@ return true;
 	<td><a href="../default.html"><img src="../images/semeares-logo.png" /></a></td>
 
 			<td style="width: 100px" align="center"><a href="../default.html">Sobre o Semeares</a></td>
+			<td style="width: 100px" align="center">
+			<a href="../about/default.html">Sobre NÛs</a></td>
 			<td style="width: 90px" align="center">
-			<a href="../service/default.html">Servi√ßo</a></td>
+			<a href="../service/default.html">ServiÁo</a></td>
 			<td style="width: 80px" align="center">
 			<a href="../photo_gallery/default.html">Galeria</a></td>
-			<td style="width: 80px" align="center"><a href="subscribe.php">Inscri√ß√£o</a></td>
+			<td style="width: 80px" align="center"><a href="subscribe.php">InscriÁ„o</a></td>
 			<td style="width: 100px" align="center">
 			<a href="../palestrantes/palestrantes.php">Palestrantes</a></td>
 			</tr>
@@ -287,7 +289,7 @@ return true;
 		<!-- Begin Content -->
 		<div id="content">
 			<!-- #BeginEditable "content" -->
-<title>Inscri√ß√£o</title>
+<title>InscriÁ„o</title>
 <form method="post" name="dados" action="cadastrar_semeares.php" onSubmit="return enviardados();" >
 <table border="0">
 <tr>
@@ -311,7 +313,7 @@ return true;
 
 
 <tr>
-   <td>telefone(DD-XXXXX.XXXX)*:</td>
+   <td>telefone(DD-XXXXX.XXXX):</td>
    
 </tr>
 <tr>
@@ -324,7 +326,7 @@ return true;
 </tr>
 
 <tr>
-   <td>Institui√ß√£o:</td>
+   <td>InstituiÁ„o:</td>
    
 </tr>
 <tr>
@@ -336,7 +338,7 @@ return true;
    <td>&nbsp;</td>
 </tr>
 <tr>
-   <td>Porque deseja participar do Semeares:</td>
+   <td>Por que deseja participar do Semeares ?</td>
    
 </tr>
 <tr>
@@ -355,7 +357,7 @@ return true;
 <input type="submit" value="Cadastrar">
 </form>
 
-(*) Campos Obrigat√≥rios		
+(*) Campos ObrigatÛrios		
 			
 					
 			<!-- #EndEditable --></div>
@@ -365,12 +367,10 @@ return true;
 	<!-- End Page Content -->
 	<!-- Begin Footer -->
 	<div id="footer">
-		<p><a href="../default.html">Home</a> | <a href="../default.html">Sobre o Semeares</a> 
-		| <a href="../news/default.html">Not√≠cias</a> | 
-		<a href="../service/default.html">
-		Calend√°rio</a> | <a href="../photo_gallery/default.html">Galeria</a> |
-		<a href="../palestrantes/default.html">Palestrantes</a> | 
-		<a href="../contact/default.html">Contatos</a></p>
+		<p><a href="../default.html">Sobre o Semeares</a> 
+		| <a href="../service/default.html">ServiÁo</a> | 
+		 <a href="../photo_gallery/default.html">Galeria</a> |
+		<a href="../palestrantes/default.html">Palestrantes</a> </p>
 	</div>
 	<!-- End Footer --></div>
 <!-- End Container -->

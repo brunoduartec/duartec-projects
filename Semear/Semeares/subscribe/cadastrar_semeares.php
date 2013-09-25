@@ -4,7 +4,6 @@
 <!-- #BeginTemplate "../master.dwt" -->
 
 <head>
-<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 
 <script type="text/javascript">
 
@@ -240,6 +239,7 @@ return true;
 <title></title>
 <!-- #EndEditable -->
 <link href="../styles/style4.css" media="screen" rel="stylesheet" title="CSS" type="text/css" />
+
 </head>
 
 <body>
@@ -254,6 +254,8 @@ return true;
 	<td><a href="../default.html"><img src="../images/semeares-logo.png" /></a></td>
 
 			<td style="width: 100px" align="center"><a href="../default.html">Sobre o Semeares</a></td>
+			<td style="width: 100px" align="center">
+			<a href="../about/default.html">Sobre Nós</a></td>
 			<td style="width: 90px" align="center">
 			<a href="../service/default.html">Serviço</a></td>
 			<td style="width: 80px" align="center">
@@ -291,6 +293,7 @@ return true;
 
 
 <?
+error_reporting(E_ERROR | E_PARSE);
 if (getenv("REQUEST_METHOD") == "POST") {
    // Configura as variáveis do método POST para virarem variáveis
    // "normais" do PHP (Requer apenas nas versões do PHP acima da 4.1)
@@ -306,7 +309,7 @@ if (getenv("REQUEST_METHOD") == "POST") {
    // Caso todos os campos forem preenchidos, inclui a mensagem no
    // banco de dados. Caso isso não aconteça, gera uma mensagem de
    // erro que será impressa no browser mais a frente.
-   if ($nome and $email and $telefone and $escola) {
+   if ($nome and $email) {
     
 	//$conexao = mysql_connect("10.58.204.184","root","harpia");
     //mysql_select_db("test",$conexao);
@@ -318,7 +321,7 @@ if (getenv("REQUEST_METHOD") == "POST") {
 		$query = "INSERT INTO encontro(enct_nome,enct_email,enct_telefone,enct_instituicao,enct_motivo) values('$nome','$email','$telefone','$escola','$motivo')";
 		mysql_query($query,$conexao);
     
-		$err = "Dados Cadastrados com sucesso!<br> Aguardamos você no dia 5 de outubro no Auditório CEPLADE.<br> Caso ocorra algum imprevisto e você não possa participar,<br> pedimos a gentileza de nos comunicar por e-mail para que possamos dar lugar a outra pessoa: contato@isemear.org.br. <br> Obrigado!<br> Equipe de organização do SemeAres";	
+		$err = "Dados Cadastrados com sucesso!<br> Aguardamos você no dia 5 de outubro no Teatro do SESI.<br> Caso ocorra algum imprevisto, e você não possa participar,<br> pedimos a gentileza de nos comunicar por e-mail para que possamos liberar seu lugar a outra pessoa: contato@isemear.org.br. <br> Obrigado!<br> Equipe de organização do SemeAres";	
 	}
    } else {
       $err = "Preencha todos os campos obrigatórios!";
@@ -345,12 +348,10 @@ if (getenv("REQUEST_METHOD") == "POST") {
 	<!-- End Page Content -->
 	<!-- Begin Footer -->
 	<div id="footer">
-		<p><a href="../default.html">Home</a> | <a href="../default.html">Sobre o Semeares</a> 
-		| <a href="../news/default.html">Notícias</a> | 
-		<a href="../service/default.html">
-		Calendário</a> | <a href="../photo_gallery/default.html">Galeria</a> |
-		<a href="../palestrantes/default.html">Palestrantes</a> | 
-		<a href="../contact/default.html">Contatos</a></p>
+		<p><a href="../default.html">Sobre o Semeares</a> 
+		| <a href="../service/default.html">Serviço</a> | 
+		 <a href="../photo_gallery/default.html">Galeria</a> |
+		<a href="../palestrantes/default.html">Palestrantes</a> </p>
 	</div>
 	<!-- End Footer --></div>
 <!-- End Container -->

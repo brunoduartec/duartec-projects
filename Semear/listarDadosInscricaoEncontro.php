@@ -2,6 +2,7 @@
 
 <head>
 <link href="style.css" rel="stylesheet" type="text/css" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 </head>
 <body>
 Inscritos Semeares 2013
@@ -9,11 +10,12 @@ Inscritos Semeares 2013
 <table border="1">
 <tr>
 <th>Nr</th>
-<th>enct_nome</th>
-<th>enct_email</th>
-<th>enct_telefone</th>
-<th>enct_instituicao</th>
-<th>enct_dt_inscricao</th>
+<th>nome</th>
+<th>email</th>
+<th>telefone</th>
+<th>instituicao</th>
+<th>inscricao</th>
+<th>motivo</th>
 </tr>
 
 <?  
@@ -22,13 +24,19 @@ Inscritos Semeares 2013
 	$conexao = mysql_connect("localhost","abraaoba_isemear","abraao123");
     mysql_select_db("abraaoba_isemear",$conexao);
 	
+	
+	$oResultCount = mysql_query("SELECT count(*) as count from encontro where year(enct_dt_inscricao) = 2013", $conexao);
+	$rowcount = mysql_fetch_array($oResultCount);
+	echo "<tr><td>Inscritos:".$rowcount['count']."</td></tr>";
+	
+	
 	$oResult = mysql_query("SELECT * from encontro where year(enct_dt_inscricao) = 2013", $conexao);
 	
 	$idx = 1;
 
 	while($row = mysql_fetch_array($oResult))
   {
-	echo "<tr><td>" . $idx . "</td><td>" .sprintf('%011s',$row['enct_nome']) . "</td><td>" .sprintf('%011s',$row['enct_email']). "</td><td>" .sprintf('%011s',$row['enct_telefone']). "</td><td>" .sprintf('%011s',$row['enct_instituicao']). "</td><td>" .sprintf('%011s',$row['enct_dt_inscricao'])."</td></tr>";
+	echo "<tr><td>" . $idx . "</td><td>" .$row['enct_nome'] . "</td><td>" .$row['enct_email']. "</td><td>" .$row['enct_telefone']. "</td><td>" .$row['enct_instituicao']. "</td><td>" .$row['enct_dt_inscricao']."</td><td>" .$row['enct_motivo']."</td></tr>";
 	$idx++;  
 }
    
