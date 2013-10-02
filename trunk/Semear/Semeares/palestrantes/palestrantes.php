@@ -255,7 +255,8 @@ return true;
 
 			<td style="width: 100px" align="center"><a href="../default.html">Sobre o Semeares</a></td>
 			<td style="width: 100px" align="center">
-			<a href="../about/default.html">Sobre Nós</a></td>
+			<a href="../about/default.html">Sobre 
+			nós</a></td>
 			<td style="width: 90px" align="center">
 			<a href="../service/default.html">Serviço</a></td>
 			<td style="width: 80px" align="center">
@@ -263,6 +264,9 @@ return true;
 			<td style="width: 80px" align="center">
 			<a href="../subscribe/subscribe.php">Inscrição</a></td>
 			<td style="width: 100px" align="center"><a href="palestrantes.php">Palestrantes</a></td>
+			<td style="width: 100px" align="center"><a href="http://www.isemear.org.br">
+			<img alt="" src="../images/logo.png" width="150px" />  </a></td>
+			
 			</tr>
 	
 	</table>
@@ -314,14 +318,16 @@ return true;
    */
    
    ?>
-  <tr>
-     <td><img src="images/Carlos Branches.png"></td>
+
+
+      <tr>
+     <td><img src="images/Amanda Lechinski.png"></td>
    </tr>
 
    <tr>
      <td><img src="images/Ozires Silva.png"></td>
    </tr>
-   
+
    
    <tr>
      <td><img src="images/Jonatas Artur.png"></td>
@@ -331,13 +337,6 @@ return true;
      <td><img src="images/Tiago Bevilaqua.png"></td>
    </tr>
 
- <tr>
-     <td><img src="images/Andre Camargo Costa.png"></td>
-   </tr>
-
-   <tr>
-     <td><img src="images/Amanda Lechinski.png"></td>
-   </tr>
 
 <tr>
      <td><img src="images/Sergio Walter Alexandrino.png"></td>
