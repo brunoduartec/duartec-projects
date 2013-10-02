@@ -255,7 +255,8 @@ return true;
 
 			<td style="width: 100px" align="center"><a href="../default.html">Sobre o Semeares</a></td>
 			<td style="width: 100px" align="center">
-			<a href="../about/default.html">Sobre Nós</a></td>
+			<a href="../about/default.html">Sobre 
+			nós</a></td>
 			<td style="width: 90px" align="center">
 			<a href="../service/default.html">Serviço</a></td>
 			<td style="width: 80px" align="center">
@@ -263,6 +264,9 @@ return true;
 			<td style="width: 80px" align="center"><a href="subscribe.php">Inscrição</a></td>
 			<td style="width: 100px" align="center">
 			<a href="../palestrantes/palestrantes.php">Palestrantes</a></td>
+			<td style="width: 100px" align="center"><a href="http://www.isemear.org.br">
+			<img alt="" src="../images/logo.png" width="150px" />  </a></td>
+			
 			</tr>
 	
 	</table>
@@ -289,7 +293,7 @@ return true;
 		<!-- Begin Content -->
 		<div id="content">
 			<!-- #BeginEditable "content" -->
-<title>Inscrição</title>
+<title>Inscri&#65533;&#65533;o</title>
 <form method="post" name="dados" action="cadastrar_semeares.php" onSubmit="return enviardados();" >
 <table border="0">
 <tr>
@@ -355,6 +359,7 @@ return true;
 </td></tr>
 </table>
 <input type="submit" value="Cadastrar">
+<br/> * Lembre-se de levar um quilo de alimento no dia do evento
 </form>
 
 (*) Campos Obrigatórios		
