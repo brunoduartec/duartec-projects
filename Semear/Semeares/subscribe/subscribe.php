@@ -259,9 +259,12 @@ return true;
 			nós</a></td>
 			<td style="width: 90px" align="center">
 			<a href="../service/default.html">Serviço</a></td>
+			
 			<td style="width: 80px" align="center">
 			<a href="../photo_gallery/default.html">Galeria</a></td>
-			<td style="width: 80px" align="center"><a href="subscribe.php">Inscrição</a></td>
+			
+			<!--<td style="width: 80px" align="center"><a href="subscribe/subscribe.php">Inscrição</a></td>!-->
+			
 			<td style="width: 100px" align="center">
 			<a href="../palestrantes/palestrantes.php">Palestrantes</a></td>
 			<td style="width: 100px" align="center"><a href="http://www.isemear.org.br">
@@ -330,7 +333,7 @@ return true;
 </tr>
 
 <tr>
-   <td>Instituição:</td>
+   <td>Institui&#65533;&#65533;o:</td>
    
 </tr>
 <tr>
@@ -362,7 +365,7 @@ return true;
 <br/> * Lembre-se de levar um quilo de alimento no dia do evento
 </form>
 
-(*) Campos Obrigatórios		
+(*) Campos Obrigat&#65533;rios		
 			
 					
 			<!-- #EndEditable --></div>

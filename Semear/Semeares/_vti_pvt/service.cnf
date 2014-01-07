@@ -3,13 +3,9 @@ vti_restartmanual:IX|0
 vti_textextensions:SW|.txt.
 vti_webservertype:SR|diskweb
 vti_defaultlanguage:SR|en-us
-vti_copytimestamp_ftp\://ftp.isemear.com.br/www/semeares:TR|01 Oct 2013 22:39:50 -0000
-vti_approvalapproved:SR|Approved
-vti_approvaldenied:SR|Rejected
+vti_copytimestamp_ftp\://ftp.isemear.com.br/www/semeares:TR|24 Oct 2013 23:50:09 -0000
 vti_timecreated:TR|26 Aug 2013 22:12:29 -0000
 vti_oldestcompatibleversion:SR|2.0.0.0
-vti_defaultcharset:SR|utf-8
-vti_navbuttonuplabel:SR|Up
 vti_htmlextensions:SW|.alx.asp.aspx.dwt.hta.htc.htm.html.htt.htx.jsp.master.php.php2.php3.php4.php5.phtml.shtml.stm.asa.asax.
 vti_disableautoimgsizeexts:SX|.asp
 vti_extenderversion:SR|12.0.0.0
@@ -23,4 +19,9 @@ vti_navbuttonhomelabel:SR|Home
 vti_dependenciesood:IR|1
 vti_copytimestamp_ftp\://ftp.isemear.com.br/semeares:TR|27 Aug 2013 21:43:17 -0000
 vti_featurelist:VX|vti_ACAll vti_ServiceMarkUrlDirBrowse vti_ServiceMarkUrlDirExec vti_ServiceMarkUrlDirScript vti_ACIPAddresses vti_ServerEmailTransport vti_ServerIndexServer vti_ServerASP vti_ServerCollab vti_ServerWebParts vti_RulesScript vti_TimedDocEvents
-vti_categories:VR|Travel Expense\\ Report Business Competition Goals/Objectives Ideas Miscellaneous Waiting VIP In\\ Process Planning Schedule
+vti_categories:VR|Travel Expense\\ Report Business Competition Goals/Objectives Ideas Miscellaneous Waiting VIP In\\ Process Planning Schedule +Competition +In\\ Process +Expense\\ Report +Waiting +Schedule +Goals/Objectives +Ideas +Travel +Business +VIP +Miscellaneous +Planning
+vti_approvalapproved:SR|Approved
+vti_approvaldenied:SR|Rejected
+vti_defaultcharset:SR|utf-8
+vti_navbuttonuplabel:SR|Up
+vti_cachedlocalmetastorewebsitepath:SX|C:\\Users\\DUARTEC\\AppData\\Roaming\\Microsoft\\Expression\\WebsiteCache\\semeares(3)\\

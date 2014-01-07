@@ -1,13 +1,7 @@
 ﻿<!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-        <link href="style/960.css" media="screen" rel="stylesheet" type="text/css"/>
-        <link href="style/style.css" media="screen" rel="stylesheet" type="text/css"/>
-		
-        <title></title>
-    </head>
-    <body style="background: url(images/background.png) repeat-x 0 -197px;">
+    
+    <body>
    
 
 <?

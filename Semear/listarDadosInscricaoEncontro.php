@@ -1,8 +1,7 @@
 <html>
 
 <head>
-<link href="style.css" rel="stylesheet" type="text/css" />
-<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 </head>
 <body>
 Inscritos Semeares 2013
@@ -25,12 +24,12 @@ Inscritos Semeares 2013
     mysql_select_db("abraaoba_isemear",$conexao);
 	
 	
-	$oResultCount = mysql_query("SELECT count(*) as count from encontro where year(enct_dt_inscricao) = 2013", $conexao);
+	$oResultCount = mysql_query("SELECT count(*) as count from encontro where year(enct_dt_inscricao) = 2013 order by enct_nome ", $conexao);
 	$rowcount = mysql_fetch_array($oResultCount);
 	echo "<tr><td>Inscritos:".$rowcount['count']."</td></tr>";
 	
 	
-	$oResult = mysql_query("SELECT * from encontro where year(enct_dt_inscricao) = 2013", $conexao);
+	$oResult = mysql_query("SELECT * from encontro where year(enct_dt_inscricao) = 2013 order by enct_nome", $conexao);
 	
 	$idx = 1;
 
