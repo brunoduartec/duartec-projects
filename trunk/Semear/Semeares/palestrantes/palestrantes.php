@@ -259,10 +259,12 @@ return true;
 			nós</a></td>
 			<td style="width: 90px" align="center">
 			<a href="../service/default.html">Serviço</a></td>
+			
 			<td style="width: 80px" align="center">
 			<a href="../photo_gallery/default.html">Galeria</a></td>
-			<td style="width: 80px" align="center">
-			<a href="../subscribe/subscribe.php">Inscrição</a></td>
+			
+			<!--<td style="width: 80px" align="center"><a href="subscribe/subscribe.php">Inscrição</a></td>!-->
+			
 			<td style="width: 100px" align="center"><a href="palestrantes.php">Palestrantes</a></td>
 			<td style="width: 100px" align="center"><a href="http://www.isemear.org.br">
 			<img alt="" src="../images/logo.png" width="150px" />  </a></td>
