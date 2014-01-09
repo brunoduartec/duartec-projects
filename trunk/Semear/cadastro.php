@@ -83,12 +83,41 @@ function mascaraFone(campoData){
 		campoData.value = data;
       return true;              
      }
-     if (data.length == 7){
-		data = data + '.';
+     if (data.length == 10){
+//		data = data + '.';
         campoData.value = data;
         return true;
      }
 }	 
+
+/*
+function letras(){  
+    tecla = event.keyCode;  
+    if (tecla >= 48 && tecla <= 57){  
+        return false;  
+    }else{  
+       return true;  
+    }  
+} 
+*/
+
+
+function somenteLetra(pEvento)
+{
+
+var tecla;
+	var keychar;
+	var reg;
+	
+	//retorna o cÃ³digo do caracter digitado
+	tecla = obterCodigo(pEvento);
+	if (tecla >= 48 && tecla <= 57){  
+        return false;  
+    }else{  
+       return true;  
+    }  
+
+}
 
 function somenteNumeros(pEvento){
 
@@ -148,14 +177,14 @@ function enviardados(){
 		return false;
 	}
 	
-	
+	/*
 	if(document.dados.telefone2.value=="")
 	{
 		alert( "Preencha campo TELEFONE 2  corretamente!" );
 		document.dados.telefone2.focus();
 		return false;
 	}
-	
+	*/
 	if(document.dados.endereco.value=="")
 	{
 		alert( "Preencha campo ENDEREÇO  corretamente!" );
@@ -241,35 +270,129 @@ return true;
 </script>
 
         <title></title>
+    	<style type="text/css">
+
+h1
+	{margin-top:14.0pt;
+	margin-right:0cm;
+	margin-bottom:14.0pt;
+	margin-left:21.6pt;
+	text-indent:-21.6pt;
+	tab-stops:list 0cm;
+	font-size:24.0pt;
+	font-family:"Arial Unicode MS","sans-serif";
+	}
+ p.MsoNormal
+	{margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Arial","sans-serif";
+			margin-left: 0cm;
+			margin-right: 0cm;
+			margin-top: 0cm;
+		}
+span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;
+		}
+a:link
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;
+		}
+		</style>
     </head>
     <body >
                                
 								
   
                              
-<h2>Inscrição para o Processo de Seleção 2013 – matriz do Semear (São José dos Campos):</h2>
-
-Este Processo de Seleção está aberto a candidatos de São José dos Campos, cidades vizinhas e São Paulo (capital), e suas regras são estabelecidas por este <a href="edital.pdf">edital</a>.
-<br><br>
-Somente são aptos a participar deste Processo Seletivo os candidatos que:
-<br>
--	conquistaram uma vaga em qualquer universidade pública e vão iniciar o curso em 2013 (seja no início ou metade do ano).
-<br>
--	estudaram em escola pública (ou particular com bolsa integral).
-<br><br>
-Este Processo Seletivo acontecerá entre os dias <b>8 e 23 de fevereiro, sendo obrigatória a presença nos dias 15, 16, 17 e em outros dias</b>, conforme aprovação nas etapas do processo. Os que obtiverem aprovação em todas as etapas deverão comparecer ao Primeiro Encontro dos Bolsistas, no dia <b>23</b> (dia todo). 
-<br><br>
-A inscrição no Processo Seletivo poderá ser feita até o dia <b>12</b>, contudo o candidato deverá estar apto já no dia 13 a se apresentar no local que será divulgado com toda a documentação necessária: <a href="documentos_selecao_2013.pdf">documentos selecao 2013</a>.
-<br><br>
-Caso seja necessário (de acordo com as instruções do arquivo acima), deverão ser preenchidas as Declarações a seguir: <a href="Declaracao_de_Residencia_Cedida.pdf">Declaração de Residência Cedida</a> e <a href="Declaracao_de_Trabalho_Informal.pdf">Declaração de Trabalho Informal</a>.
-<br><br>
-A nota do Enem também deverá ser apresentada (impressão pelo site <a target="_blank" href="http://sistemasenem2.inep.gov.br/resultadosenem">http://sistemasenem2.inep.gov.br/resultadosenem</a>). 
-<br><br>
-O Processo Seletivo ocorrerá na cidade de São José dos Campos, mas haverá transporte gratuito para os candidatos de São Paulo. Para estes candidatos será obrigatória a presença nos dias 16 e 17 de fevereiro, pelo menos.
-<br><br>
-Além disso, o candidato deve preencher a ficha abaixo. 
-<br>
-Atenção: os próximos passos para o Processo Seletivo serão divulgados através do e-mail cadastrado no Formulário abaixo. Caso você não receba nenhum comunicado até o dia 9 de fevereiro, entre em contato imediatamente através do e-mail: contato@isemear.com.br ou do telefone: 9781-0847.
+	<h1 style="margin-top: 0cm; mso-list: l0 level1 lfo1; background: white">
+	<span style="font-size:18.0pt">Inscrição para o Processo de Seleção 2014 – 
+	matriz do Semear (São José dos Campos):</span><o:p></o:p></h1>
+	<p class="MsoNormal" style="background: white">Este Processo de Seleção está 
+	aberto aos seguintes candidatos:<o:p></o:p></p>
+	<p class="MsoNormal" style="background: white"><o:p>&nbsp;</o:p></p>
+	<p class="MsoNormal" style="margin-left: 36.0pt; text-indent: -18.0pt; mso-list: l2 level1 lfo3; tab-stops: list 36.0pt; background: white">
+	<![if !supportLists]>
+	<span style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol"><span style="mso-list:Ignore">·<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	</span></span></span><![endif]>residentes no Vale do Paraíba e que passaram 
+	no vestibular de universidades públicas do Vale do Paraíba ou de qualquer 
+	outra cidade do país<o:p></o:p></p>
+	<p class="MsoNormal" style="margin-left: 36.0pt; text-indent: -18.0pt; mso-list: l2 level1 lfo3; tab-stops: list 36.0pt; background: white">
+	<![if !supportLists]>
+	<span style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol"><span style="mso-list:Ignore">·<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	</span></span></span><![endif]>residentes no Vale do Paraíba e que passaram 
+	no vestibular de universidades particulares de São José dos Campos, Jacareí 
+	ou Taubaté, com bolsa integral ProUni<o:p></o:p></p>
+	<p class="MsoNormal" style="margin-left: 36.0pt; text-indent: -18.0pt; mso-list: l2 level1 lfo3; tab-stops: list 36.0pt; background: white">
+	<![if !supportLists]>
+	<span style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol"><span style="mso-list:Ignore">·<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	</span></span></span><![endif]>não residentes no Vale do Paraíba, mas que 
+	passaram no vestibular de universidades públicas do Vale do Paraíba ou de 
+	universidades particulares de São José dos Campos, Jacareí ou Taubaté, com 
+	bolsa integral ProUni<o:p></o:p></p>
+	<p class="MsoNormal" style="background: white"><o:p>&nbsp;</o:p></p>
+	<p class="MsoNormal" style="background: white">Além disso, os candidatos 
+	devem obedecer aos seguintes critérios:<o:p></o:p></p>
+	<p class="MsoNormal" style="margin-left: 36.0pt; text-indent: -18.0pt; mso-list: l1 level1 lfo2; tab-stops: list 36.0pt; background: white">
+	<![if !supportLists]>
+	<span style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol"><span style="mso-list:Ignore">-<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	</span></span></span><![endif]>ter estudado em escola pública (ou particular 
+	com bolsa integral) nos últimos 5 anos escolares<o:p></o:p></p>
+	<p class="MsoNormal" style="margin-left: 36.0pt; text-indent: -18.0pt; mso-list: l1 level1 lfo2; tab-stops: list 36.0pt; background: white">
+	<![if !supportLists]>
+	<span style="font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol"><span style="mso-list:Ignore">-<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	</span></span></span><![endif]>iniciar a faculdade em 2014 (seja no início 
+	ou metade do ano)<o:p></o:p></p>
+	<p class="MsoNormal" style="background: white"><o:p>&nbsp;</o:p></p>
+	<p class="MsoNormal" style="background: white">A inscrição para o Processo 
+	Seletivo <b>começará no dia 9/1 e poderá ser realizada até o dia 2/2</b>.
+	<span style="font-size:8.0pt"><o:p></o:p></span></p>
+	<p class="MsoNormal" style="background: white">
+	<span style="font-size:8.0pt">Excepcionalmente os candidatos que passarem 
+	para UNICAMP ou UNESP poderão realizar a inscrição até o dia 8/2.</span><o:p></o:p></p>
+	<p class="MsoNormal" style="background: white"><o:p>&nbsp;</o:p></p>
+	<p class="MsoNormal" style="background: white">O Processo Seletivo 
+	acontecerá entre os dias <b>9/1</b> e <b>21/2/2014</b> e está regido pelo<span style="mso-spacerun:yes">&nbsp;
+	</span><a href="documents/2014/Edital 2014.pdf">Edital 2014</a><o:p></o:p></p>
+	<p class="MsoNormal" style="background: white"><o:p>&nbsp;</o:p></p>
+	<p class="MsoNormal" style="background: white">Os processos de seleção das 
+	filiais de Fortaleza, Rio de Janeiro e São Paulo (capital) ainda não estão 
+	abertos.<o:p></o:p></p>
+	<p class="MsoNormal" style="background: white"><o:p>&nbsp;</o:p></p>
+	<p class="MsoNormal" style="background: white">Os candidatos deverão 
+	apresentar a seguinte documentação em local e data a serem divulgados por 
+	e-mail: <a href="documents/2014/Documentos Selecao 2014.pdf">Documentos Seleção 2014</a>.<o:p></o:p></p>
+	<p class="MsoNormal" style="background: white"><o:p>&nbsp;</o:p></p>
+	<p class="MsoNormal" style="background: white">Caso seja necessário (de 
+	acordo com as instruções do arquivo acima), deverão ser preenchidas as 
+	Declarações a seguir:
+	<a href="documents/2014/Declaracao Residencia Cedida.doc">Declaração de 
+	Residência Cedida</a> e
+	<a href="documents/2014/Declaracao Trabalho Informal.doc">Declaração de 
+	Trabalho Informal</a> <br style="mso-special-character:line-break"><![if !supportLineBreakNewLine]>
+	<br style="mso-special-character:line-break"><![endif]><o:p></o:p></p>
+	<p class="MsoNormal" style="background: white">Além disso, o candidato deve 
+	preencher a ficha abaixo:<span class="MsoHyperlink"><o:p></o:p></span></p>
+	<p class="MsoNormal" style="background: white">
+	<a href="documents/2014/Ficha de Identificacao Social.doc">
+	Ficha de Indentificação Social</a><o:p></o:p></p>
+	<p class="MsoNormal" style="background: white"><o:p>&nbsp;</o:p></p>
+	<span style="font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;;mso-ansi-language:PT-BR;mso-fareast-language:ZH-CN;
+mso-bidi-language:AR-SA">Atenção: os próximos passos para o Processo Seletivo 
+	serão divulgados através do e-mail cadastrado no Formulário abaixo. Caso 
+	você não receba nenhum comunicado até o dia 3/2, entre em contato 
+	imediatamente através do e-mail <a href="mailto:contato@isemear.com.br">
+	contato@isemear.org.br</a> ou do telefone (12) 99781-0847.<br style="mso-special-character:line-break">
+	<![if !supportLineBreakNewLine]>
+	<br style="mso-special-character:line-break"><![endif]></span>
 
 <br><br>
 
@@ -280,7 +403,7 @@ Atenção: os próximos passos para o Processo Seletivo serão divulgados atrav�
    <td>CPF (Somente números)*:</td>
 </tr>
 <tr>
-   <td colspan='2'><input type="text" size="80" name="nome" maxlength="100"></td>
+   <td colspan='2'><input type="text" size="80" name="nome" maxlength="100" onkeypress="return somenteLetra(event);" ></td>
    <td><input type="text" size="11" name="cpf" maxlength="11" onblur="validaCPF(this,this.value)" onkeypress="return somenteNumeros(event);"></td>
 </tr>
 
@@ -296,9 +419,9 @@ Atenção: os próximos passos para o Processo Seletivo serão divulgados atrav�
 
 
 <tr>
-   <td>telefone 1 (celular) (DD-XXXX.XXXX)*:</td>
-   <td>telefone 2 (casa) (DD-XXXX.XXXX)*:</td>
-   <td>telefone 3 (contato) (DD-XXXX.XXXX):</td>
+   <td>telefone 1 (DD-XXXXXXXXX)*:</td>
+   <td>telefone 2 (DD-XXXXXXXXX):</td>
+   <td>telefone 3 (DD-XXXXXXXXX):</td>
 </tr>
 <tr>
    <td><input type="text" size="11" name="telefone1" maxlength="12" OnKeyUp="mascaraFone(this);"  onkeypress="return somenteNumeros(event);" ></td>
