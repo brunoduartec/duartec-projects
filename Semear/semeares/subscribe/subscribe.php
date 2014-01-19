@@ -263,8 +263,7 @@ return true;
 			<td style="width: 80px" align="center">
 			<a href="../photo_gallery/default.html">Galeria</a></td>
 			
-			<!--<td style="width: 80px" align="center"><a href="subscribe/subscribe.php">Inscrição</a></td>!-->
-			
+		
 			<td style="width: 100px" align="center">
 			<a href="../palestrantes/palestrantes.php">Palestrantes</a></td>
 			<td style="width: 100px" align="center"><a href="http://www.isemear.org.br">

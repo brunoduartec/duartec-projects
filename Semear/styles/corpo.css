@@ -1,4 +1,4 @@
-@charset "UTF-8";
+﻿@charset "UTF-8";
 #corpo {
 	background-color:#f7dcb2;
 }
@@ -6,7 +6,7 @@
 }
 #icones{
 	padding-top:70px;
-	padding-left:4%;
+	padding-left:20%;
 }
 #icones img {
 	padding-left:10%;

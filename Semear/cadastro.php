@@ -397,6 +397,9 @@ mso-bidi-language:AR-SA">Atenção: os próximos passos para o Processo Seletivo
 <br><br>
 
 <form method="post" name="dados" action="cadastrar.php" onSubmit="return enviardados();" >
+
+<input size="80" name="unidade" maxlength="100" value="'SJC'" type="hidden">
+
 <table border="0">
 <tr>
    <td colspan='2'>Nome completo *:</td>
