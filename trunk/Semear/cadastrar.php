@@ -79,7 +79,7 @@ if (getenv("REQUEST_METHOD") == "POST") {
 ?>
 <h1>Resultado:</h1>
 <p.page>
-<?=$query
+<?=$err
 ?>
 </p>
 

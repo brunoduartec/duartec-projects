@@ -362,10 +362,6 @@ Symbol"><span style="mso-list:Ignore">-<span style="font:7.0pt &quot;Times New R
 	acontecerá entre os dias <b>9/1</b> e <b>21/2/2014</b> e está regido pelo<span style="mso-spacerun:yes">&nbsp;
 	</span><a href="documents/2014/Edital 2014.pdf">Edital 2014</a><o:p></o:p></p>
 	<p class="MsoNormal" style="background: white"><o:p>&nbsp;</o:p></p>
-	<p class="MsoNormal" style="background: white">Os processos de seleção das 
-	filiais de Fortaleza, Rio de Janeiro e São Paulo (capital) ainda não estão 
-	abertos.<o:p></o:p></p>
-	<p class="MsoNormal" style="background: white"><o:p>&nbsp;</o:p></p>
 	<p class="MsoNormal" style="background: white">Os candidatos deverão 
 	apresentar a seguinte documentação em local e data a serem divulgados por 
 	e-mail: <a href="documents/2014/Documentos Selecao 2014.pdf">Documentos Seleção 2014</a>.<o:p></o:p></p>
