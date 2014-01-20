@@ -419,14 +419,14 @@ PT-BR">Caso seja necessário (de acordo com as instruções do arquivo acima),
 	deverão ser preenchidas as Declarações a seguir:</span><span style="font-size:
 13.5pt;mso-bidi-font-size:11.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
 &quot;Times New Roman&quot;;color:black;mso-fareast-language:PT-BR">&nbsp;</span><span style="font-size:13.5pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
-&quot;Times New Roman&quot;;color:black;mso-fareast-language:PT-BR"><a href="http://www.isemear.com.br/documents/2014/Declaracao%20Residencia%20Cedida.doc">Declaração de Residência Cedida</a></span><span style="font-size:13.5pt;mso-bidi-font-size:11.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+&quot;Times New Roman&quot;;color:black;mso-fareast-language:PT-BR"><a href="documents/2014/Declarac_o Residencia Cedida_SP.doc">Declaração de Residência Cedida</a></span><span style="font-size:13.5pt;mso-bidi-font-size:11.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
 mso-fareast-font-family:&quot;Times New Roman&quot;;color:black;mso-fareast-language:
 PT-BR">&nbsp;</span><span style="font-size:13.5pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
 mso-fareast-font-family:&quot;Times New Roman&quot;;color:black;mso-fareast-language:
 PT-BR">e</span><span style="font-size:13.5pt;mso-bidi-font-size:11.0pt;
 font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
 color:black;mso-fareast-language:PT-BR">&nbsp;</span><span style="font-size:13.5pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
-&quot;Times New Roman&quot;;color:black;mso-fareast-language:PT-BR"><a href="http://www.isemear.com.br/documents/2014/Declaracao%20Trabalho%20Informal.doc">Declaração de Trabalho Informal</a><span style="font-size:13.5pt;mso-bidi-font-size:11.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
+&quot;Times New Roman&quot;;color:black;mso-fareast-language:PT-BR"><a href="documents/2014/Declarac_o Trabalho Informal_SP.doc">Declaração de Trabalho Informal</a><span style="font-size:13.5pt;mso-bidi-font-size:11.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
 mso-fareast-font-family:&quot;Times New Roman&quot;;color:black;mso-fareast-language:
 PT-BR">.</span><span style="font-size:13.5pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
 mso-fareast-font-family:&quot;Times New Roman&quot;;color:black;mso-fareast-language:
