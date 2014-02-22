@@ -35,7 +35,7 @@ namespace RankingWebApp
 
             if (items == null)
             {
-                items = "4";
+                items = Constants.ITEMSPERLINE.ToString();
             }
 
             bool mentor = false;
@@ -50,9 +50,7 @@ namespace RankingWebApp
 
 
             Panel ptemp = new Panel();
-            ptemp.ID = "panelUsers";
-
-                       
+            ptemp.ID = "panelUsers";                       
 
 
 
@@ -67,7 +65,10 @@ namespace RankingWebApp
 
 
             int count = 0;
+        
             int size = int.Parse(items);
+
+
             foreach (var item in sdList)
             {
 
