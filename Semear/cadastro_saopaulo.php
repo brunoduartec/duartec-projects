@@ -466,7 +466,7 @@ mso-bidi-language:AR-SA"><br style="mso-special-character:line-break">
 
 <form method="post" name="dados" action="cadastrar.php" onSubmit="return enviardados();" >
 
-<input size="80" name="unidade" maxlength="100" value="'SP'" type="hidden">
+<input size="80" name="unidade" maxlength="100" value="SP" type="hidden">
 <table border="0">
 <tr>
    <td colspan='2'>Nome completo *:</td>

@@ -64,7 +64,8 @@ if (getenv("REQUEST_METHOD") == "POST") {
 	if (mysql_num_rows($oResult) > 0) {
 		$err = "Já existem dados cadastrados para o CPF informado!";
 	}else{
-		$query = "INSERT INTO candidato_2014(cadt_unidade,cadt_cpf, cadt_nome, cadt_email, cadt_dataNascimento, cadt_cpfPai, cadt_cpfMae, cadt_telefone1, cadt_telefone2, cadt_telefone3, cadt_endereco, cadt_universidade, cadt_curso, cadt_dataInicio, cadt_cidade, cadt_estado, cadt_escola, cadt_cursinho, cadt_motivo) values($unidade,$cpf,'$nome','$email','$dataNascimento','$cpfPai','$cpfMae','$telefone1','$telefone2','$telefone3','$endereco','$universidade','$curso','$dataInicio','$cidade','$estado','$escola','$cursinho','$motivo')";
+//		$query = "INSERT INTO candidato_2014(cadt_unidade,cadt_cpf, cadt_nome, cadt_email, cadt_dataNascimento, cadt_cpfPai, cadt_cpfMae, cadt_telefone1, cadt_telefone2, cadt_telefone3, cadt_endereco, cadt_universidade, cadt_curso, cadt_dataInicio, cadt_cidade, cadt_estado, cadt_escola, cadt_cursinho, cadt_motivo) values($unidade,$cpf,'$nome','$email','$dataNascimento','$cpfPai','$cpfMae','$telefone1','$telefone2','$telefone3','$endereco','$universidade','$curso','$dataInicio','$cidade','$estado','$escola','$cursinho','$motivo')";
+		$query = "INSERT INTO candidato_2014(cadt_unidade,cadt_cpf, cadt_nome, cadt_email, cadt_dataNascimento, cadt_cpfPai, cadt_cpfMae, cadt_telefone1, cadt_telefone2, cadt_telefone3, cadt_endereco, cadt_universidade, cadt_curso, cadt_dataInicio, cadt_cidade, cadt_estado, cadt_escola, cadt_cursinho, cadt_motivo) values('$unidade',$cpf,'$nome','$email','$dataNascimento','$cpfPai','$cpfMae','$telefone1','$telefone2','$telefone3','$endereco','$universidade','$curso','$dataInicio','$cidade','$estado','$escola','$cursinho','$motivo')";
 		mysql_query($query,$conexao);
     
 		$err = "Dados Cadastrados com sucesso!Os próximos passos do Processo Seletivo serão divulgados por e-mail. Verifique frequentemente sua Caixa de Entrada.";	
