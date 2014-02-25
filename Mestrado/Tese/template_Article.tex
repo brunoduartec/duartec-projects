@@ -1,0 +1,72 @@
+\documentclass[]{article}
+%\usepackage[scaled=.92]{helvet}
+\usepackage{times}
+\usepackage{graphicx}
+\usepackage[section] {placeins}
+\usepackage{float}
+%%* Dica: use esse pacote pra aceitar caracteres acentuados, Ç etc sem sofrimento
+%%* obs: válido se estiverem escrevendo com codificação Windows, caso contrário
+%%* pode ser necessário trocar ansinew por utf8 ou algo assim.
+\usepackage[ansinew]{inputenc}
+
+%% use this for zero \parindent and non-zero \parskip, intelligently.
+\usepackage{parskip}
+
+%% the 'caption' package provides a nicer-looking replacement
+\usepackage[labelfont=bf,textfont=it]{caption}
+
+\usepackage{url}
+\usepackage{listings}
+\usepackage{color}
+
+\lstset{language=C++,
+breaklines=true,
+morekeywords={float3,float4},keywordstyle=\color[rgb]{0,0,1},
+        commentstyle=\color[rgb]{0.133,0.545,0.133} }
+
+
+%opening
+\title{}
+\author{Bruno Duarte Corrêa}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+
+There are several augmented reality techniques, although each one has its flaws due to the environment or other external constraints. The study of boundaries and constraints can provide 
+
+
+\end{abstract}
+
+%% The ``\keywordlist'' command prints out the keywords.
+
+
+\section{Introduction}
+\input{parts/introduction}
+
+\section{Model Based}
+\input{parts/model}
+
+
+\section{Reconstruction}
+\input{parts/reconstruction}
+
+\section{Hybrid}
+\input{parts/hybrid}
+
+
+\section{Boundaries}
+\input{parts/boundaries}
+
+\section{Comparisons}
+\input{parts/comparisons}
+
+
+\section{Conclusion}
+\input{parts/conclusion}
+
+\bibliographystyle{sbgames}
+\bibliography{bibliography}
+\end{document}
