@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.5.6)  24 FEB 2014 21:18
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdflatex 2013.5.6)  26 FEB 2014 22:28
 entering extended mode
 **template_Article.tex
 (F:\Projects\duartec-projects\Mestrado\Tese\template_Article.tex
@@ -151,19 +151,19 @@ File: lstlang1.sty 2013/08/26 1.5b listings language file
 File: lstmisc.sty 2013/08/26 1.5b (Carsten Heinz)
 )
 (F:\Projects\duartec-projects\Mestrado\Tese\template_Article.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 32.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 29.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
@@ -187,20 +187,22 @@ Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count104
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 34.
+(Font)              <12> on input line 31.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 34.
+(Font)              <8> on input line 31.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 34.
+(Font)              <6> on input line 31.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 36.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 33.
+ (F:\Projects\duartec-projects\Mestrado\Tese\parts/abstract.tex)
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 43.
- (F:\Projects\duartec-projects\Mestrado\Tese\parts/introduction.tex)
-(F:\Projects\duartec-projects\Mestrado\Tese\parts/model.tex
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 42.
+
+(F:\Projects\duartec-projects\Mestrado\Tese\parts/introduction.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
 )
+(F:\Projects\duartec-projects\Mestrado\Tese\parts/model.tex)
 (F:\Projects\duartec-projects\Mestrado\Tese\parts/reconstruction.tex
 ! Undefined control sequence.
 \b@DesignAI ->\citename 
@@ -213,7 +215,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-) (F:\Projects\duartec-projects\Mestrado\Tese\parts/boundaries.tex
+) (F:\Projects\duartec-projects\Mestrado\Tese\parts/hybrid.tex)
+(F:\Projects\duartec-projects\Mestrado\Tese\parts/boundaries.tex
 LaTeX Font Info:    Try loading font information for OMS+ptm on input line 1.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
@@ -223,7 +226,12 @@ LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 1.
 LaTeX Font Info:    Font shape `OT1/ptm/m/ui' in size <10> not available
 (Font)              Font shape `OT1/ptm/m/it' tried instead on input line 1.
-)
+) [1
+
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
+(F:\Projects\duartec-projects\Mestrado\Tese\parts/method.tex)
+(F:\Projects\duartec-projects\Mestrado\Tese\parts/comparisons.tex)
+(F:\Projects\duartec-projects\Mestrado\Tese\parts/casestudy.tex)
 (F:\Projects\duartec-projects\Mestrado\Tese\parts/conclusion.tex)
 (F:\Projects\duartec-projects\Mestrado\Tese\template_Article.bbl
 ! Undefined control sequence.
@@ -248,25 +256,22 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[1
-
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]) [2]
-(F:\Projects\duartec-projects\Mestrado\Tese\template_Article.aux) ) 
+) [2] (F:\Projects\duartec-projects\Mestrado\Tese\template_Article.aux) ) 
 Here is how much of TeX's memory you used:
- 3896 strings out of 493921
- 59837 string characters out of 3144871
- 139877 words of memory out of 3000000
+ 3911 strings out of 493921
+ 60485 string characters out of 3144871
+ 139873 words of memory out of 3000000
  7145 multiletter control sequences out of 15000+200000
- 19860 words of font info for 41 fonts, out of 3000000 for 9000
+ 20938 words of font info for 42 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 36i,10n,58p,259b,249s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program 
-Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files (x86)/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/Mi
-KTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fo
-nts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/u
-rw/times/utmri8a.pfb>
-Output written on template_Article.pdf (2 pages, 41956 bytes).
+ 36i,10n,58p,343b,249s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Pr
+ogram Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files 
+(x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x
+86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 
+2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/t
+ype1/urw/times/utmri8a.pfb>
+Output written on template_Article.pdf (2 pages, 46144 bytes).
 PDF statistics:
  26 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

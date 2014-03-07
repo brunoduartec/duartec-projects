@@ -373,9 +373,9 @@ PT-BR">&nbsp;<o:p></o:p></span></p>
 mso-fareast-font-family:&quot;Times New Roman&quot;;color:black;mso-fareast-language:
 PT-BR">A inscrição para o Processo Seletivo</span><span style="font-size:13.5pt;
 mso-bidi-font-size:11.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
-&quot;Times New Roman&quot;;color:black;mso-fareast-language:PT-BR">&nbsp;</span><b><span style="font-size:13.5pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
-&quot;Times New Roman&quot;;color:black;mso-fareast-language:PT-BR">começará no 
-	dia 20/01 e poderá ser realizada até o dia 28/02</span></b><span style="font-size:13.5pt;
+&quot;Times New Roman&quot;;color:black;mso-fareast-language:PT-BR">&nbsp;</span><span style="font-size:13.5pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
+&quot;Times New Roman&quot;;color:black;mso-fareast-language:PT-BR"><b>começará no 
+	dia 20/01 e poderá ser realizada até o dia </b>20/03</span><span style="font-size:13.5pt;
 font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:&quot;Times New Roman&quot;;
 color:black;mso-fareast-language:PT-BR">.</span><span style="font-size:13.5pt;
 mso-bidi-font-size:11.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
@@ -450,10 +450,12 @@ mso-fareast-font-family:&quot;Times New Roman&quot;;color:black;mso-fareast-lang
 PT-BR">&nbsp;<o:p></o:p></span></p>
 	<span style="font-size:12.0pt;line-height:115%;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;
 mso-fareast-font-family:&quot;Times New Roman&quot;;color:black;mso-ansi-language:PT-BR;
-mso-fareast-language:PT-BR;mso-bidi-language:AR-SA">Atenção: os próximos passos 
-	para o Processo Seletivo serão divulgados através do e-mail cadastrado no 
-	Formulário abaixo. Caso você não receba nenhum comunicado até o dia 28/02, 
-	entre em contato imediatamente através do e-mail&nbsp;<a href="mailto:contato@isemear.com.br"><span style="color:blue">contato@isemear.org.br</span></a>.
+mso-fareast-language:PT-BR;mso-bidi-language:AR-SA">
+	<span style="color: rgb(34, 34, 34); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); line-height: 18px; font-size: 16px; font-family: Arial, sans-serif;">
+	Atenção: os próximos passos para o Processo Seletivo serão divulgados 
+	através do e-mail cadastrado no Formulário abaixo. Caso você não receba 
+	nenhum comunicado<b><span class="Apple-converted-space">&nbsp;</span>até o dia 
+	20/3</b>, entre em contato imediatamente através do e-mail&nbsp;</span><a href="mailto:contato@isemear.com.br" style="color: blue; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); font-family: Arial, sans-serif; font-size: 16px; line-height: 18px;" target="_blank">contato@isemear.org.br</a><span style="color: rgb(34, 34, 34); font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); line-height: 18px; font-size: 16px; font-family: Arial, sans-serif;">.</span>
 	<br style="mso-special-character:line-break"></span>
 	</span>
 	<span style="font-size:12.0pt;font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;mso-fareast-font-family:
