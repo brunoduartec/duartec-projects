@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <element>
+    <name>Program</name>
+    <id>1</id>
+    <type>SINGLE</type>
+    <items>
+      <item label="KC" value="KC"></item>
+      <item label="E2" value="E2"></item>
+      <item label="EJETS" value="EJ"></item>
+    </items>
+  </element>
+  <element>
+    <name>Product</name>
+    <id>2</id>
+    <type>SINGLE</type>
+    <items>
+      <item label="FBW" value="FBW"></item>
+      <item label="PSP" value="PSP"></item>
+      <item label="Mission" value="MSW"></item>
+      <item label="Flexibility" value="FXB"></item>     
+    </items>
+  </element>
+  <element>
+    <name>Type</name>
+    <id>2</id>
+    <type>MULTI</type>
+    <items>
+      <item label="Checklist" value="CKL"></item>
+      <item label="Standard" value="STD"></item>
+    </items>
+  </element>
+  <Pattern regex="[1]_[2]_[3]*_N"> </Pattern>
+  
+  
+</elements>
+
