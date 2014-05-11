@@ -49,11 +49,12 @@
 		<!-- Begin Left Column -->
 		<div id="column_l">
 			<!-- #BeginEditable "content" -->
-		<h1>Programa&#65533;&#65533;o</h1>
+		<h1>Programação</h1>
 
 
 
 <?php
+/*
 $dbname='abraaoba_isemear';
 $usuario='abraaoba_fortal';
 $password='isemear13';
@@ -62,7 +63,7 @@ $id = mysql_connect($localhost,$usuario,$password);
 
 $con=mysql_select_db($dbname,$id);
 
-mysql_select_db($banco); /*seleciona o banco a ser usado*/
+mysql_select_db($banco); //seleciona o banco a ser usado
 
 $sql = "select * from palestrante";
 
@@ -84,15 +85,47 @@ echo "<td>".$escrever['info']."</td><td></td></tr>";
 echo "</table>";
 echo "<br>";
 }
-
+*/
 ?>
 
-			
+Programação Preliminar 
+<br><br>
+<strong>Abertura </strong>
+<ul>
+<li>Carlos Abranches - Jornalista - TV Vanguarda</li>
+</ul>
+<strong>1º Bloco</strong>
+<ul>
+<li>Wellington Santos Silva - EmpreendEscola</li>
+<li>Myrian Castello - Fábrica de Sorrisos</li>
+<li>Aline – Jovem-semente/ Instituto Semear</li>
+<li>Artemisia</li>
+</ul>
+<strong>2º Bloco</strong>
+<ul>
+<li>CASDVest - Instituto Semear</li>
+<li>Banco Comunitário União Sampaio</li>
+<li>Rafael Xavier – Gerasol</li>
+<li>Geekie</li>
+</ul>
+3º Bloco
+<ul> 
+<li>Marc Kirst</li>
+<li>Imagina na Copa</li> 
+<li>Du Migliano (99Jobs)</li> 
+</ul>
+
+		
+		
 			<!-- #EndEditable --></div>
 		<!-- End Left Column -->
 		<!-- Begin Right Column -->
 		
-		<!-- End Right Column --></div>
+		
+		
+		
+		
+		
 	<!-- End Page Content -->
 	<!-- Begin Footer -->
 <div id="footer">
