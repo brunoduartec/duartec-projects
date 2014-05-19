@@ -5,9 +5,27 @@
 
 <head>
 <!-- #BeginEditable "doctitle" -->
-<title>HomePrograma&#65533;&#65533;oFacilitadoresSobr</title>
+<title>Inscrição Semeares 2014</title>
 <!-- #EndEditable -->
 <link href="../styles/style1.css" media="screen" rel="stylesheet" title="CSS" type="text/css" />
+<style type="text/css">
+.style1 {
+	font-size: xx-small;
+}
+</style>
+ <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+  <script>
+      function initialize() {
+        var map_canvas = document.getElementById('map_canvas');
+        var map_options = {
+          center: new google.maps.LatLng(-23.192175, -45.889431),
+          zoom: 18,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(map_canvas, map_options)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
 </head>
 
 <body>
@@ -64,28 +82,35 @@ if (getenv("REQUEST_METHOD") == "POST") {
 	
 	$age = 	$_POST['age'];
 	$gender = 	$_POST['gender'];
-
+	$certification = $_POST['certification'];
 	
-   // Caso todos os campos forem preenchidos, inclui a mensagem no
-   // banco de dados. Caso isso n&#65533;o aconte&#65533;a, gera uma mensagem de
-   // erro que ser&#65533; impressa no browser mais a frente.
-   if ($nome and $email) {
-    
-	//$conexao = mysql_connect("10.58.204.184","root","harpia");
-    //mysql_select_db("test",$conexao);
-	$conexao = mysql_connect("localhost","abraaoba_isemear","abraao123");
-    mysql_select_db("abraaoba_isemear",$conexao);
+	$StartSubscribe = '2014-05-11';
+	$Registrations = '400';
 	
+//verificando se j&#65533; estouraram as inscri&#65533;&#65533;es
+	$oResult = mysql_query("SELECT * from encontro WHERE (enct_dt_registration >= "+StartSubscribe+ ")", $conexao);
 	
+	if(mysql_num_rows($oResult) > $Registrations )
 	{
-		$query = "INSERT INTO encontro(enct_additional,enct_age,enct_gender,enct_name,enct_email,enct_phone,enct_institution,enct_reason) values('$motivo2','$age','$gender','$nome','$email','$telefone','$escola','$motivo')";
-		mysql_query($query,$conexao);
-    
-		$err = "Dados Cadastrados com sucesso!<br> Aguardamos você; no dia 9 de agosto.<br> Caso ocorra algum imprevisto, e você não possa participar,<br> pedimos a gentileza de nos comunicar por e-mail para que possamos liberar seu lugar a outra pessoa: contato@isemear.org.br. <br> Obrigado!<br> Equipe de organização do SemeAres";	
+		$err = "O número de inscritos já excedeu a capacidade máxima expecificada";
 	}
-   } else {
-      $err = "Preencha todos os campos obrigat&#65533;rios!";
-   }
+	else
+	{ 
+
+		  if ($nome and $email) 
+		   {
+		
+				$conexao = mysql_connect("localhost","abraaoba_isemear","abraao123");
+			    mysql_select_db("abraaoba_isemear",$conexao);
+				$query = "INSERT INTO encontro(enct_additional,enct_age,enct_gender,enct_name,enct_email,enct_phone,enct_institution,enct_reason,enct_certification) values('$motivo2','$age','$gender','$nome','$email','$telefone','$escola','$motivo','$certification')";
+				mysql_query($query,$conexao);    
+				$err = "Dados Cadastrados com sucesso!<br> Aguardamos você; no dia 9 de agosto.<br> Caso ocorra algum imprevisto, e você não possa participar,<br> pedimos a gentileza de nos comunicar por e-mail para que possamos liberar seu lugar a outra pessoa: contato@isemear.org.br. <br> Obrigado!<br> Equipe de organização do SemeAres";	
+		
+		   } else {
+		      $err = "Preencha todos os campos obrigatórios!";
+		   }
+   
+   	}
    
    mysql_close($conexao);
 }
@@ -104,17 +129,37 @@ if (getenv("REQUEST_METHOD") == "POST") {
 		<!-- End Left Column -->
 		<!-- Begin Right Column -->
 		
-		<!-- End Right Column --></div>
+		
+		
+		
+		
+		
 	<!-- End Page Content -->
 	<!-- Begin Footer -->
 <div id="footer">
-		<p>Patrocinadores</p>
-		<p>Parceria</p>
-		<p>Apoio Institucional</p>
-		<p>Realizador</p>
-		<p>Organizador: Cida Gouvêa Eventos</p>
+		<p><strong>Patrocinadores</strong></p>
+		<p><strong>Parceria</strong></p>
+		<p><strong>Apoio Institucional</strong></p>
 		
-		<p>Copyright © Semear. All Rights Reserved.</p>
+		<table align="center">
+		<tr>
+		<td class="style1">AJFAC - Parque Vicentina Aranha,</td>
+		<td class="style1">Cabrillano,</td>
+		<td class="style1">CASD,</td>
+		<td class="style1">Cloégio Rio Branco,</td>
+		<td class="style1">Fatos Contabilidade,</td>
+		<td class="style1">Grupo Sygma,</td>
+		<td class="style1">Instituto Embraer,</td>
+		<td class="style1">PwC,</td>
+		<td class="style1">SESC São José dos Campos,</td>
+		<td class="style1">Unitower Escola de Idiomas,</td>
+		<td class="style1">Wallaby Escola de Idiomas</td>
+		</tr>
+		</table>
+		<p><strong>Realizador</strong></p>
+		<p><strong>Organizador:</strong> Cida Gouvêa Eventos</p>
+		
+		<p><strong>Copyright © Semear. All Rights Reserved.</strong></p>
 	</div>
 	<!-- End Footer --></div>
 <!-- End Container -->

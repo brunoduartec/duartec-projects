@@ -5,9 +5,27 @@
 
 <head>
 <!-- #BeginEditable "doctitle" -->
-<title>Semeares 2014 - Programa&#65533;&#65533;o</title>
+<title>Semeares 2014 - Programação</title>
 <!-- #EndEditable -->
 <link href="../styles/style1.css" media="screen" rel="stylesheet" title="CSS" type="text/css" />
+<style type="text/css">
+.style1 {
+	font-size: xx-small;
+}
+</style>
+ <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+  <script>
+      function initialize() {
+        var map_canvas = document.getElementById('map_canvas');
+        var map_options = {
+          center: new google.maps.LatLng(-23.192175, -45.889431),
+          zoom: 18,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(map_canvas, map_options)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
 </head>
 
 <body>
@@ -94,21 +112,21 @@ Programação Preliminar
 <ul>
 <li>Carlos Abranches - Jornalista - TV Vanguarda</li>
 </ul>
-<strong>1º Bloco</strong>
+<strong>1 Bloco</strong>
 <ul>
 <li>Wellington Santos Silva - EmpreendEscola</li>
 <li>Myrian Castello - Fábrica de Sorrisos</li>
-<li>Aline – Jovem-semente/ Instituto Semear</li>
+<li>Aline - Jovem-semente/ Instituto Semear</li>
 <li>Artemisia</li>
 </ul>
-<strong>2º Bloco</strong>
+<strong>2 Bloco</strong>
 <ul>
 <li>CASDVest - Instituto Semear</li>
 <li>Banco Comunitário União Sampaio</li>
-<li>Rafael Xavier – Gerasol</li>
+<li>Rafael Xavier - Gerasol</li>
 <li>Geekie</li>
 </ul>
-3º Bloco
+			<strong>3 Bloco</strong>
 <ul> 
 <li>Marc Kirst</li>
 <li>Imagina na Copa</li> 
@@ -129,13 +147,29 @@ Programação Preliminar
 	<!-- End Page Content -->
 	<!-- Begin Footer -->
 <div id="footer">
-		<p>Patrocinadores</p>
-		<p>Parceria</p>
-		<p>Apoio Institucional</p>
-		<p>Realizador</p>
-		<p>Organizador: Cida Gouvêa Eventos</p>
+		<p><strong>Patrocinadores</strong></p>
+		<p><strong>Parceria</strong></p>
+		<p><strong>Apoio Institucional</strong></p>
 		
-		<p>Copyright © Semear. All Rights Reserved.</p>
+		<table align="center">
+		<tr>
+		<td class="style1">AJFAC - Parque Vicentina Aranha,</td>
+		<td class="style1">Cabrillano,</td>
+		<td class="style1">CASD,</td>
+		<td class="style1">Cloégio Rio Branco,</td>
+		<td class="style1">Fatos Contabilidade,</td>
+		<td class="style1">Grupo Sygma,</td>
+		<td class="style1">Instituto Embraer,</td>
+		<td class="style1">PwC,</td>
+		<td class="style1">SESC São José dos Campos,</td>
+		<td class="style1">Unitower Escola de Idiomas,</td>
+		<td class="style1">Wallaby Escola de Idiomas</td>
+		</tr>
+		</table>
+		<p><strong>Realizador</strong></p>
+		<p><strong>Organizador:</strong> Cida Gouvêa Eventos</p>
+		
+		<p><strong>Copyright © Semear. All Rights Reserved.</strong></p>
 	</div>
 	<!-- End Footer --></div>
 <!-- End Container -->

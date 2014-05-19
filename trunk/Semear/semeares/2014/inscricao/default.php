@@ -8,6 +8,24 @@
 <title>Semeares 2014 - Inscrição</title>
 <!-- #EndEditable -->
 <link href="../styles/style1.css" media="screen" rel="stylesheet" title="CSS" type="text/css" />
+<style type="text/css">
+.style1 {
+	font-size: xx-small;
+}
+</style>
+ <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+  <script>
+      function initialize() {
+        var map_canvas = document.getElementById('map_canvas');
+        var map_options = {
+          center: new google.maps.LatLng(-23.192175, -45.889431),
+          zoom: 18,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(map_canvas, map_options)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
 </head>
 
 <body>
@@ -150,8 +168,8 @@ Informações adicionais:<br>
 </tr>
 <tr>
    <td><select name="certification">
-<option value="TRUE">Sim</option>
-<option value="FALSE">Não</option>
+<option value="1">Sim</option>
+<option value="0">Não</option>
 </select></td>
   
 </tr>
@@ -162,24 +180,42 @@ Informações adicionais:<br>
 <br/> * Lembre-se de levar um quilo de alimento no dia do evento
 </form>
 
-(*) Campos Obrigatórios	
-			
-			
+(*) Campos Obrigatórios
 			<!-- #EndEditable --></div>
 		<!-- End Left Column -->
 		<!-- Begin Right Column -->
 		
-		<!-- End Right Column --></div>
+		
+		
+		
+		
+		
 	<!-- End Page Content -->
 	<!-- Begin Footer -->
 <div id="footer">
-		<p>Patrocinadores</p>
-		<p>Parceria</p>
-		<p>Apoio Institucional</p>
-		<p>Realizador</p>
-		<p>Organizador: Cida Gouvêa Eventos</p>
+		<p><strong>Patrocinadores</strong></p>
+		<p><strong>Parceria</strong></p>
+		<p><strong>Apoio Institucional</strong></p>
 		
-		<p>Copyright © Semear. All Rights Reserved.</p>
+		<table align="center">
+		<tr>
+		<td class="style1">AJFAC - Parque Vicentina Aranha,</td>
+		<td class="style1">Cabrillano,</td>
+		<td class="style1">CASD,</td>
+		<td class="style1">Cloégio Rio Branco,</td>
+		<td class="style1">Fatos Contabilidade,</td>
+		<td class="style1">Grupo Sygma,</td>
+		<td class="style1">Instituto Embraer,</td>
+		<td class="style1">PwC,</td>
+		<td class="style1">SESC São José dos Campos,</td>
+		<td class="style1">Unitower Escola de Idiomas,</td>
+		<td class="style1">Wallaby Escola de Idiomas</td>
+		</tr>
+		</table>
+		<p><strong>Realizador</strong></p>
+		<p><strong>Organizador:</strong> Cida Gouvêa Eventos</p>
+		
+		<p><strong>Copyright © Semear. All Rights Reserved.</strong></p>
 	</div>
 	<!-- End Footer --></div>
 <!-- End Container -->
