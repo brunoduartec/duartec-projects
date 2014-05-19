@@ -12,6 +12,13 @@ body {
 	margin:60px;
 	
 }
+#map_canvas
+{
+	width:500px;
+	height:400px;
+}
+
+
 #container {
 	/*width: 800px;*/
 	margin: 0 auto;
