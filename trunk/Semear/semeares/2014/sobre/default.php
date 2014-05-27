@@ -33,13 +33,11 @@
 <!-- Begin Container -->
 <div id="container">
 	<!-- Begin Masthead -->
-	<div id="masthead">
-<table>
-<tr>
-<td><img alt="" src="../images/logo-2014.png"/></td>
-<td><img src="../images/tema.png"/></td>
-</tr>
-</table>
+	<div id="masthead" align="center">
+<!--
+<td><img alt="" src="images/logo-2014.png"/></td>
+<td><img src="images/tema.png"/></td>-->
+<img alt="" src="../images/topo.png"/>
 		
 
 	</div>
@@ -50,7 +48,6 @@
 		<ul>
 			<li><a href="../default.htm">Home</a></li>
 			<li><a href="../programacao/default.php">Programação</a></li>
-			<li><a href="../facilitadores/default.php">Facilitadores</a></li>
 			<li><a href="default.php">Sobre o Instituto</a></li>
 			<li><a href="../imprensa/default.php">Na imprensa</a></li>
 			<li><a href="../galeria/default.php">Galeria</a></li>
@@ -67,11 +64,10 @@
 		<!-- Begin Left Column -->
 		<div id="column_l">
 			<!-- #BeginEditable "content" -->
-			<h2>Sobre o Instituto</h2>
+	
 			
 			
-			
-			<strong>Histórico institucional</strong> 
+			<h4>Histórico institucional</h4> 
 
 <p> 
 No início deste século, observou-se em São José dos Campos-SP que cerca de 40% dos 
@@ -85,19 +81,19 @@ Interesse Social cujo objetivo é dar apoio a jovens talentos de classes sociais 
 forma que eles obtenham êxito em suas graduações. 
  </p>
  
-<strong>Missão </strong>
+<h4>Missão </h4>
 <p>
 Desenvolver e conectar, por meio do incentivo à educação, líderes comprometidos com os desafios 
 sociais e que atuem como agentes multiplicadores para um Brasil melhor e mais justo. 
  </p>
  
-<strong>Visão </strong>
+<h4>Visão </h4>
 <p>
 Tornar-se modelo de instituição que apoia e insere universitários financeiramente desfavorecidos 
 para atuarem em prol de um país melhor e mais justo. 
  </p>
  
-<strong>Valores </strong>
+<h4>Valores </h4>
 
 <p>
 Energia Jovem: pessoas inspiradas por propósitos nobres possuem uma capacidade incomparável 
@@ -124,15 +120,10 @@ Efeito Multiplicador: o agente multiplicador é peça fundamental para o desenvolv
 sistemas virtuosos. Inspirar jovens a propagar os valores da iniciativa é um dos fundamentos do 
 Instituto Semear. 
 </p>
-
-<br>
-			<strong>Metodologias 
-</strong> 
-<p>
+			<h4>Metodologias</h4>
 Para cumprir os objetivos idealizados na cultura do Instituto Semear, a metodologia de trabalho 
 está baseada em três frentes de trabalho: Bolsa de Estudo, Programa de Mentoria e Rede de 
 Contatos/ Treinamentos. 
-</p>
 <p>
 - Bolsa de Estudo 
 A bolsa é um auxílio financeiro que visa, sobretudo, a reduzir a evasão escolar desses estudantes 
@@ -153,7 +144,7 @@ contribuir para o crescimento educacional, cultural e pessoal desses jovens.
 <p>
 - Rede de Contatos/ Treinamentos 
 O objetivo da Rede de Bolsistas é criar uma grande família. O estabelecimento de conexões sólidas 
-com os bolsistas faz parte da missão do Instituto, que visa a facilitar o acesso ao mercado de 
+com os bolsistas faz parte da missõo do Instituto, que visa a facilitar o acesso ao mercado de 
 trabalho, a cursos de idiomas e a programas e eventos de empresas parceiras. Para isso, o Instituto 
 organiza encontros com os bolsistas, oferecendo workshops, palestras e treinamentos importantes 
 para o desenvolvimento pessoal, intelectual e cultural dos jovens. 
@@ -170,28 +161,52 @@ para o desenvolvimento pessoal, intelectual e cultural dos jovens.
 	<!-- End Page Content -->
 	<!-- Begin Footer -->
 <div id="footer">
-		<p><strong>Patrocinadores</strong></p>
-		<p><strong>Parceria</strong></p>
-		<p><strong>Apoio Institucional</strong></p>
+		<h5>Patrocinador</h5>
+		<h5>Parceria</h5>	
+		<h5>Apoio Institucional</h5>
 		
 		<table align="center">
 		<tr>
-		<td class="style1">AJFAC - Parque Vicentina Aranha,</td>
-		<td class="style1">Cabrillano,</td>
-		<td class="style1">CASD,</td>
-		<td class="style1">Cloégio Rio Branco,</td>
-		<td class="style1">Fatos Contabilidade,</td>
-		<td class="style1">Grupo Sygma,</td>
-		<td class="style1">Instituto Embraer,</td>
-		<td class="style1">PwC,</td>
-		<td class="style1">SESC São José dos Campos,</td>
-		<td class="style1">Unitower Escola de Idiomas,</td>
-		<td class="style1">Wallaby Escola de Idiomas</td>
+		<td class="style1">
+		<img src="../facilitadores/images/vicentina.png" class="facil"></td>
+		
+		<td class="style1">
+		<img src="../facilitadores/images/casd.png"  class="facil"></td>
+		<td class="style1">
+		<img src="../facilitadores/images/colegioriobranco.jpg"  class="facil"></td>
+		<td class="style1">
+		<img src="../facilitadores/images/Marca-Fatos.jpg"  class="facil"></td>
+		<td class="style1">
+		<img src="../facilitadores/images/sygma.jpg"  class="facil"></td>
+		</tr>
+		<tr>
+		<td class="style1">
+		<img src="../facilitadores/images/institutoembraer.jpg"  class="facil"></td>
+		<td class="style1">
+		<img src="../facilitadores/images/pwc.jpg"  class="facil"></td>
+		<td class="style1">
+		<img src="../facilitadores/images/sesc.jpg"  class="facil"></td>
+		<td class="style1">
+		<img src="../facilitadores/images/unitower.jpg"  class="facil"></td>
+		<td class="style1">
+		<img src="../facilitadores/images/wallaby.jpg"  class="facil"></td>
 		</tr>
 		</table>
-		<p><strong>Realizador</strong></p>
-		<p><strong>Organizador:</strong> Cida Gouvêa Eventos</p>
 		
+		<h5>Apoio Semeares</h5>
+		<table align="center">
+		<tr>
+	
+		<td class="style1" >
+		<img src="../facilitadores/images/cabrillano.png"  class="facil"></td>
+		
+		</tr>
+		</table>
+
+		<h5>Realizador</h5>
+		<img src="../facilitadores/images/semear.png"  class="facil">
+		<h5>Organizador:</h5> 
+		<img src="../facilitadores/images/cge.jpg"  class="facil">		
 		<p><strong>Copyright © Semear. All Rights Reserved.</strong></p>
 	</div>
 	<!-- End Footer --></div>

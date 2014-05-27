@@ -33,13 +33,11 @@
 <!-- Begin Container -->
 <div id="container">
 	<!-- Begin Masthead -->
-	<div id="masthead">
-<table>
-<tr>
-<td><img alt="" src="../images/logo-2014.png"/></td>
-<td><img src="../images/tema.png"/></td>
-</tr>
-</table>
+	<div id="masthead" align="center">
+<!--
+<td><img alt="" src="images/logo-2014.png"/></td>
+<td><img src="images/tema.png"/></td>-->
+<img alt="" src="../images/topo.png"/>
 		
 
 	</div>
@@ -50,7 +48,6 @@
 		<ul>
 			<li><a href="../default.htm">Home</a></li>
 			<li><a href="../programacao/default.php">Programação</a></li>
-			<li><a href="default.php">Facilitadores</a></li>
 			<li><a href="../sobre/default.php">Sobre o Instituto</a></li>
 			<li><a href="../imprensa/default.php">Na imprensa</a></li>
 			<li><a href="../galeria/default.php">Galeria</a></li>
@@ -78,20 +75,12 @@
 	<li>Grupo Sygma</li>
 	<li>Instituto Embraer</li>
 	<li>PwC - PricewaterhouseCoopers</li>
-	<li>SESC São José dos Campos</li>
+	<li>SESC S&#65533;o Jos&#65533; dos Campos</li>
 	<li>Unitower Escola de Idiomas</li>
 	<li>Wallaby Escola de Idiomas</li>
 </ul>
 
 
-<strong>Patrocínio</strong>
-
-<ul>
-	<li>LRNG Advogados</li>
-	<li>Tarpon</li>
-	<li>Usina Santa Fé</li>
-</ul>
-		
 			<!-- #EndEditable --></div>
 		<!-- End Left Column -->
 		<!-- Begin Right Column -->
@@ -104,28 +93,42 @@
 	<!-- End Page Content -->
 	<!-- Begin Footer -->
 <div id="footer">
-		<p><strong>Patrocinadores</strong></p>
-		<p><strong>Parceria</strong></p>
-		<p><strong>Apoio Institucional</strong></p>
+		<h5>Patrocinador</h5>
+		<h5>Parceria</h5>	
+		<h5>Apoio Institucional</h5>
 		
 		<table align="center">
 		<tr>
-		<td class="style1">AJFAC - Parque Vicentina Aranha,</td>
-		<td class="style1">Cabrillano,</td>
-		<td class="style1">CASD,</td>
-		<td class="style1">Cloégio Rio Branco,</td>
-		<td class="style1">Fatos Contabilidade,</td>
-		<td class="style1">Grupo Sygma,</td>
-		<td class="style1">Instituto Embraer,</td>
-		<td class="style1">PwC,</td>
-		<td class="style1">SESC São José dos Campos,</td>
-		<td class="style1">Unitower Escola de Idiomas,</td>
-		<td class="style1">Wallaby Escola de Idiomas</td>
+		<td class="style1"><img src="images/vicentina.png" class="facil"></td>
+		
+		<td class="style1"><img src="images/casd.png"  class="facil"></td>
+		<td class="style1">
+		<img src="images/colegioriobranco.jpg"  class="facil"></td>
+		<td class="style1"><img src="images/Marca-Fatos.jpg"  class="facil"></td>
+		<td class="style1"><img src="images/sygma.jpg"  class="facil"></td>
+		</tr>
+		<tr>
+		<td class="style1">
+		<img src="images/institutoembraer.jpg"  class="facil"></td>
+		<td class="style1"><img src="images/pwc.jpg"  class="facil"></td>
+		<td class="style1"><img src="images/sesc.jpg"  class="facil"></td>
+		<td class="style1"><img src="images/unitower.jpg"  class="facil"></td>
+		<td class="style1"><img src="images/wallaby.jpg"  class="facil"></td>
 		</tr>
 		</table>
-		<p><strong>Realizador</strong></p>
-		<p><strong>Organizador:</strong> Cida Gouvêa Eventos</p>
 		
+		<h5>Apoio Semeares</h5>
+		<table align="center">
+		<tr>
+	
+		<td class="style1" ><img src="images/cabrillano.png"  class="facil"></td>
+		
+		</tr>
+		</table>
+
+		<h5>Realizador</h5>
+		<img src="images/semear.png"  class="facil">
+		<h5>Organizador:</h5> <img src="images/cge.jpg"  class="facil">		
 		<p><strong>Copyright © Semear. All Rights Reserved.</strong></p>
 	</div>
 	<!-- End Footer --></div>
