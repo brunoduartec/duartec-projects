@@ -4,23 +4,28 @@ body {
 	font-family: Verdana, Arial, Helvetica, sans-serif;
 	font-style: normal;
 	background-color: #FFFFFF;
-	color:black;
-	background-image: url('../images/background-2.png');
+	color:#89923f;
+	/*background-image: url('../images/background-2.png');*/
     background-size: 100% 40%;
 	background-position: top center;
     background-repeat: no-repeat;
 	margin:60px;
+	margin-top:0px;
 	
 }
 #map_canvas
 {
-	width:500px;
+	width:700px;
 	height:400px;
 }
 
+#page_content{
+	width:700px;
+	height:100px;
+}
 
 #container {
-	/*width: 800px;*/
+	width: 800px;
 	margin: 0 auto;
 	background-repeat: repeat-y;
 }
@@ -35,14 +40,16 @@ body {
 #navigation {
 	margin-right: 10px;
 	margin-left: 10px;
-	background-color:transparent;
+	background-color:#5F6827;
 	overflow: hidden;
+
 }
 #column_l {
 /*	width: 420px;*/
 	margin: 0 0 0 10px;
 	padding: 0 10px 10px 10px;
 }
+
 #column_r {
 	width: 193px;
 	margin: 0;
@@ -53,9 +60,10 @@ body {
 	padding-right: 5px;
 	padding-left: 5px;
 }
+
 #footer {
 	text-align: center;
-	background-color: #89a;
+	background-color: #ffffff;
 	margin-right: 10px;
 	margin-left: 10px;
 	overflow: hidden;
@@ -82,7 +90,7 @@ body {
 	float: left;
 }
 #navigation a {
-	color: #000;
+	color: #ffffff;
 	text-decoration: none;
 	margin: 0 1px;
 	padding: 5px;
@@ -90,36 +98,36 @@ body {
 	border: 0px;
 }
 #navigation a:hover {
-	background-color: #f2f2f2;
-	border:  #f2f2f2;
+	background-color: #89923f;
+	border:  #89923f;
 }
 /* Styles for Content */
 h1 {
-	color: #965;
+	color: #f0964a;
 	font-size: 2.0em;
 }
 h2 {
-	color: #965;
+	color: #f0964a;
 	font-size: 1.75em;
 }
 h3 {
-	color: #965;
+	color: #f0964a;
 	font-size: 1.5em;
 }
 h4 {
-	color: #965;
+	color: #f0964a;
 	font-size: 1.25em;
 }
 h5 {
-	color: #965;
+	color: #f0964a;
 	font-size: 0.75em;
 }
 h6 {
-	color: #965;
+	color: #f0964a;
 	font-size: 0.5em;
 }
 big {
-	color: #965;
+	color: #f0964a;
 	font-size: medium;
 }
 #column_r p {
@@ -172,6 +180,10 @@ a:hover {
 }
 .style_italic {
 	font-style: italic;
+}
+
+img.facil{
+	height: 60px;
 }
 
 #table1 table, tr, td, th {

@@ -7,7 +7,7 @@ vti_extenderversion:SR|12.0.0.0
 vti_backlinkinfo:VX|
 vti_nexttolasttimemodified:TR|07 Jan 2014 22:40:39 -0000
 vti_title:SR|Inscri��o
-vti_syncofs_ftp.isemear.com.br\:21/www/semeares:TW|19 May 2014 21:50:34 -0000
+vti_syncofs_ftp.isemear.com.br\:21/www/semeares:TW|20 May 2014 01:17:08 -0000
 vti_syncwith_ftp.isemear.com.br\:21/www/semeares:TX|11 May 2014 13:30:42 -0000
 vti_cacheddtm:TX|11 May 2014 13:30:42 -0000
 vti_filesize:IR|8422

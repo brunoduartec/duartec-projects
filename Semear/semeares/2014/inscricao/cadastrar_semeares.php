@@ -33,13 +33,11 @@
 <!-- Begin Container -->
 <div id="container">
 	<!-- Begin Masthead -->
-	<div id="masthead">
-<table>
-<tr>
-<td><img alt="" src="../images/logo-2014.png"/></td>
-<td><img src="../images/tema.png"/></td>
-</tr>
-</table>
+	<div id="masthead" align="center">
+<!--
+<td><img alt="" src="images/logo-2014.png"/></td>
+<td><img src="images/tema.png"/></td>-->
+<img alt="" src="../images/topo.png"/>
 		
 
 	</div>
@@ -50,7 +48,6 @@
 		<ul>
 			<li><a href="../default.htm">Home</a></li>
 			<li><a href="../programacao/default.php">Programação</a></li>
-			<li><a href="../facilitadores/default.php">Facilitadores</a></li>
 			<li><a href="../sobre/default.php">Sobre o Instituto</a></li>
 			<li><a href="../imprensa/default.php">Na imprensa</a></li>
 			<li><a href="../galeria/default.php">Galeria</a></li>
@@ -67,7 +64,7 @@
 		<!-- Begin Left Column -->
 		<div id="column_l">
 			<!-- #BeginEditable "content" -->
-			<h2>Inscrição</h2>
+
 		<?
 error_reporting(E_ERROR | E_PARSE);
 if (getenv("REQUEST_METHOD") == "POST") {
@@ -92,7 +89,7 @@ if (getenv("REQUEST_METHOD") == "POST") {
 	
 	if(mysql_num_rows($oResult) > $Registrations )
 	{
-		$err = "O número de inscritos já excedeu a capacidade máxima expecificada";
+		$err = "O n&#65533;mero de inscritos j&#65533; excedeu a capacidade m&#65533;xima expecificada";
 	}
 	else
 	{ 
@@ -104,7 +101,7 @@ if (getenv("REQUEST_METHOD") == "POST") {
 			    mysql_select_db("abraaoba_isemear",$conexao);
 				$query = "INSERT INTO encontro(enct_additional,enct_age,enct_gender,enct_name,enct_email,enct_phone,enct_institution,enct_reason,enct_certification) values('$motivo2','$age','$gender','$nome','$email','$telefone','$escola','$motivo','$certification')";
 				mysql_query($query,$conexao);    
-				$err = "Dados Cadastrados com sucesso!<br> Aguardamos você; no dia 9 de agosto.<br> Caso ocorra algum imprevisto, e você não possa participar,<br> pedimos a gentileza de nos comunicar por e-mail para que possamos liberar seu lugar a outra pessoa: contato@isemear.org.br. <br> Obrigado!<br> Equipe de organização do SemeAres";	
+				$err = "Dados Cadastrados com sucesso!<br> Aguardamos você no dia 9 de agosto.<br> Caso ocorra algum imprevisto, e você não possa participar,<br> pedimos a gentileza de nos comunicar por e-mail para que possamos liberar seu lugar a outra pessoa: contato@isemear.org.br. <br> Obrigado!<br> Equipe de organização do SemeAres";	
 		
 		   } else {
 		      $err = "Preencha todos os campos obrigatórios!";
@@ -137,28 +134,52 @@ if (getenv("REQUEST_METHOD") == "POST") {
 	<!-- End Page Content -->
 	<!-- Begin Footer -->
 <div id="footer">
-		<p><strong>Patrocinadores</strong></p>
-		<p><strong>Parceria</strong></p>
-		<p><strong>Apoio Institucional</strong></p>
+		<h5>Patrocinador</h5>
+		<h5>Parceria</h5>	
+		<h5>Apoio Institucional</h5>
 		
 		<table align="center">
 		<tr>
-		<td class="style1">AJFAC - Parque Vicentina Aranha,</td>
-		<td class="style1">Cabrillano,</td>
-		<td class="style1">CASD,</td>
-		<td class="style1">Cloégio Rio Branco,</td>
-		<td class="style1">Fatos Contabilidade,</td>
-		<td class="style1">Grupo Sygma,</td>
-		<td class="style1">Instituto Embraer,</td>
-		<td class="style1">PwC,</td>
-		<td class="style1">SESC São José dos Campos,</td>
-		<td class="style1">Unitower Escola de Idiomas,</td>
-		<td class="style1">Wallaby Escola de Idiomas</td>
+		<td class="style1">
+		<img src="../facilitadores/images/vicentina.png" class="facil"></td>
+		
+		<td class="style1">
+		<img src="../facilitadores/images/casd.png"  class="facil"></td>
+		<td class="style1">
+		<img src="../facilitadores/images/colegioriobranco.jpg"  class="facil"></td>
+		<td class="style1">
+		<img src="../facilitadores/images/Marca-Fatos.jpg"  class="facil"></td>
+		<td class="style1">
+		<img src="../facilitadores/images/sygma.jpg"  class="facil"></td>
+		</tr>
+		<tr>
+		<td class="style1">
+		<img src="../facilitadores/images/institutoembraer.jpg"  class="facil"></td>
+		<td class="style1">
+		<img src="../facilitadores/images/pwc.jpg"  class="facil"></td>
+		<td class="style1">
+		<img src="../facilitadores/images/sesc.jpg"  class="facil"></td>
+		<td class="style1">
+		<img src="../facilitadores/images/unitower.jpg"  class="facil"></td>
+		<td class="style1">
+		<img src="../facilitadores/images/wallaby.jpg"  class="facil"></td>
 		</tr>
 		</table>
-		<p><strong>Realizador</strong></p>
-		<p><strong>Organizador:</strong> Cida Gouvêa Eventos</p>
 		
+		<h5>Apoio Semeares</h5>
+		<table align="center">
+		<tr>
+	
+		<td class="style1" >
+		<img src="../facilitadores/images/cabrillano.png"  class="facil"></td>
+		
+		</tr>
+		</table>
+
+		<h5>Realizador</h5>
+		<img src="../facilitadores/images/semear.png"  class="facil">
+		<h5>Organizador:</h5> 
+		<img src="../facilitadores/images/cge.jpg"  class="facil">		
 		<p><strong>Copyright © Semear. All Rights Reserved.</strong></p>
 	</div>
 	<!-- End Footer --></div>
