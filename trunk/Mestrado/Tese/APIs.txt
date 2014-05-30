@@ -1,0 +1,4 @@
+openframeworks
+opencv
+libmv - structure from motion library
+openslam - SLAM api
