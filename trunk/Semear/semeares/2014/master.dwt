@@ -76,8 +76,9 @@
 	<!-- End Page Content -->
 	<!-- Begin Footer -->
 <div id="footer">
-		<h5>Patrocinador</h5>
+		<!--<h5>Patrocinador</h5>-->
 		<h5>Parceria</h5>	
+		<img src="facilitadores/images/dello.png" class="facil">
 		<h5>Apoio Institucional</h5>
 		
 		<table align="center">

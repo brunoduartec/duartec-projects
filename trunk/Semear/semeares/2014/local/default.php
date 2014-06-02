@@ -9,6 +9,7 @@
 <!-- #EndEditable -->
 <link href="../styles/style1.css" media="screen" rel="stylesheet" title="CSS" type="text/css" />
 <style type="text/css">
+
 .style1 {
 	font-size: xx-small;
 }
@@ -65,11 +66,11 @@
 		<div id="column_l">
 			<!-- #BeginEditable "content" -->
 			<h2>&nbsp;</h2>
-						<p><strong>Data:</strong> 9 de agosto, sábado<br>
-			   <strong>Hora:</strong> 13h30 às 19h<br>
-			   <br><strong>Entrada:</strong> 1 kg de alimento não perecível<br><br>
+						<p><strong>Data:</strong> 9 de agosto, s&#65533;bado<br>
+			   <strong>Hora:</strong> 13h30 &#65533;s 19h<br>
+			   <br><strong>Entrada:</strong> 1 kg de alimento n&#65533;o perec&#65533;vel<br><br>
 			  <strong>Local:</strong> Teatro do UNIVAP<br>
-				Praça Cândido Dias Castejon, 116 em São José dos Campos - SP<br>
+				Pra&#65533;a C&#65533;ndido Dias Castejon, 116 em S&#65533;o Jos&#65533; dos Campos - SP<br>
 				<div id="map_canvas"></div>
 				
 
@@ -87,8 +88,9 @@
 	<!-- End Page Content -->
 	<!-- Begin Footer -->
 <div id="footer">
-		<h5>Patrocinador</h5>
+		<!--<h5>Patrocinador</h5>-->
 		<h5>Parceria</h5>	
+		<img src="../facilitadores/images/dello.png" class="facil">
 		<h5>Apoio Institucional</h5>
 		
 		<table align="center">

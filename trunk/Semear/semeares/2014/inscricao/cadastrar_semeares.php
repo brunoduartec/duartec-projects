@@ -5,10 +5,11 @@
 
 <head>
 <!-- #BeginEditable "doctitle" -->
-<title>Inscrição Semeares 2014</title>
+<title>Inscri&#65533;&#65533;o Semeares 2014</title>
 <!-- #EndEditable -->
 <link href="../styles/style1.css" media="screen" rel="stylesheet" title="CSS" type="text/css" />
 <style type="text/css">
+
 .style1 {
 	font-size: xx-small;
 }
@@ -101,10 +102,10 @@ if (getenv("REQUEST_METHOD") == "POST") {
 			    mysql_select_db("abraaoba_isemear",$conexao);
 				$query = "INSERT INTO encontro(enct_additional,enct_age,enct_gender,enct_name,enct_email,enct_phone,enct_institution,enct_reason,enct_certification) values('$motivo2','$age','$gender','$nome','$email','$telefone','$escola','$motivo','$certification')";
 				mysql_query($query,$conexao);    
-				$err = "Dados Cadastrados com sucesso!<br> Aguardamos você no dia 9 de agosto.<br> Caso ocorra algum imprevisto, e você não possa participar,<br> pedimos a gentileza de nos comunicar por e-mail para que possamos liberar seu lugar a outra pessoa: contato@isemear.org.br. <br> Obrigado!<br> Equipe de organização do SemeAres";	
+				$err = "Dados Cadastrados com sucesso!<br> Aguardamos voc&#65533; no dia 9 de agosto.<br> Caso ocorra algum imprevisto, e voc&#65533; n&#65533;o possa participar,<br> pedimos a gentileza de nos comunicar por e-mail para que possamos liberar seu lugar a outra pessoa: contato@isemear.org.br. <br> Obrigado!<br> Equipe de organiza&#65533;&#65533;o do SemeAres";	
 		
 		   } else {
-		      $err = "Preencha todos os campos obrigatórios!";
+		      $err = "Preencha todos os campos obrigat&#65533;rios!";
 		   }
    
    	}
@@ -134,8 +135,9 @@ if (getenv("REQUEST_METHOD") == "POST") {
 	<!-- End Page Content -->
 	<!-- Begin Footer -->
 <div id="footer">
-		<h5>Patrocinador</h5>
+		<!--<h5>Patrocinador</h5>-->
 		<h5>Parceria</h5>	
+		<img src="../facilitadores/images/dello.png" class="facil">
 		<h5>Apoio Institucional</h5>
 		
 		<table align="center">
