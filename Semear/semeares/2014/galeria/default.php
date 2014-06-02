@@ -9,6 +9,7 @@
 <!-- #EndEditable -->
 <link href="../styles/style1.css" media="screen" rel="stylesheet" title="CSS" type="text/css" />
 <style type="text/css">
+
 .style1 {
 	font-size: xx-small;
 }
@@ -97,8 +98,9 @@
 	<!-- End Page Content -->
 	<!-- Begin Footer -->
 <div id="footer">
-		<h5>Patrocinador</h5>
+		<!--<h5>Patrocinador</h5>-->
 		<h5>Parceria</h5>	
+		<img src="../facilitadores/images/dello.png" class="facil">
 		<h5>Apoio Institucional</h5>
 		
 		<table align="center">

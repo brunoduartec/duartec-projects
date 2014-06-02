@@ -9,6 +9,7 @@
 <!-- #EndEditable -->
 <link href="../styles/style1.css" media="screen" rel="stylesheet" title="CSS" type="text/css" />
 <style type="text/css">
+
 .style1 {
 	font-size: xx-small;
 }
@@ -102,7 +103,7 @@ echo "<br>";
 */
 ?>
 
-Programação Preliminar 
+Programa&#65533;&#65533;o Preliminar 
 <br><br>
 <strong>Abertura </strong>
 <ul>
@@ -111,14 +112,14 @@ Programação Preliminar
 <strong>1 Bloco</strong>
 <ul>
 <li>Wellington Santos Silva - EmpreendEscola</li>
-<li>Myrian Castello - Fábrica de Sorrisos</li>
+<li>Myrian Castello - F&#65533;brica de Sorrisos</li>
 <li>Aline - Jovem-semente/ Instituto Semear</li>
 <li>Artemisia</li>
 </ul>
 <strong>2 Bloco</strong>
 <ul>
 <li>CASDVest - Instituto Semear</li>
-<li>Banco Comunitário União Sampaio</li>
+<li>Banco Comunit&#65533;rio Uni&#65533;o Sampaio</li>
 <li>Rafael Xavier - Gerasol</li>
 <li>Geekie</li>
 </ul>
@@ -143,8 +144,9 @@ Programação Preliminar
 	<!-- End Page Content -->
 	<!-- Begin Footer -->
 <div id="footer">
-		<h5>Patrocinador</h5>
+		<!--<h5>Patrocinador</h5>-->
 		<h5>Parceria</h5>	
+		<img src="../facilitadores/images/dello.png" class="facil">
 		<h5>Apoio Institucional</h5>
 		
 		<table align="center">

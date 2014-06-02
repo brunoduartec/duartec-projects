@@ -9,6 +9,7 @@
 <!-- #EndEditable -->
 <link href="../styles/style1.css" media="screen" rel="stylesheet" title="CSS" type="text/css" />
 <style type="text/css">
+
 .style1 {
 	font-size: xx-small;
 }
@@ -68,9 +69,9 @@
 			<strong>Apoio</strong>
 <ul>
 	<li>AJFAC - Parque Vicentina Aranha</li>
-	<li>Cabrillano Comunicações</li>
+	<li>Cabrillano Comunica&#65533;&#65533;es</li>
 	<li>CASD Vestibulares</li>
-	<li>Colégio Rio Branco (São Paulo)</li>
+	<li>Col&#65533;gio Rio Branco (S&#65533;o Paulo)</li>
 	<li>Fatos Contabilidade</li>
 	<li>Grupo Sygma</li>
 	<li>Instituto Embraer</li>
@@ -93,8 +94,9 @@
 	<!-- End Page Content -->
 	<!-- Begin Footer -->
 <div id="footer">
-		<h5>Patrocinador</h5>
+		<!--<h5>Patrocinador</h5>-->
 		<h5>Parceria</h5>	
+		<img src="images/dello.png" class="facil">
 		<h5>Apoio Institucional</h5>
 		
 		<table align="center">
