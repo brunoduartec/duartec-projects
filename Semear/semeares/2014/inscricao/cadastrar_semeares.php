@@ -14,6 +14,14 @@
 	font-size: xx-small;
 }
 </style>
+
+<script src="../jquery.js"></script> 
+    <script> 
+    $(function(){
+      $("#includedContent").load("http://www.w3schools.com"); 
+    });
+    </script> 
+
  <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
   <script>
       function initialize() {
@@ -187,6 +195,7 @@ if (getenv("REQUEST_METHOD") == "POST") {
 	<!-- End Footer --></div>
 <!-- End Container -->
 
+<div id="includedContent"></div>
 </body>
 
 <!-- #EndTemplate -->
