@@ -9,10 +9,19 @@
 <!-- #EndEditable -->
 <link href="styles/style1.css" media="screen" rel="stylesheet" title="CSS" type="text/css" />
 <style type="text/css">
+
 .style1 {
 	font-size: xx-small;
 }
 </style>
+
+<script src="jquery.js"></script> 
+    <script> 
+    $(function(){
+      $("#includedContent").load("http://www.w3schools.com"); 
+    });
+    </script> 
+
  <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
   <script>
       function initialize() {
@@ -109,8 +118,9 @@ positivamente a realidade em seu redor.</li>
 	<!-- End Page Content -->
 	<!-- Begin Footer -->
 <div id="footer">
-		<h5>Patrocinador</h5>
+		<!--<h5>Patrocinador</h5>-->
 		<h5>Parceria</h5>	
+		<img src="facilitadores/images/dello.png" class="facil">
 		<h5>Apoio Institucional</h5>
 		
 		<table align="center">
@@ -148,6 +158,7 @@ positivamente a realidade em seu redor.</li>
 	<!-- End Footer --></div>
 <!-- End Container -->
 
+<div id="includedContent"></div>
 </body>
 
 <!-- #EndTemplate -->

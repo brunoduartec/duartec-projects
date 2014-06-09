@@ -14,6 +14,14 @@
 	font-size: xx-small;
 }
 </style>
+
+<script src="../jquery.js"></script> 
+    <script> 
+    $(function(){
+      $("#includedContent").load("http://www.w3schools.com"); 
+    });
+    </script> 
+
  <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
   <script>
       function initialize() {
@@ -102,33 +110,18 @@ echo "<br>";
 }
 */
 ?>
-
-Programa&#65533;&#65533;o Preliminar 
 <br><br>
-<strong>Abertura </strong>
-<ul>
-<li>Carlos Abranches - Jornalista - TV Vanguarda</li>
-</ul>
-<strong>1 Bloco</strong>
-<ul>
-<li>Wellington Santos Silva - EmpreendEscola</li>
-<li>Myrian Castello - F&#65533;brica de Sorrisos</li>
-<li>Aline - Jovem-semente/ Instituto Semear</li>
-<li>Artemisia</li>
-</ul>
-<strong>2 Bloco</strong>
-<ul>
-<li>CASDVest - Instituto Semear</li>
-<li>Banco Comunit&#65533;rio Uni&#65533;o Sampaio</li>
-<li>Rafael Xavier - Gerasol</li>
-<li>Geekie</li>
-</ul>
-			<strong>3 Bloco</strong>
-<ul> 
-<li>Marc Kirst</li>
-<li>Imagina na Copa</li> 
-<li>Du Migliano (99Jobs)</li> 
-</ul>
+<img src="images/SITE ALEXANDRE ROBAZZA.png"><br><br>
+<img src="images/SITE CARLOS ABRANCHES.png"><br><br>
+<img src="images/SITE DANIELLA DOLME.png"><br><br>
+<img src="images/SITE EDUARDO MIGLIANO.png"><br><br>
+<img src="images/SITE MARC KIRST.png"><br><br>
+<img src="images/SITE MYRIAN CASTELLO.png"><br><br>
+<img src="images/SITE RAFAEL XAVIER.png"><br><br>
+<img src="images/SITE THIAGO VINICIUS.png"><br><br>
+<img src="images/SITE WELLINGTON SANTOS.png"><br><br>
+
+<br><br>
 
 		
 		
@@ -196,6 +189,7 @@ Programa&#65533;&#65533;o Preliminar
 	<!-- End Footer --></div>
 <!-- End Container -->
 
+<div id="includedContent"></div>
 </body>
 
 <!-- #EndTemplate -->

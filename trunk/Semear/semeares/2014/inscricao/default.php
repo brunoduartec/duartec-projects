@@ -14,6 +14,14 @@
 	font-size: xx-small;
 }
 </style>
+
+<script src="../jquery.js"></script> 
+    <script> 
+    $(function(){
+      $("#includedContent").load("http://www.w3schools.com"); 
+    });
+    </script> 
+
  <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
   <script>
       function initialize() {
@@ -139,7 +147,7 @@
    <td>&nbsp;</td>
 </tr>
 <tr>
-   <td>Por que deseja participar do 4&#65533; Semeares ?</td>
+   <td>Por que deseja participar do quarto Semeares ?</td>
    
 </tr>
 <tr>
@@ -244,6 +252,7 @@ Informa&#65533;&#65533;es adicionais:<br>
 	<!-- End Footer --></div>
 <!-- End Container -->
 
+<div id="includedContent"></div>
 </body>
 
 <!-- #EndTemplate -->
