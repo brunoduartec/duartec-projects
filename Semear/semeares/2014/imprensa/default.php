@@ -9,7 +9,6 @@
 <!-- #EndEditable -->
 <link href="../styles/style1.css" media="screen" rel="stylesheet" title="CSS" type="text/css" />
 <style type="text/css">
-
 .style1 {
 	font-size: xx-small;
 }

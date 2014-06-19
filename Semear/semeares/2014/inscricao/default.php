@@ -135,7 +135,7 @@
 </tr>
 
 <tr>
-   <td>Institui&#65533;&#65533;o:</td>
+   <td>Instituição:</td>
    
 </tr>
 <tr>
@@ -159,7 +159,7 @@
 <option value="Outro">Outro</option>
 </select>
 <br>
-Informa&#65533;&#65533;es adicionais:<br>
+Informações adicionais:<br>
    <input type="text" size="30" name="motivo2" maxlength="300" style="width: 301px; height: 134px"></td>
    
 </tr>
@@ -176,7 +176,7 @@ Informa&#65533;&#65533;es adicionais:<br>
 <tr>
    <td><select name="certification">
 <option value="1">Sim</option>
-<option value="0">N&#65533;o</option>
+<option value="0">Não</option>
 </select></td>
   
 </tr>
@@ -187,7 +187,7 @@ Informa&#65533;&#65533;es adicionais:<br>
 <br/> * Lembre-se de levar um quilo de alimento no dia do evento
 </form>
 
-(*) Campos Obrigat&#65533;rios
+(*) Campos Obrigatórios
 			<!-- #EndEditable --></div>
 		<!-- End Left Column -->
 		<!-- Begin Right Column -->
