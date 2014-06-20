@@ -58,7 +58,7 @@
 			<li><a href="../programacao/default.php">Programação</a></li>
 			<li><a href="../sobre/default.php">Sobre o Instituto</a></li>
 			<li><a href="../imprensa/default.php">Na imprensa</a></li>
-			<li><a href="../galeria/default.php">Galeria</a></li>
+			<!--<li><a href="galeria/default.php">Galeria</a></li>-->
 			<li><a href="../inscricao/default.php">Inscrições</a></li>
 			<li><a href="default.php">Local</a></li>
 			<li><a href="../contato/default.php">Contato</a></li>
@@ -76,7 +76,7 @@
 						<p><strong>Data:</strong> 9 de agosto, sábado<br>
 			   <strong>Hora:</strong> 13h às 19h<br>
 			   <br><strong>Entrada:</strong> 1 kg de alimento não perecível<br><br>
-			  <strong>Local:</strong> Teatro do UNIVAP<br>
+			  <strong>Local:</strong> Teatro UNIVAP<br>
 				Praça Cândido Dias Castejon, 116 em São José dos Campos - SP<br>
 				<div id="map_canvas"></div>
 				
@@ -97,7 +97,8 @@
 <div id="footer">
 		<!--<h5>Patrocinador</h5>-->
 		<h5>Parceria</h5>	
-		<img src="../facilitadores/images/dello.png" class="facil">
+		<img src="../facilitadores/images/Dello.gif" class="facil">
+		<img src="../facilitadores/images/PaperMate.jpg" class="facil">
 		<h5>Apoio Institucional</h5>
 		
 		<table align="center">
@@ -122,10 +123,16 @@
 		<td class="style1">
 		<img src="../facilitadores/images/sesc.jpg"  class="facil"></td>
 		<td class="style1">
-		<img src="../facilitadores/images/unitower.jpg"  class="facil"></td>
-		<td class="style1">
 		<img src="../facilitadores/images/wallaby.jpg"  class="facil"></td>
+		<td class="style1">
+		<img src="../facilitadores/images/TARPON.jpg"  class="facilmenor"></td>
+		
 		</tr>
+		<tr>
+		<td class="style1">
+		<img src="../facilitadores/images/LRNG.jpg"  class="facil"></td>
+		</tr>
+		
 		</table>
 		
 		<h5>Apoio Semeares</h5>

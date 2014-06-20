@@ -59,7 +59,7 @@
 			<li><a href="../programacao/default.php">Programação</a></li>
 			<li><a href="../sobre/default.php">Sobre o Instituto</a></li>
 			<li><a href="../imprensa/default.php">Na imprensa</a></li>
-			<li><a href="../galeria/default.php">Galeria</a></li>
+			<!--<li><a href="galeria/default.php">Galeria</a></li>-->
 			<li><a href="default.php">Inscrições</a></li>
 			<li><a href="../local/default.php">Local</a></li>
 			<li><a href="../contato/default.php">Contato</a></li>
@@ -98,7 +98,7 @@ if (getenv("REQUEST_METHOD") == "POST") {
 	
 	if(mysql_num_rows($oResult) > $Registrations )
 	{
-		$err = "O n&#65533;mero de inscritos j&#65533; excedeu a capacidade m&#65533;xima expecificada";
+		$err = "O número de inscritos já excedeu a capacidade máxima expecificada";
 	}
 	else
 	{ 
@@ -110,10 +110,10 @@ if (getenv("REQUEST_METHOD") == "POST") {
 			    mysql_select_db("abraaoba_isemear",$conexao);
 				$query = "INSERT INTO encontro(enct_additional,enct_age,enct_gender,enct_name,enct_email,enct_phone,enct_institution,enct_reason,enct_certification) values('$motivo2','$age','$gender','$nome','$email','$telefone','$escola','$motivo','$certification')";
 				mysql_query($query,$conexao);    
-				$err = "Dados Cadastrados com sucesso!<br> Aguardamos voc&#65533; no dia 9 de agosto.<br> Caso ocorra algum imprevisto, e voc&#65533; n&#65533;o possa participar,<br> pedimos a gentileza de nos comunicar por e-mail para que possamos liberar seu lugar a outra pessoa: contato@isemear.org.br. <br> Obrigado!<br> Equipe de organiza&#65533;&#65533;o do SemeAres";	
+				$err = "Dados Cadastrados com sucesso!<br> Aguardamos você no dia 9 de agosto.<br> Caso ocorra algum imprevisto, e você não possa participar,<br> pedimos a gentileza de nos comunicar por e-mail para que possamos liberar seu lugar a outra pessoa: contato@isemear.org.br. <br> Obrigado!<br> Equipe de organização do SemeAres";	
 		
 		   } else {
-		      $err = "Preencha todos os campos obrigat&#65533;rios!";
+		      $err = "Preencha todos os campos obrigatórios!";
 		   }
    
    	}
@@ -145,7 +145,8 @@ if (getenv("REQUEST_METHOD") == "POST") {
 <div id="footer">
 		<!--<h5>Patrocinador</h5>-->
 		<h5>Parceria</h5>	
-		<img src="../facilitadores/images/dello.png" class="facil">
+		<img src="../facilitadores/images/Dello.gif" class="facil">
+		<img src="../facilitadores/images/PaperMate.jpg" class="facil">
 		<h5>Apoio Institucional</h5>
 		
 		<table align="center">
@@ -170,10 +171,16 @@ if (getenv("REQUEST_METHOD") == "POST") {
 		<td class="style1">
 		<img src="../facilitadores/images/sesc.jpg"  class="facil"></td>
 		<td class="style1">
-		<img src="../facilitadores/images/unitower.jpg"  class="facil"></td>
-		<td class="style1">
 		<img src="../facilitadores/images/wallaby.jpg"  class="facil"></td>
+		<td class="style1">
+		<img src="../facilitadores/images/TARPON.jpg"  class="facilmenor"></td>
+		
 		</tr>
+		<tr>
+		<td class="style1">
+		<img src="../facilitadores/images/LRNG.jpg"  class="facil"></td>
+		</tr>
+		
 		</table>
 		
 		<h5>Apoio Semeares</h5>

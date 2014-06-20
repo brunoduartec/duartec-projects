@@ -186,6 +186,11 @@ img.facil{
 	height: 60px;
 }
 
+img.facilmenor{
+	height: 20px;
+}
+
+
 #table1 table, tr, td, th {
      border: 0;
 }

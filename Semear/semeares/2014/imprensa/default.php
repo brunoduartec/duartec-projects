@@ -57,8 +57,8 @@
 			<li><a href="../default.htm">Home</a></li>
 			<li><a href="../programacao/default.php">Programação</a></li>
 			<li><a href="../sobre/default.php">Sobre o Instituto</a></li>
-			<li><a href="default.php">Na imprensa</a></li>
-			<li><a href="../galeria/default.php">Galeria</a></li>
+			<li><a href="default.php">Financiamento Coletivo</a></li>
+			<!--<li><a href="galeria/default.php">Galeria</a></li>-->
 			<li><a href="../inscricao/default.php">Inscrições</a></li>
 			<li><a href="../local/default.php">Local</a></li>
 			<li><a href="../contato/default.php">Contato</a></li>
@@ -72,6 +72,22 @@
 		<!-- Begin Left Column -->
 		<div id="column_l">
 			<!-- #BeginEditable "content" -->
+			
+			<p>Realizar de forma profissional a filmagem, fotografia 
+			e edição do evento de palestras SemeAres da ONG Instituto Semear.
+			 Dessa forma conseguiremos divulgar com mais qualidade as ideias
+			  e o próprio evento, assim como a ONG Instituto Semear.</p>
+			  
+			  
+			  <a href="<a href="http://benfeitoria.com/semeares2014http://benfeitoria.com/semeares2014">Projeto na Benfeitoria
+			  </a> <br>
+			
+			<iframe src="<a href="https://www.youtube.com/watch?v=sPFW6J-_OKEhttps://www.youtube.com/watch?v=sPFW6J-_OKE">
+				</a>" width="330" height="230"></iframe>
+				
+				
+				
+			
 			<!-- #EndEditable --></div>
 		<!-- End Left Column -->
 		<!-- Begin Right Column -->
@@ -86,7 +102,8 @@
 <div id="footer">
 		<!--<h5>Patrocinador</h5>-->
 		<h5>Parceria</h5>	
-		<img src="../facilitadores/images/dello.png" class="facil">
+		<img src="../facilitadores/images/Dello.gif" class="facil">
+		<img src="../facilitadores/images/PaperMate.jpg" class="facil">
 		<h5>Apoio Institucional</h5>
 		
 		<table align="center">
@@ -111,10 +128,16 @@
 		<td class="style1">
 		<img src="../facilitadores/images/sesc.jpg"  class="facil"></td>
 		<td class="style1">
-		<img src="../facilitadores/images/unitower.jpg"  class="facil"></td>
-		<td class="style1">
 		<img src="../facilitadores/images/wallaby.jpg"  class="facil"></td>
+		<td class="style1">
+		<img src="../facilitadores/images/TARPON.jpg"  class="facilmenor"></td>
+		
 		</tr>
+		<tr>
+		<td class="style1">
+		<img src="../facilitadores/images/LRNG.jpg"  class="facil"></td>
+		</tr>
+		
 		</table>
 		
 		<h5>Apoio Semeares</h5>

@@ -9,6 +9,7 @@
 <!-- #EndEditable -->
 <link href="../styles/style1.css" media="screen" rel="stylesheet" title="CSS" type="text/css" />
 <style type="text/css">
+
 .style1 {
 	font-size: xx-small;
 }
@@ -58,7 +59,7 @@
 			<li><a href="../programacao/default.php">Programação</a></li>
 			<li><a href="../sobre/default.php">Sobre o Instituto</a></li>
 			<li><a href="../imprensa/default.php">Na imprensa</a></li>
-			<li><a href="../galeria/default.php">Galeria</a></li>
+			<!--<li><a href="galeria/default.php">Galeria</a></li>-->
 			<li><a href="../inscricao/default.php">Inscrições</a></li>
 			<li><a href="../local/default.php">Local</a></li>
 			<li><a href="default.php">Contato</a></li>
@@ -78,6 +79,10 @@
 			<a href="mailto:contato@isemear.org.br">contato@isemear.org.br </a>
 			</p>
 			
+			<h4>Redes Sociais:</h4>
+			<a href="https://www.facebook.com/isemear" >Instituto Semear</a><br>
+			<a href="https://www.facebook.com/events/1442845242637443/?ref=22">SemeAres</a>
+			
 			<!-- #EndEditable --></div>
 		<!-- End Left Column -->
 		<!-- Begin Right Column -->
@@ -92,7 +97,8 @@
 <div id="footer">
 		<!--<h5>Patrocinador</h5>-->
 		<h5>Parceria</h5>	
-		<img src="../facilitadores/images/dello.png" class="facil">
+		<img src="../facilitadores/images/Dello.gif" class="facil">
+		<img src="../facilitadores/images/PaperMate.jpg" class="facil">
 		<h5>Apoio Institucional</h5>
 		
 		<table align="center">
@@ -117,10 +123,16 @@
 		<td class="style1">
 		<img src="../facilitadores/images/sesc.jpg"  class="facil"></td>
 		<td class="style1">
-		<img src="../facilitadores/images/unitower.jpg"  class="facil"></td>
-		<td class="style1">
 		<img src="../facilitadores/images/wallaby.jpg"  class="facil"></td>
+		<td class="style1">
+		<img src="../facilitadores/images/TARPON.jpg"  class="facilmenor"></td>
+		
 		</tr>
+		<tr>
+		<td class="style1">
+		<img src="../facilitadores/images/LRNG.jpg"  class="facil"></td>
+		</tr>
+		
 		</table>
 		
 		<h5>Apoio Semeares</h5>

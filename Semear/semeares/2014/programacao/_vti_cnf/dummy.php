@@ -17,6 +17,6 @@ vti_cachedhastheme:BR|false
 vti_cachedhasborder:BR|false
 vti_charset:SR|utf-8
 vti_syncwith_ftp.isemear.com.br\:21/www/semeares/2014:TX|14 Apr 2014 00:26:51 -0000
-vti_syncofs_ftp.isemear.com.br\:21/www/semeares/2014:TW|06 Jun 2014 02:25:41 -0000
+vti_syncofs_ftp.isemear.com.br\:21/www/semeares/2014:TW|20 Jun 2014 18:55:09 -0000
 vti_syncofs_ftp.isemear.com.br\:21/www:TW|20 May 2014 00:01:24 -0000
 vti_syncwith_ftp.isemear.com.br\:21/www:TX|14 Apr 2014 00:26:51 -0000
