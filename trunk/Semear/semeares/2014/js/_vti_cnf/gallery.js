@@ -8,4 +8,4 @@ vti_filesize:IR|7186
 vti_extenderversion:SR|12.0.0.0
 vti_backlinkinfo:VX|
 vti_syncwith_ftp.isemear.com.br\:21/www/semeares/2014:TX|20 May 2014 01:19:51 -0000
-vti_syncofs_ftp.isemear.com.br\:21/www/semeares/2014:TW|02 Jun 2014 22:33:20 -0000
+vti_syncofs_ftp.isemear.com.br\:21/www/semeares/2014:TW|20 Jun 2014 18:55:02 -0000

@@ -58,7 +58,7 @@
 			<li><a href="default.php">Programação</a></li>
 			<li><a href="../sobre/default.php">Sobre o Instituto</a></li>
 			<li><a href="../imprensa/default.php">Na imprensa</a></li>
-			<li><a href="../galeria/default.php">Galeria</a></li>
+			<!--<li><a href="galeria/default.php">Galeria</a></li>-->
 			<li><a href="../inscricao/default.php">Inscrições</a></li>
 			<li><a href="../local/default.php">Local</a></li>
 			<li><a href="../contato/default.php">Contato</a></li>
@@ -111,9 +111,11 @@ echo "<br>";
 ?>
 <br><br>
 <img src="images/SITE ALEXANDRE ROBAZZA.png"><br><br>
+<img src="images/SITE AMANDA LECHINSKI.png"><br><br>
 <img src="images/SITE CARLOS ABRANCHES.png"><br><br>
 <img src="images/SITE DANIELLA DOLME.png"><br><br>
 <img src="images/SITE EDUARDO MIGLIANO.png"><br><br>
+<img src="images/SITE GUSTAVO CUNHA.png"><br><br>
 <img src="images/SITE MARC KIRST.png"><br><br>
 <img src="images/SITE MYRIAN CASTELLO.png"><br><br>
 <img src="images/SITE RAFAEL XAVIER.png"><br><br>
@@ -138,7 +140,8 @@ echo "<br>";
 <div id="footer">
 		<!--<h5>Patrocinador</h5>-->
 		<h5>Parceria</h5>	
-		<img src="../facilitadores/images/dello.png" class="facil">
+		<img src="../facilitadores/images/Dello.gif" class="facil">
+		<img src="../facilitadores/images/PaperMate.jpg" class="facil">
 		<h5>Apoio Institucional</h5>
 		
 		<table align="center">
@@ -163,10 +166,16 @@ echo "<br>";
 		<td class="style1">
 		<img src="../facilitadores/images/sesc.jpg"  class="facil"></td>
 		<td class="style1">
-		<img src="../facilitadores/images/unitower.jpg"  class="facil"></td>
-		<td class="style1">
 		<img src="../facilitadores/images/wallaby.jpg"  class="facil"></td>
+		<td class="style1">
+		<img src="../facilitadores/images/TARPON.jpg"  class="facilmenor"></td>
+		
 		</tr>
+		<tr>
+		<td class="style1">
+		<img src="../facilitadores/images/LRNG.jpg"  class="facil"></td>
+		</tr>
+		
 		</table>
 		
 		<h5>Apoio Semeares</h5>
