@@ -13,6 +13,11 @@
 .style1 {
 	font-size: xx-small;
 }
+.style2 {
+	font-family: "Univers LT Std 39 Thin UltraCn";
+	font-size: xx-large;
+	color: #000000;
+}
 </style>
 
 <script src="../jquery.js"></script> 
@@ -57,8 +62,8 @@
 		<ul>
 			<li><a href="../default.htm">Home</a></li>
 			<li><a href="../programacao/default.php">Programação</a></li>
+			<li><a href="../palestrantes/default.php">Palestrantes</a></li>
 			<li><a href="default.php">Sobre o Instituto</a></li>
-			<li><a href="../imprensa/default.php">Na imprensa</a></li>
 			<!--<li><a href="galeria/default.php">Galeria</a></li>-->
 			<li><a href="../inscricao/default.php">Inscrições</a></li>
 			<li><a href="../local/default.php">Local</a></li>
@@ -173,6 +178,36 @@ para o desenvolvimento pessoal, intelectual e cultural dos jovens.
 		<h5>Parceria</h5>	
 		<img src="../facilitadores/images/Dello.gif" class="facil">
 		<img src="../facilitadores/images/PaperMate.jpg" class="facil">
+		<img src="../facilitadores/images/cabrillano.jpg"  class="facil">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<img src="../facilitadores/images/Eventick.png"  class="facilmenor">
+		
+		<table align="center">
+		<tr>
+		<td><h5>Patrocínio Prata</h5></td>
+		<td class="style1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;</td>
+		<td><h5>Colaboração</h5></td>
+				<td class="style1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;</td>
+		<td><h5>Apoio</h5></td>
+		</tr>
+		
+		<tr>
+		<td class="style1">
+
+		<img src="../facilitadores/images/sygma.jpg"  class="facil">
+		</td>
+		<td class="style1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;</td>
+		<td class="style1">
+
+		<img src="../facilitadores/images/HenriqueFerro.png"  class="facilmenor">
+		</td>
+		<td class="style1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;</td>
+		<td class="style1">
+		<img src="../facilitadores/images/CVB.jpg"  class="facil">
+		</td>
+		
+		</tr>
+		</table>
+		
 		<h5>Apoio Institucional</h5>
 		
 		<table align="center">
@@ -186,8 +221,7 @@ para o desenvolvimento pessoal, intelectual e cultural dos jovens.
 		<img src="../facilitadores/images/colegioriobranco.jpg"  class="facil"></td>
 		<td class="style1">
 		<img src="../facilitadores/images/Marca-Fatos.jpg"  class="facil"></td>
-		<td class="style1">
-		<img src="../facilitadores/images/sygma.jpg"  class="facil"></td>
+
 		</tr>
 		<tr>
 		<td class="style1">
@@ -209,20 +243,36 @@ para o desenvolvimento pessoal, intelectual e cultural dos jovens.
 		
 		</table>
 		
-		<h5>Apoio Semeares</h5>
+		
+		</table>
+
 		<table align="center">
 		<tr>
+		<td><h5>Realizador</h5></td>
+		<td class="style1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;</td>
+		<td><h5>Organizador</h5></td>
+				
+		</tr>
+		
+		<tr>
+		<td class="style1">
+
+		<img src="../facilitadores/images/semear.png"  class="facil">
+		</td>
+		<td class="style1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;</td>
+		<td class="style1">
+
+		<img src="../facilitadores/images/cge.jpg"  class="facil">
+
+		</td>
 	
-		<td class="style1" >
-		<img src="../facilitadores/images/cabrillano.png"  class="facil"></td>
+		</td>
 		
 		</tr>
 		</table>
 
-		<h5>Realizador</h5>
-		<img src="../facilitadores/images/semear.png"  class="facil">
-		<h5>Organizador:</h5> 
-		<img src="../facilitadores/images/cge.jpg"  class="facil">		
+
+			
 		<p><strong>Copyright © Semear. All Rights Reserved.</strong></p>
 	</div>
 	<!-- End Footer --></div>
