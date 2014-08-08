@@ -9,6 +9,7 @@
 <!-- #EndEditable -->
 <link href="../styles/style1.css" media="screen" rel="stylesheet" title="CSS" type="text/css" />
 <style type="text/css">
+
 .style1 {
 	font-size: xx-small;
 }
@@ -79,7 +80,7 @@
 			<!-- #BeginEditable "content" -->
 			<h2>Contato</h2>
 			<p>
-			Em caso de dúvidas entre em contato pelo e-mail 
+			Em caso de d&#65533;vidas entre em contato pelo e-mail 
 			<a href="mailto:contato@isemear.org.br">contato@isemear.org.br </a>
 			</p>
 			

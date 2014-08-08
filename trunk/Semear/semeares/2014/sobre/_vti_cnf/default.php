@@ -1,11 +1,11 @@
 vti_encoding:SR|utf8-nl
 vti_author:SR|DUARTEC-NOTE\\DUARTEC
 vti_modifiedby:SR|DUARTEC-NOTE\\DUARTEC
-vti_timelastmodified:TR|21 Jul 2014 23:32:32 -0000
+vti_timelastmodified:TR|07 Aug 2014 22:40:17 -0000
 vti_timecreated:TR|10 Apr 2014 23:49:06 -0000
 vti_title:SR|Semeares 2014 - Sobre
 vti_extenderversion:SR|12.0.0.0
-vti_nexttolasttimemodified:TR|21 Jul 2014 23:29:45 -0000
+vti_nexttolasttimemodified:TR|07 Aug 2014 02:08:54 -0000
 vti_backlinkinfo:VX|inscricao/default.php default.php palestrantes/default.php programacao/default.php master.dwt local/default.php contato/default.php default.htm sobre/default.php inscricao/cadastrar_semeares.php
 vti_syncofs_ftp.isemear.com.br\:21/www:TW|20 May 2014 00:01:30 -0000
 vti_syncwith_ftp.isemear.com.br\:21/www:TX|20 May 2014 00:22:04 -0000
