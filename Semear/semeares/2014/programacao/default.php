@@ -5,8 +5,10 @@
 
 <head>
 <!-- #BeginEditable "doctitle" -->
-<title>Semeares 2014 - Programação</title>
+<title>Semeares 2014 - Programa&#65533;&#65533;o</title>
 <style type="text/css">
+
+
 .font5
 	{color:black;
 	font-size:8.0pt;
@@ -30,6 +32,7 @@
 <!-- #EndEditable -->
 <link href="../styles/style1.css" media="screen" rel="stylesheet" title="CSS" type="text/css" />
 <style type="text/css">
+
 .style1 {
 	font-size: xx-small;
 }
@@ -135,7 +138,7 @@
 					<td class="xl81" height="20">
 					<span style="mso-bidi-font-family: Arial">13h30 - 13h45<span style="mso-spacerun: yes">&nbsp;</span></span></td>
 					<td class="xl82">Bruno Duarte</td>
-					<td class="xl88" width="266">Abertura e apresentação</td>
+					<td class="xl88" width="266">Abertura e apresenta&#65533;&#65533;o</td>
 				</tr>
 				<tr height="21">
 					<td class="xl83" height="21">&nbsp;</td>
@@ -153,13 +156,13 @@
 					<td class="xl71" height="20">
 					<span style="mso-bidi-font-family: Arial">13h45 - 14h05<span style="mso-spacerun: yes">&nbsp;</span></span></td>
 					<td class="xl73">Alexandre Robazza</td>
-					<td class="xl86" width="266">A Importância do Comportamento 
+					<td class="xl86" width="266">A Import&#65533;ncia do Comportamento 
 					Empreendedor</td>
 				</tr>
 				<tr height="21">
 					<td class="xl72" height="21">&nbsp;</td>
 					<td class="xl74"><span style="mso-bidi-font-family: Arial">
-					Sebrae-Sãoo José dos Campos</span></td>
+					Sebrae-S&#65533;oo Jos&#65533; dos Campos</span></td>
 					<td class="xl90" width="266">&nbsp;</td>
 				</tr>
 				<tr height="21">
@@ -190,7 +193,7 @@
 					<td class="xl71" height="20">
 					<span style="mso-bidi-font-family: Arial">14h25 - 14h40</span></td>
 					<td class="xl73">Gustavo Cunha<span style="mso-spacerun: yes">&nbsp;</span></td>
-					<td class="xl86" width="266">CASD e Casdinho, Educação de 
+					<td class="xl86" width="266">CASD e Casdinho, Educa&#65533;&#65533;o de 
 					qualidade para todos</td>
 				</tr>
 				<tr height="21">
@@ -209,7 +212,7 @@
 					<td class="xl71" height="20">
 					<span style="mso-bidi-font-family: Arial">14h40 - 14h55</span></td>
 					<td class="xl73">Thais Juliana Ribeiro da-ilva</td>
-					<td class="xl86" width="266">Sementes lançadas<font class="font5"><span style="mso-spacerun: yes">&nbsp;</span></font></td>
+					<td class="xl86" width="266">Sementes lan&#65533;adas<font class="font5"><span style="mso-spacerun: yes">&nbsp;</span></font></td>
 				</tr>
 				<tr height="21">
 					<td class="xl72" height="21">&nbsp;</td>
@@ -246,7 +249,7 @@
 					<span style="mso-bidi-font-family: Arial">15h10<span style="mso-spacerun: yes">&nbsp;
 					-</span> 15h40</span></td>
 					<td class="xl80">Intervalo</td>
-					<td class="xl91" width="266">Café. Ampliar a-ua rede de 
+					<td class="xl91" width="266">Caf&#65533;. Ampliar a-ua rede de 
 					contatos. Conhecer novas pessoas</td>
 				</tr>
 				<tr height="20">
@@ -258,20 +261,20 @@
 				<tr height="21">
 					<td class="xl77" height="21">
 					<span style="mso-bidi-font-family: Arial">15h40 - 15h50</span></td>
-					<td class="xl74">Exibição de vídeo</td>
+					<td class="xl74">Exibi&#65533;&#65533;o de v&#65533;deo</td>
 					<td class="xl92" width="266">O-onho Brasileiro</td>
 				</tr>
 				<tr height="20">
 					<td class="xl71" height="20">
 					<span style="mso-bidi-font-family: Arial">15h50 - 16h10</span></td>
 					<td class="xl73">Myrian Castello<span style="mso-spacerun: yes">&nbsp;</span></td>
-					<td class="xl86" width="266">Fábrica dos-onhos: Visões do 
+					<td class="xl86" width="266">F&#65533;brica dos-onhos: Vis&#65533;es do 
 					futuro, agora!</td>
 				</tr>
 				<tr height="21">
 					<td class="xl72" height="21">&nbsp;</td>
 					<td class="xl74"><span style="mso-bidi-font-family: Arial">
-					Fábrica dos sonhos</span></td>
+					F&#65533;brica dos sonhos</span></td>
 					<td class="xl90" width="266">&nbsp;</td>
 				</tr>
 				<tr height="21">
@@ -285,7 +288,7 @@
 					<span style="mso-bidi-font-family: Arial">16h10 - 16h30</span></td>
 					<td class="xl73">Tiago Pereira</td>
 					<td class="xl86" width="266">O nosso papel nas 
-					transformações que gostaríamos de ver</td>
+					transforma&#65533;&#65533;es que gostar&#65533;amos de ver</td>
 				</tr>
 				<tr height="21">
 					<td class="xl72" height="21">&nbsp;</td>
@@ -303,7 +306,7 @@
 					<td class="xl71" height="20">
 					<span style="mso-bidi-font-family: Arial">16h30 - 16h50</span></td>
 					<td class="xl73">Wellington-antos</td>
-					<td class="xl86" width="266">Faço, logo existo!</td>
+					<td class="xl86" width="266">Fa&#65533;o, logo existo!</td>
 				</tr>
 				<tr height="21">
 					<td class="xl72" height="21">&nbsp;</td>
@@ -323,8 +326,8 @@
 					<td class="xl73"><st1:PersonName
    ProductID="Leonardo Carvalho" w_x003a_st="on">Leonardo Carvalho</st1:PersonName>
   				  </td>
-					<td class="xl86" width="266">Por que a Google é o segundo 
-					melhor lugar para você trabalhar?</td>
+					<td class="xl86" width="266">Por que a Google &#65533; o segundo 
+					melhor lugar para voc&#65533; trabalhar?</td>
 				</tr>
 				<tr height="21">
 					<td class="xl72" height="21">&nbsp;</td>
@@ -341,7 +344,7 @@
 					<td class="xl66" height="30">
 					<span style="mso-bidi-font-family: Arial">17h10 - 17h40</span></td>
 					<td class="xl66">Intervalo</td>
-					<td class="xl94" width="266">Café. Ampliar a-ua rede de 
+					<td class="xl94" width="266">Caf&#65533;. Ampliar a-ua rede de 
 					contatos. Conhecer novas pessoas</td>
 				</tr>
 				<tr height="20">
@@ -353,7 +356,7 @@
 				<tr height="20">
 					<td class="xl65" height="20">
 					<span style="mso-bidi-font-family: Arial">17h40 - 17h50</span></td>
-					<td class="xl65">Exibição de vídeo: All work and all play<span style="mso-spacerun: yes">&nbsp;</span></td>
+					<td class="xl65">Exibi&#65533;&#65533;o de v&#65533;deo: All work and all play<span style="mso-spacerun: yes">&nbsp;</span></td>
 					<td class="xl95" width="266">&nbsp;</td>
 				</tr>
 				<tr height="21">
@@ -365,14 +368,14 @@
 				<tr height="30">
 					<td class="xl71" height="30">
 					<span style="mso-bidi-font-family: Arial">17h50 - 18h10</span></td>
-					<td class="xl73">Thiago Vinícius</td>
-					<td class="xl86" width="266">Economia solidária: 
+					<td class="xl73">Thiago Vin&#65533;cius</td>
+					<td class="xl86" width="266">Economia solid&#65533;ria: 
 					perspectivas e desafios gerando desenvolvimento local</td>
 				</tr>
 				<tr height="21">
 					<td class="xl72" height="21">&nbsp;</td>
 					<td class="xl74"><span style="mso-bidi-font-family: Arial">
-					Banco Comunitário União Sampaio</span></td>
+					Banco Comunit&#65533;rio Uni&#65533;o Sampaio</span></td>
 					<td class="xl90" width="266">&nbsp;</td>
 				</tr>
 				<tr height="21">
@@ -385,7 +388,7 @@
 					<td class="xl71" height="20">
 					<span style="mso-bidi-font-family: Arial">18h10 - 18h30<span style="mso-spacerun: yes">&nbsp;</span></span></td>
 					<td class="xl73">Marc Kirst</td>
-					<td class="xl86" width="266">Visão Empreendedora</td>
+					<td class="xl86" width="266">Vis&#65533;o Empreendedora</td>
 				</tr>
 				<tr height="21">
 					<td class="xl72" height="21">&nbsp;</td>
@@ -403,7 +406,7 @@
 					<td class="xl71" height="30">
 					<span style="mso-bidi-font-family: Arial">18h30 - 18h50</span></td>
 					<td class="xl73">Eduardo Migliano</td>
-					<td class="style3" width="266">Faça o que você ama. Muito mais 
+					<td class="style3" width="266">Fa&#65533;a o que voc&#65533; ama. Muito mais 
 					do que um lema, um movimento!</td>
 				</tr>
 				<tr height="21">
@@ -422,7 +425,7 @@
 					<td class="xl68" height="21">
 					<span style="mso-bidi-font-family: Arial">18h50 - 19h00</span></td>
 					<td class="xl68">Encerramento</td>
-					<td class="xl96" width="266">Conclusão e agradecimentos<span style="mso-spacerun: yes">&nbsp;</span></td>
+					<td class="xl96" width="266">Conclus&#65533;o e agradecimentos<span style="mso-spacerun: yes">&nbsp;</span></td>
 				</tr>
 			</table>
 			
@@ -436,7 +439,7 @@
 				<tr height="20">
 					<td class="xl66" height="20" width="234">
 					<span style="mso-bidi-font-family:Arial">RODAS DE CONVERSA<span style="mso-spacerun:yes">&nbsp;
-					</span><font class="font5">–<span style="mso-spacerun:yes">&nbsp;
+					</span><font class="font5">&#65533;<span style="mso-spacerun:yes">&nbsp;
 					</span>Sala 15 - andar superior</font></span></td>
 					<td width="208"></td>
 					<td class="xl68" width="266"></td>
@@ -444,16 +447,16 @@
 				<tr height="20">
 					<td class="xl65" height="20">
 					<span style="mso-bidi-font-family:
-  Arial">15h50 às 16h20</span></td>
+  Arial">15h50 - 16h20</span></td>
 					<td colspan="2"><span style="mso-spacerun:yes">&nbsp;</span>Roda 
 					de Conversa 1<span style="mso-spacerun:yes">&nbsp; </span>- 
-					Empreendedorismo na Prática</td>
+					Empreendedorismo na Pr&#65533;tica</td>
 				</tr>
 				<tr height="20">
 					<td height="20"></td>
 					<td class="xl67">
 					<span style="mso-bidi-font-family:Symbol;mso-fareast-font-family:
-  Symbol">·<font class="font6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font><font class="font5">Mediadora: 
+  Symbol">&#65533;<font class="font6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font><font class="font5">Mediadora: 
 					Andrea Kirst<span style="mso-spacerun:yes">&nbsp;</span></font></span></td>
 					<td class="xl68" width="266"></td>
 				</tr>
@@ -461,7 +464,7 @@
 					<td height="20"></td>
 					<td class="xl67">
 					<span style="mso-bidi-font-family:Symbol;mso-fareast-font-family:
-  Symbol">·<font class="font6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font><font class="font5">Alexandre 
+  Symbol">&#65533;<font class="font6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font><font class="font5">Alexandre 
 					Robazza<span style="mso-spacerun:yes">&nbsp; </span>- Sebrae</font></span></td>
 					<td class="xl68" width="266"></td>
 				</tr>
@@ -469,7 +472,7 @@
 					<td height="20"></td>
 					<td class="xl67">
 					<span style="mso-bidi-font-family:Symbol;mso-fareast-font-family:
-  Symbol">·<font class="font6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pedro Kayatt</font><font class="font5"><span style="mso-spacerun:yes">&nbsp;
+  Symbol">&#65533;<font class="font6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pedro Kayatt</font><font class="font5"><span style="mso-spacerun:yes">&nbsp;
 					</span>- Naked Monkey Games</font></span></td>
 					<td class="xl68" width="266"></td>
 				</tr>
@@ -481,16 +484,16 @@
 				<tr height="20">
 					<td class="xl65" height="20">
 					<span style="mso-bidi-font-family:
-  Arial">16h30 às 17h00</span></td>
+  Arial">16h30 - 17h00</span></td>
 					<td colspan="2"><span style="mso-spacerun:yes">&nbsp;</span>Roda 
 					de Conversa 2<span style="mso-spacerun:yes">&nbsp; </span>- 
-					Jovem: Possibilidades para a educação universitária<span style="mso-spacerun:yes">&nbsp;</span></td>
+					Jovem: Possibilidades para a educa&#65533;&#65533;o universit&#65533;ria<span style="mso-spacerun:yes">&nbsp;</span></td>
 				</tr>
 				<tr height="20">
 					<td height="20"></td>
 					<td class="xl67">
 					<span style="mso-bidi-font-family:Symbol;mso-fareast-font-family:
-  Symbol">·<font class="font6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font><font class="font5">Mediador: 
+  Symbol">&#65533;<font class="font6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font><font class="font5">Mediador: 
 					Rodrigo Junqueira</font></span></td>
 					<td class="xl68" width="266"></td>
 				</tr>
@@ -498,7 +501,7 @@
 					<td height="20"></td>
 					<td class="xl67">
 					<span style="mso-bidi-font-family:Symbol;mso-fareast-font-family:
-  Symbol">·<font class="font6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font><font class="font5">Gustavo 
+  Symbol">&#65533;<font class="font6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font><font class="font5">Gustavo 
 					Cunha - CASD Vestibulares</font></span></td>
 					<td class="xl68" width="266"></td>
 				</tr>
@@ -506,14 +509,14 @@
 					<td height="20"></td>
 					<td class="xl67">
 					<span style="mso-bidi-font-family:Symbol;mso-fareast-font-family:
-  Symbol">·<font class="font6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font><font class="font5">Ana Paula 
-					Melo – Instituto Semear</font></span></td>
+  Symbol">&#65533;<font class="font6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font><font class="font5">Ana Paula 
+					Melo &#65533; Instituto Semear</font></span></td>
 					<td class="xl68" width="266"></td>
 				</tr>
 				<tr height="20">
 					<td class="xl65" height="20">
 					<span style="mso-bidi-font-family:
-  Arial">17h50 às 18h20</span></td>
+  Arial">17h50 &#65533;s 18h20</span></td>
 					<td colspan="2">Roda de Conversa 3<span style="mso-spacerun:yes">&nbsp;
 					</span>- Instituto Semear: Como contribuir com essa ideia?</td>
 				</tr>
@@ -521,24 +524,24 @@
 					<td height="20"></td>
 					<td class="xl67">
 					<span style="mso-bidi-font-family:Symbol;mso-fareast-font-family:
-  Symbol">·<font class="font6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font><font class="font5">Mediadora: 
-					Flávia Benyunes<span style="mso-spacerun:yes">&nbsp;</span></font></span></td>
+  Symbol">&#65533;<font class="font6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font><font class="font5">Mediadora: 
+					Fl&#65533;via Benyunes<span style="mso-spacerun:yes">&nbsp;</span></font></span></td>
 					<td class="xl68" width="266"></td>
 				</tr>
 				<tr height="20">
 					<td height="20"></td>
 					<td class="xl67">
 					<span style="mso-bidi-font-family:Symbol;mso-fareast-font-family:
-  Symbol">·<font class="font6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font><font class="font5">Marisa 
-					Nubile – Instituto Semear</font></span></td>
+  Symbol">&#65533;<font class="font6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font><font class="font5">Marisa 
+					Nubile &#65533; Instituto Semear</font></span></td>
 					<td class="xl68" width="266"></td>
 				</tr>
 				<tr height="20">
 					<td height="20"></td>
 					<td class="xl67">
 					<span style="mso-bidi-font-family:Symbol;mso-fareast-font-family:
-  Symbol">·<font class="font6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font><font class="font5">Rodolfo 
-					Collevatti – Instituto Semear<span style="mso-spacerun:yes">&nbsp;</span></font></span></td>
+  Symbol">&#65533;<font class="font6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font><font class="font5">Rodolfo 
+					Collevatti &#65533; Instituto Semear<span style="mso-spacerun:yes">&nbsp;</span></font></span></td>
 					<td class="xl68" width="266"></td>
 				</tr>
 			</table>

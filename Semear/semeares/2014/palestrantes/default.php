@@ -118,13 +118,14 @@ echo "<br>";
 <br><br>
 <img src="images/SITE ALEXANDRE ROBAZZA.png"><br><br>
 <img src="images/SITE%20AMANDA%20LECHINSKI.png"><br><br>
-<img src="images/SITE%20CARLOS%20ABRANCHES.png"><br><br>
 <img src="images/SITE%20EDUARDO%20MIGLIANO.png"><br><br>
 <img src="images/SITE%20GUSTAVO%20CUNHA.png"><br><br>
+<img src="images/SITE%20LEONARDO%20CARVALHO.png"><br><br>
 <img src="images/SITE%20MARC%20KIRST.png"><br><br>
 <img src="images/SITE%20MYRIAN%20CASTELLO.png"><br><br>
 <img src="images/SITE%20RAFAEL%20XAVIER.png"><br><br>
 <img src="images/SITE%20TIAGO%20PEREIRA.png"><br><br>
+<img src="images/SITE%20THAIS%20JULIANA%20RIBEIRO.png"><br><br>
 <img src="images/SITE%20THIAGO%20VINICIUS.png"><br><br>
 <img src="images/SITE%20WELLINGTON%20SANTOS.png"><br><br>
 

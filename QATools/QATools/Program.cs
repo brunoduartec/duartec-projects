@@ -15,8 +15,8 @@ namespace QATools
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new Form1());
-            Application.Run(new NameGenerator());
+            Application.Run(new Form1());
+            //Application.Run(new NameGenerator());
         }
     }
 }

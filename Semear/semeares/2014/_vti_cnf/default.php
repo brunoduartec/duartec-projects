@@ -1,12 +1,12 @@
 vti_encoding:SR|utf8-nl
-vti_timelastmodified:TR|21 Jul 2014 23:32:32 -0000
+vti_timelastmodified:TR|07 Aug 2014 22:40:17 -0000
 vti_extenderversion:SR|12.0.0.0
 vti_author:SR|DUARTEC-NOTE\\DUARTEC
 vti_modifiedby:SR|DUARTEC-NOTE\\DUARTEC
 vti_timecreated:TR|02 Jun 2014 22:39:51 -0000
 vti_title:SR|Home
 vti_backlinkinfo:VX|
-vti_nexttolasttimemodified:TR|21 Jul 2014 23:29:45 -0000
+vti_nexttolasttimemodified:TR|07 Aug 2014 02:08:54 -0000
 vti_syncwith_ftp.isemear.com.br\:21/www/semeares/2014:TX|21 Jul 2014 22:58:14 -0000
 vti_syncofs_ftp.isemear.com.br\:21/www/semeares/2014:TW|21 Jul 2014 23:38:48 -0000
 vti_cacheddtm:TX|21 Jul 2014 22:58:14 -0000

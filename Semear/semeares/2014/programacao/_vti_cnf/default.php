@@ -1,18 +1,18 @@
 vti_encoding:SR|utf8-nl
 vti_author:SR|DUARTEC-NOTE\\DUARTEC
 vti_modifiedby:SR|DUARTEC-NOTE\\DUARTEC
-vti_timelastmodified:TR|21 Jul 2014 23:45:13 -0000
+vti_timelastmodified:TR|07 Aug 2014 22:40:17 -0000
 vti_timecreated:TR|10 Apr 2014 23:49:06 -0000
 vti_title:SR|Semeares 2014 - Programa��o
 vti_extenderversion:SR|12.0.0.0
-vti_nexttolasttimemodified:TW|21 Jul 2014 23:45:00 -0000
+vti_nexttolasttimemodified:TR|07 Aug 2014 02:08:54 -0000
 vti_syncofs_ftp.isemear.com.br\:21/www:TW|20 May 2014 00:01:24 -0000
 vti_syncwith_ftp.isemear.com.br\:21/www:TX|20 May 2014 00:21:44 -0000
 vti_syncwith_ftp.isemear.com.br\:21/www/semeares/2014:TX|21 Jul 2014 23:45:13 -0000
 vti_syncofs_ftp.isemear.com.br\:21/www/semeares/2014:TW|21 Jul 2014 23:45:22 -0000
 vti_backlinkinfo:VX|default.php inscricao/default.php programacao/default.php palestrantes/default.php master.dwt local/default.php contato/default.php default.htm inscricao/cadastrar_semeares.php sobre/default.php
-vti_cacheddtm:TX|21 Jul 2014 23:45:13 -0000
-vti_filesize:IR|24527
+vti_cacheddtm:TX|07 Aug 2014 22:40:17 -0000
+vti_filesize:IR|24909
 vti_cachedtitle:SR|Semeares 2014 - Programa��o
 vti_cachedbodystyle:SR|<body>
 vti_cachedlinkinfo:VX|G|../master.dwt Q|../styles/style1.css S|../jquery.js S|https://maps.googleapis.com/maps/api/js S|../images/topo.png H|../default.htm H|default.php H|../palestrantes/default.php H|../sobre/default.php H|../inscricao/default.php H|../local/default.php H|../contato/default.php S|../facilitadores/images/Dello.gif S|../facilitadores/images/PaperMate.jpg S|../facilitadores/images/cabrillano.jpg S|../facilitadores/images/Eventick.png S|../facilitadores/images/sygma.jpg S|../facilitadores/images/HenriqueFerro.png S|../facilitadores/images/CVB.jpg S|../facilitadores/images/vicentina.png S|../facilitadores/images/casd.png S|../facilitadores/images/colegioriobranco.jpg S|../facilitadores/images/Marca-Fatos.jpg S|../facilitadores/images/institutoembraer.jpg S|../facilitadores/images/pwc.jpg S|../facilitadores/images/sesc.jpg S|../facilitadores/images/wallaby.jpg S|../facilitadores/images/TARPON.jpg S|../facilitadores/images/LRNG.jpg S|../facilitadores/images/semear.png S|../facilitadores/images/cge.jpg
