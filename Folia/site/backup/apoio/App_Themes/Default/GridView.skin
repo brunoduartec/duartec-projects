@@ -1,0 +1,32 @@
+﻿<%--
+Default skin template. The following skins are provided as examples only.
+
+1. Named control skin. The SkinId should be uniquely defined because
+   duplicate SkinId's per control type are not allowed in the same theme.
+
+<asp:GridView runat="server" SkinId="gridviewSkin" BackColor="White" >
+   <AlternatingRowStyle BackColor="Blue" />
+</asp:GridView>
+
+2. Default skin. The SkinId is not defined. Only one default 
+   control skin per control type is allowed in the same theme.
+
+3. De onde tirei isso:
+http://www.asp.net/data-access/tutorials/displaying-data-with-the-objectdatasource-vb
+
+CssClass="gridTable"
+
+<asp:Image runat="server" ImageUrl="~/images/image1.jpg" />
+--%>
+
+<asp:GridView runat="server" SkinID="Professional"
+Width="100%"
+CellPadding="3"
+BorderWidth="1"
+BorderColor="#cccccc"
+AlternatingRowStyle-CssClass="rowDark"
+HeaderStyle-CssClass="gridHeader"
+PagerStyle-CssClass="gridPager"
+RowStyle-CssClass="rowLight"
+CssClass="gridTable"
+/>

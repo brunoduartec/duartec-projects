@@ -1,0 +1,60 @@
+﻿.gridTable
+{
+    background-color: #ffffff;
+}
+.gridHeader
+{
+    background-color: #CCCCCC;
+}
+tr.rowLight{
+	background-color: #f2f2f2;
+}
+tr.rowDark{
+	background-color: #e8e8e8;
+}
+tr.rowLight:hover{
+	background-color: #EEF0A2;
+}
+tr.rowDark:hover{
+	background-color: #EEF0A2;
+}
+
+/* fonte nas celulas*/
+tr.rowLight td
+{
+	font-size: 11px;
+	font-family: 'Trebuchet MS';
+	border: 1px solid #FFFFFF;
+}
+tr.rowDark td
+{
+    font-size: 11px;
+    font-family: 'Trebuchet MS';
+	border: 1px solid #FFFFFF;
+}
+tr.gridHeader th
+{
+    border: 1px solid #FFFFFF;
+    text-align: left;
+    padding: 3px;
+}
+tr.gridHeader th div
+{
+    text-align: right;
+    padding: 0px;
+}
+tr.gridHeader th a
+{
+    font-size: 10px;
+}
+tr.gridPager tr a
+{
+    font-size: 11px;
+    text-decoration: none;
+}
+tr.gridPager tr a:hover
+{
+    font-size: 11px;
+    text-decoration: none;
+    color: #FF0000;
+}

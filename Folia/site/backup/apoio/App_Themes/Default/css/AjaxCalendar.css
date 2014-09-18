@@ -1,0 +1,50 @@
+﻿.ajax__calendar_container
+{
+    background-color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+}
+.ajax__calendar_header
+{
+    background-color: #CCCCCC;
+    margin-bottom: 4px;
+}
+.ajax__calendar_title, .ajax__calendar_next, .ajax__calendar_prev
+{
+    color: #004080;
+    padding-top: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+}
+.ajax__calendar_body
+{
+    background-color: #dfdfdf;
+    border: solid 1px #cccccc;
+    text-transform: uppercase;
+}
+.ajax__calendar_dayname
+{
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 4px;
+    margin-top: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    text-transform: lowercase;
+}
+.ajax__calendar_day
+{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.ajax__calendar_hover .ajax__calendar_day,.ajax__calendar_hover .ajax__calendar_month,.ajax__calendar_hover .ajax__calendar_year,.ajax__calendar_active  {    color: #004080;     font-weight: bold;     background-color: #ffffff;}
+.ajax__calendar_today
+{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+}.ajax__calendar_other, .ajax__calendar_hover .ajax__calendar_today, .ajax__calendar_hover .ajax__calendar_title
+{
+    color: #666666;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+}

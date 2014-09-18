@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="ASPApoio.Apoio.Site" %>
+<%@ Register src="Controles/Menu.ascx" tagname="Menu" tagprefix="uc1" %>
+<%@ Register assembly="AjaxControlToolkit" namespace="AjaxControlToolkit" tagprefix="asp" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>ASP Solutions - Gerenciador de conteúdo</title>
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+    <script type="text/javascript" src="comum/jqwidgets/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="Comum/js/functions.js"></script>
+</head>
+<body>
+    <form id="Form1" runat="server">
+    <asp:ToolkitScriptManager ID="ToolkitScriptManager" runat="server">
+    </asp:ToolkitScriptManager>
+    <div class="MenuTopo"><uc1:Menu ID="Menu" runat="server"/></div>                    
+        <table align="center" cellpadding="0" cellspacing="0" width="100%">
+            <tr class="LogotipoFundo">
+                <td width="100px"><a href="Default.aspx"><img alt="ASP Solutions" src="Comum/images/logotipo.png" border="0" /></a></td>
+                <td>
+                    <asp:UpdatePanel ID="UpdatePanelMsg" runat="server" UpdateMode="Conditional">
+                        <ContentTemplate>
+                            <center><font color="#FF0000"><b>
+                                <asp:Label ID="lbSessionMsg" runat="server"></asp:Label>
+                            </b></font></center>                                    
+                        </ContentTemplate>
+                    </asp:UpdatePanel>
+                </td>
+                <td width="20%" valign="bottom">
+                    <asp:Label ID="lblNome" runat="server"></asp:Label>
+                </td>
+            </tr>
+            </table>
+        <table cellpadding="0" cellspacing="10" width="100%">
+            <tr>
+                <td>
+                    <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
