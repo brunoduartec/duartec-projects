@@ -1,0 +1,165 @@
+body
+{
+    background-position: center top;
+    margin: 0px;
+    padding: 0px;    
+}
+td
+{
+    font-family: "Trebuchet MS" , Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    text-decoration: none;
+}
+th
+{
+    font-family: "Trebuchet MS" , Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    text-decoration: none;
+}
+a
+{
+    font-family: "Trebuchet MS" , Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #0033CC;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+a:hover
+{
+    font-family: "Trebuchet MS" , Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #0033CC;
+    text-decoration: underline;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+select{
+	width: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+textarea{
+	margin: 0px;
+	width: 98%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+input[type="text"], input[type="password"]
+{
+	margin: 0px;
+	width: 98%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+input[type="submit"], input[type="button"]
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.tag001 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	text-decoration: none;
+	color: #000000;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #999999;
+	border-right-color: #CCCCCC;
+	border-bottom-color: #CCCCCC;
+	border-left-color: #999999;
+	width: 98%;
+}
+.borda001
+{
+    border: 1px solid #CCCCCC;
+    background-color: #FFFFFF;
+}
+.titulo001 {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+	background-color: #747474;
+	text-transform: uppercase;
+	padding: 5px;
+}
+.titulo002
+{
+    padding: 3px;
+    font-family: "Trebuchet MS" , Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    color: #000000;
+    text-decoration: none;
+    background-color: #d9d9d9;
+    text-transform: uppercase;
+    text-align: left;
+}
+tr.alterna:hover
+{
+    background-color: #EEF0A2;
+}
+.modalBackground
+{
+    background-color: #C0C0C0;
+    filter:alpha(opacity=70);
+    opacity:0.7;
+        
+}
+.modalPopup
+{
+    border: 1px solid #666666;
+    background-color: #FFFFFF;
+    padding: 10px;
+    width: 480px;
+}
+#UpdateProgress
+{
+    position:fixed;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    overflow:hidden;
+    padding:0;
+    margin:0;
+    background-color:#ffffff;
+    filter:alpha(opacity=75);
+    opacity:0.75;
+    z-index:1000;
+}
+#UpdateGif
+{
+    position:fixed;
+    top:20%;
+    left:43%;
+    padding:10px;
+    z-index:1001;
+    filter:alpha(opacity=75);
+    opacity:0.75;
+}
+
+.LogotipoFundo
+{
+    padding: 0px;
+    margin: 0px;
+    background-color: #F1F5FB;
+}
+.MenuTopo
+{
+    z-index: 1000;
+    top: 42px;
+    left: 120px;
+    position: absolute;
+    height: 20px;
+}

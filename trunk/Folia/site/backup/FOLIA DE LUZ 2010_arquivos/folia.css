@@ -1,0 +1,327 @@
+BODY {
+	SCROLLBAR-ARROW-COLOR: #000000; SCROLLBAR-FACE-COLOR: #9a97b6; SCROLLBAR-DARKSHADOW-COLOR: #f0f0f0; SCROLLBAR-HIGHLIGHT-COLOR: #f0f0f0; SCROLLBAR-SHADOW-COLOR: #625d86; SCROLLBAR-TRACK-COLOR: #f0f0f0; SCROLLBAR-3DLIGHT-COLOR: #625d86
+}
+.msn {
+	LINE-HEIGHT: 170%; FONT-FAMILY: verdana; FONT-SIZE: 11px
+}
+.barra {
+	FONT-FAMILY: Verdana; COLOR: white; FONT-SIZE: 9px
+}
+.loja {
+	FONT-FAMILY: Verdana; COLOR: white; FONT-SIZE: 10px; FONT-WEIGHT: bold
+}
+.loja2 {
+	FONT-FAMILY: Verdana; COLOR: black; FONT-SIZE: 10px
+}
+.loja3 {
+	FONT-FAMILY: Verdana; COLOR: black; FONT-SIZE: 10px; FONT-WEIGHT: bold
+}
+.loja2:hover {
+	TEXT-DECORATION: none
+}
+.noticias_tit {
+	FONT-FAMILY: Verdana; COLOR: #e3505e; FONT-SIZE: 10px; FONT-WEIGHT: bold
+}
+.noticias {
+	FONT-FAMILY: Verdana; COLOR: black; FONT-SIZE: 10px
+}
+.rodape {
+	FONT-FAMILY: arial; COLOR: black; FONT-SIZE: 10px
+}
+.destaques {
+	FONT-FAMILY: verdana; COLOR: black; FONT-SIZE: 10px
+}
+.texto {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; COLOR: black; FONT-SIZE: 11px; TEXT-DECORATION: none
+}
+.texto2 {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; COLOR: black; FONT-SIZE: 18px; TEXT-DECORATION: none
+}
+.texto3 {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; COLOR: black; FONT-SIZE: 10pt; TEXT-DECORATION: none
+}
+.texto4 {
+	LINE-HEIGHT: 170%; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; COLOR: black; FONT-SIZE: 11px; TEXT-DECORATION: none
+}
+.texto5 {
+	LINE-HEIGHT: 170%; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; COLOR: black; FONT-SIZE: 11px; TEXT-DECORATION: none
+}
+.adm_busca {
+	LINE-HEIGHT: 150%; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; COLOR: black; FONT-SIZE: 11px; TEXT-DECORATION: none
+}
+.adm_busca_lk:hover {
+	COLOR: #0000ff; TEXT-DECORATION: underline
+}
+.adm2 {
+	LINE-HEIGHT: 150%; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; COLOR: black; FONT-SIZE: 11px; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.evento {
+	LINE-HEIGHT: 150%; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; COLOR: black; FONT-SIZE: 11px; TEXT-DECORATION: none
+}
+.adm2:hover {
+	COLOR: #0000ff; TEXT-DECORATION: underline
+}
+.titulo {
+	FONT-FAMILY: Verdana, Sans serif; COLOR: #00274e; FONT-SIZE: 10px; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.inscricao {
+	FONT-FAMILY: Verdana, Sans serif; COLOR: gray; FONT-SIZE: 10px; TEXT-DECORATION: none
+}
+.inscricao_lk {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; COLOR: black; FONT-SIZE: 10px; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.inscricao_lk:hover {
+	COLOR: gray; TEXT-DECORATION: underline
+}
+.evento_lk {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; COLOR: blue; FONT-SIZE: 10px; TEXT-DECORATION: none
+}
+.evento_lk:hover {
+	COLOR: blue; TEXT-DECORATION: underline
+}
+.link_destaques {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; COLOR: black; FONT-SIZE: 810px; TEXT-DECORATION: none
+}
+.link_destaques:hover {
+	COLOR: gray; TEXT-DECORATION: none
+}
+.chamada {
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; COLOR: black; FONT-SIZE: 10px; TEXT-DECORATION: none
+}
+.chamada:hover {
+	COLOR: gray; TEXT-DECORATION: none
+}
+.chek {
+	LINE-HEIGHT: 20px; FONT-FAMILY: verdana; FONT-SIZE: 12px
+}
+.style3 {
+	LINE-HEIGHT: 20px; FONT-FAMILY: verdana; FONT-SIZE: 12px; FONT-WEIGHT: bold
+}
+.style4 {
+	LINE-HEIGHT: 20px; FONT-FAMILY: verdana; COLOR: #ff0000; FONT-SIZE: 12px; FONT-WEIGHT: bold
+}
+.BordaBox {
+	BORDER-BOTTOM: #948a80 1px solid; BORDER-LEFT: #948a80 1px solid; BORDER-TOP: #948a80 1px solid; BORDER-RIGHT: #948a80 1px solid
+}
+.BordaImagem {
+	BORDER-BOTTOM: #948a80 1px solid; BORDER-LEFT: #948a80 1px solid; BORDER-TOP: #948a80 1px solid; BORDER-RIGHT: #948a80 1px solid
+}
+.botao {
+	BORDER-BOTTOM-COLOR: #ffffff; BORDER-RIGHT-WIDTH: 1px; BACKGROUND-COLOR: #e8e8e8; BORDER-TOP-COLOR: #ffffff; FONT-FAMILY: Tahoma, Verdana; BORDER-TOP-WIDTH: 1px; BORDER-BOTTOM-WIDTH: 1px; COLOR: black; BORDER-RIGHT-COLOR: #ffffff; FONT-SIZE: 8pt; BORDER-LEFT-COLOR: #ffffff; BORDER-LEFT-WIDTH: 1px
+}
+BODY {
+	FONT-FAMILY: Verdana; FONT-SIZE: 9pt
+}
+BODY {
+	SCROLLBAR-FACE-COLOR: #efefef
+}
+BODY {
+	SCROLLBAR-SHADOW-COLOR: #efefef
+}
+BODY {
+	SCROLLBAR-HIGHLIGHT-COLOR: #efefef
+}
+BODY {
+	SCROLLBAR-3DLIGHT-COLOR: #ffffff
+}
+BODY {
+	SCROLLBAR-DARKSHADOW-COLOR: #000000
+}
+BODY {
+	SCROLLBAR-TRACK-COLOR: #cccccc
+}
+BODY {
+	SCROLLBAR-ARROW-COLOR: #000000
+}
+TD {
+	FONT-FAMILY: Verdana; FONT-SIZE: 8pt
+}
+A:link {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #687cb8; TEXT-DECORATION: none
+}
+.menu:link {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+.menu:visited {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+.menu:hover {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+:link {
+	FONT-FAMILY: Verdana, arial, Helvetica; COLOR: black; FONT-SIZE: 11px; TEXT-DECORATION: none
+}
+:visited {
+	FONT-FAMILY: Verdana, arial, Helvetica; COLOR: black; FONT-SIZE: 11px; TEXT-DECORATION: none
+}
+A:hover {
+	FONT-FAMILY: Verdana, arial, Helvetica; COLOR: gray; FONT-SIZE: 11px; TEXT-DECORATION: underline
+}
+.texto1 {
+	LINE-HEIGHT: 170%; FONT-FAMILY: Verdana, arial, Helvetica; COLOR: #000000; FONT-SIZE: 11px
+}
+.texto2 {
+	LINE-HEIGHT: 150%; FONT-FAMILY: Verdana, arial, Helvetica; COLOR: #000000; FONT-SIZE: 11px
+}
+.st1 {
+	FONT-FAMILY: Times New Roman,Verdana,Arial; COLOR: #000000; FONT-SIZE: 12px; FONT-WEIGHT: bold
+}
+.txt1 {
+	FONT-FAMILY: Times New Roman,Arial, Verdana, Sans serif; COLOR: #000000; FONT-SIZE: 14px; FONT-WEIGHT: bold
+}
+.txt2 {
+	FONT-FAMILY: Times New Roman,Arial, Verdana, Sans serif; COLOR: #000000; FONT-SIZE: 9px; FONT-WEIGHT: normal
+}
+.txt3 {
+	FONT-FAMILY: Times New Roman,Arial, Verdana, Sans serif; COLOR: #000000; FONT-SIZE: 12px; FONT-WEIGHT: normal
+}
+.plc {
+	FONT-FAMILY: Times New Roman,Arial, Verdana, Sans serif; COLOR: #c0c0c0; FONT-SIZE: 11px; FONT-WEIGHT: normal; TEXT-DECORATION: none
+}
+.link1 {
+	FONT-FAMILY: Times New Roman,Arial, Verdana, Sans serif; COLOR: #000000; FONT-SIZE: 14px; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.link1 A:hover {
+	COLOR: #3366dd; TEXT-DECORATION: none
+}
+.email {
+	FONT-FAMILY: Times New Roman,Arial, Verdana, Sans serif; COLOR: #0066ff; FONT-SIZE: 14px; FONT-WEIGHT: normal
+}
+.link2 {
+	FONT-FAMILY: Times New Roman,Arial, Verdana, Sans serif; COLOR: #b0b0b0; FONT-SIZE: 13px; FONT-WEIGHT: normal; TEXT-DECORATION: none
+}
+.link2 A:hover {
+	COLOR: #3366ff; TEXT-DECORATION: none
+}
+.link3 {
+	FONT-FAMILY: Times New Roman,Arial, Verdana, Sans serif; COLOR: #000000; FONT-SIZE: 12px; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.link3 A:hover {
+	COLOR: #3366dd; TEXT-DECORATION: none
+}
+.categ_promo {
+	FONT-FAMILY: Times New Roman,Arial, Verdana, Sans serif; COLOR: #0000ff; FONT-SIZE: 10px; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.categ_promo A:hover {
+	FONT-SIZE: 10pt; FONT-WEIGHT: normal
+}
+.link_prd {
+	FONT-FAMILY: Times New Roman,Arial, Verdana, Sans serif; COLOR: #000000; FONT-SIZE: 12px; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.link_prd A:hover {
+	COLOR: #3366dd; TEXT-DECORATION: none
+}
+.precos {
+	FONT-FAMILY: Times New Roman,Arial, Verdana, Sans serif; COLOR: #339933; FONT-SIZE: 12px; FONT-WEIGHT: bold
+}
+.desconto {
+	FONT-FAMILY: Times New Roman,Arial, Verdana, Sans serif; COLOR: #cc0033; FONT-SIZE: 16pt; FONT-WEIGHT: bold
+}
+.promo_titulo {
+	FONT-FAMILY: Times New Roman,Arial, Verdana, Sans serif; COLOR: #669933; FONT-SIZE: 18px; FONT-WEIGHT: bold
+}
+.mat_titulo {
+	FONT-FAMILY: Times New Roman,Arial, Verdana, Sans serif; COLOR: #333399; FONT-SIZE: 18px; FONT-WEIGHT: bold
+}
+.mat_autor {
+	FONT-FAMILY: Times New Roman,Arial, Verdana, Sans serif; COLOR: #000000; FONT-SIZE: 10px; FONT-WEIGHT: normal
+}
+.mat_email {
+	FONT-FAMILY: Times New Roman,Arial, Verdana, Sans serif; COLOR: #0066ff; FONT-SIZE: 10px; FONT-WEIGHT: normal
+}
+.mat_texto {
+	FONT-FAMILY: Times New Roman,Arial, Verdana, Sans serif; COLOR: #000000; FONT-SIZE: 10pt; FONT-WEIGHT: normal
+}
+.mat_rel {
+	FONT-FAMILY: Times New Roman,Arial, Verdana, Sans serif; COLOR: #939393; FONT-SIZE: 11pt; FONT-WEIGHT: normal
+}
+.comprar {
+	FONT-FAMILY: Times New Roman,Arial, Verdana, Sans serif; COLOR: #003399; FONT-SIZE: 9pt; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.comprar A:hover {
+	COLOR: #3366ff; FONT-SIZE: 10pt; TEXT-DECORATION: none
+}
+.rel_prod {
+	FONT-FAMILY: Times New Roman,Arial, Verdana, Sans serif; COLOR: #4f4f4f; FONT-SIZE: 8pt; FONT-WEIGHT: normal; TEXT-DECORATION: none
+}
+.rel_prod A:hover {
+	COLOR: #3366dd; TEXT-DECORATION: none
+}
+.prod_desc {
+	FONT-FAMILY: Times New Roman,Arial, Verdana, Sans serif; COLOR: #000000; FONT-SIZE: 11pt; FONT-WEIGHT: normal; TEXT-DECORATION: none
+}
+.prod_preco {
+	FONT-FAMILY: Times New Roman,Arial, Verdana, Sans serif; COLOR: #339933; FONT-SIZE: 11pt; FONT-WEIGHT: bold
+}
+.titulo_aval {
+	FONT-FAMILY: Times New Roman,Arial, Verdana, Sans serif; COLOR: #c0c0c0; FONT-SIZE: 14px; FONT-WEIGHT: normal; TEXT-DECORATION: none
+}
+.label_form {
+	FONT-FAMILY: Times New Roman,Arial, Verdana, Sans serif; COLOR: #0066cc; FONT-SIZE: 11pt; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.titulo_form {
+	FONT-FAMILY: Times New Roman,Arial, Verdana, Sans serif; COLOR: #ff9900; FONT-SIZE: 16pt; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.titulo_form A:hover {
+	TEXT-DECORATION: none
+}
+.cesta_titulo {
+	FONT-FAMILY: Times New Roman,Arial, Verdana, Sans serif; COLOR: #3333ff; FONT-SIZE: 9pt; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.cesta_itens {
+	FONT-FAMILY: Times New Roman,Arial, Verdana, Sans serif; COLOR: #000000; FONT-SIZE: 9pt; FONT-WEIGHT: normal; TEXT-DECORATION: none
+}
+.pedido_titulo {
+	FONT-FAMILY: Times New Roman,Arial, Verdana, Sans serif; COLOR: #ffffff; FONT-SIZE: 10pt; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.link_pesq {
+	FONT-FAMILY: Verdana, Arial, Sans serif; COLOR: #990000; FONT-SIZE: 7.5pt; FONT-WEIGHT: normal; TEXT-DECORATION: none
+}
+.link_pesq A:hover {
+	COLOR: #ff9900; TEXT-DECORATION: none
+}
+.pesquisa_titulo {
+	FONT-FAMILY: Verdana, Arial,Sans serif; COLOR: #000000; FONT-SIZE: 12pt; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.link_forum1 {
+	FONT-FAMILY: Verdana, Arial, Sans serif; COLOR: #000000; FONT-SIZE: 11pt; FONT-WEIGHT: normal; TEXT-DECORATION: none
+}
+.link_forum1 A:hover {
+	COLOR: #a0a0a0; TEXT-DECORATION: none
+}
+.link_forum2 {
+	FONT-FAMILY: Verdana, Arial, Sans serif; COLOR: #3366cc; FONT-SIZE: 9pt; FONT-WEIGHT: normal; TEXT-DECORATION: none
+}
+.link_forum2 A:hover {
+	COLOR: #33ccff; TEXT-DECORATION: none
+}
+.link_azul A:hover {
+	COLOR: blue; TEXT-DECORATION: none
+}
+.campos {
+	BORDER-BOTTOM: #cccccc 1px solid; BORDER-LEFT: #cccccc 1px solid; BACKGROUND-COLOR: #ffffff; FONT-FAMILY: Verdana, Arial; HEIGHT: 19px; COLOR: #000000; FONT-SIZE: 8pt; BORDER-TOP: #cccccc 1px solid; BORDER-RIGHT: #cccccc 1px solid
+}
+UNKNOWN {
+	BACKGROUND-COLOR: #ffffff
+}
+.fundo01 {
+	BACKGROUND-COLOR: #fffff5
+}
+.fundo02 {
+	BACKGROUND-COLOR: #ebebe1
+}
+.fundo03 {
+	BACKGROUND-COLOR: #ebebe1
+}
+.fundo04 {
+	BACKGROUND-COLOR: #fffff5
+}
+.aceita {
+	BORDER-BOTTOM: #0e4370 1px solid; BORDER-LEFT: #5c8bb4 1px solid; BACKGROUND-COLOR: #1b5e98; WIDTH: 165px; HEIGHT: 20px; COLOR: #ffffff; FONT-SIZE: 12px; BORDER-TOP: #5c8bb4 1px solid; FONT-WEIGHT: bold; BORDER-RIGHT: #0e4370 1px solid
+}
