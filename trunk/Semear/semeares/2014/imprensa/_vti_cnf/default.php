@@ -6,7 +6,7 @@ vti_timecreated:TR|10 Apr 2014 23:49:06 -0000
 vti_title:SR|Semeares 2014 - Imprensa
 vti_extenderversion:SR|12.0.0.0
 vti_nexttolasttimemodified:TW|20 Jun 2014 19:06:54 -0000
-vti_backlinkinfo:VX|inscricao/default.php programacao/default.php default.php master.dwt imprensa/default.php local/default.php galeria/default.php contato/default.php default.htm sobre/default.php inscricao/cadastrar_semeares.php
+vti_backlinkinfo:VX|inscricao/default.php programacao/default.php default.php master.dwt imprensa/default.php local/default.php contato/default.php default.htm sobre/default.php inscricao/cadastrar_semeares.php
 vti_syncofs_ftp.isemear.com.br\:21/www:TW|20 May 2014 00:01:18 -0000
 vti_syncwith_ftp.isemear.com.br\:21/www:TX|20 May 2014 00:42:41 -0000
 vti_syncwith_ftp.isemear.com.br\:21/www/semeares/2014:TX|20 Jun 2014 18:40:57 -0000
