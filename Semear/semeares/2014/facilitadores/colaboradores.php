@@ -3,7 +3,7 @@
 
 <head>
 <!-- #BeginEditable "doctitle" -->
-<title>Semeares 2014 - Inscrição</title>
+<title>Colaboradores</title>
 <!-- #EndEditable -->
 <link href="../styles/style1.css" media="screen" rel="stylesheet" title="CSS" type="text/css" />
 <style type="text/css">
@@ -65,7 +65,7 @@
 <!--			<li><a href="inscricao/default.php">Inscrições</a></li>-->
 
 			<!--<li><a href="local/default.php">Local</a></li>-->
-            <li><a href="../facilitadores/colaboradores.php">Contato</a></li>
+            <li><a href="colaboradores.php">Contato</a></li>
             
 			<li><a href="../contato/default.php">Contato</a></li>
 		</ul>
@@ -78,122 +78,27 @@
 		<!-- Begin Left Column -->
 		<div id="column_l">
 			<!-- #BeginEditable "content" -->
+			<h2>Colaboradores</h2>
+			<p>Agradecemos imensamente os que nos ajudaram a realizar o projeto de filmar o evento fazendo doações para o CrowdFounding</p>
+            
+            Vera Lucia Nogueira Ferreira      <br>
+Maria Jose Passos                 <br>
+Ricardo Munhoz                    <br>
+Rafaela Caldeira Camilo Xavier    <br>
+Anna Lúcia Andrade Silva          <br>
+Marcel Felipe N. F. Santos        <br>
+Marcos de Alvarenga Mudado        <br>
+Andrea Rodacki                    <br>
+José Etore De Conti               <br>
+Michelle Midori Tiba              <br>
+Éverton da silva viana            <br>
+Francisco Benyunes                <br>
+Leandro Gouvêa                    <br>
+Ricardo Hamad                     <br>
+André Oliveira de Guadalupe       <br>
+Larissa Moreira Costa             <br>
 
-
-			
-			<form method="post" name="dados" action="cadastrar_semeares.php" onSubmit="return enviardados();" >
-			<br>
-			<table border="0">
-<tr>
-   <td>Nome completo *:</td>
-  
-</tr>
-<tr>
-   <td><input type="text" size="80" name="nome" maxlength="100"></td>
-   
-</tr>
-
-<tr>
-   <td>Email *:</td>
-   
-   
-</tr>
-<tr>
-   <td><input type="text" size="80" name="email" maxlength="100"></td>
-  
-</tr>
-
-<tr>
-   <td>Idade *:</td>
-   
-   
-</tr>
-<tr>
-   <td><input type="text" size="80" name="age" maxlength="100"></td>
-  
-</tr>
-
-<tr>
-   <td>Sexo *:</td>
-   
-   
-</tr>
-<tr>
-   <td><select name="gender">
-<option value="M">Masculino</option>
-<option value="F">Feminino</option>
-</select></td>
-  
-</tr>
-
-
-<tr>
-   <td>telefone(DD-XXXXX.XXXX):</td>
-   
-</tr>
-<tr>
-   <td><input type="text" size="11" name="telefone" maxlength="13" OnKeyUp="mascaraFone(this);"  onkeypress="return somenteNumeros(event);" ></td>
-    
-</tr>
-
-<tr>
-   <td>&nbsp;</td>
-</tr>
-
-<tr>
-   <td>Instituição</td>
-   
-</tr>
-<tr>
-   <td><input type="text" size="30" name="escola" maxlength="100"></td>
-   
-</tr>
-
-<tr>
-   <td>&nbsp;</td>
-</tr>
-<tr>
-   <td>Por que deseja participar do quarto Semeares ?</td>
-   
-</tr>
-<tr>
-   <td>
-   <select name="motivo">
-<option value="Conhecer">Conhecer o Instituto Semear</option>
-<option value="Tema">Ouvir sobre o Tema</option>
-<option value="Palestrante">Ouvir um Palestrante</option>
-<option value="Outro">Outro</option>
-</select>
-<br>
-Informações adicionais:<br>
-   <input type="text" size="30" name="motivo2" maxlength="300" style="width: 301px; height: 134px"></td>
-   
-</tr>
-
-<tr>
-   <td>&nbsp;</td>
-</tr>
-
-<tr>
-   <td>Deseja receber certificado:</td>
-   
-   
-</tr>
-<tr>
-   <td><select name="certification">
-<option value="1">Sim</option>
-<option value="0">Não</option>
-</select></td>
-  
-</tr>
-
-
-</table>
-<input type="submit" value="Cadastrar">
-<br/> * Lembre-se de levar um quilo de alimento no dia do evento
-</form>
-
-(*) Campos Obrigatórios
+            
 			<!-- #EndEditable --></div>
 		<!-- End Left Column -->
 		<!-- Begin Right Column -->
@@ -208,10 +113,10 @@ Informações adicionais:<br>
 <div id="footer">
 		<!--<h5>Patrocinador</h5>-->
 		<h5>Parceria</h5>	
-		<img src="../facilitadores/images/Dello.gif" class="facil">
-		<img src="../facilitadores/images/PaperMate.jpg" class="facil">
-		<img src="../facilitadores/images/cabrillano.jpg"  class="facil">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<img src="../facilitadores/images/Eventick.png"  class="facilmenor">
+		<img src="images/Dello.gif" class="facil">
+		<img src="images/PaperMate.jpg" class="facil">
+		<img src="images/cabrillano.jpg"  class="facil">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<img src="images/Eventick.png"  class="facilmenor">
 		
 		<table align="center">
 		<tr>
@@ -225,16 +130,16 @@ Informações adicionais:<br>
 		<tr>
 		<td class="style1">
 
-		<img src="../facilitadores/images/sygma.jpg"  class="facil">
+		<img src="images/sygma.jpg"  class="facil">
 		</td>
 		<td class="style1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;</td>
 		<td class="style1">
 
-		<img src="../facilitadores/images/HenriqueFerro.png"  class="facilmenor">
+		<img src="images/HenriqueFerro.png"  class="facilmenor">
 		</td>
 		<td class="style1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;</td>
 		<td class="style1">
-		<img src="../facilitadores/images/CVB.jpg"  class="facil">
+		<img src="images/CVB.jpg"  class="facil">
 		</td>
 		
 		</tr>
@@ -244,23 +149,23 @@ Informações adicionais:<br>
 		
 		<table align="center">
 		<tr>
-		<td class="style1"><img src="../facilitadores/images/vicentina.png" class="facil"></td>
+		<td class="style1"><img src="images/vicentina.png" class="facil"></td>
 		
-		<td class="style1"><img src="../facilitadores/images/casd.png"  class="facil"></td>
-		<td class="style1"><img src="../facilitadores/images/colegioriobranco.jpg"  class="facil"></td>
-		<td class="style1"><img src="../facilitadores/images/Marca-Fatos.jpg"  class="facil"></td>
+		<td class="style1"><img src="images/casd.png"  class="facil"></td>
+		<td class="style1"><img src="images/colegioriobranco.jpg"  class="facil"></td>
+		<td class="style1"><img src="images/Marca-Fatos.jpg"  class="facil"></td>
 
 		</tr>
 		<tr>
-		<td class="style1"><img src="../facilitadores/images/institutoembraer.jpg"  class="facil"></td>
-		<td class="style1"><img src="../facilitadores/images/pwc.jpg"  class="facil"></td>
-		<td class="style1"><img src="../facilitadores/images/sesc.jpg"  class="facil"></td>
-		<td class="style1"><img src="../facilitadores/images/wallaby.jpg"  class="facil"></td>
-		<td class="style1"><img src="../facilitadores/images/TARPON.jpg"  class="facilmenor"></td>
+		<td class="style1"><img src="images/institutoembraer.jpg"  class="facil"></td>
+		<td class="style1"><img src="images/pwc.jpg"  class="facil"></td>
+		<td class="style1"><img src="images/sesc.jpg"  class="facil"></td>
+		<td class="style1"><img src="images/wallaby.jpg"  class="facil"></td>
+		<td class="style1"><img src="images/TARPON.jpg"  class="facilmenor"></td>
 		
 		</tr>
 		<tr>
-		<td class="style1"><img src="../facilitadores/images/LRNG.jpg"  class="facil"></td>
+		<td class="style1"><img src="images/LRNG.jpg"  class="facil"></td>
 		</tr>
 		
 		</table>
@@ -279,12 +184,12 @@ Informações adicionais:<br>
 		<tr>
 		<td class="style1">
 
-		<img src="../facilitadores/images/semear.png"  class="facil">
+		<img src="images/semear.png"  class="facil">
 		</td>
 		<td class="style1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;</td>
 		<td class="style1">
 
-		<img src="../facilitadores/images/cge.jpg"  class="facil">
+		<img src="images/cge.jpg"  class="facil">
 
 		</td>
 	

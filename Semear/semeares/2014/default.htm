@@ -1,7 +1,5 @@
-ï»¿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
 
-<!-- #BeginTemplate "master.dwt" -->
+<html><!-- #BeginTemplate "master.dwt" --><!-- DW6 -->
 
 <head>
 <!-- #BeginEditable "doctitle" -->
@@ -9,7 +7,6 @@
 <!-- #EndEditable -->
 <link href="styles/style1.css" media="screen" rel="stylesheet" title="CSS" type="text/css" />
 <style type="text/css">
-
 .style1 {
 	font-size: xx-small;
 }
@@ -61,12 +58,15 @@
 	<div id="navigation">
 		<ul>
 			<li><a href="default.htm">Home</a></li>
-			<li><a href="programacao/default.php">ProgramaÃ§Ã£o</a></li>
-			<li><a href="palestrantes/default.php">Palestrantes</a></li>
+			<li><a href="programacao/default.php">Programação</a></li>
+			<li><a href="palestrantes/default.php">Palestantes</a></li>
 			<li><a href="sobre/default.php">Sobre o Instituto</a></li>
 			<!--<li><a href="galeria/default.php">Galeria</a></li>-->
-			<li><a href="inscricao/default.php">InscriÃ§Ãµes</a></li>
-			<li><a href="local/default.php">Local</a></li>
+<!--			<li><a href="inscricao/default.php">Inscrições</a></li>-->
+
+			<!--<li><a href="local/default.php">Local</a></li>-->
+            <li><a href="facilitadores/colaboradores.php">Contato</a></li>
+            
 			<li><a href="contato/default.php">Contato</a></li>
 		</ul>
 	</div>
@@ -81,30 +81,30 @@
 			
 			<p>
 Evento organizado pelo Instituto Semear, tem por objetivo disseminar os valores
-da instituiÃ§Ã£o, consolidar o relacionamento entre os bolsistas, difundir ideias, cultivar redes de
-contatos, inspirar, motivar e conscientizar jovens e sociedade em busca de uma transformaÃ§Ã£o
-positiva da coletividade, como tambÃ©m colher novos colaboradores para este cÃ­rculo virtuoso.
+da instituição, consolidar o relacionamento entre os bolsistas, difundir ideias, cultivar redes de
+contatos, inspirar, motivar e conscientizar jovens e sociedade em busca de uma transformação
+positiva da coletividade, como também colher novos colaboradores para este círculo virtuoso.
 </p>
 <p>
-Reunir em um Ãºnico dia e local, no palco e na plateia, pessoas que estÃ£o transformando o mundo
-com suas ideias e, com isso, inspirar a sociedade de SÃ£o JosÃ© dos Campos e do Vale do ParaÃ­ba a
-implementar aÃ§Ãµes que mudem positivamente a realidade ao seu redor.
+Reunir em um único dia e local, no palco e na plateia, pessoas que estão transformando o mundo
+com suas ideias e, com isso, inspirar a sociedade de São José dos Campos e do Vale do Paraíba a
+implementar ações que mudem positivamente a realidade ao seu redor.
 </p>
  <p>
 Inspirado no modelo TED/TEDx, com palestras curtas de 15 minutos, ministradas por pessoas com
-propostas prÃ¡ticas e histÃ³rias reconhecidas como modelo de inspiraÃ§Ã£o para a sociedade, a quarta
-ediÃ§Ã£o do SemeAres promoverÃ¡ um grande encontro entre os bolsistas do Instituto Semear,
-universitÃ¡rios, lideres engajados e grandes empreendedores para debater o tema â€œAtitude
-Empreendedoraâ€.
+propostas práticas e histórias reconhecidas como modelo de inspiração para a sociedade, a quarta
+edição do SemeAres promoverá um grande encontro entre os bolsistas do Instituto Semear,
+universitários, lideres engajados e grandes empreendedores para debater o tema “Atitude
+Empreendedora”.
  </p>
 <h4>Objetivos</h4>
 
 <ul>
-<li>Difundir as aÃ§Ãµes e valores do Instituto Semear.</li>
-<li>Atrair novos voluntÃ¡rios para atuar como colaboradores e mentores da instituiÃ§Ã£o.</li>
-<li>Promover contato com pessoas, empresas e instituiÃ§Ãµes sensibilizadas com a proposta da 
-instituiÃ§Ã£o.</li>
-<li>Inspirar e motivar a sociedade em geral na implementaÃ§Ã£o de aÃ§Ãµes que mudem 
+<li>Difundir as ações e valores do Instituto Semear.</li>
+<li>Atrair novos voluntários para atuar como colaboradores e mentores da instituição.</li>
+<li>Promover contato com pessoas, empresas e instituições sensibilizadas com a proposta da 
+instituição.</li>
+<li>Inspirar e motivar a sociedade em geral na implementação de ações que mudem 
 positivamente a realidade em seu redor.</li>
 	</ul>
 		
@@ -132,9 +132,9 @@ positivamente a realidade em seu redor.</li>
 		
 		<table align="center">
 		<tr>
-		<td><h5>PatrocÃ­nio Prata</h5></td>
+		<td><h5>Patrocínio Prata</h5></td>
 		<td class="style1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;</td>
-		<td><h5>ColaboraÃ§Ã£o</h5></td>
+		<td><h5>Colaboração</h5></td>
 				<td class="style1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;</td>
 		<td><h5>Apoio</h5></td>
 		</tr>
@@ -212,7 +212,7 @@ positivamente a realidade em seu redor.</li>
 
 
 			
-		<p><strong>Copyright Â© Semear. All Rights Reserved.</strong></p>
+		<p><strong>Copyright © Semear. All Rights Reserved.</strong></p>
 	</div>
 	<!-- End Footer --></div>
 <!-- End Container -->
@@ -220,6 +220,4 @@ positivamente a realidade em seu redor.</li>
 <div id="includedContent"></div>
 </body>
 
-<!-- #EndTemplate -->
-
-</html>
+<!-- #EndTemplate --></html>

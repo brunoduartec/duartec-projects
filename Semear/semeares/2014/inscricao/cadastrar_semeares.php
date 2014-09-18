@@ -1,7 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
 
-<!-- #BeginTemplate "../master.dwt" -->
+<html><!-- #BeginTemplate "../master.dwt" --><!-- DW6 -->
 
 <head>
 <!-- #BeginEditable "doctitle" -->
@@ -9,7 +7,6 @@
 <!-- #EndEditable -->
 <link href="../styles/style1.css" media="screen" rel="stylesheet" title="CSS" type="text/css" />
 <style type="text/css">
-
 .style1 {
 	font-size: xx-small;
 }
@@ -62,11 +59,14 @@
 		<ul>
 			<li><a href="../default.htm">Home</a></li>
 			<li><a href="../programacao/default.php">Programação</a></li>
-			<li><a href="../palestrantes/default.php">Palestrantes</a></li>
+			<li><a href="../palestrantes/default.php">Palestantes</a></li>
 			<li><a href="../sobre/default.php">Sobre o Instituto</a></li>
 			<!--<li><a href="galeria/default.php">Galeria</a></li>-->
-			<li><a href="default.php">Inscrições</a></li>
-			<li><a href="../local/default.php">Local</a></li>
+<!--			<li><a href="inscricao/default.php">Inscrições</a></li>-->
+
+			<!--<li><a href="local/default.php">Local</a></li>-->
+            <li><a href="../facilitadores/colaboradores.php">Contato</a></li>
+            
 			<li><a href="../contato/default.php">Contato</a></li>
 		</ul>
 	</div>
@@ -186,33 +186,23 @@ if (getenv("REQUEST_METHOD") == "POST") {
 		
 		<table align="center">
 		<tr>
-		<td class="style1">
-		<img src="../facilitadores/images/vicentina.png" class="facil"></td>
+		<td class="style1"><img src="../facilitadores/images/vicentina.png" class="facil"></td>
 		
-		<td class="style1">
-		<img src="../facilitadores/images/casd.png"  class="facil"></td>
-		<td class="style1">
-		<img src="../facilitadores/images/colegioriobranco.jpg"  class="facil"></td>
-		<td class="style1">
-		<img src="../facilitadores/images/Marca-Fatos.jpg"  class="facil"></td>
+		<td class="style1"><img src="../facilitadores/images/casd.png"  class="facil"></td>
+		<td class="style1"><img src="../facilitadores/images/colegioriobranco.jpg"  class="facil"></td>
+		<td class="style1"><img src="../facilitadores/images/Marca-Fatos.jpg"  class="facil"></td>
 
 		</tr>
 		<tr>
-		<td class="style1">
-		<img src="../facilitadores/images/institutoembraer.jpg"  class="facil"></td>
-		<td class="style1">
-		<img src="../facilitadores/images/pwc.jpg"  class="facil"></td>
-		<td class="style1">
-		<img src="../facilitadores/images/sesc.jpg"  class="facil"></td>
-		<td class="style1">
-		<img src="../facilitadores/images/wallaby.jpg"  class="facil"></td>
-		<td class="style1">
-		<img src="../facilitadores/images/TARPON.jpg"  class="facilmenor"></td>
+		<td class="style1"><img src="../facilitadores/images/institutoembraer.jpg"  class="facil"></td>
+		<td class="style1"><img src="../facilitadores/images/pwc.jpg"  class="facil"></td>
+		<td class="style1"><img src="../facilitadores/images/sesc.jpg"  class="facil"></td>
+		<td class="style1"><img src="../facilitadores/images/wallaby.jpg"  class="facil"></td>
+		<td class="style1"><img src="../facilitadores/images/TARPON.jpg"  class="facilmenor"></td>
 		
 		</tr>
 		<tr>
-		<td class="style1">
-		<img src="../facilitadores/images/LRNG.jpg"  class="facil"></td>
+		<td class="style1"><img src="../facilitadores/images/LRNG.jpg"  class="facil"></td>
 		</tr>
 		
 		</table>
@@ -255,6 +245,4 @@ if (getenv("REQUEST_METHOD") == "POST") {
 <div id="includedContent"></div>
 </body>
 
-<!-- #EndTemplate -->
-
-</html>
+<!-- #EndTemplate --></html>

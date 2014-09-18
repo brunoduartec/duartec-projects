@@ -1,7 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
 
-<!-- #BeginTemplate "../master.dwt" -->
+<html><!-- #BeginTemplate "../master.dwt" --><!-- DW6 -->
 
 <head>
 <!-- #BeginEditable "doctitle" -->
@@ -9,9 +7,13 @@
 <!-- #EndEditable -->
 <link href="../styles/style1.css" media="screen" rel="stylesheet" title="CSS" type="text/css" />
 <style type="text/css">
-
 .style1 {
 	font-size: xx-small;
+}
+.style2 {
+	font-family: "Univers LT Std 39 Thin UltraCn";
+	font-size: xx-large;
+	color: #000000;
 }
 </style>
 
@@ -57,11 +59,14 @@
 		<ul>
 			<li><a href="../default.htm">Home</a></li>
 			<li><a href="../programacao/default.php">Programação</a></li>
+			<li><a href="../palestrantes/default.php">Palestantes</a></li>
 			<li><a href="../sobre/default.php">Sobre o Instituto</a></li>
-			<li><a href="../imprensa/default.php">Financiamento Coletivo</a></li>
 			<!--<li><a href="galeria/default.php">Galeria</a></li>-->
-			<li><a href="../inscricao/default.php">Inscrições</a></li>
-			<li><a href="../local/default.php">Local</a></li>
+<!--			<li><a href="inscricao/default.php">Inscrições</a></li>-->
+
+			<!--<li><a href="local/default.php">Local</a></li>-->
+            <li><a href="../facilitadores/colaboradores.php">Contato</a></li>
+            
 			<li><a href="../contato/default.php">Contato</a></li>
 		</ul>
 	</div>
@@ -73,27 +78,10 @@
 		<!-- Begin Left Column -->
 		<div id="column_l">
 			<!-- #BeginEditable "content" -->
-			<h2>Galeria</h2>
-			<script language="JavaScript">
- var i = 0; var path = new Array(); 
- // LIST OF IMAGES 
- path[0] = "..\\images\\bkg.png";
- path[1] = "..\\images\\logo.gif";
- path[2] = "..\\images\\bkg.png";
- function swapImage()
- { 
- document.slide.src = path[i];
- if(i < path.length - 1)
- i++; 
- else 
- i = 0;
- setTimeout("swapImage()",3000);
- } 
- window.onload=swapImage; 
- 
- </script> 
- 
- <img height="200" name="slide" src="image_1.gif" width="400" />
+			<h2>Galeria</h2><br>
+            <div align="center">
+<embed type="application/x-shockwave-flash" src="https://photos.gstatic.com/media/slideshow.swf" width="600" height="400" flashvars="host=picasaweb.google.com&captions=1&hl=pt_BR&feat=flashalbum&RGB=0x000000&feed=https%3A%2F%2Fpicasaweb.google.com%2Fdata%2Ffeed%2Fapi%2Fuser%2F116838822808140834254%2Falbumid%2F6057432222298261377%3Falt%3Drss%26kind%3Dphoto%26authkey%3DGv1sRgCOSalMySm73CuAE%26hl%3Dpt_BR" pluginspage="http://www.macromedia.com/go/getflashplayer"></embed>
+			</div>
 			<!-- #EndEditable --></div>
 		<!-- End Left Column -->
 		<!-- Begin Right Column -->
@@ -110,56 +98,91 @@
 		<h5>Parceria</h5>	
 		<img src="../facilitadores/images/Dello.gif" class="facil">
 		<img src="../facilitadores/images/PaperMate.jpg" class="facil">
+		<img src="../facilitadores/images/cabrillano.jpg"  class="facil">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<img src="../facilitadores/images/Eventick.png"  class="facilmenor">
+		
+		<table align="center">
+		<tr>
+		<td><h5>Patrocínio Prata</h5></td>
+		<td class="style1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;</td>
+		<td><h5>Colaboração</h5></td>
+				<td class="style1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;</td>
+		<td><h5>Apoio</h5></td>
+		</tr>
+		
+		<tr>
+		<td class="style1">
+
+		<img src="../facilitadores/images/sygma.jpg"  class="facil">
+		</td>
+		<td class="style1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;</td>
+		<td class="style1">
+
+		<img src="../facilitadores/images/HenriqueFerro.png"  class="facilmenor">
+		</td>
+		<td class="style1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;</td>
+		<td class="style1">
+		<img src="../facilitadores/images/CVB.jpg"  class="facil">
+		</td>
+		
+		</tr>
+		</table>
+		
 		<h5>Apoio Institucional</h5>
 		
 		<table align="center">
 		<tr>
-		<td class="style1">
-		<img src="../facilitadores/images/vicentina.png" class="facil"></td>
+		<td class="style1"><img src="../facilitadores/images/vicentina.png" class="facil"></td>
 		
-		<td class="style1">
-		<img src="../facilitadores/images/casd.png"  class="facil"></td>
-		<td class="style1">
-		<img src="../facilitadores/images/colegioriobranco.jpg"  class="facil"></td>
-		<td class="style1">
-		<img src="../facilitadores/images/Marca-Fatos.jpg"  class="facil"></td>
-		<td class="style1">
-		<img src="../facilitadores/images/sygma.jpg"  class="facil"></td>
+		<td class="style1"><img src="../facilitadores/images/casd.png"  class="facil"></td>
+		<td class="style1"><img src="../facilitadores/images/colegioriobranco.jpg"  class="facil"></td>
+		<td class="style1"><img src="../facilitadores/images/Marca-Fatos.jpg"  class="facil"></td>
+
 		</tr>
 		<tr>
-		<td class="style1">
-		<img src="../facilitadores/images/institutoembraer.jpg"  class="facil"></td>
-		<td class="style1">
-		<img src="../facilitadores/images/pwc.jpg"  class="facil"></td>
-		<td class="style1">
-		<img src="../facilitadores/images/sesc.jpg"  class="facil"></td>
-		<td class="style1">
-		<img src="../facilitadores/images/wallaby.jpg"  class="facil"></td>
-		<td class="style1">
-		<img src="../facilitadores/images/TARPON.jpg"  class="facilmenor"></td>
+		<td class="style1"><img src="../facilitadores/images/institutoembraer.jpg"  class="facil"></td>
+		<td class="style1"><img src="../facilitadores/images/pwc.jpg"  class="facil"></td>
+		<td class="style1"><img src="../facilitadores/images/sesc.jpg"  class="facil"></td>
+		<td class="style1"><img src="../facilitadores/images/wallaby.jpg"  class="facil"></td>
+		<td class="style1"><img src="../facilitadores/images/TARPON.jpg"  class="facilmenor"></td>
 		
 		</tr>
 		<tr>
-		<td class="style1">
-		<img src="../facilitadores/images/LRNG.jpg"  class="facil"></td>
+		<td class="style1"><img src="../facilitadores/images/LRNG.jpg"  class="facil"></td>
 		</tr>
 		
 		</table>
 		
-		<h5>Apoio Semeares</h5>
+		
+		</table>
+
 		<table align="center">
 		<tr>
+		<td><h5>Realizador</h5></td>
+		<td class="style1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;</td>
+		<td><h5>Organizador</h5></td>
+				
+		</tr>
+		
+		<tr>
+		<td class="style1">
+
+		<img src="../facilitadores/images/semear.png"  class="facil">
+		</td>
+		<td class="style1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;</td>
+		<td class="style1">
+
+		<img src="../facilitadores/images/cge.jpg"  class="facil">
+
+		</td>
 	
-		<td class="style1" >
-		<img src="../facilitadores/images/cabrillano.png"  class="facil"></td>
+		</td>
 		
 		</tr>
 		</table>
 
-		<h5>Realizador</h5>
-		<img src="../facilitadores/images/semear.png"  class="facil">
-		<h5>Organizador:</h5> 
-		<img src="../facilitadores/images/cge.jpg"  class="facil">		
+
+			
 		<p><strong>Copyright © Semear. All Rights Reserved.</strong></p>
 	</div>
 	<!-- End Footer --></div>
@@ -168,6 +191,4 @@
 <div id="includedContent"></div>
 </body>
 
-<!-- #EndTemplate -->
-
-</html>
+<!-- #EndTemplate --></html>
