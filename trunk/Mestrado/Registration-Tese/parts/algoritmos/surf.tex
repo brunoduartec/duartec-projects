@@ -1,0 +1,13 @@
+\subsection{SURF}
+
+Em comparação com o algoritmo SIFT que aproxima Laplacianas de Gaucinas de
+Diferencas de Gaucianas, SURF aproxima LoG de Box Filter, o que garante que mais 
+agilidade nos resultados porque a convolução com box 
+filters são muito mais rápidos com o uso de integral images e pode ser paralelizado
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=1.0]{images/SURF01}
+\caption{Box Filtering}
+\label{fig:surf01}
+\end{figure}
