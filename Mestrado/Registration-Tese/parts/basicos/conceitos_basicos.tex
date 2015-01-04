@@ -1,0 +1,159 @@
+\section{Realidade Aumentada}
+A realidade aumentada é uma técnica de visão computacional em que valendo-se de artefatos do mundo real tem por objetivo causar sensação de imersão do usuário em um ambiente aumentado por artefatos virtuais, ao contrário de ambientes puramente virtuais como é comum em aplicações de realidade virtual.
+Idealmente o mundo virtual se torna imersivo o suficiente para que o usuário não consiga distinguir o real do virtual.
+Alguns autores definem AR como tendo a necessidade de utilizar-se interfaces visuais portáteis para que a usabilidade tenha mais coerência com a proposta inicial de garantir uma experiência imersiva.
+As imagens são obtidas por câmeras e o resultado apresentado em dispositivos como projetores ou displays como monitores, tablets ou head-mounted display (HMD).
+\section{Head-Mounted Displays}
+É um equipamento utilizado na cabeça de forma que as duas mãos do usuário fiquem livres e tem por objetivo exibir imagens e áudio, sendo uma interface muito utilizada tanto em RV quanto em RA.
+Os HMD basicamente são dispositivos constituídos de duas telas posicionadas frente ao olho do usuário.
+Com duas telas, a tecnologia pode ser empregada para exibir imagens estereoscópicas apresentando os respectivos pontos de vista de cada olho para cada tela, o que contribui em muito na experiência de imersão.
+Os HMDs funcionam também como dispositivos de entrada de dados, porque contém sensores de rastreamento que medem a posição e orientação da cabeça, transmitindo esses dados ao computador.
+Existem dois tipos de HMDs: Feed-Through e See-Through
+\subsection{Feed-Through}
+São dispositivos que é um sistema fechado de visualização de imagens, em que o usuário consegue enxergar somente o que é mostrado no display, sendo assim o resultado apresentado é sempre a soma da imagem real com informações superpostas
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.8]{images/feedthrough}
+\caption{Arquitetura do Feed-Trough.}
+\label{fig:feedthrough}
+\end{figure}
+
+
+\subsection{See-Through}
+São dispositivos construídos com lentes translúcidas em que o usuário enxerga o mundo real e com algum tipo de sistema que sobrepoe na lente as informações adicionais
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.8]{images/seethrough}
+\caption{Arquitetura do See-Trough.}
+\label{fig:seethrough}
+\end{figure}
+
+
+\subsection{Projetores}
+O uso de projetores possibilita uma abordagem de realidade aumentada diferente porque pode ser utilizada para cobrir superfícies largas, projetando sobre objetos como carros, pessoas, prédios, etc….
+Um problema dessa abordagem é que a calibração se faz necessária em várias situações.
+
+\subsection{Monitores}
+O uso de monitores reduz bastante o custo da aplicação apesar de ter perda de imersão por ser um método de visualização indireta, o que implica o usuário ficar olhando na direção do monitor, entretanto existe a possibilidade de compartilhar os resultados da RA com mais de uma pessoa ao mesmo tempo.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.7]{images/monitores}
+\caption{Realidade Aumentada com projetores.}
+\label{fig:monitores}
+\end{figure}
+
+\section{Modos de Aquisição}
+
+As imagens utilizadas como entrada para os algoritmos podem ser adquiridas de diversas formas.
+\subsection{Multiview}
+Imagens da mesma cena capturadas de pontos de vista diferentes
+
+\subsection{Multitemporal}
+Imagens da mesma cena capturados em momentos diferentes.
+\subsection{Multimodal}
+Imagens da mesma cena capturados por sensores diferentes para integrar informações de diferentes fontes e assim ter um representação mais detalhada do ambiente.
+
+\subsection{Cena para o Modelo}
+Imagens do mundo real com mundo virtual são capturadas para encontrar imagens no modelo e compará-las
+
+
+
+\section{Características Locais}
+Características locais são padrões em imagens que diferenciam de seu vizinho imediato, geralmente é caracterizada por mudanças em propriedades das imagens ou diversas propriedades simultanamente. As propriedades mais comuns são intensidade, cor e texturas.
+
+\subsection{Propriedades da Característica Local ideal}
+Algoritmos de reconhecimento baseam-se em comparação de características recuperadas da cena. A recuperação e comparação de pontos tem um custo computacional relevante perto do tempo de execução da aplicação, portanto selecionar o menor número possível de características aumenta o desempenho e diminui o tempo de resposta da aplicação.
+Garantir que estamos selecionando boas características pode ser crucial na eficácia do reconhecimento.
+Segundo [19] , boas características devem ter as seguintes propriedades:
+
+\begin{itemize}
+	\item Repetibilidade: Dadas duas imagens do mesmo objeto ou cena, tomadas em condições ou pontos de vista diferentes, uma porcentagem alta de características deve ser reconhecidas se estiverem visíveis.
+	\item Distinção: Os padrões reconhecidos têm de ser possíveis de serem distinguidos entre si para facilitar o casamento.
+	\item Localidade: As características devem ser locais para reduzir a probabilidade de oclusão**
+	\item Quantidade: O número de pontos detectados tem que ser o suficiente para que mesmo objetos pequenos tenham minimamente características que possam ser localizados e para que o objeto possa sofrer oclusão e ainda assim seja reconhecido.
+	\item Acurácia: As características detectadas tem que ser localizadas com o máximo de acurácia possível com respeito tanto referente à posição quanto à escala.
+	\item Eficiência:De preferência  a detecção deve ser o mais rápido possível.
+\end{itemize}
+
+\subsection{Features}
+Antes de compreender como é feito o reconhecimento e registro de imagens é importante nos perguntar como nós conseguimos reconhecer objetos em uma cena, como conseguimos comparar facilmente objetos em duas imagens distintas. Somos treinados desde cedo a diferenciar formas geométricas, perceber escalas diferentes ou mesmo reconhecer o mesmo objeto independente de como está posicionado na cena buscando padrões que categorizem e diferenciem o objeto. Instintivamente conseguimos reconhecer boas características e localizar objetos.
+Na imagem~\ref{fig:padroes} temos uma imagem de um prédio e seis recortes, dos quais
+conseguimos facilmente reconhecer com precisão a de letra E e F, as de letra A,B,C,D podemos identificar possíveis localizações mas não podemos dizer com certeza onde estão na imagem.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=1.0]{images/features}
+\caption{Reconhecimento de padrões.}
+\label{fig:padroes}
+\end{figure}
+
+As características E e F são o que chamamos de good features pois o nível de
+certeza é bem alto.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=1.0]{images/featuresregioes}
+\caption{Regiões de reconhecimento de padrões.}
+\label{fig:featuresregioes}
+\end{figure}
+
+A Imagem~\ref{fig:featuresregioes} ilustra os tipos de características. A região
+azul não possibilita diferenciar onde está na imagem, a região preta pode ser confundida com qualquer uma das regiões ao deslocarmos horizontalmente, a imagem vermelha nos possibilita diferenciar e reconhecer o canto da imagem verde com precisão milimétrica.
+Podemos então concluir que uma característica é boa para ser utilizada como parâmetro de entrada para algoritmos de reconhecimento, quanto maior foi o nível de certeza da sua localização, o que facilita o Feature Detection.
+Para localizar o mesmo objeto em outra imagem é necessário identificarmos a região onde se encontra, caso contrário no exemplo da imagem X seria impossível localizar uma janela específica. Tal descrição de contexto é chamada de Feature Description. Uma vez de posse da característica e do seu contexto é possível reconhecer o objeto de fato.
+
+\section{Camera}
+As câmeras de baixo custo vendidas atualmente introduzem diversos erros de distorção. Dois dos maiores são as distorções radiais e as distorções tangenciais.
+Devido a distorções radiais, linhas retas vão parecer curvadas e tal efeito tende a aumentar quanto mais o ponto se distancia do centro da imagem. Na prática essas distorções são pequenas e podem ser caracterizadas pelos primeiros termos de uma expansão da série de Tailor.
+\subsection{Distorção Radial}
+Distorções radiais são mais associadas a lentes de grandes ângulos, em particular zoom wide-angles. Esse efeito resulta em imagens esforzadas, o que significa que as arestas da imagem  vão aparecer curvadas a olho humano. 
+A distorção é resultado da fabricação por ser bem mais barato e prático produzir lentes esféricas do que lentes mais matematicamente ideais com perfis parabólicos.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.8]{images/radial01}
+\caption{Distorção radial.}
+\label{fig:radial01}
+\end{figure}
+
+A imagem~\ref{fig:radial02} mostra como o deslocamento de um retângulo devido à distorção
+radial, mais acentuado quanto mais próximo das bordas da imagem.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.8]{images/radial02}
+\caption{Componentes de Distorção radial.}
+\label{fig:radial02}
+\end{figure}
+
+\subsection{Distorção Tangencial}
+Essa distorção se deve a defeitos de manufatura causadas pelo fato de o plano da lente não ser totalmente paralelo ao plano da imagem. 
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.8]{images/tangencial01}
+\caption{Distorção tangencial.}
+\label{fig:tangencial01}
+\end{figure}
+
+A imagem~\ref{fig:tangencial02} mostra o efeito da distorção tangencial em um
+grid de pontos retangular. Os pontos se deslocam deforma eliptica quanto mais próximos da borda.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.8]{images/tangencial01}
+\caption{Componentes de Distorção tangencial.}
+\label{fig:tangencial02}
+\end{figure}
+
+
+
+\input{parts/basicos/camera}
+\input{parts/basicos/reconhecimento}
+
+
+
+

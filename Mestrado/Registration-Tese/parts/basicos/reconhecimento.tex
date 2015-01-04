@@ -1,0 +1,44 @@
+\section{Reconhecimento}
+É a etapa em que padrões são identificados e comparados para posteriormente identificar objetos
+
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=1.0]{images/reconhecimento}
+\caption{Ilustração do procedimento de reconhecimento com features locais.}
+\label{fig:reconhecimento}
+\end{figure}
+
+Pipeline de reconhecimento como ilustrado na imagem~\ref{fig:reconhecimento} :
+\begin{itemize}
+	\item Encontrar um grupo de keypoints distintos
+	\item Definir uma região em torno de cada keypoint 
+	\item Extrair e normalizar o conteúdo da região
+	\item Calcular um descritor para a região normalizada
+	\item Encontrar correspondências de descritores.  
+\end{itemize}
+
+\subsection{Detecção de características}
+O primeiro passo para o reconhecimento de objetos é a detecção de características.Para que possa ser feita a comparação da
+ imagem referencia com a imagem sentida. A abstração de informações a ser reconhecida tem que ser suficiente para lidar 
+ com escalas diferentes, rotações entre as imagens, e pequenas distorções.
+Para que o reconhecimento seja eficiente e eficaz são necessários que uma massa de pontos mínima seja selecionada e feita
+ a correspondência entre as imagens sentidas e referência.
+As características utilizadas são em geral cantos, linhas, curvas, padrões ou regiões.
+O tipo de característica selecionada é dependente do tipo de imagem provida. Imagens de cenas
+ feitas a mão geralmente são compostas de segmentos de retas enquanto imagens de satélite são geralmente compostas de 
+ contornos e regiões.
+Quanto mais invariantes forem as características encontradas, mais robusto e preciso é o processo de comparação.
+
+\subsection{Feature matching}
+A fase de correspondência de características é feita tanto selecionando características na imagem referência e procurando a 
+correspondente na imagem sentida ou mesmo selecionando características nas duas imagens independentemente e procurando a 
+correspondência entre elas.
+Quando a característica selecionada não for do tipo ponto, é importante para cada par de correspondências, pelo menos uma 
+ponto ser determinado para que seja utilizado para determinar posteriormente os parâmetros de transformação. Por exemplo, 
+se forem selecionados padrões como tipo de característica, o centro do padrão é considerado o ponto, se for selecionado 
+uma região, o centro de massa da região é o ponto de apoio, se linhas forem tomadas como tipo de característica, devem 
+ser tomados intersecções como ponto de apoio e finalmente se forem selecionadas curvas, os máximos locais são considerados
+ os pontos correspondentes.
+ 
+ \input{parts/algoritmos/algoritmos}

@@ -1,0 +1,70 @@
+\subsection{SIFT - Scale-Invariant Feature Transform}
+
+Método baseado em detecção de arestas que tem como proposta garantir a
+invariancia a variação de escala. Um problema que nos métodos de reconhecimento
+de arestas se não tratado pode causar diminuição na robustes do algoritmo. 
+A figura~\ref{fig:sift01} ilustra bem o efeito que a mudança de escala pode
+fazer.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=1.0]{images/SIFT01}
+\caption{SIFT}
+\label{fig:sift01}
+\end{figure}
+
+Em 2004, D.Lowe, descreveu o algoritmo Scale Invariant Feature Tranform no seu paper Distinctive Image
+ Features from Scale-Invariant Keypoints[15] como extrair keypoints e computar os descritores.
+8.10.2.1. Scale-space Extrema Detection
+Observando a imagem~\ref{fig:sift01} é possível notar que não podemos utilizar a
+mesma janela de inspeção independente da escala do objeto, para objetos maiores
+temos que utilizar janelas maiores. Nesse contexto, o filtro scale-space é
+utilizado e são calculados Laplacianos de Gaucianos com diversos valores de
+$\sigma$.
+  Os LoG funcionam como blob detectors que detectam
+ blobs em várias escalas com a variação de $\sigma$.
+
+Utilizar Laplacianos de Gaucianos é uma abordagem custosa computacionalmente,
+como uma forma de aproximação são utilizados diferenças de Gaucianas.
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=1.0]{images/DoG}
+\caption{Difference of Gaussian}
+\label{fig:dog01}
+\end{figure}
+
+Uma vez que as diferenças de gaucianas são calculadas, é necessário procurar por
+máximos entre espaço e escalas diferentes. Por exemplo como mostrado na
+figure~\ref{fig:dog02}, um pixel na imagem é comparado com seus 8 vizinhos e com
+níveis de escala próximos e anteriores.
+O que representa que o keypoint encontrado é melhor representado naquela escala.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=1.0]{images/DoG_escala}
+\caption{Difference of Gaussian}
+\label{fig:dog02}
+\end{figure}
+
+
+
+\subsubsection{Keypoint Localization}
+Uma vez que keypoints potenciais são localizados é importante selecionar pontos de interesse com contraste alto.
+A localização dos pontos é refinada utilizando uma expansão de Taylor  e se as intensidades dos máximos forem 
+menores do que um threshold são rejeitados.
+Uma característica do DoG é a alta resposta a arestas gerando falsos positivos. Portanto é necessário eliminar 
+algumas arestas identificadas erroneamente.
+\subsubsection{Orientation Assignment}
+TODO
+\subsubsection{Keypoint Descriptor}
+TODO
+\subsubsection{Keypoint Matching}
+O casamento entre dois pontos é feito identificando pontos próximos. Entretando em algumas cituações existem
+ pontos muito próximos que podem ser causados por ruidos na detecção de pontos de interesse, nesse caso é calculada
+  uma razão de distância entre o ponto de interesse com o mais próximo, e com o segundo mais próximo, se a razão for
+   maior do que 80 são rejeitados. Tal abordagem elimina cerca de 90 de falsos positivos e 5 de pontos corretos.
+
+
+

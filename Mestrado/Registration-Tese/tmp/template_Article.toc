@@ -1,17 +1,53 @@
 \select@language {brazil}
-\contentsline {chapter}{Lista de Figuras}{x}{chapter*.5}
-\contentsline {chapter}{Lista de Tabelas}{xi}{chapter*.6}
-\contentsline {chapter}{Lista de Abreviaturas e Siglas}{xii}{chapter*.7}
-\contentsline {chapter}{\numberline {1}Motiva\c c\~ao}{13}{chapter.1}
-\contentsline {chapter}{\numberline {2}Objetivo}{15}{chapter.2}
-\contentsline {chapter}{\numberline {3}Restri\c c\~oes}{16}{chapter.3}
-\contentsline {section}{\numberline {3.1}Vari\'aveis de contorno}{16}{section.3.1}
-\contentsline {section}{\numberline {3.2}Restri\c c\~oes}{16}{section.3.2}
-\contentsline {chapter}{\numberline {4}Conceitos}{18}{chapter.4}
-\contentsline {subsection}{\numberline {4.0.1}Realidade Aumentada}{18}{subsection.4.0.1}
-\contentsline {subsection}{\numberline {4.0.2}Head-Mounted Displays}{18}{subsection.4.0.2}
-\contentsline {subsubsection}{\numberline {4.0.2.1}Feed-Through}{19}{subsubsection.4.0.2.1}
-\contentsline {subsubsection}{\numberline {4.0.2.2}See-Through}{19}{subsubsection.4.0.2.2}
-\contentsline {subsubsection}{\numberline {4.0.2.3}Projetores}{20}{subsubsection.4.0.2.3}
-\contentsline {subsubsection}{\numberline {4.0.2.4}Monitores}{20}{subsubsection.4.0.2.4}
-\contentsline {chapter}{Gloss\'ario}{22}{chapter.5}
+\contentsline {chapter}{Lista de Figuras}{xii}{chapter*.5}
+\contentsline {chapter}{Lista de Tabelas}{xiii}{chapter*.6}
+\contentsline {chapter}{Lista de Abreviaturas e Siglas}{xiv}{chapter*.7}
+\contentsline {chapter}{\numberline {1}Motiva\c c\~ao}{15}{chapter.1}
+\contentsline {chapter}{\numberline {2}Objetivo}{17}{chapter.2}
+\contentsline {chapter}{\numberline {3}Restri\c c\~oes}{18}{chapter.3}
+\contentsline {section}{\numberline {3.1}Vari\'aveis de contorno}{18}{section.3.1}
+\contentsline {section}{\numberline {3.2}Restri\c c\~oes}{18}{section.3.2}
+\contentsline {chapter}{\numberline {4}Conceitos}{20}{chapter.4}
+\contentsline {section}{\numberline {4.1}Realidade Aumentada}{20}{section.4.1}
+\contentsline {section}{\numberline {4.2}Head-Mounted Displays}{20}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Feed-Through}{21}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}See-Through}{21}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Projetores}{22}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}Monitores}{22}{subsection.4.2.4}
+\contentsline {section}{\numberline {4.3}Modos de Aquisi\c c\~ao}{23}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Multiview}{23}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Multitemporal}{23}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Multimodal}{23}{subsection.4.3.3}
+\contentsline {subsection}{\numberline {4.3.4}Cena para o Modelo}{24}{subsection.4.3.4}
+\contentsline {section}{\numberline {4.4}Caracter\IeC {\'\i }sticas Locais}{24}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Propriedades da Caracter\IeC {\'\i }stica Local ideal}{24}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Features}{25}{subsection.4.4.2}
+\contentsline {section}{\numberline {4.5}Camera}{27}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Distor\c c\~ao Radial}{27}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}Distor\c c\~ao Tangencial}{28}{subsection.4.5.2}
+\contentsline {section}{\numberline {4.6}Modelo de C\^amera}{29}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1}Calibra\c c\~ao da C\^amera}{30}{subsection.4.6.1}
+\contentsline {section}{\numberline {4.7}Reconhecimento}{31}{section.4.7}
+\contentsline {subsection}{\numberline {4.7.1}Detec\c c\~ao de caracter\IeC {\'\i }sticas}{32}{subsection.4.7.1}
+\contentsline {subsection}{\numberline {4.7.2}Feature matching}{33}{subsection.4.7.2}
+\contentsline {section}{\numberline {4.8}Algoritmos de Reconhecimento}{33}{section.4.8}
+\contentsline {subsection}{\numberline {4.8.1}BRISK}{33}{subsection.4.8.1}
+\contentsline {subsection}{\numberline {4.8.2}FAST}{33}{subsection.4.8.2}
+\contentsline {subsection}{\numberline {4.8.3}FREAK}{35}{subsection.4.8.3}
+\contentsline {subsection}{\numberline {4.8.4}MSER}{35}{subsection.4.8.4}
+\contentsline {subsection}{\numberline {4.8.5}ORB}{35}{subsection.4.8.5}
+\contentsline {subsection}{\numberline {4.8.6}SIFT - Scale-Invariant Feature Transform}{35}{subsection.4.8.6}
+\contentsline {subsubsection}{\numberline {4.8.6.1}Keypoint Localization}{37}{subsubsection.4.8.6.1}
+\contentsline {subsubsection}{\numberline {4.8.6.2}Orientation Assignment}{37}{subsubsection.4.8.6.2}
+\contentsline {subsubsection}{\numberline {4.8.6.3}Keypoint Descriptor}{37}{subsubsection.4.8.6.3}
+\contentsline {subsubsection}{\numberline {4.8.6.4}Keypoint Matching}{37}{subsubsection.4.8.6.4}
+\contentsline {subsection}{\numberline {4.8.7}STAR}{38}{subsection.4.8.7}
+\contentsline {subsection}{\numberline {4.8.8}SURF}{38}{subsection.4.8.8}
+\contentsline {chapter}{\numberline {5}Metodologia}{39}{chapter.5}
+\contentsline {chapter}{\numberline {6}Prot\'otipos}{40}{chapter.6}
+\contentsline {section}{\numberline {6.1}Testes de defini\c c\~ao de fronteiras de par\^ametros}{40}{section.6.1}
+\contentsline {section}{\numberline {6.2}Testes de reconhecimento de padr\~oes}{40}{section.6.2}
+\contentsline {section}{\numberline {6.3}Ambiente}{41}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}OpenCV}{42}{subsection.6.3.1}
+\contentsline {section}{\numberline {6.4}Caso de uso}{42}{section.6.4}
+\contentsline {chapter}{Gloss\'ario}{43}{chapter.7}
