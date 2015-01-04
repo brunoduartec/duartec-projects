@@ -1,68 +1,191 @@
-\documentclass[]{article}
-%\usepackage[scaled=.92]{helvet}
-\usepackage{times}
-\usepackage{graphicx}
-\usepackage[section] {placeins}
-\usepackage{float}
-%%* Dica: use esse pacote pra aceitar caracteres acentuados, Ãƒâ€¡ etc sem sofrimento
-%%* obs: vÃƒÂ¡lido se estiverem escrevendo com codificaÃƒÂ§ÃƒÂ£o Windows, caso contrÃƒÂ¡rio
-%%* pode ser necessÃƒÂ¡rio trocar ansinew por utf8 ou algo assim.
-\usepackage[ansinew]{inputenc}
+%%% Exemplo de utilização da classe ITA
+%%%
+%%%   por        Fábio Fagundes Silveira   -  ffs [at] ita [dot] br
+%%%              Benedito C. O. Maciel     -  bcmaciel [at] ita [dot] br
+%%%              Giovani Volnei Meinertz   -  giovani [at] ita [dot] br
+%%%
+%%%  IMPORTANTE: O texto contido neste exemplo nao significa absolutamente nada.  :-)
+%%%              O intuito aqui eh demonstrar os comandos criados na classe e suas
+%%%              respectivas utilizacoes.
+%%%
+%%%  $Id: ExemploTeseITA.tex 17 2006-02-07 17:59:17Z ffs $
+%%%  $HeadURL: file:///opt/repositorioITALUS/classeITA/tags/versao-2.1/ExemploTeseITA.tex $
+%%%
+%%% ITALUS
+%%% Technological Institute of Aeronautics --- ITA
+%%% Sao Jose dos Campos, Brazil
+%%% HomePages:        http://www.comp.ita.br/italus
+%%%                   http://groups.yahoo.com/group/italus/
+%%% Discussion list: italus {at} yahoogroups.com
+%%%
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+% Parametros da classe ITA:
+%   msc   = Tese de Mestrado    --> no ITA, Dissertacao eh Tese ...  :-)
+%   dsc   = Tese de Doutorado
+%   quali = Exame de Qualificacao
+%   dv    = 'Draft Version'     --> imprime 'Versao Preliminar + data no rodape
+%   fem   = Doutora
+%   eng   = para teses em inglês
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+\documentclass[msc]{ita}    % ITA.cls based on standard book.cls
 
-%% use this for zero \parindent and non-zero \parskip, intelligently.
-\usepackage{parskip}
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+% Identificacoes...
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+\course{Engenharia Eletrônica e Computação}
+\dept{Ciência da Computação}
+\area{Informática}
 
-%% the 'caption' package provides a nicer-looking replacement
-\usepackage[labelfont=bf,textfont=it]{caption}
+% Autor do trabalho: Nome Sobrenome
+\author{Bruno}{Duarte Corrêa}
 
-\usepackage{url}
-\usepackage{listings}
-\usepackage{color}
-\usepackage{graphicx}
+% Endereco do Autor -> utilizado no verso da folha de rosto
+% Obrigatório para Teses
+\itaauthoraddress{Av. ABC, 1000}{12.000-000}{São José dos Campos--SP}
 
-% %\lstset{language=C++,breaklines=true,morekeywords={float3,float4},keywordstyle=\color[rgb]{0,0,1},        commentstyle=\color[rgb]{0.133,0.545,0.133} }
+% Titulo da Tese/Dissertacao
+\title{Como produzir teses e dissertações com o estilo ITALUS}
 
+% Orientador
+\advisor{Prof.~Dr.}{Fulano de Tal}
 
-%opening
-\title{}
-\author{Bruno Duarte Correa}
+% Co-orientador opcional
+\coadvisor{Prof.~Dr.}{Beltrano de Tal}{OVNI}
+
+% Chefe da divisao de Pos-Graduacao
+% Obrigatório para Teses
+\boss{Prof.~Dr.}{Cicrano de Tal}
+
+% Banca Examinadora
+% Obrigatório para Teses
+\examiner{Prof. Dr.}{Fulano Beltrano}{Presidente}{ITA}%
+\examiner{Prof. Dr.}{Cicrano Fulano}{Membro Externo}{UXXX}%
+\examiner{Prof. Dr.}{Beltrano Cicrano}{Membro Externo}{UYYY}%
+\examiner{Prof. Dr.}{Fulano de Tal}{Membro}{ITA}%
+\examiner{Prof. Dr.}{Beltrano Fulano}{Membro}{ITA}%
+
+% Data da defesa
+\date{Fevereiro}{2015}
+
+% Palavras-Chaves informadas pela Biblioteca -> utilizada na CIP
+% Obrigatório para Teses
+\kwcip{Teses}
+\kwcip{Estilos}
+\kwcip{Italus}
+
+% Glossario
+\makeglossary
+\frontmatter
 
 \begin{document}
 
+% Folha de Rosto
 \maketitle
 
+% Dedicatoria
+\begin{itadedication}
+Aqui pode ser escrita uma dedicatória. Não é obrigatória.
+\end{itadedication}
+
+% Agradecimentos
+\begin{itathanks}
+\input{parts/agradecimentos}
+\end{itathanks}
+
+% Epígrafe
+\thispagestyle{empty}
+\ifhyperref\pdfbookmark[0]{\nameepigraphe}{epigrafe}\fi
+\begin{flushright}
+\begin{spacing}{1}
+\mbox{}\vfill
+{\sffamily\itshape
+``If I have seen farther than others,\\
+it is because I stood on the shoulders of giants.''\\}
+--- \textsc{Sir~Isaac Newton}
+\end{spacing}
+\end{flushright}
+
+% Resumo
 \begin{abstract}
-\input{parts/abstract}
-
-
+\input{parts/resumo}
 \end{abstract}
+% Palavras Chave
+% No manual nao consta palavras-chaves
+%\keywords{Teses, Estilos, Italus}
+
+% Abstract
+\begin{englishabstract}
+\input{parts/abstract}
+\end{englishabstract}
+% Keywords
+% Idem Palavras-chaves ...
+%\englishkeywords{Theses, Styles, Italus}
+
+% sumario
+\tableofcontents
+% lista de figuras
+\listoffigures
+% lista de tabelas
+\listoftables
+% lista de abreviaturas
+\listofabbreviations
+\input{parts/acronimos}
+% lista de simbolos
+%\listofsymbols
+%\input{parts/listasimbolos}
+
+\mainmatter
+% Os capitulos comecam aqui
+
+\chapter{Motivação}
+\input{parts/motivacao}
+
+\chapter{Objetivo}
+\input{parts/objetivo}
 
 
+\chapter{Restrições}
+\input{parts/variaveiscontorno}
+\input{parts/restricoes}
 
-\section{Introduction}
-\input{parts/introduction}
+\chapter{Conceitos}
+\input{parts/conceitos}
 
-
-
-\section{Concepts}
-\input{parts/concepts}
-
-\section{Method}
-\input{parts/method}
-
-
-\section{Boundaries}
-% %\input{parts/boundaries}
+% Referencias Bibliograficas
+\begin{spacing}{1.0}
+\begin{flushleft}
+\bibliography{refs_exemplo}
+\end{flushleft}
+\end{spacing}
 
 
-\section{Study Case}
-\input{parts/results}
+% Apendices
+%\appendix
+%\chapter{Tópicos de Álgebra Linear}
+%\input{apendiceA}
 
-\section{Conclusion}
-\input{parts/conclusion}
+% Anexos
+%\annex
+%\chapter{Exemplo de um Primeiro Anexo}
+%\input{anexoA}
 
+% Glossario
+\itaglossary
+\printglossary
 
-\bibliography{bibliography}
-\bibliographystyle{ieeetr}
+% Folha de Registro do Documento
+% Valores dos campos do formulario
+\FRDitadata{24 de dezembro de 1969}
+\FRDitadocnro{CTA/ITA - IEC/TM-002/1969}
+\FRDitaorgaointerno{Divisão de Ciência da Computação -- ITA/IEC}
+\FRDitapalavrasautor{Teses; Estilos; Italus}
+\FRDitapalavrasresult{Teses e Dissertações; Estilos; Usuários}
+\FRDitaresumo{\input{parts/resumo}}
+%  Primeiro Parametro: Nacional ou Internacional -- N/I
+%  Segundo parametro: Ostensivo, Reservado, Confidencial ou Secreto -- O/R/C/S
+\FRDitaOpcoes{N}{S}
+% Cria o formulario
+\itaFRD
 
 \end{document}
+% Fim do Documento.
