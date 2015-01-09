@@ -1,0 +1,69 @@
+
+
+Os algoritmos SIFT e SURF apesar de retornarem bons resultados para o contexto,
+são pagos e portanto serão desconsiderados para a abordagem proposta.
+
+Para que sejam respeitados as restrições citadas na seção~\ref{sec:restricao} e
+para que a aplicação seja coerente para uso cotidiano no contexto de manutenção
+de aeronaves, a velocidade de reconhecimento é muito importante. Uma análise
+prévia dos algoritmos selecionados tem como tempo de resposta por
+frame a imagem~\ref{fig:performance6algorithms} que nos mostra claramente que as
+técnicas MSER e FREAK não respondem em tempo ábil para serem considerados tempo
+real, portanto serão desconsiderados.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.3]{images/evaluation6algo}
+\caption{Performance quanto à variações de escala, iluminação, rotação e
+gaussian blur}
+\label{fig:performance6algorithms}
+\end{figure}
+
+
+
+
+\section{Homografia}
+
+Após a etapa de extração de características da imagem padrão e da imagem de
+comparação é importante fazer o casamento de padrões para que com um número
+significativo de características, o objeto seja reconhecido. As imagens
+imagem~\ref{fig:blurhomography}, mostram correspondências entre imagens variando
+as transformações propostas pelo protótipo em comparação com imagens sem as
+transformações.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{images/ORB-BLUR-HOMOGRAPHY}
+\caption{Homografia com variação variação de Blur.}
+\label{fig:blurhomography}
+\end{figure}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{images/ORB-BRIGHT-HOMOGRAPHY}
+\caption{Homografia com variação variação de iluminação.}
+\label{fig:brighthomography}
+\end{figure}
+
+
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.5]{images/ORB-ROTATION-HOMOGRAPHY}
+\caption{Homografia com variação variação de Rotação.}
+\label{fig:rotationhomography}
+\end{figure}
+
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.8]{images/ORB-SCALE-HOMOGRAPHY}
+\caption{Homografia com variação variação de Escala.}
+\label{fig:scalehomography}
+\end{figure}
+
+
+
+\cite{ISMAR2012}

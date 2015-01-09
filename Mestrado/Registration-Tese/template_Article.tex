@@ -27,6 +27,8 @@
 %   fem   = Doutora
 %   eng   = para teses em inglês
 %++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
 \documentclass[msc]{ita}    % ITA.cls based on standard book.cls
 
 %++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -158,11 +160,18 @@ it is because I stood on the shoulders of giants.''\\}
 \chapter{Protótipos}
 \input{parts/prototipos}
 
+\chapter{Resultados}
+\input{parts/resultados}
+
+
+\chapter{Conclusão}
+\input{parts/conclusao}
 
 % Referencias Bibliograficas
 \begin{spacing}{1.0}
 \begin{flushleft}
-\bibliography{refs_exemplo}
+\bibliographystyle{abnt-cite-style}%Choose a bibliograhpic style
+\bibliography{bibliography}
 \end{flushleft}
 \end{spacing}
 
@@ -176,6 +185,10 @@ it is because I stood on the shoulders of giants.''\\}
 %\annex
 %\chapter{Exemplo de um Primeiro Anexo}
 %\input{anexoA}
+
+% Referencias Bibliograficas
+
+
 
 % Glossario
 \itaglossary
