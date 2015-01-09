@@ -1,9 +1,10 @@
-\subsection{SURF}
+\subsection{SURF - Speeded Up Robust Feature}
 
-Em comparação com o algoritmo SIFT que aproxima Laplacianas de Gaucinas de
-Diferencas de Gaucianas, SURF aproxima LoG de Box Filter, o que garante que mais 
-agilidade nos resultados porque a convolução com box 
-filters são muito mais rápidos com o uso de integral images e pode ser paralelizado
+Em comparação com o algoritmo SIFT que aproxima Laplacianas de Gaucinas por
+Diferencas de Gaucianas(DoG), SURF aproxima LoG de Box-type Filter e não é
+utilizado nenhum tipo de suavização entre escalas , o que garante mais agilidade
+nos resultados porque a convolução com box filters são muito mais rápidos com o uso de
+ integral images e pode ser paralelizado
 
 \begin{figure}[h!]
 \centering
@@ -11,3 +12,5 @@ filters são muito mais rápidos com o uso de integral images e pode ser paraleliz
 \caption{Box Filtering}
 \label{fig:surf01}
 \end{figure}
+
+Em geral SURF se apresenta cinco vezes mais rápido do que DoG.

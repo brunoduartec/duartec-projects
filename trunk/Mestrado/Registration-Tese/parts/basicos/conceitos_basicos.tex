@@ -70,18 +70,30 @@ Garantir que estamos selecionando boas características pode ser crucial na eficá
 Segundo [19] , boas características devem ter as seguintes propriedades:
 
 \begin{itemize}
-	\item Repetibilidade: Dadas duas imagens do mesmo objeto ou cena, tomadas em condições ou pontos de vista diferentes, uma porcentagem alta de características deve ser reconhecidas se estiverem visíveis.
-	\item Distinção: Os padrões reconhecidos têm de ser possíveis de serem distinguidos entre si para facilitar o casamento.
-	\item Localidade: As características devem ser locais para reduzir a probabilidade de oclusão**
-	\item Quantidade: O número de pontos detectados tem que ser o suficiente para que mesmo objetos pequenos tenham minimamente características que possam ser localizados e para que o objeto possa sofrer oclusão e ainda assim seja reconhecido.
-	\item Acurácia: As características detectadas tem que ser localizadas com o máximo de acurácia possível com respeito tanto referente à posição quanto à escala.
-	\item Eficiência:De preferência  a detecção deve ser o mais rápido possível.
+	\item \textbf{Repetibilidade}: Dadas duas imagens do mesmo objeto ou cena,
+	tomadas em condições ou pontos de vista diferentes, uma porcentagem alta de características deve ser reconhecidas se estiverem visíveis.
+	\item \textbf{Distinção}: Os padrões reconhecidos têm de ser possíveis de serem
+	distinguidos entre si para facilitar o casamento.
+	\item \textbf{Localidade}: As características devem ser locais para reduzir a
+	probabilidade de oclusão.
+	\item \textbf{Quantidade}: O número de pontos detectados tem que ser o
+	suficiente para que mesmo objetos pequenos tenham minimamente características que possam ser localizados e para que o 
+	objeto possa sofrer oclusão e ainda assim seja reconhecido.
+	\item \textbf{Acurácia}: As características detectadas tem que ser localizadas
+	com o máximo de acurácia possível com respeito tanto referente à posição quanto à escala.
+	\item \textbf{Eficiência}:De preferência  a detecção deve ser o mais rápido
+	possível.
 \end{itemize}
 
 \subsection{Features}
-Antes de compreender como é feito o reconhecimento e registro de imagens é importante nos perguntar como nós conseguimos reconhecer objetos em uma cena, como conseguimos comparar facilmente objetos em duas imagens distintas. Somos treinados desde cedo a diferenciar formas geométricas, perceber escalas diferentes ou mesmo reconhecer o mesmo objeto independente de como está posicionado na cena buscando padrões que categorizem e diferenciem o objeto. Instintivamente conseguimos reconhecer boas características e localizar objetos.
+Antes de compreender como é feito o reconhecimento e registro de imagens é importante nos perguntar
+ como nós conseguimos reconhecer objetos em uma cena, como conseguimos comparar facilmente objetos em duas 
+ imagens distintas. Somos treinados desde cedo a diferenciar formas geométricas, perceber escalas diferentes 
+ ou mesmo reconhecer o mesmo objeto independente de como está posicionado na cena buscando padrões que 
+ categorizem e diferenciem o objeto. Instintivamente conseguimos reconhecer boas características e localizar objetos.
 Na imagem~\ref{fig:padroes} temos uma imagem de um prédio e seis recortes, dos quais
-conseguimos facilmente reconhecer com precisão a de letra E e F, as de letra A,B,C,D podemos identificar possíveis localizações mas não podemos dizer com certeza onde estão na imagem.
+conseguimos facilmente reconhecer com precisão a de letra E e F, as de letra A,B,C,D
+ podemos identificar possíveis localizações mas não podemos dizer com certeza onde estão na imagem.
 
 \begin{figure}[h!]
 \centering
@@ -101,9 +113,16 @@ certeza é bem alto.
 \end{figure}
 
 A Imagem~\ref{fig:featuresregioes} ilustra os tipos de características. A região
-azul não possibilita diferenciar onde está na imagem, a região preta pode ser confundida com qualquer uma das regiões ao deslocarmos horizontalmente, a imagem vermelha nos possibilita diferenciar e reconhecer o canto da imagem verde com precisão milimétrica.
-Podemos então concluir que uma característica é boa para ser utilizada como parâmetro de entrada para algoritmos de reconhecimento, quanto maior foi o nível de certeza da sua localização, o que facilita o Feature Detection.
-Para localizar o mesmo objeto em outra imagem é necessário identificarmos a região onde se encontra, caso contrário no exemplo da imagem X seria impossível localizar uma janela específica. Tal descrição de contexto é chamada de Feature Description. Uma vez de posse da característica e do seu contexto é possível reconhecer o objeto de fato.
+azul não possibilita diferenciar onde está na imagem, a região preta pode ser confundida com qualquer uma das regiões
+ ao deslocarmos horizontalmente, a imagem vermelha nos possibilita diferenciar e reconhecer o canto da imagem verde com precisão milimétrica.
+Podemos então concluir que uma característica é boa para ser utilizada como parâmetro de entrada
+ para algoritmos de reconhecimento, quanto maior foi o nível de certeza da sua localização, 
+ o que facilita o \textbf{Feature Detection}.
+Para localizar o mesmo objeto em outra imagem é necessário identificarmos a região onde se encontra, 
+caso contrário no exemplo da imagem~\ref{fig:padroes} seria impossível
+localizar uma janela específica. Tal descrição de contexto é chamada de
+\textbf{Feature Description}. Uma vez de posse da característica e do seu
+contexto é possível reconhecer o objeto de fato.
 
 \section{Camera}
 As câmeras de baixo custo vendidas atualmente introduzem diversos erros de distorção. Dois dos maiores são as distorções radiais e as distorções tangenciais.
@@ -144,7 +163,7 @@ grid de pontos retangular. Os pontos se deslocam deforma eliptica quanto mais pr
 
 \begin{figure}[h!]
 \centering
-\includegraphics[scale=0.8]{images/tangencial01}
+\includegraphics[scale=0.8]{images/tangencial02}
 \caption{Componentes de Distorção tangencial.}
 \label{fig:tangencial02}
 \end{figure}
