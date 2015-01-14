@@ -45,12 +45,12 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>C:\OpenCV2.3\opencv\include\opencv2;C:\OpenCV2.3\opencv\modules\core\include;C:\OpenCV2.3\opencv\modules\flann\include;C:\OpenCV2.3\opencv\modules\imgproc\include;C:\OpenCV2.3\opencv\modules\video\include;C:\OpenCV2.3\opencv\modules\features2d\include;C:\OpenCV2.3\opencv\modules\objdetect\include;C:\OpenCV2.3\opencv\modules\calib3d\include;C:\OpenCV2.3\opencv\modules\ml\include;C:\OpenCV2.3\opencv\modules\highgui\include;C:\OpenCV2.3\opencv\modules\contrib\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(OPENCV_DIR)\..\..\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\OpenCV2.3\build\x86\vc10\lib</AdditionalLibraryDirectories>
-      <AdditionalDependencies>opencv_calib3d230d.lib;opencv_contrib230d.lib;opencv_core230d.lib;opencv_features2d230d.lib;opencv_flann230d.lib;opencv_highgui230d.lib;opencv_imgproc230d.lib;opencv_ml230d.lib;opencv_objdetect230d.lib;opencv_video230d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(OPENCV_DIR)\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opencv_core2410d.lib;opencv_imgproc2410d.lib;opencv_highgui2410d.lib;opencv_ml2410d.lib;opencv_video2410d.lib;opencv_features2d2410d.lib;opencv_calib3d2410d.lib;opencv_objdetect2410d.lib;opencv_contrib2410d.lib;opencv_legacy2410d.lib;opencv_flann2410d.lib;opencv_nonfree2410d.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -59,6 +59,7 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>$(OPENCV_DIR)\..\..\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -67,14 +68,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ContrastSample.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="SimpleSample.cpp" />
+    <ClCompile Include="..\..\OpenCV-Features-Comparison-master\OpenCV-Features-Comparison-master\AlgorithmEstimation.cpp" />
+    <ClCompile Include="..\..\OpenCV-Features-Comparison-master\OpenCV-Features-Comparison-master\CollectedStatistics.cpp" />
+    <ClCompile Include="..\..\OpenCV-Features-Comparison-master\OpenCV-Features-Comparison-master\FeatureAlgorithm.cpp" />
+    <ClCompile Include="..\..\OpenCV-Features-Comparison-master\OpenCV-Features-Comparison-master\ImageTransformation.cpp" />
+    <ClCompile Include="..\..\OpenCV-Features-Comparison-master\OpenCV-Features-Comparison-master\main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ContrastSample.h" />
-    <ClInclude Include="ISample.h" />
-    <ClInclude Include="SimpleSample.h" />
+    <ClInclude Include="..\..\OpenCV-Features-Comparison-master\OpenCV-Features-Comparison-master\AlgorithmEstimation.hpp" />
+    <ClInclude Include="..\..\OpenCV-Features-Comparison-master\OpenCV-Features-Comparison-master\CollectedStatistics.hpp" />
+    <ClInclude Include="..\..\OpenCV-Features-Comparison-master\OpenCV-Features-Comparison-master\FeatureAlgorithm.hpp" />
+    <ClInclude Include="..\..\OpenCV-Features-Comparison-master\OpenCV-Features-Comparison-master\ImageTransformation.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

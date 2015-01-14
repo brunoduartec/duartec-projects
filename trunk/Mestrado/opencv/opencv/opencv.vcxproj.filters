@@ -15,24 +15,33 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="..\..\OpenCV-Features-Comparison-master\OpenCV-Features-Comparison-master\AlgorithmEstimation.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="SimpleSample.cpp">
+    <ClCompile Include="..\..\OpenCV-Features-Comparison-master\OpenCV-Features-Comparison-master\CollectedStatistics.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ContrastSample.cpp">
+    <ClCompile Include="..\..\OpenCV-Features-Comparison-master\OpenCV-Features-Comparison-master\FeatureAlgorithm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\OpenCV-Features-Comparison-master\OpenCV-Features-Comparison-master\ImageTransformation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\OpenCV-Features-Comparison-master\OpenCV-Features-Comparison-master\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ISample.h">
+    <ClInclude Include="..\..\OpenCV-Features-Comparison-master\OpenCV-Features-Comparison-master\AlgorithmEstimation.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="SimpleSample.h">
+    <ClInclude Include="..\..\OpenCV-Features-Comparison-master\OpenCV-Features-Comparison-master\CollectedStatistics.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ContrastSample.h">
+    <ClInclude Include="..\..\OpenCV-Features-Comparison-master\OpenCV-Features-Comparison-master\FeatureAlgorithm.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\OpenCV-Features-Comparison-master\OpenCV-Features-Comparison-master\ImageTransformation.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
