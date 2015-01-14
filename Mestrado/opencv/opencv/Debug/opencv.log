@@ -1,24 +1,17 @@
-﻿Build started 28/07/2014 20:14:07.
-     1>Project "F:\Projects\duartec-projects\Mestrado\opencv\opencv\opencv.vcxproj" on node 2 (Build target(s)).
+﻿Build started 14/01/2015 00:06:33.
+     1>Project "D:\Projects\duartec-projects\Mestrado\opencv\opencv\opencv.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /IC:\OpenCV2.3\opencv\include\opencv2 /IC:\OpenCV2.3\opencv\modules\core\include /IC:\OpenCV2.3\opencv\modules\flann\include /IC:\OpenCV2.3\opencv\modules\imgproc\include /IC:\OpenCV2.3\opencv\modules\video\include /IC:\OpenCV2.3\opencv\modules\features2d\include /IC:\OpenCV2.3\opencv\modules\objdetect\include /IC:\OpenCV2.3\opencv\modules\calib3d\include /IC:\OpenCV2.3\opencv\modules\ml\include /IC:\OpenCV2.3\opencv\modules\highgui\include /IC:\OpenCV2.3\opencv\modules\contrib\include /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt ContrastSample.cpp main.cpp SimpleSample.cpp
-         SimpleSample.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ID:\Projects\opencv\build\x86\vc11\..\..\include /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt "..\..\OpenCV-Features-Comparison-master\OpenCV-Features-Comparison-master\main.cpp"
          main.cpp
-     1>c:\opencv2.3\opencv\modules\flann\include\opencv2\flann\logger.h(70): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(218) : see declaration of 'fopen'
-     1>f:\projects\duartec-projects\mestrado\opencv\opencv\main.cpp(473): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\time.inl(112) : see declaration of 'localtime'
-     1>f:\projects\duartec-projects\mestrado\opencv\opencv\main.cpp(496): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
-         ContrastSample.cpp
-         Generating Code...
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\Projects\duartec-projects\Mestrado\opencv\Debug\opencv.exe" /INCREMENTAL /NOLOGO /LIBPATH:C:\OpenCV2.3\build\x86\vc10\lib opencv_calib3d230d.lib opencv_contrib230d.lib opencv_core230d.lib opencv_features2d230d.lib opencv_flann230d.lib opencv_highgui230d.lib opencv_imgproc230d.lib opencv_ml230d.lib opencv_objdetect230d.lib opencv_video230d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:\Projects\duartec-projects\Mestrado\opencv\Debug\opencv.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\Projects\duartec-projects\Mestrado\opencv\Debug\opencv.lib" /MACHINE:X86 Debug\ContrastSample.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Projects\duartec-projects\Mestrado\opencv\Debug\opencv.exe" /INCREMENTAL /NOLOGO /LIBPATH:D:\Projects\opencv\build\x86\vc11\lib opencv_core2410d.lib opencv_imgproc2410d.lib opencv_highgui2410d.lib opencv_ml2410d.lib opencv_video2410d.lib opencv_features2d2410d.lib opencv_calib3d2410d.lib opencv_objdetect2410d.lib opencv_contrib2410d.lib opencv_legacy2410d.lib opencv_flann2410d.lib opencv_nonfree2410d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Projects\duartec-projects\Mestrado\opencv\Debug\opencv.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Projects\duartec-projects\Mestrado\opencv\Debug\opencv.lib" /MACHINE:X86 Debug\AlgorithmEstimation.obj
+         Debug\CollectedStatistics.obj
+         Debug\FeatureAlgorithm.obj
+         Debug\ImageTransformation.obj
          Debug\main.obj
-         Debug\SimpleSample.obj
-         opencv.vcxproj -> F:\Projects\duartec-projects\Mestrado\opencv\Debug\opencv.exe
-     1>Done Building Project "F:\Projects\duartec-projects\Mestrado\opencv\opencv\opencv.vcxproj" (Build target(s)).
+         opencv.vcxproj -> D:\Projects\duartec-projects\Mestrado\opencv\Debug\opencv.exe
+     1>Done Building Project "D:\Projects\duartec-projects\Mestrado\opencv\opencv\opencv.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:06.41
+Time Elapsed 00:00:05.96
