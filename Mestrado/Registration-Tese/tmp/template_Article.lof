@@ -2,32 +2,36 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Posicionamento da LRU}}{20}{figure.3.1}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Imagem da LRU}}{21}{figure.3.2}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Arquitetura do Feed-Trough.}}{22}{figure.4.1}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Arquitetura do See-Trough.}}{23}{figure.4.2}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Realidade Aumentada com projetores.}}{24}{figure.4.3}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Reconhecimento de padr\~oes.}}{27}{figure.4.4}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Regi\~oes de reconhecimento de padr\~oes.}}{27}{figure.4.5}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Distor\c c\~ao radial.}}{29}{figure.4.6}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Componentes de Distor\c c\~ao radial.}}{29}{figure.4.7}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Distor\c c\~ao tangencial.}}{30}{figure.4.8}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Componentes de Distor\c c\~ao tangencial.}}{30}{figure.4.9}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Camera no espa\c co vetorial.}}{31}{figure.4.10}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Transforma\c c\~ao de coordenadas}}{31}{figure.4.11}
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Transforma\c c\~ao de coordenadas quanto \`a distor\c c\~ao radial}}{32}{figure.4.12}
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Matriz de distor\c c\~oes}}{32}{figure.4.13}
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Ilustra\c c\~ao do procedimento de reconhecimento com features locais.}}{33}{figure.4.14}
-\contentsline {figure}{\numberline {4.15}{\ignorespaces FAST}}{35}{figure.4.15}
-\contentsline {figure}{\numberline {4.16}{\ignorespaces SIFT}}{36}{figure.4.16}
-\contentsline {figure}{\numberline {4.17}{\ignorespaces Difference of Gaussian}}{37}{figure.4.17}
-\contentsline {figure}{\numberline {4.18}{\ignorespaces Difference of Gaussian}}{37}{figure.4.18}
-\contentsline {figure}{\numberline {4.19}{\ignorespaces Box Filtering}}{39}{figure.4.19}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Arquitetura do Feed-Trough.}}{23}{figure.4.1}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Arquitetura do See-Trough.}}{24}{figure.4.2}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Realidade Aumentada com projetores.}}{25}{figure.4.3}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Reconhecimento de padr\~oes.}}{28}{figure.4.4}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Regi\~oes de reconhecimento de padr\~oes.}}{28}{figure.4.5}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Distor\c c\~ao radial.}}{30}{figure.4.6}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Componentes de Distor\c c\~ao radial.}}{30}{figure.4.7}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Distor\c c\~ao tangencial.}}{31}{figure.4.8}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Componentes de Distor\c c\~ao tangencial.}}{31}{figure.4.9}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Camera no espa\c co vetorial.}}{32}{figure.4.10}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Transforma\c c\~ao de coordenadas}}{33}{figure.4.11}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Transforma\c c\~ao de coordenadas quanto \`a distor\c c\~ao radial}}{33}{figure.4.12}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Matriz de distor\c c\~oes}}{33}{figure.4.13}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Ilustra\c c\~ao do procedimento de reconhecimento com features locais.}}{34}{figure.4.14}
+\contentsline {figure}{\numberline {4.15}{\ignorespaces FAST}}{36}{figure.4.15}
+\contentsline {figure}{\numberline {4.16}{\ignorespaces SIFT}}{38}{figure.4.16}
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Difference of Gaussian}}{38}{figure.4.17}
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Difference of Gaussian}}{39}{figure.4.18}
+\contentsline {figure}{\numberline {4.19}{\ignorespaces Box Filtering}}{41}{figure.4.19}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Performance quanto \`a varia\c c\~oes de escala, ilumina\c c\~ao, rota\c c\~ao e gaussian blur}}{45}{figure.7.1}
-\contentsline {figure}{\numberline {7.2}{\ignorespaces Homografia com varia\c c\~ao varia\c c\~ao de Blur.}}{46}{figure.7.2}
-\contentsline {figure}{\numberline {7.3}{\ignorespaces Homografia com varia\c c\~ao varia\c c\~ao de ilumina\c c\~ao.}}{46}{figure.7.3}
-\contentsline {figure}{\numberline {7.4}{\ignorespaces Homografia com varia\c c\~ao varia\c c\~ao de Rota\c c\~ao.}}{47}{figure.7.4}
-\contentsline {figure}{\numberline {7.5}{\ignorespaces Homografia com varia\c c\~ao varia\c c\~ao de Escala.}}{47}{figure.7.5}
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Performance quanto \`a varia\c c\~oes de escala, ilumina\c c\~ao, rota\c c\~ao e gaussian blur}}{48}{figure.7.1}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Performance quanto \`a varia\c c\~oes de escala, ilumina\c c\~ao, rota\c c\~ao e gaussian blur sem os algoritmos SIFT e SURF}}{48}{figure.7.2}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Homografia com varia\c c\~ao varia\c c\~ao de Blur.}}{49}{figure.7.3}
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Homografia com varia\c c\~ao varia\c c\~ao de ilumina\c c\~ao.}}{49}{figure.7.4}
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Homografia com varia\c c\~ao varia\c c\~ao de Rota\c c\~ao.}}{50}{figure.7.5}
+\contentsline {figure}{\numberline {7.6}{\ignorespaces Homografia com varia\c c\~ao varia\c c\~ao de Escala.}}{50}{figure.7.6}
+\addvspace {10\p@ }
 \addvspace {10\p@ }

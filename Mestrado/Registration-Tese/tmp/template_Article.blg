@@ -1,12 +1,47 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: template_Article.aux
-I couldn't open style file abnt-cite-style.bst
----line 147 of file template_Article.aux
- : \bibstyle{abnt-cite-style
- :                          }
-I'm skipping whatever remains of this command
-Illegal, another \bibstyle command---line 156 of file template_Article.aux
- : \bibstyle
- :          {abnt-alf}
-I'm skipping whatever remains of this command
-I found no style file---while reading file template_Article.aux
-(There were 3 error messages)
+The style file: abnt-alf.bst
+Database file #1: abnt-options.bib
+Database file #2: bibliography.bib
+Too many commas in name 1 of "Ross T. Whitaker, Chris Crampton, David E. Breen, Mihran Tuceryan, Eric Rose" for entry calibration
+while executing---line 1412 of file abnt-alf.bst
+Too many commas in name 1 of "Ross T. Whitaker, Chris Crampton, David E. Breen, Mihran Tuceryan, Eric Rose" for entry calibration
+while executing---line 1412 of file abnt-alf.bst
+Too many commas in name 1 of "Ross T. Whitaker, Chris Crampton, David E. Breen, Mihran Tuceryan, Eric Rose" for entry calibration
+while executing---line 1412 of file abnt-alf.bst
+Too many commas in name 1 of "Ross T. Whitaker, Chris Crampton, David E. Breen, Mihran Tuceryan, Eric Rose" for entry calibration
+while executing---line 1412 of file abnt-alf.bst
+Too many commas in name 1 of "Ross T. Whitaker, Chris Crampton, David E. Breen, Mihran Tuceryan, Eric Rose" for entry calibration
+while executing---line 1412 of file abnt-alf.bst
+Too many commas in name 1 of "Ross T. Whitaker, Chris Crampton, David E. Breen, Mihran Tuceryan, Eric Rose" for entry calibration
+while executing---line 1412 of file abnt-alf.bst
+Name 1 in "E. Rosten, G. Reitmayr, and T. Drummond" has a comma at the end for entry VideoAnotation
+while executing---line 1412 of file abnt-alf.bst
+Name 1 in "E. Rosten, G. Reitmayr, and T. Drummond" has a comma at the end for entry VideoAnotation
+while executing---line 1412 of file abnt-alf.bst
+Name 1 in "E. Rosten, G. Reitmayr, and T. Drummond" has a comma at the end for entry VideoAnotation
+while executing---line 1412 of file abnt-alf.bst
+Name 1 in "E. Rosten, G. Reitmayr, and T. Drummond" has a comma at the end for entry VideoAnotation
+while executing---line 1464 of file abnt-alf.bst
+Name 1 in "E. Rosten, G. Reitmayr, and T. Drummond" has a comma at the end for entry VideoAnotation
+while executing---line 1464 of file abnt-alf.bst
+Name 1 in "E. Rosten, G. Reitmayr, and T. Drummond" has a comma at the end for entry VideoAnotation
+while executing---line 1464 of file abnt-alf.bst
+Warning--campo journal vazio em ISMAR2012
+Warning--campo journal vazio em performance_evaluation
+Too many commas in name 1 of "Ross T. Whitaker, Chris Crampton, David E. Breen, Mihran Tuceryan, Eric Rose" for entry calibration
+while executing---line 1464 of file abnt-alf.bst
+Too many commas in name 1 of "Ross T. Whitaker, Chris Crampton, David E. Breen, Mihran Tuceryan, Eric Rose" for entry calibration
+while executing---line 1464 of file abnt-alf.bst
+Too many commas in name 1 of "Ross T. Whitaker, Chris Crampton, David E. Breen, Mihran Tuceryan, Eric Rose" for entry calibration
+while executing---line 1464 of file abnt-alf.bst
+Too many commas in name 1 of "Ross T. Whitaker, Chris Crampton, David E. Breen, Mihran Tuceryan, Eric Rose" for entry calibration
+while executing---line 1464 of file abnt-alf.bst
+Too many commas in name 1 of "Ross T. Whitaker, Chris Crampton, David E. Breen, Mihran Tuceryan, Eric Rose" for entry calibration
+while executing---line 1464 of file abnt-alf.bst
+Too many commas in name 1 of "Ross T. Whitaker, Chris Crampton, David E. Breen, Mihran Tuceryan, Eric Rose" for entry calibration
+while executing---line 1464 of file abnt-alf.bst
+Warning--campo journal vazio em ORB
+Warning--campo journal vazio em localfeaturedetector
+Warning--Aviso: Este estilo está em desenvolvimento.
+Warning--Caso tenha problemas procure por http://abntex.codigolivre.org.br
+(There were 18 error messages)

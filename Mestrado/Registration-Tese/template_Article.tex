@@ -30,7 +30,7 @@
 
 
 \documentclass[msc]{ita}    % ITA.cls based on standard book.cls
-
+\usepackage[section]{placeins}
 %++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 % Identificacoes...
 %++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -102,9 +102,9 @@ Aqui pode ser escrita uma dedicatória. Não é obrigatória.
 \begin{spacing}{1}
 \mbox{}\vfill
 {\sffamily\itshape
-``If I have seen farther than others,\\
-it is because I stood on the shoulders of giants.''\\}
---- \textsc{Sir~Isaac Newton}
+
+``Persistence is the shortest path to success.''\\}
+--- \textsc{Charles Chaplin}
 \end{spacing}
 \end{flushright}
 
@@ -147,9 +147,8 @@ it is because I stood on the shoulders of giants.''\\}
 \input{parts/objetivo}
 
 
-\chapter{Restrições}
-\input{parts/variaveiscontorno}
-\input{parts/restricoes}
+\chapter{Contexto}
+\input{parts/contexto} 
 
 \chapter{Conceitos}
 \input{parts/basicos/conceitos_basicos}
@@ -167,10 +166,14 @@ it is because I stood on the shoulders of giants.''\\}
 \chapter{Conclusão}
 \input{parts/conclusao}
 
+\chapter{Trabalhos futuros}
+\input{parts/futuros}
+
+
 % Referencias Bibliograficas
 \begin{spacing}{1.0}
 \begin{flushleft}
-\bibliographystyle{abnt-cite-style}%Choose a bibliograhpic style
+%\bibliographystyle{alpha}%Choose a bibliograhpic style
 \bibliography{bibliography}
 \end{flushleft}
 \end{spacing}
