@@ -1,0 +1,93 @@
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{1.29 }
+
+\bibitem[Alexandre~Alahi Raphael~Ortiz 2012]{FREAK}
+\abntrefinfo{Alexandre~Alahi Raphael~Ortiz}{ALEXANDRE~ALAHI
+  RAPHAEL~ORTIZ}{2012}
+{ALEXANDRE~ALAHI RAPHAEL~ORTIZ, P.~V. Freak: Fast retina keypoint.
+\textbf{ Ecole Polytechnique Fed´ erale de Lausanne (EPFL), Switzerland´},
+  2012.}
+
+\bibitem[Azuma 1997]{SurveyAR}
+\abntrefinfo{Azuma}{AZUMA}{1997}
+{AZUMA, R.~T. A survey of augmented reality.
+\textbf{ Hughes Research Laboratories}, aug 1997.}
+
+\bibitem[E.~Rosten e Drummond 2005]{VideoAnotation}
+\abntrefinfo{E.~Rosten e Drummond}{E.~ROSTEN; DRUMMOND}{2005}
+{E.~ROSTEN, G.~R.; DRUMMOND, T. Real-time video annotations for augmented
+  reality.
+\textbf{ International Symposium on Visual Computing}, 2005.}
+
+\bibitem[Gary~Bradski 2008]{OpenCvOReilly}
+\abntrefinfo{Gary~Bradski}{GARY~BRADSKI}{2008}
+{GARY~BRADSKI, A.~K. \textbf{ Learning OpenCv Computer vision with the Opencv
+  Library}. [S.l.]: O´REILLY, 2008.}
+
+\bibitem[Gay-Bellile 2012]{ISMAR2012}
+\abntrefinfo{Gay-Bellile}{GAY-BELLILE}{2012}
+{GAY-BELLILE, V. A mobile markerless augmented reality system for the
+  automotive field.
+2012.}
+
+\bibitem[Herbert~Bay Tinne~Tuytelaars 2008]{SURF}
+\abntrefinfo{Herbert~Bay Tinne~Tuytelaars}{HERBERT~BAY TINNE~TUYTELAARS}{2008}
+{HERBERT~BAY TINNE~TUYTELAARS, L. V.~G. Surf : Speeded up robust features.
+\textbf{ ETH Zurich}, 2008.}
+
+\bibitem[Krystian~Mikolajczyk 2005]{performance_evaluation}
+\abntrefinfo{Krystian~Mikolajczyk}{KRYSTIAN~MIKOLAJCZYK}{2005}
+{KRYSTIAN~MIKOLAJCZYK, C.~S. A performance evaluation of local descriptors.
+feb 2005.}
+
+\bibitem[Leutenegger, Chli e Siegwart 2011]{BRISK}
+\abntrefinfo{Leutenegger, Chli e Siegwart}{LEUTENEGGER; CHLI; SIEGWART}{2011}
+{LEUTENEGGER, S.; CHLI, M.; SIEGWART, Y. Brisk: Binary robust invariant
+  scalable keypoints. In:  \textbf{ In Computer Vision (ICCV), 2011 IEEE
+  International Conference on}. [S.l.: s.n.], 2011. p. 2548--2555.}
+
+\bibitem[Lowe 2004]{SIFT}
+\abntrefinfo{Lowe}{LOWE}{2004}
+{LOWE, D.~G. Distinctive image features from scale-invariant keypoints.
+\textbf{ Computer Science Department University of British Columbia Vancouver,
+  B.C., Canada}, 2004.}
+
+\bibitem[Ross T.~Whitaker Chris~Crampton 1995]{calibration}
+\abntrefinfo{Ross T.~Whitaker Chris~Crampton}{ROSS T.~WHITAKER
+  CHRIS~CRAMPTON}{1995}
+{ROSS T.~WHITAKER CHRIS~CRAMPTON, D. E. B. M. T. E.~R. Object calibration for
+  augmented reality.
+\textbf{ Eurographics}, 1995.}
+
+\bibitem[Rosten e Drummond 2005]{FusingPoints}
+\abntrefinfo{Rosten e Drummond}{ROSTEN; DRUMMOND}{2005}
+{ROSTEN, E.; DRUMMOND, T. Fusing points and lines for high performance
+  tracking.
+\textbf{ IEEE International Conference on Computer Vision}, vol. 2, p. pp.
+  1508–1515, 2005.}
+
+\bibitem[Rosten e Drummond 2006]{FAST}
+\abntrefinfo{Rosten e Drummond}{ROSTEN; DRUMMOND}{2006}
+{ROSTEN, E.; DRUMMOND, T. Machine learning for high-speed corner detection. In:
+   \textbf{ In European Conference on Computer Vision}. [S.l.: s.n.], 2006. p.
+  430--443.}
+
+\bibitem[Rublee 2011]{ORB}
+\abntrefinfo{Rublee}{RUBLEE}{2011}
+{RUBLEE, E. Orb: an efficient alternative to sift or surf.
+2011.}
+
+\bibitem[Silva, Oliveira e Giraldi 2003]{Devices}
+\abntrefinfo{Silva, Oliveira e Giraldi}{SILVA; OLIVEIRA; GIRALDI}{2003}
+{SILVA, R.; OLIVEIRA, J.~C.; GIRALDI, G.~A. \textbf{ Introduction to augmented
+  reality}.
+[S.l.], 2003.}
+
+\bibitem[Tinne~Tuytelaars 2007]{localfeaturedetector}
+\abntrefinfo{Tinne~Tuytelaars}{TINNE~TUYTELAARS}{2007}
+{TINNE~TUYTELAARS, K.~M. Local invariant feature detectors: A survey.
+2007.}
+
+\end{thebibliography}

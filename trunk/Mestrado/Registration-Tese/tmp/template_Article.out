@@ -12,50 +12,52 @@
 \BOOKMARK [0][]{chapter*.7}{Lista de Abreviaturas e Siglas}{}% 12
 \BOOKMARK [0][]{chapter.1}{1 Motiva\347\343o}{}% 13
 \BOOKMARK [0][]{chapter.2}{2 Objetivo}{}% 14
-\BOOKMARK [0][]{chapter.3}{3 Restri\347\365es}{}% 15
+\BOOKMARK [0][]{chapter.3}{3 Contexto}{}% 15
 \BOOKMARK [1][]{section.3.1}{3.1 Vari\341veis de contorno}{chapter.3}% 16
-\BOOKMARK [1][]{section.3.2}{3.2 Restri\347\365es}{chapter.3}% 17
-\BOOKMARK [0][]{chapter.4}{4 Conceitos}{}% 18
-\BOOKMARK [1][]{section.4.1}{4.1 Realidade Aumentada}{chapter.4}% 19
-\BOOKMARK [1][]{section.4.2}{4.2 Head-Mounted Displays}{chapter.4}% 20
-\BOOKMARK [2][]{subsection.4.2.1}{4.2.1 Feed-Through}{section.4.2}% 21
-\BOOKMARK [2][]{subsection.4.2.2}{4.2.2 See-Through}{section.4.2}% 22
-\BOOKMARK [2][]{subsection.4.2.3}{4.2.3 Projetores}{section.4.2}% 23
-\BOOKMARK [2][]{subsection.4.2.4}{4.2.4 Monitores}{section.4.2}% 24
-\BOOKMARK [1][]{section.4.3}{4.3 Modos de Aquisi\347\343o}{chapter.4}% 25
-\BOOKMARK [2][]{subsection.4.3.1}{4.3.1 Multiview}{section.4.3}% 26
-\BOOKMARK [2][]{subsection.4.3.2}{4.3.2 Multitemporal}{section.4.3}% 27
-\BOOKMARK [2][]{subsection.4.3.3}{4.3.3 Multimodal}{section.4.3}% 28
-\BOOKMARK [2][]{subsection.4.3.4}{4.3.4 Cena para o Modelo}{section.4.3}% 29
-\BOOKMARK [1][]{section.4.4}{4.4 Caracter\355sticas Locais}{chapter.4}% 30
-\BOOKMARK [2][]{subsection.4.4.1}{4.4.1 Propriedades da Caracter\355stica Local ideal}{section.4.4}% 31
-\BOOKMARK [2][]{subsection.4.4.2}{4.4.2 Features}{section.4.4}% 32
-\BOOKMARK [1][]{section.4.5}{4.5 Camera}{chapter.4}% 33
-\BOOKMARK [2][]{subsection.4.5.1}{4.5.1 Distor\347\343o Radial}{section.4.5}% 34
-\BOOKMARK [2][]{subsection.4.5.2}{4.5.2 Distor\347\343o Tangencial}{section.4.5}% 35
-\BOOKMARK [1][]{section.4.6}{4.6 Modelo de C\342mera}{chapter.4}% 36
-\BOOKMARK [2][]{subsection.4.6.1}{4.6.1 Calibra\347\343o da C\342mera}{section.4.6}% 37
-\BOOKMARK [1][]{section.4.7}{4.7 Reconhecimento}{chapter.4}% 38
-\BOOKMARK [2][]{subsection.4.7.1}{4.7.1 Detec\347\343o de caracter\355sticas}{section.4.7}% 39
-\BOOKMARK [2][]{subsection.4.7.2}{4.7.2 Feature matching}{section.4.7}% 40
-\BOOKMARK [1][]{section.4.8}{4.8 Algoritmos de Reconhecimento}{chapter.4}% 41
-\BOOKMARK [2][]{subsection.4.8.1}{4.8.1 BRISK}{section.4.8}% 42
-\BOOKMARK [2][]{subsection.4.8.2}{4.8.2 FAST}{section.4.8}% 43
-\BOOKMARK [2][]{subsection.4.8.3}{4.8.3 FREAK}{section.4.8}% 44
-\BOOKMARK [2][]{subsection.4.8.4}{4.8.4 MSER}{section.4.8}% 45
-\BOOKMARK [2][]{subsection.4.8.5}{4.8.5 ORB}{section.4.8}% 46
-\BOOKMARK [2][]{subsection.4.8.6}{4.8.6 SIFT - Scale-Invariant Feature Transform}{section.4.8}% 47
-\BOOKMARK [2][]{subsection.4.8.7}{4.8.7 STAR}{section.4.8}% 48
-\BOOKMARK [2][]{subsection.4.8.8}{4.8.8 SURF - Speeded Up Robust Feature}{section.4.8}% 49
-\BOOKMARK [0][]{chapter.5}{5 Metodologia}{}% 50
-\BOOKMARK [0][]{chapter.6}{6 Prot\363tipos}{}% 51
-\BOOKMARK [1][]{section.6.1}{6.1 Testes de defini\347\343o de fronteiras de par\342metros}{chapter.6}% 52
-\BOOKMARK [1][]{section.6.2}{6.2 Testes de reconhecimento de padr\365es}{chapter.6}% 53
-\BOOKMARK [1][]{section.6.3}{6.3 Ambiente}{chapter.6}% 54
-\BOOKMARK [2][]{subsection.6.3.1}{6.3.1 OpenCV}{section.6.3}% 55
-\BOOKMARK [1][]{section.6.4}{6.4 Caso de uso}{chapter.6}% 56
+\BOOKMARK [1][]{section.3.2}{3.2 Cen\341rio}{chapter.3}% 17
+\BOOKMARK [1][]{section.3.3}{3.3 Caso de uso}{chapter.3}% 18
+\BOOKMARK [0][]{chapter.4}{4 Conceitos}{}% 19
+\BOOKMARK [1][]{section.4.1}{4.1 Realidade Aumentada}{chapter.4}% 20
+\BOOKMARK [1][]{section.4.2}{4.2 Head-Mounted Displays}{chapter.4}% 21
+\BOOKMARK [2][]{subsection.4.2.1}{4.2.1 Feed-Through}{section.4.2}% 22
+\BOOKMARK [2][]{subsection.4.2.2}{4.2.2 See-Through}{section.4.2}% 23
+\BOOKMARK [2][]{subsection.4.2.3}{4.2.3 Projetores}{section.4.2}% 24
+\BOOKMARK [2][]{subsection.4.2.4}{4.2.4 Monitores}{section.4.2}% 25
+\BOOKMARK [1][]{section.4.3}{4.3 Modos de Aquisi\347\343o}{chapter.4}% 26
+\BOOKMARK [2][]{subsection.4.3.1}{4.3.1 Multiview}{section.4.3}% 27
+\BOOKMARK [2][]{subsection.4.3.2}{4.3.2 Multitemporal}{section.4.3}% 28
+\BOOKMARK [2][]{subsection.4.3.3}{4.3.3 Multimodal}{section.4.3}% 29
+\BOOKMARK [2][]{subsection.4.3.4}{4.3.4 Cena para o Modelo}{section.4.3}% 30
+\BOOKMARK [1][]{section.4.4}{4.4 Caracter\355sticas Locais}{chapter.4}% 31
+\BOOKMARK [2][]{subsection.4.4.1}{4.4.1 Propriedades da Caracter\355stica Local ideal}{section.4.4}% 32
+\BOOKMARK [2][]{subsection.4.4.2}{4.4.2 Features}{section.4.4}% 33
+\BOOKMARK [1][]{section.4.5}{4.5 Camera}{chapter.4}% 34
+\BOOKMARK [2][]{subsection.4.5.1}{4.5.1 Distor\347\343o Radial}{section.4.5}% 35
+\BOOKMARK [2][]{subsection.4.5.2}{4.5.2 Distor\347\343o Tangencial}{section.4.5}% 36
+\BOOKMARK [1][]{section.4.6}{4.6 Modelo de C\342mera}{chapter.4}% 37
+\BOOKMARK [2][]{subsection.4.6.1}{4.6.1 Calibra\347\343o da C\342mera}{section.4.6}% 38
+\BOOKMARK [1][]{section.4.7}{4.7 Reconhecimento}{chapter.4}% 39
+\BOOKMARK [2][]{subsection.4.7.1}{4.7.1 Detec\347\343o de caracter\355sticas}{section.4.7}% 40
+\BOOKMARK [2][]{subsection.4.7.2}{4.7.2 Feature matching}{section.4.7}% 41
+\BOOKMARK [1][]{section.4.8}{4.8 Algoritmos de Reconhecimento}{chapter.4}% 42
+\BOOKMARK [2][]{subsection.4.8.1}{4.8.1 BRISK}{section.4.8}% 43
+\BOOKMARK [2][]{subsection.4.8.2}{4.8.2 FAST}{section.4.8}% 44
+\BOOKMARK [2][]{subsection.4.8.3}{4.8.3 FREAK}{section.4.8}% 45
+\BOOKMARK [2][]{subsection.4.8.4}{4.8.4 MSER}{section.4.8}% 46
+\BOOKMARK [2][]{subsection.4.8.5}{4.8.5 ORB}{section.4.8}% 47
+\BOOKMARK [2][]{subsection.4.8.6}{4.8.6 SIFT - Scale-Invariant Feature Transform}{section.4.8}% 48
+\BOOKMARK [2][]{subsection.4.8.7}{4.8.7 STAR}{section.4.8}% 49
+\BOOKMARK [2][]{subsection.4.8.8}{4.8.8 SURF - Speeded Up Robust Feature}{section.4.8}% 50
+\BOOKMARK [0][]{chapter.5}{5 Metodologia}{}% 51
+\BOOKMARK [0][]{chapter.6}{6 Prot\363tipos}{}% 52
+\BOOKMARK [1][]{section.6.1}{6.1 Testes de defini\347\343o de fronteiras de par\342metros}{chapter.6}% 53
+\BOOKMARK [1][]{section.6.2}{6.2 Testes de reconhecimento de padr\365es}{chapter.6}% 54
+\BOOKMARK [1][]{section.6.3}{6.3 Ambiente}{chapter.6}% 55
+\BOOKMARK [2][]{subsection.6.3.1}{6.3.1 OpenCV}{section.6.3}% 56
 \BOOKMARK [0][]{chapter.7}{7 Resultados}{}% 57
 \BOOKMARK [1][]{section.7.1}{7.1 Homografia}{chapter.7}% 58
 \BOOKMARK [0][]{chapter.8}{8 Conclus\343o}{}% 59
-\BOOKMARK [0][]{chapter.9}{Gloss\341rio}{}% 60
-\BOOKMARK [0][]{bla.0}{Folha de Registro do Documento}{}% 61
+\BOOKMARK [0][]{chapter.9}{9 Trabalhos futuros}{}% 60
+\BOOKMARK [0][]{chapter.10}{Refer\352ncias Bibliogr\341ficas}{}% 61
+\BOOKMARK [0][]{chapter.11}{Gloss\341rio}{}% 62
+\BOOKMARK [0][]{bla.0}{Folha de Registro do Documento}{}% 63

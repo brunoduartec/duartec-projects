@@ -1,3 +1,53 @@
+\section{Camera}
+Como descrito em \cite{OpenCvOReilly} as câmeras de baixo custo vendidas
+atualmente introduzem diversos erros de distorção.
+ Dois dos maiores são as distorções radiais e as distorções tangenciais.
+Devido a distorções radiais, linhas retas vão parecer curvadas e tal efeito tende a 
+aumentar quanto mais o ponto se distancia do centro da imagem. Na prática essas distorções
+ são pequenas e podem ser caracterizadas pelos primeiros termos de uma expansão da série de Tailor.
+\subsection{Distorção Radial}
+Distorções radiais são mais associadas a lentes de grandes ângulos, em particular zoom wide-angles. Esse efeito resulta em imagens esforzadas, o que significa que as arestas da imagem  vão aparecer curvadas a olho humano. 
+A distorção é resultado da fabricação por ser bem mais barato e prático produzir lentes esféricas do que lentes mais matematicamente ideais com perfis parabólicos.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.7]{images/radial01}
+\caption{Distorção radial.}
+\label{fig:radial01}
+\end{figure}
+
+A imagem~\ref{fig:radial02} mostra como o deslocamento de um retângulo devido à distorção
+radial, mais acentuado quanto mais próximo das bordas da imagem.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.7]{images/radial02}
+\caption{Componentes de Distorção radial.}
+\label{fig:radial02}
+\end{figure}
+
+\subsection{Distorção Tangencial}
+Essa distorção se deve a defeitos de manufatura causadas pelo fato de o plano da lente não ser totalmente paralelo ao plano da imagem. 
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.7]{images/tangencial01}
+\caption{Distorção tangencial.}
+\label{fig:tangencial01}
+\end{figure}
+
+A imagem~\ref{fig:tangencial02} mostra o efeito da distorção tangencial em um
+grid de pontos retangular. Os pontos se deslocam deforma eliptica quanto mais próximos da borda.
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.7]{images/tangencial02}
+\caption{Componentes de Distorção tangencial.}
+\label{fig:tangencial02}
+\end{figure}
+
+
+
 \section{Modelo de Câmera}
 As câmeras são modeladas como câmeras de pequenos orifícios como mostrada na
 imagem~\ref{fig:camera01}.Esse modelo define a projeção básica sobre a qual as
@@ -21,7 +71,8 @@ de projeção na origem e a imagem a uma distância focal f. ref[3]
 Visto que as câmeras atuais adicionam distorções, se faz necessário normalizar as
  imagens antes de utilizá-las para que os pontos de referência não distorçam tanto na imagem como um todo,
   podendo sofrer efeitos de distorção nas bordas por exemplo.
-Considerando um modelo matemático que corrija as distorções radiais e tangenciais. 
+Como citado em \cite{calibration} considerando um modelo matemático que corrija
+as distorções radiais e tangenciais.
 Para corrigir o fator radial, consideramos a seguinte transformada
 \begin{figure}[h!]
 \centering
