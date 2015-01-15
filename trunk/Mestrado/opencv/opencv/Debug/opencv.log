@@ -1,4 +1,4 @@
-﻿Build started 14/01/2015 00:46:57.
+﻿Build started 14/01/2015 22:36:57.
      1>Project "D:\Projects\duartec-projects\Mestrado\opencv\opencv\opencv.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ID:\Projects\opencv\build\x86\vc11\..\..\include /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt "..\..\OpenCV-Features-Comparison-master\OpenCV-Features-Comparison-master\main.cpp"
@@ -14,4 +14,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:06.31
+Time Elapsed 00:00:07.31
