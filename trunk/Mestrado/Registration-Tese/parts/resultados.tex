@@ -1,5 +1,149 @@
 
-\cite{performance_evaluation}
+
+
+A abordagem de testes e análise de desempenho é feita como descrito em
+\cite{performance_evaluation}.
+
+\section{Análise de parâmetros}
+As implementações existentes no OpenCV para as técnicas utilizadas nessa tese
+tem parâmetros configuráveis, o que pode garantir uma maior aderência às
+necessidades dependendo do contexto, portanto antes de compararmos as técnicas é
+importante garantirmos que a configuração utilizada de cada uma se encaixa nas
+restrições citadas em \ref{sec:restricao}. Cada técnica possibilita variar
+alguns parâmetros que será analisado para encontrar a melhor configuração
+
+\subsection{BRISK}
+
+\subsection{FAST}
+A assinatura do método é \newline
+\center{FastFeatureDetector( int threshold=1, bool nonmaxSuppression=true );}
+variando o parâmetro treshhold em 30,50,100 
+ 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.2]{images/precision-fast}
+\caption{Performance de FAST quanto à variações de escala, iluminação, rotação e
+gaussian blur }
+\label{fig:time_sift_surf}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.2]{images/time-fast}
+\caption{Tempo de FAST quanto à variações de escala, iluminação, rotação e
+gaussian blur }
+\label{fig:time_sift_surf}
+\end{figure}
+
+
+
+
+\subsection{FREAK}
+
+TODO
+
+
+\subsection{MSER}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.2]{images/precision-mser}
+\caption{Performance de MSER quanto à variações de escala, iluminação, rotação e
+gaussian blur }
+\label{fig:precision_mser}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.2]{images/time-mser}
+\caption{Tempo de MSER quanto à variações de escala, iluminação, rotação e
+gaussian blur }
+\label{fig:time_mser}
+\end{figure}
+
+
+\subsection{ORB}
+
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.2]{images/precision-mser}
+\caption{Performance de ORB quanto à variações de escala, iluminação, rotação e
+gaussian blur }
+\label{fig:precision_orb}
+\end{figure}
+
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.2]{images/time-mser}
+\caption{Tempo de ORB quanto à variações de escala, iluminação, rotação e
+gaussian blur }
+\label{fig:time_orb}
+\end{figure}
+
+\subsection{SIFT}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.2]{images/precision-mser}
+\caption{Performance de SIFT quanto à variações de escala, iluminação, rotação e
+gaussian blur }
+\label{fig:precision_sift}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.2]{images/time-mser}
+\caption{Tempo de SLFT quanto à variações de escala, iluminação, rotação e
+gaussian blur }
+\label{fig:time_sift}
+\end{figure}
+
+\subsection{STAR}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.2]{images/precision-mser}
+\caption{Performance de STAR quanto à variações de escala, iluminação, rotação e
+gaussian blur }
+\label{fig:precision_star}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.2]{images/time-mser}
+\caption{Tempo de STAR quanto à variações de escala, iluminação, rotação e
+gaussian blur }
+\label{fig:time_star}
+\end{figure}
+
+\subsection{SURF}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.2]{images/precision-mser}
+\caption{Performance de SURF quanto à variações de escala, iluminação, rotação e
+gaussian blur }
+\label{fig:precision_surf}
+\end{figure}
+
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.2]{images/time-mser}
+\caption{Tempo de SURF quanto à variações de escala, iluminação, rotação e
+gaussian blur }
+\label{fig:time_surf}
+\end{figure}
+
+
+
+
 
 
 Os algoritmos SIFT e SURF apesar de retornarem bons resultados para o contexto,
@@ -34,6 +178,9 @@ gaussian blur}
 gaussian blur sem os algoritmos SIFT e SURF}
 \label{fig:performancealgorithms}
 \end{figure}
+
+
+
 
 
 
