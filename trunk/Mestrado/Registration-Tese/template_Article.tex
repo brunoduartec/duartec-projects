@@ -31,6 +31,14 @@
 
 \documentclass[msc]{ita}    % ITA.cls based on standard book.cls
 \usepackage[section]{placeins}
+
+
+\usepackage{float}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.8}
+\usepackage{pgfkeys}
+
+%\excludecomment{comment}  %do not show comments
 %++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 % Identificacoes...
 %++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -50,18 +58,18 @@
 aeronauticos}
 
 % Orientador
-\advisor{Prof.~Dr.}{Fulano de Tal}
+\advisor{Prof.~Dr.}{Luís Gonzaga Trabasso}
 
 % Co-orientador opcional
 \coadvisor{Prof.~Dr.}{Beltrano de Tal}{OVNI}
 
 % Chefe da divisao de Pos-Graduacao
 % Obrigatório para Teses
-\boss{Prof.~Dr.}{Cicrano de Tal}
+\boss{Prof.~Dr.}{Celso Massaki Hirata}
 
 % Banca Examinadora
 % Obrigatório para Teses
-\examiner{Prof. Dr.}{Fulano Beltrano}{Presidente}{ITA}%
+\examiner{Prof. Dr.}{Luís Gonzaga Trabasso}{Presidente}{ITA}%
 \examiner{Prof. Dr.}{Cicrano Fulano}{Membro Externo}{UXXX}%
 \examiner{Prof. Dr.}{Beltrano Cicrano}{Membro Externo}{UYYY}%
 \examiner{Prof. Dr.}{Fulano de Tal}{Membro}{ITA}%
@@ -150,6 +158,10 @@ Aqui pode ser escrita uma dedicatória. Não é obrigatória.
 \chapter{Contexto}
 \input{parts/contexto} 
 
+\chapter{Estrutura do texto}
+\input{parts/estrutura}
+
+
 \chapter{Conceitos}
 \input{parts/basicos/conceitos_basicos}
 
@@ -160,7 +172,7 @@ Aqui pode ser escrita uma dedicatória. Não é obrigatória.
 \input{parts/prototipos}
 
 \chapter{Resultados}
-\input{parts/resultados}
+\input{parts/results/resultados}
 
 
 \chapter{Conclusão}

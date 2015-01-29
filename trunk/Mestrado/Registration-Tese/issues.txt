@@ -1,0 +1,25 @@
+abreviaturas tá zoado
+motivacao com ...
+objetivo com referencias jogadas
+retirar imagem 3.2
+escrever sobre brisk
+escrever sobre freak
+escrever sobre mser
+escrever sobre orb
+escrever sobre sift
+escrever sobre star
+mudar "An´alise de parˆametros p ontuais" para Analise pontual de parâmetros
+mudar os graficos para smoth
+falar sobre a assinatura do freak
+graficos em lugar errado
+OK	colocar legenda nos graficos
+OK	fast time rotation arrumar o ymin
+OK	freak tem 3 na legenda e só 2 graficos
+orb nao esta tracando direito
+sift graficos com problema
+star nao tracando graficos direito
+mser os pontos não estao gerando graficos
+OK	surf pres rot indo ate 360
+OK	mser time ymax
+sift time ymax
+surf time ymax

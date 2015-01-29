@@ -1,0 +1,153 @@
+\newcommand{\minscale}{0.2}
+\newcommand{\maxscale}{1.2}
+\newcommand{\minangle}{0}
+\newcommand{\maxangle}{30}
+\newcommand{\minblur}{0}
+\newcommand{\maxblur}{4}
+\newcommand{\minbright}{-50}
+\newcommand{\maxbright}{50}
+\newcommand{\correctmatches}{0.6}
+\newcommand{\cadencia}{200}
+\newcommand{\maxtime}{10000}
+
+\newcommand{\miny}{-10}
+\newcommand{\maxy}{3}
+\newcommand{\minx}{-150}
+\newcommand{\maxx}{400}
+\newcommand{\ylimit}{0.6}
+\newcommand{\ylabel}{Percent of correct matches}
+
+
+
+\newcommand{\tec}{brisk}
+\newcommand{\gtype}{pres}
+
+
+
+\newcommand{\graphwidth}{0.4}
+
+
+A abordagem de testes e análise de desempenho é feita como descrito em
+\cite{performance_evaluation}.
+
+Para que sejam respeitados as restrições citadas na seção~\ref{sec:restricao} e
+para que a aplicação seja coerente para uso cotidiano no contexto de manutenção
+de aeronaves, a velocidade de reconhecimento é muito importante.
+
+
+\section{Análise de parâmetros pontuais}
+As implementações existentes no OpenCV para as técnicas utilizadas nessa tese
+tem parâmetros configuráveis, o que pode garantir uma maior aderência às
+necessidades dependendo do contexto, portanto antes de compararmos as técnicas
+entre si é importante garantirmos que a configuração utilizada de cada uma se
+encaixa nas restrições citadas em \ref{sec:restricao}. Cada técnica possibilita variar
+alguns parâmetros que será analisado para encontrar a configuração mais
+adequada.
+
+
+
+
+\input{parts/results/briskresult}
+\input{parts/results/fastresult}
+\input{parts/results/freakresult}
+\input{parts/results/mserresult}
+\input{parts/results/orbresult}
+\input{parts/results/siftresult}
+\input{parts/results/starresult}
+\input{parts/results/surfresult}
+
+
+
+
+
+ 
+
+
+
+
+
+\section{Análise de resultados}
+
+Após a análise pontual de cada algoritmo, podemos compará-los entre si e avaliar
+o que melhor se adequa ao contexto proposto.
+
+Os algoritmos SIFT e SURF apesar de retornarem bons resultados para o contexto,
+são pagos e portanto serão desconsiderados para a abordagem proposta.
+
+ Uma análise prévia dos algoritmos selecionados tem como tempo de resposta por
+frame a imagem~\ref{fig:performance6algorithms} que nos mostra claramente que a
+técnica FREAK não respondem em tempo ábil para serem considerados tempo
+real, portanto serão desconsiderados.
+
+
+A imagem~\ref{fig:time_sift_surf} que relaciona como as técnicas: BRISK, FAST,
+FREAK, ORB,STAR,SURF e SIFT respondem a variação
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.3]{images/time_sift_surf}
+\caption{Performance quanto à variações de escala, iluminação, rotação e
+gaussian blur}
+\label{fig:time_sift_surf}
+\end{figure}
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.3]{images/time}
+\caption{Performance quanto à variações de escala, iluminação, rotação e
+gaussian blur sem os algoritmos SIFT e SURF}
+\label{fig:performancealgorithms}
+\end{figure}
+
+
+
+
+
+
+\section{Homografia}
+
+Após a etapa de extração de características da imagem padrão e da imagem de
+comparação é importante fazer o casamento de padrões para que com um número
+significativo de características, o objeto seja reconhecido. As imagens
+imagem~\ref{fig:blurhomography}, mostram correspondências entre imagens variando
+as transformações propostas pelo protótipo em comparação com imagens sem as
+transformações.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{images/ORB-BLUR-HOMOGRAPHY}
+\caption{Homografia com variação variação de Blur.}
+\label{fig:blurhomography}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{images/ORB-BRIGHT-HOMOGRAPHY}
+\caption{Homografia com variação variação de iluminação.}
+\label{fig:brighthomography}
+\end{figure}
+
+
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{images/ORB-ROTATION-HOMOGRAPHY}
+\caption{Homografia com variação variação de Rotação.}
+\label{fig:rotationhomography}
+\end{figure}
+
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.8]{images/ORB-SCALE-HOMOGRAPHY}
+\caption{Homografia com variação variação de Escala.}
+\label{fig:scalehomography}
+\end{figure}
+
+
+
+\cite{ISMAR2012}

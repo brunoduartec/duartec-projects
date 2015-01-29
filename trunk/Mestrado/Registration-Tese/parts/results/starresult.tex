@@ -1,0 +1,323 @@
+
+\subsection{STAR}
+A assinatura do método é 
+\begin{center}
+StarDetector(int _maxSize=45, int _responseThreshold=30,
+                 int _lineThresholdProjected=10,
+                 int _lineThresholdBinarized=8,
+                 int _suppressNonmaxSize=5);
+\end{center}
+
+
+
+\renewcommand{\tec}{star}
+\renewcommand{\gtype}{pres}
+
+
+\renewcommand{\miny}{-10}
+\renewcommand{\maxy}{3}
+\renewcommand{\minx}{-150}
+\renewcommand{\maxx}{400}
+\renewcommand{\ylimit}{0.6}
+\renewcommand{\ylabel}{Percent of correct matches}
+
+%STAR-1,STAR-50,STAR-100,STAR-1000
+\begin{figure}[H]
+\centering
+
+\begin{tikzpicture}
+	\pgfplotsset{small}
+	\matrix{
+	%scale
+\begin{axis}
+	[
+	   width=\graphwidth\textwidth,
+    ylabel=$\ylabel$, % Set the labels
+    xlabel=$Scale Factor$,
+	legend entries={$d=10$,$d=20$,$d=30$,$d=40$},
+	title= Robustness to scaling
+    ]
+	\addplot table [x=Argument, y=STAR-10, col sep=comma]	{graphs/scale-all-\gtype.csv}; 
+	 \addplot table [x=Argument, y=STAR-20, col sep=comma] {graphs/scale-all-\gtype.csv};
+	 \addplot table [x=Argument, y=STAR-30, col sep=comma] {graphs/scale-all-\gtype.csv};
+	 	 \addplot table [x=Argument, y=STAR-40, col sep=comma]	 {graphs/scale-all-\gtype.csv};
+  
+	
+	%eixo horizontal
+	\addplot[red,sharp plot,update limits=false] coordinates{(\minx,\ylimit)(\maxx,\ylimit)};
+	 \fill [opacity=0.4,red!25] (axis	cs:\minx,\miny)	rectangle (axis	
+	 cs:\maxx,\ylimit);
+	
+	
+	%eixo vertical
+	\addplot[blue,sharp plot,update limits=false] coordinates {(\minscale,\miny)(\minscale,\maxy)} ;
+		\fill [opacity=0.4,blue!25] (axis cs:0,-1) rectangle (axis	cs:\minscale,\maxy);
+	
+	\addplot[blue,sharp plot,update limits=false] coordinates {(\maxscale,\miny)(\maxscale,\maxy)} ;
+	\fill [opacity=0.4,blue!25] (axis cs:\maxscale,\miny) rectangle (axis	cs:\maxx,\maxy);
+	
+\end{axis}
+&
+%rotation
+\begin{axis}
+	[
+	   width=\graphwidth\textwidth,
+    ylabel=$\ylabel$, % Set the labels
+    xlabel=$Angle(Degree)$,
+	title= Rotation Invariance 
+    ]
+	\addplot table [x=Argument, y=STAR-10, col sep=comma]	{graphs/rot-all-\gtype.csv}; 
+	 \addplot table [x=Argument,	y=STAR-20, col	sep=comma] {graphs/rot-all-\gtype.csv};
+	 	 \addplot table [x=Argument, y=STAR-30, col sep=comma] {graphs/rot-all-\gtype.csv};		
+	 	 	 	 \addplot table [x=Argument, y=STAR-40, col sep=comma]
+	 	 {graphs/rot-all-\gtype.csv};	
+ 
+		 %eixo horizontal
+	\addplot[red,sharp plot,update limits=false] coordinates
+	{(-100,\ylimit) (400,\ylimit)};
+		\fill [opacity=0.4,red!25] (axis cs:-100,\miny) rectangle (axis
+	cs:\maxx,\ylimit);
+	
+	
+		%eixo vertical
+	\addplot[blue,sharp plot,update limits=false] coordinates {(\minangle,\miny)
+	(\minangle,\maxy)} ;
+		\fill [opacity=0.4,blue!25] (axis cs:-100,\miny) rectangle (axis
+	cs:\minangle,\maxy);
+	
+	\addplot[blue,sharp plot,update limits=false] coordinates {(\maxangle,\miny)
+	(\maxangle,\maxy)} ;
+	\fill [opacity=0.4,blue!25] (axis cs:\maxangle,\miny) rectangle (axis
+	cs:\maxx,\maxy);
+
+	
+\end{axis}
+\\
+%blur
+\begin{axis}
+	[
+	   width=\graphwidth\textwidth,
+       ylabel=$\ylabel$, % Set the labels
+    xlabel=$Kernel size$,
+	title= Robustness to blur
+    ]
+	\addplot table [x=Argument, y=STAR-10, col sep=comma]	{graphs/blur-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=STAR-20, col sep=comma] {graphs/blur-all-\gtype.csv};
+	 	 \addplot table [x=Argument, y=STAR-30, col sep=comma] {graphs/blur-all-\gtype.csv};
+	 	 	 	 \addplot table [x=Argument, y=STAR-40, col sep=comma]
+	 	 {graphs/blur-all-\gtype.csv};
+
+	%eixo horizontal
+	\addplot[red,sharp plot,update limits=false] coordinates{(\minx,\ylimit)(\maxx,\ylimit)};
+	 \fill [opacity=0.4,red!25] (axis	cs:\minx,\ylimit) rectangle(axis
+	 cs:\maxx,\miny);
+
+
+				%eixo vertical
+	\addplot[blue,sharp plot,update limits=false] coordinates
+	{(\minblur,\miny)(\minblur,\maxy)} ; \fill [opacity=0.4,blue!25] (axis	cs:\minx,\miny) rectangle (axis cs:\minblur,\maxy);
+	
+	\addplot[blue,sharp plot,update limits=false] coordinates
+	{(\maxblur,\miny)(\maxblur,\maxy)} ; \fill [opacity=0.4,blue!25] (axis	cs:\maxblur,\miny) rectangle (axis cs:\maxx,\maxy);
+
+
+\end{axis}
+&
+%bright
+\begin{axis}
+	[
+	   width=\graphwidth\textwidth,
+       ylabel=$\ylabel$, % Set the labels
+    xlabel=$Change of brightness$,
+	title= Brightness Invariance 
+    ]
+	\addplot table [x=Argument, y=STAR-10, col sep=comma]	{graphs/bright-all-\gtype.csv};
+	\addplot table [x=Argument,	y=STAR-20, col	sep=comma] {graphs/bright-all-\gtype.csv}; 
+	 	 \addplot table [x=Argument, y=STAR-30, col sep=comma] {graphs/bright-all-\gtype.csv};
+	 	 	 	 \addplot table [x=Argument, y=STAR-40, col sep=comma]
+	 	 {graphs/bright-all-\gtype.csv};
+
+	%eixo horizontal
+	\addplot[red,sharp plot,update limits=false] coordinates	{(\minx,\ylimit)(\maxx,\ylimit)};
+	 \fill [opacity=0.4,red!25] (axis cs:\minx,\ylimit) rectangle(axis cs:\maxx,\miny);
+		
+		
+						%eixo vertical
+	\addplot[blue,sharp plot,update limits=false] coordinates
+	{(\minbright,\miny)(\minbright,\maxy)} ; 
+	\fill [opacity=0.4,blue!25] (axis	cs:\minx,\miny) rectangle (axis
+	cs:\minbright,\maxy);
+	
+	\addplot[blue,sharp plot,update limits=false] coordinates
+	{(\maxbright,\miny)(\maxbright,\maxy)} ; \fill [opacity=0.4,blue!25] (axis
+	cs:\maxbright,\miny) rectangle (axis cs:\maxx,\maxy);
+		
+	
+\end{axis}
+\\
+}
+
+\end{tikzpicture}
+\label{graph:starresultpres}
+\caption{Resultado de testes individuais de preformance com STAR}
+\end{figure}
+
+
+%TIME
+
+\renewcommand{\tec}{STAR}
+\renewcommand{\gtype}{time}
+
+\renewcommand{\maxy}{3000}
+\renewcommand{\miny}{-155}
+
+
+
+\renewcommand{\ylimit}{200}
+\renewcommand{\ylabel}{Time(Ms)}
+
+\begin{figure}[H]
+\centering
+
+\begin{tikzpicture}
+	\pgfplotsset{small}
+	\matrix{
+	%scale
+\begin{axis}
+	[
+	   width=\graphwidth\textwidth,
+      ylabel=$\ylabel$, % Set the labels
+    xlabel=$Scale Factor$,
+	legend entries={$d=10$,$d=20$,$d=30$,$d=40$},
+	title= Robustness to scaling
+    ]
+	\addplot table [x=Argument, y=STAR-10, col sep=comma]	{graphs/scale-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=STAR-20, col sep=comma] {graphs/scale-all-\gtype.csv};
+ 	 	 \addplot table [x=Argument, y=STAR-30, col sep=comma] {graphs/scale-all-\gtype.csv};
+ 	 	  	 	 \addplot table [x=Argument, y=STAR-40, col sep=comma]
+ 	 	 {graphs/scale-all-\gtype.csv};
+
+	
+	%eixo horizontal
+	\addplot[red,sharp plot,update limits=false] coordinates{(\miny,\ylimit)
+	(\maxx,\ylimit)}; 
+	\fill [opacity=0.4,red!25] (axis cs:\miny,\ylimit) rectangle (axis
+	cs:\maxx,\maxy);
+	
+	
+	%eixo vertical
+	\addplot[blue,sharp plot,update limits=false] coordinates {(\minscale,\miny)(\minscale,\maxy)} ;
+		\fill [opacity=0.4,blue!25] (axis cs:\minx,\miny) rectangle (axis		cs:\minscale,\maxy);
+	
+	\addplot[blue,sharp plot,update limits=false] coordinates {(\maxscale,\miny)	(\maxscale,\maxy)} ;
+	\fill [opacity=0.4,blue!25] (axis cs:\maxscale,\miny) rectangle (axis	cs:\maxx,\maxy);
+	
+\end{axis}
+&
+%rotation
+\begin{axis}
+	[
+	   width=\graphwidth\textwidth,
+      ylabel=$\ylabel$, % Set the labels
+    xlabel=$Angle(Degree)$,
+	title= Rotation Invariance 
+    ]
+	\addplot table [x=Argument, y=STAR-10, col sep=comma]	{graphs/rot-all-\gtype.csv}; 
+	\addplot table [x=Argument,	y=STAR-20, col	sep=comma] {graphs/rot-all-\gtype.csv};
+	 	 \addplot table [x=Argument, y=STAR-30, col sep=comma] {graphs/rot-all-\gtype.csv};	
+	 	 	 	 \addplot table [x=Argument, y=STAR-40, col sep=comma]
+	 	 {graphs/rot-all-\gtype.csv};	
+
+		 %eixo horizontal
+	\addplot[red,sharp plot,update limits=false] coordinates{(-100,\ylimit)
+	(400,\ylimit)}; 
+	\fill [opacity=0.4,red!25] (axis cs:-100,\ylimit) rectangle (axis
+	cs:400,\maxy);
+	
+	
+		%eixo vertical
+	\addplot[blue,sharp plot,update limits=false] coordinates {(\minangle,-100)
+	(\minangle,\maxy)} ;
+		\fill [opacity=0.4,blue!25] (axis cs:-100,-1) rectangle (axis
+	cs:\minangle,\maxy);
+	
+	\addplot[blue,sharp plot,update limits=false] coordinates {(\maxangle,-1)
+	(\maxangle,\maxy)} ;
+	\fill [opacity=0.4,blue!25] (axis cs:\maxangle,-1) rectangle (axis
+	cs:400,\maxy);
+
+	
+\end{axis}
+\\
+%blur
+\begin{axis}
+	[
+	   width=\graphwidth\textwidth,
+      ylabel=$\ylabel$, % Set the labels
+    xlabel=$Kernel size$,
+	title= Robustness to blur
+    ]
+	\addplot table [x=Argument, y=STAR-10, col sep=comma]	{graphs/blur-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=STAR-20, col sep=comma] {graphs/blur-all-\gtype.csv};
+	 	 \addplot table [x=Argument, y=STAR-30, col sep=comma] {graphs/blur-all-\gtype.csv};	
+	 	 	 	 \addplot table [x=Argument, y=STAR-40, col sep=comma]
+	 	 {graphs/blur-all-\gtype.csv};	
+
+		 %eixo horizontal
+	\addplot[red,sharp plot,update limits=false] coordinates{(\minx,\ylimit)
+	(\maxx,\ylimit)}; 
+	\fill [opacity=0.4,red!25] (axis cs:\minx,\ylimit) rectangle (axis
+	cs:\maxx,\maxy);
+
+				%eixo vertical
+	\addplot[blue,sharp plot,update limits=false] coordinates
+	{(\minblur,\miny)(\minblur,\maxy)} ; \fill [opacity=0.4,blue!25] (axis
+	cs:\minx,\miny) rectangle (axis cs:\minblur,\maxx);
+	
+	\addplot[blue,sharp plot,update limits=false] coordinates
+	{(\maxblur,\miny)(\maxblur,\maxy)} ; \fill [opacity=0.4,blue!25] (axis
+	cs:\maxblur,\miny) rectangle (axis cs:\maxx,\maxy);
+
+
+\end{axis}
+&
+%bright
+\begin{axis}
+	[
+	   width=\graphwidth\textwidth,
+      ylabel=$\ylabel$, % Set the labels
+    xlabel=$Change of brightness$,
+	title= Brightness Invariance 
+    ]
+	\addplot table [x=Argument, y=STAR-10, col sep=comma]	{graphs/bright-all-\gtype.csv}; 
+	\addplot table [x=Argument,	y=STAR-20, col	sep=comma] {graphs/bright-all-\gtype.csv}; 
+	 	 \addplot table [x=Argument, y=STAR-30, col sep=comma] {graphs/bright-all-\gtype.csv};	
+	 	 	 	 \addplot table [x=Argument, y=STAR-40, col sep=comma]
+	 	 {graphs/bright-all-\gtype.csv};	
+	
+	%eixo horizontal
+	\addplot[red,sharp plot,update limits=false] coordinates{(\minx,\ylimit)
+	(\maxx,\ylimit)}; 
+	\fill [opacity=0.4,red!25] (axis cs:\minx,\ylimit) rectangle (axis
+	cs:\maxx,\maxy);
+		
+		
+						%eixo vertical
+	\addplot[blue,sharp plot,update limits=false] coordinates
+	{(\minbright,\miny)(\minbright,\maxy)} ; \fill [opacity=0.4,blue!25] (axis
+	cs:\minx,\miny) rectangle (axis cs:\minbright,\maxy);
+	
+	\addplot[blue,sharp plot,update limits=false] coordinates
+	{(\maxbright,\miny)(\maxbright,\maxy)} ; \fill [opacity=0.4,blue!25] (axis
+	cs:\maxbright,\miny) rectangle (axis cs:\maxx,\maxy);
+		
+	
+\end{axis}
+\\
+}
+
+\end{tikzpicture}
+
+\label{graph:starresulttime}
+\caption{Resultado de testes individuais de tempo com STAR}
+\end{figure}
