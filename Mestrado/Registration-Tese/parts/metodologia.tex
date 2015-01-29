@@ -14,14 +14,20 @@ A definição das faixas de parâmetro utilizados foi feita com inspeção em campo
 
 \section{Análise de dados}
 
-A análise de desempenho de cada técnica deve ser balizada por parâmetros que garantam que a aplicação seja viável para o contexto citado na seção\ref{sec:contexto}. Para tal deve-se considerar
+A análise de desempenho de cada técnica deve ser balizada por parâmetros que garantam que a aplicação seja viável para o
+ contexto citado na seção\ref{sec:restricao}. Para tal deve-se considerar os
+ parâmetros estimados abaixo definidos por inspeção 
 
 \begin{itemize}
-	\item Cadência > 5fps ou seja, tempo < 200ms [REFERENCIA]
-	\item Robustez à escala > X1
-	\item Robustez à rotação >X2
-	\item Robustez à iluminação >X3
-	\item Robustez à blur >X4
+	\item Cadência > 5fps ou seja, tempo < 200ms \cite{Tang93whydo}
+	\item Robustez à escala:  0.5 < escala < 1.2
+	\item Robustez à rotação:  0 < rotação < 30 
+	\item Robustez à iluminação: -50 < iluminação < 50
+	\item Robustez à blur: kernelsize < 4
 \end{itemize}
+
+Uma análise mais precisa dos parâmetros não faz parte do escopo desse trabalho
+pois envolve pesquisa de campo em situações adversas. Portanto tais parâmetros
+foram escolhidos para validar o método de seleção das técnicas.
 
 
