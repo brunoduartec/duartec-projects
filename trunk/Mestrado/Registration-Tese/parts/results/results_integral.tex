@@ -1,0 +1,203 @@
+\pagebreak
+
+\renewcommand{\gtype}{pres}
+
+
+\renewcommand{\miny}{-10}
+\renewcommand{\maxy}{3}
+\renewcommand{\minx}{-150}
+\renewcommand{\maxx}{400}
+\renewcommand{\ylimit}{0.6}
+\renewcommand{\ylabel}{Percent of correct matches}
+
+As técnicas tem suas implementações no OpenCV com a possibilidade de configurar alguns parâmetros entretanto para garantir que a comparação inicial seja independente de peculiaridades de implementação ou mesmo das diversas possibilidades de configuração foi feita a comparação utilizando os construtores padrão, com as configurações iniciais.
+
+
+ 
+\begin{figure}[H]
+\centering
+
+%scale 
+\begin{tikzpicture}
+	\pgfplotsset{small}
+\begin{axis}
+	[
+	   width=\graphwidth\textwidth,
+    ylabel=$\ylabel$, % Set the labels
+    xlabel=$Scale Factor$,
+	legend entries={$d=BRISK$,$d=FAST$,$d=FREAK$,$d=MSER$,$d=MSER$,$d=ORB$,$d=STAR$,$d=SURF$,$d=SIFT$},
+	title= Robustness to scaling
+    ]
+	\addplot table [x=Argument, y=BRISK    , col sep=comma]	{graphs/scale-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=FAST     , col sep=comma]	{graphs/scale-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=FREAK    , col sep=comma]	{graphs/scale-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=MSER     , col sep=comma]	{graphs/scale-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=ORB      , col sep=comma]	{graphs/scale-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=STAR     , col sep=comma]	{graphs/scale-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=SURF     , col sep=comma]	{graphs/scale-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=SIFT     , col sep=comma]	{graphs/scale-all-\gtype.csv}; 
+	
+	
+	%eixo horizontal
+	\addplot[red,sharp plot,update limits=false] coordinates{(\minx,\ylimit)(\maxx,\ylimit)};
+	 \fill [opacity=0.4,red!25] (axis	cs:\minx,\miny)	rectangle (axis	
+	 cs:\maxx,\ylimit);
+	
+	
+	%eixo vertical
+	\addplot[blue,sharp plot,update limits=false] coordinates {(\minscale,\miny)(\minscale,\maxy)} ;
+		\fill [opacity=0.4,blue!25] (axis cs:0,-1) rectangle (axis	cs:\minscale,\maxy);
+	
+	\addplot[blue,sharp plot,update limits=false] coordinates {(\maxscale,\miny)(\maxscale,\maxy)} ;
+	\fill [opacity=0.4,blue!25] (axis cs:\maxscale,\miny) rectangle (axis	cs:\maxx,\maxy);
+	
+\end{axis}
+%AQUI
+\end{tikzpicture}
+
+\label{graph:scaleresultpres}
+\caption{Resultado de performance de variação de escala}
+\end{figure}
+
+
+%rotation
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+	\pgfplotsset{small}
+\begin{axis}
+	[
+	   width=\graphwidth\textwidth,
+    ylabel=$\ylabel$, % Set the labels
+    xlabel=$Angle(Degree)$,
+	legend entries={$d=BRISK$,$d=FAST$,$d=FREAK$,$d=MSER$,$d=MSER$,$d=ORB$,$d=STAR$,$d=SURF$,$d=SIFT$},	
+	title= Rotation Invariance 
+    ]
+	\addplot table [x=Argument, y=BRISK    , col sep=comma]	{graphs/scale-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=FAST     , col sep=comma]	{graphs/scale-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=FREAK    , col sep=comma]	{graphs/scale-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=MSER     , col sep=comma]	{graphs/scale-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=ORB      , col sep=comma]	{graphs/scale-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=STAR     , col sep=comma]	{graphs/scale-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=SURF     , col sep=comma]	{graphs/scale-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=SIFT     , col sep=comma]	{graphs/scale-all-\gtype.csv}; 
+
+	%eixo horizontal
+	\addplot[red,sharp plot,update limits=false] coordinates
+	{(-100,\ylimit) (400,\ylimit)};
+		\fill [opacity=0.4,red!25] (axis cs:-100,\miny) rectangle (axis
+	cs:\maxx,\ylimit);
+	
+	
+		%eixo vertical
+	\addplot[blue,sharp plot,update limits=false] coordinates {(\minangle,\miny)
+	(\minangle,\maxy)} ;
+		\fill [opacity=0.4,blue!25] (axis cs:-100,\miny) rectangle (axis
+	cs:\minangle,\maxy);
+	
+	\addplot[blue,sharp plot,update limits=false] coordinates {(\maxangle,\miny)
+	(\maxangle,\maxy)} ;
+	\fill [opacity=0.4,blue!25] (axis cs:\maxangle,\miny) rectangle (axis
+	cs:\maxx,\maxy);
+
+	
+\end{axis}
+%AQUI
+\end{tikzpicture}
+
+\label{graph:rotresultpres}
+\caption{Resultado de performance de variação de rotação}
+\end{figure}
+
+%blur
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+	\pgfplotsset{small}
+\begin{axis}
+	[
+	   width=\graphwidth\textwidth,
+       ylabel=$\ylabel$, % Set the labels
+    xlabel=$Kernel size$,
+	legend entries={$d=BRISK$,$d=FAST$,$d=FREAK$,$d=MSER$,$d=MSER$,$d=ORB$,$d=STAR$,$d=SURF$,$d=SIFT$},	
+	title= Robustness to blur]
+	\addplot table [x=Argument, y=BRISK    , col sep=comma]	{graphs/scale-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=FAST     , col sep=comma]	{graphs/scale-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=FREAK    , col sep=comma]	{graphs/scale-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=MSER     , col sep=comma]	{graphs/scale-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=ORB      , col sep=comma]	{graphs/scale-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=STAR     , col sep=comma]	{graphs/scale-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=SURF     , col sep=comma]	{graphs/scale-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=SIFT     , col sep=comma]	{graphs/scale-all-\gtype.csv}; 
+	 
+	%eixo horizontal
+	\addplot[red,sharp plot,update limits=false] coordinates{(\minx,\ylimit)(\maxx,\ylimit)};
+	 \fill [opacity=0.4,red!25] (axis	cs:\minx,\ylimit) rectangle(axis
+	 cs:\maxx,\miny);
+
+
+				%eixo vertical
+	\addplot[blue,sharp plot,update limits=false] coordinates
+	{(\minblur,\miny)(\minblur,\maxy)} ; \fill [opacity=0.4,blue!25] (axis	cs:\minx,\miny) rectangle (axis cs:\minblur,\maxy);
+	
+	\addplot[blue,sharp plot,update limits=false] coordinates
+	{(\maxblur,\miny)(\maxblur,\maxy)} ; \fill [opacity=0.4,blue!25] (axis	cs:\maxblur,\miny) rectangle (axis cs:\maxx,\maxy);
+
+
+\end{axis}
+%AQUI
+\end{tikzpicture}
+
+\label{graph:blurresultpres}
+\caption{Resultado de performance de variação de blur}
+\end{figure}
+
+%bright
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+	\pgfplotsset{small}
+\begin{axis}
+	[
+	   width=\graphwidth\textwidth,
+       ylabel=$\ylabel$, % Set the labels
+    xlabel=$Change of brightness$,
+	legend entries={$d=BRISK$,$d=FAST$,$d=FREAK$,$d=MSER$,$d=MSER$,$d=ORB$,$d=STAR$,$d=SURF$,$d=SIFT$},	
+	title= Brightness Invariance 
+    ]
+	\addplot table [x=Argument, y=BRISK    , col sep=comma]	{graphs/scale-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=FAST     , col sep=comma]	{graphs/scale-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=FREAK    , col sep=comma]	{graphs/scale-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=MSER     , col sep=comma]	{graphs/scale-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=ORB      , col sep=comma]	{graphs/scale-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=STAR     , col sep=comma]	{graphs/scale-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=SURF     , col sep=comma]	{graphs/scale-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=SIFT     , col sep=comma]	{graphs/scale-all-\gtype.csv}; 
+	
+		%eixo horizontal
+	\addplot[red,sharp plot,update limits=false] coordinates	{(\minx,\ylimit)(\maxx,\ylimit)};
+	 \fill [opacity=0.4,red!25] (axis cs:\minx,\ylimit) rectangle(axis cs:\maxx,\miny);
+		
+		
+						%eixo vertical
+	\addplot[blue,sharp plot,update limits=false] coordinates
+	{(\minbright,\miny)(\minbright,\maxy)} ; 
+	\fill [opacity=0.4,blue!25] (axis	cs:\minx,\miny) rectangle (axis
+	cs:\minbright,\maxy);
+	
+	\addplot[blue,sharp plot,update limits=false] coordinates
+	{(\maxbright,\miny)(\maxbright,\maxy)} ; \fill [opacity=0.4,blue!25] (axis
+	cs:\maxbright,\miny) rectangle (axis cs:\maxx,\maxy);
+		
+	
+\end{axis}
+%AQUI
+\end{tikzpicture}
+
+\label{graph:brightresultpres}
+\caption{Resultado de performance de variação de blur}
+\end{figure}
+
+}
+
+
