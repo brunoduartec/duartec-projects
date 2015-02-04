@@ -24,27 +24,13 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {8.1}{\ignorespaces Resultado de testes individuais de preformance com BRISK}}{48}{figure.8.1}
-\contentsline {figure}{\numberline {8.2}{\ignorespaces Resultado de testes individuais de tempo com BRISK}}{49}{figure.8.2}
-\contentsline {figure}{\numberline {8.3}{\ignorespaces Resultado de testes individuais de preformance com FAST}}{50}{figure.8.3}
-\contentsline {figure}{\numberline {8.4}{\ignorespaces Resultado de testes individuais de tempo com FAST}}{51}{figure.8.4}
-\contentsline {figure}{\numberline {8.5}{\ignorespaces Resultado de testes individuais de preformance com FREAK}}{52}{figure.8.5}
-\contentsline {figure}{\numberline {8.6}{\ignorespaces Resultado de testes individuais de tempo com FREAK}}{53}{figure.8.6}
-\contentsline {figure}{\numberline {8.7}{\ignorespaces Resultado de testes individuais de preformance com MSER}}{54}{figure.8.7}
-\contentsline {figure}{\numberline {8.8}{\ignorespaces Resultado de testes individuais de tempo com MSER}}{55}{figure.8.8}
-\contentsline {figure}{\numberline {8.9}{\ignorespaces Resultado de testes individuais de preformance com ORB}}{56}{figure.8.9}
-\contentsline {figure}{\numberline {8.10}{\ignorespaces Resultado de testes individuais de tempo com ORB}}{57}{figure.8.10}
-\contentsline {figure}{\numberline {8.11}{\ignorespaces Resultado de testes individuais de preformance com SIFT}}{58}{figure.8.11}
-\contentsline {figure}{\numberline {8.12}{\ignorespaces Resultado de testes individuais de tempo com SIFT}}{59}{figure.8.12}
-\contentsline {figure}{\numberline {8.13}{\ignorespaces Resultado de testes individuais de preformance com STAR}}{60}{figure.8.13}
-\contentsline {figure}{\numberline {8.14}{\ignorespaces Resultado de testes individuais de tempo com STAR}}{61}{figure.8.14}
-\contentsline {figure}{\numberline {8.15}{\ignorespaces Resultado de testes individuais de preformance com SURF}}{62}{figure.8.15}
-\contentsline {figure}{\numberline {8.16}{\ignorespaces Resultado de testes individuais de tempo com SURF}}{63}{figure.8.16}
-\contentsline {figure}{\numberline {8.17}{\ignorespaces Performance quanto \`a varia\c c\~oes de escala, ilumina\c c\~ao, rota\c c\~ao e gaussian blur}}{64}{figure.8.17}
-\contentsline {figure}{\numberline {8.18}{\ignorespaces Performance quanto \`a varia\c c\~oes de escala, ilumina\c c\~ao, rota\c c\~ao e gaussian blur sem os algoritmos SIFT e SURF}}{64}{figure.8.18}
-\contentsline {figure}{\numberline {8.19}{\ignorespaces Homografia com varia\c c\~ao varia\c c\~ao de Blur.}}{65}{figure.8.19}
-\contentsline {figure}{\numberline {8.20}{\ignorespaces Homografia com varia\c c\~ao varia\c c\~ao de ilumina\c c\~ao.}}{66}{figure.8.20}
-\contentsline {figure}{\numberline {8.21}{\ignorespaces Homografia com varia\c c\~ao varia\c c\~ao de Rota\c c\~ao.}}{66}{figure.8.21}
-\contentsline {figure}{\numberline {8.22}{\ignorespaces Homografia com varia\c c\~ao varia\c c\~ao de Escala.}}{67}{figure.8.22}
+\contentsline {figure}{\numberline {8.1}{\ignorespaces Resultado de performance de varia\c c\~ao de escala}}{48}{figure.8.1}
+\contentsline {figure}{\numberline {8.2}{\ignorespaces Resultado de performance de varia\c c\~ao de rota\c c\~ao}}{49}{figure.8.2}
+\contentsline {figure}{\numberline {8.3}{\ignorespaces Resultado de performance de varia\c c\~ao de blur}}{50}{figure.8.3}
+\contentsline {figure}{\numberline {8.4}{\ignorespaces Resultado de performance de varia\c c\~ao de blur}}{51}{figure.8.4}
+\contentsline {figure}{\numberline {8.5}{\ignorespaces An\'alise de tempo de varia\c c\~ao de escala}}{52}{figure.8.5}
+\contentsline {figure}{\numberline {8.6}{\ignorespaces An\'alise de tempo de varia\c c\~ao de rota\c c\~ao}}{53}{figure.8.6}
+\contentsline {figure}{\numberline {8.7}{\ignorespaces An\'alise de tempo de varia\c c\~ao de blur}}{54}{figure.8.7}
+\contentsline {figure}{\numberline {8.8}{\ignorespaces An\'alise de tempo de varia\c c\~ao de ilumina\c c\~ao}}{55}{figure.8.8}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

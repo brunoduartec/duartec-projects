@@ -1,18 +1,37 @@
-\pagebreak
-
-\renewcommand{\gtype}{pres}
+\newcommand{\gtype}{pres}
 
 
-\renewcommand{\miny}{-10}
-\renewcommand{\maxy}{3}
-\renewcommand{\minx}{-150}
-\renewcommand{\maxx}{400}
-\renewcommand{\ylimit}{0.6}
-\renewcommand{\ylabel}{Percent of correct matches}
+\newcommand{\minscale}{0.2}
+\newcommand{\maxscale}{1.2}
+\newcommand{\minangle}{0}
+\newcommand{\maxangle}{30}
+\newcommand{\minblur}{0}
+\newcommand{\maxblur}{4}
+\newcommand{\minbright}{-50}
+\newcommand{\maxbright}{50}
+\newcommand{\correctmatches}{0.6}
+\newcommand{\cadencia}{200}
+\newcommand{\maxtime}{10000}
 
-As t√©cnicas tem suas implementa√ß√µes no OpenCV com a possibilidade de configurar alguns par√¢metros entretanto para garantir que a compara√ß√£o inicial seja independente de peculiaridades de implementa√ß√£o ou mesmo das diversas possibilidades de configura√ß√£o foi feita a compara√ß√£o utilizando os construtores padr√£o, com as configura√ß√µes iniciais.
+
+\newcommand{\miny}{-10}
+\newcommand{\maxy}{3}
+\newcommand{\minx}{-150}
+\newcommand{\maxx}{400}
+\newcommand{\ylimit}{0.6}
+\newcommand{\ylabel}{Percent of correct matches}
+\newcommand{\graphwidth}{0.8}
 
 
+
+As tÈcnicas tem suas implementaÁıes no OpenCV com a possibilidade de
+configurar alguns par‚metros entretanto para garantir que a comparaÁ„o inicial
+ seja independente de peculiaridades de implementaÁ„o ou mesmo das diversas
+ possibilidades de configuraÁ„o foi feita a comparaÁ„o utilizando os
+ construtores padr„o, com as configuraÁıes iniciais.
+
+
+\section{Taxa de Acertos}
  
 \begin{figure}[H]
 \centering
@@ -56,7 +75,7 @@ As t√©cnicas tem suas implementa√ß√µes no OpenCV com a possibilidade de configur
 \end{tikzpicture}
 
 \label{graph:scaleresultpres}
-\caption{Resultado de performance de varia√ß√£o de escala}
+\caption{Resultado de performance de variaÁ„o de escala}
 \end{figure}
 
 
@@ -73,14 +92,14 @@ As t√©cnicas tem suas implementa√ß√µes no OpenCV com a possibilidade de configur
 	legend entries={$d=BRISK$,$d=FAST$,$d=FREAK$,$d=MSER$,$d=MSER$,$d=ORB$,$d=STAR$,$d=SURF$,$d=SIFT$},	
 	title= Rotation Invariance 
     ]
-	\addplot table [x=Argument, y=BRISK    , col sep=comma]	{graphs/scale-all-\gtype.csv}; 
-	\addplot table [x=Argument, y=FAST     , col sep=comma]	{graphs/scale-all-\gtype.csv}; 
-	\addplot table [x=Argument, y=FREAK    , col sep=comma]	{graphs/scale-all-\gtype.csv}; 
-	\addplot table [x=Argument, y=MSER     , col sep=comma]	{graphs/scale-all-\gtype.csv}; 
-	\addplot table [x=Argument, y=ORB      , col sep=comma]	{graphs/scale-all-\gtype.csv}; 
-	\addplot table [x=Argument, y=STAR     , col sep=comma]	{graphs/scale-all-\gtype.csv}; 
-	\addplot table [x=Argument, y=SURF     , col sep=comma]	{graphs/scale-all-\gtype.csv}; 
-	\addplot table [x=Argument, y=SIFT     , col sep=comma]	{graphs/scale-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=BRISK    , col sep=comma]	{graphs/rot-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=FAST     , col sep=comma]	{graphs/rot-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=FREAK    , col sep=comma]	{graphs/rot-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=MSER     , col sep=comma]	{graphs/rot-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=ORB      , col sep=comma]	{graphs/rot-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=STAR     , col sep=comma]	{graphs/rot-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=SURF     , col sep=comma]	{graphs/rot-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=SIFT     , col sep=comma]	{graphs/rot-all-\gtype.csv}; 
 
 	%eixo horizontal
 	\addplot[red,sharp plot,update limits=false] coordinates
@@ -106,7 +125,7 @@ As t√©cnicas tem suas implementa√ß√µes no OpenCV com a possibilidade de configur
 \end{tikzpicture}
 
 \label{graph:rotresultpres}
-\caption{Resultado de performance de varia√ß√£o de rota√ß√£o}
+\caption{Resultado de performance de variaÁ„o de rotaÁ„o}
 \end{figure}
 
 %blur
@@ -121,14 +140,14 @@ As t√©cnicas tem suas implementa√ß√µes no OpenCV com a possibilidade de configur
     xlabel=$Kernel size$,
 	legend entries={$d=BRISK$,$d=FAST$,$d=FREAK$,$d=MSER$,$d=MSER$,$d=ORB$,$d=STAR$,$d=SURF$,$d=SIFT$},	
 	title= Robustness to blur]
-	\addplot table [x=Argument, y=BRISK    , col sep=comma]	{graphs/scale-all-\gtype.csv}; 
-	\addplot table [x=Argument, y=FAST     , col sep=comma]	{graphs/scale-all-\gtype.csv}; 
-	\addplot table [x=Argument, y=FREAK    , col sep=comma]	{graphs/scale-all-\gtype.csv}; 
-	\addplot table [x=Argument, y=MSER     , col sep=comma]	{graphs/scale-all-\gtype.csv}; 
-	\addplot table [x=Argument, y=ORB      , col sep=comma]	{graphs/scale-all-\gtype.csv}; 
-	\addplot table [x=Argument, y=STAR     , col sep=comma]	{graphs/scale-all-\gtype.csv}; 
-	\addplot table [x=Argument, y=SURF     , col sep=comma]	{graphs/scale-all-\gtype.csv}; 
-	\addplot table [x=Argument, y=SIFT     , col sep=comma]	{graphs/scale-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=BRISK    , col sep=comma]	{graphs/blur-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=FAST     , col sep=comma]	{graphs/blur-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=FREAK    , col sep=comma]	{graphs/blur-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=MSER     , col sep=comma]	{graphs/blur-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=ORB      , col sep=comma]	{graphs/blur-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=STAR     , col sep=comma]	{graphs/blur-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=SURF     , col sep=comma]	{graphs/blur-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=SIFT     , col sep=comma]	{graphs/blur-all-\gtype.csv}; 
 	 
 	%eixo horizontal
 	\addplot[red,sharp plot,update limits=false] coordinates{(\minx,\ylimit)(\maxx,\ylimit)};
@@ -149,7 +168,7 @@ As t√©cnicas tem suas implementa√ß√µes no OpenCV com a possibilidade de configur
 \end{tikzpicture}
 
 \label{graph:blurresultpres}
-\caption{Resultado de performance de varia√ß√£o de blur}
+\caption{Resultado de performance de variaÁ„o de blur}
 \end{figure}
 
 %bright
@@ -165,14 +184,14 @@ As t√©cnicas tem suas implementa√ß√µes no OpenCV com a possibilidade de configur
 	legend entries={$d=BRISK$,$d=FAST$,$d=FREAK$,$d=MSER$,$d=MSER$,$d=ORB$,$d=STAR$,$d=SURF$,$d=SIFT$},	
 	title= Brightness Invariance 
     ]
-	\addplot table [x=Argument, y=BRISK    , col sep=comma]	{graphs/scale-all-\gtype.csv}; 
-	\addplot table [x=Argument, y=FAST     , col sep=comma]	{graphs/scale-all-\gtype.csv}; 
-	\addplot table [x=Argument, y=FREAK    , col sep=comma]	{graphs/scale-all-\gtype.csv}; 
-	\addplot table [x=Argument, y=MSER     , col sep=comma]	{graphs/scale-all-\gtype.csv}; 
-	\addplot table [x=Argument, y=ORB      , col sep=comma]	{graphs/scale-all-\gtype.csv}; 
-	\addplot table [x=Argument, y=STAR     , col sep=comma]	{graphs/scale-all-\gtype.csv}; 
-	\addplot table [x=Argument, y=SURF     , col sep=comma]	{graphs/scale-all-\gtype.csv}; 
-	\addplot table [x=Argument, y=SIFT     , col sep=comma]	{graphs/scale-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=BRISK    , col sep=comma]	{graphs/bright-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=FAST     , col sep=comma]	{graphs/bright-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=FREAK    , col sep=comma]	{graphs/bright-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=MSER     , col sep=comma]	{graphs/bright-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=ORB      , col sep=comma]	{graphs/bright-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=STAR     , col sep=comma]	{graphs/bright-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=SURF     , col sep=comma]	{graphs/bright-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=SIFT     , col sep=comma]	{graphs/bright-all-\gtype.csv}; 
 	
 		%eixo horizontal
 	\addplot[red,sharp plot,update limits=false] coordinates	{(\minx,\ylimit)(\maxx,\ylimit)};
@@ -195,9 +214,212 @@ As t√©cnicas tem suas implementa√ß√µes no OpenCV com a possibilidade de configur
 \end{tikzpicture}
 
 \label{graph:brightresultpres}
-\caption{Resultado de performance de varia√ß√£o de blur}
+\caption{Resultado de performance de variaÁ„o de blur}
 \end{figure}
 
-}
+\section{An·lise de tempo}
+
+\renewcommand{\gtype}{time}
+
+\renewcommand{\maxy}{3000}
+\renewcommand{\miny}{-155}
+
+
+
+\renewcommand{\ylimit}{200}
+\renewcommand{\ylabel}{Time(Ms)}
+
+%scale
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+	\pgfplotsset{small}
+	%scale
+\begin{axis}
+	[
+	   width=\graphwidth\textwidth,
+      ylabel=$\ylabel$, % Set the labels
+    xlabel=$Scale Factor$,
+	legend entries={$d=BRISK$,$d=FAST$,$d=FREAK$,$d=MSER$,$d=MSER$,$d=ORB$,$d=STAR$,$d=SURF$,$d=SIFT$},
+	title= Robustness to scaling
+    ]
+	\addplot table [x=Argument, y=BRISK    , col sep=comma]	{graphs/scale-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=FAST     , col sep=comma]	{graphs/scale-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=FREAK    , col sep=comma]	{graphs/scale-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=MSER     , col sep=comma]	{graphs/scale-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=ORB      , col sep=comma]	{graphs/scale-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=STAR     , col sep=comma]	{graphs/scale-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=SURF     , col sep=comma]	{graphs/scale-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=SIFT     , col sep=comma]	{graphs/scale-all-\gtype.csv}; 
+	
+	%eixo horizontal
+	\addplot[red,sharp plot,update limits=false] coordinates{(\miny,\ylimit)
+	(\maxx,\ylimit)}; 
+	\fill [opacity=0.4,red!25] (axis cs:\miny,\ylimit) rectangle (axis
+	cs:\maxx,\maxy);
+	
+	
+	%eixo vertical
+	\addplot[blue,sharp plot,update limits=false] coordinates {(\minscale,\miny)(\minscale,\maxy)} ;
+		\fill [opacity=0.4,blue!25] (axis cs:\minx,\miny) rectangle (axis		cs:\minscale,\maxy);
+	
+	\addplot[blue,sharp plot,update limits=false] coordinates {(\maxscale,\miny)	(\maxscale,\maxy)} ;
+	\fill [opacity=0.4,blue!25] (axis cs:\maxscale,\miny) rectangle (axis	cs:\maxx,\maxy);
+	
+\end{axis}
+\end{tikzpicture}
+
+\label{graph:scaleresulttime}
+\caption{An·lise de tempo de variaÁ„o de escala}
+
+
+\end{figure}
+
+
+%rotation
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+	\pgfplotsset{small}
+\begin{axis}
+	[
+	   width=\graphwidth\textwidth,
+      ylabel=$\ylabel$, % Set the labels
+    xlabel=$Angle(Degree)$,
+	legend entries={$d=BRISK$,$d=FAST$,$d=FREAK$,$d=MSER$,$d=MSER$,$d=ORB$,$d=STAR$,$d=SURF$,$d=SIFT$},
+	title= Rotation Invariance 
+    ]
+	\addplot table [x=Argument, y=BRISK    , col sep=comma]	{graphs/rot-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=FAST     , col sep=comma]	{graphs/rot-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=FREAK    , col sep=comma]	{graphs/rot-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=MSER     , col sep=comma]	{graphs/rot-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=ORB      , col sep=comma]	{graphs/rot-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=STAR     , col sep=comma]	{graphs/rot-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=SURF     , col sep=comma]	{graphs/rot-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=SIFT     , col sep=comma]	{graphs/rot-all-\gtype.csv}; 
+
+	
+	%eixo horizontal
+	\addplot[red,sharp plot,update limits=false] coordinates{(-100,\ylimit)
+	(400,\ylimit)}; 
+	\fill [opacity=0.4,red!25] (axis cs:-100,\ylimit) rectangle (axis
+	cs:400,\maxy);
+	
+	
+		%eixo vertical
+	\addplot[blue,sharp plot,update limits=false] coordinates {(\minangle,-100)
+	(\minangle,\maxy)} ;
+		\fill [opacity=0.4,blue!25] (axis cs:-100,-100) rectangle (axis
+		cs:\minangle,\maxy);
+	
+	\addplot[blue,sharp plot,update limits=false] coordinates {(\maxangle,-100)
+	(\maxangle,\maxy)} ;
+	\fill [opacity=0.4,blue!25] (axis cs:\maxangle,-100) rectangle (axis
+	cs:400,\maxy);
+
+	
+\end{axis}
+\end{tikzpicture}
+
+\label{graph:rotresulttime}
+\caption{An·lise de tempo de variaÁ„o de rotaÁ„o}
+
+
+\end{figure}
+
+
+%blur
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+	\pgfplotsset{small}
+\begin{axis}
+	[
+	   width=\graphwidth\textwidth,
+      ylabel=$\ylabel$, % Set the labels
+    xlabel=$Kernel size$,
+	legend entries={$d=BRISK$,$d=FAST$,$d=FREAK$,$d=MSER$,$d=MSER$,$d=ORB$,$d=STAR$,$d=SURF$,$d=SIFT$},
+	title= Robustness to blur
+    ]
+	\addplot table [x=Argument, y=BRISK    , col sep=comma]	{graphs/blur-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=FAST     , col sep=comma]	{graphs/blur-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=FREAK    , col sep=comma]	{graphs/blur-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=MSER     , col sep=comma]	{graphs/blur-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=ORB      , col sep=comma]	{graphs/blur-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=STAR     , col sep=comma]	{graphs/blur-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=SURF     , col sep=comma]	{graphs/blur-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=SIFT     , col sep=comma]	{graphs/blur-all-\gtype.csv}; 
+	
+	%eixo horizontal
+	\addplot[red,sharp plot,update limits=false] coordinates{(\minx,\ylimit)
+	(\maxx,\ylimit)}; 
+	\fill [opacity=0.4,red!25] (axis cs:\minx,\ylimit) rectangle (axis
+	cs:\maxx,\maxy);
+
+				%eixo vertical
+	\addplot[blue,sharp plot,update limits=false] coordinates
+	{(\minblur,\miny)(\minblur,\maxy)} ; \fill [opacity=0.4,blue!25] (axis
+	cs:\minx,\miny) rectangle (axis cs:\minblur,\maxx);
+	
+	\addplot[blue,sharp plot,update limits=false] coordinates
+	{(\maxblur,\miny)(\maxblur,\maxy)} ; \fill [opacity=0.4,blue!25] (axis
+	cs:\maxblur,\miny) rectangle (axis cs:\maxx,\maxy);
+
+
+\end{axis}
+\end{tikzpicture}
+
+\label{graph:blurresulttime}
+\caption{An·lise de tempo de variaÁ„o de blur}
+
+
+\end{figure}
+
+
+
+%bright
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+	\pgfplotsset{small}
+\begin{axis}
+	[
+	   width=\graphwidth\textwidth,
+      ylabel=$\ylabel$, % Set the labels
+    xlabel=$Change of brightness$,
+	legend entries={$d=BRISK$,$d=FAST$,$d=FREAK$,$d=MSER$,$d=MSER$,$d=ORB$,$d=STAR$,$d=SURF$,$d=SIFT$},
+	title= Brightness Invariance 
+    ]
+	\addplot table [x=Argument, y=BRISK    , col sep=comma]	{graphs/bright-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=FAST     , col sep=comma]	{graphs/bright-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=FREAK    , col sep=comma]	{graphs/bright-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=MSER     , col sep=comma]	{graphs/bright-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=ORB      , col sep=comma]	{graphs/bright-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=STAR     , col sep=comma]	{graphs/bright-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=SURF     , col sep=comma]	{graphs/bright-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=SIFT     , col sep=comma]	{graphs/bright-all-\gtype.csv}; 
+	
+	%eixo horizontal
+	\addplot[red,sharp plot,update limits=false] coordinates{(\minx,\ylimit)
+	(\maxx,\ylimit)}; 
+	\fill [opacity=0.4,red!25] (axis cs:\minx,\ylimit) rectangle (axis
+	cs:\maxx,\maxy);
+		
+	
+						%eixo vertical
+	\addplot[blue,sharp plot,update limits=false] coordinates
+	{(\minbright,\miny)(\minbright,\maxy)} ; \fill [opacity=0.4,blue!25] (axis
+	cs:\minx,\miny) rectangle (axis cs:\minbright,\maxy);
+	
+	\addplot[blue,sharp plot,update limits=false] coordinates
+	{(\maxbright,\miny)(\maxbright,\maxy)} ; \fill [opacity=0.4,blue!25] (axis
+	cs:\maxbright,\miny) rectangle (axis cs:\maxx,\maxy);
+		
+	
+\end{axis}
+\end{tikzpicture}
+\label{graph:brightresulttime}
+\caption{An·lise de tempo de variaÁ„o de iluminaÁ„o}
+\end{figure}
 
 
