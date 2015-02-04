@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=latex 2014.10.12)  28 JAN 2015 23:20
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=latex 2014.10.12)  29 JAN 2015 23:17
 entering extended mode
 **template_Article.tex
 (D:\Projects\duartec-projects\Mestrado\Registration-Tese\template_Article.tex
@@ -893,7 +893,7 @@ Writing glossary file template_Article.glo
 ! Undefined control sequence.
 \set@color ...\@pdfcolorstack push{\current@color 
                                                   }\aftergroup \reset@color 
-l.89 \frontmatter
+l.92 \frontmatter
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -904,7 +904,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \set@color ...\@pdfcolorstack push{\current@color 
                                                   }\aftergroup \reset@color 
-l.89 \frontmatter
+l.92 \frontmatter
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -916,27 +916,27 @@ and I'll forget about whatever was undefined.
 
 ]
 (D:\Projects\duartec-projects\Mestrado\Registration-Tese\template_Article.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 91.
-LaTeX Font Info:    ... okay on input line 91.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 94.
+LaTeX Font Info:    ... okay on input line 94.
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             http://www.ctan.org/tex-archive/ 
 (lastpage)             macros/latex/contrib/pageslts/ 
 (lastpage)             or
 (lastpage)             http://www.ctan.org/tex-archive/ 
 (lastpage)             install/macros/latex/contrib/pageslts.tds.zip
-(lastpage)             ! on input line 91.
+(lastpage)             ! on input line 94.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 
@@ -955,7 +955,7 @@ Package caption Info: End \AtBeginDocument code.
 \everyMPtoPDFconversion=\toks42
 )
 \AtBeginShipoutBox=\box45
-Package hyperref Info: Link coloring ON on input line 91.
+Package hyperref Info: Link coloring ON on input line 94.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -964,14 +964,14 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count149
 )
-LaTeX Info: Redefining \ref on input line 91.
-LaTeX Info: Redefining \pageref on input line 91.
-LaTeX Info: Redefining \nameref on input line 91.
+LaTeX Info: Redefining \ref on input line 94.
+LaTeX Info: Redefining \pageref on input line 94.
+LaTeX Info: Redefining \nameref on input line 94.
 
 (D:\Projects\duartec-projects\Mestrado\Registration-Tese\template_Article.out)
 (D:\Projects\duartec-projects\Mestrado\Registration-Tese\template_Article.out)
 \@outlinefile=\write5
-Package hyperref Info: Anchor `Doc-Start' on input line 91.
+Package hyperref Info: Anchor `Doc-Start' on input line 94.
 
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -1011,72 +1011,72 @@ ABD: EveryShipout initializing macros
 Package pgfplots notification 'compat/show suggested version=true': you might b
 enefit from \pgfplotsset{compat=1.11} (current compat level: 1.8).
 
-Package hyperref Info: Anchor `titulo.0' on input line 94.
-LaTeX Font Info:    Try loading font information for U+msa on input line 94.
+Package hyperref Info: Anchor `titulo.0' on input line 97.
+LaTeX Font Info:    Try loading font information for U+msa on input line 97.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 94.
+LaTeX Font Info:    Try loading font information for U+msb on input line 97.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Package hyperref Info: Anchor `page.i' on input line 94.
+Package hyperref Info: Anchor `page.i' on input line 97.
  [1
 
 
 ]
-Package hyperref Info: Anchor `cip.0' on input line 94.
+Package hyperref Info: Anchor `cip.0' on input line 97.
 
-Underfull \hbox (badness 10000) in paragraph at lines 94--94
+Underfull \hbox (badness 10000) in paragraph at lines 97--97
 
  []
 
-Package hyperref Info: Anchor `page.ii' on input line 94.
+Package hyperref Info: Anchor `page.ii' on input line 97.
 [2]
-Package hyperref Info: Anchor `aprovacao.0' on input line 94.
-Package hyperref Info: Anchor `page.iii' on input line 94.
+Package hyperref Info: Anchor `aprovacao.0' on input line 97.
+Package hyperref Info: Anchor `page.iii' on input line 97.
  [3]
-Package hyperref Info: Anchor `dedication.0' on input line 97.
-Package hyperref Info: Anchor `page.iv' on input line 99.
+Package hyperref Info: Anchor `dedication.0' on input line 100.
+Package hyperref Info: Anchor `page.iv' on input line 102.
  [4]
-Package hyperref Info: Anchor `chapter*.1' on input line 103.
-Package hyperref Info: Anchor `acknowledgment.0' on input line 103.
+Package hyperref Info: Anchor `chapter*.1' on input line 106.
+Package hyperref Info: Anchor `acknowledgment.0' on input line 106.
 
 (D:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/agradecimentos.t
 ex)
-Package hyperref Info: Anchor `page.v' on input line 104.
+Package hyperref Info: Anchor `page.v' on input line 107.
  [5
 
 ]
-Package hyperref Info: Anchor `epigrafe.0' on input line 108.
-LaTeX Font Info:    Try loading font information for T1+aess on input line 112.
+Package hyperref Info: Anchor `epigrafe.0' on input line 111.
+LaTeX Font Info:    Try loading font information for T1+aess on input line 115.
 
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ae\t1aess.fd"
 File: t1aess.fd 1997/11/16 Font definitions for T1/aess.
 )
 LaTeX Font Info:    Font shape `T1/aess/m/it' in size <12> not available
-(Font)              Font shape `T1/aess/m/sl' tried instead on input line 112.
-Package hyperref Info: Anchor `page.vi' on input line 120.
+(Font)              Font shape `T1/aess/m/sl' tried instead on input line 115.
+Package hyperref Info: Anchor `page.vi' on input line 123.
  [6]
-Package hyperref Info: Anchor `chapter*.2' on input line 120.
-Package hyperref Info: Anchor `resumo.0' on input line 120.
+Package hyperref Info: Anchor `chapter*.2' on input line 123.
+Package hyperref Info: Anchor `resumo.0' on input line 123.
 
 (D:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/resumo.tex)
-Package hyperref Info: Anchor `page.vii' on input line 128.
+Package hyperref Info: Anchor `page.vii' on input line 131.
 
 [7
 
 ]
-Package hyperref Info: Anchor `chapter*.3' on input line 128.
-Package hyperref Info: Anchor `abstract.0' on input line 128.
+Package hyperref Info: Anchor `chapter*.3' on input line 131.
+Package hyperref Info: Anchor `abstract.0' on input line 131.
  (D:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/abstract.tex)
-Package hyperref Info: Anchor `page.viii' on input line 136.
+Package hyperref Info: Anchor `page.viii' on input line 139.
  [8
 
 ]
-Package hyperref Info: Anchor `chapter*.4' on input line 136.
-Package hyperref Info: Anchor `contents.0' on input line 136.
+Package hyperref Info: Anchor `chapter*.4' on input line 139.
+Package hyperref Info: Anchor `contents.0' on input line 139.
 
 (D:\Projects\duartec-projects\Mestrado\Registration-Tese\template_Article.toc
 Underfull \hbox (badness 10000) in paragraph at lines 2--2
@@ -1101,7 +1101,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--4
  [][]  
  []
 
-Package hyperref Info: Reference (link) `chapter*.7' on input line 4.
+Package hyperref Info: Reference (link) `chapter.1' on input line 4.
 
 Package xcolor Warning: Incompatible color definition on input line 4.
 
@@ -1110,7 +1110,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--5
  [][]  
  []
 
-Package hyperref Info: Reference (link) `chapter.1' on input line 5.
+Package hyperref Info: Reference (link) `chapter.2' on input line 5.
 
 Package xcolor Warning: Incompatible color definition on input line 5.
 
@@ -1119,24 +1119,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--6
  [][]  
  []
 
-Package hyperref Info: Reference (link) `chapter.2' on input line 6.
+Package hyperref Info: Reference (link) `chapter.3' on input line 6.
 
 Package xcolor Warning: Incompatible color definition on input line 6.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 7--7
- [][]  
- []
-
-Package hyperref Info: Reference (link) `chapter.3' on input line 7.
+Package hyperref Info: Reference (link) `section.3.1' on input line 7.
 
 Package xcolor Warning: Incompatible color definition on input line 7.
 
-Package hyperref Info: Reference (link) `section.3.1' on input line 8.
+Package hyperref Info: Reference (link) `section.3.2' on input line 8.
 
 Package xcolor Warning: Incompatible color definition on input line 8.
 
-Package hyperref Info: Reference (link) `section.3.2' on input line 9.
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--9
+ [][]  
+ []
+
+Package hyperref Info: Reference (link) `chapter.4' on input line 9.
 
 Package xcolor Warning: Incompatible color definition on input line 9.
 
@@ -1145,44 +1145,39 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--10
  [][]  
  []
 
-Package hyperref Info: Reference (link) `chapter.4' on input line 10.
+Package hyperref Info: Reference (link) `chapter.5' on input line 10.
 
 Package xcolor Warning: Incompatible color definition on input line 10.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 11--11
- [][]  
- []
-
-Package hyperref Info: Reference (link) `chapter.5' on input line 11.
+Package hyperref Info: Reference (link) `section.5.1' on input line 11.
 
 Package xcolor Warning: Incompatible color definition on input line 11.
 
-Package hyperref Info: Reference (link) `section.5.1' on input line 12.
+Package hyperref Info: Reference (link) `section.5.2' on input line 12.
 
 Package xcolor Warning: Incompatible color definition on input line 12.
 
-Package hyperref Info: Reference (link) `section.5.2' on input line 13.
+Package hyperref Info: Reference (link) `subsection.5.2.1' on input line 13.
 
 Package xcolor Warning: Incompatible color definition on input line 13.
 
-Package hyperref Info: Reference (link) `subsection.5.2.1' on input line 14.
+Package hyperref Info: Reference (link) `subsection.5.2.2' on input line 14.
 
 Package xcolor Warning: Incompatible color definition on input line 14.
 
-Package hyperref Info: Reference (link) `subsection.5.2.2' on input line 15.
+Package hyperref Info: Reference (link) `subsection.5.2.3' on input line 15.
 
 Package xcolor Warning: Incompatible color definition on input line 15.
 
-Package hyperref Info: Reference (link) `subsection.5.2.3' on input line 16.
+Package hyperref Info: Reference (link) `subsection.5.2.4' on input line 16.
 
 Package xcolor Warning: Incompatible color definition on input line 16.
 
-Package hyperref Info: Reference (link) `subsection.5.2.4' on input line 17.
+Package hyperref Info: Reference (link) `section.5.3' on input line 17.
 
 Package xcolor Warning: Incompatible color definition on input line 17.
 
-Package hyperref Info: Reference (link) `section.5.3' on input line 18.
+Package hyperref Info: Reference (link) `subsection.5.3.1' on input line 18.
 
 Package xcolor Warning: Incompatible color definition on input line 18.
 
@@ -1191,201 +1186,197 @@ Package hyperref Info: Anchor `page.ix' on input line 19.
 
 Package `hyperref' Info: End of reference (link) `chapter*.5', line 2.
 Package `hyperref' Info: End of reference (link) `chapter*.6', line 3.
-Package `hyperref' Info: End of reference (link) `chapter*.7', line 4.
-Package `hyperref' Info: End of reference (link) `chapter.1', line 5.
-Package `hyperref' Info: End of reference (link) `chapter.2', line 6.
-Package `hyperref' Info: End of reference (link) `chapter.3', line 7.
-Package `hyperref' Info: End of reference (link) `section.3.1', line 8.
-Package `hyperref' Info: End of reference (link) `section.3.2', line 9.
-Package `hyperref' Info: End of reference (link) `chapter.4', line 10.
-Package `hyperref' Info: End of reference (link) `chapter.5', line 11.
-Package `hyperref' Info: End of reference (link) `section.5.1', line 12.
-Package `hyperref' Info: End of reference (link) `section.5.2', line 13.
-Package `hyperref' Info: End of reference (link) `subsection.5.2.1', line 14.
-Package `hyperref' Info: End of reference (link) `subsection.5.2.2', line 15.
-Package `hyperref' Info: End of reference (link) `subsection.5.2.3', line 16.
-Package `hyperref' Info: End of reference (link) `subsection.5.2.4', line 17.
+Package `hyperref' Info: End of reference (link) `chapter.1', line 4.
+Package `hyperref' Info: End of reference (link) `chapter.2', line 5.
+Package `hyperref' Info: End of reference (link) `chapter.3', line 6.
+Package `hyperref' Info: End of reference (link) `section.3.1', line 7.
+Package `hyperref' Info: End of reference (link) `section.3.2', line 8.
+Package `hyperref' Info: End of reference (link) `chapter.4', line 9.
+Package `hyperref' Info: End of reference (link) `chapter.5', line 10.
+Package `hyperref' Info: End of reference (link) `section.5.1', line 11.
+Package `hyperref' Info: End of reference (link) `section.5.2', line 12.
+Package `hyperref' Info: End of reference (link) `subsection.5.2.1', line 13.
+Package `hyperref' Info: End of reference (link) `subsection.5.2.2', line 14.
+Package `hyperref' Info: End of reference (link) `subsection.5.2.3', line 15.
+Package `hyperref' Info: End of reference (link) `subsection.5.2.4', line 16.
+Package `hyperref' Info: End of reference (link) `section.5.3', line 17.
 ]
-Package hyperref Info: Reference (link) `subsection.5.3.1' on input line 19.
+Package hyperref Info: Reference (link) `subsection.5.3.2' on input line 19.
 
 
 Package xcolor Warning: Incompatible color definition on input line 19.
 
-Package hyperref Info: Reference (link) `subsection.5.3.2' on input line 20.
+Package hyperref Info: Reference (link) `subsection.5.3.3' on input line 20.
 
 Package xcolor Warning: Incompatible color definition on input line 20.
 
-Package hyperref Info: Reference (link) `subsection.5.3.3' on input line 21.
+Package hyperref Info: Reference (link) `subsection.5.3.4' on input line 21.
 
 Package xcolor Warning: Incompatible color definition on input line 21.
 
-Package hyperref Info: Reference (link) `subsection.5.3.4' on input line 22.
+Package hyperref Info: Reference (link) `section.5.4' on input line 22.
 
 Package xcolor Warning: Incompatible color definition on input line 22.
 
-Package hyperref Info: Reference (link) `section.5.4' on input line 23.
+Package hyperref Info: Reference (link) `subsection.5.4.1' on input line 23.
 
 Package xcolor Warning: Incompatible color definition on input line 23.
 
-Package hyperref Info: Reference (link) `subsection.5.4.1' on input line 24.
+Package hyperref Info: Reference (link) `subsection.5.4.2' on input line 24.
 
 Package xcolor Warning: Incompatible color definition on input line 24.
 
-Package hyperref Info: Reference (link) `subsection.5.4.2' on input line 25.
+Package hyperref Info: Reference (link) `section.5.5' on input line 25.
 
 Package xcolor Warning: Incompatible color definition on input line 25.
 
-Package hyperref Info: Reference (link) `section.5.5' on input line 26.
+Package hyperref Info: Reference (link) `section.5.6' on input line 26.
 
 Package xcolor Warning: Incompatible color definition on input line 26.
 
-Package hyperref Info: Reference (link) `section.5.6' on input line 27.
+Package hyperref Info: Reference (link) `subsection.5.6.1' on input line 27.
 
 Package xcolor Warning: Incompatible color definition on input line 27.
 
-Package hyperref Info: Reference (link) `subsection.5.6.1' on input line 28.
+Package hyperref Info: Reference (link) `subsection.5.6.2' on input line 28.
 
 Package xcolor Warning: Incompatible color definition on input line 28.
 
-Package hyperref Info: Reference (link) `subsection.5.6.2' on input line 29.
+Package hyperref Info: Reference (link) `section.5.7' on input line 29.
 
 Package xcolor Warning: Incompatible color definition on input line 29.
 
-Package hyperref Info: Reference (link) `section.5.7' on input line 30.
+Package hyperref Info: Reference (link) `section.5.8' on input line 30.
 
 Package xcolor Warning: Incompatible color definition on input line 30.
 
-Package hyperref Info: Reference (link) `section.5.8' on input line 31.
+Package hyperref Info: Reference (link) `subsection.5.8.1' on input line 31.
 
 Package xcolor Warning: Incompatible color definition on input line 31.
 
-Package hyperref Info: Reference (link) `subsection.5.8.1' on input line 32.
+Package hyperref Info: Reference (link) `subsection.5.8.2' on input line 32.
 
 Package xcolor Warning: Incompatible color definition on input line 32.
 
-Package hyperref Info: Reference (link) `subsection.5.8.2' on input line 33.
+Package hyperref Info: Reference (link) `section.5.9' on input line 33.
 
 Package xcolor Warning: Incompatible color definition on input line 33.
 
-Package hyperref Info: Reference (link) `section.5.9' on input line 34.
+Package hyperref Info: Reference (link) `subsection.5.9.1' on input line 34.
 
 Package xcolor Warning: Incompatible color definition on input line 34.
 
-Package hyperref Info: Reference (link) `subsection.5.9.1' on input line 35.
+Package hyperref Info: Reference (link) `subsection.5.9.2' on input line 35.
 
 Package xcolor Warning: Incompatible color definition on input line 35.
 
-Package hyperref Info: Reference (link) `subsection.5.9.2' on input line 36.
+Package hyperref Info: Reference (link) `subsection.5.9.3' on input line 36.
 
 Package xcolor Warning: Incompatible color definition on input line 36.
 
-Package hyperref Info: Reference (link) `subsection.5.9.3' on input line 37.
+Package hyperref Info: Reference (link) `subsection.5.9.4' on input line 37.
 
 Package xcolor Warning: Incompatible color definition on input line 37.
 
-Package hyperref Info: Reference (link) `subsection.5.9.4' on input line 38.
+Package hyperref Info: Reference (link) `subsection.5.9.5' on input line 38.
 
 Package xcolor Warning: Incompatible color definition on input line 38.
 
-Package hyperref Info: Reference (link) `subsection.5.9.5' on input line 39.
+Package hyperref Info: Reference (link) `subsection.5.9.6' on input line 39.
 
 Package xcolor Warning: Incompatible color definition on input line 39.
 
-Package hyperref Info: Reference (link) `subsection.5.9.6' on input line 40.
+Package hyperref Info: Reference (link) `subsection.5.9.7' on input line 44.
 
-Package xcolor Warning: Incompatible color definition on input line 40.
+Package xcolor Warning: Incompatible color definition on input line 44.
 
-Package hyperref Info: Reference (link) `subsection.5.9.7' on input line 45.
+Package hyperref Info: Reference (link) `subsection.5.9.8' on input line 45.
 
 Package xcolor Warning: Incompatible color definition on input line 45.
 
-Package hyperref Info: Reference (link) `subsection.5.9.8' on input line 46.
 
-Package xcolor Warning: Incompatible color definition on input line 46.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 47--47
+Underfull \hbox (badness 10000) in paragraph at lines 46--46
  [][]  
  []
 
-Package hyperref Info: Reference (link) `chapter.6' on input line 47.
+Package hyperref Info: Reference (link) `chapter.6' on input line 46.
+
+Package xcolor Warning: Incompatible color definition on input line 46.
+
+Package hyperref Info: Reference (link) `section.6.1' on input line 47.
 
 Package xcolor Warning: Incompatible color definition on input line 47.
 
-Package hyperref Info: Anchor `page.x' on input line 47.
+Package hyperref Info: Anchor `page.x' on input line 48.
 [10
-Package `hyperref' Info: End of reference (link) `section.5.3', line 18.
-Package `hyperref' Info: End of reference (link) `subsection.5.3.1', line 19.
-Package `hyperref' Info: End of reference (link) `subsection.5.3.2', line 20.
-Package `hyperref' Info: End of reference (link) `subsection.5.3.3', line 21.
-Package `hyperref' Info: End of reference (link) `subsection.5.3.4', line 22.
-Package `hyperref' Info: End of reference (link) `section.5.4', line 23.
-Package `hyperref' Info: End of reference (link) `subsection.5.4.1', line 24.
-Package `hyperref' Info: End of reference (link) `subsection.5.4.2', line 25.
-Package `hyperref' Info: End of reference (link) `section.5.5', line 26.
-Package `hyperref' Info: End of reference (link) `section.5.6', line 27.
-Package `hyperref' Info: End of reference (link) `subsection.5.6.1', line 28.
-Package `hyperref' Info: End of reference (link) `subsection.5.6.2', line 29.
-Package `hyperref' Info: End of reference (link) `section.5.7', line 30.
-Package `hyperref' Info: End of reference (link) `section.5.8', line 31.
-Package `hyperref' Info: End of reference (link) `subsection.5.8.1', line 32.
-Package `hyperref' Info: End of reference (link) `subsection.5.8.2', line 33.
-Package `hyperref' Info: End of reference (link) `section.5.9', line 34.
-Package `hyperref' Info: End of reference (link) `subsection.5.9.1', line 35.
-Package `hyperref' Info: End of reference (link) `subsection.5.9.2', line 36.
-Package `hyperref' Info: End of reference (link) `subsection.5.9.3', line 37.
-Package `hyperref' Info: End of reference (link) `subsection.5.9.4', line 38.
-Package `hyperref' Info: End of reference (link) `subsection.5.9.5', line 39.
-Package `hyperref' Info: End of reference (link) `subsection.5.9.6', line 40.
-Package `hyperref' Info: End of reference (link) `subsection.5.9.7', line 45.
-Package `hyperref' Info: End of reference (link) `subsection.5.9.8', line 46.
+Package `hyperref' Info: End of reference (link) `subsection.5.3.1', line 18.
+Package `hyperref' Info: End of reference (link) `subsection.5.3.2', line 19.
+Package `hyperref' Info: End of reference (link) `subsection.5.3.3', line 20.
+Package `hyperref' Info: End of reference (link) `subsection.5.3.4', line 21.
+Package `hyperref' Info: End of reference (link) `section.5.4', line 22.
+Package `hyperref' Info: End of reference (link) `subsection.5.4.1', line 23.
+Package `hyperref' Info: End of reference (link) `subsection.5.4.2', line 24.
+Package `hyperref' Info: End of reference (link) `section.5.5', line 25.
+Package `hyperref' Info: End of reference (link) `section.5.6', line 26.
+Package `hyperref' Info: End of reference (link) `subsection.5.6.1', line 27.
+Package `hyperref' Info: End of reference (link) `subsection.5.6.2', line 28.
+Package `hyperref' Info: End of reference (link) `section.5.7', line 29.
+Package `hyperref' Info: End of reference (link) `section.5.8', line 30.
+Package `hyperref' Info: End of reference (link) `subsection.5.8.1', line 31.
+Package `hyperref' Info: End of reference (link) `subsection.5.8.2', line 32.
+Package `hyperref' Info: End of reference (link) `section.5.9', line 33.
+Package `hyperref' Info: End of reference (link) `subsection.5.9.1', line 34.
+Package `hyperref' Info: End of reference (link) `subsection.5.9.2', line 35.
+Package `hyperref' Info: End of reference (link) `subsection.5.9.3', line 36.
+Package `hyperref' Info: End of reference (link) `subsection.5.9.4', line 37.
+Package `hyperref' Info: End of reference (link) `subsection.5.9.5', line 38.
+Package `hyperref' Info: End of reference (link) `subsection.5.9.6', line 39.
+Package `hyperref' Info: End of reference (link) `subsection.5.9.7', line 44.
+Package `hyperref' Info: End of reference (link) `subsection.5.9.8', line 45.
+Package `hyperref' Info: End of reference (link) `chapter.6', line 46.
 ]
-Package hyperref Info: Reference (link) `section.6.1' on input line 48.
+Package hyperref Info: Reference (link) `section.6.2' on input line 48.
 
 
 Package xcolor Warning: Incompatible color definition on input line 48.
 
-Package hyperref Info: Reference (link) `section.6.2' on input line 49.
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--49
+ [][]  
+ []
+
+Package hyperref Info: Reference (link) `chapter.7' on input line 49.
 
 Package xcolor Warning: Incompatible color definition on input line 49.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 50--50
- [][]  
- []
-
-Package hyperref Info: Reference (link) `chapter.7' on input line 50.
+Package hyperref Info: Reference (link) `section.7.1' on input line 50.
 
 Package xcolor Warning: Incompatible color definition on input line 50.
 
-Package hyperref Info: Reference (link) `section.7.1' on input line 51.
+Package hyperref Info: Reference (link) `section.7.2' on input line 51.
 
 Package xcolor Warning: Incompatible color definition on input line 51.
 
-Package hyperref Info: Reference (link) `section.7.2' on input line 52.
+Package hyperref Info: Reference (link) `subsection.7.2.1' on input line 52.
 
 Package xcolor Warning: Incompatible color definition on input line 52.
 
-Package hyperref Info: Reference (link) `subsection.7.2.1' on input line 53.
 
-Package xcolor Warning: Incompatible color definition on input line 53.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 54--54
+Underfull \hbox (badness 10000) in paragraph at lines 53--53
  [][]  
  []
 
-Package hyperref Info: Reference (link) `chapter.8' on input line 54.
+Package hyperref Info: Reference (link) `chapter.8' on input line 53.
+
+Package xcolor Warning: Incompatible color definition on input line 53.
+
+Package hyperref Info: Reference (link) `section.8.1' on input line 54.
 
 Package xcolor Warning: Incompatible color definition on input line 54.
 
-Package hyperref Info: Reference (link) `section.8.1' on input line 55.
+Package hyperref Info: Reference (link) `subsection.8.1.1' on input line 55.
 
 Package xcolor Warning: Incompatible color definition on input line 55.
-
-Package hyperref Info: Reference (link) `subsection.8.1.1' on input line 56.
-
-Package xcolor Warning: Incompatible color definition on input line 56.
 
 Package hyperref Info: Reference (link) `subsection.8.1.2' on input line 57.
 
@@ -1415,15 +1406,20 @@ Package hyperref Info: Reference (link) `subsection.8.1.8' on input line 63.
 
 Package xcolor Warning: Incompatible color definition on input line 63.
 
-Package hyperref Info: Reference (link) `subsection.8.1.9' on input line 64.
+Package hyperref Info: Reference (link) `section.8.2' on input line 64.
 
 Package xcolor Warning: Incompatible color definition on input line 64.
 
-Package hyperref Info: Reference (link) `section.8.2' on input line 65.
+Package hyperref Info: Reference (link) `section.8.3' on input line 65.
 
 Package xcolor Warning: Incompatible color definition on input line 65.
 
-Package hyperref Info: Reference (link) `section.8.3' on input line 66.
+
+Underfull \hbox (badness 10000) in paragraph at lines 66--66
+ [][]  
+ []
+
+Package hyperref Info: Reference (link) `chapter.9' on input line 66.
 
 Package xcolor Warning: Incompatible color definition on input line 66.
 
@@ -1432,7 +1428,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 67--67
  [][]  
  []
 
-Package hyperref Info: Reference (link) `chapter.9' on input line 67.
+Package hyperref Info: Reference (link) `chapter.10' on input line 67.
 
 Package xcolor Warning: Incompatible color definition on input line 67.
 
@@ -1441,7 +1437,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 68--68
  [][]  
  []
 
-Package hyperref Info: Reference (link) `chapter.10' on input line 68.
+Package hyperref Info: Reference (link) `chapter.11' on input line 68.
 
 Package xcolor Warning: Incompatible color definition on input line 68.
 
@@ -1450,31 +1446,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 69--69
  [][]  
  []
 
-Package hyperref Info: Reference (link) `chapter.11' on input line 69.
+Package hyperref Info: Reference (link) `chapter.12' on input line 69.
 
 Package xcolor Warning: Incompatible color definition on input line 69.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 70--70
- [][]  
- []
-
-Package hyperref Info: Reference (link) `chapter.12' on input line 70.
-
-Package xcolor Warning: Incompatible color definition on input line 70.
-
-Package hyperref Info: Anchor `page.xi' on input line 70.
-[11
-Package `hyperref' Info: End of reference (link) `chapter.6', line 47.
-Package `hyperref' Info: End of reference (link) `section.6.1', line 48.
-Package `hyperref' Info: End of reference (link) `section.6.2', line 49.
-Package `hyperref' Info: End of reference (link) `chapter.7', line 50.
-Package `hyperref' Info: End of reference (link) `section.7.1', line 51.
-Package `hyperref' Info: End of reference (link) `section.7.2', line 52.
-Package `hyperref' Info: End of reference (link) `subsection.7.2.1', line 53.
-Package `hyperref' Info: End of reference (link) `chapter.8', line 54.
-Package `hyperref' Info: End of reference (link) `section.8.1', line 55.
-Package `hyperref' Info: End of reference (link) `subsection.8.1.1', line 56.
+)
+\tf@toc=\write6
+Package hyperref Info: Anchor `page.xi' on input line 141.
+ [11
+Package `hyperref' Info: End of reference (link) `section.6.1', line 47.
+Package `hyperref' Info: End of reference (link) `section.6.2', line 48.
+Package `hyperref' Info: End of reference (link) `chapter.7', line 49.
+Package `hyperref' Info: End of reference (link) `section.7.1', line 50.
+Package `hyperref' Info: End of reference (link) `section.7.2', line 51.
+Package `hyperref' Info: End of reference (link) `subsection.7.2.1', line 52.
+Package `hyperref' Info: End of reference (link) `chapter.8', line 53.
+Package `hyperref' Info: End of reference (link) `section.8.1', line 54.
+Package `hyperref' Info: End of reference (link) `subsection.8.1.1', line 55.
 Package `hyperref' Info: End of reference (link) `subsection.8.1.2', line 57.
 Package `hyperref' Info: End of reference (link) `subsection.8.1.3', line 58.
 Package `hyperref' Info: End of reference (link) `subsection.8.1.4', line 59.
@@ -1482,249 +1470,229 @@ Package `hyperref' Info: End of reference (link) `subsection.8.1.5', line 60.
 Package `hyperref' Info: End of reference (link) `subsection.8.1.6', line 61.
 Package `hyperref' Info: End of reference (link) `subsection.8.1.7', line 62.
 Package `hyperref' Info: End of reference (link) `subsection.8.1.8', line 63.
-Package `hyperref' Info: End of reference (link) `subsection.8.1.9', line 64.
-Package `hyperref' Info: End of reference (link) `section.8.2', line 65.
-Package `hyperref' Info: End of reference (link) `section.8.3', line 66.
-Package `hyperref' Info: End of reference (link) `chapter.9', line 67.
-Package `hyperref' Info: End of reference (link) `chapter.10', line 68.
-Package `hyperref' Info: End of reference (link) `chapter.11', line 69.
-])
-\tf@toc=\write6
-Package hyperref Info: Anchor `page.xii' on input line 138.
- [12
-Package `hyperref' Info: End of reference (link) `chapter.12', line 70.
+Package `hyperref' Info: End of reference (link) `section.8.2', line 64.
+Package `hyperref' Info: End of reference (link) `section.8.3', line 65.
+Package `hyperref' Info: End of reference (link) `chapter.9', line 66.
+Package `hyperref' Info: End of reference (link) `chapter.10', line 67.
+Package `hyperref' Info: End of reference (link) `chapter.11', line 68.
+Package `hyperref' Info: End of reference (link) `chapter.12', line 69.
 ]
-Package hyperref Info: Anchor `chapter*.5' on input line 138.
+Package hyperref Info: Anchor `chapter*.5' on input line 141.
 
-pdftex: bookmark at 138: {0} {Lista de Figuras} {chapter*.5}{0}{toc}
+pdftex: bookmark at 141: {0} {Lista de Figuras} {chapter*.5}{0}{toc}
 (D:\Projects\duartec-projects\Mestrado\Registration-Tese\template_Article.lof
 Package hyperref Info: Reference (link) `figure.3.1' on input line 5.
 
 
 Package xcolor Warning: Incompatible color definition on input line 5.
 
-Package hyperref Info: Reference (link) `figure.3.2' on input line 6.
+Package hyperref Info: Reference (link) `figure.5.1' on input line 8.
 
-Package xcolor Warning: Incompatible color definition on input line 6.
+Package xcolor Warning: Incompatible color definition on input line 8.
 
-Package hyperref Info: Reference (link) `figure.5.1' on input line 9.
+Package hyperref Info: Reference (link) `figure.5.2' on input line 9.
 
 Package xcolor Warning: Incompatible color definition on input line 9.
 
-Package hyperref Info: Reference (link) `figure.5.2' on input line 10.
+Package hyperref Info: Reference (link) `figure.5.3' on input line 10.
 
 Package xcolor Warning: Incompatible color definition on input line 10.
 
-Package hyperref Info: Reference (link) `figure.5.3' on input line 11.
+Package hyperref Info: Reference (link) `figure.5.4' on input line 11.
 
 Package xcolor Warning: Incompatible color definition on input line 11.
 
-Package hyperref Info: Reference (link) `figure.5.4' on input line 12.
+Package hyperref Info: Reference (link) `figure.5.5' on input line 12.
 
 Package xcolor Warning: Incompatible color definition on input line 12.
 
-Package hyperref Info: Reference (link) `figure.5.5' on input line 13.
+Package hyperref Info: Reference (link) `figure.5.6' on input line 13.
 
 Package xcolor Warning: Incompatible color definition on input line 13.
 
-Package hyperref Info: Reference (link) `figure.5.6' on input line 14.
+Package hyperref Info: Reference (link) `figure.5.7' on input line 14.
 
 Package xcolor Warning: Incompatible color definition on input line 14.
 
-Package hyperref Info: Reference (link) `figure.5.7' on input line 15.
+Package hyperref Info: Reference (link) `figure.5.8' on input line 15.
 
 Package xcolor Warning: Incompatible color definition on input line 15.
 
-Package hyperref Info: Reference (link) `figure.5.8' on input line 16.
+Package hyperref Info: Reference (link) `figure.5.9' on input line 16.
 
 Package xcolor Warning: Incompatible color definition on input line 16.
 
-Package hyperref Info: Reference (link) `figure.5.9' on input line 17.
+Package hyperref Info: Reference (link) `figure.5.10' on input line 17.
 
 Package xcolor Warning: Incompatible color definition on input line 17.
 
-Package hyperref Info: Reference (link) `figure.5.10' on input line 18.
+Package hyperref Info: Reference (link) `figure.5.11' on input line 18.
 
 Package xcolor Warning: Incompatible color definition on input line 18.
 
-Package hyperref Info: Reference (link) `figure.5.11' on input line 19.
+Package hyperref Info: Reference (link) `figure.5.12' on input line 19.
 
 Package xcolor Warning: Incompatible color definition on input line 19.
 
-Package hyperref Info: Reference (link) `figure.5.12' on input line 20.
+Package hyperref Info: Reference (link) `figure.5.13' on input line 20.
 
 Package xcolor Warning: Incompatible color definition on input line 20.
 
-Package hyperref Info: Reference (link) `figure.5.13' on input line 21.
+Package hyperref Info: Reference (link) `figure.5.14' on input line 21.
 
 Package xcolor Warning: Incompatible color definition on input line 21.
 
-Package hyperref Info: Reference (link) `figure.5.14' on input line 22.
+Package hyperref Info: Reference (link) `figure.5.15' on input line 22.
 
 Package xcolor Warning: Incompatible color definition on input line 22.
 
-Package hyperref Info: Reference (link) `figure.5.15' on input line 23.
+Package hyperref Info: Reference (link) `figure.5.16' on input line 23.
 
 Package xcolor Warning: Incompatible color definition on input line 23.
 
-Package hyperref Info: Reference (link) `figure.5.16' on input line 24.
+Package hyperref Info: Reference (link) `figure.8.1' on input line 27.
 
-Package xcolor Warning: Incompatible color definition on input line 24.
+Package xcolor Warning: Incompatible color definition on input line 27.
 
-Package hyperref Info: Reference (link) `figure.8.1' on input line 28.
+Package hyperref Info: Reference (link) `figure.8.2' on input line 28.
 
 Package xcolor Warning: Incompatible color definition on input line 28.
 
-Package hyperref Info: Anchor `page.xiii' on input line 29.
-[13
+Package hyperref Info: Anchor `page.xii' on input line 29.
+[12
 
 Package `hyperref' Info: End of reference (link) `figure.3.1', line 5.
-Package `hyperref' Info: End of reference (link) `figure.3.2', line 6.
-Package `hyperref' Info: End of reference (link) `figure.5.1', line 9.
-Package `hyperref' Info: End of reference (link) `figure.5.2', line 10.
-Package `hyperref' Info: End of reference (link) `figure.5.3', line 11.
-Package `hyperref' Info: End of reference (link) `figure.5.4', line 12.
-Package `hyperref' Info: End of reference (link) `figure.5.5', line 13.
-Package `hyperref' Info: End of reference (link) `figure.5.6', line 14.
-Package `hyperref' Info: End of reference (link) `figure.5.7', line 15.
-Package `hyperref' Info: End of reference (link) `figure.5.8', line 16.
-Package `hyperref' Info: End of reference (link) `figure.5.9', line 17.
-Package `hyperref' Info: End of reference (link) `figure.5.10', line 18.
-Package `hyperref' Info: End of reference (link) `figure.5.11', line 19.
-Package `hyperref' Info: End of reference (link) `figure.5.12', line 20.
-Package `hyperref' Info: End of reference (link) `figure.5.13', line 21.
-Package `hyperref' Info: End of reference (link) `figure.5.14', line 22.
-Package `hyperref' Info: End of reference (link) `figure.5.15', line 23.
-Package `hyperref' Info: End of reference (link) `figure.5.16', line 24.
+Package `hyperref' Info: End of reference (link) `figure.5.1', line 8.
+Package `hyperref' Info: End of reference (link) `figure.5.2', line 9.
+Package `hyperref' Info: End of reference (link) `figure.5.3', line 10.
+Package `hyperref' Info: End of reference (link) `figure.5.4', line 11.
+Package `hyperref' Info: End of reference (link) `figure.5.5', line 12.
+Package `hyperref' Info: End of reference (link) `figure.5.6', line 13.
+Package `hyperref' Info: End of reference (link) `figure.5.7', line 14.
+Package `hyperref' Info: End of reference (link) `figure.5.8', line 15.
+Package `hyperref' Info: End of reference (link) `figure.5.9', line 16.
+Package `hyperref' Info: End of reference (link) `figure.5.10', line 17.
+Package `hyperref' Info: End of reference (link) `figure.5.11', line 18.
+Package `hyperref' Info: End of reference (link) `figure.5.12', line 19.
+Package `hyperref' Info: End of reference (link) `figure.5.13', line 20.
+Package `hyperref' Info: End of reference (link) `figure.5.14', line 21.
+Package `hyperref' Info: End of reference (link) `figure.5.15', line 22.
+Package `hyperref' Info: End of reference (link) `figure.5.16', line 23.
+Package `hyperref' Info: End of reference (link) `figure.8.1', line 27.
 ]
-Package hyperref Info: Reference (link) `figure.8.2' on input line 29.
+Package hyperref Info: Reference (link) `figure.8.3' on input line 29.
 
 
 Package xcolor Warning: Incompatible color definition on input line 29.
 
-Package hyperref Info: Reference (link) `figure.8.3' on input line 30.
+Package hyperref Info: Reference (link) `figure.8.4' on input line 30.
 
 Package xcolor Warning: Incompatible color definition on input line 30.
 
-Package hyperref Info: Reference (link) `figure.8.4' on input line 31.
+Package hyperref Info: Reference (link) `figure.8.5' on input line 31.
 
 Package xcolor Warning: Incompatible color definition on input line 31.
 
-Package hyperref Info: Reference (link) `figure.8.5' on input line 32.
+Package hyperref Info: Reference (link) `figure.8.6' on input line 32.
 
 Package xcolor Warning: Incompatible color definition on input line 32.
 
-Package hyperref Info: Reference (link) `figure.8.6' on input line 33.
+Package hyperref Info: Reference (link) `figure.8.7' on input line 33.
 
 Package xcolor Warning: Incompatible color definition on input line 33.
 
-Package hyperref Info: Reference (link) `figure.8.7' on input line 34.
+Package hyperref Info: Reference (link) `figure.8.8' on input line 34.
 
 Package xcolor Warning: Incompatible color definition on input line 34.
 
-Package hyperref Info: Reference (link) `figure.8.8' on input line 35.
+Package hyperref Info: Reference (link) `figure.8.9' on input line 35.
 
 Package xcolor Warning: Incompatible color definition on input line 35.
 
-Package hyperref Info: Reference (link) `figure.8.9' on input line 36.
+Package hyperref Info: Reference (link) `figure.8.10' on input line 36.
 
 Package xcolor Warning: Incompatible color definition on input line 36.
 
-Package hyperref Info: Reference (link) `figure.8.10' on input line 37.
+Package hyperref Info: Reference (link) `figure.8.11' on input line 37.
 
 Package xcolor Warning: Incompatible color definition on input line 37.
 
-Package hyperref Info: Reference (link) `figure.8.11' on input line 38.
+Package hyperref Info: Reference (link) `figure.8.12' on input line 38.
 
 Package xcolor Warning: Incompatible color definition on input line 38.
 
-Package hyperref Info: Reference (link) `figure.8.12' on input line 39.
+Package hyperref Info: Reference (link) `figure.8.13' on input line 39.
 
 Package xcolor Warning: Incompatible color definition on input line 39.
 
-Package hyperref Info: Reference (link) `figure.8.13' on input line 40.
+Package hyperref Info: Reference (link) `figure.8.14' on input line 40.
 
 Package xcolor Warning: Incompatible color definition on input line 40.
 
-Package hyperref Info: Reference (link) `figure.8.14' on input line 41.
+Package hyperref Info: Reference (link) `figure.8.15' on input line 41.
 
 Package xcolor Warning: Incompatible color definition on input line 41.
 
-Package hyperref Info: Reference (link) `figure.8.15' on input line 42.
+Package hyperref Info: Reference (link) `figure.8.16' on input line 42.
 
 Package xcolor Warning: Incompatible color definition on input line 42.
 
-Package hyperref Info: Reference (link) `figure.8.16' on input line 43.
+Package hyperref Info: Reference (link) `figure.8.17' on input line 43.
 
 Package xcolor Warning: Incompatible color definition on input line 43.
 
-Package hyperref Info: Reference (link) `figure.8.17' on input line 44.
+Package hyperref Info: Reference (link) `figure.8.18' on input line 44.
 
 Package xcolor Warning: Incompatible color definition on input line 44.
 
-Package hyperref Info: Reference (link) `figure.8.18' on input line 45.
+Package hyperref Info: Reference (link) `figure.8.19' on input line 45.
 
 Package xcolor Warning: Incompatible color definition on input line 45.
 
-Package hyperref Info: Reference (link) `figure.8.19' on input line 46.
+Package hyperref Info: Reference (link) `figure.8.20' on input line 46.
 
 Package xcolor Warning: Incompatible color definition on input line 46.
 
-Package hyperref Info: Reference (link) `figure.8.20' on input line 47.
+Package hyperref Info: Reference (link) `figure.8.21' on input line 47.
 
 Package xcolor Warning: Incompatible color definition on input line 47.
 
-Package hyperref Info: Reference (link) `figure.8.21' on input line 48.
+Package hyperref Info: Reference (link) `figure.8.22' on input line 48.
 
 Package xcolor Warning: Incompatible color definition on input line 48.
 
-Package hyperref Info: Reference (link) `figure.8.22' on input line 49.
-
-Package xcolor Warning: Incompatible color definition on input line 49.
-
 )
 \tf@lof=\write7
-Package hyperref Info: Anchor `page.xiv' on input line 140.
- [14
-Package `hyperref' Info: End of reference (link) `figure.8.1', line 28.
-Package `hyperref' Info: End of reference (link) `figure.8.2', line 29.
-Package `hyperref' Info: End of reference (link) `figure.8.3', line 30.
-Package `hyperref' Info: End of reference (link) `figure.8.4', line 31.
-Package `hyperref' Info: End of reference (link) `figure.8.5', line 32.
-Package `hyperref' Info: End of reference (link) `figure.8.6', line 33.
-Package `hyperref' Info: End of reference (link) `figure.8.7', line 34.
-Package `hyperref' Info: End of reference (link) `figure.8.8', line 35.
-Package `hyperref' Info: End of reference (link) `figure.8.9', line 36.
-Package `hyperref' Info: End of reference (link) `figure.8.10', line 37.
-Package `hyperref' Info: End of reference (link) `figure.8.11', line 38.
-Package `hyperref' Info: End of reference (link) `figure.8.12', line 39.
-Package `hyperref' Info: End of reference (link) `figure.8.13', line 40.
-Package `hyperref' Info: End of reference (link) `figure.8.14', line 41.
-Package `hyperref' Info: End of reference (link) `figure.8.15', line 42.
-Package `hyperref' Info: End of reference (link) `figure.8.16', line 43.
-Package `hyperref' Info: End of reference (link) `figure.8.17', line 44.
-Package `hyperref' Info: End of reference (link) `figure.8.18', line 45.
-Package `hyperref' Info: End of reference (link) `figure.8.19', line 46.
-Package `hyperref' Info: End of reference (link) `figure.8.20', line 47.
-Package `hyperref' Info: End of reference (link) `figure.8.21', line 48.
-Package `hyperref' Info: End of reference (link) `figure.8.22', line 49.
+Package hyperref Info: Anchor `page.xiii' on input line 145.
+ [13
+Package `hyperref' Info: End of reference (link) `figure.8.2', line 28.
+Package `hyperref' Info: End of reference (link) `figure.8.3', line 29.
+Package `hyperref' Info: End of reference (link) `figure.8.4', line 30.
+Package `hyperref' Info: End of reference (link) `figure.8.5', line 31.
+Package `hyperref' Info: End of reference (link) `figure.8.6', line 32.
+Package `hyperref' Info: End of reference (link) `figure.8.7', line 33.
+Package `hyperref' Info: End of reference (link) `figure.8.8', line 34.
+Package `hyperref' Info: End of reference (link) `figure.8.9', line 35.
+Package `hyperref' Info: End of reference (link) `figure.8.10', line 36.
+Package `hyperref' Info: End of reference (link) `figure.8.11', line 37.
+Package `hyperref' Info: End of reference (link) `figure.8.12', line 38.
+Package `hyperref' Info: End of reference (link) `figure.8.13', line 39.
+Package `hyperref' Info: End of reference (link) `figure.8.14', line 40.
+Package `hyperref' Info: End of reference (link) `figure.8.15', line 41.
+Package `hyperref' Info: End of reference (link) `figure.8.16', line 42.
+Package `hyperref' Info: End of reference (link) `figure.8.17', line 43.
+Package `hyperref' Info: End of reference (link) `figure.8.18', line 44.
+Package `hyperref' Info: End of reference (link) `figure.8.19', line 45.
+Package `hyperref' Info: End of reference (link) `figure.8.20', line 46.
+Package `hyperref' Info: End of reference (link) `figure.8.21', line 47.
+Package `hyperref' Info: End of reference (link) `figure.8.22', line 48.
 ]
-Package hyperref Info: Anchor `chapter*.6' on input line 140.
+Package hyperref Info: Anchor `chapter*.6' on input line 145.
 
-pdftex: bookmark at 140: {0} {Lista de Tabelas} {chapter*.6}{0}{toc}
-(D:\Projects\duartec-projects\Mestrado\Registration-Tese\template_Article.lot)
-\tf@lot=\write8
-Package hyperref Info: Anchor `page.xv' on input line 142.
-
-[15
-
-]
-Package hyperref Info: Anchor `chapter*.7' on input line 142.
-
-pdftex: bookmark at 142: {0} {Lista de Abreviaturas e Siglas} {chapter*.7}{0}{t
+pdftex: bookmark at 145: {0} {Lista de Abreviaturas e Siglas} {chapter*.6}{0}{t
 oc}
 (D:\Projects\duartec-projects\Mestrado\Registration-Tese\template_Article.lof)
-\tf@lof=\write9
+\tf@lof=\write8
 
 (D:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/acronimos.tex
 
@@ -1839,19 +1807,19 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 )
-Package hyperref Info: Anchor `page.xvi' on input line 148.
- [16
+Package hyperref Info: Anchor `page.xiv' on input line 151.
+ [14
 
 ]
-Package hyperref Info: Anchor `chapter.1' on input line 151.
+Package hyperref Info: Anchor `chapter.1' on input line 154.
 
 Cap\'{\i }tulo 1.
-pdftex: bookmark at 151: {1} {\numberline{1}Motiva\c c\~ao} {chapter.1}{0}{toc}
+pdftex: bookmark at 154: {1} {\numberline{1}Motiva\c c\~ao} {chapter.1}{0}{toc}
 
 (D:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/motivacao.tex
-Package hyperref Info: Anchor `page.17' on input line 18.
+Package hyperref Info: Anchor `page.15' on input line 18.
 
-[17
+[15
 
 
 ]
@@ -1862,43 +1830,22 @@ File: omsaer.fd 1999/12/27
 LaTeX Font Info:    Font shape `OMS/aer/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 19.
 )
-Package hyperref Info: Anchor `page.18' on input line 154.
- [18]
-Package hyperref Info: Anchor `chapter.2' on input line 154.
+Package hyperref Info: Anchor `page.16' on input line 157.
+ [16]
+Package hyperref Info: Anchor `chapter.2' on input line 157.
 
 Cap\'{\i }tulo 2.
-pdftex: bookmark at 154: {2} {\numberline{2}Objetivo} {chapter.2}{0}{toc}
-(D:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/objetivo.tex
-Package hyperref Info: Reference (cite) `cite.ISMAR2012' on input line 14.
+pdftex: bookmark at 157: {2} {\numberline{2}Objetivo} {chapter.2}{0}{toc}
+(D:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/objetivo.tex)
+Package hyperref Info: Anchor `page.17' on input line 161.
 
+[17
 
-Package xcolor Warning: Incompatible color definition on input line 14.
-
-Package hyperref Info: Reference (cite) `cite.ISMAR2012' on input line 14.
-
-Package xcolor Warning: Incompatible color definition on input line 14.
-
-Package hyperref Info: Reference (cite) `cite.ORB' on input line 15.
-
-Package xcolor Warning: Incompatible color definition on input line 15.
-
-Package hyperref Info: Reference (cite) `cite.ORB' on input line 15.
-
-Package xcolor Warning: Incompatible color definition on input line 15.
-
-)
-Package hyperref Info: Anchor `page.19' on input line 158.
- [19
-
-Package `hyperref' Info: End of reference (cite) `cite.ISMAR2012', line 14.
-Package `hyperref' Info: End of reference (cite) `cite.ISMAR2012', line 14.
-Package `hyperref' Info: End of reference (cite) `cite.ORB', line 15.
-Package `hyperref' Info: End of reference (cite) `cite.ORB', line 15.
 ]
-Package hyperref Info: Anchor `chapter.3' on input line 158.
+Package hyperref Info: Anchor `chapter.3' on input line 161.
 
 Cap\'{\i }tulo 3.
-pdftex: bookmark at 158: {3} {\numberline{3}Contexto} {chapter.3}{0}{toc}
+pdftex: bookmark at 161: {3} {\numberline{3}Contexto} {chapter.3}{0}{toc}
 (D:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/contexto.tex
 (D:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/variaveiscontorn
 o.tex
@@ -1910,8 +1857,8 @@ pdftex: bookmark at 1: {3.1} {\numberline{3.1}Vari\'aveis de contorno} {section
 Package hyperref Info: Anchor `section.3.2' on input line 1.
 
 pdftex: bookmark at 1: {3.2} {\numberline{3.2}Cen\'ario} {section.3.2}{1}{toc}
-Package hyperref Info: Anchor `page.20' on input line 6.
-[20
+Package hyperref Info: Anchor `page.18' on input line 6.
+[18
 
 ]
 Package hyperref Info: Reference (link) `figure.3.1' on input line 8.
@@ -1919,7 +1866,7 @@ Package hyperref Info: Reference (link) `figure.3.1' on input line 8.
 
 Package xcolor Warning: Incompatible color definition on input line 8.
 
-<images/ERJ190.jpg, id=559, 531.9875pt x 192.72pt>
+<images/ERJ190.jpg, id=533, 531.9875pt x 192.72pt>
 File: images/ERJ190.jpg Graphic file (type jpg)
  <use images/ERJ190.jpg>
 Package pdftex.def Info: images/ERJ190.jpg used on input line 13.
@@ -1929,62 +1876,35 @@ Package hyperref Info: Anchor `figure.3.1' on input line 14.
 pdftex: bookmark at 14: {3.1} {\numberline{3.1}{\ignorespaces Posicionamento da
  LRU}} {figure.3.1}{0}{lof}
 Package hyperref Info: Anchor `figure.3.1' on input line 14.
-Package hyperref Info: Reference (link) `figure.3.2' on input line 20.
-
-Package xcolor Warning: Incompatible color definition on input line 20.
-
-<images/LRU.jpg, id=561, 1027.84pt x 578.16pt>
-File: images/LRU.jpg Graphic file (type jpg)
- <use images/LRU.jpg>
-Package pdftex.def Info: images/LRU.jpg used on input line 25.
-(pdftex.def)             Requested size: 411.12872pt x 231.2599pt.
-Package hyperref Info: Anchor `figure.3.2' on input line 26.
-
-pdftex: bookmark at 26: {3.2} {\numberline{3.2}{\ignorespaces Imagem da LRU}} {
-figure.3.2}{0}{lof}
-Package hyperref Info: Anchor `figure.3.2' on input line 26.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 ))
-Package hyperref Info: Anchor `page.21' on input line 161.
- [21
+Package hyperref Info: Anchor `page.19' on input line 164.
+ [19
 Package `hyperref' Info: End of reference (link) `figure.3.1', line 8.
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.161 \chapter
-              {Estrutura do texto}
-Package `hyperref' Info: End of reference (link) `figure.3.2', line 20.
- <D:/Projects/duartec-projects/Mestrado/Registration-Tese/images/ERJ190.jpg>]
-Package hyperref Info: Anchor `page.22' on input line 161.
- [22pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
-2}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.161 \chapter
+l.164 \chapter
               {Estrutura do texto} <D:/Projects/duartec-projects/Mestrado/Regis
-tration-Tese/images/LRU.jpg>]
-Package hyperref Info: Anchor `chapter.4' on input line 161.
+tration-Tese/images/ERJ190.jpg>]
+Package hyperref Info: Anchor `chapter.4' on input line 164.
 
 Cap\'{\i }tulo 4.
-pdftex: bookmark at 161: {4} {\numberline{4}Estrutura do texto} {chapter.4}{0}{
+pdftex: bookmark at 164: {4} {\numberline{4}Estrutura do texto} {chapter.4}{0}{
 toc}
 (D:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/estrutura.tex
-Package hyperref Info: Anchor `page.23' on input line 37.
+Package hyperref Info: Anchor `page.20' on input line 37.
 
-[23
+[20
 
 ])
-Package hyperref Info: Anchor `page.24' on input line 165.
- [24]
-Package hyperref Info: Anchor `chapter.5' on input line 165.
+Package hyperref Info: Anchor `page.21' on input line 168.
+ [21]
+Package hyperref Info: Anchor `chapter.5' on input line 168.
 
 Cap\'{\i }tulo 5.
-pdftex: bookmark at 165: {5} {\numberline{5}Conceitos} {chapter.5}{0}{toc}
+pdftex: bookmark at 168: {5} {\numberline{5}Conceitos} {chapter.5}{0}{toc}
 
 (D:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/basicos/conceito
 s_basicos.tex
@@ -2011,8 +1931,8 @@ Package xcolor Warning: Incompatible color definition on input line 8.
 Package hyperref Info: Anchor `section.5.2' on input line 9.
 pdftex: bookmark at 9: {5.2} {\numberline{5.2}Head-Mounted Displays} {section.5
 .2}{1}{toc}
-Package hyperref Info: Anchor `page.25' on input line 15.
-[25
+Package hyperref Info: Anchor `page.22' on input line 15.
+[22
 
 Package `hyperref' Info: End of reference (cite) `cite.SurveyAR', line 2.
 Package `hyperref' Info: End of reference (cite) `cite.SurveyAR', line 2.
@@ -2023,7 +1943,7 @@ Package hyperref Info: Anchor `subsection.5.2.1' on input line 15.
 
 pdftex: bookmark at 15: {5.2.1} {\numberline{5.2.1}Feed-Through} {subsection.5.
 2.1}{2}{toc}
-<images/feedthrough.jpg, id=589, 469.755pt x 258.9675pt>
+<images/feedthrough.jpg, id=556, 469.755pt x 258.9675pt>
 File: images/feedthrough.jpg Graphic file (type jpg)
 
 <use images/feedthrough.jpg>
@@ -2037,7 +1957,7 @@ Package hyperref Info: Anchor `figure.5.1' on input line 21.
 Package hyperref Info: Anchor `subsection.5.2.2' on input line 26.
 pdftex: bookmark at 26: {5.2.2} {\numberline{5.2.2}See-Through} {subsection.5.2
 .2}{2}{toc}
-<images/seethrough.jpg, id=590, 469.755pt x 258.9675pt>
+<images/seethrough.jpg, id=557, 469.755pt x 258.9675pt>
 File: images/seethrough.jpg Graphic file (type jpg)
 
 <use images/seethrough.jpg>
@@ -2048,8 +1968,8 @@ Package hyperref Info: Anchor `figure.5.2' on input line 32.
 pdftex: bookmark at 32: {5.2} {\numberline{5.2}{\ignorespaces Arquitetura do Se
 e-Trough.}} {figure.5.2}{0}{lof}
 Package hyperref Info: Anchor `figure.5.2' on input line 32.
-Package hyperref Info: Anchor `page.26' on input line 34.
-[26pdfTeX warning (ext4): destination with the same identifier (name{figure.5.1
+Package hyperref Info: Anchor `page.23' on input line 34.
+[23pdfTeX warning (ext4): destination with the same identifier (name{figure.5.1
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -2077,7 +1997,7 @@ or \DeclareInputMath before using this key.
 Package hyperref Info: Anchor `subsection.5.2.4' on input line 41.
 pdftex: bookmark at 41: {5.2.4} {\numberline{5.2.4}Monitores} {subsection.5.2.4
 }{2}{toc}
-<images/monitores.jpg, id=595, 379.4175pt x 285.31593pt>
+<images/monitores.jpg, id=562, 379.4175pt x 285.31593pt>
 File: images/monitores.jpg Graphic file (type jpg)
 
 <use images/monitores.jpg>
@@ -2088,8 +2008,8 @@ Package hyperref Info: Anchor `figure.5.3' on input line 47.
 pdftex: bookmark at 47: {5.3} {\numberline{5.3}{\ignorespaces Realidade Aumenta
 da com projetores.}} {figure.5.3}{0}{lof}
 Package hyperref Info: Anchor `figure.5.3' on input line 47.
-Package hyperref Info: Anchor `page.27' on input line 49.
-[27pdfTeX warning (ext4): destination with the same identifier (name{figure.5.2
+Package hyperref Info: Anchor `page.24' on input line 49.
+[24pdfTeX warning (ext4): destination with the same identifier (name{figure.5.2
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -2110,8 +2030,8 @@ pdftex: bookmark at 57: {5.3.2} {\numberline{5.3.2}Multitemporal} {subsection.5
 Package hyperref Info: Anchor `subsection.5.3.3' on input line 59.
 pdftex: bookmark at 59: {5.3.3} {\numberline{5.3.3}Multimodal} {subsection.5.3.
 3}{2}{toc}
-Package hyperref Info: Anchor `page.28' on input line 62.
-[28pdfTeX warning (ext4): destination with the same identifier (name{figure.5.3
+Package hyperref Info: Anchor `page.25' on input line 62.
+[25pdfTeX warning (ext4): destination with the same identifier (name{figure.5.3
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -2139,8 +2059,8 @@ ne 73.
 
 Package xcolor Warning: Incompatible color definition on input line 73.
 
-Package hyperref Info: Anchor `page.29' on input line 79.
-[29
+Package hyperref Info: Anchor `page.26' on input line 79.
+[26
 Package `hyperref' Info: End of reference (cite) `cite.localfeaturedetector', l
 ine 73.
 Package `hyperref' Info: End of reference (cite) `cite.localfeaturedetector', l
@@ -2154,10 +2074,10 @@ Package hyperref Info: Reference (link) `figure.5.4' on input line 98.
 
 Package xcolor Warning: Incompatible color definition on input line 98.
 
-Package hyperref Info: Anchor `page.30' on input line 101.
-[30
+Package hyperref Info: Anchor `page.27' on input line 101.
+[27
 Package `hyperref' Info: End of reference (link) `figure.5.4', line 98.
-] <images/features.jpg, id=617, 338.76563pt x 301.125pt>
+] <images/features.jpg, id=584, 338.76563pt x 301.125pt>
 File: images/features.jpg Graphic file (type jpg)
 
 <use images/features.jpg>
@@ -2168,7 +2088,7 @@ Package hyperref Info: Anchor `figure.5.4' on input line 105.
 pdftex: bookmark at 105: {5.4} {\numberline{5.4}{\ignorespaces Reconhecimento d
 e padr\~oes.}} {figure.5.4}{0}{lof}
 Package hyperref Info: Anchor `figure.5.4' on input line 105.
-<images/featuresregioes.jpg, id=618, 238.64156pt x 202.50656pt>
+<images/featuresregioes.jpg, id=585, 238.64156pt x 202.50656pt>
 File: images/featuresregioes.jpg Graphic file (type jpg)
 
 <use images/featuresregioes.jpg>
@@ -2187,8 +2107,8 @@ Package hyperref Info: Reference (link) `figure.5.4' on input line 126.
 
 Package xcolor Warning: Incompatible color definition on input line 126.
 
-Package hyperref Info: Anchor `page.31' on input line 130.
-[31pdfTeX warning (ext4): destination with the same identifier (name{figure.5.4
+Package hyperref Info: Anchor `page.28' on input line 130.
+[28pdfTeX warning (ext4): destination with the same identifier (name{figure.5.4
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -2215,8 +2135,8 @@ Package hyperref Info: Reference (cite) `cite.Tang93whydo' on input line 137.
 
 Package xcolor Warning: Incompatible color definition on input line 137.
 
-Package hyperref Info: Anchor `page.32' on input line 143.
-[32
+Package hyperref Info: Anchor `page.29' on input line 143.
+[29
 Package `hyperref' Info: End of reference (link) `figure.5.5', line 119.
 Package `hyperref' Info: End of reference (link) `figure.5.4', line 126.
 Package `hyperref' Info: End of reference (cite) `cite.Tang93whydo', line 137.
@@ -2238,7 +2158,7 @@ Package xcolor Warning: Incompatible color definition on input line 2.
 Package hyperref Info: Anchor `subsection.5.6.1' on input line 8.
 pdftex: bookmark at 8: {5.6.1} {\numberline{5.6.1}Distor\c c\~ao Radial} {subse
 ction.5.6.1}{2}{toc}
-<images/radial01.jpg, id=634, 469.755pt x 207.77625pt>
+<images/radial01.jpg, id=601, 469.755pt x 207.77625pt>
 File: images/radial01.jpg Graphic file (type jpg)
 
 <use images/radial01.jpg>
@@ -2256,7 +2176,7 @@ Package hyperref Info: Reference (link) `figure.5.7' on input line 19.
 
 Package xcolor Warning: Incompatible color definition on input line 19.
 
-<images/radial02.jpg, id=636, 469.755pt x 334.24875pt>
+<images/radial02.jpg, id=603, 469.755pt x 334.24875pt>
 File: images/radial02.jpg Graphic file (type jpg)
 
 <use images/radial02.jpg>
@@ -2273,7 +2193,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 Package hyperref Info: Anchor `subsection.5.6.2' on input line 29.
 pdftex: bookmark at 29: {5.6.2} {\numberline{5.6.2}Distor\c c\~ao Tangencial} {
 subsection.5.6.2}{2}{toc}
-<images/tangencial01.jpg, id=637, 469.755pt x 240.9pt>
+<images/tangencial01.jpg, id=604, 469.755pt x 240.9pt>
 File: images/tangencial01.jpg Graphic file (type jpg)
 
 <use images/tangencial01.jpg>
@@ -2284,8 +2204,8 @@ Package hyperref Info: Anchor `figure.5.8' on input line 35.
 pdftex: bookmark at 35: {5.8} {\numberline{5.8}{\ignorespaces Distor\c c\~ao ta
 ngencial.}} {figure.5.8}{0}{lof}
 Package hyperref Info: Anchor `figure.5.8' on input line 35.
-Package hyperref Info: Anchor `page.33' on input line 37.
-[33
+Package hyperref Info: Anchor `page.30' on input line 37.
+[30
 Package `hyperref' Info: End of reference (cite) `cite.OpenCvOReilly', line 2.
 Package `hyperref' Info: End of reference (cite) `cite.OpenCvOReilly', line 2.
 Package `hyperref' Info: End of reference (link) `figure.5.7', line 19.
@@ -2297,7 +2217,7 @@ Package hyperref Info: Reference (link) `figure.5.9' on input line 39.
 
 Package xcolor Warning: Incompatible color definition on input line 39.
 
-<images/tangencial02.jpg, id=647, 469.755pt x 338.76563pt>
+<images/tangencial02.jpg, id=615, 469.755pt x 338.76563pt>
 File: images/tangencial02.jpg Graphic file (type jpg)
 
 <use images/tangencial02.jpg>
@@ -2311,8 +2231,8 @@ Package hyperref Info: Anchor `figure.5.9' on input line 45.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-Package hyperref Info: Anchor `page.34' on input line 51.
-[34pdfTeX warning (ext4): destination with the same identifier (name{figure.5.6
+Package hyperref Info: Anchor `page.31' on input line 51.
+[31pdfTeX warning (ext4): destination with the same identifier (name{figure.5.6
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -2336,7 +2256,7 @@ Package hyperref Info: Reference (link) `figure.5.10' on input line 53.
 
 Package xcolor Warning: Incompatible color definition on input line 53.
 
-<images/camera01.jpg, id=653, 469.755pt x 317.68687pt>
+<images/camera01.jpg, id=621, 469.755pt x 317.68687pt>
 File: images/camera01.jpg Graphic file (type jpg)
 
 <use images/camera01.jpg>
@@ -2353,8 +2273,8 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 )
 (D:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/basicos/reconhec
 imento.tex
-Package hyperref Info: Anchor `page.35' on input line 1.
- [35pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
+Package hyperref Info: Anchor `page.32' on input line 1.
+ [32pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
 8}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -2375,7 +2295,7 @@ Package hyperref Info: Anchor `section.5.8' on input line 1.
 
 pdftex: bookmark at 1: {5.8} {\numberline{5.8}Reconhecimento} {section.5.8}{1}{
 toc}
-<images/reconhecimento.jpg, id=658, 301.8778pt x 250.68657pt>
+<images/reconhecimento.jpg, id=626, 301.8778pt x 250.68657pt>
 File: images/reconhecimento.jpg Graphic file (type jpg)
 
 <use images/reconhecimento.jpg>
@@ -2390,8 +2310,8 @@ Package hyperref Info: Reference (link) `figure.5.11' on input line 12.
 
 Package xcolor Warning: Incompatible color definition on input line 12.
 
-Package hyperref Info: Anchor `page.36' on input line 14.
-[36pdfTeX warning (ext4): destination with the same identifier (name{figure.5.1
+Package hyperref Info: Anchor `page.33' on input line 14.
+[33pdfTeX warning (ext4): destination with the same identifier (name{figure.5.1
 0}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -2412,10 +2332,10 @@ Package hyperref Info: Anchor `subsection.5.8.1' on input line 21.
 pdftex: bookmark at 21: {5.8.1} {\numberline{5.8.1}Detec\c c\~ao de caracter\Ie
 C {\'\i }sticas} {subsection.5.8.1}{2}{toc}
 Package hyperref Info: Anchor `subsection.5.8.2' on input line 33.
-pdftex: bookmark at 33: {5.8.2} {\numberline{5.8.2}Feature matching} {subsectio
-n.5.8.2}{2}{toc}
-Package hyperref Info: Anchor `page.37' on input line 43.
-[37
+pdftex: bookmark at 33: {5.8.2} {\numberline{5.8.2}Correspond\^encia de caracte
+r\IeC {\'\i }sticas} {subsection.5.8.2}{2}{toc}
+Package hyperref Info: Anchor `page.34' on input line 43.
+[34
 Package `hyperref' Info: End of reference (link) `figure.5.11', line 12.
 ]
 (D:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/algoritmos/algor
@@ -2470,11 +2390,11 @@ Package hyperref Info: Reference (cite) `cite.VideoAnotation' on input line 8.
 
 Package xcolor Warning: Incompatible color definition on input line 8.
 
-Package hyperref Info: Anchor `page.38' on input line 11.
-[38
+Package hyperref Info: Anchor `page.35' on input line 11.
+[35
 Package `hyperref' Info: End of reference (cite) `cite.BRISK', line 3.
 Package `hyperref' Info: End of reference (cite) `cite.BRISK', line 3.
-] <images/fast01.jpg, id=682, 338.01282pt x 166.37157pt>
+] <images/fast01.jpg, id=649, 338.01282pt x 166.37157pt>
 File: images/fast01.jpg Graphic file (type jpg)
 
 <use images/fast01.jpg>
@@ -2493,8 +2413,8 @@ Package hyperref Info: Anchor `Item.1' on input line 22.
 Package hyperref Info: Anchor `Item.2' on input line 23.
 Package hyperref Info: Anchor `Item.3' on input line 24.
 Package hyperref Info: Anchor `Item.4' on input line 25.
-Package hyperref Info: Anchor `page.39' on input line 26.
-[39
+Package hyperref Info: Anchor `page.36' on input line 26.
+[36
 Package `hyperref' Info: End of reference (cite) `cite.FAST', line 4.
 Package `hyperref' Info: End of reference (cite) `cite.FAST', line 4.
 Package `hyperref' Info: End of reference (cite) `cite.FusingPoints', line 8.
@@ -2567,7 +2487,7 @@ Package hyperref Info: Reference (link) `figure.5.13' on input line 7.
 
 Package xcolor Warning: Incompatible color definition on input line 7.
 
-<images/SIFT01.jpg, id=702, 252.945pt x 109.1578pt>
+<images/SIFT01.jpg, id=670, 252.945pt x 109.1578pt>
 File: images/SIFT01.jpg Graphic file (type jpg)
  <use images/SIFT01.jpg>
 Package pdftex.def Info: images/SIFT01.jpg used on input line 12.
@@ -2581,8 +2501,8 @@ Package hyperref Info: Reference (link) `figure.5.13' on input line 20.
 
 Package xcolor Warning: Incompatible color definition on input line 20.
 
-Package hyperref Info: Anchor `page.40' on input line 27.
-[40
+Package hyperref Info: Anchor `page.37' on input line 27.
+[37
 Package `hyperref' Info: End of reference (cite) `cite.FREAK', line 3.
 Package `hyperref' Info: End of reference (cite) `cite.FREAK', line 3.
 Package `hyperref' Info: End of reference (cite) `cite.ORB', line 3.
@@ -2597,7 +2517,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.5.13})
                                                   \fi \fi 
 l.27 
       <D:/Projects/duartec-projects/Mestrado/Registration-Tese/images/SIFT01.jp
-g>] <images/DoG.jpg, id=711, 284.56313pt x 206.27063pt>
+g>] <images/DoG.jpg, id=680, 284.56313pt x 206.27063pt>
 File: images/DoG.jpg Graphic file (type jpg)
  <use images/DoG.jpg>
 Package pdftex.def Info: images/DoG.jpg used on input line 34.
@@ -2611,7 +2531,7 @@ Package hyperref Info: Reference (link) `figure.5.15' on input line 41.
 
 Package xcolor Warning: Incompatible color definition on input line 41.
 
-<images/DoG_escala.jpg, id=713, 284.56313pt x 206.27063pt>
+<images/DoG_escala.jpg, id=682, 284.56313pt x 206.27063pt>
 File: images/DoG_escala.jpg Graphic file (type jpg)
 
 <use images/DoG_escala.jpg>
@@ -2628,8 +2548,8 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 Package hyperref Info: Anchor `subsubsection.5.9.6.1' on input line 54.
 pdftex: bookmark at 54: {5.9.6.1} {\numberline{5.9.6.1}Keypoint Localization} {
 subsubsection.5.9.6.1}{3}{toc}
-Package hyperref Info: Anchor `page.41' on input line 60.
-[41
+Package hyperref Info: Anchor `page.38' on input line 60.
+[38
 Package `hyperref' Info: End of reference (link) `figure.5.13', line 20.
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5.14})
  has been already used, duplicate ignored
@@ -2650,8 +2570,8 @@ bsubsection.5.9.6.3}{3}{toc}
 Package hyperref Info: Anchor `subsubsection.5.9.6.4' on input line 64.
 pdftex: bookmark at 64: {5.9.6.4} {\numberline{5.9.6.4}Keypoint Matching} {subs
 ubsection.5.9.6.4}{3}{toc}
-Package hyperref Info: Anchor `page.42' on input line 69.
-[42pdfTeX warning (ext4): destination with the same identifier (name{figure.5.1
+Package hyperref Info: Anchor `page.39' on input line 69.
+[39pdfTeX warning (ext4): destination with the same identifier (name{figure.5.1
 5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -2680,7 +2600,7 @@ Package hyperref Info: Reference (cite) `cite.SURF' on input line 3.
 
 Package xcolor Warning: Incompatible color definition on input line 3.
 
-<images/SURF01.jpg, id=728, 185.94469pt x 202.50656pt>
+<images/SURF01.jpg, id=696, 185.94469pt x 202.50656pt>
 File: images/SURF01.jpg Graphic file (type jpg)
  <use images/SURF01.jpg>
 Package pdftex.def Info: images/SURF01.jpg used on input line 11.
@@ -2694,24 +2614,24 @@ Package hyperref Info: Anchor `figure.5.16' on input line 12.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ))))
-Package hyperref Info: Anchor `page.43' on input line 168.
- [43
+Package hyperref Info: Anchor `page.40' on input line 171.
+ [40
 Package `hyperref' Info: End of reference (cite) `cite.SURF', line 3.
 Package `hyperref' Info: End of reference (cite) `cite.SURF', line 3.
 ]
-Package hyperref Info: Anchor `page.44' on input line 168.
- [44pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
+Package hyperref Info: Anchor `page.41' on input line 171.
+ [41pdfTeX warning (ext4): destination with the same identifier (name{figure.5.
 16}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.168 \chapter
+l.171 \chapter
               {Metodologia} <D:/Projects/duartec-projects/Mestrado/Registration
 -Tese/images/SURF01.jpg>]
-Package hyperref Info: Anchor `chapter.6' on input line 168.
+Package hyperref Info: Anchor `chapter.6' on input line 171.
 
 Cap\'{\i }tulo 6.
-pdftex: bookmark at 168: {6} {\numberline{6}Metodologia} {chapter.6}{0}{toc}
+pdftex: bookmark at 171: {6} {\numberline{6}Metodologia} {chapter.6}{0}{toc}
 (D:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/metodologia.tex
 Package hyperref Info: Anchor `section.6.1' on input line 1.
 
@@ -2724,8 +2644,8 @@ Package hyperref Info: Reference (link) `chapter.3' on input line 18.
 
 Package xcolor Warning: Incompatible color definition on input line 18.
 
-Package hyperref Info: Anchor `page.45' on input line 22.
-[45
+Package hyperref Info: Anchor `page.42' on input line 22.
+[42
 
 Package `hyperref' Info: End of reference (link) `chapter.3', line 18.
 ]
@@ -2739,15 +2659,15 @@ Package hyperref Info: Reference (cite) `cite.Tang93whydo' on input line 22.
 Package xcolor Warning: Incompatible color definition on input line 22.
 
 )
-Package hyperref Info: Anchor `page.46' on input line 171.
- [46
+Package hyperref Info: Anchor `page.43' on input line 174.
+ [43
 Package `hyperref' Info: End of reference (cite) `cite.Tang93whydo', line 22.
 Package `hyperref' Info: End of reference (cite) `cite.Tang93whydo', line 22.
 ]
-Package hyperref Info: Anchor `chapter.7' on input line 171.
+Package hyperref Info: Anchor `chapter.7' on input line 174.
 
 Cap\'{\i }tulo 7.
-pdftex: bookmark at 171: {7} {\numberline{7}Prot\'otipos} {chapter.7}{0}{toc}
+pdftex: bookmark at 174: {7} {\numberline{7}Prot\'otipos} {chapter.7}{0}{toc}
 (D:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/prototipos.tex
 Package hyperref Info: Reference (link) `section.3.1' on input line 3.
 
@@ -2757,26 +2677,31 @@ Package xcolor Warning: Incompatible color definition on input line 3.
 Package hyperref Info: Anchor `section.7.1' on input line 7.
 pdftex: bookmark at 7: {7.1} {\numberline{7.1}Testes de reconhecimento de padr\
 ~oes} {section.7.1}{1}{toc}
-Package hyperref Info: Anchor `page.47' on input line 22.
-[47
+Package hyperref Info: Anchor `page.44' on input line 22.
+[44
 
 Package `hyperref' Info: End of reference (link) `section.3.1', line 3.
 ]
-Package hyperref Info: Anchor `page.48' on input line 44.
- [48]
+Package hyperref Info: Anchor `page.45' on input line 44.
+ [45]
 Package hyperref Info: Anchor `section.7.2' on input line 47.
 
 pdftex: bookmark at 47: {7.2} {\numberline{7.2}Ambiente} {section.7.2}{1}{toc}
-Package hyperref Info: Anchor `subsection.7.2.1' on input line 57.
-pdftex: bookmark at 57: {7.2.1} {\numberline{7.2.1}OpenCV} {subsection.7.2.1}{2
+
+Underfull \hbox (badness 10000) in paragraph at lines 52--55
+
+ []
+
+Package hyperref Info: Anchor `subsection.7.2.1' on input line 58.
+pdftex: bookmark at 58: {7.2.1} {\numberline{7.2.1}OpenCV} {subsection.7.2.1}{2
 }{toc}
 )
-Package hyperref Info: Anchor `page.49' on input line 174.
- [49]
-Package hyperref Info: Anchor `chapter.8' on input line 174.
+Package hyperref Info: Anchor `page.46' on input line 177.
+ [46]
+Package hyperref Info: Anchor `chapter.8' on input line 177.
 
 Cap\'{\i }tulo 8.
-pdftex: bookmark at 174: {8} {\numberline{8}Resultados} {chapter.8}{0}{toc}
+pdftex: bookmark at 177: {8} {\numberline{8}Resultados} {chapter.8}{0}{toc}
 
 (D:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/results/resultad
 os.tex
@@ -2805,8 +2730,8 @@ Package xcolor Warning: Incompatible color definition on input line 43.
 
 (D:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/results/briskres
 ult.tex
-Package hyperref Info: Anchor `page.50' on input line 2.
- [50
+Package hyperref Info: Anchor `page.47' on input line 2.
+ [47
 
 Package `hyperref' Info: End of reference (cite) `cite.performance_evaluation',
  line 31.
@@ -2820,29 +2745,9 @@ Package hyperref Info: Anchor `subsection.8.1.1' on input line 3.
 pdftex: bookmark at 3: {8.1.1} {\numberline{8.1.1}BRISK} {subsection.8.1.1}{2}{
 toc}
 PGFPlots: reading {graphs/scale-all-pres.csv}
-
-Package pgfplots Warning: Table 'graphs/scale-all-pres.csv' has an empty column
- name; replacing it by '73'' on input line 42.
-
- [warning /pgfplots/warning/empty column name]
 PGFPlots: reading {graphs/scale-all-pres.csv}
-
-Package pgfplots Warning: Table 'graphs/scale-all-pres.csv' has an empty column
- name; replacing it by '73'' on input line 43.
-
- [warning /pgfplots/warning/empty column name]
 PGFPlots: reading {graphs/scale-all-pres.csv}
-
-Package pgfplots Warning: Table 'graphs/scale-all-pres.csv' has an empty column
- name; replacing it by '73'' on input line 44.
-
- [warning /pgfplots/warning/empty column name]
 PGFPlots: reading {graphs/scale-all-pres.csv}
-
-Package pgfplots Warning: Table 'graphs/scale-all-pres.csv' has an empty column
- name; replacing it by '73'' on input line 45.
-
- [warning /pgfplots/warning/empty column name]
 ! Dimension too large.
 <recently read> \pgf@xx 
                         
@@ -3004,7 +2909,7 @@ name; replacing it by '73'' on input line 107.
 ! Dimension too large.
 <to be read again> 
                    \relax 
-l.123 \end{axis}
+l.122 \end{axis}
                 
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -3012,7 +2917,7 @@ Continue and I'll use the largest value I can.
 ! Dimension too large.
 <to be read again> 
                    \relax 
-l.123 \end{axis}
+l.122 \end{axis}
                 
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -3020,11 +2925,17 @@ Continue and I'll use the largest value I can.
 ! Dimension too large.
 <to be read again> 
                    \relax 
-l.123 \end{axis}
+l.122 \end{axis}
                 
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
 
+PGFPlots: reading {graphs/bright-all-pres.csv}
+
+Package pgfplots Warning: Table 'graphs/bright-all-pres.csv' has an empty colum
+n name; replacing it by '73'' on input line 132.
+
+ [warning /pgfplots/warning/empty column name]
 PGFPlots: reading {graphs/bright-all-pres.csv}
 
 Package pgfplots Warning: Table 'graphs/bright-all-pres.csv' has an empty colum
@@ -3043,16 +2954,10 @@ Package pgfplots Warning: Table 'graphs/bright-all-pres.csv' has an empty colum
 n name; replacing it by '73'' on input line 135.
 
  [warning /pgfplots/warning/empty column name]
-PGFPlots: reading {graphs/bright-all-pres.csv}
-
-Package pgfplots Warning: Table 'graphs/bright-all-pres.csv' has an empty colum
-n name; replacing it by '73'' on input line 136.
-
- [warning /pgfplots/warning/empty column name]
 ! Dimension too large.
 <to be read again> 
                    \relax 
-l.154 \end{axis}
+l.152 \end{axis}
                 
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -3060,7 +2965,7 @@ Continue and I'll use the largest value I can.
 ! Dimension too large.
 <recently read> \pgfmath@x 
                            
-l.154 \end{axis}
+l.152 \end{axis}
                 
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -3068,7 +2973,7 @@ Continue and I'll use the largest value I can.
 ! Dimension too large.
 <to be read again> 
                    \relax 
-l.154 \end{axis}
+l.152 \end{axis}
                 
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -3076,7 +2981,7 @@ Continue and I'll use the largest value I can.
 ! Dimension too large.
 <recently read> \pgfmath@x 
                            
-l.154 \end{axis}
+l.152 \end{axis}
                 
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -3084,7 +2989,7 @@ Continue and I'll use the largest value I can.
 ! Dimension too large.
 <to be read again> 
                    \relax 
-l.154 \end{axis}
+l.152 \end{axis}
                 
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -3092,7 +2997,7 @@ Continue and I'll use the largest value I can.
 ! Dimension too large.
 <to be read again> 
                    \relax 
-l.154 \end{axis}
+l.152 \end{axis}
                 
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -3100,7 +3005,7 @@ Continue and I'll use the largest value I can.
 ! Dimension too large.
 <recently read> \pgfmath@x 
                            
-l.154 \end{axis}
+l.152 \end{axis}
                 
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -3108,7 +3013,7 @@ Continue and I'll use the largest value I can.
 ! Dimension too large.
 <to be read again> 
                    \relax 
-l.154 \end{axis}
+l.152 \end{axis}
                 
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -3116,7 +3021,7 @@ Continue and I'll use the largest value I can.
 ! Dimension too large.
 <to be read again> 
                    \relax 
-l.154 \end{axis}
+l.152 \end{axis}
                 
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -3124,7 +3029,7 @@ Continue and I'll use the largest value I can.
 ! Dimension too large.
 <recently read> \pgfmath@x 
                            
-l.154 \end{axis}
+l.152 \end{axis}
                 
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -3132,7 +3037,7 @@ Continue and I'll use the largest value I can.
 ! Dimension too large.
 <to be read again> 
                    \relax 
-l.154 \end{axis}
+l.152 \end{axis}
                 
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -3140,7 +3045,7 @@ Continue and I'll use the largest value I can.
 ! Dimension too large.
 <to be read again> 
                    \relax 
-l.154 \end{axis}
+l.152 \end{axis}
                 
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -3148,7 +3053,7 @@ Continue and I'll use the largest value I can.
 ! Dimension too large.
 <recently read> \pgfmath@x 
                            
-l.154 \end{axis}
+l.152 \end{axis}
                 
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -3156,7 +3061,7 @@ Continue and I'll use the largest value I can.
 ! Dimension too large.
 <to be read again> 
                    \relax 
-l.154 \end{axis}
+l.152 \end{axis}
                 
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -3168,14 +3073,26 @@ See the tikz package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.158 \end{tikzpicture}
+l.156 \end{tikzpicture}
                        
 (That was another \errmessage.)
 
-Package hyperref Info: Anchor `figure.8.1' on input line 160.
-pdftex: bookmark at 160: {8.1} {\numberline{8.1}{\ignorespaces Resultado de tes
+Package hyperref Info: Anchor `figure.8.1' on input line 158.
+pdftex: bookmark at 158: {8.1} {\numberline{8.1}{\ignorespaces Resultado de tes
 tes individuais de preformance com BRISK}} {figure.8.1}{0}{lof}
-Package hyperref Info: Anchor `figure.8.1' on input line 160.
+Package hyperref Info: Anchor `figure.8.1' on input line 158.
+PGFPlots: reading {graphs/scale-all-time.csv}
+
+Package pgfplots Warning: Table 'graphs/scale-all-time.csv' has an empty column
+ name; replacing it by '73'' on input line 192.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {graphs/scale-all-time.csv}
+
+Package pgfplots Warning: Table 'graphs/scale-all-time.csv' has an empty column
+ name; replacing it by '73'' on input line 193.
+
+ [warning /pgfplots/warning/empty column name]
 PGFPlots: reading {graphs/scale-all-time.csv}
 
 Package pgfplots Warning: Table 'graphs/scale-all-time.csv' has an empty column
@@ -3188,22 +3105,10 @@ Package pgfplots Warning: Table 'graphs/scale-all-time.csv' has an empty column
  name; replacing it by '73'' on input line 195.
 
  [warning /pgfplots/warning/empty column name]
-PGFPlots: reading {graphs/scale-all-time.csv}
-
-Package pgfplots Warning: Table 'graphs/scale-all-time.csv' has an empty column
- name; replacing it by '73'' on input line 196.
-
- [warning /pgfplots/warning/empty column name]
-PGFPlots: reading {graphs/scale-all-time.csv}
-
-Package pgfplots Warning: Table 'graphs/scale-all-time.csv' has an empty column
- name; replacing it by '73'' on input line 197.
-
- [warning /pgfplots/warning/empty column name]
 ! Dimension too large.
 <recently read> \pgf@xx 
                         
-l.213 \end{axis}
+l.211 \end{axis}
                 
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -3211,7 +3116,7 @@ Continue and I'll use the largest value I can.
 ! Dimension too large.
 <to be read again> 
                    \relax 
-l.213 \end{axis}
+l.211 \end{axis}
                 
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -3219,7 +3124,7 @@ Continue and I'll use the largest value I can.
 ! Dimension too large.
 <recently read> \pgf@xx 
                         
-l.213 \end{axis}
+l.211 \end{axis}
                 
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -3227,7 +3132,7 @@ Continue and I'll use the largest value I can.
 ! Dimension too large.
 <recently read> \pgf@xx 
                         
-l.213 \end{axis}
+l.211 \end{axis}
                 
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -3235,7 +3140,7 @@ Continue and I'll use the largest value I can.
 ! Dimension too large.
 <recently read> \pgf@xx 
                         
-l.213 \end{axis}
+l.211 \end{axis}
                 
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -3243,7 +3148,7 @@ Continue and I'll use the largest value I can.
 ! Dimension too large.
 \pgfusepath ...x by-.5\pgflinewidth \ifdim \pgf@x 
                                                   <\pgf@picminx \global \pgf...
-l.213 \end{axis}
+l.211 \end{axis}
                 
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -3251,7 +3156,7 @@ Continue and I'll use the largest value I can.
 ! Dimension too large.
 \pgfusepath ...@x by.5\pgflinewidth \ifdim \pgf@x 
                                                   >\pgf@picmaxx \global \pgf...
-l.213 \end{axis}
+l.211 \end{axis}
                 
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -3259,7 +3164,7 @@ Continue and I'll use the largest value I can.
 ! Dimension too large.
 <recently read> \pgf@xx 
                         
-l.213 \end{axis}
+l.211 \end{axis}
                 
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -3267,7 +3172,7 @@ Continue and I'll use the largest value I can.
 ! Dimension too large.
 <to be read again> 
                    \relax 
-l.213 \end{axis}
+l.211 \end{axis}
                 
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -3275,7 +3180,7 @@ Continue and I'll use the largest value I can.
 ! Dimension too large.
 <recently read> \pgf@xx 
                         
-l.213 \end{axis}
+l.211 \end{axis}
                 
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -3283,7 +3188,7 @@ Continue and I'll use the largest value I can.
 ! Dimension too large.
 <recently read> \pgf@xx 
                         
-l.213 \end{axis}
+l.211 \end{axis}
                 
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -3291,7 +3196,7 @@ Continue and I'll use the largest value I can.
 ! Dimension too large.
 <to be read again> 
                    \relax 
-l.213 \end{axis}
+l.211 \end{axis}
                 
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -3299,7 +3204,7 @@ Continue and I'll use the largest value I can.
 ! Dimension too large.
 <recently read> \pgf@xx 
                         
-l.213 \end{axis}
+l.211 \end{axis}
                 
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -3311,10 +3216,22 @@ See the pgf package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.213 \end{axis}
+l.211 \end{axis}
                 
 (That was another \errmessage.)
 
+PGFPlots: reading {graphs/rot-all-time.csv}
+
+Package pgfplots Warning: Table 'graphs/rot-all-time.csv' has an empty column n
+ame; replacing it by '73'' on input line 221.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {graphs/rot-all-time.csv}
+
+Package pgfplots Warning: Table 'graphs/rot-all-time.csv' has an empty column n
+ame; replacing it by '73'' on input line 222.
+
+ [warning /pgfplots/warning/empty column name]
 PGFPlots: reading {graphs/rot-all-time.csv}
 
 Package pgfplots Warning: Table 'graphs/rot-all-time.csv' has an empty column n
@@ -3327,16 +3244,16 @@ Package pgfplots Warning: Table 'graphs/rot-all-time.csv' has an empty column n
 ame; replacing it by '73'' on input line 224.
 
  [warning /pgfplots/warning/empty column name]
-PGFPlots: reading {graphs/rot-all-time.csv}
+PGFPlots: reading {graphs/blur-all-time.csv}
 
-Package pgfplots Warning: Table 'graphs/rot-all-time.csv' has an empty column n
-ame; replacing it by '73'' on input line 225.
+Package pgfplots Warning: Table 'graphs/blur-all-time.csv' has an empty column 
+name; replacing it by '73'' on input line 256.
 
  [warning /pgfplots/warning/empty column name]
-PGFPlots: reading {graphs/rot-all-time.csv}
+PGFPlots: reading {graphs/blur-all-time.csv}
 
-Package pgfplots Warning: Table 'graphs/rot-all-time.csv' has an empty column n
-ame; replacing it by '73'' on input line 226.
+Package pgfplots Warning: Table 'graphs/blur-all-time.csv' has an empty column 
+name; replacing it by '73'' on input line 257.
 
  [warning /pgfplots/warning/empty column name]
 PGFPlots: reading {graphs/blur-all-time.csv}
@@ -3351,42 +3268,42 @@ Package pgfplots Warning: Table 'graphs/blur-all-time.csv' has an empty column
 name; replacing it by '73'' on input line 259.
 
  [warning /pgfplots/warning/empty column name]
-PGFPlots: reading {graphs/blur-all-time.csv}
+! Dimension too large.
+<to be read again> 
+                   \relax 
+l.277 \end{axis}
+                
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
 
-Package pgfplots Warning: Table 'graphs/blur-all-time.csv' has an empty column 
-name; replacing it by '73'' on input line 260.
+! Dimension too large.
+<to be read again> 
+                   \relax 
+l.277 \end{axis}
+                
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<to be read again> 
+                   \relax 
+l.277 \end{axis}
+                
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+PGFPlots: reading {graphs/bright-all-time.csv}
+
+Package pgfplots Warning: Table 'graphs/bright-all-time.csv' has an empty colum
+n name; replacing it by '73'' on input line 287.
 
  [warning /pgfplots/warning/empty column name]
-PGFPlots: reading {graphs/blur-all-time.csv}
+PGFPlots: reading {graphs/bright-all-time.csv}
 
-Package pgfplots Warning: Table 'graphs/blur-all-time.csv' has an empty column 
-name; replacing it by '73'' on input line 261.
+Package pgfplots Warning: Table 'graphs/bright-all-time.csv' has an empty colum
+n name; replacing it by '73'' on input line 288.
 
  [warning /pgfplots/warning/empty column name]
-! Dimension too large.
-<to be read again> 
-                   \relax 
-l.279 \end{axis}
-                
-I can't work with sizes bigger than about 19 feet.
-Continue and I'll use the largest value I can.
-
-! Dimension too large.
-<to be read again> 
-                   \relax 
-l.279 \end{axis}
-                
-I can't work with sizes bigger than about 19 feet.
-Continue and I'll use the largest value I can.
-
-! Dimension too large.
-<to be read again> 
-                   \relax 
-l.279 \end{axis}
-                
-I can't work with sizes bigger than about 19 feet.
-Continue and I'll use the largest value I can.
-
 PGFPlots: reading {graphs/bright-all-time.csv}
 
 Package pgfplots Warning: Table 'graphs/bright-all-time.csv' has an empty colum
@@ -3399,18 +3316,6 @@ Package pgfplots Warning: Table 'graphs/bright-all-time.csv' has an empty colum
 n name; replacing it by '73'' on input line 290.
 
  [warning /pgfplots/warning/empty column name]
-PGFPlots: reading {graphs/bright-all-time.csv}
-
-Package pgfplots Warning: Table 'graphs/bright-all-time.csv' has an empty colum
-n name; replacing it by '73'' on input line 291.
-
- [warning /pgfplots/warning/empty column name]
-PGFPlots: reading {graphs/bright-all-time.csv}
-
-Package pgfplots Warning: Table 'graphs/bright-all-time.csv' has an empty colum
-n name; replacing it by '73'' on input line 292.
-
- [warning /pgfplots/warning/empty column name]
 
 ! Package tikz Error: Giving up on this path. Did you forget a semicolon?.
 
@@ -3418,41 +3323,41 @@ See the tikz package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.315 \end{tikzpicture}
+l.313 \end{tikzpicture}
                        
 (That was another \errmessage.)
 
-Package hyperref Info: Anchor `figure.8.2' on input line 317.
-pdftex: bookmark at 317: {8.2} {\numberline{8.2}{\ignorespaces Resultado de tes
+Package hyperref Info: Anchor `figure.8.2' on input line 315.
+pdftex: bookmark at 315: {8.2} {\numberline{8.2}{\ignorespaces Resultado de tes
 tes individuais de tempo com BRISK}} {figure.8.2}{0}{lof}
-Package hyperref Info: Anchor `figure.8.2' on input line 317.
-Package hyperref Info: Anchor `page.51' on input line 319.
-[51pdfTeX warning (ext4): destination with the same identifier (name{figure.8.1
+Package hyperref Info: Anchor `figure.8.2' on input line 315.
+Package hyperref Info: Anchor `page.48' on input line 317.
+[48pdfTeX warning (ext4): destination with the same identifier (name{figure.8.1
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.319 
+l.317 
       ]
-Package hyperref Info: Anchor `subsection.8.1.2' on input line 320.
+Package hyperref Info: Anchor `subsubsection.8.1.1.1' on input line 318.
 
-pdftex: bookmark at 320: {8.1.2} {\numberline{8.1.2}An\'alise} {subsection.8.1.
-2}{2}{toc}
+pdftex: bookmark at 318: {8.1.1.1} {\numberline{8.1.1.1}An\'alise} {subsubsecti
+on.8.1.1.1}{3}{toc}
 )
 (D:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/results/fastresu
 lt.tex
-Package hyperref Info: Anchor `page.52' on input line 2.
- [52pdfTeX warning (ext4): destination with the same identifier (name{figure.8.
-2}) has been already used, duplicate ignored
+Package hyperref Info: Anchor `subsection.8.1.2' on input line 2.
+
+pdftex: bookmark at 2: {8.1.2} {\numberline{8.1.2}FAST} {subsection.8.1.2}{2}{t
+oc}
+Package hyperref Info: Anchor `page.49' on input line 4.
+[49pdfTeX warning (ext4): destination with the same identifier (name{figure.8.2
+}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.2 \subsection
-               {FAST}]
-Package hyperref Info: Anchor `subsection.8.1.3' on input line 2.
-
-pdftex: bookmark at 2: {8.1.3} {\numberline{8.1.3}FAST} {subsection.8.1.3}{2}{t
-oc}
+l.4 \begin{center}
+                  ]
 
 ! Package pgfkeys Error: I do not know the key '/tikz/colsep', to which you pas
 sed 'comma', and I am going to ignore it. Perhaps you misspelled it.
@@ -3462,7 +3367,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.37 ...table[x=Argument, y=FAST-10, colsep=comma]
-                                                  {graphs/scale-all-\gtype.c...
+                                                   {graphs/scale-all-\gtype....
 (That was another \errmessage.)
 
 PGFPlots: reading {graphs/scale-all-pres.csv}
@@ -3475,7 +3380,7 @@ See the pgfplots package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.37 ...olsep=comma]{graphs/scale-all-\gtype.csv};
+l.37 ...lsep=comma] {graphs/scale-all-\gtype.csv};
                                                   
 (That was another \errmessage.)
 
@@ -3488,7 +3393,7 @@ See the pgfplots package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.37 ...olsep=comma]{graphs/scale-all-\gtype.csv};
+l.37 ...lsep=comma] {graphs/scale-all-\gtype.csv};
                                                   
 (That was another \errmessage.)
 
@@ -3501,7 +3406,7 @@ See the pgfplots package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.37 ...olsep=comma]{graphs/scale-all-\gtype.csv};
+l.37 ...lsep=comma] {graphs/scale-all-\gtype.csv};
                                                   
 (That was another \errmessage.)
 
@@ -3514,35 +3419,7 @@ See the pgfplots package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.37 ...olsep=comma]{graphs/scale-all-\gtype.csv};
-                                                  
-(That was another \errmessage.)
-
-NOTE: coordinate (,) has been dropped because of a coordinate filter. (see also
- unbounded coords=jump). 
-
-! Package pgfplots Error: Sorry, the requested column number '' in table 'graph
-s/scale-all-pres.csv' does not exist!? Please verify you used the correct index
- 0 <= i < N..
-
-See the pgfplots package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.37 ...olsep=comma]{graphs/scale-all-\gtype.csv};
-                                                  
-(That was another \errmessage.)
-
-
-! Package pgfplots Error: Sorry, the requested column number '' in table 'graph
-s/scale-all-pres.csv' does not exist!? Please verify you used the correct index
- 0 <= i < N..
-
-See the pgfplots package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.37 ...olsep=comma]{graphs/scale-all-\gtype.csv};
+l.37 ...lsep=comma] {graphs/scale-all-\gtype.csv};
                                                   
 (That was another \errmessage.)
 
@@ -3557,7 +3434,7 @@ See the pgfplots package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.37 ...olsep=comma]{graphs/scale-all-\gtype.csv};
+l.37 ...lsep=comma] {graphs/scale-all-\gtype.csv};
                                                   
 (That was another \errmessage.)
 
@@ -3570,35 +3447,7 @@ See the pgfplots package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.37 ...olsep=comma]{graphs/scale-all-\gtype.csv};
-                                                  
-(That was another \errmessage.)
-
-NOTE: coordinate (,) has been dropped because of a coordinate filter. (see also
- unbounded coords=jump). 
-
-! Package pgfplots Error: Sorry, the requested column number '' in table 'graph
-s/scale-all-pres.csv' does not exist!? Please verify you used the correct index
- 0 <= i < N..
-
-See the pgfplots package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.37 ...olsep=comma]{graphs/scale-all-\gtype.csv};
-                                                  
-(That was another \errmessage.)
-
-
-! Package pgfplots Error: Sorry, the requested column number '' in table 'graph
-s/scale-all-pres.csv' does not exist!? Please verify you used the correct index
- 0 <= i < N..
-
-See the pgfplots package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.37 ...olsep=comma]{graphs/scale-all-\gtype.csv};
+l.37 ...lsep=comma] {graphs/scale-all-\gtype.csv};
                                                   
 (That was another \errmessage.)
 
@@ -3613,7 +3462,7 @@ See the pgfplots package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.37 ...olsep=comma]{graphs/scale-all-\gtype.csv};
+l.37 ...lsep=comma] {graphs/scale-all-\gtype.csv};
                                                   
 (That was another \errmessage.)
 
@@ -3626,35 +3475,7 @@ See the pgfplots package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.37 ...olsep=comma]{graphs/scale-all-\gtype.csv};
-                                                  
-(That was another \errmessage.)
-
-NOTE: coordinate (,) has been dropped because of a coordinate filter. (see also
- unbounded coords=jump). 
-
-! Package pgfplots Error: Sorry, the requested column number '' in table 'graph
-s/scale-all-pres.csv' does not exist!? Please verify you used the correct index
- 0 <= i < N..
-
-See the pgfplots package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.37 ...olsep=comma]{graphs/scale-all-\gtype.csv};
-                                                  
-(That was another \errmessage.)
-
-
-! Package pgfplots Error: Sorry, the requested column number '' in table 'graph
-s/scale-all-pres.csv' does not exist!? Please verify you used the correct index
- 0 <= i < N..
-
-See the pgfplots package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.37 ...olsep=comma]{graphs/scale-all-\gtype.csv};
+l.37 ...lsep=comma] {graphs/scale-all-\gtype.csv};
                                                   
 (That was another \errmessage.)
 
@@ -3669,7 +3490,7 @@ See the pgfplots package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.37 ...olsep=comma]{graphs/scale-all-\gtype.csv};
+l.37 ...lsep=comma] {graphs/scale-all-\gtype.csv};
                                                   
 (That was another \errmessage.)
 
@@ -3682,35 +3503,7 @@ See the pgfplots package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.37 ...olsep=comma]{graphs/scale-all-\gtype.csv};
-                                                  
-(That was another \errmessage.)
-
-NOTE: coordinate (,) has been dropped because of a coordinate filter. (see also
- unbounded coords=jump). 
-
-! Package pgfplots Error: Sorry, the requested column number '' in table 'graph
-s/scale-all-pres.csv' does not exist!? Please verify you used the correct index
- 0 <= i < N..
-
-See the pgfplots package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.37 ...olsep=comma]{graphs/scale-all-\gtype.csv};
-                                                  
-(That was another \errmessage.)
-
-
-! Package pgfplots Error: Sorry, the requested column number '' in table 'graph
-s/scale-all-pres.csv' does not exist!? Please verify you used the correct index
- 0 <= i < N..
-
-See the pgfplots package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.37 ...olsep=comma]{graphs/scale-all-\gtype.csv};
+l.37 ...lsep=comma] {graphs/scale-all-\gtype.csv};
                                                   
 (That was another \errmessage.)
 
@@ -3725,7 +3518,7 @@ See the pgfplots package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.37 ...olsep=comma]{graphs/scale-all-\gtype.csv};
+l.37 ...lsep=comma] {graphs/scale-all-\gtype.csv};
                                                   
 (That was another \errmessage.)
 
@@ -3738,35 +3531,7 @@ See the pgfplots package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.37 ...olsep=comma]{graphs/scale-all-\gtype.csv};
-                                                  
-(That was another \errmessage.)
-
-NOTE: coordinate (,) has been dropped because of a coordinate filter. (see also
- unbounded coords=jump). 
-
-! Package pgfplots Error: Sorry, the requested column number '' in table 'graph
-s/scale-all-pres.csv' does not exist!? Please verify you used the correct index
- 0 <= i < N..
-
-See the pgfplots package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.37 ...olsep=comma]{graphs/scale-all-\gtype.csv};
-                                                  
-(That was another \errmessage.)
-
-
-! Package pgfplots Error: Sorry, the requested column number '' in table 'graph
-s/scale-all-pres.csv' does not exist!? Please verify you used the correct index
- 0 <= i < N..
-
-See the pgfplots package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.37 ...olsep=comma]{graphs/scale-all-\gtype.csv};
+l.37 ...lsep=comma] {graphs/scale-all-\gtype.csv};
                                                   
 (That was another \errmessage.)
 
@@ -3781,7 +3546,7 @@ See the pgfplots package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.37 ...olsep=comma]{graphs/scale-all-\gtype.csv};
+l.37 ...lsep=comma] {graphs/scale-all-\gtype.csv};
                                                   
 (That was another \errmessage.)
 
@@ -3794,7 +3559,147 @@ See the pgfplots package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.37 ...olsep=comma]{graphs/scale-all-\gtype.csv};
+l.37 ...lsep=comma] {graphs/scale-all-\gtype.csv};
+                                                  
+(That was another \errmessage.)
+
+NOTE: coordinate (,) has been dropped because of a coordinate filter. (see also
+ unbounded coords=jump). 
+
+! Package pgfplots Error: Sorry, the requested column number '' in table 'graph
+s/scale-all-pres.csv' does not exist!? Please verify you used the correct index
+ 0 <= i < N..
+
+See the pgfplots package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 ...lsep=comma] {graphs/scale-all-\gtype.csv};
+                                                  
+(That was another \errmessage.)
+
+
+! Package pgfplots Error: Sorry, the requested column number '' in table 'graph
+s/scale-all-pres.csv' does not exist!? Please verify you used the correct index
+ 0 <= i < N..
+
+See the pgfplots package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 ...lsep=comma] {graphs/scale-all-\gtype.csv};
+                                                  
+(That was another \errmessage.)
+
+NOTE: coordinate (,) has been dropped because of a coordinate filter. (see also
+ unbounded coords=jump). 
+
+! Package pgfplots Error: Sorry, the requested column number '' in table 'graph
+s/scale-all-pres.csv' does not exist!? Please verify you used the correct index
+ 0 <= i < N..
+
+See the pgfplots package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 ...lsep=comma] {graphs/scale-all-\gtype.csv};
+                                                  
+(That was another \errmessage.)
+
+
+! Package pgfplots Error: Sorry, the requested column number '' in table 'graph
+s/scale-all-pres.csv' does not exist!? Please verify you used the correct index
+ 0 <= i < N..
+
+See the pgfplots package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 ...lsep=comma] {graphs/scale-all-\gtype.csv};
+                                                  
+(That was another \errmessage.)
+
+NOTE: coordinate (,) has been dropped because of a coordinate filter. (see also
+ unbounded coords=jump). 
+
+! Package pgfplots Error: Sorry, the requested column number '' in table 'graph
+s/scale-all-pres.csv' does not exist!? Please verify you used the correct index
+ 0 <= i < N..
+
+See the pgfplots package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 ...lsep=comma] {graphs/scale-all-\gtype.csv};
+                                                  
+(That was another \errmessage.)
+
+
+! Package pgfplots Error: Sorry, the requested column number '' in table 'graph
+s/scale-all-pres.csv' does not exist!? Please verify you used the correct index
+ 0 <= i < N..
+
+See the pgfplots package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 ...lsep=comma] {graphs/scale-all-\gtype.csv};
+                                                  
+(That was another \errmessage.)
+
+NOTE: coordinate (,) has been dropped because of a coordinate filter. (see also
+ unbounded coords=jump). 
+
+! Package pgfplots Error: Sorry, the requested column number '' in table 'graph
+s/scale-all-pres.csv' does not exist!? Please verify you used the correct index
+ 0 <= i < N..
+
+See the pgfplots package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 ...lsep=comma] {graphs/scale-all-\gtype.csv};
+                                                  
+(That was another \errmessage.)
+
+
+! Package pgfplots Error: Sorry, the requested column number '' in table 'graph
+s/scale-all-pres.csv' does not exist!? Please verify you used the correct index
+ 0 <= i < N..
+
+See the pgfplots package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 ...lsep=comma] {graphs/scale-all-\gtype.csv};
+                                                  
+(That was another \errmessage.)
+
+NOTE: coordinate (,) has been dropped because of a coordinate filter. (see also
+ unbounded coords=jump). 
+
+! Package pgfplots Error: Sorry, the requested column number '' in table 'graph
+s/scale-all-pres.csv' does not exist!? Please verify you used the correct index
+ 0 <= i < N..
+
+See the pgfplots package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 ...lsep=comma] {graphs/scale-all-\gtype.csv};
+                                                  
+(That was another \errmessage.)
+
+
+! Package pgfplots Error: Sorry, the requested column number '' in table 'graph
+s/scale-all-pres.csv' does not exist!? Please verify you used the correct index
+ 0 <= i < N..
+
+See the pgfplots package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 ...lsep=comma] {graphs/scale-all-\gtype.csv};
                                                   
 (That was another \errmessage.)
 
@@ -3806,23 +3711,8 @@ Package pgfplots Warning: the current plot has no coordinates (or all have been
 
  [warning /pgfplots/warning/plot without coordinates]
 PGFPlots: reading {graphs/scale-all-pres.csv}
-
-Package pgfplots Warning: Table 'graphs/scale-all-pres.csv' has an empty column
- name; replacing it by '73'' on input line 38.
-
- [warning /pgfplots/warning/empty column name]
 PGFPlots: reading {graphs/scale-all-pres.csv}
-
-Package pgfplots Warning: Table 'graphs/scale-all-pres.csv' has an empty column
- name; replacing it by '73'' on input line 39.
-
- [warning /pgfplots/warning/empty column name]
 PGFPlots: reading {graphs/scale-all-pres.csv}
-
-Package pgfplots Warning: Table 'graphs/scale-all-pres.csv' has an empty column
- name; replacing it by '73'' on input line 40.
-
- [warning /pgfplots/warning/empty column name]
 ! Dimension too large.
 <recently read> \pgf@xx 
                         
@@ -5909,8 +5799,8 @@ Package hyperref Info: Anchor `figure.8.4' on input line 331.
 pdftex: bookmark at 331: {8.4} {\numberline{8.4}{\ignorespaces Resultado de tes
 tes individuais de tempo com FAST}} {figure.8.4}{0}{lof}
 Package hyperref Info: Anchor `figure.8.4' on input line 331.
-Package hyperref Info: Anchor `page.53' on input line 333.
-[53pdfTeX warning (ext4): destination with the same identifier (name{figure.8.3
+Package hyperref Info: Anchor `page.50' on input line 333.
+[50pdfTeX warning (ext4): destination with the same identifier (name{figure.8.3
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -5919,38 +5809,18 @@ l.333
       ])
 (D:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/results/freakres
 ult.tex
-Package hyperref Info: Anchor `subsection.8.1.4' on input line 1.
+Package hyperref Info: Anchor `subsection.8.1.3' on input line 1.
 
-pdftex: bookmark at 1: {8.1.4} {\numberline{8.1.4}FREAK} {subsection.8.1.4}{2}{
+pdftex: bookmark at 1: {8.1.3} {\numberline{8.1.3}FREAK} {subsection.8.1.3}{2}{
 toc}
 PGFPlots: reading {graphs/scale-all-pres.csv}
-
-Package pgfplots Warning: Table 'graphs/scale-all-pres.csv' has an empty column
- name; replacing it by '73'' on input line 35.
-
- [warning /pgfplots/warning/empty column name]
 PGFPlots: reading {graphs/scale-all-pres.csv}
-
-Package pgfplots Warning: Table 'graphs/scale-all-pres.csv' has an empty column
- name; replacing it by '73'' on input line 36.
-
- [warning /pgfplots/warning/empty column name]
 PGFPlots: reading {graphs/scale-all-pres.csv}
-
-Package pgfplots Warning: Table 'graphs/scale-all-pres.csv' has an empty column
- name; replacing it by '73'' on input line 37.
-
- [warning /pgfplots/warning/empty column name]
 PGFPlots: reading {graphs/scale-all-pres.csv}
-
-Package pgfplots Warning: Table 'graphs/scale-all-pres.csv' has an empty column
- name; replacing it by '73'' on input line 38.
-
- [warning /pgfplots/warning/empty column name]
 ! Dimension too large.
 <recently read> \pgf@xx 
                         
-l.56 \end{axis}
+l.54 \end{axis}
                
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -5958,7 +5828,7 @@ Continue and I'll use the largest value I can.
 ! Dimension too large.
 <to be read again> 
                    \relax 
-l.56 \end{axis}
+l.54 \end{axis}
                
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -5966,7 +5836,7 @@ Continue and I'll use the largest value I can.
 ! Dimension too large.
 <recently read> \pgf@xx 
                         
-l.56 \end{axis}
+l.54 \end{axis}
                
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -5974,7 +5844,7 @@ Continue and I'll use the largest value I can.
 ! Dimension too large.
 <recently read> \pgf@xx 
                         
-l.56 \end{axis}
+l.54 \end{axis}
                
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -5982,7 +5852,7 @@ Continue and I'll use the largest value I can.
 ! Dimension too large.
 <recently read> \pgf@xx 
                         
-l.56 \end{axis}
+l.54 \end{axis}
                
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -5990,7 +5860,7 @@ Continue and I'll use the largest value I can.
 ! Dimension too large.
 \pgfusepath ...x by-.5\pgflinewidth \ifdim \pgf@x 
                                                   <\pgf@picminx \global \pgf...
-l.56 \end{axis}
+l.54 \end{axis}
                
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -5998,15 +5868,7 @@ Continue and I'll use the largest value I can.
 ! Dimension too large.
 \pgfusepath ...@x by.5\pgflinewidth \ifdim \pgf@x 
                                                   >\pgf@picmaxx \global \pgf...
-l.56 \end{axis}
-               
-I can't work with sizes bigger than about 19 feet.
-Continue and I'll use the largest value I can.
-
-! Dimension too large.
-<recently read> \pgf@xx 
-                        
-l.56 \end{axis}
+l.54 \end{axis}
                
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -6014,7 +5876,15 @@ Continue and I'll use the largest value I can.
 ! Dimension too large.
 <to be read again> 
                    \relax 
-l.56 \end{axis}
+l.54 \end{axis}
+               
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<recently read> \pgfmath@x 
+                           
+l.54 \end{axis}
                
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -6022,7 +5892,7 @@ Continue and I'll use the largest value I can.
 ! Dimension too large.
 <recently read> \pgf@xx 
                         
-l.56 \end{axis}
+l.54 \end{axis}
                
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -6030,7 +5900,7 @@ Continue and I'll use the largest value I can.
 ! Dimension too large.
 <to be read again> 
                    \relax 
-l.56 \end{axis}
+l.54 \end{axis}
                
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -6038,7 +5908,111 @@ Continue and I'll use the largest value I can.
 ! Dimension too large.
 <recently read> \pgf@xx 
                         
-l.56 \end{axis}
+l.54 \end{axis}
+               
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<to be read again> 
+                   \relax 
+l.54 \end{axis}
+               
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<recently read> \pgfmath@x 
+                           
+l.54 \end{axis}
+               
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<to be read again> 
+                   \relax 
+l.54 \end{axis}
+               
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<recently read> \pgfmath@x 
+                           
+l.54 \end{axis}
+               
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<to be read again> 
+                   \relax 
+l.54 \end{axis}
+               
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<to be read again> 
+                   \relax 
+l.54 \end{axis}
+               
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<recently read> \pgfmath@x 
+                           
+l.54 \end{axis}
+               
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<to be read again> 
+                   \relax 
+l.54 \end{axis}
+               
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<to be read again> 
+                   \relax 
+l.54 \end{axis}
+               
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<recently read> \pgfmath@x 
+                           
+l.54 \end{axis}
+               
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<to be read again> 
+                   \relax 
+l.54 \end{axis}
+               
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<to be read again> 
+                   \relax 
+l.54 \end{axis}
+               
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<recently read> \pgf@xx 
+                        
+l.54 \end{axis}
                
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -6050,10 +6024,22 @@ See the pgf package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.56 \end{axis}
+l.54 \end{axis}
                
 (That was another \errmessage.)
 
+PGFPlots: reading {graphs/rot-all-pres.csv}
+
+Package pgfplots Warning: Table 'graphs/rot-all-pres.csv' has an empty column n
+ame; replacing it by '73'' on input line 64.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {graphs/rot-all-pres.csv}
+
+Package pgfplots Warning: Table 'graphs/rot-all-pres.csv' has an empty column n
+ame; replacing it by '73'' on input line 65.
+
+ [warning /pgfplots/warning/empty column name]
 PGFPlots: reading {graphs/rot-all-pres.csv}
 
 Package pgfplots Warning: Table 'graphs/rot-all-pres.csv' has an empty column n
@@ -6063,19 +6049,19 @@ ame; replacing it by '73'' on input line 66.
 PGFPlots: reading {graphs/rot-all-pres.csv}
 
 Package pgfplots Warning: Table 'graphs/rot-all-pres.csv' has an empty column n
-ame; replacing it by '73'' on input line 67.
-
- [warning /pgfplots/warning/empty column name]
-PGFPlots: reading {graphs/rot-all-pres.csv}
-
-Package pgfplots Warning: Table 'graphs/rot-all-pres.csv' has an empty column n
 ame; replacing it by '73'' on input line 68.
 
  [warning /pgfplots/warning/empty column name]
-PGFPlots: reading {graphs/rot-all-pres.csv}
+PGFPlots: reading {graphs/blur-all-pres.csv}
 
-Package pgfplots Warning: Table 'graphs/rot-all-pres.csv' has an empty column n
-ame; replacing it by '73'' on input line 70.
+Package pgfplots Warning: Table 'graphs/blur-all-pres.csv' has an empty column 
+name; replacing it by '73'' on input line 99.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {graphs/blur-all-pres.csv}
+
+Package pgfplots Warning: Table 'graphs/blur-all-pres.csv' has an empty column 
+name; replacing it by '73'' on input line 100.
 
  [warning /pgfplots/warning/empty column name]
 PGFPlots: reading {graphs/blur-all-pres.csv}
@@ -6090,42 +6076,42 @@ Package pgfplots Warning: Table 'graphs/blur-all-pres.csv' has an empty column
 name; replacing it by '73'' on input line 102.
 
  [warning /pgfplots/warning/empty column name]
-PGFPlots: reading {graphs/blur-all-pres.csv}
+! Dimension too large.
+<to be read again> 
+                   \relax 
+l.118 \end{axis}
+                
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
 
-Package pgfplots Warning: Table 'graphs/blur-all-pres.csv' has an empty column 
-name; replacing it by '73'' on input line 103.
+! Dimension too large.
+<to be read again> 
+                   \relax 
+l.118 \end{axis}
+                
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<to be read again> 
+                   \relax 
+l.118 \end{axis}
+                
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+PGFPlots: reading {graphs/bright-all-pres.csv}
+
+Package pgfplots Warning: Table 'graphs/bright-all-pres.csv' has an empty colum
+n name; replacing it by '73'' on input line 128.
 
  [warning /pgfplots/warning/empty column name]
-PGFPlots: reading {graphs/blur-all-pres.csv}
+PGFPlots: reading {graphs/bright-all-pres.csv}
 
-Package pgfplots Warning: Table 'graphs/blur-all-pres.csv' has an empty column 
-name; replacing it by '73'' on input line 104.
+Package pgfplots Warning: Table 'graphs/bright-all-pres.csv' has an empty colum
+n name; replacing it by '73'' on input line 129.
 
  [warning /pgfplots/warning/empty column name]
-! Dimension too large.
-<to be read again> 
-                   \relax 
-l.120 \end{axis}
-                
-I can't work with sizes bigger than about 19 feet.
-Continue and I'll use the largest value I can.
-
-! Dimension too large.
-<to be read again> 
-                   \relax 
-l.120 \end{axis}
-                
-I can't work with sizes bigger than about 19 feet.
-Continue and I'll use the largest value I can.
-
-! Dimension too large.
-<to be read again> 
-                   \relax 
-l.120 \end{axis}
-                
-I can't work with sizes bigger than about 19 feet.
-Continue and I'll use the largest value I can.
-
 PGFPlots: reading {graphs/bright-all-pres.csv}
 
 Package pgfplots Warning: Table 'graphs/bright-all-pres.csv' has an empty colum
@@ -6138,22 +6124,10 @@ Package pgfplots Warning: Table 'graphs/bright-all-pres.csv' has an empty colum
 n name; replacing it by '73'' on input line 131.
 
  [warning /pgfplots/warning/empty column name]
-PGFPlots: reading {graphs/bright-all-pres.csv}
-
-Package pgfplots Warning: Table 'graphs/bright-all-pres.csv' has an empty colum
-n name; replacing it by '73'' on input line 132.
-
- [warning /pgfplots/warning/empty column name]
-PGFPlots: reading {graphs/bright-all-pres.csv}
-
-Package pgfplots Warning: Table 'graphs/bright-all-pres.csv' has an empty colum
-n name; replacing it by '73'' on input line 133.
-
- [warning /pgfplots/warning/empty column name]
 ! Dimension too large.
 <to be read again> 
                    \relax 
-l.152 \end{axis}
+l.150 \end{axis}
                 
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -6161,7 +6135,7 @@ Continue and I'll use the largest value I can.
 ! Dimension too large.
 <recently read> \pgfmath@x 
                            
-l.152 \end{axis}
+l.150 \end{axis}
                 
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -6169,7 +6143,7 @@ Continue and I'll use the largest value I can.
 ! Dimension too large.
 <to be read again> 
                    \relax 
-l.152 \end{axis}
+l.150 \end{axis}
                 
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -6177,7 +6151,7 @@ Continue and I'll use the largest value I can.
 ! Dimension too large.
 <recently read> \pgfmath@x 
                            
-l.152 \end{axis}
+l.150 \end{axis}
                 
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -6185,7 +6159,7 @@ Continue and I'll use the largest value I can.
 ! Dimension too large.
 <to be read again> 
                    \relax 
-l.152 \end{axis}
+l.150 \end{axis}
                 
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -6193,7 +6167,7 @@ Continue and I'll use the largest value I can.
 ! Dimension too large.
 <to be read again> 
                    \relax 
-l.152 \end{axis}
+l.150 \end{axis}
                 
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -6201,7 +6175,7 @@ Continue and I'll use the largest value I can.
 ! Dimension too large.
 <recently read> \pgfmath@x 
                            
-l.152 \end{axis}
+l.150 \end{axis}
                 
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -6209,7 +6183,7 @@ Continue and I'll use the largest value I can.
 ! Dimension too large.
 <to be read again> 
                    \relax 
-l.152 \end{axis}
+l.150 \end{axis}
                 
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -6217,7 +6191,7 @@ Continue and I'll use the largest value I can.
 ! Dimension too large.
 <to be read again> 
                    \relax 
-l.152 \end{axis}
+l.150 \end{axis}
                 
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -6225,7 +6199,7 @@ Continue and I'll use the largest value I can.
 ! Dimension too large.
 <recently read> \pgfmath@x 
                            
-l.152 \end{axis}
+l.150 \end{axis}
                 
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -6233,7 +6207,7 @@ Continue and I'll use the largest value I can.
 ! Dimension too large.
 <to be read again> 
                    \relax 
-l.152 \end{axis}
+l.150 \end{axis}
                 
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -6241,7 +6215,7 @@ Continue and I'll use the largest value I can.
 ! Dimension too large.
 <to be read again> 
                    \relax 
-l.152 \end{axis}
+l.150 \end{axis}
                 
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -6249,7 +6223,7 @@ Continue and I'll use the largest value I can.
 ! Dimension too large.
 <recently read> \pgfmath@x 
                            
-l.152 \end{axis}
+l.150 \end{axis}
                 
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -6257,7 +6231,7 @@ Continue and I'll use the largest value I can.
 ! Dimension too large.
 <to be read again> 
                    \relax 
-l.152 \end{axis}
+l.150 \end{axis}
                 
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -6269,24 +6243,36 @@ See the tikz package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.156 \end{tikzpicture}
+l.154 \end{tikzpicture}
                        
 (That was another \errmessage.)
 
-Package hyperref Info: Anchor `figure.8.5' on input line 158.
-pdftex: bookmark at 158: {8.5} {\numberline{8.5}{\ignorespaces Resultado de tes
+Package hyperref Info: Anchor `figure.8.5' on input line 156.
+pdftex: bookmark at 156: {8.5} {\numberline{8.5}{\ignorespaces Resultado de tes
 tes individuais de preformance com FREAK}} {figure.8.5}{0}{lof}
-Package hyperref Info: Anchor `figure.8.5' on input line 158.
-Package hyperref Info: Anchor `page.54' on input line 160.
-[54pdfTeX warning (ext4): destination with the same identifier (name{figure.8.4
+Package hyperref Info: Anchor `figure.8.5' on input line 156.
+Package hyperref Info: Anchor `page.51' on input line 158.
+[51pdfTeX warning (ext4): destination with the same identifier (name{figure.8.4
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.160 
+l.158 
       ]
 PGFPlots: reading {graphs/scale-all-time.csv}
 
+
+Package pgfplots Warning: Table 'graphs/scale-all-time.csv' has an empty column
+ name; replacing it by '73'' on input line 188.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {graphs/scale-all-time.csv}
+
+Package pgfplots Warning: Table 'graphs/scale-all-time.csv' has an empty column
+ name; replacing it by '73'' on input line 189.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {graphs/scale-all-time.csv}
 
 Package pgfplots Warning: Table 'graphs/scale-all-time.csv' has an empty column
  name; replacing it by '73'' on input line 190.
@@ -6298,22 +6284,10 @@ Package pgfplots Warning: Table 'graphs/scale-all-time.csv' has an empty column
  name; replacing it by '73'' on input line 191.
 
  [warning /pgfplots/warning/empty column name]
-PGFPlots: reading {graphs/scale-all-time.csv}
-
-Package pgfplots Warning: Table 'graphs/scale-all-time.csv' has an empty column
- name; replacing it by '73'' on input line 192.
-
- [warning /pgfplots/warning/empty column name]
-PGFPlots: reading {graphs/scale-all-time.csv}
-
-Package pgfplots Warning: Table 'graphs/scale-all-time.csv' has an empty column
- name; replacing it by '73'' on input line 193.
-
- [warning /pgfplots/warning/empty column name]
 ! Dimension too large.
 <recently read> \pgf@xx 
                         
-l.210 \end{axis}
+l.208 \end{axis}
                 
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -6321,7 +6295,7 @@ Continue and I'll use the largest value I can.
 ! Dimension too large.
 <to be read again> 
                    \relax 
-l.210 \end{axis}
+l.208 \end{axis}
                 
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -6329,7 +6303,7 @@ Continue and I'll use the largest value I can.
 ! Dimension too large.
 <recently read> \pgf@xx 
                         
-l.210 \end{axis}
+l.208 \end{axis}
                 
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -6337,7 +6311,7 @@ Continue and I'll use the largest value I can.
 ! Dimension too large.
 <recently read> \pgf@xx 
                         
-l.210 \end{axis}
+l.208 \end{axis}
                 
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -6345,7 +6319,7 @@ Continue and I'll use the largest value I can.
 ! Dimension too large.
 <recently read> \pgf@xx 
                         
-l.210 \end{axis}
+l.208 \end{axis}
                 
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -6353,7 +6327,7 @@ Continue and I'll use the largest value I can.
 ! Dimension too large.
 \pgfusepath ...x by-.5\pgflinewidth \ifdim \pgf@x 
                                                   <\pgf@picminx \global \pgf...
-l.210 \end{axis}
+l.208 \end{axis}
                 
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -6361,7 +6335,7 @@ Continue and I'll use the largest value I can.
 ! Dimension too large.
 \pgfusepath ...@x by.5\pgflinewidth \ifdim \pgf@x 
                                                   >\pgf@picmaxx \global \pgf...
-l.210 \end{axis}
+l.208 \end{axis}
                 
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -6369,7 +6343,7 @@ Continue and I'll use the largest value I can.
 ! Dimension too large.
 <recently read> \pgf@xx 
                         
-l.210 \end{axis}
+l.208 \end{axis}
                 
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -6377,7 +6351,7 @@ Continue and I'll use the largest value I can.
 ! Dimension too large.
 <to be read again> 
                    \relax 
-l.210 \end{axis}
+l.208 \end{axis}
                 
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -6385,7 +6359,7 @@ Continue and I'll use the largest value I can.
 ! Dimension too large.
 <recently read> \pgf@xx 
                         
-l.210 \end{axis}
+l.208 \end{axis}
                 
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -6393,7 +6367,7 @@ Continue and I'll use the largest value I can.
 ! Dimension too large.
 <recently read> \pgf@xx 
                         
-l.210 \end{axis}
+l.208 \end{axis}
                 
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -6401,7 +6375,7 @@ Continue and I'll use the largest value I can.
 ! Dimension too large.
 <to be read again> 
                    \relax 
-l.210 \end{axis}
+l.208 \end{axis}
                 
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -6409,7 +6383,7 @@ Continue and I'll use the largest value I can.
 ! Dimension too large.
 <recently read> \pgf@xx 
                         
-l.210 \end{axis}
+l.208 \end{axis}
                 
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -6421,10 +6395,22 @@ See the pgf package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.210 \end{axis}
+l.208 \end{axis}
                 
 (That was another \errmessage.)
 
+PGFPlots: reading {graphs/rot-all-time.csv}
+
+Package pgfplots Warning: Table 'graphs/rot-all-time.csv' has an empty column n
+ame; replacing it by '73'' on input line 218.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {graphs/rot-all-time.csv}
+
+Package pgfplots Warning: Table 'graphs/rot-all-time.csv' has an empty column n
+ame; replacing it by '73'' on input line 219.
+
+ [warning /pgfplots/warning/empty column name]
 PGFPlots: reading {graphs/rot-all-time.csv}
 
 Package pgfplots Warning: Table 'graphs/rot-all-time.csv' has an empty column n
@@ -6437,16 +6423,16 @@ Package pgfplots Warning: Table 'graphs/rot-all-time.csv' has an empty column n
 ame; replacing it by '73'' on input line 221.
 
  [warning /pgfplots/warning/empty column name]
-PGFPlots: reading {graphs/rot-all-time.csv}
+PGFPlots: reading {graphs/blur-all-time.csv}
 
-Package pgfplots Warning: Table 'graphs/rot-all-time.csv' has an empty column n
-ame; replacing it by '73'' on input line 222.
+Package pgfplots Warning: Table 'graphs/blur-all-time.csv' has an empty column 
+name; replacing it by '73'' on input line 252.
 
  [warning /pgfplots/warning/empty column name]
-PGFPlots: reading {graphs/rot-all-time.csv}
+PGFPlots: reading {graphs/blur-all-time.csv}
 
-Package pgfplots Warning: Table 'graphs/rot-all-time.csv' has an empty column n
-ame; replacing it by '73'' on input line 223.
+Package pgfplots Warning: Table 'graphs/blur-all-time.csv' has an empty column 
+name; replacing it by '73'' on input line 253.
 
  [warning /pgfplots/warning/empty column name]
 PGFPlots: reading {graphs/blur-all-time.csv}
@@ -6461,74 +6447,74 @@ Package pgfplots Warning: Table 'graphs/blur-all-time.csv' has an empty column
 name; replacing it by '73'' on input line 255.
 
  [warning /pgfplots/warning/empty column name]
-PGFPlots: reading {graphs/blur-all-time.csv}
+! Dimension too large.
+<to be read again> 
+                   \relax 
+l.272 \end{axis}
+                
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
 
-Package pgfplots Warning: Table 'graphs/blur-all-time.csv' has an empty column 
-name; replacing it by '73'' on input line 256.
+! Dimension too large.
+<to be read again> 
+                   \relax 
+l.272 \end{axis}
+                
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<to be read again> 
+                   \relax 
+l.272 \end{axis}
+                
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<to be read again> 
+                   \relax 
+l.272 \end{axis}
+                
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<to be read again> 
+                   \relax 
+l.272 \end{axis}
+                
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<to be read again> 
+                   \relax 
+l.272 \end{axis}
+                
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<to be read again> 
+                   \relax 
+l.272 \end{axis}
+                
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+PGFPlots: reading {graphs/bright-all-time.csv}
+
+Package pgfplots Warning: Table 'graphs/bright-all-time.csv' has an empty colum
+n name; replacing it by '73'' on input line 282.
 
  [warning /pgfplots/warning/empty column name]
-PGFPlots: reading {graphs/blur-all-time.csv}
+PGFPlots: reading {graphs/bright-all-time.csv}
 
-Package pgfplots Warning: Table 'graphs/blur-all-time.csv' has an empty column 
-name; replacing it by '73'' on input line 257.
+Package pgfplots Warning: Table 'graphs/bright-all-time.csv' has an empty colum
+n name; replacing it by '73'' on input line 283.
 
  [warning /pgfplots/warning/empty column name]
-! Dimension too large.
-<to be read again> 
-                   \relax 
-l.274 \end{axis}
-                
-I can't work with sizes bigger than about 19 feet.
-Continue and I'll use the largest value I can.
-
-! Dimension too large.
-<to be read again> 
-                   \relax 
-l.274 \end{axis}
-                
-I can't work with sizes bigger than about 19 feet.
-Continue and I'll use the largest value I can.
-
-! Dimension too large.
-<to be read again> 
-                   \relax 
-l.274 \end{axis}
-                
-I can't work with sizes bigger than about 19 feet.
-Continue and I'll use the largest value I can.
-
-! Dimension too large.
-<to be read again> 
-                   \relax 
-l.274 \end{axis}
-                
-I can't work with sizes bigger than about 19 feet.
-Continue and I'll use the largest value I can.
-
-! Dimension too large.
-<to be read again> 
-                   \relax 
-l.274 \end{axis}
-                
-I can't work with sizes bigger than about 19 feet.
-Continue and I'll use the largest value I can.
-
-! Dimension too large.
-<to be read again> 
-                   \relax 
-l.274 \end{axis}
-                
-I can't work with sizes bigger than about 19 feet.
-Continue and I'll use the largest value I can.
-
-! Dimension too large.
-<to be read again> 
-                   \relax 
-l.274 \end{axis}
-                
-I can't work with sizes bigger than about 19 feet.
-Continue and I'll use the largest value I can.
-
 PGFPlots: reading {graphs/bright-all-time.csv}
 
 Package pgfplots Warning: Table 'graphs/bright-all-time.csv' has an empty colum
@@ -6541,18 +6527,6 @@ Package pgfplots Warning: Table 'graphs/bright-all-time.csv' has an empty colum
 n name; replacing it by '73'' on input line 285.
 
  [warning /pgfplots/warning/empty column name]
-PGFPlots: reading {graphs/bright-all-time.csv}
-
-Package pgfplots Warning: Table 'graphs/bright-all-time.csv' has an empty colum
-n name; replacing it by '73'' on input line 286.
-
- [warning /pgfplots/warning/empty column name]
-PGFPlots: reading {graphs/bright-all-time.csv}
-
-Package pgfplots Warning: Table 'graphs/bright-all-time.csv' has an empty colum
-n name; replacing it by '73'' on input line 287.
-
- [warning /pgfplots/warning/empty column name]
 
 ! Package tikz Error: Giving up on this path. Did you forget a semicolon?.
 
@@ -6560,28 +6534,28 @@ See the tikz package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.310 \end{tikzpicture}
+l.308 \end{tikzpicture}
                        
 (That was another \errmessage.)
 
-Package hyperref Info: Anchor `figure.8.6' on input line 312.
-pdftex: bookmark at 312: {8.6} {\numberline{8.6}{\ignorespaces Resultado de tes
+Package hyperref Info: Anchor `figure.8.6' on input line 310.
+pdftex: bookmark at 310: {8.6} {\numberline{8.6}{\ignorespaces Resultado de tes
 tes individuais de tempo com FREAK}} {figure.8.6}{0}{lof}
-Package hyperref Info: Anchor `figure.8.6' on input line 312.
+Package hyperref Info: Anchor `figure.8.6' on input line 310.
 )
 (D:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/results/mserresu
 lt.tex
-Package hyperref Info: Anchor `page.55' on input line 1.
- [55pdfTeX warning (ext4): destination with the same identifier (name{figure.8.
+Package hyperref Info: Anchor `page.52' on input line 1.
+ [52pdfTeX warning (ext4): destination with the same identifier (name{figure.8.
 5}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.1 
     ]
-Package hyperref Info: Anchor `subsection.8.1.5' on input line 2.
+Package hyperref Info: Anchor `subsection.8.1.4' on input line 2.
 
-pdftex: bookmark at 2: {8.1.5} {\numberline{8.1.5}MSER} {subsection.8.1.5}{2}{t
+pdftex: bookmark at 2: {8.1.4} {\numberline{8.1.4}MSER} {subsection.8.1.4}{2}{t
 oc}
 ! Missing $ inserted.
 <inserted text> 
@@ -6648,29 +6622,9 @@ reshold \OT1/cmr/m/n/12 = 1\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 01\OML/cmm/m/it/12
  []
 
 PGFPlots: reading {graphs/scale-all-pres.csv}
-
-Package pgfplots Warning: Table 'graphs/scale-all-pres.csv' has an empty column
- name; replacing it by '73'' on input line 36.
-
- [warning /pgfplots/warning/empty column name]
 PGFPlots: reading {graphs/scale-all-pres.csv}
-
-Package pgfplots Warning: Table 'graphs/scale-all-pres.csv' has an empty column
- name; replacing it by '73'' on input line 37.
-
- [warning /pgfplots/warning/empty column name]
 PGFPlots: reading {graphs/scale-all-pres.csv}
-
-Package pgfplots Warning: Table 'graphs/scale-all-pres.csv' has an empty column
- name; replacing it by '73'' on input line 38.
-
- [warning /pgfplots/warning/empty column name]
 PGFPlots: reading {graphs/scale-all-pres.csv}
-
-Package pgfplots Warning: Table 'graphs/scale-all-pres.csv' has an empty column
- name; replacing it by '73'' on input line 39.
-
- [warning /pgfplots/warning/empty column name]
 ! Dimension too large.
 <recently read> \pgf@xx 
                         
@@ -7001,8 +6955,8 @@ Package hyperref Info: Anchor `figure.8.7' on input line 157.
 pdftex: bookmark at 157: {8.7} {\numberline{8.7}{\ignorespaces Resultado de tes
 tes individuais de preformance com MSER}} {figure.8.7}{0}{lof}
 Package hyperref Info: Anchor `figure.8.7' on input line 157.
-Package hyperref Info: Anchor `page.56' on input line 159.
-[56pdfTeX warning (ext4): destination with the same identifier (name{figure.8.6
+Package hyperref Info: Anchor `page.53' on input line 159.
+[53pdfTeX warning (ext4): destination with the same identifier (name{figure.8.6
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -7263,17 +7217,17 @@ Package hyperref Info: Anchor `figure.8.8' on input line 313.
 )
 (D:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/results/orbresul
 t.tex
-Package hyperref Info: Anchor `page.57' on input line 1.
- [57pdfTeX warning (ext4): destination with the same identifier (name{figure.8.
+Package hyperref Info: Anchor `page.54' on input line 1.
+ [54pdfTeX warning (ext4): destination with the same identifier (name{figure.8.
 7}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.1 
     ]
-Package hyperref Info: Anchor `subsection.8.1.6' on input line 2.
+Package hyperref Info: Anchor `subsection.8.1.5' on input line 2.
 
-pdftex: bookmark at 2: {8.1.6} {\numberline{8.1.6}ORB} {subsection.8.1.6}{2}{to
+pdftex: bookmark at 2: {8.1.5} {\numberline{8.1.5}ORB} {subsection.8.1.5}{2}{to
 c}
 ! Missing $ inserted.
 <inserted text> 
@@ -7338,29 +7292,9 @@ OML/cmm/m/it/12 HARRIS[]CORE; intpatchSize \OT1/cmr/m/n/12 =
  []
 
 PGFPlots: reading {graphs/scale-all-pres.csv}
-
-Package pgfplots Warning: Table 'graphs/scale-all-pres.csv' has an empty column
- name; replacing it by '73'' on input line 38.
-
- [warning /pgfplots/warning/empty column name]
 PGFPlots: reading {graphs/scale-all-pres.csv}
-
-Package pgfplots Warning: Table 'graphs/scale-all-pres.csv' has an empty column
- name; replacing it by '73'' on input line 39.
-
- [warning /pgfplots/warning/empty column name]
 PGFPlots: reading {graphs/scale-all-pres.csv}
-
-Package pgfplots Warning: Table 'graphs/scale-all-pres.csv' has an empty column
- name; replacing it by '73'' on input line 40.
-
- [warning /pgfplots/warning/empty column name]
 PGFPlots: reading {graphs/scale-all-pres.csv}
-
-Package pgfplots Warning: Table 'graphs/scale-all-pres.csv' has an empty column
- name; replacing it by '73'' on input line 41.
-
- [warning /pgfplots/warning/empty column name]
 ! Dimension too large.
 <recently read> \pgf@xx 
                         
@@ -7579,8 +7513,8 @@ Package hyperref Info: Anchor `figure.8.9' on input line 156.
 pdftex: bookmark at 156: {8.9} {\numberline{8.9}{\ignorespaces Resultado de tes
 tes individuais de preformance com ORB}} {figure.8.9}{0}{lof}
 Package hyperref Info: Anchor `figure.8.9' on input line 156.
-Package hyperref Info: Anchor `page.58' on input line 158.
-[58pdfTeX warning (ext4): destination with the same identifier (name{figure.8.8
+Package hyperref Info: Anchor `page.55' on input line 158.
+[55pdfTeX warning (ext4): destination with the same identifier (name{figure.8.8
 }) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -7953,42 +7887,22 @@ Package hyperref Info: Anchor `figure.8.10' on input line 308.
 )
 (D:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/results/siftresu
 lt.tex
-Package hyperref Info: Anchor `page.59' on input line 1.
- [59pdfTeX warning (ext4): destination with the same identifier (name{figure.8.
+Package hyperref Info: Anchor `page.56' on input line 1.
+ [56pdfTeX warning (ext4): destination with the same identifier (name{figure.8.
 9}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.1 
     ]
-Package hyperref Info: Anchor `subsection.8.1.7' on input line 2.
+Package hyperref Info: Anchor `subsection.8.1.6' on input line 2.
 
-pdftex: bookmark at 2: {8.1.7} {\numberline{8.1.7}SIFT} {subsection.8.1.7}{2}{t
+pdftex: bookmark at 2: {8.1.6} {\numberline{8.1.6}SIFT} {subsection.8.1.6}{2}{t
 oc}
 PGFPlots: reading {graphs/scale-all-pres.csv}
-
-Package pgfplots Warning: Table 'graphs/scale-all-pres.csv' has an empty column
- name; replacing it by '73'' on input line 39.
-
- [warning /pgfplots/warning/empty column name]
 PGFPlots: reading {graphs/scale-all-pres.csv}
-
-Package pgfplots Warning: Table 'graphs/scale-all-pres.csv' has an empty column
- name; replacing it by '73'' on input line 40.
-
- [warning /pgfplots/warning/empty column name]
 PGFPlots: reading {graphs/scale-all-pres.csv}
-
-Package pgfplots Warning: Table 'graphs/scale-all-pres.csv' has an empty column
- name; replacing it by '73'' on input line 41.
-
- [warning /pgfplots/warning/empty column name]
 PGFPlots: reading {graphs/scale-all-pres.csv}
-
-Package pgfplots Warning: Table 'graphs/scale-all-pres.csv' has an empty column
- name; replacing it by '73'' on input line 42.
-
- [warning /pgfplots/warning/empty column name]
 ! Dimension too large.
 <recently read> \pgf@xx 
                         
@@ -8207,8 +8121,8 @@ Package hyperref Info: Anchor `figure.8.11' on input line 157.
 pdftex: bookmark at 157: {8.11} {\numberline{8.11}{\ignorespaces Resultado de t
 estes individuais de preformance com SIFT}} {figure.8.11}{0}{lof}
 Package hyperref Info: Anchor `figure.8.11' on input line 157.
-Package hyperref Info: Anchor `page.60' on input line 159.
-[60pdfTeX warning (ext4): destination with the same identifier (name{figure.8.1
+Package hyperref Info: Anchor `page.57' on input line 159.
+[57pdfTeX warning (ext4): destination with the same identifier (name{figure.8.1
 0}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -8469,17 +8383,17 @@ Package hyperref Info: Anchor `figure.8.12' on input line 311.
 )
 (D:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/results/starresu
 lt.tex
-Package hyperref Info: Anchor `page.61' on input line 1.
- [61pdfTeX warning (ext4): destination with the same identifier (name{figure.8.
+Package hyperref Info: Anchor `page.58' on input line 1.
+ [58pdfTeX warning (ext4): destination with the same identifier (name{figure.8.
 11}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.1 
     ]
-Package hyperref Info: Anchor `subsection.8.1.8' on input line 2.
+Package hyperref Info: Anchor `subsection.8.1.7' on input line 2.
 
-pdftex: bookmark at 2: {8.1.8} {\numberline{8.1.8}STAR} {subsection.8.1.8}{2}{t
+pdftex: bookmark at 2: {8.1.7} {\numberline{8.1.7}STAR} {subsection.8.1.7}{2}{t
 oc}
 ! Missing $ inserted.
 <inserted text> 
@@ -8544,29 +8458,9 @@ Overfull \hbox (9.82077pt too wide) in paragraph at lines 5--10
  []
 
 PGFPlots: reading {graphs/scale-all-pres.csv}
-
-Package pgfplots Warning: Table 'graphs/scale-all-pres.csv' has an empty column
- name; replacing it by '73'' on input line 40.
-
- [warning /pgfplots/warning/empty column name]
 PGFPlots: reading {graphs/scale-all-pres.csv}
-
-Package pgfplots Warning: Table 'graphs/scale-all-pres.csv' has an empty column
- name; replacing it by '73'' on input line 41.
-
- [warning /pgfplots/warning/empty column name]
 PGFPlots: reading {graphs/scale-all-pres.csv}
-
-Package pgfplots Warning: Table 'graphs/scale-all-pres.csv' has an empty column
- name; replacing it by '73'' on input line 42.
-
- [warning /pgfplots/warning/empty column name]
 PGFPlots: reading {graphs/scale-all-pres.csv}
-
-Package pgfplots Warning: Table 'graphs/scale-all-pres.csv' has an empty column
- name; replacing it by '73'' on input line 43.
-
- [warning /pgfplots/warning/empty column name]
 
 ! Package PGF Math Error: Could not parse input 'NULL' as a floating point numb
 er, sorry. The unreadable part was near 'ULL'..
@@ -8911,8 +8805,8 @@ Package hyperref Info: Anchor `figure.8.13' on input line 162.
 pdftex: bookmark at 162: {8.13} {\numberline{8.13}{\ignorespaces Resultado de t
 estes individuais de preformance com STAR}} {figure.8.13}{0}{lof}
 Package hyperref Info: Anchor `figure.8.13' on input line 162.
-Package hyperref Info: Anchor `page.62' on input line 164.
-[62pdfTeX warning (ext4): destination with the same identifier (name{figure.8.1
+Package hyperref Info: Anchor `page.59' on input line 164.
+[59pdfTeX warning (ext4): destination with the same identifier (name{figure.8.1
 2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -9267,17 +9161,17 @@ Package hyperref Info: Anchor `figure.8.14' on input line 322.
 )
 (D:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/results/surfresu
 lt.tex
-Package hyperref Info: Anchor `page.63' on input line 1.
- [63pdfTeX warning (ext4): destination with the same identifier (name{figure.8.
+Package hyperref Info: Anchor `page.60' on input line 1.
+ [60pdfTeX warning (ext4): destination with the same identifier (name{figure.8.
 13}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.1 
     ]
-Package hyperref Info: Anchor `subsection.8.1.9' on input line 2.
+Package hyperref Info: Anchor `subsection.8.1.8' on input line 2.
 
-pdftex: bookmark at 2: {8.1.9} {\numberline{8.1.9}SURF} {subsection.8.1.9}{2}{t
+pdftex: bookmark at 2: {8.1.8} {\numberline{8.1.8}SURF} {subsection.8.1.8}{2}{t
 oc}
 ! Missing $ inserted.
 <inserted text> 
@@ -9342,29 +9236,9 @@ Overfull \hbox (19.9367pt too wide) in paragraph at lines 5--10
  []
 
 PGFPlots: reading {graphs/scale-all-pres.csv}
-
-Package pgfplots Warning: Table 'graphs/scale-all-pres.csv' has an empty column
- name; replacing it by '73'' on input line 38.
-
- [warning /pgfplots/warning/empty column name]
 PGFPlots: reading {graphs/scale-all-pres.csv}
-
-Package pgfplots Warning: Table 'graphs/scale-all-pres.csv' has an empty column
- name; replacing it by '73'' on input line 39.
-
- [warning /pgfplots/warning/empty column name]
 PGFPlots: reading {graphs/scale-all-pres.csv}
-
-Package pgfplots Warning: Table 'graphs/scale-all-pres.csv' has an empty column
- name; replacing it by '73'' on input line 40.
-
- [warning /pgfplots/warning/empty column name]
 PGFPlots: reading {graphs/scale-all-pres.csv}
-
-Package pgfplots Warning: Table 'graphs/scale-all-pres.csv' has an empty column
- name; replacing it by '73'' on input line 41.
-
- [warning /pgfplots/warning/empty column name]
 ! Dimension too large.
 <recently read> \pgf@xx 
                         
@@ -9695,8 +9569,8 @@ Package hyperref Info: Anchor `figure.8.15' on input line 158.
 pdftex: bookmark at 158: {8.15} {\numberline{8.15}{\ignorespaces Resultado de t
 estes individuais de preformance com SURF}} {figure.8.15}{0}{lof}
 Package hyperref Info: Anchor `figure.8.15' on input line 158.
-Package hyperref Info: Anchor `page.64' on input line 160.
-[64pdfTeX warning (ext4): destination with the same identifier (name{figure.8.1
+Package hyperref Info: Anchor `page.61' on input line 160.
+[61pdfTeX warning (ext4): destination with the same identifier (name{figure.8.1
 4}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -9955,8 +9829,8 @@ pdftex: bookmark at 313: {8.16} {\numberline{8.16}{\ignorespaces Resultado de t
 estes individuais de tempo com SURF}} {figure.8.16}{0}{lof}
 Package hyperref Info: Anchor `figure.8.16' on input line 313.
 )
-Package hyperref Info: Anchor `page.65' on input line 58.
- [65pdfTeX warning (ext4): destination with the same identifier (name{figure.8.
+Package hyperref Info: Anchor `page.62' on input line 58.
+ [62pdfTeX warning (ext4): destination with the same identifier (name{figure.8.
 15}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -9968,7 +9842,7 @@ Package hyperref Info: Anchor `section.8.2' on input line 69.
 pdftex: bookmark at 69: {8.2} {\numberline{8.2}An\'alise de resultados} {sectio
 n.8.2}{1}{toc}
 
-LaTeX Warning: Reference `fig:performance6algorithms' on page 66 undefined on i
+LaTeX Warning: Reference `fig:performance6algorithms' on page 63 undefined on i
 nput line 78.
 
 Package hyperref Info: Reference (link) `figure.8.17' on input line 83.
@@ -9981,14 +9855,14 @@ Overfull \hbox (21.73627pt too wide) in paragraph at lines 83--85
 : BRISK, FAST, FREAK, ORB,STAR,SURF
  []
 
-Package hyperref Info: Anchor `page.66' on input line 85.
-[66pdfTeX warning (ext4): destination with the same identifier (name{figure.8.1
+Package hyperref Info: Anchor `page.63' on input line 85.
+[63pdfTeX warning (ext4): destination with the same identifier (name{figure.8.1
 6}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.85 
-     ] <images/time_sift_surf.jpg, id=843, 1204.5pt x 744.7825pt>
+     ] <images/time_sift_surf.jpg, id=812, 1204.5pt x 744.7825pt>
 File: images/time_sift_surf.jpg Graphic file (type jpg)
 
 <use images/time_sift_surf.jpg>
@@ -10001,7 +9875,7 @@ nto \`a varia\c c\~oes de escala, ilumina\c c\~ao, rota\c c\~ao e gaussian blur
 }} {figure.8.17}{0}{lof}
 Package hyperref Info: Anchor `figure.8.17' on input line 91.
 Package hyperref Info: Anchor `figure.8.17' on input line 91.
-<images/time.jpg, id=844, 1204.5pt x 744.7825pt>
+<images/time.jpg, id=813, 1204.5pt x 744.7825pt>
 File: images/time.jpg Graphic file (type jpg)
  <use images/time.jpg>
 Package pdftex.def Info: images/time.jpg used on input line 98.
@@ -10020,8 +9894,8 @@ Package hyperref Info: Reference (link) `figure.8.19' on input line 114.
 
 Package xcolor Warning: Incompatible color definition on input line 114.
 
-Package hyperref Info: Anchor `page.67' on input line 117.
-[67
+Package hyperref Info: Anchor `page.64' on input line 117.
+[64
 Package `hyperref' Info: End of reference (link) `figure.8.17', line 83.
 pdfTeX warning (ext4): destination with the same identifier (name{figure.8.17})
  has been already used, duplicate ignored
@@ -10037,7 +9911,7 @@ l.117
 l.117 
        <D:/Projects/duartec-projects/Mestrado/Registration-Tese/images/time_sif
 t_surf.jpg> <D:/Projects/duartec-projects/Mestrado/Registration-Tese/images/tim
-e.jpg>] <images/ORB-BLUR-HOMOGRAPHY.jpg, id=850, 783.67781pt x 433.62pt>
+e.jpg>] <images/ORB-BLUR-HOMOGRAPHY.jpg, id=819, 783.67781pt x 433.62pt>
 File: images/ORB-BLUR-HOMOGRAPHY.jpg Graphic file (type jpg)
 
 <use images/ORB-BLUR-HOMOGRAPHY.jpg>
@@ -10049,7 +9923,7 @@ Package hyperref Info: Anchor `figure.8.19' on input line 121.
 pdftex: bookmark at 121: {8.19} {\numberline{8.19}{\ignorespaces Homografia com
  varia\c c\~ao varia\c c\~ao de Blur.}} {figure.8.19}{0}{lof}
 Package hyperref Info: Anchor `figure.8.19' on input line 121.
-<images/ORB-BRIGHT-HOMOGRAPHY.jpg, id=851, 783.67781pt x 414.79968pt>
+<images/ORB-BRIGHT-HOMOGRAPHY.jpg, id=820, 783.67781pt x 414.79968pt>
 File: images/ORB-BRIGHT-HOMOGRAPHY.jpg Graphic file (type jpg)
 
 <use images/ORB-BRIGHT-HOMOGRAPHY.jpg>
@@ -10061,8 +9935,8 @@ Package hyperref Info: Anchor `figure.8.20' on input line 128.
 pdftex: bookmark at 128: {8.20} {\numberline{8.20}{\ignorespaces Homografia com
  varia\c c\~ao varia\c c\~ao de ilumina\c c\~ao.}} {figure.8.20}{0}{lof}
 Package hyperref Info: Anchor `figure.8.20' on input line 128.
-Package hyperref Info: Anchor `page.68' on input line 131.
-[68
+Package hyperref Info: Anchor `page.65' on input line 131.
+[65
 Package `hyperref' Info: End of reference (link) `figure.8.19', line 114.
 pdfTeX warning (ext4): destination with the same identifier (name{figure.8.19})
  has been already used, duplicate ignored
@@ -10072,7 +9946,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.8.19})
 l.131 
        <D:/Projects/duartec-projects/Mestrado/Registration-Tese/images/ORB-BLUR
 -HOMOGRAPHY.jpg>]
-<images/ORB-ROTATION-HOMOGRAPHY.jpg, id=856, 783.67781pt x 433.62pt>
+<images/ORB-ROTATION-HOMOGRAPHY.jpg, id=825, 783.67781pt x 433.62pt>
 File: images/ORB-ROTATION-HOMOGRAPHY.jpg Graphic file (type jpg)
 
 <use images/ORB-ROTATION-HOMOGRAPHY.jpg>
@@ -10084,7 +9958,7 @@ Package hyperref Info: Anchor `figure.8.21' on input line 138.
 pdftex: bookmark at 138: {8.21} {\numberline{8.21}{\ignorespaces Homografia com
  varia\c c\~ao varia\c c\~ao de Rota\c c\~ao.}} {figure.8.21}{0}{lof}
 Package hyperref Info: Anchor `figure.8.21' on input line 138.
-<images/ORB-SCALE-HOMOGRAPHY.jpg, id=857, 494.59781pt x 414.79968pt>
+<images/ORB-SCALE-HOMOGRAPHY.jpg, id=826, 494.59781pt x 414.79968pt>
 File: images/ORB-SCALE-HOMOGRAPHY.jpg Graphic file (type jpg)
 
 <use images/ORB-SCALE-HOMOGRAPHY.jpg>
@@ -10096,8 +9970,8 @@ Package hyperref Info: Anchor `figure.8.22' on input line 147.
 pdftex: bookmark at 147: {8.22} {\numberline{8.22}{\ignorespaces Homografia com
  varia\c c\~ao varia\c c\~ao de Escala.}} {figure.8.22}{0}{lof}
 Package hyperref Info: Anchor `figure.8.22' on input line 147.
-Package hyperref Info: Anchor `page.69' on input line 150.
-[69pdfTeX warning (ext4): destination with the same identifier (name{figure.8.2
+Package hyperref Info: Anchor `page.66' on input line 150.
+[66pdfTeX warning (ext4): destination with the same identifier (name{figure.8.2
 0}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
@@ -10122,46 +9996,46 @@ Package hyperref Info: Reference (cite) `cite.ISMAR2012' on input line 153.
 Package xcolor Warning: Incompatible color definition on input line 153.
 
 )
-Package hyperref Info: Anchor `page.70' on input line 178.
- [70pdfTeX warning (ext4): destination with the same identifier (name{figure.8.
+Package hyperref Info: Anchor `page.67' on input line 181.
+ [67pdfTeX warning (ext4): destination with the same identifier (name{figure.8.
 22}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.178 \chapter
+l.181 \chapter
               {Conclusão}
 Package `hyperref' Info: End of reference (cite) `cite.ISMAR2012', line 153.
 Package `hyperref' Info: End of reference (cite) `cite.ISMAR2012', line 153.
  <D:/Projects/duartec-projects/Mestrado/Registration-Tese/images/ORB-SCALE-HOMO
 GRAPHY.jpg>]
-Package hyperref Info: Anchor `chapter.9' on input line 178.
+Package hyperref Info: Anchor `chapter.9' on input line 181.
 
 Cap\'{\i }tulo 9.
-pdftex: bookmark at 178: {9} {\numberline{9}Conclus\~ao} {chapter.9}{0}{toc}
+pdftex: bookmark at 181: {9} {\numberline{9}Conclus\~ao} {chapter.9}{0}{toc}
 (D:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/conclusao.tex)
-Package hyperref Info: Anchor `page.71' on input line 181.
+Package hyperref Info: Anchor `page.68' on input line 184.
 
-[71
+[68
 
 ]
-Package hyperref Info: Anchor `chapter.10' on input line 181.
+Package hyperref Info: Anchor `chapter.10' on input line 184.
 
 Cap\'{\i }tulo 10.
-pdftex: bookmark at 181: {10} {\numberline{10}Trabalhos futuros} {chapter.10}{0
+pdftex: bookmark at 184: {10} {\numberline{10}Trabalhos futuros} {chapter.10}{0
 }{toc}
 (D:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/futuros.tex
-Package hyperref Info: Anchor `page.72' on input line 35.
+Package hyperref Info: Anchor `page.69' on input line 35.
 
-[72
+[69
 
 ])
 (D:\Projects\duartec-projects\Mestrado\Registration-Tese\template_Article.bbl
 (D:\Projects\duartec-projects\Mestrado\Registration-Tese\template_Article.brf)
-\tf@brf=\write10
-Package hyperref Info: Anchor `page.73' on input line 1.
+\tf@brf=\write9
+Package hyperref Info: Anchor `page.70' on input line 1.
 
-[73]
-Package hyperref Info: Anchor `chapter*.8' on input line 1.
+[70]
+Package hyperref Info: Anchor `chapter*.7' on input line 1.
 Package hyperref Info: Anchor `chapter.11' on input line 1.
 
 pdftex: bookmark at 1: {11} {Refer\^encias Bibliogr\'aficas} {chapter.11}{0}{to
@@ -10194,42 +10068,42 @@ Package hyperref Info: Anchor `cite.ORB' on input line 74.
 Package hyperref Info: Anchor `cite.Devices' on input line 80.
 Package hyperref Info: Anchor `cite.Tang93whydo' on input line 85.
 Package hyperref Info: Anchor `cite.localfeaturedetector' on input line 90.
-Package hyperref Info: Anchor `page.74' on input line 91.
-[74
+Package hyperref Info: Anchor `page.71' on input line 91.
+[71
 
 ])
-Package hyperref Info: Anchor `page.75' on input line 209.
- [75]
-Package hyperref Info: Anchor `chapter.12' on input line 209.
+Package hyperref Info: Anchor `page.72' on input line 212.
+ [72]
+Package hyperref Info: Anchor `chapter.12' on input line 212.
 
-pdftex: bookmark at 210: {12} {Gloss\'ario} {chapter.12}{0}{toc}
+pdftex: bookmark at 213: {12} {Gloss\'ario} {chapter.12}{0}{toc}
 No file template_Article.gls
 \bottommargin=\skip66
 \rightmarginn=\skip67
-Package hyperref Info: Anchor `bla.0' on input line 224.
+Package hyperref Info: Anchor `bla.0' on input line 227.
 (D:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/resumo.tex)
 (D:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/resumo.tex)
 (D:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/resumo.tex)
-Overfull \hbox (74.53033pt too wide) in paragraph at lines 224--224
+Overfull \hbox (74.53033pt too wide) in paragraph at lines 227--227
 [][][] 
  []
 
 
 AED: lastpage setting LastPage
-Package hyperref Info: Anchor `page.76' on input line 226.
-[76
+Package hyperref Info: Anchor `page.73' on input line 229.
+[73
 
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 226.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 226.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 229.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 229.
 
 (D:\Projects\duartec-projects\Mestrado\Registration-Tese\template_Article.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 226.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 226.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 229.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 229.
 Package rerunfilecheck Info: File `template_Article.out' has not changed.
-(rerunfilecheck)             Checksum: 82BC9759FA89E16A85323C7115B1126D;4891.
+(rerunfilecheck)             Checksum: DF8A494DB504EA906446D7214659EACE;4792.
 Package rerunfilecheck Info: File `template_Article.brf' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -10239,13 +10113,13 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 226.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 229.
  ) 
 Here is how much of TeX's memory you used:
- 28856 strings out of 493922
- 678460 string characters out of 3144892
- 1192730 words of memory out of 3000000
- 31183 multiletter control sequences out of 15000+200000
+ 28862 strings out of 493922
+ 681504 string characters out of 3144892
+ 1192562 words of memory out of 3000000
+ 31198 multiletter control sequences out of 15000+200000
  54396 words of font info for 111 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  62i,27n,106p,841b,2572s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -10264,9 +10138,9 @@ TeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX
 2.9/fonts/type1/public/amsfonts/cm/cmssi12.pfb><C:/Program Files (x86)/MiKTeX 2
 .9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9
 /fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on template_Article.pdf (77 pages, 3243273 bytes).
+Output written on template_Article.pdf (74 pages, 2769462 bytes).
 PDF statistics:
- 996 PDF objects out of 1000 (max. 8388607)
- 220 named destinations out of 1000 (max. 500000)
- 733 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 963 PDF objects out of 1000 (max. 8388607)
+ 215 named destinations out of 1000 (max. 500000)
+ 712 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,70 +1,69 @@
 \select@language {brazil}
-\contentsline {chapter}{Lista de Figuras}{xiii}{chapter*.5}
-\contentsline {chapter}{Lista de Tabelas}{xv}{chapter*.6}
-\contentsline {chapter}{Lista de Abreviaturas e Siglas}{xvi}{chapter*.7}
-\contentsline {chapter}{\numberline {1}Motiva\c c\~ao}{17}{chapter.1}
-\contentsline {chapter}{\numberline {2}Objetivo}{19}{chapter.2}
-\contentsline {chapter}{\numberline {3}Contexto}{20}{chapter.3}
-\contentsline {section}{\numberline {3.1}Vari\'aveis de contorno}{20}{section.3.1}
-\contentsline {section}{\numberline {3.2}Cen\'ario}{21}{section.3.2}
-\contentsline {chapter}{\numberline {4}Estrutura do texto}{23}{chapter.4}
-\contentsline {chapter}{\numberline {5}Conceitos}{25}{chapter.5}
-\contentsline {section}{\numberline {5.1}Realidade Aumentada}{25}{section.5.1}
-\contentsline {section}{\numberline {5.2}Head-Mounted Displays}{25}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Feed-Through}{26}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}See-Through}{27}{subsection.5.2.2}
-\contentsline {subsection}{\numberline {5.2.3}Projetores}{27}{subsection.5.2.3}
-\contentsline {subsection}{\numberline {5.2.4}Monitores}{27}{subsection.5.2.4}
-\contentsline {section}{\numberline {5.3}Modos de Aquisi\c c\~ao}{28}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Multiview}{28}{subsection.5.3.1}
-\contentsline {subsection}{\numberline {5.3.2}Multitemporal}{28}{subsection.5.3.2}
-\contentsline {subsection}{\numberline {5.3.3}Multimodal}{29}{subsection.5.3.3}
-\contentsline {subsection}{\numberline {5.3.4}Cena para o Modelo}{29}{subsection.5.3.4}
-\contentsline {section}{\numberline {5.4}Caracter\IeC {\'\i }sticas Locais}{29}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}Propriedades da Caracter\IeC {\'\i }stica Local ideal}{29}{subsection.5.4.1}
-\contentsline {subsection}{\numberline {5.4.2}Features}{30}{subsection.5.4.2}
-\contentsline {section}{\numberline {5.5}Cad\^encia}{32}{section.5.5}
-\contentsline {section}{\numberline {5.6}Camera}{33}{section.5.6}
-\contentsline {subsection}{\numberline {5.6.1}Distor\c c\~ao Radial}{33}{subsection.5.6.1}
-\contentsline {subsection}{\numberline {5.6.2}Distor\c c\~ao Tangencial}{34}{subsection.5.6.2}
-\contentsline {section}{\numberline {5.7}Modelo de C\^amera}{35}{section.5.7}
-\contentsline {section}{\numberline {5.8}Reconhecimento}{36}{section.5.8}
-\contentsline {subsection}{\numberline {5.8.1}Detec\c c\~ao de caracter\IeC {\'\i }sticas}{37}{subsection.5.8.1}
-\contentsline {subsection}{\numberline {5.8.2}Feature matching}{38}{subsection.5.8.2}
-\contentsline {section}{\numberline {5.9}Algoritmos de Reconhecimento}{38}{section.5.9}
-\contentsline {subsection}{\numberline {5.9.1}BRISK}{38}{subsection.5.9.1}
-\contentsline {subsection}{\numberline {5.9.2}FAST}{39}{subsection.5.9.2}
-\contentsline {subsection}{\numberline {5.9.3}FREAK}{40}{subsection.5.9.3}
-\contentsline {subsection}{\numberline {5.9.4}MSER}{40}{subsection.5.9.4}
-\contentsline {subsection}{\numberline {5.9.5}ORB}{40}{subsection.5.9.5}
-\contentsline {subsection}{\numberline {5.9.6}SIFT - Scale-Invariant Feature Transform}{40}{subsection.5.9.6}
-\contentsline {subsubsection}{\numberline {5.9.6.1}Keypoint Localization}{42}{subsubsection.5.9.6.1}
-\contentsline {subsubsection}{\numberline {5.9.6.2}Orientation Assignment}{42}{subsubsection.5.9.6.2}
-\contentsline {subsubsection}{\numberline {5.9.6.3}Keypoint Descriptor}{42}{subsubsection.5.9.6.3}
-\contentsline {subsubsection}{\numberline {5.9.6.4}Keypoint Matching}{43}{subsubsection.5.9.6.4}
-\contentsline {subsection}{\numberline {5.9.7}STAR}{43}{subsection.5.9.7}
-\contentsline {subsection}{\numberline {5.9.8}SURF - Speeded Up Robust Feature}{43}{subsection.5.9.8}
-\contentsline {chapter}{\numberline {6}Metodologia}{45}{chapter.6}
-\contentsline {section}{\numberline {6.1}Defini\c c\~ao de par\^ametros}{45}{section.6.1}
-\contentsline {section}{\numberline {6.2}An\'alise de dados}{45}{section.6.2}
-\contentsline {chapter}{\numberline {7}Prot\'otipos}{47}{chapter.7}
-\contentsline {section}{\numberline {7.1}Testes de reconhecimento de padr\~oes}{47}{section.7.1}
-\contentsline {section}{\numberline {7.2}Ambiente}{49}{section.7.2}
-\contentsline {subsection}{\numberline {7.2.1}OpenCV}{49}{subsection.7.2.1}
-\contentsline {chapter}{\numberline {8}Resultados}{50}{chapter.8}
-\contentsline {section}{\numberline {8.1}An\'alise de par\^ametros pontuais}{50}{section.8.1}
-\contentsline {subsection}{\numberline {8.1.1}BRISK}{51}{subsection.8.1.1}
-\contentsline {subsection}{\numberline {8.1.2}An\'alise}{52}{subsection.8.1.2}
-\contentsline {subsection}{\numberline {8.1.3}FAST}{53}{subsection.8.1.3}
-\contentsline {subsection}{\numberline {8.1.4}FREAK}{54}{subsection.8.1.4}
-\contentsline {subsection}{\numberline {8.1.5}MSER}{56}{subsection.8.1.5}
-\contentsline {subsection}{\numberline {8.1.6}ORB}{58}{subsection.8.1.6}
-\contentsline {subsection}{\numberline {8.1.7}SIFT}{60}{subsection.8.1.7}
-\contentsline {subsection}{\numberline {8.1.8}STAR}{62}{subsection.8.1.8}
-\contentsline {subsection}{\numberline {8.1.9}SURF}{64}{subsection.8.1.9}
-\contentsline {section}{\numberline {8.2}An\'alise de resultados}{66}{section.8.2}
-\contentsline {section}{\numberline {8.3}Homografia}{68}{section.8.3}
-\contentsline {chapter}{\numberline {9}Conclus\~ao}{71}{chapter.9}
-\contentsline {chapter}{\numberline {10}Trabalhos futuros}{72}{chapter.10}
-\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{74}{chapter.11}
-\contentsline {chapter}{Gloss\'ario}{76}{chapter.12}
+\contentsline {chapter}{Lista de Figuras}{xii}{chapter*.5}
+\contentsline {chapter}{Lista de Abreviaturas e Siglas}{xiv}{chapter*.6}
+\contentsline {chapter}{\numberline {1}Motiva\c c\~ao}{15}{chapter.1}
+\contentsline {chapter}{\numberline {2}Objetivo}{17}{chapter.2}
+\contentsline {chapter}{\numberline {3}Contexto}{18}{chapter.3}
+\contentsline {section}{\numberline {3.1}Vari\'aveis de contorno}{18}{section.3.1}
+\contentsline {section}{\numberline {3.2}Cen\'ario}{19}{section.3.2}
+\contentsline {chapter}{\numberline {4}Estrutura do texto}{20}{chapter.4}
+\contentsline {chapter}{\numberline {5}Conceitos}{22}{chapter.5}
+\contentsline {section}{\numberline {5.1}Realidade Aumentada}{22}{section.5.1}
+\contentsline {section}{\numberline {5.2}Head-Mounted Displays}{22}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Feed-Through}{23}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}See-Through}{24}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.3}Projetores}{24}{subsection.5.2.3}
+\contentsline {subsection}{\numberline {5.2.4}Monitores}{24}{subsection.5.2.4}
+\contentsline {section}{\numberline {5.3}Modos de Aquisi\c c\~ao}{25}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Multiview}{25}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Multitemporal}{25}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.3}Multimodal}{26}{subsection.5.3.3}
+\contentsline {subsection}{\numberline {5.3.4}Cena para o Modelo}{26}{subsection.5.3.4}
+\contentsline {section}{\numberline {5.4}Caracter\IeC {\'\i }sticas Locais}{26}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Propriedades da Caracter\IeC {\'\i }stica Local ideal}{26}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}Features}{27}{subsection.5.4.2}
+\contentsline {section}{\numberline {5.5}Cad\^encia}{29}{section.5.5}
+\contentsline {section}{\numberline {5.6}Camera}{30}{section.5.6}
+\contentsline {subsection}{\numberline {5.6.1}Distor\c c\~ao Radial}{30}{subsection.5.6.1}
+\contentsline {subsection}{\numberline {5.6.2}Distor\c c\~ao Tangencial}{31}{subsection.5.6.2}
+\contentsline {section}{\numberline {5.7}Modelo de C\^amera}{32}{section.5.7}
+\contentsline {section}{\numberline {5.8}Reconhecimento}{33}{section.5.8}
+\contentsline {subsection}{\numberline {5.8.1}Detec\c c\~ao de caracter\IeC {\'\i }sticas}{34}{subsection.5.8.1}
+\contentsline {subsection}{\numberline {5.8.2}Correspond\^encia de caracter\IeC {\'\i }sticas}{35}{subsection.5.8.2}
+\contentsline {section}{\numberline {5.9}Algoritmos de Reconhecimento}{35}{section.5.9}
+\contentsline {subsection}{\numberline {5.9.1}BRISK}{35}{subsection.5.9.1}
+\contentsline {subsection}{\numberline {5.9.2}FAST}{36}{subsection.5.9.2}
+\contentsline {subsection}{\numberline {5.9.3}FREAK}{37}{subsection.5.9.3}
+\contentsline {subsection}{\numberline {5.9.4}MSER}{37}{subsection.5.9.4}
+\contentsline {subsection}{\numberline {5.9.5}ORB}{37}{subsection.5.9.5}
+\contentsline {subsection}{\numberline {5.9.6}SIFT - Scale-Invariant Feature Transform}{37}{subsection.5.9.6}
+\contentsline {subsubsection}{\numberline {5.9.6.1}Keypoint Localization}{39}{subsubsection.5.9.6.1}
+\contentsline {subsubsection}{\numberline {5.9.6.2}Orientation Assignment}{39}{subsubsection.5.9.6.2}
+\contentsline {subsubsection}{\numberline {5.9.6.3}Keypoint Descriptor}{39}{subsubsection.5.9.6.3}
+\contentsline {subsubsection}{\numberline {5.9.6.4}Keypoint Matching}{40}{subsubsection.5.9.6.4}
+\contentsline {subsection}{\numberline {5.9.7}STAR}{40}{subsection.5.9.7}
+\contentsline {subsection}{\numberline {5.9.8}SURF - Speeded Up Robust Feature}{40}{subsection.5.9.8}
+\contentsline {chapter}{\numberline {6}Metodologia}{42}{chapter.6}
+\contentsline {section}{\numberline {6.1}Defini\c c\~ao de par\^ametros}{42}{section.6.1}
+\contentsline {section}{\numberline {6.2}An\'alise de dados}{42}{section.6.2}
+\contentsline {chapter}{\numberline {7}Prot\'otipos}{44}{chapter.7}
+\contentsline {section}{\numberline {7.1}Testes de reconhecimento de padr\~oes}{44}{section.7.1}
+\contentsline {section}{\numberline {7.2}Ambiente}{46}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}OpenCV}{46}{subsection.7.2.1}
+\contentsline {chapter}{\numberline {8}Resultados}{47}{chapter.8}
+\contentsline {section}{\numberline {8.1}An\'alise de par\^ametros pontuais}{47}{section.8.1}
+\contentsline {subsection}{\numberline {8.1.1}BRISK}{48}{subsection.8.1.1}
+\contentsline {subsubsection}{\numberline {8.1.1.1}An\'alise}{49}{subsubsection.8.1.1.1}
+\contentsline {subsection}{\numberline {8.1.2}FAST}{50}{subsection.8.1.2}
+\contentsline {subsection}{\numberline {8.1.3}FREAK}{51}{subsection.8.1.3}
+\contentsline {subsection}{\numberline {8.1.4}MSER}{53}{subsection.8.1.4}
+\contentsline {subsection}{\numberline {8.1.5}ORB}{55}{subsection.8.1.5}
+\contentsline {subsection}{\numberline {8.1.6}SIFT}{57}{subsection.8.1.6}
+\contentsline {subsection}{\numberline {8.1.7}STAR}{59}{subsection.8.1.7}
+\contentsline {subsection}{\numberline {8.1.8}SURF}{61}{subsection.8.1.8}
+\contentsline {section}{\numberline {8.2}An\'alise de resultados}{63}{section.8.2}
+\contentsline {section}{\numberline {8.3}Homografia}{65}{section.8.3}
+\contentsline {chapter}{\numberline {9}Conclus\~ao}{68}{chapter.9}
+\contentsline {chapter}{\numberline {10}Trabalhos futuros}{69}{chapter.10}
+\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{71}{chapter.11}
+\contentsline {chapter}{Gloss\'ario}{73}{chapter.12}

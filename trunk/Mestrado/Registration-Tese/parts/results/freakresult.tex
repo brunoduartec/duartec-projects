@@ -31,14 +31,12 @@ TODO
 	legend entries={$d=1200$,$d=1500$,$d=1800$,$d=2100$},
 	title= Robustness to scaling
     ]
-
-	\addplot table [x=Argument, y=FREAK-1800, col sep=comma]	{graphs/scale-all-\gtype.csv};
-	 \addplot table [x=Argument, y=FREAK-2100, col	sep=comma] {graphs/scale-all-\gtype.csv};
-		\addplot table [x=Argument, y=FREAK-2400, col sep=comma]	{graphs/scale-all-\gtype.csv};
-		 \addplot table [x=Argument, y=FREAK-2700, col	sep=comma]		 {graphs/scale-all-\gtype.csv};
+	\addplot table [x=Argument, y=FREAK-2300, col sep=comma]	{graphs/scale-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=FREAK-2600, col	sep=comma] {graphs/scale-all-\gtype.csv}; 
+	\addplot table [x=Argument,	y=FREAK-2900, col sep=comma]	{graphs/scale-all-\gtype.csv}; 
+	\addplot table	[x=Argument, y=FREAK-3200, col	sep=comma]	 {graphs/scale-all-\gtype.csv};
 	
-
-	  
+  
 	
 	%eixo horizontal
 	\addplot[red,sharp plot,update limits=false] coordinates{(\minx,\ylimit)(\maxx,\ylimit)};
@@ -187,12 +185,11 @@ TODO
 	legend entries={$d=1200$,$d=1500$,$d=1800$,$d=2100$},
 	title= Robustness to scaling
     ]
-	\addplot table [x=Argument, y=FREAK-1800, col sep=comma]	{graphs/scale-all-\gtype.csv};
-	 \addplot table [x=Argument, y=FREAK-2100, col	sep=comma] {graphs/scale-all-\gtype.csv};
-		\addplot table [x=Argument, y=FREAK-2400, col sep=comma]	{graphs/scale-all-\gtype.csv};
-		 \addplot table [x=Argument,  y=FREAK-2700, col	sep=comma] {graphs/scale-all-\gtype.csv};
- 
-	  	
+	\addplot table [x=Argument, y=FREAK-2300, col sep=comma]	{graphs/scale-all-\gtype.csv}; 
+	\addplot table [x=Argument, y=FREAK-2600, col	sep=comma] {graphs/scale-all-\gtype.csv}; 
+	\addplot table [x=Argument,	y=FREAK-2900, col sep=comma]	{graphs/scale-all-\gtype.csv}; 
+	\addplot table	[x=Argument, y=FREAK-3200, col	sep=comma]	 {graphs/scale-all-\gtype.csv};
+ 	  	
 	%eixo horizontal
 	\addplot[red,sharp plot,update limits=false] coordinates{(\miny,\ylimit)
 	(\maxx,\ylimit)}; 

@@ -34,7 +34,7 @@ variando o parâmetro treshhold em 10,20,30,40
 	legend entries={$d=10$,$d=20$,$d=30$,$d=40$},
 	title= Robustness to scaling
     ]
-	\addplot table[x=Argument, y=FAST-10, colsep=comma]{graphs/scale-all-\gtype.csv};
+	\addplot table[x=Argument, y=FAST-10, colsep=comma] {graphs/scale-all-\gtype.csv}; 
 	 \addplot table[x=Argument, y=FAST-20, col sep=comma]{graphs/scale-all-\gtype.csv};
 	  \addplot table[x=Argument,	y=FAST-30, col sep=comma]	 {graphs/scale-all-\gtype.csv}; 
 	  \addplot table[x=Argument, y=FAST-40, col	 sep=comma] {graphs/scale-all-\gtype.csv};
