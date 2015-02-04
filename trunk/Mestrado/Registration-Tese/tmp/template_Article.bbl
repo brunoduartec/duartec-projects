@@ -26,21 +26,10 @@
 {GARY~BRADSKI, A.~K. \textbf{ Learning OpenCv Computer vision with the Opencv
   Library}. [S.l.]: O´REILLY, 2008.}
 
-\bibitem[Gay-Bellile 2012]{ISMAR2012}
-\abntrefinfo{Gay-Bellile}{GAY-BELLILE}{2012}
-{GAY-BELLILE, V. A mobile markerless augmented reality system for the
-  automotive field.
-2012.}
-
 \bibitem[Herbert~Bay Tinne~Tuytelaars 2008]{SURF}
 \abntrefinfo{Herbert~Bay Tinne~Tuytelaars}{HERBERT~BAY TINNE~TUYTELAARS}{2008}
 {HERBERT~BAY TINNE~TUYTELAARS, L. V.~G. Surf : Speeded up robust features.
 \textbf{ ETH Zurich}, 2008.}
-
-\bibitem[Krystian~Mikolajczyk 2005]{performance_evaluation}
-\abntrefinfo{Krystian~Mikolajczyk}{KRYSTIAN~MIKOLAJCZYK}{2005}
-{KRYSTIAN~MIKOLAJCZYK, C.~S. A performance evaluation of local descriptors.
-feb 2005.}
 
 \bibitem[Leutenegger, Chli e Siegwart 2011]{BRISK}
 \abntrefinfo{Leutenegger, Chli e Siegwart}{LEUTENEGGER; CHLI; SIEGWART}{2011}

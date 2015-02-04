@@ -55,19 +55,10 @@
 \BOOKMARK [1][]{section.7.2}{7.2 Ambiente}{chapter.7}% 55
 \BOOKMARK [2][]{subsection.7.2.1}{7.2.1 OpenCV}{section.7.2}% 56
 \BOOKMARK [0][]{chapter.8}{8 Resultados}{}% 57
-\BOOKMARK [1][]{section.8.1}{8.1 An\341lise de par\342metros pontuais}{chapter.8}% 58
-\BOOKMARK [2][]{subsection.8.1.1}{8.1.1 BRISK}{section.8.1}% 59
-\BOOKMARK [2][]{subsection.8.1.2}{8.1.2 FAST}{section.8.1}% 60
-\BOOKMARK [2][]{subsection.8.1.3}{8.1.3 FREAK}{section.8.1}% 61
-\BOOKMARK [2][]{subsection.8.1.4}{8.1.4 MSER}{section.8.1}% 62
-\BOOKMARK [2][]{subsection.8.1.5}{8.1.5 ORB}{section.8.1}% 63
-\BOOKMARK [2][]{subsection.8.1.6}{8.1.6 SIFT}{section.8.1}% 64
-\BOOKMARK [2][]{subsection.8.1.7}{8.1.7 STAR}{section.8.1}% 65
-\BOOKMARK [2][]{subsection.8.1.8}{8.1.8 SURF}{section.8.1}% 66
-\BOOKMARK [1][]{section.8.2}{8.2 An\341lise de resultados}{chapter.8}% 67
-\BOOKMARK [1][]{section.8.3}{8.3 Homografia}{chapter.8}% 68
-\BOOKMARK [0][]{chapter.9}{9 Conclus\343o}{}% 69
-\BOOKMARK [0][]{chapter.10}{10 Trabalhos futuros}{}% 70
-\BOOKMARK [0][]{chapter.11}{Refer\352ncias Bibliogr\341ficas}{}% 71
-\BOOKMARK [0][]{chapter.12}{Gloss\341rio}{}% 72
-\BOOKMARK [0][]{bla.0}{Folha de Registro do Documento}{}% 73
+\BOOKMARK [1][]{section.8.1}{8.1 Taxa de Acertos}{chapter.8}% 58
+\BOOKMARK [1][]{section.8.2}{8.2 An\341lise de tempo}{chapter.8}% 59
+\BOOKMARK [0][]{chapter.9}{9 Conclus\343o}{}% 60
+\BOOKMARK [0][]{chapter.10}{10 Trabalhos futuros}{}% 61
+\BOOKMARK [0][]{chapter.11}{Refer\352ncias Bibliogr\341ficas}{}% 62
+\BOOKMARK [0][]{chapter.12}{Gloss\341rio}{}% 63
+\BOOKMARK [0][]{bla.0}{Folha de Registro do Documento}{}% 64
