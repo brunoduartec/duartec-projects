@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=latex 2014.10.12)  29 JAN 2015 23:17
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=latex 2014.10.12)  3 FEB 2015 23:17
 entering extended mode
 **template_Article.tex
 (D:\Projects\duartec-projects\Mestrado\Registration-Tese\template_Article.tex
@@ -6287,7 +6287,7 @@ Package pgfplots Warning: Table 'graphs/scale-all-time.csv' has an empty column
 ! Dimension too large.
 <recently read> \pgf@xx 
                         
-l.208 \end{axis}
+l.207 \end{axis}
                 
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -6295,7 +6295,7 @@ Continue and I'll use the largest value I can.
 ! Dimension too large.
 <to be read again> 
                    \relax 
-l.208 \end{axis}
+l.207 \end{axis}
                 
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -6303,7 +6303,7 @@ Continue and I'll use the largest value I can.
 ! Dimension too large.
 <recently read> \pgf@xx 
                         
-l.208 \end{axis}
+l.207 \end{axis}
                 
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -6311,7 +6311,7 @@ Continue and I'll use the largest value I can.
 ! Dimension too large.
 <recently read> \pgf@xx 
                         
-l.208 \end{axis}
+l.207 \end{axis}
                 
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -6319,7 +6319,7 @@ Continue and I'll use the largest value I can.
 ! Dimension too large.
 <recently read> \pgf@xx 
                         
-l.208 \end{axis}
+l.207 \end{axis}
                 
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -6327,7 +6327,7 @@ Continue and I'll use the largest value I can.
 ! Dimension too large.
 \pgfusepath ...x by-.5\pgflinewidth \ifdim \pgf@x 
                                                   <\pgf@picminx \global \pgf...
-l.208 \end{axis}
+l.207 \end{axis}
                 
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -6335,7 +6335,7 @@ Continue and I'll use the largest value I can.
 ! Dimension too large.
 \pgfusepath ...@x by.5\pgflinewidth \ifdim \pgf@x 
                                                   >\pgf@picmaxx \global \pgf...
-l.208 \end{axis}
+l.207 \end{axis}
                 
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -6343,7 +6343,7 @@ Continue and I'll use the largest value I can.
 ! Dimension too large.
 <recently read> \pgf@xx 
                         
-l.208 \end{axis}
+l.207 \end{axis}
                 
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -6351,7 +6351,7 @@ Continue and I'll use the largest value I can.
 ! Dimension too large.
 <to be read again> 
                    \relax 
-l.208 \end{axis}
+l.207 \end{axis}
                 
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -6359,7 +6359,7 @@ Continue and I'll use the largest value I can.
 ! Dimension too large.
 <recently read> \pgf@xx 
                         
-l.208 \end{axis}
+l.207 \end{axis}
                 
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -6367,7 +6367,7 @@ Continue and I'll use the largest value I can.
 ! Dimension too large.
 <recently read> \pgf@xx 
                         
-l.208 \end{axis}
+l.207 \end{axis}
                 
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -6375,7 +6375,7 @@ Continue and I'll use the largest value I can.
 ! Dimension too large.
 <to be read again> 
                    \relax 
-l.208 \end{axis}
+l.207 \end{axis}
                 
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -6383,7 +6383,7 @@ Continue and I'll use the largest value I can.
 ! Dimension too large.
 <recently read> \pgf@xx 
                         
-l.208 \end{axis}
+l.207 \end{axis}
                 
 I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
@@ -6395,10 +6395,16 @@ See the pgf package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.208 \end{axis}
+l.207 \end{axis}
                 
 (That was another \errmessage.)
 
+PGFPlots: reading {graphs/rot-all-time.csv}
+
+Package pgfplots Warning: Table 'graphs/rot-all-time.csv' has an empty column n
+ame; replacing it by '73'' on input line 217.
+
+ [warning /pgfplots/warning/empty column name]
 PGFPlots: reading {graphs/rot-all-time.csv}
 
 Package pgfplots Warning: Table 'graphs/rot-all-time.csv' has an empty column n
@@ -6417,10 +6423,10 @@ Package pgfplots Warning: Table 'graphs/rot-all-time.csv' has an empty column n
 ame; replacing it by '73'' on input line 220.
 
  [warning /pgfplots/warning/empty column name]
-PGFPlots: reading {graphs/rot-all-time.csv}
+PGFPlots: reading {graphs/blur-all-time.csv}
 
-Package pgfplots Warning: Table 'graphs/rot-all-time.csv' has an empty column n
-ame; replacing it by '73'' on input line 221.
+Package pgfplots Warning: Table 'graphs/blur-all-time.csv' has an empty column 
+name; replacing it by '73'' on input line 251.
 
  [warning /pgfplots/warning/empty column name]
 PGFPlots: reading {graphs/blur-all-time.csv}
@@ -6441,68 +6447,68 @@ Package pgfplots Warning: Table 'graphs/blur-all-time.csv' has an empty column
 name; replacing it by '73'' on input line 254.
 
  [warning /pgfplots/warning/empty column name]
-PGFPlots: reading {graphs/blur-all-time.csv}
+! Dimension too large.
+<to be read again> 
+                   \relax 
+l.271 \end{axis}
+                
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
 
-Package pgfplots Warning: Table 'graphs/blur-all-time.csv' has an empty column 
-name; replacing it by '73'' on input line 255.
+! Dimension too large.
+<to be read again> 
+                   \relax 
+l.271 \end{axis}
+                
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<to be read again> 
+                   \relax 
+l.271 \end{axis}
+                
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<to be read again> 
+                   \relax 
+l.271 \end{axis}
+                
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<to be read again> 
+                   \relax 
+l.271 \end{axis}
+                
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<to be read again> 
+                   \relax 
+l.271 \end{axis}
+                
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<to be read again> 
+                   \relax 
+l.271 \end{axis}
+                
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+PGFPlots: reading {graphs/bright-all-time.csv}
+
+Package pgfplots Warning: Table 'graphs/bright-all-time.csv' has an empty colum
+n name; replacing it by '73'' on input line 281.
 
  [warning /pgfplots/warning/empty column name]
-! Dimension too large.
-<to be read again> 
-                   \relax 
-l.272 \end{axis}
-                
-I can't work with sizes bigger than about 19 feet.
-Continue and I'll use the largest value I can.
-
-! Dimension too large.
-<to be read again> 
-                   \relax 
-l.272 \end{axis}
-                
-I can't work with sizes bigger than about 19 feet.
-Continue and I'll use the largest value I can.
-
-! Dimension too large.
-<to be read again> 
-                   \relax 
-l.272 \end{axis}
-                
-I can't work with sizes bigger than about 19 feet.
-Continue and I'll use the largest value I can.
-
-! Dimension too large.
-<to be read again> 
-                   \relax 
-l.272 \end{axis}
-                
-I can't work with sizes bigger than about 19 feet.
-Continue and I'll use the largest value I can.
-
-! Dimension too large.
-<to be read again> 
-                   \relax 
-l.272 \end{axis}
-                
-I can't work with sizes bigger than about 19 feet.
-Continue and I'll use the largest value I can.
-
-! Dimension too large.
-<to be read again> 
-                   \relax 
-l.272 \end{axis}
-                
-I can't work with sizes bigger than about 19 feet.
-Continue and I'll use the largest value I can.
-
-! Dimension too large.
-<to be read again> 
-                   \relax 
-l.272 \end{axis}
-                
-I can't work with sizes bigger than about 19 feet.
-Continue and I'll use the largest value I can.
-
 PGFPlots: reading {graphs/bright-all-time.csv}
 
 Package pgfplots Warning: Table 'graphs/bright-all-time.csv' has an empty colum
@@ -6521,12 +6527,6 @@ Package pgfplots Warning: Table 'graphs/bright-all-time.csv' has an empty colum
 n name; replacing it by '73'' on input line 284.
 
  [warning /pgfplots/warning/empty column name]
-PGFPlots: reading {graphs/bright-all-time.csv}
-
-Package pgfplots Warning: Table 'graphs/bright-all-time.csv' has an empty colum
-n name; replacing it by '73'' on input line 285.
-
- [warning /pgfplots/warning/empty column name]
 
 ! Package tikz Error: Giving up on this path. Did you forget a semicolon?.
 
@@ -6534,14 +6534,14 @@ See the tikz package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.308 \end{tikzpicture}
+l.307 \end{tikzpicture}
                        
 (That was another \errmessage.)
 
-Package hyperref Info: Anchor `figure.8.6' on input line 310.
-pdftex: bookmark at 310: {8.6} {\numberline{8.6}{\ignorespaces Resultado de tes
+Package hyperref Info: Anchor `figure.8.6' on input line 309.
+pdftex: bookmark at 309: {8.6} {\numberline{8.6}{\ignorespaces Resultado de tes
 tes individuais de tempo com FREAK}} {figure.8.6}{0}{lof}
-Package hyperref Info: Anchor `figure.8.6' on input line 310.
+Package hyperref Info: Anchor `figure.8.6' on input line 309.
 )
 (D:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/results/mserresu
 lt.tex
@@ -10138,7 +10138,7 @@ TeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX
 2.9/fonts/type1/public/amsfonts/cm/cmssi12.pfb><C:/Program Files (x86)/MiKTeX 2
 .9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9
 /fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on template_Article.pdf (74 pages, 2769462 bytes).
+Output written on template_Article.pdf (74 pages, 2769445 bytes).
 PDF statistics:
  963 PDF objects out of 1000 (max. 8388607)
  215 named destinations out of 1000 (max. 500000)
