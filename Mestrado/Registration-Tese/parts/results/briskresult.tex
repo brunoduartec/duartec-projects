@@ -21,7 +21,7 @@ BRISK(int thresh=30, int octaves=3, float patternScale=1.0f);
 
 \begin{tikzpicture}
 	\pgfplotsset{small}
-	\matrix{
+	 \matrix{
 	%scale
 	
 	 
@@ -108,8 +108,7 @@ BRISK(int thresh=30, int octaves=3, float patternScale=1.0f);
 	 
 	%eixo horizontal
 	\addplot[red,sharp plot,update limits=false] coordinates{(\minx,\ylimit)(\maxx,\ylimit)};
-	 \fill [opacity=0.4,red!25] (axis	cs:\minx,\ylimit) rectangle(axis
-	 cs:\maxx,\miny);
+	 \fill [opacity=0.4,red!25] (axis	cs:\minx,\miny) rectangle(axis	cs:\maxx,\ylimit);
 
 
 				%eixo vertical
@@ -134,11 +133,10 @@ BRISK(int thresh=30, int octaves=3, float patternScale=1.0f);
 	 \addplot table [x=Argument, y=BRISK-50, col	sep=comma]{graphs/bright-all-\gtype.csv};
 	  \addplot table [x=Argument,	y=BRISK-60, col sep=comma]	 {graphs/bright-all-\gtype.csv}; 
 	  \addplot table	[x=Argument, y=BRISK-70, col	 sep=comma] {graphs/bright-all-\gtype.csv};
-	
-		%eixo horizontal
+		
+			%eixo horizontal
 	\addplot[red,sharp plot,update limits=false] coordinates	{(\minx,\ylimit)(\maxx,\ylimit)};
 	 \fill [opacity=0.4,red!25] (axis cs:\minx,\ylimit) rectangle(axis cs:\maxx,\miny);
-		
 		
 						%eixo vertical
 	\addplot[blue,sharp plot,update limits=false] coordinates
@@ -317,7 +315,7 @@ BRISK(int thresh=30, int octaves=3, float patternScale=1.0f);
 \caption{Resultado de testes individuais de tempo com BRISK}
 \end{figure}
 
-\subsection{Análise}
+\subsubsection{Análise}
 Fazendo uma análise de tendência variando o parâmetro thresh de 10 à 40 podemos
 inferir que A taxa de acertos:
 \begin{itemize}
