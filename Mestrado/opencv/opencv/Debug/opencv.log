@@ -1,17 +1,47 @@
-﻿Build started 14/01/2015 22:36:57.
+﻿Build started 09/02/2015 10:09:43.
      1>Project "D:\Projects\duartec-projects\Mestrado\opencv\opencv\opencv.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ID:\Projects\opencv\build\x86\vc11\..\..\include /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt "..\..\OpenCV-Features-Comparison-master\OpenCV-Features-Comparison-master\main.cpp"
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ID:\Projects\opencv\build\x86\vc11\..\..\include /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt "..\..\OpenCV-Features-Comparison-master\OpenCV-Features-Comparison-master\main.cpp" AlgorithmEstimation.cpp CollectedStatistics.cpp FeatureAlgorithm.cpp ImageTransformation.cpp
+         ImageTransformation.cpp
+     1>d:\projects\duartec-projects\mestrado\opencv\opencv\imagetransformation.cpp(114): warning C4068: unknown pragma
+     1>d:\projects\duartec-projects\mestrado\opencv\opencv\imagetransformation.cpp(151): warning C4068: unknown pragma
+     1>d:\projects\duartec-projects\mestrado\opencv\opencv\imagetransformation.cpp(182): warning C4068: unknown pragma
+     1>d:\projects\duartec-projects\mestrado\opencv\opencv\imagetransformation.cpp(203): warning C4068: unknown pragma
+     1>d:\projects\duartec-projects\mestrado\opencv\opencv\imagetransformation.cpp(225): warning C4068: unknown pragma
+     1>d:\projects\duartec-projects\mestrado\opencv\opencv\imagetransformation.cpp(245): warning C4244: 'argument' : conversion from 'int' to 'const float', possible loss of data
+     1>d:\projects\duartec-projects\mestrado\opencv\opencv\imagetransformation.cpp(262): warning C4244: 'argument' : conversion from 'int' to 'const float', possible loss of data
+     1>d:\projects\duartec-projects\mestrado\opencv\opencv\imagetransformation.cpp(273): warning C4244: 'argument' : conversion from 'int' to 'const float', possible loss of data
+     1>d:\projects\duartec-projects\mestrado\opencv\opencv\imagetransformation.cpp(291): warning C4244: 'argument' : conversion from 'int' to 'const float', possible loss of data
+     1>d:\projects\duartec-projects\mestrado\opencv\opencv\imagetransformation.cpp(302): warning C4244: 'argument' : conversion from 'int' to 'const float', possible loss of data
+     1>d:\projects\duartec-projects\mestrado\opencv\opencv\imagetransformation.cpp(359): warning C4068: unknown pragma
+     1>d:\projects\duartec-projects\mestrado\opencv\opencv\imagetransformation.cpp(368): warning C4244: 'argument' : conversion from 'int' to 'const float', possible loss of data
+         FeatureAlgorithm.cpp
+         CollectedStatistics.cpp
+     1>d:\projects\duartec-projects\mestrado\opencv\opencv\collectedstatistics.cpp(52): warning C4244: '=' : conversion from 'const int' to 'float', possible loss of data
+     1>d:\projects\duartec-projects\mestrado\opencv\opencv\collectedstatistics.cpp(174): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\program files (x86)\microsoft visual studio 11.0\vc\include\xmemory0(605): warning C4503: 'std::_Tree<_Traits>::_Insert_hint' : decorated name length exceeded, name was truncated
+                 with
+                 [
+                     _Traits=std::_Tmap_traits<std::string,CollectedStatistics::InnerGroup,std::less<std::string>,std::allocator<std::pair<const std::string,CollectedStatistics::InnerGroup>>,false>
+                 ]
+         AlgorithmEstimation.cpp
+     1>d:\projects\duartec-projects\mestrado\opencv\opencv\algorithmestimation.cpp(141): warning C4018: '<' : signed/unsigned mismatch
+     1>d:\projects\duartec-projects\mestrado\opencv\opencv\algorithmestimation.cpp(326): warning C4018: '<' : signed/unsigned mismatch
+     1>d:\projects\duartec-projects\mestrado\opencv\opencv\algorithmestimation.cpp(337): warning C4018: '<' : signed/unsigned mismatch
+     1>d:\projects\duartec-projects\mestrado\opencv\opencv\algorithmestimation.cpp(361): warning C4244: '=' : conversion from 'const double' to 'float', possible loss of data
+     1>d:\projects\duartec-projects\mestrado\opencv\opencv\algorithmestimation.cpp(381): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
          main.cpp
+         Generating Code...
+     1>d:\projects\duartec-projects\mestrado\opencv\opencv\featurealgorithm.cpp(19): warning C4715: 'indexParamsForDescriptorType' : not all control paths return a value
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Projects\duartec-projects\Mestrado\opencv\Debug\opencv.exe" /INCREMENTAL /NOLOGO /LIBPATH:D:\Projects\opencv\build\x86\vc11\lib opencv_core2410d.lib opencv_imgproc2410d.lib opencv_highgui2410d.lib opencv_ml2410d.lib opencv_video2410d.lib opencv_features2d2410d.lib opencv_calib3d2410d.lib opencv_objdetect2410d.lib opencv_contrib2410d.lib opencv_legacy2410d.lib opencv_flann2410d.lib opencv_nonfree2410d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Projects\duartec-projects\Mestrado\opencv\Debug\opencv.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Projects\duartec-projects\Mestrado\opencv\Debug\opencv.lib" /MACHINE:X86 Debug\AlgorithmEstimation.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Projects\duartec-projects\Mestrado\opencv\Debug\opencv.exe" /INCREMENTAL /NOLOGO /LIBPATH:D:\Projects\opencv\build\x86\vc11\lib opencv_core2410d.lib opencv_imgproc2410d.lib opencv_highgui2410d.lib opencv_ml2410d.lib opencv_video2410d.lib opencv_features2d2410d.lib opencv_calib3d2410d.lib opencv_objdetect2410d.lib opencv_contrib2410d.lib opencv_legacy2410d.lib opencv_flann2410d.lib opencv_nonfree2410d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Projects\duartec-projects\Mestrado\opencv\Debug\opencv.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Projects\duartec-projects\Mestrado\opencv\Debug\opencv.lib" /MACHINE:X86 Debug\main.obj
+         Debug\AlgorithmEstimation.obj
          Debug\CollectedStatistics.obj
          Debug\FeatureAlgorithm.obj
          Debug\ImageTransformation.obj
-         Debug\main.obj
          opencv.vcxproj -> D:\Projects\duartec-projects\Mestrado\opencv\Debug\opencv.exe
      1>Done Building Project "D:\Projects\duartec-projects\Mestrado\opencv\opencv\opencv.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:07.31
+Time Elapsed 00:00:14.56

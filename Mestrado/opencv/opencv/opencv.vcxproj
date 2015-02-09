@@ -65,20 +65,22 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>opencv_core2410.lib;opencv_imgproc2410.lib;opencv_highgui2410.lib;opencv_ml2410.lib;opencv_video2410.lib;opencv_features2d2410.lib;opencv_calib3d2410.lib;opencv_objdetect2410.lib;opencv_contrib2410.lib;opencv_legacy2410.lib;opencv_flann2410.lib;opencv_nonfree2410.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(OPENCV_DIR)\lib</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\OpenCV-Features-Comparison-master\OpenCV-Features-Comparison-master\AlgorithmEstimation.cpp" />
-    <ClCompile Include="..\..\OpenCV-Features-Comparison-master\OpenCV-Features-Comparison-master\CollectedStatistics.cpp" />
-    <ClCompile Include="..\..\OpenCV-Features-Comparison-master\OpenCV-Features-Comparison-master\FeatureAlgorithm.cpp" />
-    <ClCompile Include="..\..\OpenCV-Features-Comparison-master\OpenCV-Features-Comparison-master\ImageTransformation.cpp" />
     <ClCompile Include="..\..\OpenCV-Features-Comparison-master\OpenCV-Features-Comparison-master\main.cpp" />
+    <ClCompile Include="AlgorithmEstimation.cpp" />
+    <ClCompile Include="CollectedStatistics.cpp" />
+    <ClCompile Include="FeatureAlgorithm.cpp" />
+    <ClCompile Include="ImageTransformation.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\OpenCV-Features-Comparison-master\OpenCV-Features-Comparison-master\AlgorithmEstimation.hpp" />
-    <ClInclude Include="..\..\OpenCV-Features-Comparison-master\OpenCV-Features-Comparison-master\CollectedStatistics.hpp" />
-    <ClInclude Include="..\..\OpenCV-Features-Comparison-master\OpenCV-Features-Comparison-master\FeatureAlgorithm.hpp" />
-    <ClInclude Include="..\..\OpenCV-Features-Comparison-master\OpenCV-Features-Comparison-master\ImageTransformation.hpp" />
+    <ClInclude Include="AlgorithmEstimation.hpp" />
+    <ClInclude Include="CollectedStatistics.hpp" />
+    <ClInclude Include="FeatureAlgorithm.hpp" />
+    <ClInclude Include="ImageTransformation.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
