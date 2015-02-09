@@ -58,9 +58,35 @@ menores do que um threshold são rejeitados.
 Uma característica do DoG é a alta resposta a arestas gerando falsos positivos. Portanto é necessário eliminar 
 algumas arestas identificadas erroneamente.
 \subsubsection{Orientation Assignment}
-TODO
+
+%MELHORAR
+
+Para obter descritores que são invariantes a rotação, um histograma de
+orientações é gerado a partir do gradiente de orientações de cada maximo local
+do DoG ao redor dos keypoints
+
 \subsubsection{Keypoint Descriptor}
-TODO
+
+O descritor é construído por um vetor de características considerando a
+ direção do keypoint cujo peso no gradiente é máximo.
+ Como mostrado na figura~\ref{fig:sift-keypoint-descriptor}, tipicamente, uma
+ região de adjacentes 16x16 é determinada partindo do keypoint no centro. Depois da região ser selecionada,
+ SIFT divide em sub regiões de 4x4 com 8 representações de orientações em cada.
+Como obtemos 4x4 = 16 histogramas, cada um com 8 items, o vetor tem 128 elementos,
+ o que torna o descritor significativo, compacto e ainda assim robusto o suficiente
+  para mudanças de iluminação e variações de câmera.
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.6]{images/sift-keypoint-descriptor}
+\caption{Formação do descritor SIFT}
+\label{fig:sift-keypoint-descriptor}
+\end{figure}
+
+
+
+
 \subsubsection{Keypoint Matching}
 O casamento entre dois pontos é feito identificando pontos próximos. Entretando em algumas cituações existem
  pontos muito próximos que podem ser causados por ruidos na detecção de pontos de interesse, nesse caso é calculada
