@@ -1,0 +1,25 @@
+﻿Build started 08/02/2015 21:23:32.
+     1>Project "D:\Projects\duartec-projects\Mestrado\opencv\opencv\opencv.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ID:\Projects\opencv\build\x86\vc11\..\..\include /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt "..\..\OpenCV-Features-Comparison-master\OpenCV-Features-Comparison-master\AlgorithmEstimation.cpp" "..\..\OpenCV-Features-Comparison-master\OpenCV-Features-Comparison-master\main.cpp"
+         AlgorithmEstimation.cpp
+     1>..\..\OpenCV-Features-Comparison-master\OpenCV-Features-Comparison-master\AlgorithmEstimation.cpp(165): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\OpenCV-Features-Comparison-master\OpenCV-Features-Comparison-master\AlgorithmEstimation.cpp(176): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\OpenCV-Features-Comparison-master\OpenCV-Features-Comparison-master\AlgorithmEstimation.cpp(200): warning C4244: '=' : conversion from 'const double' to 'float', possible loss of data
+     1>..\..\OpenCV-Features-Comparison-master\OpenCV-Features-Comparison-master\AlgorithmEstimation.cpp(220): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+         main.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Projects\duartec-projects\Mestrado\opencv\Release\opencv.exe" /NOLOGO /LIBPATH:D:\Projects\opencv\build\x86\vc11\lib opencv_core2410.lib opencv_imgproc2410.lib opencv_highgui2410.lib opencv_ml2410.lib opencv_video2410.lib opencv_features2d2410.lib opencv_calib3d2410.lib opencv_objdetect2410.lib opencv_contrib2410.lib opencv_legacy2410.lib opencv_flann2410.lib opencv_nonfree2410.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Projects\duartec-projects\Mestrado\opencv\Release\opencv.pdb" /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Projects\duartec-projects\Mestrado\opencv\Release\opencv.lib" /MACHINE:X86 /SAFESEH Release\AlgorithmEstimation.obj
+         Release\CollectedStatistics.obj
+         Release\FeatureAlgorithm.obj
+         Release\ImageTransformation.obj
+         Release\main.obj
+         Generating code
+     1>d:\projects\duartec-projects\mestrado\opencv-features-comparison-master\opencv-features-comparison-master\featurealgorithm.cpp(19): warning C4715: 'indexParamsForDescriptorType' : not all control paths return a value
+     1>d:\projects\duartec-projects\mestrado\opencv-features-comparison-master\opencv-features-comparison-master\algorithmestimation.cpp(51): error C4716: 'performDinamicEstimation' : must return a value
+     1>LINK : fatal error LNK1257: code generation failed
+     1>Done Building Project "D:\Projects\duartec-projects\Mestrado\opencv\opencv\opencv.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:09.23

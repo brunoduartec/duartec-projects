@@ -15,33 +15,33 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\OpenCV-Features-Comparison-master\OpenCV-Features-Comparison-master\AlgorithmEstimation.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\OpenCV-Features-Comparison-master\OpenCV-Features-Comparison-master\CollectedStatistics.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\OpenCV-Features-Comparison-master\OpenCV-Features-Comparison-master\FeatureAlgorithm.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\OpenCV-Features-Comparison-master\OpenCV-Features-Comparison-master\ImageTransformation.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\OpenCV-Features-Comparison-master\OpenCV-Features-Comparison-master\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AlgorithmEstimation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CollectedStatistics.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FeatureAlgorithm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageTransformation.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\OpenCV-Features-Comparison-master\OpenCV-Features-Comparison-master\AlgorithmEstimation.hpp">
+    <ClInclude Include="AlgorithmEstimation.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\OpenCV-Features-Comparison-master\OpenCV-Features-Comparison-master\CollectedStatistics.hpp">
+    <ClInclude Include="CollectedStatistics.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\OpenCV-Features-Comparison-master\OpenCV-Features-Comparison-master\FeatureAlgorithm.hpp">
+    <ClInclude Include="FeatureAlgorithm.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\OpenCV-Features-Comparison-master\OpenCV-Features-Comparison-master\ImageTransformation.hpp">
+    <ClInclude Include="ImageTransformation.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
