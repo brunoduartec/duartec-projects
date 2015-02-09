@@ -35,6 +35,7 @@
 
 \usepackage{float}
 \usepackage{pgfplots}
+\usepackage{xcolor,colortbl}
 \pgfplotsset{compat=1.8}
 \usepackage{pgfkeys}
 
@@ -140,7 +141,7 @@ Aqui pode ser escrita uma dedicatória. Não é obrigatória.
 % lista de figuras
 \listoffigures
 % lista de tabelas
-%\listoftables
+\listoftables
 % lista de abreviaturas
 \listofabbreviations
 \input{parts/acronimos}
@@ -151,38 +152,37 @@ Aqui pode ser escrita uma dedicatória. Não é obrigatória.
 \mainmatter
 % Os capitulos comecam aqui
 
-\chapter{Motivação}
-\input{parts/motivacao}
-
-\chapter{Objetivo}
-\input{parts/objetivo}
-
-
-\chapter{Contexto}
-\input{parts/contexto} 
-
-\chapter{Estrutura do texto}
-\input{parts/estrutura}
+\chapter{Introdução}
+	\label{ch:introducao}
+	\input{parts/motivacao}
+	\input{parts/objetivo}
+	\input{parts/justificativa}
+	\input{parts/contexto} 
+	\input{parts/recursosemetodos}
+	\input{parts/estrutura}
 
 
-\chapter{Conceitos}
-\input{parts/basicos/conceitos_basicos}
+\chapter{Fundamentação Teórica}
+	\label{ch:fundamentacaoteorica}
+	\input{parts/basicos/conceitos_basicos}
+	\input{parts/trabalhosrelacionados}
 
-\chapter{Metodologia}
-\input{parts/metodologia}
+\chapter{Proposta}
+	\label{ch:propostao}
+	\input{parts/metodologia}
+	\input{parts/prototipos}
 
-\chapter{Protótipos}
-\input{parts/prototipos}
 
-\chapter{Resultados}
-\input{parts/results/results_integral}
+
+\chapter{Análise de Resultados}
+	\label{ch:analisederesultados}
+	\input{parts/results/results_integral}
 
 
 \chapter{Conclusão}
-\input{parts/conclusao}
-
-\chapter{Trabalhos futuros}
-\input{parts/futuros}
+	\label{ch:conclusao}
+	\input{parts/conclusao}
+	\input{parts/futuros}
 
 
 % Referencias Bibliograficas
