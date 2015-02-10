@@ -3,32 +3,40 @@ The style file: abnt-alf.bst
 Database file #1: abnt-options.bib
 Database file #2: bibliography.bib
 Name 1 in "Heinly J. Dunn E., and Frahm J.-M." has a comma at the end for entry binaryfeatures
-while executing---line 1412 of file abnt-alf.bst
+while executing---line 2095 of file abnt-alf.bst
 Name 1 in "Heinly J. Dunn E., and Frahm J.-M." has a comma at the end for entry binaryfeatures
-while executing---line 1412 of file abnt-alf.bst
+while executing---line 2095 of file abnt-alf.bst
 Name 1 in "Heinly J. Dunn E., and Frahm J.-M." has a comma at the end for entry binaryfeatures
-while executing---line 1412 of file abnt-alf.bst
-Name 1 in "E. Rosten, G. Reitmayr, and T. Drummond" has a comma at the end for entry VideoAnotation
-while executing---line 1412 of file abnt-alf.bst
-Name 1 in "E. Rosten, G. Reitmayr, and T. Drummond" has a comma at the end for entry VideoAnotation
-while executing---line 1412 of file abnt-alf.bst
-Name 1 in "E. Rosten, G. Reitmayr, and T. Drummond" has a comma at the end for entry VideoAnotation
-while executing---line 1412 of file abnt-alf.bst
+while executing---line 2095 of file abnt-alf.bst
 Name 1 in "Heinly J. Dunn E., and Frahm J.-M." has a comma at the end for entry binaryfeatures
-while executing---line 1464 of file abnt-alf.bst
+while executing---line 2095 of file abnt-alf.bst
 Name 1 in "Heinly J. Dunn E., and Frahm J.-M." has a comma at the end for entry binaryfeatures
-while executing---line 1464 of file abnt-alf.bst
+while executing---line 2095 of file abnt-alf.bst
+Name 1 in "E. Rosten, G. Reitmayr, and T. Drummond" has a comma at the end for entry VideoAnotation
+while executing---line 2095 of file abnt-alf.bst
+Name 1 in "E. Rosten, G. Reitmayr, and T. Drummond" has a comma at the end for entry VideoAnotation
+while executing---line 2095 of file abnt-alf.bst
+Name 1 in "E. Rosten, G. Reitmayr, and T. Drummond" has a comma at the end for entry VideoAnotation
+while executing---line 2095 of file abnt-alf.bst
+Name 1 in "E. Rosten, G. Reitmayr, and T. Drummond" has a comma at the end for entry VideoAnotation
+while executing---line 2095 of file abnt-alf.bst
+Name 1 in "E. Rosten, G. Reitmayr, and T. Drummond" has a comma at the end for entry VideoAnotation
+while executing---line 2095 of file abnt-alf.bst
 Name 1 in "Heinly J. Dunn E., and Frahm J.-M." has a comma at the end for entry binaryfeatures
-while executing---line 1464 of file abnt-alf.bst
+while executing---line 2150 of file abnt-alf.bst
+Name 1 in "Heinly J. Dunn E., and Frahm J.-M." has a comma at the end for entry binaryfeatures
+while executing---line 2150 of file abnt-alf.bst
+Name 1 in "Heinly J. Dunn E., and Frahm J.-M." has a comma at the end for entry binaryfeatures
+while executing---line 2150 of file abnt-alf.bst
 Name 1 in "E. Rosten, G. Reitmayr, and T. Drummond" has a comma at the end for entry VideoAnotation
-while executing---line 1464 of file abnt-alf.bst
+while executing---line 2150 of file abnt-alf.bst
 Name 1 in "E. Rosten, G. Reitmayr, and T. Drummond" has a comma at the end for entry VideoAnotation
-while executing---line 1464 of file abnt-alf.bst
+while executing---line 2150 of file abnt-alf.bst
 Name 1 in "E. Rosten, G. Reitmayr, and T. Drummond" has a comma at the end for entry VideoAnotation
-while executing---line 1464 of file abnt-alf.bst
-Warning--campo journal vazio em performance_evaluation
-Warning--campo journal vazio em ORB
-Warning--campo journal vazio em localfeaturedetector
-Warning--Aviso: Este estilo está em desenvolvimento.
-Warning--Caso tenha problemas procure por http://abntex.codigolivre.org.br
-(There were 12 error messages)
+while executing---line 2150 of file abnt-alf.bst
++---------------------------------------------------------+
+| Estilo bibliográfico abnt-alf.bst versão 1.45.2.1           |
+| Em caso de dúvidas ou problemas com este estilo procure |
+| http://abntex.codigolivre.org.br                        |
++---------------------------------------------------------+
+(There were 16 error messages)

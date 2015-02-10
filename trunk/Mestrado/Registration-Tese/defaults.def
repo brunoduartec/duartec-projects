@@ -40,5 +40,6 @@
 \gdef\FRDitaorgaointernobabel{Orgao Interno..}
 \gdef\FRDitapalavrasautorbabel{Palavras chave do autor..}
 \gdef\FRDitapalavrasresultbabel{Palavras chave resultantes..}
+\gdef\FRDitapalavraapresentacaobabel{Curso Programa Area Orientador Data..}
 \gdef\FDRitaabstractcontent{Resumo do Trabalho..}
     

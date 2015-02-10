@@ -42,13 +42,14 @@
 % % --------------------------------------------------------------------
 % %  Verificação se alvo será gerado pelo PDFLaTeX ou não
 % % --------------------------------------------------------------------
-\newif\ifpdf
-  \ifx\pdfoutput\undefined
-      \pdffalse
-  \else
-      \pdfoutput=1
-      \pdftrue
- \fi
+\IfFileExists{ifpdf.sty}{\RequirePackage{ifpdf}}{\newif\ifpdf}
+%\newif\ifpdf
+%  \ifx\pdfoutput\undefined
+ %     \pdffalse
+  %\else
+   %   \pdfoutput=1
+    %  \pdftrue
+ %\fi
 
 %==============================================================================
 %%% Declaracao das opcoes
@@ -84,7 +85,7 @@
     \newcommand{\itaformattitletext}[1]{\large{#1}}
     \newcommand{\itaformatadvisorword}[1]{#1}
 
-    \renewcommand{\itaspacing}{2}
+    \renewcommand{\itaspacing}{1.5}
 }
 
 %==============================================================================
@@ -127,7 +128,7 @@
 \RequirePackage{amsfonts}                 % Fontes p/ conjuntos: R,Z,H,...
 \RequirePackage{lastpage}
 \RequirePackage{indentfirst}
-\RequirePackage{caption2}
+\RequirePackage[labelsep=endash]{caption}
 \RequirePackage{longtable}
 \RequirePackage{array}
 \RequirePackage{tabularx}
@@ -169,7 +170,9 @@
 
 %==============================================================================
 %%% ABNTeX ...
-\RequirePackage[alf,abnt-emphasize=bf,abnt-etal-list=0,abnt-etal-text=it]{abntcite}
+\RequirePackage[alf,abnt-emphasize=bf,abnt-etal-cite=2,abnt-etal-list=0,abnt-etal-text=it]{abntcite}
+%\RequirePackage{natbib}
+
 %==============================================================================
 
 %==============================================================================
@@ -204,7 +207,7 @@
   \gdef\@advisor{#2~#3 \\ #1}
   \gdef\itaadvisorwordbabelll{#1}
 }
-% Co-orientador...  (opcional)
+% Coorientador...  (opcional)
 \newcommand{\coadvisor}[4][\itacoadvisorwordbabel]{%
   \gdef\@itacoadvisorname{#3}
   \gdef\@itacoadvisortitle{#2}
@@ -212,7 +215,7 @@
   \gdef\@coadvisor{#2~#3 \\ #1}
   \gdef\itacoadvisorwordbabelll{#1}
 }
-% Chefe da Divisao de Pos-Graduacao...
+% Pro-Reitor de Pos-Graduacao e Pesquisa...
 \newcommand{\boss}[3][\itabosswordbabel]{      %[word] ,title, name
   \renewcommand{\itabossname}{#3}
   \renewcommand{\itabosstitle}{#2}
@@ -223,7 +226,7 @@
 \newcommand{\course}[1]{
   \renewcommand{\itaworkcourse}{#1}
 }
-% Divisao...
+% Programa de Pos-Graduacao...
 \newcommand{\dept}[1]{
   \renewcommand{\itaworkdept}{#1}
 }
@@ -356,7 +359,7 @@
 
    \vspace*{\stretch{2}}
 
-   \begin{spacing}{1.5}
+   \begin{spacing}{1.0}
    Campo Montenegro \\ S\~{a}o Jos\'{e} dos Campos, SP - \itacountrybabel \\ \@publyear
    \end{spacing}
 
@@ -373,14 +376,16 @@
 	\thispagestyle{empty}
 	\begin{flushleft}
 		\begin{footnotesize}
+		\begin{onehalfspacing}
  		{\setlength{\baselineskip}{0.8\baselineskip}
 		  \textbf{\itaciptitlebabel} \\
-		  \textbf{\itacipbibbabel}\\}
-		\end{footnotesize}
+		  \textbf{\itacipbibbabel}\\}		
 		\@cipwindow
 		\@bibref
 		\@rights
-        \end{flushleft}
+		\end{onehalfspacing}
+    \end{footnotesize}
+				\end{flushleft}
         \vfill
 
 }
@@ -392,6 +397,7 @@
 	   	\vspace*{0.4ex}
                 \setlength{\parindent}{0.5em}%
 		\begin{footnotesize}
+ 		   \begin{onehalfspacing}
  		    \setlength{\baselineskip}{0.7\baselineskip}
 		    \noindent\@authorlast, \@authorfirst\par
                     \@title\ / \@authorfirst\ \@authorlast.\\
@@ -400,7 +406,9 @@
 		    \vspace{\baselineskip}
 		    \itacipdata1babel
                     \vspace{0.4ex}
-                   \end{footnotesize}
+      \end{onehalfspacing}
+     \end{footnotesize}
+	   
 	   \end{flushleft}
         \end{minipage}%
         }%
@@ -408,15 +416,19 @@
 
 % Referencia Bibliografica
 \def\@bibref{%
+			 
        \vspace*{\stretch{2}}
        \normalsize
           \textbf{\itarefbibnamecipbabel} \par
-
+			\begin{onehalfspacing}
           {\setlength{\baselineskip}{0.7\baselineskip}
           \MakeUppercase{\@authorlast}, \@authorfirst. \textbf{\@title}. \@publyear.                     \NumPenultimaPagina f. \itacip2babel \\}
+       \end{onehalfspacing}
 }
 % Cessao de Direitos
+
 \def\@rights{%
+			 \begin{onehalfspacing}
        \vspace*{\stretch{4}}
        {\normalsize\textbf{\itacedirnamebabel}} \par
        {\setlength{\baselineskip}{0.7\baselineskip}
@@ -434,6 +446,7 @@
            \@authorfirst\ \@authorlast\\
 	   \@itaauthoraddress\\
 	   CEP \@itaauthorcep\ -- \@itaauthorcity\\}
+	   \end{onehalfspacing}
 }
 
 %==============================================================================
@@ -446,7 +459,7 @@
    \thispagestyle{empty}
 
    \noindent
-   \begin{spacing}{1.2}
+   \begin{spacing}{1.0}
        \begin{center}
          \itaformatworktitle{\MakeUppercase{\@title}}
          \vfill
@@ -455,8 +468,10 @@
        \end{center}
        \raggedright{\normalsize{\namepageexaminers}}
        \vfill
-    \end{spacing}
+    
         \raggedright\@memberslist
+        
+        \end{spacing}
      \vfill
      \center
          \large\textbf{ITA}
@@ -492,7 +507,7 @@
 \newenvironment{abstract}
 {\chapter*{\nameabstract}
  \pdfbookmark[0]{\nameabstract}{resumo}
- \begin{spacing}{2}}
+ \begin{spacing}{1.5}}
 {\end{spacing} }
 
 %==============================================================================
@@ -501,7 +516,7 @@
 \newenvironment{englishabstract}
 {\chapter*{\nameengabstract}
  \pdfbookmark[0]{\nameengabstract}{abstract}
- \it \begin{spacing}{2}} %abstract em italico ativado
+  \begin{spacing}{1.5}} %abstract em italico ativado
 { \end{spacing} }
 
 %==============================================================================
@@ -887,7 +902,7 @@
 \setlength\belowcaptionskip{4\p@}
 
 % Redefinicao do caracter que separa o label Figura ou Tabela do texto
-\renewcommand*\captionlabeldelim{\ --}
+%\renewcommand*\captionlabeldelim{\ --}
 
 %==============================================================================
 % %%% Indentar a segunda linha de captions longos das listas 
@@ -918,6 +933,7 @@
 \newcommand{\FRDitaorgaointerno}[1]{\gdef\FRDitaorgaointernobabel{#1}}
 \newcommand{\FRDitapalavrasautor}[1]{\gdef\FRDitapalavrasautorbabel{#1}}
 \newcommand{\FRDitapalavrasresult}[1]{\gdef\FRDitapalavrasresultbabel{#1}}
+\newcommand{\FRDitapalavraapresentacao}[1]{\gdef\FRDitapalavraapresentacaobabel{#1}}
 
 \newcommand{\FRDitaresumo}[1]{
     \gdef\FDRitaabstractcontent{#1}
@@ -1004,7 +1020,7 @@
 	\hline
 	\multicolumn{ 4}{|l|}{$^{7.}$ \scriptsize INSTITUIÇÃO(ÕES)/ÓRGÃO(S) 
 	    INTERNO(S)/DIVISÃO(ÕES):} \\
-	\multicolumn{ 4}{|l|}{Instituto Tecnológico de Aeronáutica. \FRDitaorgaointernobabel} \\[\esp]
+	\multicolumn{ 4}{|l|}{\FRDitaorgaointernobabel} \\[\esp]
 	\hline
 	\multicolumn{ 4}{|l|}{$^{8.}$ \scriptsize PALAVRAS-CHAVE SUGERIDAS PELO AUTOR:} \\
 	\multicolumn{ 4}{|p{17cm}|}{\FRDitapalavrasautorbabel} \\[\esp]
@@ -1015,7 +1031,7 @@
 	\multicolumn{ 4}{|l|}{$^{10.}$ {\scriptsize APRESENTAÇÃO:}  \hfill 
 		(\N) \textbf{Nacional} \ \ \ 
 		(\I) \textbf{Internacional} } \\
-	\multicolumn{ 4}{|l|}{ITA, São José dos Campos, \@publyear, \NumPenultimaPagina\ páginas} \\[\esp]
+	\multicolumn{ 4}{|p{17cm}|}{\FRDitapalavraapresentacaobabel} \\[\esp]
 	\hline
 	\multicolumn{ 4}{|l|}{$^{11.}$ \scriptsize RESUMO:} \\
 	\multicolumn{ 4}{|c|}{\parbox[t][12cm]{.95\textwidth}{\FDRitaabstractcontent}} \\[\esp]

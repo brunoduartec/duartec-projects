@@ -1,18 +1,24 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
 \setlength{\labelsep}{0pt}\begin{thebibliography}{}
 \providecommand{\abntrefinfo}[3]{}
 \providecommand{\abntbstabout}[1]{}
-\abntbstabout{1.29 }
-
-\bibitem[Adam~Schmidt 2012]{robotnavigation}
-\abntrefinfo{Adam~Schmidt}{ADAM~SCHMIDT}{2012}
-{ADAM~SCHMIDT, e.~a. The comparison of point feature detectors and descriptors
-  in the context of robot navigation.
-\textbf{ Workshop on Perception for Mobil e Rob ots Autonomy}, 2012.}
+\abntbstabout{1.45.2.1 }
 
 \bibitem[Azuma 1997]{SurveyAR}
 \abntrefinfo{Azuma}{AZUMA}{1997}
 {AZUMA, R.~T. A survey of augmented reality.
-\textbf{ Hughes Research Laboratories}, aug 1997.}
+\textbf{Hughes Research Laboratories}, aug 1997.}
+
+\bibitem[Bay Tinne~Tuytelaars 2008]{SURF}
+\abntrefinfo{Bay Tinne~Tuytelaars}{BAY TINNE~TUYTELAARS}{2008}
+{BAY TINNE~TUYTELAARS, L. V.~G. H. Surf : Speeded up robust features.
+\textbf{ETH Zurich}, 2008.}
+
+\bibitem[Bradski 2008]{OpenCvOReilly}
+\abntrefinfo{Bradski}{BRADSKI}{2008}
+{BRADSKI, A.~K. G. \textbf{Learning OpenCv Computer vision with the Opencv
+  Library}. [S.l.]: O´REILLY, 2008.}
 
 \bibitem[Comparison of the OpenCV feature detection algorithms
   2014]{opencv-comparing-1}
@@ -33,13 +39,7 @@ Available at
 \bibitem[E. e J.-M. 2012]{binaryfeatures}
 \abntrefinfo{E. e J.-M.}{E.; J.-M.}{2012}
 {E., H. J.~D.; J.-M., F. Comparative evaluation of binary features.
-\textbf{ Computer Vision–ECCV, Springer}, 2012.}
-
-\bibitem[E.~Rosten e Drummond 2005]{VideoAnotation}
-\abntrefinfo{E.~Rosten e Drummond}{E.~ROSTEN; DRUMMOND}{2005}
-{E.~ROSTEN, G.~R.; DRUMMOND, T. Real-time video annotations for augmented
-  reality.
-\textbf{ International Symposium on Visual Computing}, 2005.}
+\textbf{Computer Vision–ECCV, Springer}, 2012.}
 
 \bibitem[Feature descriptor comparison report 2014]{descriptor-comparing}
 \abntrefinfo{Feature\ldots}{FEATURE\ldots}{2014}
@@ -48,54 +48,44 @@ Available at
   \url{http://computer-vision-talks.com/articles/2011-08-19-feature-descriptor-comparison-report/}
   (2015/19/01).}
 
-\bibitem[Gary~Bradski 2008]{OpenCvOReilly}
-\abntrefinfo{Gary~Bradski}{GARY~BRADSKI}{2008}
-{GARY~BRADSKI, A.~K. \textbf{ Learning OpenCv Computer vision with the Opencv
-  Library}. [S.l.]: O´REILLY, 2008.}
-
 \bibitem[GIL 2010]{ElaborarPesquisa}
 \abntrefinfo{GIL}{GIL}{2010}
-{GIL, A.~C. \textbf{ Como elaborar projetos de pesquisa}. [S.l.]: Atlas, 2010.}
+{GIL, A.~C. \textbf{Como elaborar projetos de pesquisa}. [S.l.]: Atlas, 2010.}
 
-\bibitem[Herbert~Bay Tinne~Tuytelaars 2008]{SURF}
-\abntrefinfo{Herbert~Bay Tinne~Tuytelaars}{HERBERT~BAY TINNE~TUYTELAARS}{2008}
-{HERBERT~BAY TINNE~TUYTELAARS, L. V.~G. Surf : Speeded up robust features.
-\textbf{ ETH Zurich}, 2008.}
-
-\bibitem[Krystian~Mikolajczyk 2005]{performance_evaluation}
-\abntrefinfo{Krystian~Mikolajczyk}{KRYSTIAN~MIKOLAJCZYK}{2005}
-{KRYSTIAN~MIKOLAJCZYK, C.~S. A performance evaluation of local descriptors.
-feb 2005.}
-
-\bibitem[Leutenegger, Chli e Siegwart 2011]{BRISK}
-\abntrefinfo{Leutenegger, Chli e Siegwart}{LEUTENEGGER; CHLI; SIEGWART}{2011}
+\bibitem[Leutenegger \textit{et al.} 2011]{BRISK}
+\abntrefinfo{Leutenegger \textit{et al.}}{LEUTENEGGER \textit{et al.}}{2011}
 {LEUTENEGGER, S.; CHLI, M.; SIEGWART, Y. Brisk: Binary robust invariant
-  scalable keypoints. In:  \textbf{ In Computer Vision (ICCV), 2011 IEEE
+  scalable keypoints. In:  \textbf{In Computer Vision (ICCV), 2011 IEEE
   International Conference on}. [S.l.: s.n.], 2011. p. 2548--2555.}
 
 \bibitem[Lowe 2004]{SIFT}
 \abntrefinfo{Lowe}{LOWE}{2004}
 {LOWE, D.~G. Distinctive image features from scale-invariant keypoints.
-\textbf{ Computer Science Department University of British Columbia Vancouver,
+\textbf{Computer Science Department University of British Columbia Vancouver,
   B.C., Canada}, 2004.}
 
 \bibitem[M. e H. 2013]{lowlevelfeature}
 \abntrefinfo{M. e H.}{M.; H.}{2013}
 {M., E. gayar; H., S. A comparative study of image low level feature extraction
   algorithms.
-\textbf{ of image low level feature extraction algorithms, Egyptian Informatics
+\textbf{of image low level feature extraction algorithms, Egyptian Informatics
   Journal}, 2013.}
+
+\bibitem[Mikolajczyk 2005]{performance_evaluation}
+\abntrefinfo{Mikolajczyk}{MIKOLAJCZYK}{2005}
+{MIKOLAJCZYK, C.~S. K. A performance evaluation of local descriptors.
+feb 2005.}
 
 \bibitem[Ozkan 2014]{Well-Known}
 \abntrefinfo{Ozkan}{OZKAN}{2014}
-{OZKAN, S.~I. \textbf{ A Comparative Evaluation of Well-known Feature Detectors
+{OZKAN, S.~I. \textbf{A Comparative Evaluation of Well-known Feature Detectors
   and Descriptors}. [S.l.]: International Journal of Applied Mathematics,
   Electronics and Computers, 2014.}
 
 \bibitem[Prodanov Cleber Cristiano;~Freitas 2013]{MetodologiaCientifica}
 \abntrefinfo{Prodanov Cleber Cristiano;~Freitas}{PRODANOV CLEBER
   CRISTIANO;~FREITAS}{2013}
-{PRODANOV CLEBER CRISTIANO;~FREITAS, E.~C. \textbf{ Metodologia do Trabalho
+{PRODANOV CLEBER CRISTIANO;~FREITAS, E.~C. \textbf{Metodologia do Trabalho
   Cientifico: Metodos e Tecnicas da Pesquisa e do Trabalho Academico}. [S.l.]:
   Universidade FEEVALE, 2013.}
 
@@ -103,13 +93,19 @@ feb 2005.}
 \abntrefinfo{Rosten e Drummond}{ROSTEN; DRUMMOND}{2005}
 {ROSTEN, E.; DRUMMOND, T. Fusing points and lines for high performance
   tracking.
-\textbf{ IEEE International Conference on Computer Vision}, vol. 2, 2005.}
+\textbf{IEEE International Conference on Computer Vision}, vol. 2, 2005.}
 
 \bibitem[Rosten e Drummond 2006]{FAST}
 \abntrefinfo{Rosten e Drummond}{ROSTEN; DRUMMOND}{2006}
 {ROSTEN, E.; DRUMMOND, T. Machine learning for high-speed corner detection. In:
-   \textbf{ In European Conference on Computer Vision}. [S.l.: s.n.], 2006. p.
+   \textbf{In European Conference on Computer Vision}. [S.l.: s.n.], 2006. p.
   430--443.}
+
+\bibitem[Rosten e Drummond 2005]{VideoAnotation}
+\abntrefinfo{Rosten e Drummond}{ROSTEN; DRUMMOND}{2005}
+{ROSTEN, G.~R. E.; DRUMMOND, T. Real-time video annotations for augmented
+  reality.
+\textbf{International Symposium on Visual Computing}, 2005.}
 
 \bibitem[Rublee 2011]{ORB}
 \abntrefinfo{Rublee}{RUBLEE}{2011}
@@ -118,24 +114,31 @@ feb 2005.}
 
 \bibitem[Schaeffer 2013]{Pedestrian}
 \abntrefinfo{Schaeffer}{SCHAEFFER}{2013}
-{SCHAEFFER, C. \textbf{ A Comparison of Keypoint Descriptors in the Context of
+{SCHAEFFER, C. \textbf{A Comparison of Keypoint Descriptors in the Context of
   Pedestrian Detection: FREAK vs. SURF vs. BRISK}. [S.l.]: Stanford University
   CS Department, 2013.}
 
-\bibitem[Silva, Oliveira e Giraldi 2003]{Devices}
-\abntrefinfo{Silva, Oliveira e Giraldi}{SILVA; OLIVEIRA; GIRALDI}{2003}
-{SILVA, R.; OLIVEIRA, J.~C.; GIRALDI, G.~A. \textbf{ Introduction to augmented
+\bibitem[Schmidt 2012]{robotnavigation}
+\abntrefinfo{Schmidt}{SCHMIDT}{2012}
+{SCHMIDT, e.~a. A. The comparison of point feature detectors and descriptors in
+  the context of robot navigation.
+\textbf{Workshop on Perception for Mobil e Rob ots Autonomy}, 2012.}
+
+\bibitem[Silva \textit{et al.} 2003]{Devices}
+\abntrefinfo{Silva \textit{et al.}}{SILVA \textit{et al.}}{2003}
+{SILVA, R.; OLIVEIRA, J.~C.; GIRALDI, G.~A. \textbf{Introduction to augmented
   reality}.
 [S.l.], 2003.}
 
-\bibitem[Tang 1993]{Tang93whydo}
-\abntrefinfo{Tang}{TANG}{1993}
-{TANG, J.~C. et al. Why do users like video. In:  \textbf{ Computer Supported
-  Cooperative Work}. [S.l.]: Kleuwer Academic Publisher, 1993. p. 163--196.}
+\bibitem[Tang \textit{et al.} 1993]{Tang93whydo}
+\abntrefinfo{Tang \textit{et al.}}{TANG \textit{et al.}}{1993}
+{TANG, J.~C.; ISAACS, E.~A.; INC, S.; TANG, J.~C.; ISAACS, E. Why do users like
+  video. In:  \textbf{Computer Supported Cooperative Work}. [S.l.]: Kleuwer
+  Academic Publisher, 1993. p. 163--196.}
 
-\bibitem[Tinne~Tuytelaars 2007]{localfeaturedetector}
-\abntrefinfo{Tinne~Tuytelaars}{TINNE~TUYTELAARS}{2007}
-{TINNE~TUYTELAARS, K.~M. Local invariant feature detectors: A survey.
+\bibitem[Tuytelaars 2007]{localfeaturedetector}
+\abntrefinfo{Tuytelaars}{TUYTELAARS}{2007}
+{TUYTELAARS, K.~M. T. Local invariant feature detectors: A survey.
 2007.}
 
 \bibitem[Understanding Features 2014]{understandingfeatures}
@@ -149,6 +152,6 @@ Available at
 \abntrefinfo{Welch}{WELCH}{1978}
 {WELCH, R.~B. Perceptual modification: Adapting to altered sensory
   environments.
-\textbf{ Academic Press}, 1978.}
+\textbf{Academic Press}, 1978.}
 
 \end{thebibliography}
