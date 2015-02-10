@@ -1,4 +1,4 @@
-%% $Id: abntex-abrev-pt_BR.def,v 1.3 2005/11/14 09:02:12 gweber Exp $
+%% $Id: abntex-abrev-pt_BR.def,v 1.2 2003/10/13 09:41:07 gweber Exp $
 %% name of this file nbr10522-1988.sty
 %% Copyright 2003 by the abnTeX group at http://abntex.codigolivre.org.br
 %%
@@ -6,10 +6,17 @@
 %%            http://www.latex-project.org/lppl.html
 %% You are free to modify this file under the LPPL.
 %%
+%% $Log: abntex-abrev-pt_BR.def,v $
+%% Revision 1.2  2003/10/13 09:41:07  gweber
+%% Passa a usar cvs-id.def para gerar informações sobre data e versão.
+%%
+%% Revision 1.1  2003/06/27 13:50:05  gweber
+%% Traduções português-inglês dos termos usados em abreviações.
+%%
 
 \input{cvs-id.def}
-\CVSExtract$Id: abntex-abrev-pt_BR.def,v 1.3 2005/11/14 09:02:12 gweber Exp $
-\CVSFile{abntex-abbrev-pt_BR}{\space definicao de abntex-abrev, traducao de termos en_US/pt_BR}
+\CVSExtract$Id: abntex-abrev-pt_BR.def,v 1.2 2003/10/13 09:41:07 gweber Exp $
+\CVSFile{nbr}{\space definicao de abntex-abrev, traducao de termos en_US/pt_BR}
 
 
 \RequirePackage{abntex-abrev}

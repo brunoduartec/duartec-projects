@@ -7,33 +7,33 @@
 % Mestrado
 %--------------------------------------------------------
 \gdef\itaoptioncoursemscbabel{Master}
-\gdef\itaworklevelmscbabel{Thesis}   % no ITA, Dissertacao eh Tese ... 
-\gdef\itaauthortitlemscbabel{Master in Science}
+\gdef\itaworklevelmscbabel{Dissertation}
+\gdef\itaauthortitlemscbabel{Master of Science}
 
 %--------------------------------------------------------
 % Doutorado
 %--------------------------------------------------------
 \gdef\itaoptioncoursedscbabel{Doctorate}
 \gdef\itaworkleveldscbabel{Thesis}
-\gdef\itaauthortitledscbabel{Doctor in Science}
-\gdef\itaauthortitledscfembabel{Doctor in Science}
+\gdef\itaauthortitledscbabel{Doctor of Science}
+\gdef\itaauthortitledscfembabel{Doctor of Science}
 
 %--------------------------------------------------------
 %Exame de Qualificacao
 %--------------------------------------------------------
 \gdef\itaworklevelqualibabel{Qualifying Exam}
-\gdef\itaqualifictextbabel{{\nh{\itaworklevel\ presented in partial fulfillment of the requirements for the degree of Doctor in Science in the Course of \itaworkcourse, \itaworkarea\ {A}rea}}}
+\gdef\itaqualifictextbabel{{\nh{\itaworklevel\ presented in partial fulfillment of the requirements for the degree of Doctor of Science in the Course of \itaworkcourse, \itaworkarea\ {A}rea}}.}
 
-\gdef\itanametitlequalibabel{ITA -- \textsc{Technological Institute of Aeronautics}}
+\gdef\itanametitlequalibabel{ITA -- \textsc{Instituto Tecnol\'{o}gico de Aeron\'{a}utica}}
 \gdef\itaposnametitlequalibabel{\textsc{Graduate in \itaworkcourse}}
 \gdef\itaarenametitlequalibabel{\textsc{\itaworkarea\ Area}}
 
 %--------------------------------------------------------
 %Tese
 %--------------------------------------------------------
-\gdef\itatitletextbabel{\nh{\itaworklevel\ presented to the Faculty of the Department of Graduate Studies of the Aeronautics Institute of Technology, in partial fulfillment of the requirements for the Degree of \itaauthortitle\ in the Course of \itaworkcourse, Area \itaworkarea}}
+\gdef\itatitletextbabel{\nh{\itaworklevel\ presented to the Instituto Tecnol\'{o}gico de Aeron\'{a}utica, in partial fulfillment of the requirements for the degree of \itaauthortitle\ in the Program of \itaworkcourse, Field of \itaworkarea}\vspace{12pt}.}
 
-\gdef\itathesisapprovedmembersbabel{Thesis approved in its final version by signatories below:}
+\gdef\itathesisapprovedmembersbabel{\itaworklevel\ approved in its final version by signatories below:}
 \gdef\itacountrybabel{Brazil}
 
 %--------------------------------------------------------
@@ -74,14 +74,14 @@
 \gdef\itaadvisortitlebabel{Prof.~Dr.}                              %{Prof.~Dr.}
 \gdef\itaadvisorwordbabel{Advisor}                                 %{Orientador}
 
-\gdef\itacoadvisornamebabel{Coadvisor's Name}                      %{Nome do Co-orientador}
+\gdef\itacoadvisornamebabel{Coadvisor's Name}                      %{Nome do Coorientador}
 \gdef\itacoadvisortitlebabel{Prof.~Dr.}                            %{Prof.~Dr.}
-\gdef\itacoadvisorwordbabel{Co-advisor}                            %{Co-orientador}
+\gdef\itacoadvisorwordbabel{Co-advisor}                            %{Coorientador}
 
-\gdef\itabossnamebabel{Division of Graduate Studies Head's Name}   
+\gdef\itabossnamebabel{Prorector of Graduate Studies and Research's Name}   
                                                                    %{Nome do Pro-Reitor de Pos-Graduacao e Pesquisa}
 \gdef\itabosstitle{Prof.~Dr.}                                      %{Prof.~Dr.}
-\gdef\itabosswordbabel{Head of the Faculty of the Department of Graduate Studies}   
+\gdef\itabosswordbabel{Prorector of Graduate Studies and Research}   
                                                                    %{Pro-Reitor de Pos-Graduacao e Pesquisa}
 
 \gdef\itaworklevelbabel{(Document)}                                %{(Documento)}
@@ -95,25 +95,23 @@
 %Pagina CIP
 %--------------------------------------------------------
 \gdef\itaciptitlebabel{Cataloging-in Publication Data}
-\gdef\itacipbibbabel{Division of Central Library of ITA/CTA}
+\gdef\itacipbibbabel{Documentation and Information Division/DCTA}
 
-\gdef\itacipdata1babel {\itaworklevel\ of \itaauthortitle\ -- Course of \itaworkcourse. Area of \itaworkarea\ -- Aeronautical Institute of  Technology,
+\gdef\itacipdata1babel {\itaworklevel\ of \itaauthortitle\ -- Course of \itaworkcourse. Area of \itaworkarea\ -- Instituto Tecnol\'{o}gico de Aeron\'{a}utica,
                         \@publyear. Advisor: \itaadvisortitle\ \itaadvisorname. 
 			\@ifundefined{@coadvisor}{}{Co-advisor: \@itacoadvisortitle\ \@itacoadvisorname .}\par
 			\vspace{\baselineskip}
-			\@cipkw\ I. Aerospace Technical Center. Aeronautics Institute of Technology. Division of \itaworkdept. II.~Title.\par}
+			\@cipkw\ I. Instituto Tecnol\'{o}gico de Aeron\'{a}utica. II.~Title.\par}
+
 
 \gdef\itarefbibnamecipbabel{BIBLIOGRAPHIC REFERENCE}
 
-\gdef\itacip2babel {\itaworklevel\ of \itaauthortitle\ -- Technological Institute of Aeronautics, S\~{a}o Jos\'{e} dos Campos.}
-
+\gdef\itacip2babel {\itaworklevel\ of \itaauthortitle\ -- Instituto Tecnol\'{o}gico de Aeron\'{a}utica, S\~{a}o Jos\'{e} dos Campos.}
 
 
 \gdef\itacedirnamebabel{CESSION OF RIGHTS}
 \gdef\itacipauthorname{AUTHOR NAME:}
 \gdef\itacipworktitlebabel{PUBLICATION TITLE:}
-\gdef\itacipworktype{TYPE OF PUBLICATION/YEAR:}
+\gdef\itacipworktype{PUBLICATION KIND/YEAR:}
 
-\gdef\itacesdirtextbabel{It is granted to Aeronautics Institute of Technology permission to reproduce copies of this thesis and to only loan or to sell copies for academic and scientific purposes. The author reserves other publication rights and no part of this thesis can be reproduced without the authorization of the author.}
-
-
+\gdef\itacesdirtextbabel{It is granted to Instituto Tecnol\'{o}gico de Aeron\'{a}utica permission to reproduce copies of this \itaworklevel\ and to only loan or to sell copies for academic and scientific purposes. The author reserves other publication rights and no part of this \itaworklevel\ can be reproduced without the authorization of the author.}

@@ -1,6 +1,7 @@
-%% $Header: /home/cvsroot/abntex/texmf/bibtex/bst/abntex/abnt-alf.bst,v 1.29 2002/11/22 18:20:32 gweber Exp $
-%% name of this file abnt-num.bst
-%% Copyright 2001-2002 by the abnTeX group at http://abntex.codigolivre.org.br
+%% $Id: abnt-alf.bst,v 1.45.2.1 2004/11/02 15:17:44 gweber Exp $
+%% Copyright 2001-2003 by the abnTeX group at http://abntex.codigolivre.org.br
+%%
+%% Mantainer: Gerald Weber <gweber@codigolivre.org.br>
 %%
 %% This file is distributed under the LaTeXProject Public License (LPPL) http://www.latex-project.org/lppl.html
 %% You are free to modify this file under the LPPL.
@@ -9,33 +10,97 @@
 %% The original source files were:
 %% merlin.mbs  (with options: `babel,nm-revf,aunm-semi,nmlm,x3,m3,dt-end,yr-com,xmth,vnum-x,volp-com,jwdpg,jwdvol,num-xser,btit-rm,bt-rm,pg-bk,add-pub,pub-date,pub-xpar,pre-pub,isbn,issn,pp,ed,abr,ednx,nfss')
 %% These sourefiles are copyrighted by Patrick W Daly
-%% 
+%%
+%% Nota sobre os Logs: Se aparecer abnt-num é por que as aletarções foram feitas
+%% neste arquivo e depois copiadas para abnt.alf e vice-versa.
+%%
+%% $Log: abnt-alf.bst,v $
+%% Revision 1.45.2.1  2004/11/02 15:17:44  gweber
+%% correcao do bug 239
+%%
+%% Revision 1.45  2003/07/23 12:06:01  gweber
+%% O comando apply.title.command agora atua sobre todas as ocorrências de title, mas
+%% não sobre campos title que estão vazios.
+%%
+%% Revision 1.44  2003/07/22 16:26:01  gweber
+%% Adicionada a opção abnt-title-command. Com esta opção pode-se definir o comando
+%% \bibtextitlecommand que permite formatações especiais no titulo.
+%%
+%% Revision 1.43  2003/06/05 14:34:05  gweber
+%% Introduzido filtro.url.tex e filtro.url.html, a função do primeiro é alterar uma url de tal maneira
+%% que que o TeX possa processá-la sem problemas. A do segundo é fazer a mesma coisa
+%% para a url que é passada para html ou hyperref.
+%%
+%% Revision 1.42  2003/06/04 13:18:07  gweber
+%% Introduzidas as opções hyperref para abnt.url.package com isso os campos url são formatados agora como hyperlinks ativos.
+%% Também foram acrescentadas a opção abnt.doi que permite selecionar o tratamento que recebe uma url começada com doi:
+%%
+%% Revision 1.41  2003/04/08 00:39:39  gweber
+%% Implementada a entrada @hidden que gera um \hiddenbibitem (só alf),
+%% ou seja uma entrada que não aparece na lista de referências e que pode ser
+%% usada com o comando \apud e \apudonline.
+%%
+%% Revision 1.40  2003/04/01 19:34:47  gweber
+%% consertado bug de ordenação alfabética, agora a ordenação em sort.format.names é igual a de format.names
+%%
+%% Revision 1.39  2003/03/25 14:06:19  gweber
+%% Inicio da adaptação para ISO 690:1987.
+%% Acrescentada a opção iso-author-punctuation cuja opção
+%% void gera iniciais juntas e sem ponto.
+%%
+%% Revision 1.38  2003/03/22 22:59:13  gweber
+%% abnt-nbr10520 foi substituído por abnt-cite-style.
+%% A função recompose.name recompõe um nome complicado, mas a função
+%% ainda é experimental e não está sendo usada no momento. Mesmo
+%% porque há nomes que o próprio bibtex tem problemas para tratar.
+%% A função presort for modificada de modo a poder manter o SORT em
+%% abnt-num sem realmente ordenar alfabeticamente.
+%%
 ENTRY
-  { address author booktitle booksubtitle chapter edition editor editortype
+  { address author
+    booktitle booksubtitle
+    chapter conference-number conference-year conference-location
+    edition editor editortype
     dimensions furtherresp
-    howpublished institution illustrated
+    howpublished illustrated institution
     isbn issn journal key month note marginnote number organization
     org-short pages pagename
-    publisher school
+    publisher reprinted-from reprinted-text school
     series subtitle section title type url urlaccessdate
-    volume year
-    abnt-emphasize abnt-experimental abnt-full-initials abnt-ldots-type
-    abnt-missing-year abnt-note abnt-repeated-field-omit
-    abnt-show-options abnt-refinfo abnt-thesis-year abnt-dont-use-etal
-    abnt-no-etal-label}{}{ label extra.label}
+    volume year year-presented
+    abnt-and-type
+    abnt-doi abnt-dont-use-etal
+    abnt-etal-cite abnt-etal-list abnt-etal-text abnt-emphasize abnt-experimental
+    abnt-full-initials
+    abnt-last-names abnt-ldots-type
+    abnt-missing-year abnt-cite-style abnt-no-etal-label abnt-note
+    abnt-repeated-author-omit abnt-repeated-title-omit
+    abnt-show-options abnt-refinfo abnt-thesis-year abnt-url-package
+    abnt-title-command
+    abnt-verbatim-entry
+    iso-abbreviation iso-author-punctuation iso-date-place
+    }{}{ label extra.label year.label}
 
 %revision string
 STRINGS { abnt.bst.revision }
 
 %general purpose strings
-STRINGS { s t }
+STRINGS { r s t }
 
 %variables needed to implement the various abnt options
-STRINGS {abnt.emphasize}
-INTEGERS {abnt.alf abnt.experimental abnt.full.initials abnt.ldots.type
+STRINGS {abnt.etal.text abnt.emphasize previous.author previous.title}
+INTEGERS {abnt.alf  abnt.cite.style abnt.doi
+          abnt.experimental abnt.etal.cite abnt.etal.list
+          abnt.full.initials
+          abnt.last.names abnt.ldots.type
           abnt.missing.year
-          abnt.repeated.field.omit abnt.refinfo abnt.show.options
-          abnt.thesis.year abnt.dont.use.etal abnt.no.etal.label}
+          abnt.refinfo  abnt.repeated.author.omit abnt.repeated.title.omit
+	  abnt.show.options abnt.and.type
+          abnt.title.command
+	  abnt.thesis.year
+	  abnt.url.package abnt.verbatim.entry
+	  iso.abbreviation iso.author.punctuation iso.date.place
+	  repeated.author}
 
 %needed for title formatting
 INTEGERS { title.lenght title.pos first.word no.bracket}
@@ -43,6 +108,24 @@ STRINGS { title.char}
 
 %needed for controlling the sentence position
 INTEGERS {output.state before.all mid.sentence after.sentence after.block }
+
+%needed for url identification
+INTEGERS {url.type}
+
+%static values for options
+%values for abnt.doi
+FUNCTION {abnt.doi.expand.to.url} {#0} %expands a doi address to its url correspondent
+FUNCTION {abnt.doi.link}          {#1} %links doi to its url correspondent
+FUNCTION {abnt.doi.leave.as.is}   {#2} %shows doi as is, external viewer will have
+                                       %to know what to do with a "doi:" document
+
+%values for url types
+FUNCTION {unknown.url} {#0}
+FUNCTION {http.url}    {#1}
+FUNCTION {file.url}    {#2}
+FUNCTION {ftp.url}     {#3}
+FUNCTION {doi.url}     {#4}
+FUNCTION {mailto.url}  {#5}
 
 FUNCTION {init.state.consts}
 { #0 'before.all :=
@@ -68,7 +151,7 @@ FUNCTION {output.nonnull}
   s                                         %now comes s
 }
 FUNCTION {output.nonnull.dash}
-{ 's :=                                     %the argument is written into s
+{ 's :=                                   %the argument is written into s
   output.state mid.sentence =
     { " --- " * write$ }                       %mid.sentence first write comma
     { output.state after.block =
@@ -100,12 +183,6 @@ FUNCTION {output.check}  %like ouput, but complains if t empty
     'output.nonnull
   if$
 }
-FUNCTION {fin.entry}
-{ add.period$ write$
-abnt-note empty$ 'skip$
-{"\footnote{" abnt-note * "}" * write$} if$
-"}" write$
-newline$ }
 
 FUNCTION {new.block}
 { output.state before.all =
@@ -179,15 +256,13 @@ FUNCTION {field.or.null}
 FUNCTION {emphasize}
 { duplicate$ empty$
     { pop$ "" }
-    { abnt.emphasize "{"  * " " * swap$ * "}" * }
+    { abnt.emphasize "{"  *  swap$ * "}" * }
   if$
 }
 
 
-FUNCTION {same.field} { "\underline{\ \ \ \ \ \ \  \ }" }
-
 FUNCTION {tie.or.space.prefix} %if text length less than 3 chars. uses a tie
-{ duplicate$ text.length$ #3 <
+{ duplicate$ text.length$ #5 <
     { "~" }
     { " " }
   if$
@@ -199,15 +274,19 @@ FUNCTION {no.space} { { "" } swap$ }
 
 FUNCTION {space.word} { " " swap$ * " " * }
 
-FUNCTION {bbl.and} { " e "}
+FUNCTION {bbl.and}
+{ abnt.and.type #0 = {" e "} 'skip$ if$
+  abnt.and.type #1 = {" \& "} 'skip$ if$}
 FUNCTION {bbl.chapter} { "cap." }
+FUNCTION {bbl.colon} {": "}
 FUNCTION {bbl.editors} { "Ed." }
 FUNCTION {bbl.editor} { "Ed." }
 FUNCTION {bbl.edby} { "editado por" }
 FUNCTION {bbl.edition} { "ed." }
 FUNCTION {bbl.empty} {""}
-FUNCTION {bbl.etal}{ " et al."}
-FUNCTION {bbl.in} { "In: " }
+FUNCTION {bbl.etal}{abnt.etal.text "" = {""} {" " abnt.etal.text *} if$}
+FUNCTION {bbl.doi.url} {"http://dx.doi.org/"}
+FUNCTION {bbl.in}{ "In" iso.abbreviation 'skip$ { bbl.colon *} if$}
 FUNCTION {bbl.ldots} %#0 use nothing, #1 use \ldots, #2 use $\ldots$, 3# use {...}
 {abnt.ldots.type
   {abnt.ldots.type #1 = {"\ldots"}   'skip$ if$
@@ -223,7 +302,10 @@ FUNCTION {bbl.missing.year}
  if$}
 FUNCTION {bbl.monography} { "Monografia" }
 FUNCTION {bbl.mthesis} { "Dissertação" }
-FUNCTION {bbl.number} { "n." }
+FUNCTION {bbl.no.address} {"[S.l.]"}
+FUNCTION {bbl.no.address.no.publisher} {"[S.l.: s.n.]"}
+FUNCTION {bbl.no.publisher} {"[s.n.]"}
+FUNCTION {bbl.number} { iso.abbreviation {"no."} {"n."} if$ }
 FUNCTION {bbl.nr} { "n." }
 FUNCTION {bbl.of} { "de" }
 FUNCTION {bbl.phd} { "Doutorado" }
@@ -235,15 +317,16 @@ FUNCTION {bbl.pages}
    if$
    }
 FUNCTION {bbl.page} { bbl.pages }
+FUNCTION {bbl.reprint} {"Separata de"}
 FUNCTION {bbl.semicolon} { "; "}
-FUNCTION {bbl.no.address} {"[S.l.]"}
-FUNCTION {bbl.no.address.no.publisher} {"[S.l.: s.n.]"}
-FUNCTION {bbl.no.publisher} {"[s.n.]"}
+FUNCTION {bbl.same.field} {"\underline{\ \ \ \ \ \ \ \ }"}
 FUNCTION {bbl.techrep} { "Rel. Tec." }
-FUNCTION {bbl.url.accessdate} {"Acesso em: "}
-FUNCTION {bbl.url.begin} {"Dispon{\'\i}vel em: $<$"}
-FUNCTION {bbl.url.end} {"$>$"}
-FUNCTION {bbl.volume} { "v." }
+FUNCTION {bbl.url.accessdate}
+  {iso.abbreviation { "Cited "} {"Acesso em: "} if$}
+FUNCTION {bbl.url.available}
+{ iso.abbreviation {"Available from Internet: "} {"Dispon{\'\i}vel em: "} if$}
+FUNCTION {bbl.void} {""}
+FUNCTION {bbl.volume} { iso.abbreviation {"vol."} {"v."} if$ }
 
 
 MACRO {jan} {"jan."}
@@ -264,6 +347,12 @@ FUNCTION {is.num}
 { chr.to.int$
   duplicate$ "0" chr.to.int$ < not
   swap$ "9" chr.to.int$ > not and
+}
+FUNCTION {str.to.int}
+{ duplicate$ is.num
+    {chr.to.int$ #48 -}
+    'skip$
+  if$
 }
 FUNCTION {bibinfo.check} %usage: field "field" bibinfo.check
 { swap$ duplicate$ missing$
@@ -287,26 +376,170 @@ FUNCTION {bibinfo.warn}
   if$
 }
 
+FUNCTION {write.field.verbatim}
+{
+duplicate$ missing$
+  {pop$ pop$} 
+  {
+  s text.length$ #0 >
+    {s "," * newline$ write$ "" 's :=}
+    'skip$
+  if$
+  swap$
+  "={" * swap$ * "}" *
+  s swap$ * 's :=
+  }
+if$
+}
+
+FUNCTION {write.entry.verbatim1}
+{
+   "address" 		address  		write.field.verbatim
+   "author" 		author   		write.field.verbatim
+   "booktitle" 		booktitle 		write.field.verbatim
+   "booksubtitle" 	booksubtitle 		write.field.verbatim
+   "chapter" 		chapter 		write.field.verbatim
+   "conference-number" 	conference-number 	write.field.verbatim
+   "conference-year" 	conference-year 	write.field.verbatim
+   "conference-location" conference-location 	write.field.verbatim
+   "edition" 		edition 		write.field.verbatim
+   "editor" 		editor 			write.field.verbatim
+   "editortype" 	editortype 		write.field.verbatim
+   "dimensions" 	dimensions 		write.field.verbatim
+   "furtherresp" 	furtherresp 		write.field.verbatim
+   "howpublished" 	howpublished 		write.field.verbatim
+   "illustrated" 	illustrated  		write.field.verbatim
+   "institution" 	institution 		write.field.verbatim
+   "isbn" 		isbn 			write.field.verbatim
+   "issn" 		issn 			write.field.verbatim
+   "journal" 		journal 		write.field.verbatim
+}
+FUNCTION {write.entry.verbatim2}
+{
+   "key" 		key 			write.field.verbatim
+   "month" 		month 			write.field.verbatim
+   "note" 		note 			write.field.verbatim
+   "marginnote" 	marginnote 		write.field.verbatim
+   "number" 		number 			write.field.verbatim
+   "organization" 	organization 		write.field.verbatim
+   "org-short" 		org-short 		write.field.verbatim
+   "pages" 		pages 			write.field.verbatim
+   "pagename" 		pagename 		write.field.verbatim
+   "publisher" 		publisher 		write.field.verbatim
+   "reprinted-from" 	reprinted-from 		write.field.verbatim
+   "reprinted-text" 	reprinted-text 		write.field.verbatim
+   "school" 		school 			write.field.verbatim
+   "series" 		series 			write.field.verbatim
+   "subtitle" 		subtitle 		write.field.verbatim
+   "section" 		section 		write.field.verbatim
+   "title" 		title 			write.field.verbatim
+   "type" 		type 			write.field.verbatim
+}
+FUNCTION {write.entry.verbatim3}
+{
+   "url" 		url 			write.field.verbatim
+   "urlaccessdate" 	urlaccessdate 		write.field.verbatim
+   "volume" 		volume 			write.field.verbatim
+   "year" 		year 			write.field.verbatim
+   "abnt-emphasize" 	abnt-emphasize 		write.field.verbatim
+   "abnt-experimental" 	abnt-experimental 	write.field.verbatim
+   "abnt-doi" 		abnt-doi	 	write.field.verbatim
+   "abnt-dont-use-etal" abnt-dont-use-etal 	write.field.verbatim
+   "abnt-full-initials" abnt-full-initials 	write.field.verbatim
+   "abnt-ldots-type" 	abnt-ldots-type 	write.field.verbatim
+   "abnt-missing-year" 	abnt-missing-year 	write.field.verbatim
+   "abnt-cite-style" 	abnt-cite-style 		write.field.verbatim
+   "abnt-no-etal-label" abnt-no-etal-label 	write.field.verbatim
+   %abnt-note
+   "abnt-repeated-author-omit" abnt-repeated-author-omit write.field.verbatim
+   "abnt-repeated-title-omit" abnt-repeated-title-omit write.field.verbatim
+   "abnt-show-options" 	abnt-show-options 	write.field.verbatim
+   "abnt-refinfo" 	abnt-refinfo 		write.field.verbatim
+   "abnt-thesis-year" 	abnt-thesis-year 	write.field.verbatim
+   "abnt-title-command" abnt-title-command 	write.field.verbatim
+   "abnt-url-package" 	abnt-url-package 	write.field.verbatim
+   "abnt-verbatim-entry" abnt-verbatim-entry 	write.field.verbatim
+}
+
+FUNCTION {write.entry.verbatim}
+{"" 's := "" 't :=
+  abnt.verbatim.entry
+  {"{\footnotesize\begin{verbatim}" newline$ write$
+   "@" type$ * "{" * cite$ * 's :=
+   write.entry.verbatim1
+   write.entry.verbatim2
+   write.entry.verbatim3
+   s "" = {"}"} {s "}" *} if$
+   newline$ write$
+   "\end{verbatim}}" newline$ write$}
+  {newline$}
+if$}
+
 STRINGS  { bibinfo}
 INTEGERS { nameptr namesleft numnames }
+
+FUNCTION {get.person} {"{vv }{ll}{, jj}{, ff}" format.name$}
+FUNCTION {get.last.name} {#1 "{ll}" format.name$}
+FUNCTION {get.first.name} {#1 "{ff}" format.name$}
+FUNCTION {get.von} {#1 "{vv}" format.name$}
+FUNCTION {get.jr} {#1 "{jj}" format.name$}
+FUNCTION {is.composed.von}
+  {get.person
+   get.von duplicate$ empty$ {pop$ #0}
+     {duplicate$
+      get.first.name empty$ not
+      swap$ get.last.name empty$ not and
+      } if$
+   }
+
+FUNCTION {recompose.name}
+  {get.person duplicate$ duplicate$ duplicate$
+   get.von #1 "{ll }" format.name$ swap$
+   get.last.name *
+   swap$ #1 "{, ff}" format.name$ *
+   swap$ get.von #1 "{ ff}" format.name$ *
+   }
+
+
+FUNCTION {format.single.name}
+{
+s nameptr get.person 'r :=
+abnt.last.names
+  {r #1 "{ll}{ jj}" format.name$ "u" change.case$
+   abnt.full.initials
+    {r #1 "{, ff}{ vv}" format.name$ *}
+    {r #1 "{, f.}{ vv}" format.name$ *}
+  if$}
+  {%r #1 is.composed.von {r #1 recompose.name 'r :=} 'skip$ if$
+   r #1 "{ll}" format.name$
+   #1 "{ll}" format.name$
+   r #1 "{ jj}" format.name$ * "u" change.case$
+   abnt.full.initials
+    {r #1 "{, ff}{ vv}" format.name$ *
+     r #1 "{ll}" format.name$
+     #1 "{ ff}{ vv}" format.name$ *}
+    {iso.author.punctuation
+      {r #1 "{, f{}}{ vv}" format.name$ *}
+      {r #1 "{, f.}{ vv}" format.name$ *} if$
+     r #1 "{ll}" format.name$
+     #1 "{ f.}{ vv}" format.name$ *}
+  if$}
+
+if$
+}
 FUNCTION {format.names}
 { 'bibinfo :=  duplicate$ empty$ 'skip$
-  {'s := ""
-   't :=
+  {'s :=
+   "" 't :=
    #1 'nameptr :=  s num.names$ 'numnames :=
     numnames 'namesleft :=
     { namesleft #0 > }
-    { s nameptr
-      "{ll}{ jj}" format.name$ "u" change.case$
-      abnt.full.initials
-        {s nameptr "{, ff}{ vv}" format.name$ *}
-        {s nameptr "{, f.}{ vv}" format.name$ *}
-      if$
+    { format.single.name
       bibinfo bibinfo.check
       't :=
       nameptr #1 >
-        {nameptr #1 #1 + = numnames #3 > and
-            {abnt.dont.use.etal 'skip$ {"others" 't := #1 'namesleft :=} if$ }
+        {nameptr #1 #1 + = numnames abnt.etal.list > and
+            {abnt.etal.list {"others" 't := #1 'namesleft :=} 'skip$ if$ }
             'skip$
           if$
           namesleft #1 >
@@ -331,9 +564,47 @@ FUNCTION {format.names}
   while$
   } if$
 }
+
+%from plain.bst
+FUNCTION {format.names.plain}
+{ 's :=
+  #1 'nameptr :=
+  s num.names$ 'numnames :=
+  numnames 'namesleft :=
+    { namesleft #0 > }
+    { s nameptr "{ff }{vv }{ll}{ jj}" format.name$ 't :=
+      nameptr #1 >
+	{ namesleft #1 >
+	    { ", " * t * }
+	    { numnames #20 >
+		{ "," * }
+		'skip$
+	      if$
+	      t "others" =
+		{ bbl.etal * }
+		{ bbl.and * t * }
+	      if$
+	    }
+	  if$
+	}
+	't
+      if$
+      nameptr #1 + 'nameptr :=
+      namesleft #1 - 'namesleft :=
+    }
+  while$
+}
 FUNCTION {format.names.ed} {format.names}
 
-FUNCTION {format.authors} { author "author" format.names}
+FUNCTION {format.authors}
+{
+author "author" format.names
+}
+
+FUNCTION {format.authors.plain}
+{
+author format.names.plain
+}
 
 FUNCTION {get.bbl.editor} { editor num.names$ #1 > 'bbl.editors 'bbl.editor if$ }
 
@@ -414,7 +685,7 @@ FUNCTION {format.howpublished}
 
 %ABNT styles require that the title acts as an author if
 %typical author fields are absent. In this case the first
-%word is uppercase. Our main problem is to estblishe what
+%word is uppercase. Our main problem is to establish what
 %the first word actually is since portuguese uses accents.
 %For example: Fun{\c c}\ão (Função) is a whole word but contains a
 %space, but if we write Fun\c{c}\ão \c is converted to uppercase...
@@ -448,12 +719,35 @@ s
 }
 
 
+%compares current title with the title of the previous entry
+FUNCTION {compare.title}
+{abnt.repeated.title.omit
+  {duplicate$ "" = 'skip$
+    {duplicate$ previous.title = repeated.author and
+      {duplicate$ 'previous.title := pop$ bbl.same.field}
+      {duplicate$ 'previous.title :=}
+     if$}
+   if$}
+ 'skip$
+ if$
+}
+
+FUNCTION {apply.title.command}
+{abnt.title.command
+  {duplicate$ empty$ 'skip$
+    {"\bibtextitlecommand{" type$ * "}{" * swap$ * "}" *}
+    if$}
+  'skip$ if$
+}
+
 FUNCTION {format.title}
 {author empty$ editor empty$ and organization empty$ and
   {title format.title.as.author}
-  {title  duplicate$ empty$ 'skip$ { "t" change.case$} if$}
+  {title  duplicate$ empty$ {pop$ ""} {"t" change.case$} if$}
  if$
  subtitle  empty$ 'skip$ {subtitle ": " swap$ * "t" change.case$ *} if$
+ apply.title.command
+ compare.title
 }
 
 FUNCTION {n.dashify}
@@ -497,7 +791,7 @@ FUNCTION {format.date}
 	{ "existe o campo month (mês) mas não o campo year (ano) em " cite$ * warning$ month}
       if$}
     { month empty$
-	'year
+	{ year n.dashify}
 	{ month " " * year * }
       if$}
   if$
@@ -509,6 +803,8 @@ FUNCTION {format.btitle}
     {title "title" bibinfo.check emphasize duplicate$ empty$ 'skip$ {} if$
     subtitle  empty$ 'skip$ {subtitle ": " swap$ * "t" change.case$ *} if$}
 if$
+apply.title.command
+compare.title
 }
 FUNCTION {either.or.check}
 { empty$
@@ -527,16 +823,27 @@ FUNCTION {format.volume} %leaves formatted or empty volume on the stack
  if$
 }
 
+FUNCTION {format.number} %leaves formatted or empty number on the stack
+{ number duplicate$ empty$
+    'skip$
+    {bbl.number swap$ tie.or.space.prefix * *}
+  if$
+}
+
+FUNCTION {format.patent.number}
+{ number
+}
+
 FUNCTION {format.bvolume}
 { volume empty$
     { "" }
     { format.volume
+      number empty$ 'skip$ {output format.number} if$
       series "series" bibinfo.check
       duplicate$ empty$ 'pop$
         { swap$ bbl.of space.word * swap$
           emphasize * }
       if$
-      "volume and number" number either.or.check
     }
   if$
 }
@@ -545,13 +852,6 @@ FUNCTION {format.bvolume.if.no.series}
 { series empty$
     { format.bvolume }
     { "" }
-  if$
-}
-
-FUNCTION {format.number}
-{ number duplicate$ empty$
-    'skip$
-    {bbl.number swap$ tie.or.space.prefix "number" bibinfo.check * *}
   if$
 }
 
@@ -603,7 +903,7 @@ FUNCTION {format.edition}
 { edition duplicate$ empty$ 'skip$
     {output.state mid.sentence = { "l" } { "t" } if$ change.case$
       "edition" bibinfo.check
-    edition #1 #1 substring$ is.num {" " * bbl.edition * } 'skip$ if$}
+    edition #1 #1 substring$ is.num {". " * bbl.edition * } 'skip$ if$}
   if$
 }
 INTEGERS { multiresult }
@@ -627,7 +927,7 @@ FUNCTION {multi.page.check}
 FUNCTION {format.pages}
 { pages duplicate$ empty$ 'skip$
     { duplicate$ multi.page.check
-        { bbl.pages swap$ n.dashify}
+        { n.dashify bbl.pages swap$}
         { bbl.page swap$ }
       if$
       tie.or.space.prefix "pages" bibinfo.check * * }
@@ -640,14 +940,106 @@ FUNCTION {format.journal.pages}
   if$
 }
 
+FUNCTION {get.url.type}
+{s #1 #5 substring$ "http:" = {http.url}
+  {s #1 #5 substring$ "file:" = {file.url}
+     {s #1 #4 substring$ "ftp:"  = {ftp.url}
+       {s #1 #4 substring$ "doi:"  = {doi.url}
+         {s #1 #7 substring$ "mailto:" = {mailto.url} {unknown.url} if$}
+       if$}
+     if$}
+   if$}
+ if$
+ 'url.type :=
+}
+
+FUNCTION {expand.doi}
+{s
+url.type doi.url =
+  {#5 global.max$ substring$ bbl.doi.url swap$ *}
+  'skip$ if$
+}
+
+INTEGERS {url.pos url.length}
+FUNCTION {filter.url.tex}
+{s text.length$ #1 + 'url.length :=
+ #1 'url.pos := "" 't :=
+  {url.pos url.length <}
+    {s url.pos #1 substring$
+    duplicate$ "_" = {pop$ "\underline{\ }" } 'skip$ if$
+    duplicate$ "%" = {pop$ "\%" } 'skip$ if$
+    duplicate$ "~" = {pop$ "\~{}" } 'skip$ if$
+    duplicate$ "/" = {pop$ "\-/" } 'skip$ if$
+    duplicate$ "." = {pop$ "\-." } 'skip$ if$
+    duplicate$ "\" = {pop$ "{\textbackslash}" } 'skip$ if$
+    t swap$ * 't :=
+    url.pos #1 + 'url.pos :=
+    }
+  while$
+t
+}
+FUNCTION {filter.url.html}
+{s text.length$ #1 + 'url.length :=
+ #1 'url.pos := "" 't :=
+  {url.pos url.length <}
+    {s url.pos #1 substring$
+    duplicate$ "%" = {pop$ "\%" } 'skip$ if$
+    t swap$ * 't :=
+    url.pos #1 + 'url.pos :=
+    }
+  while$
+t
+}
+
+FUNCTION {compose.url}
+{'s :=
+ get.url.type
+ bbl.url.available
+ abnt.url.package #0 =
+   { "$<$"   *
+   abnt.doi abnt.doi.expand.to.url = 'expand.doi {s} if$
+   * "$>$" *} 'skip$ if$
+ abnt.url.package #1 =
+   { "\url{" * s * "}" *} 'skip$ if$
+ abnt.url.package #2 =
+   {url.type http.url =
+     {"\htmladdnormallink{$<$" * filter.url.tex * "$>$}{" * filter.url.html * "}" *}
+     'skip$ if$
+    url.type doi.url = url.type ftp.url = or url.type mailto.url = or
+     {"\htmladdnormallink{$<$" *
+      abnt.doi abnt.doi.expand.to.url = 'expand.doi {s} if$
+      * "$>$}{" *
+      abnt.doi abnt.doi.leave.as.is = {s} 'expand.doi if$
+      * "}" * }
+     'skip$ if$
+    url.type unknown.url =
+     {"$<$" * filter.url.tex * "$>$" *}
+     'skip$ if$} 'skip$ if$
+}
 FUNCTION {format.url}
 { url empty$ 'skip$
-    {bbl.url.begin url * bbl.url.end * output new.sentence }
+    {url compose.url output new.sentence }
   if$
  urlaccessdate duplicate$ empty$ 'skip$
     { bbl.url.accessdate swap$ *}
   if$
   "urlaccessdate" bibinfo.check output new.sentence
+}
+
+FUNCTION {format.conference.info}
+{ conference-number empty$
+    'skip$
+    {conference-number "." * output}
+  if$
+  conference-year empty$
+    'skip$
+    {conference-year output}
+  if$
+  conference-location empty$
+    'skip$
+    {conference-location output}
+  if$
+  new.sentence
 }
 
 
@@ -668,24 +1060,24 @@ FUNCTION {format.chapter.pages}
 }
 
 FUNCTION {format.booktitle}
-{ %booktitle  duplicate$ empty$ 'skip$ { "t" change.case$ emphasize} if$
-  %booksubtitle  empty$ 'skip$ {":  " booksubtitle * "t" change.case$ * "booksubtitle" bibinfo.check} if$
-author empty$ editor empty$ and organization empty$ and
+{author empty$ editor empty$ and organization empty$ and
     {booktitle format.title.as.author "booktitle" bibinfo.check duplicate$ empty$ 'skip$ {} if$
-    booksubtitle  empty$ 'skip$ {booksubtitle ": " swap$ * "t" change.case$ *} if$}
+    booksubtitle  empty$ 'skip$ {booksubtitle ": " swap$ * "t" change.case$ *
+    apply.title.command} if$}
     {booktitle "booktitle" bibinfo.check emphasize duplicate$ empty$ 'skip$ {} if$
-    booksubtitle  empty$ 'skip$ {booksubtitle ": " swap$ * "t" change.case$ *} if$}
+    booksubtitle  empty$ 'skip$ {booksubtitle ": " swap$ * "t" change.case$ *
+    apply.title.command} if$}
 if$
 }
 FUNCTION {format.editors}
 { editor  empty$
-   {"inbook" type$ = 'same.field 'skip$ if$}
+   {"inbook" type$ = 'bbl.same.field 'skip$ if$}
    {author empty$
     {editor "editor" format.names " (" *
      editortype empty$ {bbl.editor} {editortype} if$
      ")" * * }
     {"inbook" type$ =
-      { same.field }
+      {bbl.same.field }
       {editor "editor" format.names " (" *
        editortype empty$ {bbl.editor} {editortype} if$
        ")" * *}
@@ -696,17 +1088,20 @@ FUNCTION {format.editors}
 FUNCTION {format.in.ed.booktitle}
 { editor empty$
     {organization empty$ not author empty$ not and    %if one of two not empty
-      {word.in organization "u" change.case$ *
-       booktitle empty$ 'skip$ {". " format.booktitle * * } if$}
+      {word.in organization "u" change.case$ * output
+       format.conference.info
+       booktitle empty$ {""} {new.sentence format.booktitle} if$}
       {word.in
        organization empty$ author empty$ and 'skip$
-       {"inbook" type$ = {same.field * ". " *}
-       'skip$ if$ } if$
-       booktitle empty$ 'skip$ {format.booktitle * } if$}
+         {"inbook" type$ = {bbl.same.field * output new.sentence ""}
+         'skip$ if$  } if$
+       booktitle empty$ 'skip$ {format.booktitle *} if$}
      if$}
-    {word.in format.editors *
-     booktitle empty$ 'skip$ {". " format.booktitle * * } if$} 
+    {word.in format.editors * output
+     booktitle empty$ {""} {new.sentence format.booktitle} if$}
   if$
+  output
+  new.sentence
 }
 FUNCTION {empty.misc.check}
 { author empty$ title empty$ howpublished empty$
@@ -730,7 +1125,14 @@ FUNCTION {format.year}
    { "campo year vazio ou faltando em " cite$ *
     abnt.missing.year {" (vou colocar [s.d.])" *} 'skip$ if$ warning$
     abnt.missing.year {", " } {""} if$ bbl.missing.year *}
-    {year "year" bibinfo.check}
+    {year n.dashify "year" bibinfo.check}
+if$
+}
+
+FUNCTION {format.year.presented}
+{year-presented empty$
+   {""}
+   {year-presented n.dashify}
 if$
 }
 
@@ -769,6 +1171,22 @@ if$}
 FUNCTION {format.organization.address}
 { organization "organization" bibinfo.check format.field.address}
 
+%retains current authorship for future use
+FUNCTION {compare.authorship}
+{abnt.repeated.author.omit
+  {duplicate$ "" = 'skip$
+    {duplicate$ previous.author =
+      {duplicate$ 'previous.author :=
+       pop$ bbl.same.field
+       #1 'repeated.author :=}
+      {duplicate$ 'previous.author :=
+       #0 'repeated.author :=}
+     if$}
+   if$}
+ 'skip$
+ if$
+}
+
 FUNCTION {format.author.or.organization}
 {  author empty$
     { organization empty$ 'skip$
@@ -776,16 +1194,9 @@ FUNCTION {format.author.or.organization}
       if$}
     { format.authors output.nonnull }
   if$
+  compare.authorship
 }
 
-FUNCTION {format.author.or.editor}
-{  author empty$
-    { editor empty$ 'skip$
-      { format.editors output.nonnull}
-      if$}
-    { format.authors output.nonnull }
-  if$
-}
 
 FUNCTION {format.editor.or.organization}
 {  editor empty$
@@ -794,6 +1205,7 @@ FUNCTION {format.editor.or.organization}
       if$}
     { format.editors output.nonnull }
   if$
+  compare.authorship
 }
 
 FUNCTION {format.author.or.editor.or.organization}
@@ -807,21 +1219,47 @@ FUNCTION {format.author.or.editor.or.organization}
       if$}
     { format.authors output.nonnull }
   if$
+  compare.authorship
+}
+
+FUNCTION {format.reprint}
+{ reprinted-text missing$
+    {""}
+    {reprinted-text empty$
+      {bbl.reprint} {reprinted-text} if$
+     bbl.colon *}
+  if$
+}
+
+FUNCTION {format.journal}
+{
+  format.reprint
+  journal emphasize *
 }
 
 
+%generates the first label in \abntrefinfo to be used with \citeonline
 FUNCTION {format.names.for.label1} %abnt-alf only
 { 's := "" 't :=
    #1 'nameptr :=  s num.names$ 'numnames :=
     numnames 'namesleft :=
     { namesleft #0 > }
-    { s nameptr "{ll}{ jj}" format.name$ 't :=
+    {abnt.last.names
+       {s nameptr "{ll}{ jj}" format.name$}
+       {s nameptr "{ll}" format.name$ #1 "{ll}" format.name$
+        s nameptr "{ jj}" format.name$ *}
+     if$
+     't :=
       nameptr #1 >
         {namesleft #1 >
-            { numnames #3 > {#0 'namesleft :=} {", " * t * } if$ }
+          { numnames abnt.etal.cite > abnt.etal.cite #0 = not and
+	    {#0 'namesleft := abnt.etal.cite {bbl.etal *} 'skip$ if$}
+	    {", " * t * } if$ }
             { t "others" =
-	      {abnt.no.etal.label 'skip$ {bbl.etal *} if$}
-	      {numnames nameptr = { bbl.and * t *} 'skip$ if$}
+              {abnt.etal.cite {bbl.etal *} 'skip$ if$}
+                {numnames nameptr =
+                {bbl.and * t *}
+		'skip$ if$}
              if$
 	     }
           if$ }
@@ -831,17 +1269,26 @@ FUNCTION {format.names.for.label1} %abnt-alf only
       namesleft #1 - 'namesleft := }
   while$
 }
+
+%generates the second label in \abntrefinfo to be used with \cite
 FUNCTION {format.names.for.label2} %abnt-alf only
 { 's := "" 't :=
    #1 'nameptr :=  s num.names$ 'numnames :=
     numnames 'namesleft :=
     { namesleft #0 > }
-    { s nameptr "{ll}{ jj}" format.name$ "u" change.case$ 't :=
+    {abnt.last.names
+       {s nameptr "{ll}{ jj}" format.name$}
+       {s nameptr "{ll}" format.name$ #1 "{ll}" format.name$
+        s nameptr "{ jj}" format.name$ *}
+     if$
+     abnt.cite.style #0 = {"u" change.case$} 'skip$ if$ 't :=
       nameptr #1 >
         {namesleft #1 >
-            { numnames #3 > {#0 'namesleft :=} {"; " * t * } if$ }
-            { t "OTHERS" =
-	      {abnt.no.etal.label 'skip$ {bbl.etal *} if$}
+            { numnames abnt.etal.cite > 
+	      {#0 'namesleft := abnt.etal.cite {bbl.etal *} 'skip$ if$} 
+	      {"; " * t * } if$ }
+            { t "OTHERS" = t "others" = or
+	      {abnt.etal.cite {bbl.etal *} 'skip$ if$}
 	      {numnames nameptr = { bbl.semicolon * t *} 'skip$ if$}
              if$
 	     }
@@ -852,9 +1299,6 @@ FUNCTION {format.names.for.label2} %abnt-alf only
       namesleft #1 - 'namesleft := }
   while$
 }
-FUNCTION {format.names.for.label} %abnt-alf only
-{  's :=
-   s #1 "{ll}{ jj}" format.name$ }
 
 FUNCTION {format.title.for.label}
 {  's :=
@@ -871,8 +1315,10 @@ FUNCTION {format.title.for.label}
      }
   while$
 s t = %title equals first word, dont use bbl.ldots
-  {t  "}{" * t "u" change.case$ * }
-  {t bbl.ldots * "}{" * t "u" change.case$ * bbl.ldots *}
+  {t  "}{" * t
+  abnt.cite.style #0 = {"u" change.case$ * } 'skip$ if$}
+  {t bbl.ldots * "}{" * t
+  abnt.cite.style #0 = {"u" change.case$} 'skip$ if$ * bbl.ldots *}
 if$
 }
 
@@ -899,11 +1345,12 @@ FUNCTION {extract.cvs.key} %we borrow the functionality of format.title.for.labe
 }
 
 %generates and extended label of type {Author}{AUTHOR}{YEAR}
+%for abnt.cite.style=1 they will be of type {Author}{Author}{YEAR}
 %final result is placed into variable label
 FUNCTION {calc.extended.label}
 { "{"
   author empty$ not
-    {author format.names.for.label1 * "}{" *  author format.names.for.label2 *}
+    {author format.names.for.label1 * "}{" * author format.names.for.label2 *}
     {editor empty$ not
      {editor format.names.for.label1 * "}{" *  editor format.names.for.label2 *}
      {org-short empty$ not
@@ -945,15 +1392,41 @@ FUNCTION {calc.simple.label}
 FUNCTION {output.bibitem}
 { newline$
   abnt.alf
-  {"\bibitem[" write$
-  calc.simple.label
-  write$ "]{"}
-  {"\bibitem{"}
+    {"\bibitem[" write$
+    calc.simple.label
+    write$ "]{"}
+    {"\bibitem{"}
   if$
   write$ cite$ write$ "}" write$ newline$
   abnt.refinfo #1 = {"\abntrefinfo" write$ label write$ newline$} 'skip$ if$
   "{" write$
   "" before.all 'output.state :=
+}
+FUNCTION {output.hiddenbibitem}
+{ newline$
+  abnt.alf
+    {"\hiddenbibitem[" write$
+    calc.simple.label
+    write$ "]{"}
+    {"\bibitem{"}
+  if$
+  write$ cite$ write$ "}" write$ newline$
+  abnt.refinfo #1 = {"\abntrefinfo" write$ label write$ newline$} 'skip$ if$
+  "{" write$
+  "" before.all 'output.state :=
+}
+FUNCTION {fin.entry}
+{ add.period$ write$
+  reprinted-from empty$ 'skip$
+    {" " reprinted-text empty$
+      {bbl.reprint} {reprinted-text} if$ * bbl.colon *
+     "\abntreprintinfo{ " * reprinted-from * "}" * write$}
+    if$
+  abnt-note empty$ 'skip$
+    {"\footnote{" abnt-note * "}" * write$} if$
+  "}" write$
+  %newline$
+  write.entry.verbatim
 }
 
 FUNCTION { abnt.display.options}
@@ -965,7 +1438,7 @@ FUNCTION { abnt.display.options}
   {"Op\c c\~ao selecionada {\tt " t * "=}\verb+" * s * "+" * output new.sentence } 'skip$ if$
 }
 
-FUNCTION { abnt-options }
+FUNCTION { abnt-options1 }
   {
     abnt-show-options empty$
     'skip$
@@ -984,6 +1457,17 @@ FUNCTION { abnt-options }
     abnt-show-options empty$
     'skip$ {"abnt-show-options" abnt-show-options abnt.display.options} if$
 
+    abnt-cite-style empty$
+      'skip$
+      {abnt-cite-style "(AUTHOR, YEAR)" =
+        {#0 'abnt.cite.style :=}
+	{abnt-cite-style "(Author, YEAR)" =
+	  {#1 'abnt.cite.style :=}
+	  {"opção " abnt-cite-style * " desconhecida" * warning$}
+	 if$}
+        if$
+       "abnt-cite-style" abnt-cite-style abnt.display.options}if$
+
     abnt-experimental empty$
     'skip$ {abnt-experimental "yes" = 'abnt.experimental :=
     "abnt-experimental" abnt-experimental abnt.display.options} if$
@@ -998,11 +1482,34 @@ FUNCTION { abnt-options }
     'skip$ if$
     } if$
 
-    %abnt-repeated-field-omit duplicate$ empty$ 'pop$ {'abnt.repeated.field.omit :=} if$
-
+    abnt-doi empty$
+      'skip$
+      {abnt-doi "expand" =
+        {abnt.doi.expand.to.url 'abnt.doi :=}
+	{abnt-doi "link" =
+	  {abnt.doi.link 'abnt.doi :=}
+	  {abnt-doi "doi" =
+	    {abnt.doi.leave.as.is 'abnt.doi :=}
+	    {"opção " abnt-doi * " desconhecida" * warning$}
+	   if$}
+	 if$}
+        if$
+       "abnt-doi" abnt-doi abnt.display.options}if$
+ }
+FUNCTION { abnt-options2 }
+  {
     abnt-full-initials empty$
     'skip$ {abnt-full-initials "yes" = 'abnt.full.initials :=
     "abnt-full-initials" abnt-full-initials abnt.display.options} if$
+
+    abnt-last-names empty$
+      'skip$
+      {abnt-last-names "abnt" =   {#0}
+        {abnt-last-names "bibtex" = {#1} {#0} if$} if$
+       'abnt.last.names :=
+       "abnt-last-names" abnt-last-names abnt.display.options}
+    if$
+
 
     abnt-ldots-type empty$
       'skip$
@@ -1025,6 +1532,14 @@ FUNCTION { abnt-options }
     if$
 
 
+    abnt-and-type empty$
+    'skip$ {abnt-and-type "e" =
+              {#0} {abnt-and-type "&" =
+                {#1} {#0} if$} if$
+            'abnt.and.type :=
+      "abnt-and-type" abnt-and-type abnt.display.options}
+    if$
+    
     abnt-thesis-year empty$
     'skip$ {abnt-thesis-year "final" =
               {#0} {abnt-thesis-year "title" =
@@ -1037,30 +1552,126 @@ FUNCTION { abnt-options }
     abnt-refinfo empty$
     'skip$ {abnt-refinfo "yes" = 'abnt.refinfo :=
     "abnt-refinfo" abnt-refinfo abnt.display.options} if$
+}
+FUNCTION { abnt-options3 }
+  {
 
     abnt-dont-use-etal empty$
-    'skip$ {abnt-dont-use-etal "yes" = 'abnt.dont.use.etal :=
-    "abnt-dont-use-etal" abnt-dont-use-etal abnt.display.options} if$
+    'skip$ {abnt-dont-use-etal "yes" = {#0 'abnt.etal.list :=} 'skip$ if$
+    "Uso da opção abnt-dont-use-etal se tornou obsoleto, usamos abnt-etal-list." warning$
+    "abnt-etal-list" abnt.etal.list int.to.str$ abnt.display.options} if$
+
+    abnt-etal-cite empty$
+    'skip$ {abnt-etal-cite str.to.int 'abnt.etal.cite :=
+    "abnt-etal-cite" abnt.etal.cite int.to.str$ abnt.display.options} if$
+
+    abnt-etal-list empty$
+    'skip$ {abnt-etal-list str.to.int 'abnt.etal.list :=
+    "abnt-etal-list" abnt.etal.list int.to.str$ abnt.display.options} if$
+
+    abnt-etal-text missing$
+    'skip$ {abnt-etal-text  'abnt.etal.text :=
+    "abnt-etal-text" abnt.etal.text abnt.display.options} if$
 
     abnt-no-etal-label empty$
-    'skip$ {abnt-no-etal-label "yes" = 'abnt.no.etal.label :=
-    "abnt-no-etal-label" abnt-no-etal-label abnt.display.options} if$
+    'skip$ {abnt-no-etal-label "yes" = {#0 'abnt.etal.cite :=} 'skip$ if$
+    "Uso da opção abnt-no-etal-label se tornou obsoleto, usamos abnt-etal-cite." warning$
+    "abnt-etal-cite" abnt.etal.cite int.to.str$ abnt.display.options} if$
 
+    abnt-repeated-author-omit empty$
+    'skip$ {abnt-repeated-author-omit "yes" =
+            {#1 'abnt.repeated.author.omit :=}
+	    {#0 'abnt.repeated.author.omit := "" 'previous.author :=} if$
+    "abnt-repeated-author-omit" abnt-repeated-author-omit abnt.display.options} if$
+
+    abnt-repeated-title-omit empty$ 'skip$
+      {abnt-repeated-title-omit "yes" =
+        {#1 'abnt.repeated.title.omit :=}
+	{#0 'abnt.repeated.title.omit := "" 'previous.title :=} if$
+        "abnt-repeated-title-omit" abnt-repeated-title-omit abnt.display.options
+        abnt.repeated.author.omit not abnt.repeated.title.omit and
+          {"Use abnt-repeated-title-omit=yes junto com abnt-repeated-author-omit=yes"
+          warning$} 'skip$ if$} if$
+
+    abnt-title-command empty$
+    'skip$ {abnt-title-command "yes" =
+            {#1 'abnt.title.command :=}
+	    {#0 'abnt.title.command :=} if$
+    "abnt-title-command" abnt-title-command abnt.display.options} if$
+
+    abnt-url-package empty$ 'skip$
+      {abnt-url-package "url" =
+         {#1 'abnt.url.package :=}
+         {abnt-url-package "hyperref" = {#2 'abnt.url.package :=} 'skip$ if$}
+       if$
+       "abnt-url-package" abnt-url-package abnt.display.options}
+     if$
+
+    abnt-verbatim-entry empty$
+    'skip$ {abnt-verbatim-entry "yes" = 'abnt.verbatim.entry :=
+    "abnt-verbatim-entry" abnt-verbatim-entry abnt.display.options} if$
+  
   abnt.show.options #2 = 'fin.entry  'skip$ if$
   }
+
+%we had to break this function in two parts because of the following message:
+%Sorry---you've exceeded BibTeX's single function space 100
+%(That was a fatal error)
+FUNCTION { iso-options1 }
+  {
+  iso-abbreviation empty$
+    'skip$ {iso-abbreviation "standard" = 'iso.abbreviation :=
+    "iso-abbreviation" iso-abbreviation abnt.display.options} if$
+  iso-author-punctuation empty$
+    'skip$ {iso-author-punctuation "void" = 'iso.author.punctuation :=
+    "iso-author-punctuation" iso-author-punctuation abnt.display.options} if$
+  iso-date-place empty$
+    'skip$ {iso-date-place "ISO" = 'iso.date.place :=
+    "iso-date-place" iso-date-place abnt.display.options} if$
+  }
+
+FUNCTION { abnt-options }
+  {
+  abnt-options1
+  abnt-options2
+  abnt-options3
+  iso-options1
+  }
+
+FUNCTION { iso-options } { abnt-options }
+
+FUNCTION { iso.year.label }
+{  iso.date.place
+     { abnt.alf
+         {year.label output new.sentence}
+	 'skip$ if$}
+    'skip$ if$}
+
+FUNCTION { iso.date }
+{  iso.date.place
+     { abnt.alf
+	 'skip$ 
+          {year output new.sentence}
+	 if$}
+    'skip$ if$}
+
+FUNCTION { non.iso.date }
+  {iso.date.place  'skip$ {format.date output} if$}
 
 FUNCTION {article}
 { output.bibitem
   format.author.or.organization  new.sentence
+  iso.year.label
   format.title "title" output.check new.block
-  journal "journal" bibinfo.check emphasize "journal" output.check
+  format.journal output
+  iso.date.place {format.date output} 'skip$ if$
   section "section" bibinfo.check output.dash
   publisher "publisher" bibinfo.check output
   address "address" bibinfo.check output
   format.volume output
   format.number output
   format.pages output
-  format.date output
+  non.iso.date
   format.issn output new.block
   format.note output new.block
   format.url
@@ -1069,15 +1680,18 @@ FUNCTION {article}
 FUNCTION {book}
 { output.bibitem
   format.author.or.editor.or.organization new.sentence
+  iso.year.label
   format.type output new.sentence
   format.btitle "title" output.check new.sentence
   format.furtherresp new.sentence
   format.edition output new.sentence
   format.publisher.address output
-  format.year output new.sentence
+  iso.date.place {abnt.alf 'skip$ {format.year output new.sentence} if$}
+                 {format.year output new.sentence} if$
   format.book.pages output
   format.illustrated
   format.dimensions  new.sentence
+  format.howpublished output  new.sentence
   format.volume.number.series output new.sentence
   format.note output
   format.issn output %pode parecer curioso, mas revistas inteiras são tratadas como livro
@@ -1088,6 +1702,7 @@ FUNCTION {book}
 FUNCTION {booklet}
 { output.bibitem
   format.author.or.editor.or.organization new.sentence
+  iso.year.label
   format.type output new.sentence
   format.btitle "title" output.check new.sentence
   format.edition output new.sentence
@@ -1102,12 +1717,16 @@ FUNCTION {booklet}
   fin.entry
 }
 
+FUNCTION {hidden}
+{ output.hiddenbibitem
+  fin.entry}
+
 FUNCTION {inbook}
 { output.bibitem
-  format.author.or.organization
-  new.sentence
+  format.author.or.organization new.sentence
+  iso.year.label
   format.title "title" output.check new.block
-  format.in.ed.booktitle "booktitle" output.check new.sentence
+  format.in.ed.booktitle
   format.furtherresp new.sentence
   format.edition output new.sentence
   format.publisher.address output
@@ -1124,8 +1743,9 @@ FUNCTION {inbook}
 FUNCTION {incollection}
 { output.bibitem
   format.author.or.organization new.sentence
+  iso.year.label
   format.title "title" output.check new.sentence
-  format.in.ed.booktitle "booktitle" output.check new.sentence
+  format.in.ed.booktitle
   format.edition output new.sentence
   format.publisher.address output
   format.year output
@@ -1140,8 +1760,9 @@ FUNCTION {incollection}
 FUNCTION {inproceedings}
 { output.bibitem
   format.author.or.organization new.sentence
+  iso.year.label
   format.title "title" output.check  new.sentence
-  format.in.ed.booktitle "booktitle" output.check new.sentence
+  format.in.ed.booktitle
   format.publisher.address output
   format.year output new.sentence
   format.bvolume.if.no.series output
@@ -1156,6 +1777,7 @@ FUNCTION {inproceedings}
 FUNCTION {journalpart}
 { output.bibitem
   format.author.or.editor.or.organization new.sentence
+  iso.year.label
   format.type output new.sentence
   format.btitle "title" output.check new.sentence
   format.furtherresp new.sentence
@@ -1164,7 +1786,7 @@ FUNCTION {journalpart}
   format.volume output
   format.number output
   format.date output new.sentence
-  format.pages output
+  format.book.pages output
   format.illustrated
   format.dimensions  new.sentence
   format.note output
@@ -1177,7 +1799,9 @@ FUNCTION {conference} { inproceedings }
 FUNCTION {manual}
 { output.bibitem
   format.author.or.editor.or.organization new.sentence
+  iso.year.label
   format.btitle "title" output.check new.block
+  format.furtherresp new.sentence
   format.edition output new.sentence
   format.address output
   format.date output new.sentence
@@ -1192,6 +1816,7 @@ FUNCTION {manual}
 FUNCTION {misc}
 { output.bibitem
   format.author.or.editor.or.organization new.sentence
+  iso.year.label
   format.type output
   format.btitle output new.sentence
   format.furtherresp new.sentence
@@ -1208,6 +1833,22 @@ FUNCTION {misc}
   empty.misc.check
 }
 
+FUNCTION {patent}
+{ output.bibitem
+  format.editor.or.organization new.sentence
+  iso.year.label
+  format.authors.plain  output new.sentence
+  format.btitle output new.sentence
+  format.furtherresp new.sentence
+  format.date output  new.block
+  format.patent.number output
+  format.howpublished output  new.block
+  format.note output  new.block
+  format.url
+  fin.entry
+  empty.misc.check
+}
+
 FUNCTION {format.thesis.type}
 { type$ "phdthesis" =
     {bbl.phdthesis}
@@ -1215,7 +1856,7 @@ FUNCTION {format.thesis.type}
        {bbl.mthesis}
        {type$ "monography" =
           {bbl.monography}
-	  'skip$
+	  {bbl.void}
         if$}
      if$}
   if$
@@ -1227,16 +1868,21 @@ FUNCTION {format.thesis.type}
         if$}
        {""}
      if$}
-    {" (" type  * ")" * "type" bibinfo.check}
+     {type$ "thesis" =
+       {type}
+       {" (" type  * ")" * "type" bibinfo.check}
+      if$}
   if$
  * %joins first and second part of this function
 }
 FUNCTION {thesis}
 { output.bibitem
   format.authors "author" output.check new.block
+  iso.year.label
   format.btitle "title" output.check new.block
   abnt.thesis.year #1 = abnt.thesis.year #2 = or
     {format.date "year" output.check new.sentence} 'skip$ if$
+  format.year.presented output new.sentence
   format.book.pages output new.sentence
   format.thesis.type output.nonnull
   school "school" bibinfo.warn output.dash
@@ -1254,7 +1900,9 @@ FUNCTION {monography}    { thesis }
 
 FUNCTION {proceedings}
 { output.bibitem
-  format.editor.or.organization new.sentence
+  iso.year.label
+  format.editor.or.organization
+  format.conference.info
   format.btitle "title" output.check
   format.bvolume output
   format.volume.number.series output
@@ -1285,6 +1933,7 @@ FUNCTION {techreport} {manual}
 FUNCTION {unpublished}
 { output.bibitem
   format.author.or.editor.or.organization new.sentence
+  iso.year.label
   format.title "title" output.check  new.sentence
   format.note "note" output.check  new.sentence
   format.date output new.sentence
@@ -1314,12 +1963,7 @@ FUNCTION {sort.format.names}
   s num.names$ 'numnames :=
   numnames 'namesleft :=
     { namesleft #0 > }
-    { s nameptr
-      abnt.full.initials
-        {"{ll{ }}{  jj{ }}{  ff{ }}{vv{ } }"}
-        {"{ll{ }}{  jj{ }}{  f.{ }}{vv{ } }"}
-      if$
-      format.name$ 't :=
+    { format.single.name 't :=
       nameptr #1 >
         {
           nameptr #3
@@ -1374,43 +2018,81 @@ if$
 }
 
 FUNCTION {presort}
-{ any.sort
+{ 
+ any.sort
   "    " * year field.or.null sortify * "    " * title field.or.null
   sort.format.title * #1 entry.max$ substring$
-  'sort.key$ :=
+  %for non-alpha style we drop a void sort.key such that SORT has no effect
+  abnt.alf 'skip$ {pop$ ""} if$ 'sort.key$ :=
+  year empty$ {""} {year} if$ 'year.label :=
   calc.extended.label
 }
 
 FUNCTION {set.default.abnt.variables}
 { %if you change abnt-num to abnt-alf by hand you need also to change
   %the name of RCSfile by hand, otherwise cvs takes care of it.
+  %
   "$RCSfile: abnt-alf.bst,v $ " extract.cvs.key
+  %
   "abnt-alf.bst,v " = 'abnt.alf := % #1 para abnt-alf #0 para abnt-num
-  "$Revision: 1.29 $" extract.cvs.key 'abnt.bst.revision :=
+  "$Revision: 1.45.2.1 $" extract.cvs.key 'abnt.bst.revision :=
+  #0 'abnt.and.type     :=     % #0 "e"; #1 "&"
   "\emph" 'abnt.emphasize :=
+  #0 'abnt.cite.style :=       %default norm version for NBR10520
+                               %#0 \cite=(AUTHOR, YEAR)
+			       %#1 \cite=(Author, YEAR)
   #0 'abnt.experimental :=
+  abnt.doi.expand.to.url 'abnt.doi :=
+  #3 'abnt.etal.cite :=
+  #3 'abnt.etal.list :=
+  "et al." 'abnt.etal.text :=
   #0 'abnt.full.initials :=
-  #1 'abnt.ldots.type := %#0 use nothing, #1 use \ldots, #2 use $\ldots$, 3# use {...}
-  #0 'abnt.missing.year := %#0 "void"; #1 "[s.d.]"
-  #0 'abnt.repeated.field.omit :=
+  #0 'abnt.last.names :=      %#0 abnt-style, #1 bibtex-style
+  #1 'abnt.ldots.type :=      %#0 use nothing, #1 use \ldots, #2 use $\ldots$, 3# use {...}
+  #0 'abnt.missing.year :=    %#0 "void"; #1 "[s.d.]"
+  #0 'repeated.author :=
+  #0 'abnt.repeated.author.omit :=
+  #0 'abnt.repeated.title.omit :=
   #1 'abnt.refinfo :=
-  #0 'abnt.show.options := % #0 "no"; #1 "warn"; #2 "list"
-  #0 'abnt.thesis.year :=  % #0 "final"; #1 "title"; #2 "both"
-  #0 'abnt.dont.use.etal :=
-  #0 'abnt.no.etal.label := % #0 use etal in label; #1 don't use it
+  #0 'abnt.show.options :=    % #0 "no"; #1 "warn"; #2 "list"
+  #0 'abnt.thesis.year :=     % #0 "final"; #1 "title"; #2 "both"
+  #0 'abnt.title.command :=   % #0 "no"; #1 "yes"
+  #0 'abnt.url.package :=     % #0 "none"'; #2 "url"; #2 "hyperref"
+  #0 'abnt.verbatim.entry :=
+}
+FUNCTION {set.default.iso.variables}
+{ #0 'iso.abbreviation := % #0 ABNT-style; #1 ISO-style
+  #0 'iso.author.punctuation := % #0 ABNT (Smith, A. B.); #1 ISO (Smith, AB)
+  #0 'iso.date.place := % #0 ABNT-sty; #1 ISO-style
 }
 EXECUTE {set.default.abnt.variables}
+EXECUTE {set.default.iso.variables}
 FUNCTION {process.early.abnt.options}
-{%here we intercept any entry with abnt-lodts-type field,
- %we cannot use type$ at this point
- abnt-ldots-type missing$
+{%here we intercept all entries which need priority handling
+ %note: we cannot use type$ at this point
+ abnt-and-type missing$
  abnt-experimental missing$ and
+ abnt-etal-cite missing$ and
+ abnt-etal-text missing$ and
+ abnt-ldots-type missing$ and
+ abnt-cite-style missing$ and
  abnt-no-etal-label missing$ and
-'skip$ {call.type$} if$
+ abnt-title-command missing$ and
+ 'skip$ {call.type$} if$
 }
 ITERATE {process.early.abnt.options}
+FUNCTION {search.reprinted}
+{  reprinted-from missing$ 'skip$
+  {"\nocite{" reprinted-from * "}" * write$ newline$
+  }
+  if$
+}
+ITERATE {search.reprinted}
+FUNCTION {abntreprintinfo}
+{"\providecommand{\abntreprintinfo}[1]{%" write$ newline$
+ " \citeonline{#1}}" write$ newline$}
+EXECUTE {abntreprintinfo}
 ITERATE {presort}
-%abnt-alf: for sorting uncomment the following line
 SORT
 STRINGS { last.label next.extra}
 INTEGERS { last.extra.num }
@@ -1432,6 +2114,7 @@ FUNCTION {reverse.pass}
     'skip$
   if$
   label extra.label * 'label :=
+  year.label extra.label * 'year.label :=
   extra.label 'next.extra :=
   label "}" * 'label :=
 }
@@ -1452,10 +2135,13 @@ FUNCTION {begin.bib}
   {"\providecommand{\abntrefinfo}[3]{}" write$ newline$}
   'skip$ if$
   "\providecommand{\abntbstabout}[1]{}" write$ newline$
+  abnt.title.command
+    {"\providecommand{\bibtextitlecommand}[2]{#2}" write$ newline$}
+    'skip$ if$
   "\abntbstabout{" abnt.bst.revision * "}" * write$ newline$
   %Se você não usa abntcite e precisa que a margem direita não
   %seja justificada, descomente a linha seguinte
-  %alternativamente coloque \bibligraphy{abnt-nrj,...
+  %alternativamente coloque \bibliography{abnt-nrj,...
 %  "\setlength{\rightskip}{0pt plus 2cm}" write$ newline$
 }
 EXECUTE {begin.bib}
@@ -1464,8 +2150,17 @@ FUNCTION {process.entry}{call.type$}
 ITERATE {process.entry}
 FUNCTION {end.bib}
 { newline$ "\end{thebibliography}" write$ newline$
-"Aviso: Este estilo está em desenvolvimento." warning$
-"Caso tenha problemas procure por http://abntex.codigolivre.org.br" warning$
 }
 EXECUTE {end.bib}
-
+FUNCTION {apresentacao}
+{ "+---------------------------------------------------------+"
+  "| http://abntex.codigolivre.org.br                        |"
+  "| Em caso de dúvidas ou problemas com este estilo procure |"
+  abnt.alf
+ {"| Estilo bibliográfico abnt-alf.bst versão " abnt.bst.revision * "          |" *}
+ {"| Estilo bibliográfico abnt-num.bst versão " abnt.bst.revision * "          |" *}
+ if$
+  "+---------------------------------------------------------+"
+  stack$
+}
+EXECUTE{apresentacao}
