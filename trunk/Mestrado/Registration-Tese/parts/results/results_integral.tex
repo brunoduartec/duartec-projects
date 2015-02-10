@@ -23,6 +23,11 @@
 \newcommand{\graphwidth}{0.8}
 
 
+A abordagem de testes e análise de desempenho é feita como descrito em
+\cite{performance_evaluation} e nas análises apresentadas em
+\cite{opencv-comparing-1}, \cite{opencv-comparing-2} e
+\cite{descriptor-comparing}
+
 Como descrito na seção \ref{sec:analisededados}, existem restrições para
 garantir que a técnica utilizada responde segundo as necessidades da aplicação.
 Nos gráficos a seguir são traçadas janelas de restrição, sendo que os valores
@@ -233,17 +238,21 @@ estão dentro da janela as técnicas FAST,FREAK,GFTT,MSER,ORB,STAR,SURF,SIFT
 	
 	
 	
-			%eixo horizontal
-	\addplot[red,sharp plot,update limits=false] coordinates	{(\minx,\ylimit)(\maxx,\ylimit)};
-	 \fill [opacity=0.4,red!25] (axis cs:\minx,\ylimit) rectangle(axis cs:\maxx,\miny);
+	%eixo horizontal
+	\addplot[red,sharp plot,update limits=false] coordinates{(\minx,\ylimit)
+	(\maxx,\ylimit)}; 
+	\fill [opacity=0.4,red!25] (axis cs:\minx,\ylimit) rectangle (axis
+	cs:\maxx,\maxy);
 		
-		
-						%eixo vertical
-	\addplot[blue,sharp plot,update limits=false] coordinates	{(\minbright,\miny)(\minbright,\maxy)} ; 
-	\fill [opacity=0.4,blue!25] (axis	cs:\minx,\miny) rectangle (axis	cs:\minbright,\maxy);
 	
-	\addplot[blue,sharp plot,update limits=false] coordinates	{(\maxbright,\miny)(\maxbright,\maxy)} ; 
-	\fill [opacity=0.4,blue!25] (axis	cs:\maxbright,\miny) rectangle (axis cs:\maxx,\maxy);
+						%eixo vertical
+	\addplot[blue,sharp plot,update limits=false] coordinates
+	{(\minbright,\miny)(\minbright,\maxy)} ; \fill [opacity=0.4,blue!25] (axis
+	cs:\minx,\miny) rectangle (axis cs:\minbright,\maxy);
+	
+	\addplot[blue,sharp plot,update limits=false] coordinates
+	{(\maxbright,\miny)(\maxbright,\maxy)} ; \fill [opacity=0.4,blue!25] (axis
+	cs:\maxbright,\miny) rectangle (axis cs:\maxx,\maxy);
 		
 	
 \end{axis}
