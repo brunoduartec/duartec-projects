@@ -61,11 +61,11 @@
 			<li><a href="../programacao/default.php">Programação</a></li>
 			<li><a href="../palestrantes/default.php">Palestantes</a></li>
 			<li><a href="../sobre/default.php">Sobre o Instituto</a></li>
-			<!--<li><a href="galeria/default.php">Galeria</a></li>-->
+			<li><a href="default.php">Galeria</a></li>
 <!--			<li><a href="inscricao/default.php">Inscrições</a></li>-->
 
 			<!--<li><a href="local/default.php">Local</a></li>-->
-            <li><a href="../facilitadores/colaboradores.php">Contato</a></li>
+            <li><a href="../facilitadores/colaboradores.php">Colaboradores</a></li>
             
 			<li><a href="../contato/default.php">Contato</a></li>
 		</ul>

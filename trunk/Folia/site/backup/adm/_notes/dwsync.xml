@@ -1,17 +1,31 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="adm.php" server="ftp.foliadeluz.org.br/www/" local="129784173600000000" remote="129784173600000000" />
-<file name="conect.php" server="ftp.foliadeluz.org.br/www/" local="129784184400000000" remote="129784184400000000" />
-<file name="drop.php" server="ftp.foliadeluz.org.br/www/" local="129784173600000000" remote="129784173600000000" />
-<file name="dropconfir.php" server="ftp.foliadeluz.org.br/www/" local="129784173600000000" remote="129784173600000000" />
-<file name="dropinscrito.php" server="ftp.foliadeluz.org.br/www/" local="129784173600000000" remote="129784173600000000" />
-<file name="Login.php" server="ftp.foliadeluz.org.br/www/" local="129784173600000000" remote="129784173600000000" />
-<file name="login2.php" server="ftp.foliadeluz.org.br/www/" local="129784173600000000" remote="129784173600000000" />
-<file name="logout.php" server="ftp.foliadeluz.org.br/www/" local="129784173600000000" remote="129784173600000000" />
-<file name="print.php" server="ftp.foliadeluz.org.br/www/" local="129784173600000000" remote="129784173600000000" />
-<file name="print2.php" server="ftp.foliadeluz.org.br/www/" local="129784173600000000" remote="129784173600000000" />
-<file name="verinscrito.php" server="ftp.foliadeluz.org.br/www/" local="129784173600000000" remote="129784173600000000" />
-<file name="verlista.php" server="ftp.foliadeluz.org.br/www/" local="129784173600000000" remote="129784173600000000" />
-<file name="verlistah.php" server="ftp.foliadeluz.org.br/www/" local="129784173600000000" remote="129784173600000000" />
-<file name="verlistam.php" server="ftp.foliadeluz.org.br/www/" local="129784173600000000" remote="129784173600000000" />
+<file name="adm.php" server="ftp.foliadeluz.org.br/www/" local="129784173600000000" remote="129784173600000000" Dst="-1" />
+<file name="conect.php" server="ftp.foliadeluz.org.br/www/" local="129784184400000000" remote="129784184400000000" Dst="-1" />
+<file name="drop.php" server="ftp.foliadeluz.org.br/www/" local="129784173600000000" remote="129784173600000000" Dst="-1" />
+<file name="dropconfir.php" server="ftp.foliadeluz.org.br/www/" local="129784173600000000" remote="129784173600000000" Dst="-1" />
+<file name="dropinscrito.php" server="ftp.foliadeluz.org.br/www/" local="129784173600000000" remote="129784173600000000" Dst="-1" />
+<file name="Login.php" server="ftp.foliadeluz.org.br/www/" local="129784173600000000" remote="129784173600000000" Dst="-1" />
+<file name="login2.php" server="ftp.foliadeluz.org.br/www/" local="129784173600000000" remote="129784173600000000" Dst="-1" />
+<file name="logout.php" server="ftp.foliadeluz.org.br/www/" local="129784173600000000" remote="129784173600000000" Dst="-1" />
+<file name="print.php" server="ftp.foliadeluz.org.br/www/" local="129784173600000000" remote="129784173600000000" Dst="-1" />
+<file name="print2.php" server="ftp.foliadeluz.org.br/www/" local="129784173600000000" remote="129784173600000000" Dst="-1" />
+<file name="verinscrito.php" server="ftp.foliadeluz.org.br/www/" local="129784173600000000" remote="129784173600000000" Dst="-1" />
+<file name="verlista.php" server="ftp.foliadeluz.org.br/www/" local="129784173600000000" remote="129784173600000000" Dst="-1" />
+<file name="verlistah.php" server="ftp.foliadeluz.org.br/www/" local="129784173600000000" remote="129784173600000000" Dst="-1" />
+<file name="verlistam.php" server="ftp.foliadeluz.org.br/www/" local="129784173600000000" remote="129784173600000000" Dst="-1" />
+<file name="adm.php" server="ftp.foliadeluz.org.br" local="130550145382321601" remote="130626452400000000" Dst="2" />
+<file name="conect.php" server="ftp.foliadeluz.org.br" local="130550145377331316" remote="130626452400000000" Dst="2" />
+<file name="drop.php" server="ftp.foliadeluz.org.br" local="130550145375631219" remote="130626452400000000" Dst="2" />
+<file name="dropconfir.php" server="ftp.foliadeluz.org.br" local="130550145372371032" remote="130626452400000000" Dst="2" />
+<file name="dropinscrito.php" server="ftp.foliadeluz.org.br" local="130550145370530927" remote="130626452400000000" Dst="2" />
+<file name="Login.php" server="ftp.foliadeluz.org.br" local="130550145367360746" remote="130626452400000000" Dst="2" />
+<file name="login2.php" server="ftp.foliadeluz.org.br" local="130550145363760540" remote="130626452400000000" Dst="2" />
+<file name="logout.php" server="ftp.foliadeluz.org.br" local="130550145362460465" remote="130626452400000000" Dst="2" />
+<file name="print.php" server="ftp.foliadeluz.org.br" local="130550145358520240" remote="130626452400000000" Dst="2" />
+<file name="print2.php" server="ftp.foliadeluz.org.br" local="130550145357450179" remote="130626452400000000" Dst="2" />
+<file name="verinscrito.php" server="ftp.foliadeluz.org.br" local="130550145353549956" remote="130626452400000000" Dst="2" />
+<file name="verlista.php" server="ftp.foliadeluz.org.br" local="130550145350839801" remote="130626452400000000" Dst="2" />
+<file name="verlistah.php" server="ftp.foliadeluz.org.br" local="130550145346419548" remote="130626452400000000" Dst="2" />
+<file name="verlistam.php" server="ftp.foliadeluz.org.br" local="130550145344199421" remote="130626452400000000" Dst="2" />
 </dwsync>
