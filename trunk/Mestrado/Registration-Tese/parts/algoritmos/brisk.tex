@@ -25,7 +25,9 @@ os pares de curta distância são rotacionados baseados na orientação obtida.
 \label{fig:briskdescriptor}
 \end{figure}
 
-Possui um descritor binário de 512 bits que calcula a média ponderada utilizando uma Gaussiana sobre um padrão de pontos mais próximos do ponto selecionado como mostrado na imagem~\ref{fig:briskdescriptor} no ponto (0,0). Ao longo do padrão descrito, são aplicadas suavizações Gaussianas sendo que os círculos vermelhos representam o tamanho do desvio padrão do filtro Gaussiano aplicado a cada ponto.
+
+Como mostrado na figura~\ref{fig:briskdescriptor}, BRISK possui um descritor
+binário de 512 bits que calcula a média ponderada utilizando uma Gaussiana sobre um padrão de pontos mais próximos do ponto selecionado como mostrado na imagem~\ref{fig:briskdescriptor} no ponto (0,0). Ao longo do padrão descrito, são aplicadas suavizações Gaussianas sendo que os círculos vermelhos representam o tamanho do desvio padrão do filtro Gaussiano aplicado a cada ponto.
 É baseado em comparações entre pares de janelas de Gaussianas, resultando em 1 ou 0, dependendo de qual janela no par for maior.
 Os pares então são pré selecionado no BRISK, criando descritores binários que são posteriormente utilizados para casamento de padrão, utilizando distâncias Hamming ao invés de Euclidianas.
 

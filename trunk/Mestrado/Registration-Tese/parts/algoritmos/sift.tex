@@ -38,18 +38,9 @@ como uma forma de aproximação são utilizados diferenças de Gaucianas.
 
 Uma vez que as diferenças de gaucianas são calculadas, é necessário procurar por
 máximos entre espaço e escalas diferentes. Por exemplo como mostrado na
-figure~\ref{fig:dog02}, um pixel na imagem é comparado com seus 8 vizinhos e com
+figure~\ref{fig:dog01}, um pixel na imagem é comparado com seus 8 vizinhos e com
 níveis de escala próximos e anteriores.
 O que representa que o keypoint encontrado é melhor representado naquela escala.
-
-\begin{figure}[h!]
-\centering
-\includegraphics[scale=1.0]{images/DoG_escala}
-\caption{Difference of Gaussian}
-\label{fig:dog02}
-\end{figure}
-
-
 
 \subsubsection{Keypoint Localization}
 Uma vez que keypoints potenciais são localizados é importante selecionar pontos de interesse com contraste alto.

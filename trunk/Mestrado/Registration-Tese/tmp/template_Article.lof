@@ -4,7 +4,7 @@
 \contentsline {figure}{\numberline {1.2}{\ignorespaces Categorias de pesquisas cient\IeC {\'\i }ficas \relax }}{20}{figure.caption.9}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Arquitetura do Feed-Trough.\relax }}{24}{figure.caption.11}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Arquitetura do See-Trough.\relax }}{24}{figure.caption.12}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Arquitetura do See-Trough.\relax }}{25}{figure.caption.12}
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Realidade Aumentada com projetores.\relax }}{25}{figure.caption.13}
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Reconhecimento de padr\~oes.\cite {understandingfeatures}\relax }}{27}{figure.caption.14}
 \contentsline {figure}{\numberline {2.5}{\ignorespaces Regi\~oes de reconhecimento de padr\~oes.\cite {understandingfeatures}\relax }}{28}{figure.caption.15}
@@ -21,18 +21,17 @@
 \contentsline {figure}{\numberline {2.16}{\ignorespaces Pares selecionados para calcular a orienta\c c\~ao\relax }}{38}{figure.caption.26}
 \contentsline {figure}{\numberline {2.17}{\ignorespaces SIFT\relax }}{39}{figure.caption.27}
 \contentsline {figure}{\numberline {2.18}{\ignorespaces Difference of Gaussian\relax }}{40}{figure.caption.28}
-\contentsline {figure}{\numberline {2.19}{\ignorespaces Difference of Gaussian\relax }}{40}{figure.caption.29}
-\contentsline {figure}{\numberline {2.20}{\ignorespaces Forma\c c\~ao do descritor SIFT\relax }}{41}{figure.caption.30}
-\contentsline {figure}{\numberline {2.21}{\ignorespaces Box Filtering\relax }}{42}{figure.caption.31}
+\contentsline {figure}{\numberline {2.19}{\ignorespaces Forma\c c\~ao do descritor SIFT\relax }}{41}{figure.caption.29}
+\contentsline {figure}{\numberline {2.20}{\ignorespaces Box Filtering\relax }}{42}{figure.caption.30}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Resultado de performance de varia\c c\~ao de escala\relax }}{48}{figure.caption.32}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Resultado de performance de varia\c c\~ao de rota\c c\~ao\relax }}{49}{figure.caption.33}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Resultado de performance de varia\c c\~ao de blur\relax }}{50}{figure.caption.34}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Resultado de performance de varia\c c\~ao de blur\relax }}{51}{figure.caption.35}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces An\'alise de tempo de varia\c c\~ao de escala\relax }}{52}{figure.caption.36}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces An\'alise de tempo de varia\c c\~ao de rota\c c\~ao\relax }}{53}{figure.caption.37}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces An\'alise de tempo de varia\c c\~ao de blur\relax }}{54}{figure.caption.38}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces An\'alise de tempo de varia\c c\~ao de ilumina\c c\~ao\relax }}{55}{figure.caption.39}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Spiderweb Diagram (8~Dimensions, 2-Notch Scale, 3 Samples)\relax }}{56}{figure.caption.41}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Resultado de performance de varia\c c\~ao de escala\relax }}{48}{figure.caption.31}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Resultado de performance de varia\c c\~ao de rota\c c\~ao\relax }}{49}{figure.caption.32}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Resultado de performance de varia\c c\~ao de blur\relax }}{50}{figure.caption.33}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Resultado de performance de varia\c c\~ao de blur\relax }}{51}{figure.caption.34}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces An\'alise de tempo de varia\c c\~ao de escala\relax }}{52}{figure.caption.35}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces An\'alise de tempo de varia\c c\~ao de rota\c c\~ao\relax }}{53}{figure.caption.36}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces An\'alise de tempo de varia\c c\~ao de blur\relax }}{54}{figure.caption.37}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces An\'alise de tempo de varia\c c\~ao de ilumina\c c\~ao\relax }}{55}{figure.caption.38}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Spiderweb Diagram (8~Dimensions, 2-Notch Scale, 3 Samples)\relax }}{56}{figure.caption.40}
 \addvspace {10\p@ }
