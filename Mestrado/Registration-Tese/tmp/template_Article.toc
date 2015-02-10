@@ -16,34 +16,33 @@
 \contentsline {section}{\numberline {2.2}Head-Mounted Displays}{23}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}Feed-Through}{24}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2.2.2}See-Through}{24}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}Projetores}{25}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.3}Projetores}{24}{subsection.2.2.3}
 \contentsline {subsection}{\numberline {2.2.4}Monitores}{25}{subsection.2.2.4}
-\contentsline {section}{\numberline {2.3}Caracter\IeC {\'\i }sticas Locais}{25}{section.2.3}
+\contentsline {section}{\numberline {2.3}Caracter\IeC {\'\i }sticas Locais}{26}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}Propriedades da Caracter\IeC {\'\i }stica Local ideal}{26}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Features}{26}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.2}Features}{27}{subsection.2.3.2}
 \contentsline {section}{\numberline {2.4}Cad\^encia}{28}{section.2.4}
 \contentsline {section}{\numberline {2.5}Camera}{29}{section.2.5}
 \contentsline {subsection}{\numberline {2.5.1}Distor\c c\~ao Radial}{29}{subsection.2.5.1}
-\contentsline {subsection}{\numberline {2.5.2}Distor\c c\~ao Tangencial}{29}{subsection.2.5.2}
+\contentsline {subsection}{\numberline {2.5.2}Distor\c c\~ao Tangencial}{30}{subsection.2.5.2}
 \contentsline {section}{\numberline {2.6}Modelo de C\^amera}{31}{section.2.6}
 \contentsline {section}{\numberline {2.7}Reconhecimento}{32}{section.2.7}
 \contentsline {subsection}{\numberline {2.7.1}Detec\c c\~ao de caracter\IeC {\'\i }sticas}{33}{subsection.2.7.1}
 \contentsline {subsection}{\numberline {2.7.2}Correspond\^encia de caracter\IeC {\'\i }sticas}{33}{subsection.2.7.2}
 \contentsline {section}{\numberline {2.8}Algoritmos de Reconhecimento}{34}{section.2.8}
-\contentsline {subsection}{\numberline {2.8.1}BRIEF - Binary Robust Independent Elementary Features}{34}{subsection.2.8.1}
-\contentsline {subsection}{\numberline {2.8.2}FAST}{34}{subsection.2.8.2}
-\contentsline {subsection}{\numberline {2.8.3}BRISK - Binary Robust Invariant Scalable Keypoints}{35}{subsection.2.8.3}
-\contentsline {subsection}{\numberline {2.8.4}FREAK - Fast Retina Keypoint}{36}{subsection.2.8.4}
-\contentsline {subsection}{\numberline {2.8.5}GFTT}{38}{subsection.2.8.5}
-\contentsline {subsection}{\numberline {2.8.6}MSER}{38}{subsection.2.8.6}
-\contentsline {subsection}{\numberline {2.8.7}ORB - Oriented Fast and Rotated Brisk}{38}{subsection.2.8.7}
-\contentsline {subsection}{\numberline {2.8.8}SIFT - Scale-Invariant Feature Transform}{39}{subsection.2.8.8}
-\contentsline {subsubsection}{\numberline {2.8.8.1}Keypoint Localization}{40}{subsubsection.2.8.8.1}
-\contentsline {subsubsection}{\numberline {2.8.8.2}Orientation Assignment}{41}{subsubsection.2.8.8.2}
-\contentsline {subsubsection}{\numberline {2.8.8.3}Keypoint Descriptor}{41}{subsubsection.2.8.8.3}
-\contentsline {subsubsection}{\numberline {2.8.8.4}Keypoint Matching}{41}{subsubsection.2.8.8.4}
-\contentsline {subsection}{\numberline {2.8.9}SURF - Speeded Up Robust Feature}{42}{subsection.2.8.9}
-\contentsline {subsection}{\numberline {2.8.10}STAR}{42}{subsection.2.8.10}
+\contentsline {subsection}{\numberline {2.8.1}FAST}{34}{subsection.2.8.1}
+\contentsline {subsection}{\numberline {2.8.2}BRISK - Binary Robust Invariant Scalable Keypoints}{35}{subsection.2.8.2}
+\contentsline {subsection}{\numberline {2.8.3}FREAK - Fast Retina Keypoint}{36}{subsection.2.8.3}
+\contentsline {subsection}{\numberline {2.8.4}GFTT}{38}{subsection.2.8.4}
+\contentsline {subsection}{\numberline {2.8.5}MSER}{38}{subsection.2.8.5}
+\contentsline {subsection}{\numberline {2.8.6}ORB - Oriented Fast and Rotated Brief}{38}{subsection.2.8.6}
+\contentsline {subsection}{\numberline {2.8.7}SIFT - Scale-Invariant Feature Transform}{39}{subsection.2.8.7}
+\contentsline {subsubsection}{\numberline {2.8.7.1}Keypoint Localization}{40}{subsubsection.2.8.7.1}
+\contentsline {subsubsection}{\numberline {2.8.7.2}Orientation Assignment}{40}{subsubsection.2.8.7.2}
+\contentsline {subsubsection}{\numberline {2.8.7.3}Keypoint Descriptor}{40}{subsubsection.2.8.7.3}
+\contentsline {subsubsection}{\numberline {2.8.7.4}Keypoint Matching}{41}{subsubsection.2.8.7.4}
+\contentsline {subsection}{\numberline {2.8.8}SURF - Speeded Up Robust Feature}{41}{subsection.2.8.8}
+\contentsline {subsection}{\numberline {2.8.9}STAR}{42}{subsection.2.8.9}
 \contentsline {chapter}{\numberline {3}Proposta}{43}{chapter.3}
 \contentsline {section}{\numberline {3.1}Metodologia}{43}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}Defini\c c\~ao de par\^ametros}{43}{subsection.3.1.1}
