@@ -42,14 +42,14 @@
 % % --------------------------------------------------------------------
 % %  Verificação se alvo será gerado pelo PDFLaTeX ou não
 % % --------------------------------------------------------------------
-\IfFileExists{ifpdf.sty}{\RequirePackage{ifpdf}}{\newif\ifpdf}
-%\newif\ifpdf
-%  \ifx\pdfoutput\undefined
- %     \pdffalse
-  %\else
-   %   \pdfoutput=1
-    %  \pdftrue
- %\fi
+%\IfFileExists{ifpdf.sty}{\RequirePackage{ifpdf}}{\newif\ifpdf}
+\newif\ifpdf
+  \ifx\pdfoutput\undefined
+      \pdffalse
+  \else
+      \pdfoutput=1
+      \pdftrue
+ \fi
 
 %==============================================================================
 %%% Declaracao das opcoes
