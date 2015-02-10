@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=latex 2014.10.12)  9 FEB 2015 09:30
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=latex 2014.10.12)  9 FEB 2015 15:08
 entering extended mode
 **template_Article.tex
 (D:\Projects\duartec-projects\Mestrado\Registration-Tese\template_Article.tex
@@ -917,22 +917,3682 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-! I can't write on file `template_Article.pdf'.
-Please type another file name for output
-! Emergency stop.
-<to be read again> 
-                   \endgroup \set@typeset@protect 
-l.93 \frontmatter
-                 
-*** (job aborted, file error in nonstop mode)
+[1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
 
- 
+]
+(D:\Projects\duartec-projects\Mestrado\Registration-Tese\template_Article.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+Package lastpage Info: Please have a look at the pageslts package at
+(lastpage)             http://www.ctan.org/tex-archive/ 
+(lastpage)             macros/latex/contrib/pageslts/ 
+(lastpage)             or
+(lastpage)             http://www.ctan.org/tex-archive/ 
+(lastpage)             install/macros/latex/contrib/pageslts.tds.zip
+(lastpage)             ! on input line 95.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count143
+\scratchdimen=\dimen197
+\scratchbox=\box44
+\nofMPsegments=\count144
+\nofMParguments=\count145
+\everyMPshowfont=\toks42
+\MPscratchCnt=\count146
+\MPscratchDim=\dimen198
+\MPnumerator=\count147
+\makeMPintoPDFobject=\count148
+\everyMPtoPDFconversion=\toks43
+)
+\AtBeginShipoutBox=\box45
+Package hyperref Info: Link coloring ON on input line 95.
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
+Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+)
+\c@section@level=\count149
+)
+LaTeX Info: Redefining \ref on input line 95.
+LaTeX Info: Redefining \pageref on input line 95.
+LaTeX Info: Redefining \nameref on input line 95.
+
+(D:\Projects\duartec-projects\Mestrado\Registration-Tese\template_Article.out)
+(D:\Projects\duartec-projects\Mestrado\Registration-Tese\template_Article.out)
+\@outlinefile=\write5
+Package hyperref Info: Anchor `Doc-Start' on input line 95.
+
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(85.35826pt, 455.24411pt, 56.9055pt)
+* v-part:(T,H,B)=(85.35826pt, 702.78308pt, 56.9055pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=455.24411pt
+* \textheight=702.78308pt
+* \oddsidemargin=13.08827pt
+* \evensidemargin=13.08827pt
+* \topmargin=-17.07156pt
+* \headheight=15.93347pt
+* \headsep=14.22636pt
+* \topskip=12.0pt
+* \footskip=35.24373pt
+* \marginparwidth=38.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+\c@butlastpage=\count150
+ABD: EveryShipout initializing macros
+Package pgfplots notification 'compat/show suggested version=true': you might b
+enefit from \pgfplotsset{compat=1.11} (current compat level: 1.8).
+
+Package hyperref Info: Anchor `titulo.0' on input line 98.
+LaTeX Font Info:    Try loading font information for U+msa on input line 98.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 98.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Package hyperref Info: Anchor `page.i' on input line 98.
+ [1
+
+
+]
+Package hyperref Info: Anchor `cip.0' on input line 98.
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--98
+
+ []
+
+Package hyperref Info: Anchor `page.ii' on input line 98.
+[2]
+Package hyperref Info: Anchor `aprovacao.0' on input line 98.
+Package hyperref Info: Anchor `page.iii' on input line 98.
+ [3]
+Package hyperref Info: Anchor `dedication.0' on input line 101.
+Package hyperref Info: Anchor `page.iv' on input line 107.
+ [4]
+Package hyperref Info: Anchor `epigrafe.0' on input line 116.
+LaTeX Font Info:    Try loading font information for T1+aess on input line 120.
+
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ae\t1aess.fd"
+File: t1aess.fd 1997/11/16 Font definitions for T1/aess.
+)
+LaTeX Font Info:    Font shape `T1/aess/m/it' in size <12> not available
+(Font)              Font shape `T1/aess/m/sl' tried instead on input line 120.
+Package hyperref Info: Anchor `page.v' on input line 128.
+
+[5]
+Package hyperref Info: Anchor `chapter*.1' on input line 128.
+Package hyperref Info: Anchor `resumo.0' on input line 128.
+ (D:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/resumo.tex)
+Package hyperref Info: Anchor `page.vi' on input line 136.
+
+[6
+
+]
+Package hyperref Info: Anchor `chapter*.2' on input line 136.
+Package hyperref Info: Anchor `abstract.0' on input line 136.
+ (D:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/abstract.tex)
+Package hyperref Info: Anchor `page.vii' on input line 144.
+ [7
+
+]
+Package hyperref Info: Anchor `chapter*.3' on input line 144.
+Package hyperref Info: Anchor `contents.0' on input line 144.
+
+(D:\Projects\duartec-projects\Mestrado\Registration-Tese\template_Article.toc
+Underfull \hbox (badness 10000) in paragraph at lines 2--2
+ [][]  
+ []
+
+Package hyperref Info: Reference (link) `chapter*.4' on input line 2.
+
+Package xcolor Warning: Incompatible color definition on input line 2.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--3
+ [][]  
+ []
+
+Package hyperref Info: Reference (link) `chapter*.5' on input line 3.
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--4
+ [][]  
+ []
+
+Package hyperref Info: Reference (link) `chapter*.6' on input line 4.
+
+Package xcolor Warning: Incompatible color definition on input line 4.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--5
+ [][]  
+ []
+
+Package hyperref Info: Reference (link) `chapter.1' on input line 5.
+
+Package xcolor Warning: Incompatible color definition on input line 5.
+
+Package hyperref Info: Reference (link) `section.1.1' on input line 6.
+
+Package xcolor Warning: Incompatible color definition on input line 6.
+
+Package hyperref Info: Reference (link) `section.1.2' on input line 7.
+
+Package xcolor Warning: Incompatible color definition on input line 7.
+
+Package hyperref Info: Reference (link) `section.1.3' on input line 8.
+
+Package xcolor Warning: Incompatible color definition on input line 8.
+
+Package hyperref Info: Reference (link) `section.1.4' on input line 9.
+
+Package xcolor Warning: Incompatible color definition on input line 9.
+
+Package hyperref Info: Reference (link) `subsection.1.4.1' on input line 10.
+
+Package xcolor Warning: Incompatible color definition on input line 10.
+
+Package hyperref Info: Reference (link) `subsection.1.4.2' on input line 11.
+
+Package xcolor Warning: Incompatible color definition on input line 11.
+
+Package hyperref Info: Reference (link) `section.1.5' on input line 12.
+
+Package xcolor Warning: Incompatible color definition on input line 12.
+
+Package hyperref Info: Reference (link) `section.1.6' on input line 13.
+
+Package xcolor Warning: Incompatible color definition on input line 13.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--14
+ [][]  
+ []
+
+Package hyperref Info: Reference (link) `chapter.2' on input line 14.
+
+Package xcolor Warning: Incompatible color definition on input line 14.
+
+Package hyperref Info: Reference (link) `section.2.1' on input line 15.
+
+Package xcolor Warning: Incompatible color definition on input line 15.
+
+Package hyperref Info: Reference (link) `section.2.2' on input line 16.
+
+Package xcolor Warning: Incompatible color definition on input line 16.
+
+Package hyperref Info: Reference (link) `subsection.2.2.1' on input line 17.
+
+Package xcolor Warning: Incompatible color definition on input line 17.
+
+Package hyperref Info: Reference (link) `subsection.2.2.2' on input line 18.
+
+Package xcolor Warning: Incompatible color definition on input line 18.
+
+Package hyperref Info: Reference (link) `subsection.2.2.3' on input line 19.
+
+Package xcolor Warning: Incompatible color definition on input line 19.
+
+Package hyperref Info: Anchor `page.viii' on input line 20.
+[8
+
+Package `hyperref' Info: End of reference (link) `chapter*.4', line 2.
+Package `hyperref' Info: End of reference (link) `chapter*.5', line 3.
+Package `hyperref' Info: End of reference (link) `chapter*.6', line 4.
+Package `hyperref' Info: End of reference (link) `chapter.1', line 5.
+Package `hyperref' Info: End of reference (link) `section.1.1', line 6.
+Package `hyperref' Info: End of reference (link) `section.1.2', line 7.
+Package `hyperref' Info: End of reference (link) `section.1.3', line 8.
+Package `hyperref' Info: End of reference (link) `section.1.4', line 9.
+Package `hyperref' Info: End of reference (link) `subsection.1.4.1', line 10.
+Package `hyperref' Info: End of reference (link) `subsection.1.4.2', line 11.
+Package `hyperref' Info: End of reference (link) `section.1.5', line 12.
+Package `hyperref' Info: End of reference (link) `section.1.6', line 13.
+Package `hyperref' Info: End of reference (link) `chapter.2', line 14.
+Package `hyperref' Info: End of reference (link) `section.2.1', line 15.
+Package `hyperref' Info: End of reference (link) `section.2.2', line 16.
+Package `hyperref' Info: End of reference (link) `subsection.2.2.1', line 17.
+Package `hyperref' Info: End of reference (link) `subsection.2.2.2', line 18.
+]
+Package hyperref Info: Reference (link) `subsection.2.2.4' on input line 20.
+
+
+Package xcolor Warning: Incompatible color definition on input line 20.
+
+Package hyperref Info: Reference (link) `section.2.3' on input line 21.
+
+Package xcolor Warning: Incompatible color definition on input line 21.
+
+Package hyperref Info: Reference (link) `subsection.2.3.1' on input line 22.
+
+Package xcolor Warning: Incompatible color definition on input line 22.
+
+Package hyperref Info: Reference (link) `subsection.2.3.2' on input line 23.
+
+Package xcolor Warning: Incompatible color definition on input line 23.
+
+Package hyperref Info: Reference (link) `section.2.4' on input line 24.
+
+Package xcolor Warning: Incompatible color definition on input line 24.
+
+Package hyperref Info: Reference (link) `section.2.5' on input line 25.
+
+Package xcolor Warning: Incompatible color definition on input line 25.
+
+Package hyperref Info: Reference (link) `subsection.2.5.1' on input line 26.
+
+Package xcolor Warning: Incompatible color definition on input line 26.
+
+Package hyperref Info: Reference (link) `subsection.2.5.2' on input line 27.
+
+Package xcolor Warning: Incompatible color definition on input line 27.
+
+Package hyperref Info: Reference (link) `section.2.6' on input line 28.
+
+Package xcolor Warning: Incompatible color definition on input line 28.
+
+Package hyperref Info: Reference (link) `section.2.7' on input line 29.
+
+Package xcolor Warning: Incompatible color definition on input line 29.
+
+Package hyperref Info: Reference (link) `subsection.2.7.1' on input line 30.
+
+Package xcolor Warning: Incompatible color definition on input line 30.
+
+Package hyperref Info: Reference (link) `subsection.2.7.2' on input line 31.
+
+Package xcolor Warning: Incompatible color definition on input line 31.
+
+Package hyperref Info: Reference (link) `section.2.8' on input line 32.
+
+Package xcolor Warning: Incompatible color definition on input line 32.
+
+Package hyperref Info: Reference (link) `subsection.2.8.1' on input line 33.
+
+Package xcolor Warning: Incompatible color definition on input line 33.
+
+Package hyperref Info: Reference (link) `subsection.2.8.2' on input line 34.
+
+Package xcolor Warning: Incompatible color definition on input line 34.
+
+Package hyperref Info: Reference (link) `subsection.2.8.3' on input line 35.
+
+Package xcolor Warning: Incompatible color definition on input line 35.
+
+Package hyperref Info: Reference (link) `subsection.2.8.4' on input line 36.
+
+Package xcolor Warning: Incompatible color definition on input line 36.
+
+Package hyperref Info: Reference (link) `subsection.2.8.5' on input line 37.
+
+Package xcolor Warning: Incompatible color definition on input line 37.
+
+Package hyperref Info: Reference (link) `subsection.2.8.6' on input line 38.
+
+Package xcolor Warning: Incompatible color definition on input line 38.
+
+Package hyperref Info: Reference (link) `subsection.2.8.7' on input line 39.
+
+Package xcolor Warning: Incompatible color definition on input line 39.
+
+Package hyperref Info: Reference (link) `subsection.2.8.8' on input line 40.
+
+Package xcolor Warning: Incompatible color definition on input line 40.
+
+Package hyperref Info: Reference (link) `subsection.2.8.9' on input line 45.
+
+Package xcolor Warning: Incompatible color definition on input line 45.
+
+Package hyperref Info: Reference (link) `subsection.2.8.10' on input line 46.
+
+Package xcolor Warning: Incompatible color definition on input line 46.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--47
+ [][]  
+ []
+
+Package hyperref Info: Reference (link) `chapter.3' on input line 47.
+
+Package xcolor Warning: Incompatible color definition on input line 47.
+
+Package hyperref Info: Reference (link) `section.3.1' on input line 48.
+
+Package xcolor Warning: Incompatible color definition on input line 48.
+
+Package hyperref Info: Anchor `page.ix' on input line 49.
+[9
+Package `hyperref' Info: End of reference (link) `subsection.2.2.3', line 19.
+Package `hyperref' Info: End of reference (link) `subsection.2.2.4', line 20.
+Package `hyperref' Info: End of reference (link) `section.2.3', line 21.
+Package `hyperref' Info: End of reference (link) `subsection.2.3.1', line 22.
+Package `hyperref' Info: End of reference (link) `subsection.2.3.2', line 23.
+Package `hyperref' Info: End of reference (link) `section.2.4', line 24.
+Package `hyperref' Info: End of reference (link) `section.2.5', line 25.
+Package `hyperref' Info: End of reference (link) `subsection.2.5.1', line 26.
+Package `hyperref' Info: End of reference (link) `subsection.2.5.2', line 27.
+Package `hyperref' Info: End of reference (link) `section.2.6', line 28.
+Package `hyperref' Info: End of reference (link) `section.2.7', line 29.
+Package `hyperref' Info: End of reference (link) `subsection.2.7.1', line 30.
+Package `hyperref' Info: End of reference (link) `subsection.2.7.2', line 31.
+Package `hyperref' Info: End of reference (link) `section.2.8', line 32.
+Package `hyperref' Info: End of reference (link) `subsection.2.8.1', line 33.
+Package `hyperref' Info: End of reference (link) `subsection.2.8.2', line 34.
+Package `hyperref' Info: End of reference (link) `subsection.2.8.3', line 35.
+Package `hyperref' Info: End of reference (link) `subsection.2.8.4', line 36.
+Package `hyperref' Info: End of reference (link) `subsection.2.8.5', line 37.
+Package `hyperref' Info: End of reference (link) `subsection.2.8.6', line 38.
+Package `hyperref' Info: End of reference (link) `subsection.2.8.7', line 39.
+Package `hyperref' Info: End of reference (link) `subsection.2.8.8', line 40.
+Package `hyperref' Info: End of reference (link) `subsection.2.8.9', line 45.
+Package `hyperref' Info: End of reference (link) `subsection.2.8.10', line 46.
+Package `hyperref' Info: End of reference (link) `chapter.3', line 47.
+]
+Package hyperref Info: Reference (link) `subsection.3.1.1' on input line 49.
+
+
+Package xcolor Warning: Incompatible color definition on input line 49.
+
+Package hyperref Info: Reference (link) `section.3.2' on input line 50.
+
+Package xcolor Warning: Incompatible color definition on input line 50.
+
+Package hyperref Info: Reference (link) `subsection.3.2.1' on input line 51.
+
+Package xcolor Warning: Incompatible color definition on input line 51.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--55
+ [][]  
+ []
+
+Package hyperref Info: Reference (link) `chapter.4' on input line 55.
+
+Package xcolor Warning: Incompatible color definition on input line 55.
+
+Package hyperref Info: Reference (link) `section.4.1' on input line 56.
+
+Package xcolor Warning: Incompatible color definition on input line 56.
+
+Package hyperref Info: Reference (link) `section.4.2' on input line 57.
+
+Package xcolor Warning: Incompatible color definition on input line 57.
+
+Package hyperref Info: Reference (link) `subsection.4.2.1' on input line 58.
+
+Package xcolor Warning: Incompatible color definition on input line 58.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--59
+ [][]  
+ []
+
+Package hyperref Info: Reference (link) `chapter.5' on input line 59.
+
+Package xcolor Warning: Incompatible color definition on input line 59.
+
+Package hyperref Info: Reference (link) `subsection.5.0.2' on input line 60.
+
+Package xcolor Warning: Incompatible color definition on input line 60.
+
+Package hyperref Info: Reference (link) `section.5.1' on input line 61.
+
+Package xcolor Warning: Incompatible color definition on input line 61.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 62--62
+ [][]  
+ []
+
+Package hyperref Info: Reference (link) `chapter.6' on input line 62.
+
+Package xcolor Warning: Incompatible color definition on input line 62.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--63
+ [][]  
+ []
+
+Package hyperref Info: Reference (link) `chapter.7' on input line 63.
+
+Package xcolor Warning: Incompatible color definition on input line 63.
+
+)
+\tf@toc=\write6
+Package hyperref Info: Anchor `page.x' on input line 146.
+ [10
+Package `hyperref' Info: End of reference (link) `section.3.1', line 48.
+Package `hyperref' Info: End of reference (link) `subsection.3.1.1', line 49.
+Package `hyperref' Info: End of reference (link) `section.3.2', line 50.
+Package `hyperref' Info: End of reference (link) `subsection.3.2.1', line 51.
+Package `hyperref' Info: End of reference (link) `chapter.4', line 55.
+Package `hyperref' Info: End of reference (link) `section.4.1', line 56.
+Package `hyperref' Info: End of reference (link) `section.4.2', line 57.
+Package `hyperref' Info: End of reference (link) `subsection.4.2.1', line 58.
+Package `hyperref' Info: End of reference (link) `chapter.5', line 59.
+Package `hyperref' Info: End of reference (link) `subsection.5.0.2', line 60.
+Package `hyperref' Info: End of reference (link) `section.5.1', line 61.
+Package `hyperref' Info: End of reference (link) `chapter.6', line 62.
+Package `hyperref' Info: End of reference (link) `chapter.7', line 63.
+]
+Package hyperref Info: Anchor `chapter*.4' on input line 146.
+
+pdftex: bookmark at 146: {0} {Lista de Figuras} {chapter*.4}{0}{toc}
+(D:\Projects\duartec-projects\Mestrado\Registration-Tese\template_Article.lof
+Package hyperref Info: Reference (link) `figure.1.1' on input line 3.
+
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+Package hyperref Info: Reference (link) `figure.1.2' on input line 4.
+
+Package xcolor Warning: Incompatible color definition on input line 4.
+
+Package hyperref Info: Reference (link) `figure.2.1' on input line 6.
+
+Package xcolor Warning: Incompatible color definition on input line 6.
+
+Package hyperref Info: Reference (link) `figure.2.2' on input line 7.
+
+Package xcolor Warning: Incompatible color definition on input line 7.
+
+Package hyperref Info: Reference (link) `figure.2.3' on input line 8.
+
+Package xcolor Warning: Incompatible color definition on input line 8.
+
+Package hyperref Info: Reference (link) `figure.2.4' on input line 9.
+
+Package xcolor Warning: Incompatible color definition on input line 9.
+
+Package hyperref Info: Reference (cite) `cite.understandingfeatures' on input l
+ine 9.
+
+Package xcolor Warning: Incompatible color definition on input line 9.
+
+Package hyperref Info: Reference (cite) `cite.understandingfeatures' on input l
+ine 9.
+
+Package xcolor Warning: Incompatible color definition on input line 9.
+
+Package hyperref Info: Reference (link) `figure.2.5' on input line 10.
+
+Package xcolor Warning: Incompatible color definition on input line 10.
+
+Package hyperref Info: Reference (cite) `cite.understandingfeatures' on input l
+ine 10.
+
+Package xcolor Warning: Incompatible color definition on input line 10.
+
+Package hyperref Info: Reference (cite) `cite.understandingfeatures' on input l
+ine 10.
+
+Package xcolor Warning: Incompatible color definition on input line 10.
+
+Package hyperref Info: Reference (link) `figure.2.6' on input line 11.
+
+Package xcolor Warning: Incompatible color definition on input line 11.
+
+Package hyperref Info: Reference (link) `figure.2.7' on input line 12.
+
+Package xcolor Warning: Incompatible color definition on input line 12.
+
+Package hyperref Info: Reference (link) `figure.2.8' on input line 13.
+
+Package xcolor Warning: Incompatible color definition on input line 13.
+
+Package hyperref Info: Reference (link) `figure.2.9' on input line 14.
+
+Package xcolor Warning: Incompatible color definition on input line 14.
+
+Package hyperref Info: Reference (link) `figure.2.10' on input line 15.
+
+Package xcolor Warning: Incompatible color definition on input line 15.
+
+Package hyperref Info: Reference (link) `figure.2.11' on input line 16.
+
+Package xcolor Warning: Incompatible color definition on input line 16.
+
+Package hyperref Info: Reference (link) `figure.2.12' on input line 17.
+
+Package xcolor Warning: Incompatible color definition on input line 17.
+
+Package hyperref Info: Reference (link) `figure.2.13' on input line 18.
+
+Package xcolor Warning: Incompatible color definition on input line 18.
+
+Package hyperref Info: Reference (link) `figure.2.14' on input line 19.
+
+Package xcolor Warning: Incompatible color definition on input line 19.
+
+Package hyperref Info: Reference (link) `figure.2.15' on input line 20.
+
+Package xcolor Warning: Incompatible color definition on input line 20.
+
+Package hyperref Info: Reference (link) `figure.2.16' on input line 21.
+
+Package xcolor Warning: Incompatible color definition on input line 21.
+
+Package hyperref Info: Reference (link) `figure.2.17' on input line 22.
+
+Package xcolor Warning: Incompatible color definition on input line 22.
+
+Package hyperref Info: Reference (link) `figure.2.18' on input line 23.
+
+Package xcolor Warning: Incompatible color definition on input line 23.
+
+Package hyperref Info: Anchor `page.xi' on input line 24.
+[11
+
+Package `hyperref' Info: End of reference (link) `figure.1.1', line 3.
+Package `hyperref' Info: End of reference (link) `figure.1.2', line 4.
+Package `hyperref' Info: End of reference (link) `figure.2.1', line 6.
+Package `hyperref' Info: End of reference (link) `figure.2.2', line 7.
+Package `hyperref' Info: End of reference (link) `figure.2.3', line 8.
+Package `hyperref' Info: End of reference (cite) `cite.understandingfeatures', 
+line 9.
+Package `hyperref' Info: End of reference (cite) `cite.understandingfeatures', 
+line 9.
+Package `hyperref' Info: End of reference (link) `figure.2.4', line 9.
+Package `hyperref' Info: End of reference (cite) `cite.understandingfeatures', 
+line 10.
+Package `hyperref' Info: End of reference (cite) `cite.understandingfeatures', 
+line 10.
+Package `hyperref' Info: End of reference (link) `figure.2.5', line 10.
+Package `hyperref' Info: End of reference (link) `figure.2.6', line 11.
+Package `hyperref' Info: End of reference (link) `figure.2.7', line 12.
+Package `hyperref' Info: End of reference (link) `figure.2.8', line 13.
+Package `hyperref' Info: End of reference (link) `figure.2.9', line 14.
+Package `hyperref' Info: End of reference (link) `figure.2.10', line 15.
+Package `hyperref' Info: End of reference (link) `figure.2.11', line 16.
+Package `hyperref' Info: End of reference (link) `figure.2.12', line 17.
+Package `hyperref' Info: End of reference (link) `figure.2.13', line 18.
+Package `hyperref' Info: End of reference (link) `figure.2.14', line 19.
+Package `hyperref' Info: End of reference (link) `figure.2.15', line 20.
+Package `hyperref' Info: End of reference (link) `figure.2.16', line 21.
+Package `hyperref' Info: End of reference (link) `figure.2.17', line 22.
+]
+Package hyperref Info: Reference (link) `figure.2.19' on input line 24.
+
+
+Package xcolor Warning: Incompatible color definition on input line 24.
+
+Package hyperref Info: Reference (link) `figure.2.20' on input line 25.
+
+Package xcolor Warning: Incompatible color definition on input line 25.
+
+Package hyperref Info: Reference (link) `figure.2.21' on input line 26.
+
+Package xcolor Warning: Incompatible color definition on input line 26.
+
+Package hyperref Info: Reference (link) `figure.4.1' on input line 29.
+
+Package xcolor Warning: Incompatible color definition on input line 29.
+
+Package hyperref Info: Reference (link) `figure.4.2' on input line 30.
+
+Package xcolor Warning: Incompatible color definition on input line 30.
+
+Package hyperref Info: Reference (link) `figure.4.3' on input line 31.
+
+Package xcolor Warning: Incompatible color definition on input line 31.
+
+Package hyperref Info: Reference (link) `figure.4.4' on input line 32.
+
+Package xcolor Warning: Incompatible color definition on input line 32.
+
+Package hyperref Info: Reference (link) `figure.4.5' on input line 33.
+
+Package xcolor Warning: Incompatible color definition on input line 33.
+
+Package hyperref Info: Reference (link) `figure.4.6' on input line 34.
+
+Package xcolor Warning: Incompatible color definition on input line 34.
+
+Package hyperref Info: Reference (link) `figure.4.7' on input line 35.
+
+Package xcolor Warning: Incompatible color definition on input line 35.
+
+Package hyperref Info: Reference (link) `figure.4.8' on input line 36.
+
+Package xcolor Warning: Incompatible color definition on input line 36.
+
+)
+\tf@lof=\write7
+Package hyperref Info: Anchor `page.xii' on input line 148.
+ [12
+Package `hyperref' Info: End of reference (link) `figure.2.18', line 23.
+Package `hyperref' Info: End of reference (link) `figure.2.19', line 24.
+Package `hyperref' Info: End of reference (link) `figure.2.20', line 25.
+Package `hyperref' Info: End of reference (link) `figure.2.21', line 26.
+Package `hyperref' Info: End of reference (link) `figure.4.1', line 29.
+Package `hyperref' Info: End of reference (link) `figure.4.2', line 30.
+Package `hyperref' Info: End of reference (link) `figure.4.3', line 31.
+Package `hyperref' Info: End of reference (link) `figure.4.4', line 32.
+Package `hyperref' Info: End of reference (link) `figure.4.5', line 33.
+Package `hyperref' Info: End of reference (link) `figure.4.6', line 34.
+Package `hyperref' Info: End of reference (link) `figure.4.7', line 35.
+Package `hyperref' Info: End of reference (link) `figure.4.8', line 36.
+]
+Package hyperref Info: Anchor `chapter*.5' on input line 148.
+
+pdftex: bookmark at 148: {0} {Lista de Tabelas} {chapter*.5}{0}{toc}
+(D:\Projects\duartec-projects\Mestrado\Registration-Tese\template_Article.lot
+Package hyperref Info: Reference (link) `table.0.1' on input line 2.
+
+
+Package xcolor Warning: Incompatible color definition on input line 2.
+
+Package hyperref Info: Reference (link) `table.1.1' on input line 4.
+
+Package xcolor Warning: Incompatible color definition on input line 4.
+
+Package hyperref Info: Reference (link) `table.4.1' on input line 8.
+
+Package xcolor Warning: Incompatible color definition on input line 8.
+
+)
+\tf@lot=\write8
+Package hyperref Info: Anchor `page.xiii' on input line 150.
+ [13
+
+Package `hyperref' Info: End of reference (link) `table.0.1', line 2.
+Package `hyperref' Info: End of reference (link) `table.1.1', line 4.
+Package `hyperref' Info: End of reference (link) `table.4.1', line 8.
+]
+Package hyperref Info: Anchor `chapter*.6' on input line 150.
+
+pdftex: bookmark at 150: {0} {Lista de Abreviaturas e Siglas} {chapter*.6}{0}{t
+oc}
+(D:\Projects\duartec-projects\Mestrado\Registration-Tese\template_Article.lof)
+\tf@lof=\write9
+
+(D:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/acronimos.tex
+Package hyperref Info: Anchor `table.0.1' on input line 10.
+
+pdftex: bookmark at 10: {1} {\numberline{1}{\ignorespaces Lista de Acr\^onimos}
+} {table.0.1}{0}{lot}
+Package hyperref Info: Anchor `table.0.1' on input line 10.
+)
+Package hyperref Info: Anchor `page.xiv' on input line 156.
+ [14
+
+pdfTeX warning (ext4): destination with the same identifier (name{table.0.1}) h
+as been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.156 \mainmatter
+                 ]
+Package hyperref Info: Anchor `chapter.1' on input line 159.
+
+Cap\'{\i }tulo 1.
+pdftex: bookmark at 159: {1} {\numberline{1}Introdu\c c\~ao} {chapter.1}{0}{toc
+}
+(D:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/motivacao.tex
+Package hyperref Info: Anchor `section.1.1' on input line 1.
+
+pdftex: bookmark at 1: {1.1} {\numberline{1.1}Motiva\c c\~ao} {section.1.1}{1}{
+toc}
+Package hyperref Info: Reference (cite) `cite.Welch78' on input line 9.
+
+Package xcolor Warning: Incompatible color definition on input line 9.
+
+Package hyperref Info: Reference (cite) `cite.Welch78' on input line 9.
+
+Package xcolor Warning: Incompatible color definition on input line 9.
+
+Package hyperref Info: Anchor `page.15' on input line 21.
+[15
+
+
+Package `hyperref' Info: End of reference (cite) `cite.Welch78', line 9.
+Package `hyperref' Info: End of reference (cite) `cite.Welch78', line 9.
+]
+LaTeX Font Info:    Try loading font information for OMS+aer on input line 22.
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ae\omsaer.fd"
+File: omsaer.fd 1999/12/27
+)
+LaTeX Font Info:    Font shape `OMS/aer/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 22.
+)
+(D:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/objetivo.tex
+Package hyperref Info: Anchor `section.1.2' on input line 1.
+
+pdftex: bookmark at 1: {1.2} {\numberline{1.2}Objetivo} {section.1.2}{1}{toc}
+Package hyperref Info: Anchor `page.16' on input line 6.
+[16])
+(D:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/justificativa.te
+x
+Package hyperref Info: Anchor `section.1.3' on input line 1.
+
+pdftex: bookmark at 1: {1.3} {\numberline{1.3}Justificativa} {section.1.3}{1}{t
+oc}
+Package hyperref Info: Reference (cite) `cite.performance_evaluation' on input 
+line 6.
+
+Package xcolor Warning: Incompatible color definition on input line 6.
+
+Package hyperref Info: Reference (cite) `cite.performance_evaluation' on input 
+line 6.
+
+Package xcolor Warning: Incompatible color definition on input line 6.
+
+Package hyperref Info: Reference (cite) `cite.binaryfeatures' on input line 9.
+
+Package xcolor Warning: Incompatible color definition on input line 9.
+
+Package hyperref Info: Reference (cite) `cite.binaryfeatures' on input line 9.
+
+Package xcolor Warning: Incompatible color definition on input line 9.
+
+Package hyperref Info: Reference (cite) `cite.lowlevelfeature' on input line 13
+.
+
+Package xcolor Warning: Incompatible color definition on input line 13.
+
+Package hyperref Info: Reference (cite) `cite.lowlevelfeature' on input line 13
+.
+
+Package xcolor Warning: Incompatible color definition on input line 13.
+
+Package hyperref Info: Reference (cite) `cite.robotnavigation' on input line 18
+.
+
+Package xcolor Warning: Incompatible color definition on input line 18.
+
+Package hyperref Info: Reference (cite) `cite.robotnavigation' on input line 18
+.
+
+Package xcolor Warning: Incompatible color definition on input line 18.
+
+Package hyperref Info: Anchor `page.17' on input line 20.
+[17
+Package `hyperref' Info: End of reference (cite) `cite.performance_evaluation',
+ line 6.
+Package `hyperref' Info: End of reference (cite) `cite.performance_evaluation',
+ line 6.
+Package `hyperref' Info: End of reference (cite) `cite.binaryfeatures', line 9.
+
+Package `hyperref' Info: End of reference (cite) `cite.binaryfeatures', line 9.
+
+Package `hyperref' Info: End of reference (cite) `cite.lowlevelfeature', line 1
+3.
+Package `hyperref' Info: End of reference (cite) `cite.lowlevelfeature', line 1
+3.
+]
+Package hyperref Info: Reference (cite) `cite.Pedestrian' on input line 22.
+
+
+Package xcolor Warning: Incompatible color definition on input line 22.
+
+Package hyperref Info: Reference (cite) `cite.Pedestrian' on input line 22.
+
+Package xcolor Warning: Incompatible color definition on input line 22.
+
+Package hyperref Info: Reference (cite) `cite.localfeaturedetector' on input li
+ne 24.
+
+Package xcolor Warning: Incompatible color definition on input line 24.
+
+Package hyperref Info: Reference (cite) `cite.localfeaturedetector' on input li
+ne 24.
+
+Package xcolor Warning: Incompatible color definition on input line 24.
+
+Package hyperref Info: Reference (cite) `cite.Well-Known' on input line 29.
+
+Package xcolor Warning: Incompatible color definition on input line 29.
+
+Package hyperref Info: Reference (cite) `cite.Well-Known' on input line 29.
+
+Package xcolor Warning: Incompatible color definition on input line 29.
+
+) (D:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/contexto.tex
+Package hyperref Info: Anchor `section.1.4' on input line 1.
+
+pdftex: bookmark at 1: {1.4} {\numberline{1.4}Contextualiza\c c\~ao} {section.1
+.4}{1}{toc}
+Package hyperref Info: Anchor `page.18' on input line 10.
+[18
+Package `hyperref' Info: End of reference (cite) `cite.robotnavigation', line 1
+8.
+Package `hyperref' Info: End of reference (cite) `cite.robotnavigation', line 1
+8.
+Package `hyperref' Info: End of reference (cite) `cite.Pedestrian', line 22.
+Package `hyperref' Info: End of reference (cite) `cite.Pedestrian', line 22.
+Package `hyperref' Info: End of reference (cite) `cite.localfeaturedetector', l
+ine 24.
+Package `hyperref' Info: End of reference (cite) `cite.localfeaturedetector', l
+ine 24.
+Package `hyperref' Info: End of reference (cite) `cite.Well-Known', line 29.
+Package `hyperref' Info: End of reference (cite) `cite.Well-Known', line 29.
+]
+(D:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/variaveiscontorn
+o.tex
+Package hyperref Info: Anchor `subsection.1.4.1' on input line 1.
+
+pdftex: bookmark at 1: {1.4.1} {\numberline{1.4.1}Vari\'aveis de contorno} {sub
+section.1.4.1}{2}{toc}
+) (D:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/cenario.tex
+Package hyperref Info: Anchor `subsection.1.4.2' on input line 1.
+
+pdftex: bookmark at 1: {1.4.2} {\numberline{1.4.2}Cen\'ario} {subsection.1.4.2}
+{2}{toc}
+Package hyperref Info: Reference (link) `figure.1.1' on input line 8.
+
+Package xcolor Warning: Incompatible color definition on input line 8.
+
+<images/ERJ190.jpg, id=507, 531.9875pt x 192.72pt>
+File: images/ERJ190.jpg Graphic file (type jpg)
+ <use images/ERJ190.jpg>
+Package pdftex.def Info: images/ERJ190.jpg used on input line 13.
+(pdftex.def)             Requested size: 425.59058pt x 154.1762pt.
+Package hyperref Info: Anchor `figure.1.1' on input line 14.
+
+pdftex: bookmark at 14: {1.1} {\numberline{1.1}{\ignorespaces Posicionamento da
+ LRU}} {figure.1.1}{0}{lof}
+Package hyperref Info: Anchor `figure.1.1' on input line 14.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+))
+(D:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/recursosemetodos
+.tex
+Package hyperref Info: Anchor `page.19' on input line 1.
+ [19
+Package `hyperref' Info: End of reference (link) `figure.1.1', line 8.
+]
+Package hyperref Info: Anchor `section.1.5' on input line 1.
+
+pdftex: bookmark at 1: {1.5} {\numberline{1.5}Recursos e M\'etodos} {section.1.
+5}{1}{toc}
+Package hyperref Info: Reference (cite) `cite.MetodologiaCientifica' on input l
+ine 8.
+
+Package xcolor Warning: Incompatible color definition on input line 8.
+
+Package hyperref Info: Reference (cite) `cite.MetodologiaCientifica' on input l
+ine 8.
+
+Package xcolor Warning: Incompatible color definition on input line 8.
+
+Package hyperref Info: Reference (cite) `cite.MetodologiaCientifica' on input l
+ine 18.
+
+Package xcolor Warning: Incompatible color definition on input line 18.
+
+Package hyperref Info: Reference (cite) `cite.MetodologiaCientifica' on input l
+ine 18.
+
+Package xcolor Warning: Incompatible color definition on input line 18.
+
+Package hyperref Info: Reference (link) `figure.1.2' on input line 19.
+
+Package xcolor Warning: Incompatible color definition on input line 19.
+
+<images/tiposdepesquisa.jpg, id=517, 737.00343pt x 414.04688pt>
+File: images/tiposdepesquisa.jpg Graphic file (type jpg)
+
+<use images/tiposdepesquisa.jpg>
+Package pdftex.def Info: images/tiposdepesquisa.jpg used on input line 23.
+(pdftex.def)             Requested size: 515.89888pt x 289.83083pt.
+Package hyperref Info: Anchor `figure.1.2' on input line 24.
+
+Overfull \hbox (60.65477pt too wide) in paragraph at lines 23--24
+ [][][] 
+ []
+
+pdftex: bookmark at 24: {1.2} {\numberline{1.2}{\ignorespaces Categorias de pes
+quisas cient\IeC {\'\i }ficas }} {figure.1.2}{0}{lof}
+Package hyperref Info: Anchor `figure.1.2' on input line 24.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Package hyperref Info: Reference (link) `table.1.1' on input line 29.
+
+Package xcolor Warning: Incompatible color definition on input line 29.
+
+Package hyperref Info: Anchor `table.1.1' on input line 51.
+pdftex: bookmark at 51: {1.1} {\numberline{1.1}{\ignorespaces Classifica\c c\~a
+o da pesquisa}} {table.1.1}{0}{lot}
+Package hyperref Info: Anchor `table.1.1' on input line 51.
+Package hyperref Info: Anchor `page.20' on input line 53.
+[20pdfTeX warning (ext4): destination with the same identifier (name{figure.1.1
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.53 \end{table}
+                
+Package `hyperref' Info: End of reference (cite) `cite.MetodologiaCientifica', 
+line 8.
+Package `hyperref' Info: End of reference (cite) `cite.MetodologiaCientifica', 
+line 8.
+Package `hyperref' Info: End of reference (cite) `cite.MetodologiaCientifica', 
+line 18.
+Package `hyperref' Info: End of reference (cite) `cite.MetodologiaCientifica', 
+line 18.
+Package `hyperref' Info: End of reference (link) `figure.1.2', line 19.
+Package `hyperref' Info: End of reference (link) `table.1.1', line 29.
+ <D:/Projects/duartec-projects/Mestrado/Registration-Tese/images/ERJ190.jpg>]
+Package hyperref Info: Anchor `Item.1' on input line 57.
+Package hyperref Info: Reference (cite) `cite.MetodologiaCientifica' on input l
+ine 59.
+
+
+Package xcolor Warning: Incompatible color definition on input line 59.
+
+Package hyperref Info: Reference (cite) `cite.MetodologiaCientifica' on input l
+ine 59.
+
+Package xcolor Warning: Incompatible color definition on input line 59.
+
+Package hyperref Info: Anchor `page.21' on input line 64.
+[21pdfTeX warning (ext4): destination with the same identifier (name{figure.1.2
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.64 
+     pdfTeX warning (ext4): destination with the same identifier (name{table.1.
+1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.64 
+     
+Package `hyperref' Info: End of reference (cite) `cite.MetodologiaCientifica', 
+line 59.
+Package `hyperref' Info: End of reference (cite) `cite.MetodologiaCientifica', 
+line 59.
+ <D:/Projects/duartec-projects/Mestrado/Registration-Tese/images/tiposdepesquis
+a.jpg>]
+Package hyperref Info: Anchor `Item.2' on input line 65.
+Package hyperref Info: Anchor `Item.3' on input line 75.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `latin1'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.79 ...tribuem para a ocorrência dos fenômenos; “
+                                                  aprofunda o
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `latin1'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.80 ...que explica a razão, o porquê das coisas.”
+                                                  \cite{ElaborarPesquisa}.
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+Package hyperref Info: Reference (cite) `cite.ElaborarPesquisa' on input line 8
+0.
+
+Package xcolor Warning: Incompatible color definition on input line 80.
+
+Package hyperref Info: Reference (cite) `cite.ElaborarPesquisa' on input line 8
+0.
+
+Package xcolor Warning: Incompatible color definition on input line 80.
+
+Package hyperref Info: Anchor `Item.4' on input line 83.
+Package hyperref Info: Anchor `page.22' on input line 102.
+[22
+Package `hyperref' Info: End of reference (cite) `cite.ElaborarPesquisa', line 
+80.
+Package `hyperref' Info: End of reference (cite) `cite.ElaborarPesquisa', line 
+80.
+])
+(D:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/estrutura.tex
+Package hyperref Info: Anchor `section.1.6' on input line 1.
+
+pdftex: bookmark at 1: {1.6} {\numberline{1.6}Estrutura} {section.1.6}{1}{toc}
+Package hyperref Info: Reference (link) `chapter.1' on input line 5.
+
+Package xcolor Warning: Incompatible color definition on input line 5.
+
+Package hyperref Info: Reference (link) `chapter.2' on input line 11.
+
+Package xcolor Warning: Incompatible color definition on input line 11.
+
+Package hyperref Info: Reference (link) `chapter.3' on input line 15.
+
+Package xcolor Warning: Incompatible color definition on input line 15.
+
+Package hyperref Info: Reference (link) `chapter.4' on input line 18.
+
+Package xcolor Warning: Incompatible color definition on input line 18.
+
+Package hyperref Info: Anchor `page.23' on input line 21.
+[23
+Package `hyperref' Info: End of reference (link) `chapter.1', line 5.
+Package `hyperref' Info: End of reference (link) `chapter.2', line 11.
+Package `hyperref' Info: End of reference (link) `chapter.3', line 15.
+]
+Package hyperref Info: Reference (link) `chapter.5' on input line 22.
+
+
+Package xcolor Warning: Incompatible color definition on input line 22.
+
+)
+Package hyperref Info: Anchor `page.24' on input line 169.
+ [24
+Package `hyperref' Info: End of reference (link) `chapter.4', line 18.
+Package `hyperref' Info: End of reference (link) `chapter.5', line 22.
+]
+Package hyperref Info: Anchor `chapter.2' on input line 169.
+
+Cap\'{\i }tulo 2.
+pdftex: bookmark at 169: {2} {\numberline{2}Fundamenta\c c\~ao Te\'orica} {chap
+ter.2}{0}{toc}
+
+(D:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/basicos/conceito
+s_basicos.tex
+Package hyperref Info: Anchor `section.2.1' on input line 1.
+
+pdftex: bookmark at 1: {2.1} {\numberline{2.1}Realidade Aumentada} {section.2.1
+}{1}{toc}
+Package hyperref Info: Reference (cite) `cite.SurveyAR' on input line 2.
+
+Package xcolor Warning: Incompatible color definition on input line 2.
+
+Package hyperref Info: Reference (cite) `cite.SurveyAR' on input line 2.
+
+Package xcolor Warning: Incompatible color definition on input line 2.
+
+Package hyperref Info: Reference (cite) `cite.Devices' on input line 8.
+
+Package xcolor Warning: Incompatible color definition on input line 8.
+
+Package hyperref Info: Reference (cite) `cite.Devices' on input line 8.
+
+Package xcolor Warning: Incompatible color definition on input line 8.
+
+Package hyperref Info: Anchor `section.2.2' on input line 9.
+pdftex: bookmark at 9: {2.2} {\numberline{2.2}Head-Mounted Displays} {section.2
+.2}{1}{toc}
+Package hyperref Info: Anchor `page.25' on input line 15.
+[25
+
+Package `hyperref' Info: End of reference (cite) `cite.SurveyAR', line 2.
+Package `hyperref' Info: End of reference (cite) `cite.SurveyAR', line 2.
+Package `hyperref' Info: End of reference (cite) `cite.Devices', line 8.
+Package `hyperref' Info: End of reference (cite) `cite.Devices', line 8.
+]
+Package hyperref Info: Anchor `subsection.2.2.1' on input line 15.
+
+pdftex: bookmark at 15: {2.2.1} {\numberline{2.2.1}Feed-Through} {subsection.2.
+2.1}{2}{toc}
+<images/feedthrough.jpg, id=566, 469.755pt x 258.9675pt>
+File: images/feedthrough.jpg Graphic file (type jpg)
+
+<use images/feedthrough.jpg>
+Package pdftex.def Info: images/feedthrough.jpg used on input line 20.
+(pdftex.def)             Requested size: 375.80452pt x 207.17426pt.
+Package hyperref Info: Anchor `figure.2.1' on input line 21.
+
+pdftex: bookmark at 21: {2.1} {\numberline{2.1}{\ignorespaces Arquitetura do Fe
+ed-Trough.}} {figure.2.1}{0}{lof}
+Package hyperref Info: Anchor `figure.2.1' on input line 21.
+Package hyperref Info: Anchor `subsection.2.2.2' on input line 26.
+pdftex: bookmark at 26: {2.2.2} {\numberline{2.2.2}See-Through} {subsection.2.2
+.2}{2}{toc}
+<images/seethrough.jpg, id=567, 469.755pt x 258.9675pt>
+File: images/seethrough.jpg Graphic file (type jpg)
+
+<use images/seethrough.jpg>
+Package pdftex.def Info: images/seethrough.jpg used on input line 31.
+(pdftex.def)             Requested size: 375.80452pt x 207.17426pt.
+Package hyperref Info: Anchor `figure.2.2' on input line 32.
+
+pdftex: bookmark at 32: {2.2} {\numberline{2.2}{\ignorespaces Arquitetura do Se
+e-Trough.}} {figure.2.2}{0}{lof}
+Package hyperref Info: Anchor `figure.2.2' on input line 32.
+Package hyperref Info: Anchor `page.26' on input line 34.
+[26pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.34 \end{figure}
+                  <D:/Projects/duartec-projects/Mestrado/Registration-Tese/imag
+es/feedthrough.jpg>]
+Package hyperref Info: Anchor `subsection.2.2.3' on input line 37.
+
+pdftex: bookmark at 37: {2.2.3} {\numberline{2.2.3}Projetores} {subsection.2.2.
+3}{2}{toc}
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `latin1'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.38 ...bjetos como carros, pessoas, prédios, etc…
+                                                  .
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+Package hyperref Info: Anchor `subsection.2.2.4' on input line 41.
+pdftex: bookmark at 41: {2.2.4} {\numberline{2.2.4}Monitores} {subsection.2.2.4
+}{2}{toc}
+<images/monitores.jpg, id=572, 379.4175pt x 285.31593pt>
+File: images/monitores.jpg Graphic file (type jpg)
+
+<use images/monitores.jpg>
+Package pdftex.def Info: images/monitores.jpg used on input line 46.
+(pdftex.def)             Requested size: 265.59042pt x 199.71979pt.
+Package hyperref Info: Anchor `figure.2.3' on input line 47.
+
+pdftex: bookmark at 47: {2.3} {\numberline{2.3}{\ignorespaces Realidade Aumenta
+da com projetores.}} {figure.2.3}{0}{lof}
+Package hyperref Info: Anchor `figure.2.3' on input line 47.
+Package hyperref Info: Anchor `page.27' on input line 49.
+[27pdfTeX warning (ext4): destination with the same identifier (name{figure.2.2
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.49 \end{figure}
+                  <D:/Projects/duartec-projects/Mestrado/Registration-Tese/imag
+es/seethrough.jpg>]
+Package hyperref Info: Anchor `section.2.3' on input line 51.
+
+pdftex: bookmark at 51: {2.3} {\numberline{2.3}Caracter\IeC {\'\i }sticas Locai
+s} {section.2.3}{1}{toc}
+Package hyperref Info: Anchor `subsection.2.3.1' on input line 54.
+pdftex: bookmark at 54: {2.3.1} {\numberline{2.3.1}Propriedades da Caracter\IeC
+ {\'\i }stica Local ideal} {subsection.2.3.1}{2}{toc}
+Package hyperref Info: Reference (cite) `cite.localfeaturedetector' on input li
+ne 57.
+
+Package xcolor Warning: Incompatible color definition on input line 57.
+
+Package hyperref Info: Reference (cite) `cite.localfeaturedetector' on input li
+ne 57.
+
+Package xcolor Warning: Incompatible color definition on input line 57.
+
+Package hyperref Info: Anchor `page.28' on input line 63.
+[28pdfTeX warning (ext4): destination with the same identifier (name{figure.2.3
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.63 	\item \textbf
+                   {Distinção}: Os padrões reconhecidos têm de ser possíveis...
+Package `hyperref' Info: End of reference (cite) `cite.localfeaturedetector', l
+ine 57.
+Package `hyperref' Info: End of reference (cite) `cite.localfeaturedetector', l
+ine 57.
+ <D:/Projects/duartec-projects/Mestrado/Registration-Tese/images/monitores.jpg>
+]
+Package hyperref Info: Anchor `subsection.2.3.2' on input line 76.
+
+pdftex: bookmark at 76: {2.3.2} {\numberline{2.3.2}Features} {subsection.2.3.2}
+{2}{toc}
+Package hyperref Info: Reference (link) `figure.2.4' on input line 82.
+
+Package xcolor Warning: Incompatible color definition on input line 82.
+
+Package hyperref Info: Anchor `page.29' on input line 85.
+[29
+Package `hyperref' Info: End of reference (link) `figure.2.4', line 82.
+] <images/features.jpg, id=588, 338.76563pt x 301.125pt>
+File: images/features.jpg Graphic file (type jpg)
+
+<use images/features.jpg>
+Package pdftex.def Info: images/features.jpg used on input line 88.
+(pdftex.def)             Requested size: 338.76479pt x 301.12425pt.
+Package hyperref Info: Anchor `figure.2.4' on input line 89.
+
+pdftex: bookmark at 89: {2.4} {\numberline{2.4}{\ignorespaces Reconhecimento de
+ padr\~oes.\cite {understandingfeatures}}} {figure.2.4}{0}{lof}
+Package hyperref Info: Anchor `figure.2.4' on input line 89.
+Package hyperref Info: Reference (cite) `cite.understandingfeatures' on input l
+ine 89.
+
+Package xcolor Warning: Incompatible color definition on input line 89.
+
+Package hyperref Info: Reference (cite) `cite.understandingfeatures' on input l
+ine 89.
+
+Package xcolor Warning: Incompatible color definition on input line 89.
+
+<images/featuresregioes.jpg, id=591, 238.64156pt x 202.50656pt>
+File: images/featuresregioes.jpg Graphic file (type jpg)
+
+<use images/featuresregioes.jpg>
+Package pdftex.def Info: images/featuresregioes.jpg used on input line 97.
+(pdftex.def)             Requested size: 238.64096pt x 202.50604pt.
+Package hyperref Info: Anchor `figure.2.5' on input line 98.
+
+pdftex: bookmark at 98: {2.5} {\numberline{2.5}{\ignorespaces Regi\~oes de reco
+nhecimento de padr\~oes.\cite {understandingfeatures}}} {figure.2.5}{0}{lof}
+Package hyperref Info: Anchor `figure.2.5' on input line 98.
+Package hyperref Info: Reference (cite) `cite.understandingfeatures' on input l
+ine 98.
+
+Package xcolor Warning: Incompatible color definition on input line 98.
+
+Package hyperref Info: Reference (cite) `cite.understandingfeatures' on input l
+ine 98.
+
+Package xcolor Warning: Incompatible color definition on input line 98.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Package hyperref Info: Reference (link) `figure.2.5' on input line 102.
+
+Package xcolor Warning: Incompatible color definition on input line 102.
+
+Package hyperref Info: Reference (link) `figure.2.4' on input line 109.
+
+Package xcolor Warning: Incompatible color definition on input line 109.
+
+Package hyperref Info: Anchor `page.30' on input line 113.
+[30pdfTeX warning (ext4): destination with the same identifier (name{figure.2.4
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.113 
+      
+Package `hyperref' Info: End of reference (cite) `cite.understandingfeatures', 
+line 89.
+Package `hyperref' Info: End of reference (cite) `cite.understandingfeatures', 
+line 89.
+Package `hyperref' Info: End of reference (link) `figure.2.5', line 102.
+ <D:/Projects/duartec-projects/Mestrado/Registration-Tese/images/features.jpg>]
+Package hyperref Info: Anchor `section.2.4' on input line 116.
+
+pdftex: bookmark at 116: {2.4} {\numberline{2.4}Cad\^encia} {section.2.4}{1}{to
+c}
+Package hyperref Info: Reference (cite) `cite.Tang93whydo' on input line 120.
+
+Package xcolor Warning: Incompatible color definition on input line 120.
+
+Package hyperref Info: Reference (cite) `cite.Tang93whydo' on input line 120.
+
+Package xcolor Warning: Incompatible color definition on input line 120.
+
+Package hyperref Info: Anchor `page.31' on input line 124.
+[31pdfTeX warning (ext4): destination with the same identifier (name{figure.2.5
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.124 \begin{center}
+                    
+Package `hyperref' Info: End of reference (cite) `cite.understandingfeatures', 
+line 98.
+Package `hyperref' Info: End of reference (cite) `cite.understandingfeatures', 
+line 98.
+Package `hyperref' Info: End of reference (link) `figure.2.4', line 109.
+Package `hyperref' Info: End of reference (cite) `cite.Tang93whydo', line 120.
+Package `hyperref' Info: End of reference (cite) `cite.Tang93whydo', line 120.
+ <D:/Projects/duartec-projects/Mestrado/Registration-Tese/images/featuresregioe
+s.jpg>]
+(D:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/basicos/camera.t
+ex
+Package hyperref Info: Anchor `section.2.5' on input line 1.
+
+pdftex: bookmark at 1: {2.5} {\numberline{2.5}Camera} {section.2.5}{1}{toc}
+Package hyperref Info: Reference (cite) `cite.OpenCvOReilly' on input line 2.
+
+Package xcolor Warning: Incompatible color definition on input line 2.
+
+Package hyperref Info: Reference (cite) `cite.OpenCvOReilly' on input line 2.
+
+Package xcolor Warning: Incompatible color definition on input line 2.
+
+Package hyperref Info: Anchor `subsection.2.5.1' on input line 8.
+pdftex: bookmark at 8: {2.5.1} {\numberline{2.5.1}Distor\c c\~ao Radial} {subse
+ction.2.5.1}{2}{toc}
+<images/radial01.jpg, id=610, 469.755pt x 207.77625pt>
+File: images/radial01.jpg Graphic file (type jpg)
+
+<use images/radial01.jpg>
+Package pdftex.def Info: images/radial01.jpg used on input line 14.
+(pdftex.def)             Requested size: 328.82626pt x 145.44237pt.
+Package hyperref Info: Anchor `figure.2.6' on input line 15.
+
+pdftex: bookmark at 15: {2.6} {\numberline{2.6}{\ignorespaces Distor\c c\~ao ra
+dial.}} {figure.2.6}{0}{lof}
+Package hyperref Info: Anchor `figure.2.6' on input line 15.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Package hyperref Info: Reference (link) `figure.2.7' on input line 19.
+
+Package xcolor Warning: Incompatible color definition on input line 19.
+
+<images/radial02.jpg, id=612, 469.755pt x 334.24875pt>
+File: images/radial02.jpg Graphic file (type jpg)
+
+<use images/radial02.jpg>
+Package pdftex.def Info: images/radial02.jpg used on input line 24.
+(pdftex.def)             Requested size: 328.82626pt x 233.97252pt.
+Package hyperref Info: Anchor `figure.2.7' on input line 25.
+
+pdftex: bookmark at 25: {2.7} {\numberline{2.7}{\ignorespaces Componentes de Di
+stor\c c\~ao radial.}} {figure.2.7}{0}{lof}
+Package hyperref Info: Anchor `figure.2.7' on input line 25.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Package hyperref Info: Anchor `subsection.2.5.2' on input line 29.
+pdftex: bookmark at 29: {2.5.2} {\numberline{2.5.2}Distor\c c\~ao Tangencial} {
+subsection.2.5.2}{2}{toc}
+<images/tangencial01.jpg, id=613, 469.755pt x 240.9pt>
+File: images/tangencial01.jpg Graphic file (type jpg)
+
+<use images/tangencial01.jpg>
+Package pdftex.def Info: images/tangencial01.jpg used on input line 34.
+(pdftex.def)             Requested size: 328.82626pt x 168.62883pt.
+Package hyperref Info: Anchor `figure.2.8' on input line 35.
+
+pdftex: bookmark at 35: {2.8} {\numberline{2.8}{\ignorespaces Distor\c c\~ao ta
+ngencial.}} {figure.2.8}{0}{lof}
+Package hyperref Info: Anchor `figure.2.8' on input line 35.
+Package hyperref Info: Anchor `page.32' on input line 37.
+[32
+Package `hyperref' Info: End of reference (cite) `cite.OpenCvOReilly', line 2.
+Package `hyperref' Info: End of reference (cite) `cite.OpenCvOReilly', line 2.
+Package `hyperref' Info: End of reference (link) `figure.2.7', line 19.
+]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Package hyperref Info: Reference (link) `figure.2.9' on input line 39.
+
+Package xcolor Warning: Incompatible color definition on input line 39.
+
+<images/tangencial02.jpg, id=623, 469.755pt x 338.76563pt>
+File: images/tangencial02.jpg Graphic file (type jpg)
+
+<use images/tangencial02.jpg>
+Package pdftex.def Info: images/tangencial02.jpg used on input line 44.
+(pdftex.def)             Requested size: 328.82626pt x 237.13431pt.
+Package hyperref Info: Anchor `figure.2.9' on input line 45.
+
+pdftex: bookmark at 45: {2.9} {\numberline{2.9}{\ignorespaces Componentes de Di
+stor\c c\~ao tangencial.}} {figure.2.9}{0}{lof}
+Package hyperref Info: Anchor `figure.2.9' on input line 45.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+Package hyperref Info: Anchor `page.33' on input line 51.
+[33pdfTeX warning (ext4): destination with the same identifier (name{figure.2.6
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.51 \section
+             {Modelo de Câmera}pdfTeX warning (ext4): destination with the same
+ identifier (name{figure.2.7}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.51 \section
+             {Modelo de Câmera}
+Package `hyperref' Info: End of reference (link) `figure.2.9', line 39.
+ <D:/Projects/duartec-projects/Mestrado/Registration-Tese/images/radial01.jpg> 
+<D:/Projects/duartec-projects/Mestrado/Registration-Tese/images/radial02.jpg>]
+Package hyperref Info: Anchor `section.2.6' on input line 51.
+
+pdftex: bookmark at 51: {2.6} {\numberline{2.6}Modelo de C\^amera} {section.2.6
+}{1}{toc}
+Package hyperref Info: Reference (link) `figure.2.10' on input line 53.
+
+Package xcolor Warning: Incompatible color definition on input line 53.
+
+<images/camera01.jpg, id=629, 469.755pt x 317.68687pt>
+File: images/camera01.jpg Graphic file (type jpg)
+
+<use images/camera01.jpg>
+Package pdftex.def Info: images/camera01.jpg used on input line 64.
+(pdftex.def)             Requested size: 375.80452pt x 254.14983pt.
+Package hyperref Info: Anchor `figure.2.10' on input line 65.
+
+pdftex: bookmark at 65: {2.10} {\numberline{2.10}{\ignorespaces Camera no espa\
+c co vetorial.}} {figure.2.10}{0}{lof}
+Package hyperref Info: Anchor `figure.2.10' on input line 65.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+)
+(D:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/basicos/reconhec
+imento.tex
+Package hyperref Info: Anchor `page.34' on input line 1.
+ [34pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+8}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1 \section
+            {Reconhecimento}pdfTeX warning (ext4): destination with the same id
+entifier (name{figure.2.9}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1 \section
+            {Reconhecimento}
+Package `hyperref' Info: End of reference (link) `figure.2.10', line 53.
+ <D:/Projects/duartec-projects/Mestrado/Registration-Tese/images/tangencial01.j
+pg> <D:/Projects/duartec-projects/Mestrado/Registration-Tese/images/tangencial0
+2.jpg>]
+Package hyperref Info: Anchor `section.2.7' on input line 1.
+
+pdftex: bookmark at 1: {2.7} {\numberline{2.7}Reconhecimento} {section.2.7}{1}{
+toc}
+<images/reconhecimento.jpg, id=634, 301.8778pt x 250.68657pt>
+File: images/reconhecimento.jpg Graphic file (type jpg)
+
+<use images/reconhecimento.jpg>
+Package pdftex.def Info: images/reconhecimento.jpg used on input line 7.
+(pdftex.def)             Requested size: 301.87706pt x 250.68594pt.
+Package hyperref Info: Anchor `figure.2.11' on input line 8.
+
+pdftex: bookmark at 8: {2.11} {\numberline{2.11}{\ignorespaces Ilustra\c c\~ao 
+do procedimento de reconhecimento com features locais.}} {figure.2.11}{0}{lof}
+Package hyperref Info: Anchor `figure.2.11' on input line 8.
+Package hyperref Info: Reference (link) `figure.2.11' on input line 12.
+
+Package xcolor Warning: Incompatible color definition on input line 12.
+
+Package hyperref Info: Anchor `page.35' on input line 14.
+[35pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1
+0}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.14 	\item E
+             ncontrar um grupo de keypoints distintospdfTeX warning (ext4): des
+tination with the same identifier (name{figure.2.11}) has been already used, du
+plicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.14 	\item E
+             ncontrar um grupo de keypoints distintos <D:/Projects/duartec-proj
+ects/Mestrado/Registration-Tese/images/camera01.jpg> <D:/Projects/duartec-proje
+cts/Mestrado/Registration-Tese/images/reconhecimento.jpg>]
+Package hyperref Info: Anchor `subsection.2.7.1' on input line 21.
+
+pdftex: bookmark at 21: {2.7.1} {\numberline{2.7.1}Detec\c c\~ao de caracter\Ie
+C {\'\i }sticas} {subsection.2.7.1}{2}{toc}
+Package hyperref Info: Anchor `subsection.2.7.2' on input line 33.
+pdftex: bookmark at 33: {2.7.2} {\numberline{2.7.2}Correspond\^encia de caracte
+r\IeC {\'\i }sticas} {subsection.2.7.2}{2}{toc}
+Package hyperref Info: Anchor `page.36' on input line 43.
+[36
+Package `hyperref' Info: End of reference (link) `figure.2.11', line 12.
+]
+(D:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/algoritmos/algor
+itmos.tex
+Package hyperref Info: Anchor `section.2.8' on input line 1.
+
+pdftex: bookmark at 1: {2.8} {\numberline{2.8}Algoritmos de Reconhecimento} {se
+ction.2.8}{1}{toc}
+
+Overfull \hbox (5.25208pt too wide) in paragraph at lines 3--6
+\T1/aer/m/n/12 tigo os tes-tes se-rão res-tri-tos aos prin-ci-pais al-go-rit-mo
+s BRISK,FAST,FREAK,GFTT,MSER,
+ []
+
+
+(D:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/algoritmos/brief
+.tex
+Package hyperref Info: Anchor `subsection.2.8.1' on input line 1.
+
+pdftex: bookmark at 1: {2.8.1} {\numberline{2.8.1}BRIEF - Binary Robust Indepen
+dent Elementary Features} {subsection.2.8.1}{2}{toc}
+)
+(D:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/algoritmos/fast.
+tex
+Package hyperref Info: Anchor `subsection.2.8.2' on input line 1.
+
+pdftex: bookmark at 1: {2.8.2} {\numberline{2.8.2}FAST} {subsection.2.8.2}{2}{t
+oc}
+Package hyperref Info: Reference (cite) `cite.FAST' on input line 4.
+
+Package xcolor Warning: Incompatible color definition on input line 4.
+
+Package hyperref Info: Reference (cite) `cite.FAST' on input line 4.
+
+Package xcolor Warning: Incompatible color definition on input line 4.
+
+Package hyperref Info: Reference (cite) `cite.FusingPoints' on input line 7.
+
+Package xcolor Warning: Incompatible color definition on input line 7.
+
+Package hyperref Info: Reference (cite) `cite.FusingPoints' on input line 7.
+
+Package xcolor Warning: Incompatible color definition on input line 7.
+
+Package hyperref Info: Reference (cite) `cite.VideoAnotation' on input line 7.
+
+Package xcolor Warning: Incompatible color definition on input line 7.
+
+Package hyperref Info: Reference (cite) `cite.VideoAnotation' on input line 7.
+
+Package xcolor Warning: Incompatible color definition on input line 7.
+
+Package hyperref Info: Anchor `page.37' on input line 10.
+[37
+Package `hyperref' Info: End of reference (cite) `cite.FAST', line 4.
+Package `hyperref' Info: End of reference (cite) `cite.FAST', line 4.
+] <images/fast01.jpg, id=656, 338.01282pt x 166.37157pt>
+File: images/fast01.jpg Graphic file (type jpg)
+
+<use images/fast01.jpg>
+Package pdftex.def Info: images/fast01.jpg used on input line 13.
+(pdftex.def)             Requested size: 270.41061pt x 133.09741pt.
+Package hyperref Info: Anchor `figure.2.12' on input line 14.
+
+pdftex: bookmark at 14: {2.12} {\numberline{2.12}{\ignorespaces FAST}} {figure.
+2.12}{0}{lof}
+Package hyperref Info: Anchor `figure.2.12' on input line 14.
+Package hyperref Info: Reference (link) `figure.2.12' on input line 19.
+
+Package xcolor Warning: Incompatible color definition on input line 19.
+
+Package hyperref Info: Anchor `Item.5' on input line 21.
+Package hyperref Info: Anchor `Item.6' on input line 22.
+Package hyperref Info: Anchor `Item.7' on input line 23.
+Package hyperref Info: Anchor `Item.8' on input line 24.
+)
+(D:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/algoritmos/brisk
+.tex
+Package hyperref Info: Anchor `subsection.2.8.3' on input line 1.
+
+pdftex: bookmark at 1: {2.8.3} {\numberline{2.8.3}BRISK - Binary Robust Invaria
+nt Scalable Keypoints} {subsection.2.8.3}{2}{toc}
+Package hyperref Info: Reference (cite) `cite.BRISK' on input line 3.
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+Package hyperref Info: Reference (cite) `cite.BRISK' on input line 3.
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+Package hyperref Info: Anchor `page.38' on input line 6.
+[38
+Package `hyperref' Info: End of reference (cite) `cite.FusingPoints', line 7.
+Package `hyperref' Info: End of reference (cite) `cite.FusingPoints', line 7.
+Package `hyperref' Info: End of reference (cite) `cite.VideoAnotation', line 7.
+
+Package `hyperref' Info: End of reference (cite) `cite.VideoAnotation', line 7.
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.12})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.6 
+    
+Package `hyperref' Info: End of reference (link) `figure.2.12', line 19.
+ <D:/Projects/duartec-projects/Mestrado/Registration-Tese/images/fast01.jpg>] <
+images/brisk-descriptor.jpg, id=671, 292.09125pt x 293.59688pt>
+File: images/brisk-descriptor.jpg Graphic file (type jpg)
+
+<use images/brisk-descriptor.jpg>
+Package pdftex.def Info: images/brisk-descriptor.jpg used on input line 23.
+(pdftex.def)             Requested size: 233.6733pt x 234.8778pt.
+Package hyperref Info: Anchor `figure.2.13' on input line 24.
+
+pdftex: bookmark at 24: {2.13} {\numberline{2.13}{\ignorespaces Padr\~ao de amo
+stras no BRISK}} {figure.2.13}{0}{lof}
+Package hyperref Info: Anchor `figure.2.13' on input line 24.
+Package hyperref Info: Anchor `page.39' on input line 27.
+[39
+Package `hyperref' Info: End of reference (cite) `cite.BRISK', line 3.
+Package `hyperref' Info: End of reference (cite) `cite.BRISK', line 3.
+]
+Package hyperref Info: Reference (link) `figure.2.13' on input line 28.
+
+
+Package xcolor Warning: Incompatible color definition on input line 28.
+
+)
+(D:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/algoritmos/freak
+.tex
+Package hyperref Info: Anchor `subsection.2.8.4' on input line 1.
+
+pdftex: bookmark at 1: {2.8.4} {\numberline{2.8.4}FREAK - Fast Retina Keypoint}
+ {subsection.2.8.4}{2}{toc}
+Package hyperref Info: Reference (link) `figure.2.14' on input line 7.
+
+Package xcolor Warning: Incompatible color definition on input line 7.
+
+Package hyperref Info: Anchor `page.40' on input line 8.
+[40pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1
+3}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.8 
+    
+Package `hyperref' Info: End of reference (link) `figure.2.13', line 28.
+ <D:/Projects/duartec-projects/Mestrado/Registration-Tese/images/brisk-descript
+or.jpg>] <images/freak-sampler.png, id=683, 234.1247pt x 213.79875pt>
+File: images/freak-sampler.png Graphic file (type png)
+
+<use images/freak-sampler.png>
+Package pdftex.def Info: images/freak-sampler.png used on input line 11.
+(pdftex.def)             Requested size: 234.12411pt x 213.79822pt.
+Package hyperref Info: Anchor `figure.2.14' on input line 12.
+
+pdftex: bookmark at 12: {2.14} {\numberline{2.14}{\ignorespaces Padr\~ao de amo
+stradem do descritor FREAK}} {figure.2.14}{0}{lof}
+Package hyperref Info: Anchor `figure.2.14' on input line 12.
+Package hyperref Info: Reference (link) `figure.2.15' on input line 18.
+
+Package xcolor Warning: Incompatible color definition on input line 18.
+
+<images/freak-retina.jpg, id=685, 466.74374pt x 264.99pt>
+File: images/freak-retina.jpg Graphic file (type jpg)
+
+<use images/freak-retina.jpg>
+Package pdftex.def Info: images/freak-retina.jpg used on input line 22.
+(pdftex.def)             Requested size: 466.7426pt x 264.98935pt.
+Package hyperref Info: Anchor `figure.2.15' on input line 23.
+
+Overfull \hbox (11.49849pt too wide) in paragraph at lines 22--23
+ [][][] 
+ []
+
+pdftex: bookmark at 23: {2.15} {\numberline{2.15}{\ignorespaces Distribui\c c\~
+ao de receptores na retina}} {figure.2.15}{0}{lof}
+Package hyperref Info: Anchor `figure.2.15' on input line 23.
+Package hyperref Info: Anchor `page.41' on input line 26.
+[41
+Package `hyperref' Info: End of reference (link) `figure.2.14', line 7.
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.14})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.26 
+     
+Package `hyperref' Info: End of reference (link) `figure.2.15', line 18.
+ <D:/Projects/duartec-projects/Mestrado/Registration-Tese/images/freak-sampler.
+png>]
+Package hyperref Info: Reference (link) `figure.2.16' on input line 30.
+
+
+Package xcolor Warning: Incompatible color definition on input line 30.
+
+<images/freak-rotation.jpg, id=691, 195.73125pt x 168.63pt>
+File: images/freak-rotation.jpg Graphic file (type jpg)
+
+<use images/freak-rotation.jpg>
+Package pdftex.def Info: images/freak-rotation.jpg used on input line 35.
+(pdftex.def)             Requested size: 195.73076pt x 168.62958pt.
+Package hyperref Info: Anchor `figure.2.16' on input line 36.
+
+pdftex: bookmark at 36: {2.16} {\numberline{2.16}{\ignorespaces Pares seleciona
+dos para calcular a orienta\c c\~ao}} {figure.2.16}{0}{lof}
+Package hyperref Info: Anchor `figure.2.16' on input line 36.
+Package hyperref Info: Anchor `page.42' on input line 41.
+[42pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1
+5}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.41 
+     
+Package `hyperref' Info: End of reference (link) `figure.2.16', line 30.
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.16})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.41 
+      <D:/Projects/duartec-projects/Mestrado/Registration-Tese/images/freak-ret
+ina.jpg> <D:/Projects/duartec-projects/Mestrado/Registration-Tese/images/freak-
+rotation.jpg>]
+Package hyperref Info: Reference (link) `figure.2.15' on input line 46.
+
+
+Package xcolor Warning: Incompatible color definition on input line 46.
+
+)
+(D:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/algoritmos/gftt.
+tex
+Package hyperref Info: Anchor `subsection.2.8.5' on input line 1.
+
+pdftex: bookmark at 1: {2.8.5} {\numberline{2.8.5}GFTT} {subsection.2.8.5}{2}{t
+oc}
+)
+(D:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/algoritmos/mser.
+tex
+Package hyperref Info: Anchor `subsection.2.8.6' on input line 1.
+
+pdftex: bookmark at 1: {2.8.6} {\numberline{2.8.6}MSER} {subsection.2.8.6}{2}{t
+oc}
+)
+(D:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/algoritmos/orb.t
+ex
+Package hyperref Info: Anchor `subsection.2.8.7' on input line 1.
+
+pdftex: bookmark at 1: {2.8.7} {\numberline{2.8.7}ORB - Oriented Fast and rotat
+ed Brisk} {subsection.2.8.7}{2}{toc}
+Package hyperref Info: Reference (cite) `cite.ORB' on input line 5.
+
+Package xcolor Warning: Incompatible color definition on input line 5.
+
+Package hyperref Info: Reference (cite) `cite.ORB' on input line 5.
+
+Package xcolor Warning: Incompatible color definition on input line 5.
+
+)
+(D:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/algoritmos/sift.
+tex
+Package hyperref Info: Anchor `subsection.2.8.8' on input line 1.
+
+pdftex: bookmark at 1: {2.8.8} {\numberline{2.8.8}SIFT - Scale-Invariant Featur
+e Transform} {subsection.2.8.8}{2}{toc}
+Package hyperref Info: Reference (cite) `cite.SIFT' on input line 4.
+
+Package xcolor Warning: Incompatible color definition on input line 4.
+
+Package hyperref Info: Reference (cite) `cite.SIFT' on input line 4.
+
+Package xcolor Warning: Incompatible color definition on input line 4.
+
+Package hyperref Info: Reference (link) `figure.2.17' on input line 7.
+
+Package xcolor Warning: Incompatible color definition on input line 7.
+
+Package hyperref Info: Anchor `page.43' on input line 9.
+[43
+Package `hyperref' Info: End of reference (link) `figure.2.15', line 46.
+Package `hyperref' Info: End of reference (cite) `cite.ORB', line 5.
+Package `hyperref' Info: End of reference (cite) `cite.ORB', line 5.
+] <images/SIFT01.jpg, id=708, 252.945pt x 109.1578pt>
+File: images/SIFT01.jpg Graphic file (type jpg)
+
+<use images/SIFT01.jpg>
+Package pdftex.def Info: images/SIFT01.jpg used on input line 12.
+(pdftex.def)             Requested size: 252.94438pt x 109.15753pt.
+Package hyperref Info: Anchor `figure.2.17' on input line 13.
+
+pdftex: bookmark at 13: {2.17} {\numberline{2.17}{\ignorespaces SIFT}} {figure.
+2.17}{0}{lof}
+Package hyperref Info: Anchor `figure.2.17' on input line 13.
+Package hyperref Info: Reference (link) `figure.2.17' on input line 20.
+
+Package xcolor Warning: Incompatible color definition on input line 20.
+
+<images/DoG.jpg, id=710, 284.56313pt x 206.27063pt>
+File: images/DoG.jpg Graphic file (type jpg)
+ <use images/DoG.jpg>
+Package pdftex.def Info: images/DoG.jpg used on input line 34.
+(pdftex.def)             Requested size: 284.56242pt x 206.27011pt.
+Package hyperref Info: Anchor `figure.2.18' on input line 35.
+
+pdftex: bookmark at 35: {2.18} {\numberline{2.18}{\ignorespaces Difference of G
+aussian}} {figure.2.18}{0}{lof}
+Package hyperref Info: Anchor `figure.2.18' on input line 35.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+Package hyperref Info: Reference (link) `figure.2.19' on input line 41.
+
+Package xcolor Warning: Incompatible color definition on input line 41.
+
+Package hyperref Info: Anchor `page.44' on input line 44.
+[44
+Package `hyperref' Info: End of reference (cite) `cite.SIFT', line 4.
+Package `hyperref' Info: End of reference (cite) `cite.SIFT', line 4.
+Package `hyperref' Info: End of reference (link) `figure.2.17', line 7.
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.17})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.44 
+     
+Package `hyperref' Info: End of reference (link) `figure.2.17', line 20.
+Package `hyperref' Info: End of reference (link) `figure.2.19', line 41.
+ <D:/Projects/duartec-projects/Mestrado/Registration-Tese/images/SIFT01.jpg>] <
+images/DoG_escala.jpg, id=717, 284.56313pt x 206.27063pt>
+File: images/DoG_escala.jpg Graphic file (type jpg)
+
+<use images/DoG_escala.jpg>
+Package pdftex.def Info: images/DoG_escala.jpg used on input line 47.
+(pdftex.def)             Requested size: 284.56242pt x 206.27011pt.
+Package hyperref Info: Anchor `figure.2.19' on input line 48.
+
+pdftex: bookmark at 48: {2.19} {\numberline{2.19}{\ignorespaces Difference of G
+aussian}} {figure.2.19}{0}{lof}
+Package hyperref Info: Anchor `figure.2.19' on input line 48.
+Package hyperref Info: Anchor `subsubsection.2.8.8.1' on input line 54.
+pdftex: bookmark at 54: {2.8.8.1} {\numberline{2.8.8.1}Keypoint Localization} {
+subsubsection.2.8.8.1}{3}{toc}
+Package hyperref Info: Anchor `page.45' on input line 60.
+[45pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1
+8}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.60 \subsubsection
+                   {Orientation Assignment}pdfTeX warning (ext4): destination w
+ith the same identifier (name{figure.2.19}) has been already used, duplicate ig
+nored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.60 \subsubsection
+                   {Orientation Assignment} <D:/Projects/duartec-projects/Mestr
+ado/Registration-Tese/images/DoG.jpg> <D:/Projects/duartec-projects/Mestrado/Re
+gistration-Tese/images/DoG_escala.jpg>]
+Package hyperref Info: Anchor `subsubsection.2.8.8.2' on input line 60.
+
+pdftex: bookmark at 60: {2.8.8.2} {\numberline{2.8.8.2}Orientation Assignment} 
+{subsubsection.2.8.8.2}{3}{toc}
+Package hyperref Info: Anchor `subsubsection.2.8.8.3' on input line 68.
+pdftex: bookmark at 68: {2.8.8.3} {\numberline{2.8.8.3}Keypoint Descriptor} {su
+bsubsection.2.8.8.3}{3}{toc}
+Package hyperref Info: Reference (link) `figure.2.20' on input line 72.
+
+Package xcolor Warning: Incompatible color definition on input line 72.
+
+<images/sift-keypoint-descriptor.jpg, id=724, 666.99188pt x 296.60812pt>
+File: images/sift-keypoint-descriptor.jpg Graphic file (type jpg)
+
+<use images/sift-keypoint-descriptor.jpg>
+Package pdftex.def Info: images/sift-keypoint-descriptor.jpg used on input line
+ 82.
+(pdftex.def)             Requested size: 400.19821pt x 177.96623pt.
+Package hyperref Info: Anchor `figure.2.20' on input line 83.
+
+pdftex: bookmark at 83: {2.20} {\numberline{2.20}{\ignorespaces Forma\c c\~ao d
+o descritor SIFT}} {figure.2.20}{0}{lof}
+Package hyperref Info: Anchor `figure.2.20' on input line 83.
+Package hyperref Info: Anchor `subsubsection.2.8.8.4' on input line 90.
+pdftex: bookmark at 90: {2.8.8.4} {\numberline{2.8.8.4}Keypoint Matching} {subs
+ubsection.2.8.8.4}{3}{toc}
+Package hyperref Info: Anchor `page.46' on input line 95.
+[46
+Package `hyperref' Info: End of reference (link) `figure.2.20', line 72.
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.20})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.95 
+      <D:/Projects/duartec-projects/Mestrado/Registration-Tese/images/sift-keyp
+oint-descriptor.jpg>])
+(D:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/algoritmos/surf.
+tex
+Package hyperref Info: Anchor `subsection.2.8.9' on input line 1.
+
+pdftex: bookmark at 1: {2.8.9} {\numberline{2.8.9}SURF - Speeded Up Robust Feat
+ure} {subsection.2.8.9}{2}{toc}
+Package hyperref Info: Reference (cite) `cite.SURF' on input line 3.
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+Package hyperref Info: Reference (cite) `cite.SURF' on input line 3.
+
+Package xcolor Warning: Incompatible color definition on input line 3.
+
+Package hyperref Info: Reference (link) `figure.2.21' on input line 5.
+
+Package xcolor Warning: Incompatible color definition on input line 5.
+
+<images/SURF01.jpg, id=734, 185.94469pt x 202.50656pt>
+File: images/SURF01.jpg Graphic file (type jpg)
+ <use images/SURF01.jpg>
+Package pdftex.def Info: images/SURF01.jpg used on input line 11.
+(pdftex.def)             Requested size: 185.94421pt x 202.50604pt.
+Package hyperref Info: Anchor `figure.2.21' on input line 12.
+
+pdftex: bookmark at 12: {2.21} {\numberline{2.21}{\ignorespaces Box Filtering}}
+ {figure.2.21}{0}{lof}
+Package hyperref Info: Anchor `figure.2.21' on input line 12.
+)
+(D:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/algoritmos/star.
+tex
+Package hyperref Info: Anchor `page.47' on input line 1.
+ [47
+Package `hyperref' Info: End of reference (cite) `cite.SURF', line 3.
+Package `hyperref' Info: End of reference (cite) `cite.SURF', line 3.
+Package `hyperref' Info: End of reference (link) `figure.2.21', line 5.
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.21})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1 \subsection
+               {STAR} <D:/Projects/duartec-projects/Mestrado/Registration-Tese/
+images/SURF01.jpg>]
+Package hyperref Info: Anchor `subsection.2.8.10' on input line 1.
+
+pdftex: bookmark at 1: {2.8.10} {\numberline{2.8.10}STAR} {subsection.2.8.10}{2
+}{toc}
+))))
+(D:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/trabalhosrelacio
+nados.tex)
+Package hyperref Info: Anchor `page.48' on input line 174.
+ [48]
+Package hyperref Info: Anchor `chapter.3' on input line 174.
+
+Cap\'{\i }tulo 3.
+pdftex: bookmark at 174: {3} {\numberline{3}Proposta} {chapter.3}{0}{toc}
+(D:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/metodologia.tex
+Package hyperref Info: Anchor `section.3.1' on input line 1.
+
+pdftex: bookmark at 1: {3.1} {\numberline{3.1}Metodologia} {section.3.1}{1}{toc
+}
+Package hyperref Info: Anchor `subsection.3.1.1' on input line 2.
+pdftex: bookmark at 2: {3.1.1} {\numberline{3.1.1}Defini\c c\~ao de par\^ametro
+s} {subsection.3.1.1}{2}{toc}
+Package hyperref Info: Anchor `section.3.2' on input line 16.
+pdftex: bookmark at 16: {3.2} {\numberline{3.2}An\'alise de dados} {section.3.2
+}{1}{toc}
+Package hyperref Info: Reference (link) `section.1.4' on input line 20.
+
+Package xcolor Warning: Incompatible color definition on input line 20.
+
+Package hyperref Info: Anchor `page.49' on input line 22.
+[49
+
+]
+Package hyperref Info: Reference (cite) `cite.Tang93whydo' on input line 24.
+
+
+Package xcolor Warning: Incompatible color definition on input line 24.
+
+Package hyperref Info: Reference (cite) `cite.Tang93whydo' on input line 24.
+
+Package xcolor Warning: Incompatible color definition on input line 24.
+
+) (D:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/prototipos.tex
+Package hyperref Info: Anchor `subsection.3.2.1' on input line 2.
+pdftex: bookmark at 2: {3.2.1} {\numberline{3.2.1}Prot\'otipo} {subsection.3.2.
+1}{2}{toc}
+Package hyperref Info: Reference (link) `subsection.1.4.1' on input line 5.
+
+Package xcolor Warning: Incompatible color definition on input line 5.
+
+Package hyperref Info: Anchor `subsubsection.3.2.1.1' on input line 9.
+pdftex: bookmark at 9: {3.2.1.1} {\numberline{3.2.1.1}Testes de reconhecimento 
+de padr\~oes} {subsubsection.3.2.1.1}{3}{toc}
+Package hyperref Info: Anchor `page.50' on input line 17.
+[50
+Package `hyperref' Info: End of reference (link) `section.1.4', line 20.
+Package `hyperref' Info: End of reference (cite) `cite.Tang93whydo', line 24.
+Package `hyperref' Info: End of reference (cite) `cite.Tang93whydo', line 24.
+Package `hyperref' Info: End of reference (link) `subsection.1.4.1', line 5.
+]
+Package hyperref Info: Anchor `page.51' on input line 34.
+ [51]
+Package hyperref Info: Anchor `subsubsection.3.2.1.2' on input line 51.
+
+pdftex: bookmark at 51: {3.2.1.2} {\numberline{3.2.1.2}Ambiente} {subsubsection
+.3.2.1.2}{3}{toc}
+Package hyperref Info: Anchor `page.52' on input line 61.
+[52]
+Package hyperref Info: Anchor `subsubsection.3.2.1.3' on input line 61.
+
+pdftex: bookmark at 61: {3.2.1.3} {\numberline{3.2.1.3}OpenCV} {subsubsection.3
+.2.1.3}{3}{toc}
+)
+Package hyperref Info: Anchor `page.53' on input line 181.
+ [53]
+Package hyperref Info: Anchor `chapter.4' on input line 181.
+
+Cap\'{\i }tulo 4.
+pdftex: bookmark at 181: {4} {\numberline{4}An\'alise de Resultados} {chapter.4
+}{0}{toc}
+
+(D:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/results/results_
+integral.tex
+Package hyperref Info: Reference (cite) `cite.performance_evaluation' on input 
+line 27.
+
+
+Package xcolor Warning: Incompatible color definition on input line 27.
+
+Package hyperref Info: Reference (cite) `cite.performance_evaluation' on input 
+line 27.
+
+Package xcolor Warning: Incompatible color definition on input line 27.
+
+Package hyperref Info: Reference (cite) `cite.opencv-comparing-1' on input line
+ 28.
+
+Package xcolor Warning: Incompatible color definition on input line 28.
+
+Package hyperref Info: Reference (cite) `cite.opencv-comparing-1' on input line
+ 28.
+
+Package xcolor Warning: Incompatible color definition on input line 28.
+
+Package hyperref Info: Reference (cite) `cite.opencv-comparing-2' on input line
+ 28.
+
+Package xcolor Warning: Incompatible color definition on input line 28.
+
+Package hyperref Info: Reference (cite) `cite.opencv-comparing-2' on input line
+ 28.
+
+Package xcolor Warning: Incompatible color definition on input line 28.
+
+Package hyperref Info: Reference (cite) `cite.descriptor-comparing' on input li
+ne 29.
+
+Package xcolor Warning: Incompatible color definition on input line 29.
+
+Package hyperref Info: Reference (cite) `cite.descriptor-comparing' on input li
+ne 29.
+
+Package xcolor Warning: Incompatible color definition on input line 29.
+
+Package hyperref Info: Reference (link) `section.3.2' on input line 31.
+
+Package xcolor Warning: Incompatible color definition on input line 31.
+
+Package hyperref Info: Anchor `section.4.1' on input line 42.
+pdftex: bookmark at 42: {4.1} {\numberline{4.1}Taxa de Acertos} {section.4.1}{1
+}{toc}
+Package hyperref Info: Reference (link) `figure.4.1' on input line 53.
+
+Package xcolor Warning: Incompatible color definition on input line 53.
+
+Package hyperref Info: Anchor `page.54' on input line 55.
+[54
+
+Package `hyperref' Info: End of reference (cite) `cite.performance_evaluation',
+ line 27.
+Package `hyperref' Info: End of reference (cite) `cite.performance_evaluation',
+ line 27.
+Package `hyperref' Info: End of reference (cite) `cite.opencv-comparing-1', lin
+e 28.
+Package `hyperref' Info: End of reference (cite) `cite.opencv-comparing-1', lin
+e 28.
+Package `hyperref' Info: End of reference (cite) `cite.opencv-comparing-2', lin
+e 28.
+Package `hyperref' Info: End of reference (cite) `cite.opencv-comparing-2', lin
+e 28.
+Package `hyperref' Info: End of reference (cite) `cite.descriptor-comparing', l
+ine 29.
+Package `hyperref' Info: End of reference (cite) `cite.descriptor-comparing', l
+ine 29.
+Package `hyperref' Info: End of reference (link) `section.3.2', line 31.
+]
+PGFPlots: reading {graphs/scale-all-pres.csv}
+
+
+Package pgfplots Warning: Table 'graphs/scale-all-pres.csv' has an empty column
+ name; replacing it by '10'' on input line 71.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {graphs/scale-all-pres.csv}
+
+Package pgfplots Warning: Table 'graphs/scale-all-pres.csv' has an empty column
+ name; replacing it by '10'' on input line 72.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {graphs/scale-all-pres.csv}
+
+Package pgfplots Warning: Table 'graphs/scale-all-pres.csv' has an empty column
+ name; replacing it by '10'' on input line 73.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {graphs/scale-all-pres.csv}
+
+Package pgfplots Warning: Table 'graphs/scale-all-pres.csv' has an empty column
+ name; replacing it by '10'' on input line 74.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {graphs/scale-all-pres.csv}
+
+Package pgfplots Warning: Table 'graphs/scale-all-pres.csv' has an empty column
+ name; replacing it by '10'' on input line 75.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {graphs/scale-all-pres.csv}
+
+Package pgfplots Warning: Table 'graphs/scale-all-pres.csv' has an empty column
+ name; replacing it by '10'' on input line 76.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {graphs/scale-all-pres.csv}
+
+Package pgfplots Warning: Table 'graphs/scale-all-pres.csv' has an empty column
+ name; replacing it by '10'' on input line 77.
+
+ [warning /pgfplots/warning/empty column name]
+
+! Package PGF Math Error: Could not parse input 'NULL' as a floating point numb
+er, sorry. The unreadable part was near 'ULL'..
+
+See the PGF Math package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.77 ... sep=comma]	{graphs/scale-all-\gtype.csv};
+                                                  
+This error message was generated by an \errmessage
+command, so I can't give any explicit help.
+Pretend that you're Hercule Poirot: Examine all clues,
+and deduce the truth by order and method.
+
+NOTE: coordinate (0.25,NULL) has been dropped because it is unbounded (in y). (
+see also unbounded coords=jump). 
+PGFPlots: reading {graphs/scale-all-pres.csv}
+
+Package pgfplots Warning: Table 'graphs/scale-all-pres.csv' has an empty column
+ name; replacing it by '10'' on input line 78.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {graphs/scale-all-pres.csv}
+
+Package pgfplots Warning: Table 'graphs/scale-all-pres.csv' has an empty column
+ name; replacing it by '10'' on input line 79.
+
+ [warning /pgfplots/warning/empty column name]
+! Dimension too large.
+<recently read> \pgf@xx 
+                        
+l.95 \end{axis}
+               
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<to be read again> 
+                   \relax 
+l.95 \end{axis}
+               
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<recently read> \pgf@xx 
+                        
+l.95 \end{axis}
+               
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<recently read> \pgf@xx 
+                        
+l.95 \end{axis}
+               
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<recently read> \pgf@xx 
+                        
+l.95 \end{axis}
+               
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+\pgfusepath ...x by-.5\pgflinewidth \ifdim \pgf@x 
+                                                  <\pgf@picminx \global \pgf...
+l.95 \end{axis}
+               
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+\pgfusepath ...@x by.5\pgflinewidth \ifdim \pgf@x 
+                                                  >\pgf@picmaxx \global \pgf...
+l.95 \end{axis}
+               
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<recently read> \pgf@xx 
+                        
+l.95 \end{axis}
+               
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<to be read again> 
+                   \relax 
+l.95 \end{axis}
+               
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<recently read> \pgf@xx 
+                        
+l.95 \end{axis}
+               
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<to be read again> 
+                   \relax 
+l.95 \end{axis}
+               
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<recently read> \pgf@xx 
+                        
+l.95 \end{axis}
+               
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+Package hyperref Info: Anchor `figure.4.1' on input line 100.
+pdftex: bookmark at 100: {4.1} {\numberline{4.1}{\ignorespaces Resultado de per
+formance de varia\c c\~ao de escala}} {figure.4.1}{0}{lof}
+Package hyperref Info: Anchor `figure.4.1' on input line 100.
+Package hyperref Info: Reference (link) `figure.4.2' on input line 105.
+
+Package xcolor Warning: Incompatible color definition on input line 105.
+
+PGFPlots: reading {graphs/rot-all-pres.csv}
+
+Package pgfplots Warning: Table 'graphs/rot-all-pres.csv' has an empty column n
+ame; replacing it by '10'' on input line 123.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {graphs/rot-all-pres.csv}
+
+Package pgfplots Warning: Table 'graphs/rot-all-pres.csv' has an empty column n
+ame; replacing it by '10'' on input line 124.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {graphs/rot-all-pres.csv}
+
+Package pgfplots Warning: Table 'graphs/rot-all-pres.csv' has an empty column n
+ame; replacing it by '10'' on input line 125.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {graphs/rot-all-pres.csv}
+
+Package pgfplots Warning: Table 'graphs/rot-all-pres.csv' has an empty column n
+ame; replacing it by '10'' on input line 126.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {graphs/rot-all-pres.csv}
+
+Package pgfplots Warning: Table 'graphs/rot-all-pres.csv' has an empty column n
+ame; replacing it by '10'' on input line 127.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {graphs/rot-all-pres.csv}
+
+Package pgfplots Warning: Table 'graphs/rot-all-pres.csv' has an empty column n
+ame; replacing it by '10'' on input line 128.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {graphs/rot-all-pres.csv}
+
+Package pgfplots Warning: Table 'graphs/rot-all-pres.csv' has an empty column n
+ame; replacing it by '10'' on input line 129.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {graphs/rot-all-pres.csv}
+
+Package pgfplots Warning: Table 'graphs/rot-all-pres.csv' has an empty column n
+ame; replacing it by '10'' on input line 130.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {graphs/rot-all-pres.csv}
+
+Package pgfplots Warning: Table 'graphs/rot-all-pres.csv' has an empty column n
+ame; replacing it by '10'' on input line 131.
+
+ [warning /pgfplots/warning/empty column name]
+Package hyperref Info: Anchor `figure.4.2' on input line 155.
+pdftex: bookmark at 155: {4.2} {\numberline{4.2}{\ignorespaces Resultado de per
+formance de varia\c c\~ao de rota\c c\~ao}} {figure.4.2}{0}{lof}
+Package hyperref Info: Anchor `figure.4.2' on input line 155.
+Package hyperref Info: Anchor `page.55' on input line 158.
+[55
+Package `hyperref' Info: End of reference (link) `figure.4.1', line 53.
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1}) 
+has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.158 
+      
+Package `hyperref' Info: End of reference (link) `figure.4.2', line 105.
+]
+Package hyperref Info: Reference (link) `figure.4.3' on input line 160.
+
+
+Package xcolor Warning: Incompatible color definition on input line 160.
+
+PGFPlots: reading {graphs/blur-all-pres.csv}
+
+Package pgfplots Warning: Table 'graphs/blur-all-pres.csv' has an empty column 
+name; replacing it by '7'' on input line 177.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {graphs/blur-all-pres.csv}
+
+Package pgfplots Warning: Table 'graphs/blur-all-pres.csv' has an empty column 
+name; replacing it by '7'' on input line 178.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {graphs/blur-all-pres.csv}
+
+Package pgfplots Warning: Table 'graphs/blur-all-pres.csv' has an empty column 
+name; replacing it by '7'' on input line 179.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {graphs/blur-all-pres.csv}
+
+Package pgfplots Warning: Table 'graphs/blur-all-pres.csv' has an empty column 
+name; replacing it by '7'' on input line 180.
+
+ [warning /pgfplots/warning/empty column name]
+
+! Package pgfplots Error: Sorry, could not retrieve column 'GFTT' from table '\
+\pgfplotstableread@filename@@table@name '. Please check spelling (or introduce 
+name aliases)..
+
+See the pgfplots package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.180 ... sep=comma]	{graphs/blur-all-\gtype.csv};
+                                                  
+(That was another \errmessage.)
+
+
+! Package pgfplots Error: Sorry, the requested column number '' in table 'graph
+s/blur-all-pres.csv' does not exist!? Please verify you used the correct index 
+0 <= i < N..
+
+See the pgfplots package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.180 ... sep=comma]	{graphs/blur-all-\gtype.csv};
+                                                  
+(That was another \errmessage.)
+
+NOTE: coordinate (1,) has been dropped because of a coordinate filter. (see als
+o unbounded coords=jump). 
+
+! Package pgfplots Error: Sorry, the requested column number '' in table 'graph
+s/blur-all-pres.csv' does not exist!? Please verify you used the correct index 
+0 <= i < N..
+
+See the pgfplots package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.180 ... sep=comma]	{graphs/blur-all-\gtype.csv};
+                                                  
+(That was another \errmessage.)
+
+NOTE: coordinate (2,) has been dropped because of a coordinate filter. (see als
+o unbounded coords=jump). 
+
+! Package pgfplots Error: Sorry, the requested column number '' in table 'graph
+s/blur-all-pres.csv' does not exist!? Please verify you used the correct index 
+0 <= i < N..
+
+See the pgfplots package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.180 ... sep=comma]	{graphs/blur-all-\gtype.csv};
+                                                  
+(That was another \errmessage.)
+
+NOTE: coordinate (3,) has been dropped because of a coordinate filter. (see als
+o unbounded coords=jump). 
+
+! Package pgfplots Error: Sorry, the requested column number '' in table 'graph
+s/blur-all-pres.csv' does not exist!? Please verify you used the correct index 
+0 <= i < N..
+
+See the pgfplots package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.180 ... sep=comma]	{graphs/blur-all-\gtype.csv};
+                                                  
+(That was another \errmessage.)
+
+NOTE: coordinate (4,) has been dropped because of a coordinate filter. (see als
+o unbounded coords=jump). 
+
+! Package pgfplots Error: Sorry, the requested column number '' in table 'graph
+s/blur-all-pres.csv' does not exist!? Please verify you used the correct index 
+0 <= i < N..
+
+See the pgfplots package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.180 ... sep=comma]	{graphs/blur-all-\gtype.csv};
+                                                  
+(That was another \errmessage.)
+
+NOTE: coordinate (5,) has been dropped because of a coordinate filter. (see als
+o unbounded coords=jump). 
+
+! Package pgfplots Error: Sorry, the requested column number '' in table 'graph
+s/blur-all-pres.csv' does not exist!? Please verify you used the correct index 
+0 <= i < N..
+
+See the pgfplots package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.180 ... sep=comma]	{graphs/blur-all-\gtype.csv};
+                                                  
+(That was another \errmessage.)
+
+NOTE: coordinate (6,) has been dropped because of a coordinate filter. (see als
+o unbounded coords=jump). 
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 180.
+
+ [warning /pgfplots/warning/plot without coordinates]
+PGFPlots: reading {graphs/blur-all-pres.csv}
+
+Package pgfplots Warning: Table 'graphs/blur-all-pres.csv' has an empty column 
+name; replacing it by '7'' on input line 181.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {graphs/blur-all-pres.csv}
+
+Package pgfplots Warning: Table 'graphs/blur-all-pres.csv' has an empty column 
+name; replacing it by '7'' on input line 182.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {graphs/blur-all-pres.csv}
+
+Package pgfplots Warning: Table 'graphs/blur-all-pres.csv' has an empty column 
+name; replacing it by '7'' on input line 183.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {graphs/blur-all-pres.csv}
+
+Package pgfplots Warning: Table 'graphs/blur-all-pres.csv' has an empty column 
+name; replacing it by '7'' on input line 184.
+
+ [warning /pgfplots/warning/empty column name]
+
+! Package pgfplots Error: Sorry, could not retrieve column 'SURF' from table '\
+\pgfplotstableread@filename@@table@name '. Please check spelling (or introduce 
+name aliases)..
+
+See the pgfplots package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.184 ... sep=comma]	{graphs/blur-all-\gtype.csv};
+                                                  
+(That was another \errmessage.)
+
+
+! Package pgfplots Error: Sorry, the requested column number '' in table 'graph
+s/blur-all-pres.csv' does not exist!? Please verify you used the correct index 
+0 <= i < N..
+
+See the pgfplots package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.184 ... sep=comma]	{graphs/blur-all-\gtype.csv};
+                                                  
+(That was another \errmessage.)
+
+NOTE: coordinate (1,) has been dropped because of a coordinate filter. (see als
+o unbounded coords=jump). 
+
+! Package pgfplots Error: Sorry, the requested column number '' in table 'graph
+s/blur-all-pres.csv' does not exist!? Please verify you used the correct index 
+0 <= i < N..
+
+See the pgfplots package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.184 ... sep=comma]	{graphs/blur-all-\gtype.csv};
+                                                  
+(That was another \errmessage.)
+
+NOTE: coordinate (2,) has been dropped because of a coordinate filter. (see als
+o unbounded coords=jump). 
+
+! Package pgfplots Error: Sorry, the requested column number '' in table 'graph
+s/blur-all-pres.csv' does not exist!? Please verify you used the correct index 
+0 <= i < N..
+
+See the pgfplots package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.184 ... sep=comma]	{graphs/blur-all-\gtype.csv};
+                                                  
+(That was another \errmessage.)
+
+NOTE: coordinate (3,) has been dropped because of a coordinate filter. (see als
+o unbounded coords=jump). 
+
+! Package pgfplots Error: Sorry, the requested column number '' in table 'graph
+s/blur-all-pres.csv' does not exist!? Please verify you used the correct index 
+0 <= i < N..
+
+See the pgfplots package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.184 ... sep=comma]	{graphs/blur-all-\gtype.csv};
+                                                  
+(That was another \errmessage.)
+
+NOTE: coordinate (4,) has been dropped because of a coordinate filter. (see als
+o unbounded coords=jump). 
+
+! Package pgfplots Error: Sorry, the requested column number '' in table 'graph
+s/blur-all-pres.csv' does not exist!? Please verify you used the correct index 
+0 <= i < N..
+
+See the pgfplots package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.184 ... sep=comma]	{graphs/blur-all-\gtype.csv};
+                                                  
+(That was another \errmessage.)
+
+NOTE: coordinate (5,) has been dropped because of a coordinate filter. (see als
+o unbounded coords=jump). 
+
+! Package pgfplots Error: Sorry, the requested column number '' in table 'graph
+s/blur-all-pres.csv' does not exist!? Please verify you used the correct index 
+0 <= i < N..
+
+See the pgfplots package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.184 ... sep=comma]	{graphs/blur-all-\gtype.csv};
+                                                  
+(That was another \errmessage.)
+
+NOTE: coordinate (6,) has been dropped because of a coordinate filter. (see als
+o unbounded coords=jump). 
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 184.
+
+ [warning /pgfplots/warning/plot without coordinates]
+PGFPlots: reading {graphs/blur-all-pres.csv}
+
+Package pgfplots Warning: Table 'graphs/blur-all-pres.csv' has an empty column 
+name; replacing it by '7'' on input line 185.
+
+ [warning /pgfplots/warning/empty column name]
+
+! Package pgfplots Error: Sorry, could not retrieve column 'SIFT' from table '\
+\pgfplotstableread@filename@@table@name '. Please check spelling (or introduce 
+name aliases)..
+
+See the pgfplots package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.185 ... sep=comma]	{graphs/blur-all-\gtype.csv};
+                                                  
+(That was another \errmessage.)
+
+
+! Package pgfplots Error: Sorry, the requested column number '' in table 'graph
+s/blur-all-pres.csv' does not exist!? Please verify you used the correct index 
+0 <= i < N..
+
+See the pgfplots package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.185 ... sep=comma]	{graphs/blur-all-\gtype.csv};
+                                                  
+(That was another \errmessage.)
+
+NOTE: coordinate (1,) has been dropped because of a coordinate filter. (see als
+o unbounded coords=jump). 
+
+! Package pgfplots Error: Sorry, the requested column number '' in table 'graph
+s/blur-all-pres.csv' does not exist!? Please verify you used the correct index 
+0 <= i < N..
+
+See the pgfplots package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.185 ... sep=comma]	{graphs/blur-all-\gtype.csv};
+                                                  
+(That was another \errmessage.)
+
+NOTE: coordinate (2,) has been dropped because of a coordinate filter. (see als
+o unbounded coords=jump). 
+
+! Package pgfplots Error: Sorry, the requested column number '' in table 'graph
+s/blur-all-pres.csv' does not exist!? Please verify you used the correct index 
+0 <= i < N..
+
+See the pgfplots package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.185 ... sep=comma]	{graphs/blur-all-\gtype.csv};
+                                                  
+(That was another \errmessage.)
+
+NOTE: coordinate (3,) has been dropped because of a coordinate filter. (see als
+o unbounded coords=jump). 
+
+! Package pgfplots Error: Sorry, the requested column number '' in table 'graph
+s/blur-all-pres.csv' does not exist!? Please verify you used the correct index 
+0 <= i < N..
+
+See the pgfplots package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.185 ... sep=comma]	{graphs/blur-all-\gtype.csv};
+                                                  
+(That was another \errmessage.)
+
+NOTE: coordinate (4,) has been dropped because of a coordinate filter. (see als
+o unbounded coords=jump). 
+
+! Package pgfplots Error: Sorry, the requested column number '' in table 'graph
+s/blur-all-pres.csv' does not exist!? Please verify you used the correct index 
+0 <= i < N..
+
+See the pgfplots package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.185 ... sep=comma]	{graphs/blur-all-\gtype.csv};
+                                                  
+(That was another \errmessage.)
+
+NOTE: coordinate (5,) has been dropped because of a coordinate filter. (see als
+o unbounded coords=jump). 
+
+! Package pgfplots Error: Sorry, the requested column number '' in table 'graph
+s/blur-all-pres.csv' does not exist!? Please verify you used the correct index 
+0 <= i < N..
+
+See the pgfplots package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.185 ... sep=comma]	{graphs/blur-all-\gtype.csv};
+                                                  
+(That was another \errmessage.)
+
+NOTE: coordinate (6,) has been dropped because of a coordinate filter. (see als
+o unbounded coords=jump). 
+
+Package pgfplots Warning: the current plot has no coordinates (or all have been
+ filtered away) on input line 185.
+
+ [warning /pgfplots/warning/plot without coordinates]
+! Dimension too large.
+<to be read again> 
+                   \relax 
+l.201 \end{axis}
+                
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<to be read again> 
+                   \relax 
+l.201 \end{axis}
+                
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<to be read again> 
+                   \relax 
+l.201 \end{axis}
+                
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+Package hyperref Info: Anchor `figure.4.3' on input line 206.
+pdftex: bookmark at 206: {4.3} {\numberline{4.3}{\ignorespaces Resultado de per
+formance de varia\c c\~ao de blur}} {figure.4.3}{0}{lof}
+Package hyperref Info: Anchor `figure.4.3' on input line 206.
+Package hyperref Info: Anchor `page.56' on input line 209.
+[56pdfTeX warning (ext4): destination with the same identifier (name{figure.4.2
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.209 
+      
+Package `hyperref' Info: End of reference (link) `figure.4.3', line 160.
+]
+Package hyperref Info: Reference (link) `figure.4.4' on input line 211.
+
+
+Package xcolor Warning: Incompatible color definition on input line 211.
+
+PGFPlots: reading {graphs/bright-all-pres.csv}
+
+Package pgfplots Warning: Table 'graphs/bright-all-pres.csv' has an empty colum
+n name; replacing it by '10'' on input line 229.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {graphs/bright-all-pres.csv}
+
+Package pgfplots Warning: Table 'graphs/bright-all-pres.csv' has an empty colum
+n name; replacing it by '10'' on input line 230.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {graphs/bright-all-pres.csv}
+
+Package pgfplots Warning: Table 'graphs/bright-all-pres.csv' has an empty colum
+n name; replacing it by '10'' on input line 231.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {graphs/bright-all-pres.csv}
+
+Package pgfplots Warning: Table 'graphs/bright-all-pres.csv' has an empty colum
+n name; replacing it by '10'' on input line 232.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {graphs/bright-all-pres.csv}
+
+Package pgfplots Warning: Table 'graphs/bright-all-pres.csv' has an empty colum
+n name; replacing it by '10'' on input line 233.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {graphs/bright-all-pres.csv}
+
+Package pgfplots Warning: Table 'graphs/bright-all-pres.csv' has an empty colum
+n name; replacing it by '10'' on input line 234.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {graphs/bright-all-pres.csv}
+
+Package pgfplots Warning: Table 'graphs/bright-all-pres.csv' has an empty colum
+n name; replacing it by '10'' on input line 235.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {graphs/bright-all-pres.csv}
+
+Package pgfplots Warning: Table 'graphs/bright-all-pres.csv' has an empty colum
+n name; replacing it by '10'' on input line 236.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {graphs/bright-all-pres.csv}
+
+Package pgfplots Warning: Table 'graphs/bright-all-pres.csv' has an empty colum
+n name; replacing it by '10'' on input line 237.
+
+ [warning /pgfplots/warning/empty column name]
+! Dimension too large.
+<to be read again> 
+                   \relax 
+l.258 \end{axis}
+                
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<to be read again> 
+                   \relax 
+l.258 \end{axis}
+                
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<recently read> \pgfmath@x 
+                           
+l.258 \end{axis}
+                
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<to be read again> 
+                   \relax 
+l.258 \end{axis}
+                
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<to be read again> 
+                   \relax 
+l.258 \end{axis}
+                
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<recently read> \pgfmath@x 
+                           
+l.258 \end{axis}
+                
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<to be read again> 
+                   \relax 
+l.258 \end{axis}
+                
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<to be read again> 
+                   \relax 
+l.258 \end{axis}
+                
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<recently read> \pgfmath@x 
+                           
+l.258 \end{axis}
+                
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<to be read again> 
+                   \relax 
+l.258 \end{axis}
+                
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<to be read again> 
+                   \relax 
+l.258 \end{axis}
+                
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<recently read> \pgfmath@x 
+                           
+l.258 \end{axis}
+                
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<to be read again> 
+                   \relax 
+l.258 \end{axis}
+                
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+Package hyperref Info: Anchor `figure.4.4' on input line 263.
+pdftex: bookmark at 263: {4.4} {\numberline{4.4}{\ignorespaces Resultado de per
+formance de varia\c c\~ao de blur}} {figure.4.4}{0}{lof}
+Package hyperref Info: Anchor `figure.4.4' on input line 263.
+Package hyperref Info: Anchor `page.57' on input line 266.
+[57pdfTeX warning (ext4): destination with the same identifier (name{figure.4.3
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.266 
+      
+Package `hyperref' Info: End of reference (link) `figure.4.4', line 211.
+]
+Package hyperref Info: Anchor `section.4.2' on input line 267.
+
+pdftex: bookmark at 267: {4.2} {\numberline{4.2}An\'alise de Tempo} {section.4.
+2}{1}{toc}
+Package hyperref Info: Reference (cite) `cite.Tang93whydo' on input line 270.
+
+Package xcolor Warning: Incompatible color definition on input line 270.
+
+Package hyperref Info: Reference (cite) `cite.Tang93whydo' on input line 270.
+
+Package xcolor Warning: Incompatible color definition on input line 270.
+
+Package hyperref Info: Reference (link) `figure.4.5' on input line 287.
+
+Package xcolor Warning: Incompatible color definition on input line 287.
+
+PGFPlots: reading {graphs/scale-all-time.csv}
+
+Package pgfplots Warning: Table 'graphs/scale-all-time.csv' has an empty column
+ name; replacing it by '10'' on input line 307.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {graphs/scale-all-time.csv}
+
+Package pgfplots Warning: Table 'graphs/scale-all-time.csv' has an empty column
+ name; replacing it by '10'' on input line 308.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {graphs/scale-all-time.csv}
+
+Package pgfplots Warning: Table 'graphs/scale-all-time.csv' has an empty column
+ name; replacing it by '10'' on input line 309.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {graphs/scale-all-time.csv}
+
+Package pgfplots Warning: Table 'graphs/scale-all-time.csv' has an empty column
+ name; replacing it by '10'' on input line 310.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {graphs/scale-all-time.csv}
+
+Package pgfplots Warning: Table 'graphs/scale-all-time.csv' has an empty column
+ name; replacing it by '10'' on input line 311.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {graphs/scale-all-time.csv}
+
+Package pgfplots Warning: Table 'graphs/scale-all-time.csv' has an empty column
+ name; replacing it by '10'' on input line 312.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {graphs/scale-all-time.csv}
+
+Package pgfplots Warning: Table 'graphs/scale-all-time.csv' has an empty column
+ name; replacing it by '10'' on input line 313.
+
+ [warning /pgfplots/warning/empty column name]
+
+! Package PGF Math Error: Could not parse input 'NULL' as a floating point numb
+er, sorry. The unreadable part was near 'ULL'..
+
+See the PGF Math package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.313 ...sep=comma]	{graphs/scale-all-\gtype.csv};
+                                                  
+(That was another \errmessage.)
+
+NOTE: coordinate (0.25,NULL) has been dropped because it is unbounded (in y). (
+see also unbounded coords=jump). 
+PGFPlots: reading {graphs/scale-all-time.csv}
+
+Package pgfplots Warning: Table 'graphs/scale-all-time.csv' has an empty column
+ name; replacing it by '10'' on input line 314.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {graphs/scale-all-time.csv}
+
+Package pgfplots Warning: Table 'graphs/scale-all-time.csv' has an empty column
+ name; replacing it by '10'' on input line 315.
+
+ [warning /pgfplots/warning/empty column name]
+! Dimension too large.
+<recently read> \pgf@xx 
+                        
+l.331 \end{axis}
+                
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<to be read again> 
+                   \relax 
+l.331 \end{axis}
+                
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<recently read> \pgf@xx 
+                        
+l.331 \end{axis}
+                
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<recently read> \pgf@xx 
+                        
+l.331 \end{axis}
+                
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<recently read> \pgf@xx 
+                        
+l.331 \end{axis}
+                
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+\pgfusepath ...x by-.5\pgflinewidth \ifdim \pgf@x 
+                                                  <\pgf@picminx \global \pgf...
+l.331 \end{axis}
+                
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+\pgfusepath ...@x by.5\pgflinewidth \ifdim \pgf@x 
+                                                  >\pgf@picmaxx \global \pgf...
+l.331 \end{axis}
+                
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<recently read> \pgf@xx 
+                        
+l.331 \end{axis}
+                
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<to be read again> 
+                   \relax 
+l.331 \end{axis}
+                
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<recently read> \pgf@xx 
+                        
+l.331 \end{axis}
+                
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<recently read> \pgf@xx 
+                        
+l.331 \end{axis}
+                
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<to be read again> 
+                   \relax 
+l.331 \end{axis}
+                
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<recently read> \pgf@xx 
+                        
+l.331 \end{axis}
+                
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+Package hyperref Info: Anchor `figure.4.5' on input line 335.
+pdftex: bookmark at 335: {4.5} {\numberline{4.5}{\ignorespaces An\'alise de tem
+po de varia\c c\~ao de escala}} {figure.4.5}{0}{lof}
+Package hyperref Info: Anchor `figure.4.5' on input line 335.
+Package hyperref Info: Anchor `page.58' on input line 339.
+[58pdfTeX warning (ext4): destination with the same identifier (name{figure.4.4
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.339 
+      
+Package `hyperref' Info: End of reference (cite) `cite.Tang93whydo', line 270.
+Package `hyperref' Info: End of reference (cite) `cite.Tang93whydo', line 270.
+Package `hyperref' Info: End of reference (link) `figure.4.5', line 287.
+]
+Package hyperref Info: Reference (link) `figure.4.5' on input line 340.
+
+
+Package xcolor Warning: Incompatible color definition on input line 340.
+
+PGFPlots: reading {graphs/rot-all-time.csv}
+
+Package pgfplots Warning: Table 'graphs/rot-all-time.csv' has an empty column n
+ame; replacing it by '10'' on input line 357.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {graphs/rot-all-time.csv}
+
+Package pgfplots Warning: Table 'graphs/rot-all-time.csv' has an empty column n
+ame; replacing it by '10'' on input line 358.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {graphs/rot-all-time.csv}
+
+Package pgfplots Warning: Table 'graphs/rot-all-time.csv' has an empty column n
+ame; replacing it by '10'' on input line 359.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {graphs/rot-all-time.csv}
+
+Package pgfplots Warning: Table 'graphs/rot-all-time.csv' has an empty column n
+ame; replacing it by '10'' on input line 360.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {graphs/rot-all-time.csv}
+
+Package pgfplots Warning: Table 'graphs/rot-all-time.csv' has an empty column n
+ame; replacing it by '10'' on input line 361.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {graphs/rot-all-time.csv}
+
+Package pgfplots Warning: Table 'graphs/rot-all-time.csv' has an empty column n
+ame; replacing it by '10'' on input line 362.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {graphs/rot-all-time.csv}
+
+Package pgfplots Warning: Table 'graphs/rot-all-time.csv' has an empty column n
+ame; replacing it by '10'' on input line 363.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {graphs/rot-all-time.csv}
+
+Package pgfplots Warning: Table 'graphs/rot-all-time.csv' has an empty column n
+ame; replacing it by '10'' on input line 364.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {graphs/rot-all-time.csv}
+
+Package pgfplots Warning: Table 'graphs/rot-all-time.csv' has an empty column n
+ame; replacing it by '10'' on input line 365.
+
+ [warning /pgfplots/warning/empty column name]
+Package hyperref Info: Anchor `figure.4.6' on input line 391.
+pdftex: bookmark at 391: {4.6} {\numberline{4.6}{\ignorespaces An\'alise de tem
+po de varia\c c\~ao de rota\c c\~ao}} {figure.4.6}{0}{lof}
+Package hyperref Info: Anchor `figure.4.6' on input line 391.
+Package hyperref Info: Anchor `page.59' on input line 395.
+[59pdfTeX warning (ext4): destination with the same identifier (name{figure.4.5
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.395 
+      
+Package `hyperref' Info: End of reference (link) `figure.4.5', line 340.
+]
+Package hyperref Info: Reference (link) `figure.4.7' on input line 397.
+
+
+Package xcolor Warning: Incompatible color definition on input line 397.
+
+PGFPlots: reading {graphs/blur-all-time.csv}
+
+Package pgfplots Warning: Table 'graphs/blur-all-time.csv' has an empty column 
+name; replacing it by '10'' on input line 414.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {graphs/blur-all-time.csv}
+
+Package pgfplots Warning: Table 'graphs/blur-all-time.csv' has an empty column 
+name; replacing it by '10'' on input line 415.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {graphs/blur-all-time.csv}
+
+Package pgfplots Warning: Table 'graphs/blur-all-time.csv' has an empty column 
+name; replacing it by '10'' on input line 416.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {graphs/blur-all-time.csv}
+
+Package pgfplots Warning: Table 'graphs/blur-all-time.csv' has an empty column 
+name; replacing it by '10'' on input line 417.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {graphs/blur-all-time.csv}
+
+Package pgfplots Warning: Table 'graphs/blur-all-time.csv' has an empty column 
+name; replacing it by '10'' on input line 418.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {graphs/blur-all-time.csv}
+
+Package pgfplots Warning: Table 'graphs/blur-all-time.csv' has an empty column 
+name; replacing it by '10'' on input line 419.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {graphs/blur-all-time.csv}
+
+Package pgfplots Warning: Table 'graphs/blur-all-time.csv' has an empty column 
+name; replacing it by '10'' on input line 420.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {graphs/blur-all-time.csv}
+
+Package pgfplots Warning: Table 'graphs/blur-all-time.csv' has an empty column 
+name; replacing it by '10'' on input line 421.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {graphs/blur-all-time.csv}
+
+Package pgfplots Warning: Table 'graphs/blur-all-time.csv' has an empty column 
+name; replacing it by '10'' on input line 422.
+
+ [warning /pgfplots/warning/empty column name]
+! Dimension too large.
+<to be read again> 
+                   \relax 
+l.440 \end{axis}
+                
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<to be read again> 
+                   \relax 
+l.440 \end{axis}
+                
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+! Dimension too large.
+<to be read again> 
+                   \relax 
+l.440 \end{axis}
+                
+I can't work with sizes bigger than about 19 feet.
+Continue and I'll use the largest value I can.
+
+Package hyperref Info: Anchor `figure.4.7' on input line 444.
+pdftex: bookmark at 444: {4.7} {\numberline{4.7}{\ignorespaces An\'alise de tem
+po de varia\c c\~ao de blur}} {figure.4.7}{0}{lof}
+Package hyperref Info: Anchor `figure.4.7' on input line 444.
+Package hyperref Info: Anchor `page.60' on input line 448.
+[60pdfTeX warning (ext4): destination with the same identifier (name{figure.4.6
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.448 
+      
+Package `hyperref' Info: End of reference (link) `figure.4.7', line 397.
+]
+Package hyperref Info: Reference (link) `figure.4.8' on input line 450.
+
+
+Package xcolor Warning: Incompatible color definition on input line 450.
+
+PGFPlots: reading {graphs/bright-all-time.csv}
+
+Package pgfplots Warning: Table 'graphs/bright-all-time.csv' has an empty colum
+n name; replacing it by '10'' on input line 467.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {graphs/bright-all-time.csv}
+
+Package pgfplots Warning: Table 'graphs/bright-all-time.csv' has an empty colum
+n name; replacing it by '10'' on input line 468.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {graphs/bright-all-time.csv}
+
+Package pgfplots Warning: Table 'graphs/bright-all-time.csv' has an empty colum
+n name; replacing it by '10'' on input line 469.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {graphs/bright-all-time.csv}
+
+Package pgfplots Warning: Table 'graphs/bright-all-time.csv' has an empty colum
+n name; replacing it by '10'' on input line 470.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {graphs/bright-all-time.csv}
+
+Package pgfplots Warning: Table 'graphs/bright-all-time.csv' has an empty colum
+n name; replacing it by '10'' on input line 471.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {graphs/bright-all-time.csv}
+
+Package pgfplots Warning: Table 'graphs/bright-all-time.csv' has an empty colum
+n name; replacing it by '10'' on input line 472.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {graphs/bright-all-time.csv}
+
+Package pgfplots Warning: Table 'graphs/bright-all-time.csv' has an empty colum
+n name; replacing it by '10'' on input line 473.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {graphs/bright-all-time.csv}
+
+Package pgfplots Warning: Table 'graphs/bright-all-time.csv' has an empty colum
+n name; replacing it by '10'' on input line 474.
+
+ [warning /pgfplots/warning/empty column name]
+PGFPlots: reading {graphs/bright-all-time.csv}
+
+Package pgfplots Warning: Table 'graphs/bright-all-time.csv' has an empty colum
+n name; replacing it by '10'' on input line 475.
+
+ [warning /pgfplots/warning/empty column name]
+Package hyperref Info: Anchor `figure.4.8' on input line 497.
+pdftex: bookmark at 497: {4.8} {\numberline{4.8}{\ignorespaces An\'alise de tem
+po de varia\c c\~ao de ilumina\c c\~ao}} {figure.4.8}{0}{lof}
+Package hyperref Info: Anchor `figure.4.8' on input line 497.
+Package hyperref Info: Anchor `page.61' on input line 500.
+[61pdfTeX warning (ext4): destination with the same identifier (name{figure.4.7
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.500 
+      
+Package `hyperref' Info: End of reference (link) `figure.4.8', line 450.
+]
+Package hyperref Info: Anchor `subsection.4.2.1' on input line 502.
+
+pdftex: bookmark at 502: {4.2.1} {\numberline{4.2.1}Sele\c c\~ao da T\'ecnica} 
+{subsection.4.2.1}{2}{toc}
+Package hyperref Info: Reference (link) `table.4.1' on input line 507.
+
+Package xcolor Warning: Incompatible color definition on input line 507.
+
+Package hyperref Info: Anchor `table.4.1' on input line 527.
+pdftex: bookmark at 527: {4.1} {\numberline{4.1}{\ignorespaces Decis\~ao de t\'
+ecnica \`a utilizar}} {table.4.1}{0}{lot}
+Package hyperref Info: Anchor `table.4.1' on input line 527.
+Package hyperref Info: Anchor `page.62' on input line 530.
+[62pdfTeX warning (ext4): destination with the same identifier (name{figure.4.8
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.530 
+      
+Package `hyperref' Info: End of reference (link) `table.4.1', line 507.
+])
+Package hyperref Info: Anchor `page.63' on input line 186.
+ [63pdfTeX warning (ext4): destination with the same identifier (name{table.4.1
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.186 \chapter
+              {Conclusão}]
+Package hyperref Info: Anchor `chapter.5' on input line 186.
+
+Cap\'{\i }tulo 5.
+pdftex: bookmark at 186: {5} {\numberline{5}Conclus\~ao} {chapter.5}{0}{toc}
+(D:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/conclusao.tex
+Package hyperref Info: Reference (link) `subsection.2.8.5' on input line 14.
+
+
+Package xcolor Warning: Incompatible color definition on input line 14.
+
+Package hyperref Info: Reference (link) `subsection.2.8.7' on input line 14.
+
+Package xcolor Warning: Incompatible color definition on input line 14.
+
+Package hyperref Info: Anchor `subsection.5.0.2' on input line 17.
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 17.
+
+pdftex: bookmark at 17: {5.0.2} {\numberline{5.0.2}Atendimento dos objetivos} {
+subsection.5.0.2}{2}{toc}
+Package hyperref Info: Reference (link) `section.2.8' on input line 21.
+
+Package xcolor Warning: Incompatible color definition on input line 21.
+
+Package hyperref Info: Anchor `page.64' on input line 27.
+[64
+
+Package `hyperref' Info: End of reference (link) `subsection.2.8.5', line 14.
+Package `hyperref' Info: End of reference (link) `subsection.2.8.7', line 14.
+Package `hyperref' Info: End of reference (link) `section.2.8', line 21.
+])
+(D:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/futuros.tex
+Package hyperref Info: Anchor `section.5.1' on input line 1.
+
+pdftex: bookmark at 1: {5.1} {\numberline{5.1}Trabalhos Futuros} {section.5.1}{
+1}{toc}
+Package hyperref Info: Anchor `page.65' on input line 25.
+[65])
+(D:\Projects\duartec-projects\Mestrado\Registration-Tese\template_Article.bbl
+(D:\Projects\duartec-projects\Mestrado\Registration-Tese\template_Article.brf)
+\tf@brf=\write10
+Package hyperref Info: Anchor `page.66' on input line 1.
+
+[66]
+Package hyperref Info: Anchor `chapter*.7' on input line 1.
+Package hyperref Info: Anchor `chapter.6' on input line 1.
+
+pdftex: bookmark at 1: {6} {Refer\^encias Bibliogr\'aficas} {chapter.6}{0}{toc}
+
+Package hyperref Info: Anchor `cite.robotnavigation' on input line 11.
+Package hyperref Info: Anchor `cite.SurveyAR' on input line 16.
+Package hyperref Info: Anchor `cite.opencv-comparing-1' on input line 24.
+
+Package xcolor Warning: Incompatible color definition on input line 24.
+
+LaTeX Font Info:    Try loading font information for T1+aett on input line 24.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ae\t1aett.fd"
+File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
+)
+Package hyperref Info: Anchor `cite.opencv-comparing-2' on input line 32.
+
+
+Package xcolor Warning: Incompatible color definition on input line 32.
+
+Package hyperref Info: Anchor `cite.binaryfeatures' on input line 37.
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `latin1'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 
+     
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `latin1'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 
+     
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+Package hyperref Info: Anchor `cite.VideoAnotation' on input line 43.
+Package hyperref Info: Anchor `cite.descriptor-comparing' on input line 50.
+
+Package xcolor Warning: Incompatible color definition on input line 50.
+
+Package hyperref Info: Anchor `cite.OpenCvOReilly' on input line 55.
+Package hyperref Info: Anchor `cite.ElaborarPesquisa' on input line 59.
+Package hyperref Info: Anchor `cite.SURF' on input line 64.
+Package hyperref Info: Anchor `cite.performance_evaluation' on input line 69.
+Package hyperref Info: Anchor `cite.BRISK' on input line 75.
+Package hyperref Info: Anchor `cite.SIFT' on input line 81.
+Package hyperref Info: Anchor `page.67' on input line 88.
+[67
+
+Package `hyperref' Info: End of reference (link) `section.2.8', line 21.
+Package `hyperref' Info: End of reference (link) `section.2.8', line 21.
+Package `hyperref' Info: End of reference (link) `section.2.8', line 21.
+]
+Package hyperref Info: Anchor `cite.lowlevelfeature' on input line 88.
+Package hyperref Info: Anchor `cite.Well-Known' on input line 94.
+Package hyperref Info: Anchor `cite.MetodologiaCientifica' on input line 101.
+Package hyperref Info: Anchor `cite.FusingPoints' on input line 107.
+Package hyperref Info: Anchor `cite.FAST' on input line 113.
+Package hyperref Info: Anchor `cite.ORB' on input line 118.
+Package hyperref Info: Anchor `cite.Pedestrian' on input line 124.
+Package hyperref Info: Anchor `cite.Devices' on input line 130.
+Package hyperref Info: Anchor `cite.Tang93whydo' on input line 135.
+Package hyperref Info: Anchor `cite.localfeaturedetector' on input line 140.
+Package hyperref Info: Anchor `cite.understandingfeatures' on input line 147.
+
+
+Package xcolor Warning: Incompatible color definition on input line 147.
+
+Package hyperref Info: Anchor `cite.Welch78' on input line 153.
+)
+Package hyperref Info: Anchor `page.68' on input line 216.
+ [68
+Package `hyperref' Info: End of reference (link) `section.2.8', line 21.
+]
+Package hyperref Info: Anchor `chapter.7' on input line 216.
+
+pdftex: bookmark at 217: {7} {Gloss\'ario} {chapter.7}{0}{toc}
+No file template_Article.gls
+\bottommargin=\skip67
+\rightmarginn=\skip68
+Package hyperref Info: Anchor `bla.0' on input line 231.
+(D:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/resumo.tex)
+(D:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/resumo.tex)
+(D:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/resumo.tex)
+Overfull \hbox (74.53033pt too wide) in paragraph at lines 231--231
+[][][] 
+ []
+
+
+AED: lastpage setting LastPage
+Package hyperref Info: Anchor `page.69' on input line 233.
+[69
+
+
+
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 233.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 233.
+
+(D:\Projects\duartec-projects\Mestrado\Registration-Tese\template_Article.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 233.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 233.
+Package rerunfilecheck Info: File `template_Article.out' has not changed.
+(rerunfilecheck)             Checksum: D14A301E4E704554E889F5D43454096B;4458.
+Package rerunfilecheck Info: File `template_Article.brf' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 233.
+ ) 
 Here is how much of TeX's memory you used:
- 26050 strings out of 493922
- 613127 string characters out of 3144892
- 819776 words of memory out of 3000000
- 28877 multiletter control sequences out of 15000+200000
- 5435 words of font info for 16 fonts, out of 3000000 for 9000
+ 28177 strings out of 493922
+ 658722 string characters out of 3144892
+ 901795 words of memory out of 3000000
+ 30515 multiletter control sequences out of 15000+200000
+ 54886 words of font info for 113 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 62i,11n,76p,741b,609s stack positions out of 5000i,500n,10000p,200000b,50000s
-!  ==> Fatal error occurred, no output PDF file produced!
+ 62i,19n,103p,741b,2303s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C
+:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:
+/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/P
+rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Pro
+gram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Progra
+m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program F
+iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program File
+s (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (
+x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files (x86)
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files (x86)/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmssi12.pfb><C:/Program Files (x86)/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files (x86)/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on template_Article.pdf (70 pages, 1560232 bytes).
+PDF statistics:
+ 978 PDF objects out of 1000 (max. 8388607)
+ 212 named destinations out of 1000 (max. 500000)
+ 640 words of extra memory for PDF output out of 10000 (max. 10000000)
+

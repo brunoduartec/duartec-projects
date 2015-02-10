@@ -3,10 +3,32 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{1.29 }
 
+\bibitem[Adam~Schmidt 2012]{robotnavigation}
+\abntrefinfo{Adam~Schmidt}{ADAM~SCHMIDT}{2012}
+{ADAM~SCHMIDT, e.~a. The comparison of point feature detectors and descriptors
+  in the context of robot navigation.
+\textbf{ Workshop on Perception for Mobil e Rob ots Autonomy}, 2012.}
+
 \bibitem[Azuma 1997]{SurveyAR}
 \abntrefinfo{Azuma}{AZUMA}{1997}
 {AZUMA, R.~T. A survey of augmented reality.
 \textbf{ Hughes Research Laboratories}, aug 1997.}
+
+\bibitem[Comparison of the OpenCV feature detection algorithms
+  2014]{opencv-comparing-1}
+\abntrefinfo{Comparison\ldots}{COMPARISON\ldots}{2014a}
+{COMPARISON of the OpenCV feature detection algorithms. 2014.
+Available at
+  \url{http://computer-vision-talks.com/articles/2011-01-04-comparison-of-the-opencv-feature-detection-algorithms/}
+  (2015/19/01).}
+
+\bibitem[Comparison of the OpenCV feature detection algorithms - II
+  2014]{opencv-comparing-2}
+\abntrefinfo{Comparison\ldots}{COMPARISON\ldots}{2014b}
+{COMPARISON of the OpenCV feature detection algorithms - II. 2014.
+Available at
+  \url{http://computer-vision-talks.com/articles/2011-07-13-comparison-of-the-opencv-feature-detection-algorithms/}
+  (2015/19/01).}
 
 \bibitem[E. e J.-M. 2012]{binaryfeatures}
 \abntrefinfo{E. e J.-M.}{E.; J.-M.}{2012}
@@ -18,6 +40,13 @@
 {E.~ROSTEN, G.~R.; DRUMMOND, T. Real-time video annotations for augmented
   reality.
 \textbf{ International Symposium on Visual Computing}, 2005.}
+
+\bibitem[Feature descriptor comparison report 2014]{descriptor-comparing}
+\abntrefinfo{Feature\ldots}{FEATURE\ldots}{2014}
+{FEATURE descriptor comparison report. 2014.
+Available at
+  \url{http://computer-vision-talks.com/articles/2011-08-19-feature-descriptor-comparison-report/}
+  (2015/19/01).}
 
 \bibitem[Gary~Bradski 2008]{OpenCvOReilly}
 \abntrefinfo{Gary~Bradski}{GARY~BRADSKI}{2008}
