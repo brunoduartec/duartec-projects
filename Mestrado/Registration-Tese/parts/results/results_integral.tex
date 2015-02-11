@@ -24,12 +24,8 @@
 
 
 A abordagem de testes e análise de desempenho é feita como descrito em
-\cite{performance_evaluation} e nas análises apresentadas em
-\cite{opencv-comparing-1}, \cite{opencv-comparing-2} e
-\cite{descriptor-comparing}
-
-Como descrito na Seção \ref{sec:analisededados}, existem restrições para
-garantir que a técnica utilizada responde segundo as necessidades da aplicação.
+\cite{performance_evaluation}.Como descrito na Seção \ref{sec:analisededados},
+existem restrições para garantir que a técnica utilizada responde segundo as necessidades da aplicação.
 Nos gráficos a seguir são traçadas janelas de restrição, sendo que os valores
 que se encontram dentro dela são adequadas à situação.
 As técnicas tem suas implementações no OpenCV com a possibilidade de
@@ -510,6 +506,8 @@ na tabela~\ref{table:techdecision}, nos levam a escolher GFTT e ORB por serem os
 
  \begin{table}[H]
   \centering
+  \caption{Decisão de técnica à utilizar}
+\label{table:techdecision}
   \resizebox{\textwidth}{!}{  
 \begin{tabular}{ | l | l | l | l | a | l | a | l | l | l | }
 \hline
@@ -524,8 +522,7 @@ na tabela~\ref{table:techdecision}, nos levam a escolher GFTT e ORB por serem os
 	Tempo Iluminação & X &  &  & X &  & X & X &  &  \\ \hline
 \end{tabular}
 }
-\caption{Decisão de técnica à utilizar}
-\label{table:techdecision}
+
 \end{table}
 
 

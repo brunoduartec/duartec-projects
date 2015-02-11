@@ -18,9 +18,13 @@ uma aresta se existem n pixels contíguos em um círculo que são mais brilhantes d
 
 Na imagem~\ref{fig:fast01} foi escolhido n=12. Um teste rápido é
 \begin{enumerate}
-	\item  selecionar o ponto é testar primeiro as extremidades. no caso da imagem, escolhido o ponto p
-	\item Compara-se os pontos 1 e 9, e verifica-se se o ponto p tem intensidade com diferença de módulo t, ou seja os pontos 1 e 9 são mais claros ou mais escuros do que o ponto p pelo fator de t
-	\item Caso o ponto p continue sendo um candidato, avalia-se os pontos 5 e 13
-	\item Se p é uma aresta então pelo menos 3 desses pontos devem ser mais brilhantes ou mais escuros do que p então o teste pode ser feito nos demais pontos.
+	\item Selecionar o ponto é testar primeiro as extremidades. no caso da imagem,
+	escolhido o ponto p
+	\item Comparar os pontos 1 e 9, e verifica-se se o ponto p tem intensidade
+	com diferença de módulo t, ou seja os pontos 1 e 9 são mais claros ou mais escuros do que o ponto p pelo fator de t
+	\item Avaliar se o ponto p continue sendo um candidato considerando os pontos 5
+	e 13
+	\item Analisar se p é uma aresta, sendo pelo menos 3 desses pontos devem ser
+	mais brilhantes ou mais escuros do que p então o teste pode ser feito nos demais pontos.
 \end{enumerate}
 
