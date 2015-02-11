@@ -35,6 +35,19 @@
   
 \usepackage{float}
 \usepackage{pgfplots}
+\usepackage{tikz}
+\usetikzlibrary{arrows, decorations.markings}
+
+% for double arrows a la chef
+% adapt line thickness and line width, if needed
+\tikzstyle{vecArrow} = [thick, decoration={markings,mark=at position
+   1 with {\arrow[semithick]{open triangle 60}}},
+   double distance=1.4pt, shorten >= 5.5pt,
+   preaction = {decorate},
+   postaction = {draw,line width=1.4pt, white,shorten >= 4.5pt}]
+\tikzstyle{innerWhite} = [semithick, white,line width=1.4pt, shorten >= 4.5pt]
+
+
 \usepackage{xcolor,colortbl}
 \pgfplotsset{compat=1.8}
 \usepackage{pgfkeys}
@@ -52,7 +65,8 @@
 
 % Endereco do Autor -> utilizado no verso da folha de rosto
 % Obrigatório para Teses
-\itaauthoraddress{Av. ABC, 1000}{12.000-000}{São José dos Campos--SP}
+\itaauthoraddress{Av. Juscelino Kubistcheck, 6701 ap 14 bl
+21}{12.220-000}{São José dos Campos--SP}
 
 % Titulo da Tese/Dissertacao
 \title{Avaliação de técnicas de reconhecimento de padrões em ambientes
@@ -62,7 +76,7 @@ aeronauticos}
 \advisor{Prof.~Dr.}{Luís Gonzaga Trabasso}
 
 % Co-orientador opcional
-\coadvisor{Prof.~Dr.}{Nelson José Issa de Macedo}{EMBRAER}
+\coadvisor{}{Nelson José Issa de Macedo}{EMBRAER}
 
 % Chefe da divisao de Pos-Graduacao
 % Obrigatório para Teses
@@ -175,7 +189,7 @@ resultados que esperava.
 	\input{parts/basicos/conceitos_basicos}
 	\input{parts/trabalhosrelacionados}
  
-\chapter{Proposta}
+\chapter{Aplicação e Seleção de Algoritmos}
 	\label{ch:propostao}
 	\input{parts/metodologia}
 	\input{parts/prototipos}
