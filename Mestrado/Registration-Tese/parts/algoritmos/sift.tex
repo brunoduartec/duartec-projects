@@ -1,9 +1,9 @@
 \subsection{SIFT - Scale-Invariant Feature Transform}
 
 
-De acordo com \cite{SIFT}é um método baseado em detecção de arestas que tem como
-proposta garantir a invariancia a variação de escala. Um problema que nos métodos de reconhecimento
-de arestas se não tratado pode causar diminuição na robustes do algoritmo. 
+De acordo com \cite{SIFT}, é um método baseado em detecção de arestas que tem
+como proposta garantir a invariância à variação de escala. Um problema que nos
+métodos de reconhecimento de arestas se não tratado pode causar diminuição na robustes do algoritmo. 
 A figura~\ref{fig:sift01} ilustra bem o efeito que a mudança de escala pode
 fazer.
 
@@ -17,6 +17,8 @@ fazer.
 Em 2004, D.Lowe, descreveu o algoritmo Scale Invariant Feature Tranform no seu paper Distinctive Image
  Features from Scale-Invariant Keypoints[15] como extrair keypoints e computar os descritores.
 8.10.2.1. Scale-space Extrema Detection
+
+
 Observando a imagem~\ref{fig:sift01} é possível notar que não podemos utilizar a
 mesma janela de inspeção independente da escala do objeto, para objetos maiores
 temos que utilizar janelas maiores. Nesse contexto, o filtro scale-space é

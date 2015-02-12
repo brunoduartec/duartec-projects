@@ -1,14 +1,18 @@
 \section{Camera}
-Como descrito em \cite{OpenCvOReilly} as câmeras de baixo custo vendidas
+Como descrito em \cite{OpenCvOReilly}, as câmeras de baixo custo vendidas
 atualmente introduzem diversos erros de distorção.
- Dois dos maiores são as distorções radiais e as distorções tangenciais.
-Devido a distorções radiais, linhas retas vão parecer curvadas e tal efeito tende a 
+ Duas dos maiores são as distorções radiais e as distorções tangenciais.
+Devido a distorções radiais, linhas retas vão parecer curvadas tendendo a 
 aumentar quanto mais o ponto se distancia do centro da imagem. Na prática essas distorções
- são pequenas e podem ser caracterizadas pelos primeiros termos de uma expansão da série de Tailor.
+ são pequenas e podem ser caracterizadas pelos primeiros termos de uma expansão
+ da série de Taylor.
 \subsection{Distorção Radial}
 Distorções radiais como mostradas na figura~\ref{fig:radial01}, são mais
-associadas a lentes de grandes ângulos, em particular zoom wide-angles. Esse efeito resulta em imagens esforzadas, o que significa que as arestas da imagem  vão aparecer curvadas a olho humano.
-A distorção é resultado da fabricação por ser bem mais barato e prático produzir lentes esféricas do que lentes mais matematicamente ideais com perfis parabólicos.
+associadas a lentes de grandes ângulos, em particular zoom \emph{wide-angles}.
+Esse efeito faz com que as arestas da imagem apareçam curvadas a olho
+humano.
+A distorção é resultado da fabricação por ser bem mais barato e prático produzir lentes esféricas
+ do que lentes mais matematicamente ideais com perfis parabólicos.
 
 \begin{figure}[h!]
 \centering
@@ -39,7 +43,8 @@ de manufatura causadas pelo fato de o plano da lente não ser totalmente paralelo
 \end{figure}
 
 A imagem~\ref{fig:tangencial02} mostra o efeito da distorção tangencial em um
-grid de pontos retangular. Os pontos se deslocam deforma eliptica quanto mais próximos da borda.
+grid de pontos retangular. Os pontos se deslocam deformando elipticamente quanto
+mais próximos da borda.
 
 \begin{figure}[h]
 \centering

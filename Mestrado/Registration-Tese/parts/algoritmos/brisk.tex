@@ -1,20 +1,24 @@
 \subsection{BRISK - Binary Robust Invariant Scalable Keypoints}
 
 Como descrito em \cite{BRISK}, ao contrário dos descritores vetoriais, como SURF
-e SIFT, BRISK utiliza descritores no espaço binário o que para dispositivos com restrição de recursos e poder computacional como dispositivos mobiles pode ser interessante.
+e SIFT, BRISK utiliza descritores no espaço binário o que para dispositivos com restrição de recursos e poder computacional 
+como dispositivos mobiles pode ser interessante.
 Baseado no detector da técnica FAST, o processo consiste de três partes.
 
 \textbf{Amostragem de padrões}
 
-Retirando um padrão de amostras ao redor do keypoint referentes a pontos espalhados em circulos concêntricos, que são usados para determinar se o ponto deve ou não ser selecionado como em um detector FAST.
+Retirando um padrão de amostras ao redor do \emph{keypoint} referentes a pontos
+espalhados em circulos concêntricos, que são usados para determinar se o ponto deve ou não ser 
+selecionado como em um detector FAST.
 As amostras são separadas em pares de dois subsets, curta distância e longa distância.
 
 \textbf{Compensação de Orientação}
 %REFAZER
 
-Para atingir invariância a rotação, a direção de cada keypoint é determinada
-tomando a soma dos gradientes locais calculados entre pares de longa distância e
-os pares de curta distância são rotacionados baseados na orientação obtida.
+Para atingir invariância a rotação, a direção de cada \emph{keypoint} é
+determinada tomando a soma dos gradientes locais calculados entre pares de longa
+distância e rotacionando os pares de curta distância baseados
+na orientação obtida.
 
 \textbf{Comparação de pares de amostragem}
 
@@ -27,9 +31,14 @@ os pares de curta distância são rotacionados baseados na orientação obtida.
 
 
 Como mostrado na figura~\ref{fig:briskdescriptor}, BRISK possui um descritor
-binário de 512 bits que calcula a média ponderada utilizando uma Gaussiana sobre um padrão de pontos mais próximos do ponto selecionado como mostrado na imagem~\ref{fig:briskdescriptor} no ponto (0,0). Ao longo do padrão descrito, são aplicadas suavizações Gaussianas sendo que os círculos vermelhos representam o tamanho do desvio padrão do filtro Gaussiano aplicado a cada ponto.
-É baseado em comparações entre pares de janelas de Gaussianas, resultando em 1 ou 0, dependendo de qual janela no par for maior.
-Os pares então são pré selecionado no BRISK, criando descritores binários que são posteriormente utilizados para casamento de padrão, utilizando distâncias Hamming ao invés de Euclidianas.
+binário de 512 bits que calcula a média ponderada utilizando uma Gaussiana sobre um padrão de pontos mais próximo
+s do ponto selecionado como mostrado na imagem~\ref{fig:briskdescriptor} no ponto (0,0). Ao longo do padrão descrito,
+ são aplicadas suavizações Gaussianas sendo que os círculos vermelhos representam o tamanho do desvio padrão do filtro
+  Gaussiano aplicado a cada ponto.
+É baseado em comparações entre pares de janelas de Gaussianas, resultando em 1 ou 0, dependendo de qual janela no par
+ for maior.
+Os pares então são pré selecionado no BRISK, criando descritores binários que são posteriormente utilizados para casamento
+ de padrão, utilizando distâncias Hamming ao invés de Euclidianas.
 
 
 

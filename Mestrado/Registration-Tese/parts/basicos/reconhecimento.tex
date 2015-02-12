@@ -10,10 +10,11 @@
 \label{fig:reconhecimento}
 \end{figure}
 
-Pipeline de reconhecimento como ilustrado na imagem~\ref{fig:reconhecimento} :
+\emph{Pipeline} de reconhecimento como ilustrado na
+imagem~\ref{fig:reconhecimento} :
 \begin{itemize}
-	\item Encontrar um grupo de keypoints distintos
-	\item Definir uma região em torno de cada keypoint 
+	\item Encontrar um grupo de \emph{keypoints} distintos
+	\item Definir uma região em torno de cada \emph{keypoint}
 	\item Extrair e normalizar o conteúdo da região
 	\item Calcular um descritor para a região normalizada
 	\item Encontrar correspondências de descritores.  
@@ -25,8 +26,8 @@ Pipeline de reconhecimento como ilustrado na imagem~\ref{fig:reconhecimento} :
 
 \subsection{Detecção de características}
 O primeiro passo para o reconhecimento de objetos é a detecção de características.Para que possa ser feita a comparação da
- imagem referencia com a imagem sentida. A abstração de informações a ser reconhecida tem que ser suficiente para lidar 
- com escalas diferentes, rotações entre as imagens, e pequenas distorções.
+ imagem referência com a imagem sentida. A abstração de informações a ser
+ reconhecida tem que ser suficiente para lidar com escalas diferentes, rotações entre as imagens, e pequenas distorções.
 Para que o reconhecimento seja eficiente e eficaz são necessários que uma massa de pontos mínima seja selecionada e feita
  a correspondência entre as imagens sentidas e referência.
 As características utilizadas são em geral cantos, linhas, curvas, padrões ou regiões.

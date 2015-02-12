@@ -4,7 +4,10 @@ FREAK é um descritor binário, composto por três etapas:
 
 \textbf{Amostragem de padrão}
 
-FREAK propõe uma abordagem biológica para o reconhecimento de características, emulando o funcionamento da retina para amostragem de padrão, como demonstrado na imagem \ref{fig:freak-sampler} que é um padrão circular com a diferença de ter maior densidade de pontos próximo do centro. A densidade de pontos decresce exponencialmente.
+FREAK propõe uma abordagem biológica para o reconhecimento de características, emulando o funcionamento
+ da retina para amostragem de padrão, como demonstrado na imagem \ref{fig:freak-sampler} que é um padrão
+  circular com maior densidade de pontos próximo do centro, decrescendo
+  exponencialmente.
 
 \begin{figure}[H]
 \centering
@@ -15,7 +18,8 @@ FREAK propõe uma abordagem biológica para o reconhecimento de características, e
 
 
 Cada amostra é suavizada com um kernel Gaussiano em que o raio do circulo ilustra o tamanho do desvio padrão do kernel.
-Como pode ser observado na figura~\ref{fig:freak-retina} o padrão de amostragem corresponde com a distribuição de receeptores na retina.
+Como pode ser observado na figura~\ref{fig:freak-retina} o padrão de amostragem corresponde com a distribuição de receptores
+ na retina.
 
 \begin{figure}[H]
 \centering
@@ -27,7 +31,10 @@ Como pode ser observado na figura~\ref{fig:freak-retina} o padrão de amostragem 
 
 \textbf{Compensação de Orientação}
 
-Para estimar a rotação dos keypoints, são somados os gradientes locais assim como no BRISK, entretanto ao invés de considerar os pontos de longa distância, são considerados 45 pontos como mostrado na figura~\ref{fig:freak-rotation}
+Para estimar a rotação dos \emph{keypoints}, são somados os gradientes locais
+assim como no BRISK, entretanto ao invés de considerar os pontos de longa
+distância, é considerado um padrão de 45 pontos como mostrado na
+figura~\ref{fig:freak-rotation}
 
 
 \begin{figure}[H]
@@ -37,12 +44,17 @@ Para estimar a rotação dos keypoints, são somados os gradientes locais assim com
 \label{fig:freak-rotation}
 \end{figure}
 
-Apesar de ter menos precisão para recuperar informações de reotação, como o número de pontos é bem menor do que BRISK a quantidade de memória armazenada é em geral mais do que 5 vezes menor.
+Apesar de ter menos precisão para recuperar informações de rotação, como o número de pontos 
+é bem menor do que BRISK a quantidade de memória armazenada é em geral 5 vezes menor.
 
 
 
 \textbf{Comparação de pares de amostragem}
 
-Os pares de pontos são selecionados considerando a densidade maior no centro, como podemos observar na figura~\ref{fig:freak-retina} (a). Os pares começam a ser comparados pelas extremidades e para dentro do centro, dessa forma otimizamos o reconhecimento pois com menos pontos podemos descartar casos em que a distância estiverem maiores do que um threshold, caso contrário prosseguimos para os outros 128 bits do descritor.
+Os pares de pontos são selecionados considerando a densidade maior no centro, 
+como podemos observar na figura~\ref{fig:freak-retina} (a). 
+Os pares começam a ser comparados pelas extremidades e para dentro do centro, 
+dessa forma otimizamos o reconhecimento pois com menos pontos podemos descartar casos em que 
+a distância estiverem maiores do que um threshold, caso contrário prosseguimos para os outros 128 bits do descritor.
 
 

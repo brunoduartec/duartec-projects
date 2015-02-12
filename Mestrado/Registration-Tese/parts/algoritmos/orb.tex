@@ -3,14 +3,15 @@
 
 %REFAZER
 Como citado em \cite{ORB}, é uma combinação de FAST e BRIEF.
- Para extrair keypoints, modifica o detector do FAST construindo uma 
- piramide de escalas das imagems. Cada escala, keypoints são detectados e 
- distância de Harris são aplicadas para selecioná-los e somente os N melhores pontos são selecionados de acordo com um threshold. 
+ Para extrair \emph{keypoints}, modifica o detector do FAST construindo uma 
+ piramide de escalas das imagems. Em cada escala, \emph{keypoints} são
+ detectados e a distância de Harris aplicada para selecioná-los e somente
+ os N melhores pontos são selecionados de acordo com um \emph{threshold}.
 Para obter invariância a rotação, momentos de primeira ordem são utilizados
  para calcular a orientação local através de um centróide que referencia a
   média da magnitude dos pixels em um trecho local.
 Posteriormente são calculados os descritores BRIEF nos trechos rotacionados
- e armazenadas as informações em um descritor ORB
+ e armazenadas as informações em um descritor ORB.
 
 
 
