@@ -1,22 +1,28 @@
 \section{Características Locais}
-Características locais são padrões em imagens que diferenciam de seu vizinho imediato, geralmente é caracterizada por mudanças em propriedades das imagens ou diversas propriedades simultanamente. As propriedades mais comuns são intensidade, cor e texturas.
+Características locais são padrões em imagens que diferenciam de seu vizinho imediato, 
+geralmente caracterizadas por mudanças em propriedades das imagens ou diversas
+propriedades simultanamente. As propriedades mais comuns são intensidade, cor e texturas.
 
 \subsection{Propriedades da Característica Local ideal}
-Algoritmos de reconhecimento baseam-se em comparação de características recuperadas da cena. A recuperação e comparação de pontos tem um custo computacional relevante perto do tempo de execução da aplicação, portanto selecionar o menor número possível de características aumenta o desempenho e diminui o tempo de resposta da aplicação.
+Algoritmos de reconhecimento baseam-se em comparação de características recuperadas da cena. 
+A recuperação e comparação de pontos tem um custo computacional relevante perto do tempo de execução 
+da aplicação, portanto selecionar o menor número possível de características aumenta o desempenho e diminui 
+o tempo de resposta da aplicação.
 Garantir que estamos selecionando boas características pode ser crucial na eficácia do reconhecimento.
 Segundo \cite{localfeaturedetector} , boas características devem ter as
 seguintes propriedades:
 
 \begin{itemize}
 	\item \textbf{Repetibilidade}: Dadas duas imagens do mesmo objeto ou cena,
-	tomadas em condições ou pontos de vista diferentes, uma porcentagem alta de características deve ser reconhecidas se estiverem visíveis.
+	tomadas em condições ou pontos de vista diferentes, uma porcentagem alta de características deve
+	 ser reconhecidas se estiverem visíveis.
 	\item \textbf{Distinção}: Os padrões reconhecidos têm de ser possíveis de serem
 	distinguidos entre si para facilitar o casamento.
 	\item \textbf{Localidade}: As características devem ser locais para reduzir a
 	probabilidade de oclusão.
 	\item \textbf{Quantidade}: O número de pontos detectados tem que ser o
 	suficiente para que mesmo objetos pequenos tenham minimamente características que possam ser localizados e para que o 
-	objeto possa sofrer oclusão e ainda assim seja reconhecido.
+	objeto possa sofrer oclusão e ainda assim ser reconhecido.
 	\item \textbf{Exatidão}: As características detectadas tem que ser localizadas
 	com o máximo de exatidão possível com respeito tanto referente à posição quanto
 	à escala.
@@ -50,14 +56,15 @@ certeza é bem alto.
 \label{fig:featuresregioes}
 \end{figure}
 
-A Imagem~\ref{fig:featuresregioes} ilustra os tipos de características. A região
+A Imagem~\ref{fig:featuresregioes} ilustra tipos de características. A região
 azul não possibilita diferenciar onde está na imagem, a região preta pode ser confundida com qualquer uma das regiões
- ao deslocarmos horizontalmente, a imagem vermelha nos possibilita diferenciar e reconhecer o canto da imagem verde com precisão milimétrica.
+ ao deslocarmos horizontalmente, a imagem vermelha nos possibilita diferenciar e reconhecer o canto da imagem verde 
+ com precisão milimétrica.
 Podemos então concluir que uma característica é boa para ser utilizada como parâmetro de entrada
  para algoritmos de reconhecimento, quanto maior foi o nível de certeza da sua localização, 
- o que facilita o \textbf{Feature Detection}.
+ o que facilita o \emph{\textbf{Feature Detection}}.
 Para localizar o mesmo objeto em outra imagem é necessário identificarmos a região onde se encontra, 
 caso contrário no exemplo da imagem~\ref{fig:padroes} seria impossível
 localizar uma janela específica. Tal descrição de contexto é chamada de
-\textbf{Feature Description}. Uma vez de posse da característica e do seu
+\emph{\textbf{Feature Description}}. Uma vez de posse da característica e do seu
 contexto é possível reconhecer o objeto de fato.
