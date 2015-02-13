@@ -36,11 +36,11 @@
 \BOOKMARK [2][]{subsection.2.7.3}{2.7.3 Detec\347\343o de caracter\355sticas}{section.2.7}% 36
 \BOOKMARK [2][]{subsection.2.7.4}{2.7.4 Correspond\352ncia de caracter\355sticas}{section.2.7}% 37
 \BOOKMARK [1][]{section.2.8}{2.8 Algoritmos de Reconhecimento}{chapter.2}% 38
-\BOOKMARK [2][]{subsection.2.8.1}{2.8.1 FAST}{section.2.8}% 39
+\BOOKMARK [2][]{subsection.2.8.1}{2.8.1 FAST - Features from Accelerated Segment Test}{section.2.8}% 39
 \BOOKMARK [2][]{subsection.2.8.2}{2.8.2 BRISK - Binary Robust Invariant Scalable Keypoints}{section.2.8}% 40
 \BOOKMARK [2][]{subsection.2.8.3}{2.8.3 FREAK - Fast Retina Keypoint}{section.2.8}% 41
-\BOOKMARK [2][]{subsection.2.8.4}{2.8.4 GFTT}{section.2.8}% 42
-\BOOKMARK [2][]{subsection.2.8.5}{2.8.5 MSER}{section.2.8}% 43
+\BOOKMARK [2][]{subsection.2.8.4}{2.8.4 GFTT - Good Features To Track}{section.2.8}% 42
+\BOOKMARK [2][]{subsection.2.8.5}{2.8.5 MSER - Maximal Stable Extremal Regions}{section.2.8}% 43
 \BOOKMARK [2][]{subsection.2.8.6}{2.8.6 ORB - Oriented Fast and Rotated Brief}{section.2.8}% 44
 \BOOKMARK [2][]{subsection.2.8.7}{2.8.7 SIFT - Scale-Invariant Feature Transform}{section.2.8}% 45
 \BOOKMARK [2][]{subsection.2.8.8}{2.8.8 SURF - Speeded Up Robust Feature}{section.2.8}% 46

@@ -1,5 +1,5 @@
 \subsection{SIFT - Scale-Invariant Feature Transform}
-
+\label{sec:sift}
 
 De acordo com \cite{SIFT}, é um método baseado em detecção de arestas que tem
 como proposta garantir a invariância à variação de escala. Um problema que nos
@@ -14,19 +14,11 @@ fazer.
 \label{fig:sift01}
 \end{figure}
 
-Em 2004, D.Lowe, descreveu o algoritmo Scale Invariant Feature Tranform no seu paper Distinctive Image
- Features from Scale-Invariant Keypoints[15] como extrair keypoints e computar os descritores.
-8.10.2.1. Scale-space Extrema Detection
-
-
 Observando a imagem~\ref{fig:sift01} é possível notar que não podemos utilizar a
 mesma janela de inspeção independente da escala do objeto, para objetos maiores
-temos que utilizar janelas maiores. Nesse contexto, o filtro scale-space é
-utilizado e são calculados Laplacianos de Gaucianos com diversos valores de
+temos que utilizar janelas maiores. Nesse contexto, o filtro de espaço de
+escalas é utilizado e são calculados Laplacianos de Gaucianos com diversos valores de
 $\sigma$.
-  Os LoG funcionam como blob detectors que detectam
- blobs em várias escalas com a variação de $\sigma$.
-
 Utilizar Laplacianos de Gaucianos é uma abordagem custosa computacionalmente,
 como uma forma de aproximação são utilizados diferenças de Gaucianas.
 
@@ -39,24 +31,24 @@ como uma forma de aproximação são utilizados diferenças de Gaucianas.
 \end{figure}
 
 Uma vez que as diferenças de gaucianas são calculadas, é necessário procurar por
-máximos entre espaço e escalas diferentes. Por exemplo como mostrado na
-figure~\ref{fig:dog01}, um pixel na imagem é comparado com seus 8 vizinhos e com
+máximos entre espaços de escala diferentes. Por exemplo como mostrado na
+figura~\ref{fig:dog01}, um pixel na imagem é comparado com seus 8 vizinhos e com
 níveis de escala próximos e anteriores.
-O que representa que o keypoint encontrado é melhor representado naquela escala.
+O que representa que o \emph{keypoint} encontrado é melhor representado naquela
+escala.
 
 \subsubsection{Keypoint Localization}
-Uma vez que keypoints potenciais são localizados é importante selecionar pontos de interesse com contraste alto.
+Uma vez que \emph{keypoints} potenciais são localizados é importante selecionar
+pontos de interesse com contraste alto.
 A localização dos pontos é refinada utilizando uma expansão de Taylor  e se as intensidades dos máximos forem 
 menores do que um threshold são rejeitados.
 Uma característica do DoG é a alta resposta a arestas gerando falsos positivos. Portanto é necessário eliminar 
 algumas arestas identificadas erroneamente.
 \subsubsection{Orientation Assignment}
 
-%MELHORAR
-
 Para obter descritores que são invariantes a rotação, um histograma de
 orientações é gerado a partir do gradiente de orientações de cada maximo local
-do DoG ao redor dos keypoints
+do DoG ao redor dos \emph{keypoints}.
 
 \subsubsection{Keypoint Descriptor}
 
@@ -77,10 +69,7 @@ Como obtemos 4x4 = 16 histogramas, cada um com 8 items, o vetor tem 128 elemento
 \label{fig:sift-keypoint-descriptor}
 \end{figure}
 
-
-
-
-\subsubsection{Keypoint Matching}
+\subsubsection{Casamento de Padrões}
 O casamento entre dois pontos é feito identificando pontos próximos. Entretando em algumas cituações existem
  pontos muito próximos que podem ser causados por ruidos na detecção de pontos de interesse, nesse caso é calculada
   uma razão de distância entre o ponto de interesse com o mais próximo, e com o segundo mais próximo, se a razão for

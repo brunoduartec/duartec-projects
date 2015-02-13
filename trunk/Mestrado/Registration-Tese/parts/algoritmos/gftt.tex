@@ -1,2 +1,27 @@
-\subsection{GFTT}
+\subsection{GFTT - Good Features To Track}
+
+O método é desenvolvido para detectar padrões sem bordas. A matriz de gradientes
+G é calculada para cada pixel como mostrado na equação \ref{eq:gftt}
+
+\begin{equation}
+G = \sum_{\Omega}\begin{bmatrix}
+I_{x}^2 & I_{x}I_{y} \\ 
+I_{x}I_{y}^2& I_{y}^2 
+\end{bmatrix}
+\label{eq:gftt}
+\end{equation}
+
 \label{sec:gftt}
+
+Sendo o valor de inteisidades $I(x,y)$ de uma imagem de tons de cinza e suas
+derivadas parciais $Ix$,$Iy$ de uma determinada região $\Omega$. A matriz de
+gradientes é implementada por meio de uma imagem integral para
+$I_{x}^2$,$I_{y}^2$ e $I_{x}I_{y}$. Devido ao uso de imagens integrais a
+complexidade computacional da matriz de gradientes é constante e independente do
+tamanho de $\Omega$. Uma boa característica pode ser identificada pelo menor
+autovalor de G. Pontos fortes aparecem em geral nas bordas, onde problemas com
+movimento são mais comuns, o que leva para o problema de abertura geral. Pós
+processamento é aplicado por uma supressão de não máximos com um
+\emph{threshold} em $q*max(\lambda(x,y))$, em que $q$ é uma constante para
+garantir a qualidade.
+

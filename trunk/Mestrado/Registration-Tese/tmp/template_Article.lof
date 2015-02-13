@@ -1,19 +1,19 @@
 \select@language {brazil}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Posicionamento da LRU\relax }}{19}{figure.caption.8}
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Categorias de pesquisas cient\IeC {\'\i }ficas \relax }}{20}{figure.caption.9}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Categorias de pesquisas cient\IeC {\'\i }ficas. Fonte (\cite {MetodologiaCientifica}) \relax }}{20}{figure.caption.9}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Aplica\c c\~ao de realidade virtual\relax }}{24}{figure.caption.12}
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Pipeline Can\^onico de Realidade Aumentada\relax }}{25}{figure.caption.13}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Arquitetura do \emph {Feed-Trough}.\relax }}{26}{figure.caption.14}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Arquitetura do \emph {See-Trough}.\relax }}{27}{figure.caption.15}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Realidade Aumentada com projetores.\relax }}{28}{figure.caption.16}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Distor\c c\~ao radial.\relax }}{29}{figure.caption.17}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Componentes de Distor\c c\~ao radial.\relax }}{29}{figure.caption.18}
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Distor\c c\~ao tangencial.\relax }}{30}{figure.caption.19}
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Componentes de Distor\c c\~ao tangencial.\relax }}{30}{figure.caption.20}
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Camera no espa\c co vetorial.\relax }}{31}{figure.caption.21}
-\contentsline {figure}{\numberline {2.11}{\ignorespaces Ilustra\c c\~ao do procedimento de reconhecimento com features locais.\relax }}{31}{figure.caption.22}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Arquitetura do \emph {Feed-Trough}.Fonte (\cite {Devices})\relax }}{26}{figure.caption.14}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Arquitetura do \emph {See-Trough}.Fonte (\cite {Devices})\relax }}{27}{figure.caption.15}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Realidade Aumentada com projetores.Fonte (\cite {Devices})\relax }}{28}{figure.caption.16}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Distor\c c\~ao radial.Fonte (\cite {OpenCvOReilly})\relax }}{29}{figure.caption.17}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Componentes de Distor\c c\~ao radial. Fonte(\cite {OpenCvOReilly})\relax }}{29}{figure.caption.18}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Distor\c c\~ao tangencial.Fonte (\cite {OpenCvOReilly})\relax }}{30}{figure.caption.19}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Componentes de Distor\c c\~ao tangencial.Fonte (\cite {OpenCvOReilly})\relax }}{30}{figure.caption.20}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Camera no espa\c co vetorial.Fonte(\cite {OpenCvOReilly})\relax }}{31}{figure.caption.21}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Ilustra\c c\~ao do procedimento de reconhecimento com features locais. Fonte(\cite {localfeaturedetector})\relax }}{31}{figure.caption.22}
 \contentsline {figure}{\numberline {2.12}{\ignorespaces Reconhecimento de padr\~oes.\cite {understandingfeatures}\relax }}{34}{figure.caption.23}
 \contentsline {figure}{\numberline {2.13}{\ignorespaces Regi\~oes de reconhecimento de padr\~oes.\cite {understandingfeatures}\relax }}{34}{figure.caption.24}
 \contentsline {figure}{\numberline {2.14}{\ignorespaces FAST\relax }}{36}{figure.caption.25}
@@ -21,20 +21,23 @@
 \contentsline {figure}{\numberline {2.16}{\ignorespaces Padr\~ao de amostradem do descritor FREAK\relax }}{38}{figure.caption.27}
 \contentsline {figure}{\numberline {2.17}{\ignorespaces Distribui\c c\~ao de receptores na retina\relax }}{39}{figure.caption.28}
 \contentsline {figure}{\numberline {2.18}{\ignorespaces Pares selecionados para calcular a orienta\c c\~ao\relax }}{39}{figure.caption.29}
-\contentsline {figure}{\numberline {2.19}{\ignorespaces SIFT\relax }}{41}{figure.caption.30}
-\contentsline {figure}{\numberline {2.20}{\ignorespaces Difference of Gaussian\relax }}{41}{figure.caption.31}
-\contentsline {figure}{\numberline {2.21}{\ignorespaces Forma\c c\~ao do descritor SIFT\relax }}{42}{figure.caption.32}
-\contentsline {figure}{\numberline {2.22}{\ignorespaces Box Filtering\relax }}{43}{figure.caption.33}
+\contentsline {figure}{\numberline {2.19}{\ignorespaces Regi\~oes MSER\relax }}{41}{figure.caption.30}
+\contentsline {figure}{\numberline {2.20}{\ignorespaces SIFT\relax }}{42}{figure.caption.31}
+\contentsline {figure}{\numberline {2.21}{\ignorespaces Difference of Gaussian\relax }}{42}{figure.caption.32}
+\contentsline {figure}{\numberline {2.22}{\ignorespaces Forma\c c\~ao do descritor SIFT\relax }}{44}{figure.caption.33}
+\contentsline {figure}{\numberline {2.23}{\ignorespaces Box Filtering. Fonte(\cite {SURF}) \relax }}{45}{figure.caption.34}
+\contentsline {figure}{\numberline {2.24}{\ignorespaces Janela do Descritor, 20 vezes o tamanho do ponto determinado e orientado de acordo com a dire\c c\~ao domimante. Fonte(\cite {SURF}) \relax }}{46}{figure.caption.35}
+\contentsline {figure}{\numberline {2.25}{\ignorespaces Filtro bi-level aplicado a formas de n lados. Fonte \cite {STAR}\relax }}{47}{figure.caption.36}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Imagem utilizada no prot\'otipo\relax }}{47}{figure.caption.34}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Imagem utilizada no prot\'otipo\relax }}{51}{figure.caption.37}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Resultado de performance de varia\c c\~ao de escala\relax }}{51}{figure.caption.35}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Resultado de performance de varia\c c\~ao de rota\c c\~ao\relax }}{52}{figure.caption.36}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Resultado de performance de varia\c c\~ao de blur\relax }}{53}{figure.caption.37}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Resultado de performance de varia\c c\~ao de blur\relax }}{54}{figure.caption.38}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces An\'alise de tempo de varia\c c\~ao de escala\relax }}{55}{figure.caption.39}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces An\'alise de tempo de varia\c c\~ao de rota\c c\~ao\relax }}{56}{figure.caption.40}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces An\'alise de tempo de varia\c c\~ao de blur\relax }}{57}{figure.caption.41}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces An\'alise de tempo de varia\c c\~ao de ilumina\c c\~ao\relax }}{58}{figure.caption.42}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Spiderweb Diagram (8~Dimensions, 2-Notch Scale, 3 Samples)\relax }}{59}{figure.caption.44}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Resultado de performance de varia\c c\~ao de escala\relax }}{55}{figure.caption.38}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Resultado de performance de varia\c c\~ao de rota\c c\~ao\relax }}{56}{figure.caption.39}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Resultado de performance de varia\c c\~ao de blur\relax }}{57}{figure.caption.40}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Resultado de performance de varia\c c\~ao de blur\relax }}{58}{figure.caption.41}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces An\'alise de tempo de varia\c c\~ao de escala\relax }}{59}{figure.caption.42}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces An\'alise de tempo de varia\c c\~ao de rota\c c\~ao\relax }}{60}{figure.caption.43}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces An\'alise de tempo de varia\c c\~ao de blur\relax }}{61}{figure.caption.44}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces An\'alise de tempo de varia\c c\~ao de ilumina\c c\~ao\relax }}{62}{figure.caption.45}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Spiderweb Diagram (8~Dimensions, 2-Notch Scale, 3 Samples)\relax }}{63}{figure.caption.47}
 \addvspace {10\p@ }

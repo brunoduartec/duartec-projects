@@ -1,1 +1,32 @@
-\subsection{MSER}
+\subsection{MSER - Maximal Stable Extremal Regions}
+
+O detector MSER\cite{MSER} é composto por regiões de todos os pixels conectados
+considerando um \emph{threshold}. Em outras palavras, as regiões selecionadas
+são padrões que não mudam em que binarização local é estável ao llongo de uma
+faixa de \emph{thresholds}. De acordo com o paper podemos fazer uma analogia com
+o processo de derramamento formação de poças de água para compreendermos como
+são formadas as regiões MSER, que são descritas em imagens em tons de cinza
+representados pela função $I: \Omega \rightarrow [0\ldots255] $ em que $\Omega =
+[1 \ldots W]\times[1 \ldots H] $. O método garante localização de objetos que
+estão mais próximos de nossa realidade como pode ser observada na
+figura~\ref{fig:mserregion}.
+
+ \begin{figure}[H]
+\centering
+\includegraphics[scale=0.8]{images/mserregion}
+\caption{Regiões MSER}
+\label{fig:mserregion}
+\end{figure}
+
+Selecionado um \emph{threshold} de intensidades, a imagem é dividida em dois
+grupos, P(pretos) e B(brancos). É observada que a quantidade de regiões varia
+dependendo do \emph{threshold} aplicado, de 0 à 255.
+A área de cada componente conectado é então armazenada como uma função. Dentre
+as regiões, as mais estáveis são selecionadas analisando as funções para as quais
+cada região em potencial mantem seu estado com a mesma função independente da
+variação de \emph{threshold}. As regiões ``máximamente estáveis'' são chamadas
+regiões MSER, que mudaram apenas em tamanho variando-se pelo menos alguns níveis
+de \emph{threshold}.
+
+
+
