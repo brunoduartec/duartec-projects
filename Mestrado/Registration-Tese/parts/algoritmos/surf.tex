@@ -1,17 +1,83 @@
 \subsection{SURF - Speeded Up Robust Feature}
+\label{sec:surf}
 
-Segundo \cite{SURF}, em comparação com o algoritmo SIFT que aproxima LoG por Diferencas de Gaucianas(DoG), 
-SURF vai um pouco mais além e aproxima LoG de \emph{Box-type Filter} como
+
+O descritor de características é bem parecido com o descrito em SIFT na
+Seção~\ref{sec:sift}, sendo SURF\cite{SURF} desenvolvido para tentar suprir as
+principais fraquesas de SIFT, alta complexidade computacional e  baixa velocidade de
+execução.
+A detecção de SURF utiliza aproximações baseadas no determinante da matriz
+Hessiana equação~\ref{eq:hessiana}  mostrado na equação~\ref{eq:determinantehessiana}.
+\begin{equation}
+H(f(x,y)) = \begin{bmatrix}
+\frac{\partial^2f }{\partial x^2} & \frac{\partial^2f }{\partial x\partial
+y} \\ \frac{\partial^2f }{\partial x\partial
+y}& \frac{\partial^2f }{\partial y^2}
+\end{bmatrix}
+\label{eq:hessiana}
+\end{equation}
+
+\begin{equation}
+det(H) = \frac{\partial^2f }{\partial x^2}\frac{\partial^2f }{\partial y^2} -
+(\frac{\partial^2f }{\partial x\partial y})^2
+\label{eq:determinantehessiana}
+\end{equation}
+
+Aproximando as segundas derivadas indo muito mais além do que o abordado no
+algoritmo de SIFT que aproxima LoG por Diferencas de Gaucianas(DoG), SURF vai um pouco mais além e aproxima LoG de \emph{Box-type Filter} como
 mostrado na figura~\ref{fig:surf01} e não é utilizado nenhum tipo de suavização entre
 escalas , o que garante mais agilidade nos resultados porque a convolução com
 \emph{box filters} são muito mais rápidos com o uso de \emph{integral images} e
-pode ser paralelizado
+pode ser paralelizado.
 
-\begin{figure}[h!]
+\begin{figure}[H]
 \centering
 \includegraphics[scale=1.0]{images/SURF01}
-\caption{Box Filtering}
+\caption{Box Filtering. Fonte(\cite{SURF}) }
 \label{fig:surf01}
 \end{figure}
 
-Em geral SURF se apresenta cinco vezes mais rápido do que DoG.
+
+O descritor usa \emph{integral images} para interpretar a distribuição de
+intensidade de pixels na vizinhança da característica detectada considerando a
+escala das características.
+O cálculo do descritor de uma característica em uma dada escala inicia
+adotando-se uma orientação dominante para fazer o descritor invariante a
+rotação.
+
+O processo inicia calculando-se as respostas à \emph{Haar wavelet} em duas
+direções dominantes para cada ponto em um raio próximo da característica, sendo
+que o tamanho da máscara adotada é ajustada de acordo com o tamanho da
+característica. Os resultados são então pesados segundo uma Gaussiana
+centralizada na característica encontrada.Cada uma das respostas é responsável
+por um ponto no vetor espacial, com x respostas nas abcissas e y respostas nas
+ordenadas. Em seguida, um segmento de círculo de $ \frac{\pi}{3} $ é rotacionado
+em torno da origem da característica. A resposta do segmento é somada e formado
+assim um vetor de resultantes. 
+
+O ângulo de rotação corresponde à orientação dominante. O cálculo do descritor
+em si, inicia por posicionar uma janela retangular de tamanho 20s centralizada
+na posição da característica e orientá-la como foi calculado no passo anterior
+como pode ser observado no exemplo da figura~\ref{fig:surfdescriptor}.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.6]{images/surfdescriptor}
+\caption{Janela do Descritor, 20 vezes o tamanho do ponto determinado e
+orientado de acordo com a direção domimante. Fonte(\cite{SURF}) }
+\label{fig:surfdescriptor}
+\end{figure}
+
+A janela é então dividida em $ 4 \times 4$ sub regiões regulares. Cada sub
+região é dividida em $5 \times 5$ pontos amostrais distribuidos uniformemente.
+Para cada ponto, Haar \emph{wavelets} são calculados para as as duas principais
+direções. Cada sub região contribui para o descritor com quatro componentes: a
+soma das respostas nas duas principais regiões e seus valores absolutos. A
+resposta das 16 sub regiões é então pesada com uma Gaussiana. Para 16
+sub regiões, o tamanho do descritor é 64.
+
+
+
+
+
+

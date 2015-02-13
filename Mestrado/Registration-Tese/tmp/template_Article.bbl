@@ -5,6 +5,12 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{1.45.2.1 }
 
+\bibitem[Agrawal 2008]{STAR}
+\abntrefinfo{Agrawal}{AGRAWAL}{2008}
+{AGRAWAL, M. e.~a. Censure: Center surround extremas for realtime feature
+  detection and matching.
+\textbf{Computer Vision - ECCV}, 2008.}
+
 \bibitem[Azuma 1997]{SurveyAR}
 \abntrefinfo{Azuma}{AZUMA}{1997}
 {AZUMA, R.~T. A survey of augmented reality.
@@ -75,6 +81,12 @@ Available at
   algorithms.
 \textbf{of image low level feature extraction algorithms, Egyptian Informatics
   Journal}, 2013.}
+
+\bibitem[Matas J. 2002]{MSER}
+\abntrefinfo{Matas J.}{MATAS J.}{2002}
+{MATAS J., e.~a. Robust wide baseline stereo from maximally stable extremal
+  regions.
+\textbf{British Machine Vision Conference}, 2002.}
 
 \bibitem[Mikolajczyk 2005]{performance_evaluation}
 \abntrefinfo{Mikolajczyk}{MIKOLAJCZYK}{2005}
