@@ -24,30 +24,31 @@
 
 
 A abordagem de testes e análise de desempenho é feita como descrito em
-\cite{performance_evaluation}.Como descrito na Seção \ref{sec:analisededados},
-existem restrições para garantir que a técnica utilizada responde segundo as necessidades da aplicação.
+\cite{performance_evaluation}. Na Seção \ref{sec:analisededados},
+existem restrições para garantir que a técnica utilizada responda segundo as
+necessidades da aplicação.
 Nos gráficos a seguir são traçadas janelas de restrição, sendo que os valores
 que se encontram dentro dela são adequadas à situação.
-As técnicas tem suas implementações no OpenCV com a possibilidade de
-configurar alguns parâmetros entretanto para garantir que a comparação inicial
+As técnicas têm suas implementações no OpenCV com a possibilidade de
+configurar alguns parâmetros, entretanto para garantir que a comparação inicial
  seja independente de peculiaridades de implementação ou mesmo das diversas
- possibilidades de configuração foi feita a comparação utilizando os
+ possibilidades de configuração, foi feita a comparação utilizando os
  construtores padrão, com as configurações iniciais.
  
 
 \section{Taxa de Acertos}
 
 Foram avaliados, a razão entre a quantidade de características corretamente
-localizadas e o número de características na imagem inicial. Idealmente o valor
+localizadas e o número de características na imagem inicial. Idealmente, o valor
 dessa medida deve se aproximar de 100\%.
-Inicialmente foram considerados os resultados que se demonstraram dentro de
+Inicialmente, foram considerados os resultados que se demonstraram dentro de
  pelo menos mais de 50\%  da janela delimitada, pois a análise deve ser feita
  considerando tanto o parâmetro de taxa de acertos quanto o tempo gasto para
  realizá-lo.
 
  
  Como mostrado na imagem \ref{graph:scaleresultpres}, para os testes de Escala
- estão dentro da janela as técnicas FREAK,ORB,GFTT.
+ estão dentro da janela as técnicas FREAK, ORB, GFTT.
  
 \begin{figure}[H]
 \centering
@@ -99,7 +100,8 @@ Inicialmente foram considerados os resultados que se demonstraram dentro de
 
 
  Como mostrado na imagem~\ref{graph:rotresultpres}, para os testes de Rotação
- estão dentro da janela as técnicas BRISK,FAST,FREAK,GFTT,MSER,ORB,STAR,SURF,SIFT
+ estão dentro da janela as técnicas BRISK,
+ FAST, FREAK, GFTT, MSER, ORB, STAR, SURF, SIFT
 
 
 %rotation
@@ -154,7 +156,8 @@ Inicialmente foram considerados os resultados que se demonstraram dentro de
 
 
 Como mostrado na imagem~\ref{graph:blurresultpres}, para os testes de Blur
-estão dentro da janela as técnicas FAST,FREAK,GFTT,MSER,ORB,STAR,SURF,SIFT
+estão dentro da janela as técnicas FAST, FREAK, GFTT, MSER, ORB, STAR, SURF,
+SIFT.
 
 
 %blur
@@ -199,67 +202,64 @@ estão dentro da janela as técnicas FAST,FREAK,GFTT,MSER,ORB,STAR,SURF,SIFT
 \end{tikzpicture}
 
 
-\caption{Resultado de performance de variação de blur}
+\caption{Resultado de performance de variação de \emph{blur}}
 \label{graph:blurresultpres}
 \end{figure}
 
 
  Como mostrado na imagem~\ref{graph:brightresultpres}, para os testes de
- Iluminação estão dentro da janela as técnicas BRISK,FAST,FREAK,GFTT,MSER,ORB,STAR,SURF,SIFT
+ Iluminação estão dentro da janela as técnicas BRISK,
+ FAST, FREAK, GFTT, MSER, ORB, STAR, SURF, SIFT.
 
 
 %bright
 \begin{figure}[H]
-\centering
-\begin{tikzpicture}
-	\pgfplotsset{small}
-\begin{axis}
-	[
-	   width=\graphwidth\textwidth,
-       ylabel=$\ylabel$, % Set the labels
-    xlabel=$Change of brightness$,
-	legend entries={$BRISK$,$FAST$,$FREAK$,$GFTT$,$MSER$,$ORB$,$STAR$,$SURF$,$SIFT$},	
-	legend pos=outer north east,
-	title= Brightness Invariance 
-    ]
-	\addplot table [x=Argument, y=BRISK    , col sep=comma]	{graphs/bright-all-\gtype.csv}; 
-	\addplot table [x=Argument, y=FAST     , col sep=comma]	{graphs/bright-all-\gtype.csv}; 
-	\addplot table [x=Argument, y=FREAK    , col sep=comma]	{graphs/bright-all-\gtype.csv}; 
-	\addplot table [x=Argument, y=GFTT     , col sep=comma]	{graphs/bright-all-\gtype.csv}; 
-	 \addplot table [x=Argument, y=MSER    , col sep=comma] {graphs/bright-all-\gtype.csv}; 
-	 \addplot table [x=Argument, y=ORB     , col sep=comma]	{graphs/bright-all-\gtype.csv}; 
-	\addplot table [x=Argument, y=STAR     , col sep=comma]	{graphs/bright-all-\gtype.csv}; 
-	\addplot table [x=Argument, y=SURF     , col sep=comma]	{graphs/bright-all-\gtype.csv}; 
-	\addplot table [x=Argument, y=SIFT     , col sep=comma]	{graphs/bright-all-\gtype.csv}; 
+%\centering
+%%	\pgfplotsset{small}
+%\begin{axis}
+%	[
+%	   width=\graphwidth\textwidth,
+ %      ylabel=$\ylabel$, % Set the labels
+  %  xlabel=$Change of brightness$,
+%	legend
+	% entries={$BRISK$,$FAST$,$FREAK$,$GFTT$,$MSER$,$ORB$,$STAR$,$SURF$,$SIFT$}, legend pos=outer north east,
+%	title= Brightness Invariance 
+ %   ]
+	%\addplot table [x=Argument, y=BRISK    , col sep=comma]
+	% {graphs/bright-all-\gtype.csv}; \addplot table [x=Argument, y=FAST     , col sep=comma]	{graphs/bright-all-\gtype.csv}; 
+	%\addplot table [x=Argument, y=FREAK    , col sep=comma]
+	% {graphs/bright-all-\gtype.csv}; \addplot table [x=Argument, y=GFTT     , col sep=comma]	{graphs/bright-all-\gtype.csv}; 
+	 %\addplot table [x=Argument, y=MSER    , col sep=comma]
+	 % {graphs/bright-all-\gtype.csv}; \addplot table [x=Argument, y=ORB     , col sep=comma]	{graphs/bright-all-\gtype.csv}; 
+	%\addplot table [x=Argument, y=STAR     , col sep=comma]
+	% {graphs/bright-all-\gtype.csv}; \addplot table [x=Argument, y=SURF     , col sep=comma]	{graphs/bright-all-\gtype.csv}; 
+	%\addplot table [x=Argument, y=SIFT     , col sep=comma]
+	% {graphs/bright-all-\gtype.csv};
 	
 	
 	
 	%eixo horizontal
-	\addplot[red,sharp plot,update limits=false] coordinates{(\minx,\ylimit)
-	(\maxx,\ylimit)}; 
-	\fill [opacity=0.4,red!25] (axis cs:\minx,\ylimit) rectangle (axis
-	cs:\maxx,\maxy);
+	%\addplot[red,sharp plot,update limits=false]
+	% coordinates{(\minx,\ylimit)(\maxx,\ylimit)}; \fill [opacity=0.4,red!25] (axis cs:\minx,\ylimit) rectangle (axis	cs:\maxx,\maxy);
 		
 	
 						%eixo vertical
-	\addplot[blue,sharp plot,update limits=false] coordinates
-	{(\minbright,\miny)(\minbright,\maxy)} ; \fill [opacity=0.4,blue!25] (axis
-	cs:\minx,\miny) rectangle (axis cs:\minbright,\maxy);
+	%\addplot[blue,sharp plot,update limits=false] 
+	%coordinates{(\minbright,\miny)(\minbright,\maxy)} ; \fill
+	% [opacity=0.4,blue!25] (axis cs:\minx,\miny) rectangle (axis cs:\minbright,\maxy);
 	
-	\addplot[blue,sharp plot,update limits=false] coordinates
-	{(\maxbright,\miny)(\maxbright,\maxy)} ; \fill [opacity=0.4,blue!25] (axis
-	cs:\maxbright,\miny) rectangle (axis cs:\maxx,\maxy);
-		
+	%\addplot[blue,sharp plot,update limits=false] coordinates{(50,-1)(50,2)} ; 
 	
-\end{axis}
-%AQUI
-\end{tikzpicture}
+	%\fill [opacity=0.4,blue!25] (axis	cs:\maxbright,\miny) rectangle (axis cs:\maxx,\maxy);
 
-
-\caption{Resultado de performance de variação de blur}
+%\end{axis}
+%\end{tikzpicture}
+%\caption{Resultado de performance de variação de iluminação}
+\centering
+\includegraphics[scale=0.7]{images/bright-dummy}
+\caption{Resultado de performance de variação de iluminação}
 \label{graph:brightresultpres}
 \end{figure}
-
 \section{Análise de Tempo}
 
 A análise de tempo, ao contrário da análise de taxa de acertos, é excludente,
@@ -334,7 +334,7 @@ menos do que 5fps.
 \end{figure}
 
 Como mostrado na imagem~\ref{graph:scaleresulttime}, para os testes de
- Rotação estão dentro da janela, as técnicas BRISK,GFTT,ORB,STAR
+ Rotação estão dentro da janela, as técnicas BRISK, GFTT, ORB, STAR.
 
 %rotation
 \begin{figure}[H]
@@ -391,7 +391,7 @@ Como mostrado na imagem~\ref{graph:scaleresulttime}, para os testes de
 
 
 Como mostrado na imagem~\ref{graph:blurresulttime}, para os testes de
- Blur estão dentro da janela, as técnicas BRISK,GFTT,ORB,STAR
+ Blur estão dentro da janela, as técnicas BRISK, GFTT, ORB, STAR.
 
 %blur
 \begin{figure}[H]
@@ -444,7 +444,7 @@ Como mostrado na imagem~\ref{graph:blurresulttime}, para os testes de
 
 
 Como mostrado na imagem~\ref{graph:brightresulttime}, para os testes de
- Iluminação estão dentro da janela, as técnicas BRISK,GFTT,ORB,STAR
+ Iluminação estão dentro da janela, as técnicas BRISK, GFTT, ORB, STAR.
 
 %bright
 \begin{figure}[H]
@@ -495,18 +495,18 @@ Como mostrado na imagem~\ref{graph:brightresulttime}, para os testes de
 \end{figure}
 
 
-\subsection{Seleção da Técnica}
+\section{Seleção da Técnica}
 
 \definecolor{Gray}{gray}{0.85}
 \newcolumntype{a}{>{\columncolor{Gray}}c}
 As restrições das análises feitas como mostrado
 na tabela~\ref{table:techdecision}, nos levam a escolher GFTT e ORB por serem os
-únicos que garantem resultados dentro da janela esperada para todos os testes.
+únicos que garantem resultados dentro da janela esperada para todos os testes:
 
 
  \begin{table}[H]
   \centering
-  \caption{Decisão de técnica à utilizar}
+  \caption{Decisão de técnica a utilizar}
 \label{table:techdecision}
   \resizebox{\textwidth}{!}{  
 \begin{tabular}{ | l | l | l | l | a | l | a | l | l | l | }
@@ -526,7 +526,7 @@ na tabela~\ref{table:techdecision}, nos levam a escolher GFTT e ORB por serem os
 \end{table}
 
 
-\input{parts/results/spiderdiagram}
+%\input{parts/results/spiderdiagram}
 
 
 

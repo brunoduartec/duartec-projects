@@ -1,74 +1,77 @@
-\section{Camera}
-Como descrito em \cite{OpenCvOReilly}, as câmeras de baixo custo vendidas
-atualmente introduzem diversos erros de distorção.
- Duas dos maiores são as distorções radiais e as distorções tangenciais.
-Devido a distorções radiais, linhas retas vão parecer curvadas tendendo a 
-aumentar quanto mais o ponto se distancia do centro da imagem. Na prática essas distorções
+\section{Câmera}
+As câmeras de baixo custo vendidas
+atualmente introduzem diversos erros de distorção \cite{OpenCvOReilly}, dois
+dos maiores são as distorções radiais e as tangenciais.
+
+\subsection{Distorção Radial}
+
+Induzem as linhas retas a aparecerem curvadas tendendo a aumentar a
+distorção conforme o ponto se distancia do centro da imagem. Na prática essas distorções
  são pequenas e podem ser caracterizadas pelos primeiros termos de uma expansão
  da série de Taylor.
-\subsection{Distorção Radial}
 Distorções radiais como mostradas na figura~\ref{fig:radial01}, são mais
-associadas a lentes de grandes ângulos, em particular zoom \emph{wide-angles}.
+associadas à lentes de grandes ângulos, em particular zoom \emph{wide-angles}.
 Esse efeito faz com que as arestas da imagem apareçam curvadas a olho
 humano.
-A distorção é resultado da fabricação por ser bem mais barato e prático produzir lentes esféricas
- do que lentes mais matematicamente ideais com perfis parabólicos.
 
-\begin{figure}[h!]
+A distorção é resultado da fabricação por ser de baixo custo e mais prático
+produzir lentes esféricas do que lentes mais matematicamente ideais com perfis parabólicos.
+
+\begin{figure}[H]
 \centering
 \includegraphics[scale=0.7]{images/radial01}
-\caption{Distorção radial.Fonte (\cite{OpenCvOReilly})}
+\caption{Distorção radial. Fonte \cite{OpenCvOReilly}}
 \label{fig:radial01}
 \end{figure}
 
-A imagem~\ref{fig:radial02} mostra como o deslocamento de um retângulo devido à distorção
-radial, mais acentuado quanto mais próximo das bordas da imagem.
+A imagem~\ref{fig:radial02} mostra o deslocamento de um retângulo devido à
+distorção radial, mais acentuado quanto mais próximo das bordas da imagem.
 
-\begin{figure}[h!]
+\begin{figure}[H]
 \centering
 \includegraphics[scale=0.7]{images/radial02}
-\caption{Componentes de Distorção radial. Fonte(\cite{OpenCvOReilly})}
+\caption{Componentes de Distorção radial. Fonte \cite{OpenCvOReilly}}
 \label{fig:radial02}
 \end{figure}
 
 \subsection{Distorção Tangencial}
-Como mostradas na figura~\ref{fig:tangencial01}Essa distorção se deve a defeitos
-de manufatura causadas pelo fato de o plano da lente não ser totalmente paralelo ao plano da imagem.
+Como mostradas na figura~\ref{fig:tangencial01}, essa distorção se deve à
+defeitos de manufatura causados pelo fato de o plano da lente não ser totalmente
+paralelo ao da imagem.
 
 \begin{figure}[h!]
 \centering
 \includegraphics[scale=0.7]{images/tangencial01}
-\caption{Distorção tangencial.Fonte (\cite{OpenCvOReilly})}
+\caption{Distorção tangencial. Fonte \cite{OpenCvOReilly}}
 \label{fig:tangencial01}
 \end{figure}
 
 A imagem~\ref{fig:tangencial02} mostra o efeito da distorção tangencial em um
-grid de pontos retangular. Os pontos se deslocam deformando elipticamente quanto
-mais próximos da borda.
+\emph{grid} de pontos retangulares. Os pontos se deslocam deformando
+elipticamente quanto mais próximos da borda.
 
 \begin{figure}[h]
 \centering
 \includegraphics[scale=0.7]{images/tangencial02}
-\caption{Componentes de Distorção tangencial.Fonte (\cite{OpenCvOReilly})}
+\caption{Componentes de Distorção tangencial. Fonte \cite{OpenCvOReilly}}
 \label{fig:tangencial02}
 \end{figure}
 
 
 
 \section{Modelo de Câmera}
-As câmeras são modeladas como câmeras de pequenos orifícios como mostrada na
-imagem~\ref{fig:camera01}.Esse modelo define a projeção básica sobre a qual as
-imagens 2D serão mapeadas.
-Esse modelo é uma simplificação optica de uma câmera real e é utilizado
-comumente para descrever a formação de imagens na câmera. O sistema de
-coordenadas considerado é a convenção da mão direita com centro de coordenadas
-de projeção na origem e a imagem a uma distância focal f.
+As câmeras são modeladas matematicamente como mostrada na
+imagem~\ref{fig:camera01}. Esse modelo define a projeção básica sobre a qual as
+imagens 2D serão mapeadas, é uma simplificação óptica de uma câmera real, sendo
+utilizado comumente para descrever a formação de imagens. O sistema de coordenadas considerado
+ é a convenção da mão direita com centro de coordenadas
+de projeção na origem e a imagem a uma distância focal \emph{f}.
 
 
 
 \begin{figure}[h!]
 \centering
 \includegraphics[scale=0.8]{images/camera01}
-\caption{Camera no espaço vetorial.Fonte(\cite{OpenCvOReilly})}
+\caption{Câmera no espaço vetorial. Fonte \cite{OpenCvOReilly}}
 \label{fig:camera01}
 \end{figure}

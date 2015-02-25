@@ -2,40 +2,41 @@
 \subsection{Definição de parâmetros}
 
 Os testes são realizados adicionando variáveis de forma artificial por meio de
-transformações afins de forma a emular comportamentos ou situações encontradas
-no ambiente de manutenção
+transformações afins, de forma a emular comportamentos ou situações encontradas
+no ambiente de manutenção:
 \begin{itemize}
 	\item Variação de escala para simular a aproximação dentro da janela de
-	inspeção
-	\item Variação de rotação para simular a movimentação durante a manutenção
+	inspeção;
+	\item Variação de rotação para simular a movimentação durante a manutenção;
 	\item Variação de iluminação para simular manutenções feitas em horários do dia
-	e iluminação diferente como por exemplo ambientes com neve com brilho muito maior
+	e iluminação diferente, como por exemplo, ambientes com neve com brilho muito
+	maior;
 	\item Adição de \emph{Blur} para emular ambientes com muita poeira ou
-	esfumaçados
+	esfumaçados.
 \end{itemize}
 
-A definição das faixas de parâmetro utilizados foi feita com inspeção em campo
+A definição das faixas de parâmetros utilizadas foi feita com inspeção em campo.
 
 \section{Análise de dados}
 \label{sec:analisededados}
 
 A análise de desempenho de cada técnica deve ser balizada por parâmetros que garantam que a aplicação seja viável para o
- contexto citado na Seção\ref{sec:restricao}. Para tal deve-se considerar os
- parâmetros estimados abaixo definidos por inspeção 
+ contexto citado na Seção \ref{sec:restricao}. Para tal, deve-se considerar os
+ parâmetros estimados abaixo definidos por inspeção: 
 
 \begin{itemize}
-	\item Cadência > 5fps ou seja, tempo < 200ms \cite{Tang93whydo}
-	\item Robustez à escala:  0.5 < escala < 1.2
-	\item Robustez à rotação:  0 < rotação < 30 
+	\item Cadência > 5fps ou seja, tempo < 200ms \cite{Tang93whydo};
+	\item Robustez à escala:  0.5 < escala < 1.2;
+	\item Robustez à rotação:  0$\deg$ < rotação < 30$\deg$; 
 	\item Robustez à iluminação: -50 < iluminação < 50
 	\item Robustez à \emph{blur}: \emph{kernelsize} < 4
 \end{itemize}
 
 Uma análise mais precisa dos parâmetros não faz parte do escopo desse trabalho
-pois envolve pesquisa de campo em situações adversas. Portanto tais parâmetros
-foram escolhidos para validar o método de seleção das técnicas, sendo assim
-selecionados parâmetros  identificados por experiência como usuais para o
-contexto, entretanto não há perda de generalismo no método posto que pode ser
-executado da mesm maneira com outros valores. 
+pois envolve pesquisa de campo em situações adversas. Portanto, tais parâmetros
+foram escolhidos para validar o método de seleção das técnicas, sendo assim,
+identificados por experiência como usuais para o contexto, entretanto, não há
+perda de generalismo no método, posto que pode ser
+executado da mesma maneira com outros valores. 
 
 

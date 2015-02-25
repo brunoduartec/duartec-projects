@@ -1,14 +1,56 @@
 \section{Características Locais}
-Características locais são padrões em imagens que diferenciam de seu vizinho imediato, 
-geralmente caracterizadas por mudanças em propriedades das imagens ou diversas
-propriedades simultanamente. As propriedades mais comuns são intensidade, cor e texturas.
+Características locais são padrões em imagens que diferenciam padrões de seu
+vizinho imediato, sendo as mais comuns são intensidade, cor e texturas.
+
+\subsection{Características}
+Antes de compreender como é feito o reconhecimento e registro de imagens é importante nos perguntar
+ como nós conseguimos reconhecer objetos em uma cena, como conseguimos comparar facilmente objetos em duas 
+ imagens distintas. Somos treinados desde cedo a diferenciar formas geométricas, perceber escalas diferentes 
+ ou mesmo reconhecer o mesmo objeto independente de como está posicionado na cena buscando padrões que 
+ categorizem e diferenciem o objeto. Instintivamente conseguimos reconhecer boas características e localizar objetos.
+Na imagem~\ref{fig:padroes} temos uma imagem de um prédio e seis recortes, dos quais
+conseguimos facilmente reconhecer com precisão a de letra E e F, as de letra A,B,C,D
+ podemos identificar possíveis localizações mas não podemos dizer com certeza onde estão na imagem.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=1.0]{images/features}
+\caption{Reconhecimento de padrões. Fonte \cite{understandingfeatures}}
+\label{fig:padroes}
+\end{figure}
+As características E e F são o que chamamos de good features pois o nível de
+certeza é bem alto.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=1.0]{images/featuresregioes}
+\caption{Regiões de reconhecimento de padrões. Fonte
+\cite{understandingfeatures}}
+\label{fig:featuresregioes}
+\end{figure}
+
+A Imagem~\ref{fig:featuresregioes} ilustra tipos de características. A região
+azul não possibilita diferenciar onde está na imagem, a região preta pode ser confundida com qualquer uma das regiões
+ ao deslocarmos horizontalmente, a imagem vermelha nos possibilita diferenciar e reconhecer o canto da imagem verde 
+ com precisão milimétrica.
+Podemos então concluir que uma característica é boa para ser utilizada como parâmetro de entrada
+ para algoritmos de reconhecimento, quanto maior foi o nível de certeza da sua localização, 
+ o que facilita o \emph{\textbf{Feature Detection}}.
+Para localizar o mesmo objeto em outra imagem é necessário identificarmos a região onde se encontra, 
+caso contrário no exemplo da imagem~\ref{fig:padroes} seria impossível
+localizar uma janela específica. Tal descrição de contexto é chamada de
+\emph{\textbf{Feature Description}}. Uma vez de posse da característica e do seu
+contexto é possível reconhecer o objeto de fato.
+
 
 \subsection{Propriedades da Característica Local ideal}
-Algoritmos de reconhecimento baseam-se em comparação de características recuperadas da cena. 
+Algoritmos de reconhecimento baseam-se em comparações de características
+recuperadas da cena.
 A recuperação e comparação de pontos tem um custo computacional relevante perto do tempo de execução 
 da aplicação, portanto selecionar o menor número possível de características aumenta o desempenho e diminui 
 o tempo de resposta da aplicação.
-Garantir que estamos selecionando boas características pode ser crucial na eficácia do reconhecimento.
+Garantir que  são selecionadas boas características pode ser
+crucial na eficácia do reconhecimento.
 Segundo \cite{localfeaturedetector} , boas características devem ter as
 seguintes propriedades:
 
@@ -29,42 +71,3 @@ seguintes propriedades:
 	\item \textbf{Eficiência}:De preferência  a detecção deve ser o mais rápido
 	possível.
 \end{itemize}
-
-\subsection{Características}
-Antes de compreender como é feito o reconhecimento e registro de imagens é importante nos perguntar
- como nós conseguimos reconhecer objetos em uma cena, como conseguimos comparar facilmente objetos em duas 
- imagens distintas. Somos treinados desde cedo a diferenciar formas geométricas, perceber escalas diferentes 
- ou mesmo reconhecer o mesmo objeto independente de como está posicionado na cena buscando padrões que 
- categorizem e diferenciem o objeto. Instintivamente conseguimos reconhecer boas características e localizar objetos.
-Na imagem~\ref{fig:padroes} temos uma imagem de um prédio e seis recortes, dos quais
-conseguimos facilmente reconhecer com precisão a de letra E e F, as de letra A,B,C,D
- podemos identificar possíveis localizações mas não podemos dizer com certeza onde estão na imagem.
-
-\begin{figure}[h!]
-\centering
-\includegraphics[scale=1.0]{images/features}
-\caption{Reconhecimento de padrões.\cite{understandingfeatures}}
-\label{fig:padroes}
-\end{figure}
-As características E e F são o que chamamos de good features pois o nível de
-certeza é bem alto.
-
-\begin{figure}[h!]
-\centering
-\includegraphics[scale=1.0]{images/featuresregioes}
-\caption{Regiões de reconhecimento de padrões.\cite{understandingfeatures}}
-\label{fig:featuresregioes}
-\end{figure}
-
-A Imagem~\ref{fig:featuresregioes} ilustra tipos de características. A região
-azul não possibilita diferenciar onde está na imagem, a região preta pode ser confundida com qualquer uma das regiões
- ao deslocarmos horizontalmente, a imagem vermelha nos possibilita diferenciar e reconhecer o canto da imagem verde 
- com precisão milimétrica.
-Podemos então concluir que uma característica é boa para ser utilizada como parâmetro de entrada
- para algoritmos de reconhecimento, quanto maior foi o nível de certeza da sua localização, 
- o que facilita o \emph{\textbf{Feature Detection}}.
-Para localizar o mesmo objeto em outra imagem é necessário identificarmos a região onde se encontra, 
-caso contrário no exemplo da imagem~\ref{fig:padroes} seria impossível
-localizar uma janela específica. Tal descrição de contexto é chamada de
-\emph{\textbf{Feature Description}}. Uma vez de posse da característica e do seu
-contexto é possível reconhecer o objeto de fato.

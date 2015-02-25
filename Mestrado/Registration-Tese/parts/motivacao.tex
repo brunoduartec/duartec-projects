@@ -1,42 +1,47 @@
 \section{Motivação}
 
 O reconhecimento de estruturas e sistemas de forma automática no campo da
-manutenção, pode propiciar a construção de ferramentas de capacitação, dentre
-várias outras possibilidades, auxiliando além de garantir maior confiabilidade
-no diagnóstico de problemas. 
-Um dos mais básicos problemas atualmente limitando o ramo da Realidade Aumentada
-é a etapa de registro.
+manutenção, pode propiciar a construção de ferramentas de capacitação dentre
+várias outras possibilidades, auxiliando na garantir de maior confiabilidade
+no diagnóstico de problemas, na agilidade e precisão de execução das tarefas. 
+Um dos mais básicos problemas atualmente, limitando o ramo da Realidade
+Aumentada, é a etapa de reconhecimento.
 A Realidade Aumentada prevê imersão entre o mundo virtual e o mundo real e por
-isso para que a experiência seja coerente é necessário que os dois mundos estejam bem sincronizados e propriamente alinhados.
-Em algumas situações tal sincronia aumenta a experiência, entretanto, tal
-alinhamento é primordial, por exemplo em aplicações médicas em uma aplicação de
-biopsia.Se o objeto não estiver no espaço e tempo real, a informação
-fornecida ao cirurgião poderá por em risco a vida do paciente. Na maioria das aplicações de tempo real, problemas
- de registro podem invalidar o uso da Realidade Aumentada.
-Um outro problema que pode ocorrer com falhas de registro é acentuado por um fenômeno conhecido como
- visual capture \cite{Welch78} que é a tendência do cérebro em capturar com
- mais qualidade estímulos visuais, do que qualquer outro sentido. 
-  Nesses casos, o sentido da visão tende a sobrepor os outros sentidos.
-Assim como um ventríloco consegue enganar quem assiste um show acreditando que o
-som sai da boca do boneco o usuário de uma aplicação de realidade aumentada tenderá a acreditar no que vê, 
-mesmo que esteja defasado no espaço/tempo.
-No caso do erro se tornar sistemático o usuário tende a se acostumar
+isso, para que a experiência seja coerente, é necessário que os dois mundos
+estejam bem sincronizados e propriamente alinhados.
+Em algumas situações, tal sincronia aumenta a experiência, entretanto o
+alinhamento é primordial, por exemplo, em aplicações médicas como uma
+aplicação de biopsia. Se o objeto não estiver no espaço e tempo real, a
+informação fornecida ao cirurgião poderá por em risco a vida do paciente. Na maioria das aplicações de tempo real, 
+problemas de reconhecimento podem invalidar o uso da Realidade Aumentada.
+Um outro problema que pode ocorrer com falhas de reconhecimento é a tendência do
+cérebro em capturar com mais qualidade estímulos visuais, do que qualquer outro
+sentido e isso é  acentuado por um fenômeno conhecido por \emph{visual capture}
+\cite{Welch78}. Neste caso o sentido da visão tende a sobrepor os outros
+sentidos.
+Assim como um ventríloco consegue enganar quem assiste um show, acreditando que
+o som sai da boca do boneco, o usuário de uma aplicação de realidade aumentada
+tende a acreditar no que vê, mesmo que esteja defasado no espaço/tempo.
+No caso do erro se tornar sistemático o usuário tende a se acostumar e
 inconscientemente adaptar-se ao erro, corrigindo o efeito.
-Erros de registro são difíceis de controlar adequadamente devido à grande precisão requerida das diversas fontes 
-de erro. As fontes de erro podem ser divididas em estáticas e dinâmicas sendo as estáticas contornadas com calibração
- prévia de sensores entretanto os erros dinâmicos são mais difíceis porque são susceptíveis a tempo diferença de tempo
-  entre o real e o apresentado na tela e com o acúmulo de erro.
+Erros de reconhecimento são difíceis de controlar adequadamente devido à grande
+precisão requerida das diversas fontes de erro, que podem ser divididas em
+estáticas e dinâmicas sendo as estáticas contornadas com calibração
+ prévia de sensores, entretanto os erros dinâmicos são mais difíceis porque são
+ susceptíveis a tempo e diferença de tempo entre o real e o apresentado na tela.
 O reconhecimento de objetos na cena permeia também:
 \begin{itemize}
-  \item O contexto da cena, sendo que com conhecimento prévio do cenário se torna bem mais fácil;
-  \item O material do qual o objeto é feito, porque caso seja feito de materiais reflexivos, os algoritmos
-   podem confundir o reflexo de outros objetos com informações a reconhecer;
-  \item O tamanho do objeto, pois de acordo com a escala do objeto, muitas informações que poderiam ser
-   boas para o reconhecimento podem estar próximas demais dificultando o posteior casamento de informações. \ldots
+  \item O contexto da cena facilitado pelo prévio conhecimento;
+  \item O material do qual os objetos são constituídos;
+  \item Informações suficientes em cada objeto, garantindo precisão de
+  reconhecimento;
+  \item Transformações afins como rotação, escala e brilho.
 \end{itemize}
 
 Portanto para que as diversas fontes de erros dinâmicos não sejam um impeditivo para o reconhecimento, de 
 acordo com a cena, algoritmos diferentes devem ser selecionados por terem peculiaridades e características
- que garantam um registro direcionados ao tipo de desafio que encontrarão, além de já ter informações 
- prévias, o que facilita na seleção de características.
+ que garantam sucesso de acordo com o tipo de desafio.
+ As diversas abordagens e peculiaridades adotadas pelos algoritmos atuais, fazem
+ com que a seleção ideal não seja trivial, sendo portanto, necessária uma
+ análise prévia das características apresentadas pela cena em questão.
 
