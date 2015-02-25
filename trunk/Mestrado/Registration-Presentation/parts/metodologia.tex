@@ -1,0 +1,68 @@
+\section{Metodologia}
+\begin{frame}
+\frametitle{Metodologia}
+
+
+
+
+\begin{columns}
+	\begin{column}{0.5\textwidth}
+	Os algoritmos são selecionados por meio de resultados de simulação feitos
+utilizando-se dos algoritmos: BRISK, FAST, FREAK, GFTT, MSER,
+  ORB, STAR, SURF, SIFT em uma aplicação desenvolvida utilizando OpenCV e
+  instrumentada para recuperar informações de qualidade de reconhecimento e
+  tempo de execução
+	\end{column}
+	\begin{column}{0.5\textwidth}
+	\begin{figure}
+	  \begin{center}
+	    \includegraphics[width=0.48\textwidth]{images/opencv}
+	  \end{center}
+	\end{figure}
+	\end{column}
+
+
+\end{columns}
+
+
+
+
+\end{frame}
+
+
+\subsection{Definição de Parâmetro}
+\begin{frame}
+\frametitle{Definição de Parâmetros}
+
+
+\begin{itemize}
+	\item \textbf{Variação de escala} para simular a aproximação dentro da janela
+	de inspeção;
+	\item \textbf{Variação de rotação} para simular a movimentação durante a
+	manutenção;
+	\item \textbf{Variação de iluminação} para simular manutenções feitas em
+	horários do dia e iluminação diferente, como por exemplo, ambientes com neve com brilho muito
+	maior;
+	\item \textbf{Adição de \emph{Blur}} para emular ambientes com muita poeira,
+	esfumaçados ou ainda movimentos bruscos.
+\end{itemize}
+
+
+\end{frame}
+
+
+\subsection{Análise de dados}
+\begin{frame}
+\frametitle{Análise de dados}
+
+\begin{itemize}
+	\item Cadência > 5fps ou seja, tempo < 200ms;
+	\item Robustez à escala:  0.5 < escala < 1.2;
+	\item Robustez à rotação:  0$^{\circ}$ < rotação < 30$^{\circ}$; 
+	\item Robustez à iluminação: -50 < iluminação < 50
+	\item Robustez à \emph{blur}: \emph{kernelsize} < 4
+\end{itemize}
+
+
+
+\end{frame}
