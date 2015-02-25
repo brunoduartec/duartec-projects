@@ -2,35 +2,35 @@
 
 Muitas são as abordagens de comparação entre detectores de características
 ultimamente.
-Uma análise de desempenho entre descritores locais feita em
-\cite{performance_evaluation} aponta a metodologia, bem como a métrica
-utilizada nesse trabalho.
-Uma análise comparativa feita com três descritores binários
-(ORB,BRIEF e BRISK)\cite{binaryfeatures} utilizando os mais conhecidos
+Uma análise de desempenho entre descritores locais aponta a metodologia, bem como a métrica
+utilizada nesse trabalho \cite{performance_evaluation}.
+ 
+Outra análise comparativa feita com três descritores binários
+(ORB,BRIEF e BRISK) utilizando os mais conhecidos
 detectores (ORB, MSER, SIFT, SURF, FAST e BRISK) é realizada comparando-se o
-efeito de transformações geométricas e fotométricas.
+efeito de transformações geométricas e fotométricas \cite{binaryfeatures}.
 
-Também um estudo comparativo de desempenho demonstrado em \cite{lowlevelfeature}
-apresenta resultados para FAST-SIFT comparando variações de \emph{blur},
-iluminação, escala e rotação.
+Também um estudo comparativo de desempenho apresenta resultados para FAST-SIFT comparando variações de \emph{blur},
+iluminação, escala e rotação \cite{lowlevelfeature}.
 
-A análise do desempenho de vários descritores foi feita no contexto de navegação
-robótica em \cite{robotnavigation} decidindo pelo melhor detector e descritor
-para navegação de robôs.
+Um estudo do desempenho de vários descritores foi feita no contexto de navegação
+robótica, decidindo pelo melhor detector e descritor
+para navegação de robôs \cite{robotnavigation}.
 
 O desempenho dos detectores (FREAK vs. SURF vs. BRISK) é examinado no contexto
-de detecção de pedestres em \cite{Pedestrian}.
-Estudos sobre a descritores locais também são feitos em
-\cite{localfeaturedetector}, descrevendo e comparando os principais descritores
-quanto à suas peculiaridades.
+de detecção de pedestres \cite{Pedestrian}.
+Há também estudos sobre descritores locais, descrevendo e comparando os principais descritores
+quanto à suas peculiaridades \cite{localfeaturedetector}.
 
-Uma análise de sete combinações de conhecidos detectores e descritores, a saber,
-SIFT com SIFT, SURF com SURF, MSER com SIFT, BRISK com FREAK, BRISK com
-BRISK, ORB com ORB e FAST com BRIEF é apresentado em \cite{Well-Known}
+Uma análise teórica de desempenho de sete combinações de
+conhecidos detectores e descritores, a saber, SIFT com SIFT, SURF com SURF, MSER com SIFT, BRISK com FREAK, BRISK com
+BRISK, ORB com ORB e FAST com BRIEF mostra uma abordagem de
+seleção da técnica adequada, concluindo que ORB com ORB e MSER com SIFT são
+preferíveis para quase todas as abordagens \cite{Well-Known}.
 
 O presente trabalho apresenta a comparação de nove combinações de detectores e
 descritores, a saber, BRISK com BRISK, STAR com BRIEF, MSER com SIFT, ORB com
 ORB, FAST com BRIEF, FREAK com FREAK, GFTT com BRIEF, SURF com SURF e SIFT com
-SIFT e propõe um estudo de caso do ambiente de aeronáutico com um método pré
-estabelecido de seleção de limites de restrições, com janelas de decisão pré de
-tal forma a eliminar as combinações que não estejam dentro da região desejada.
+SIFT e propõe um estudo de caso no ambiente aeronáutico com um método pré
+estabelecido de seleção de limites restritivos com janelas decisivas de tal forma a eliminar
+ as combinações que não estejam dentro da região desejada.

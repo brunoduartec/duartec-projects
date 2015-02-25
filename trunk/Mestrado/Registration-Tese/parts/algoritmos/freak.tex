@@ -1,30 +1,31 @@
 \subsection{FREAK - Fast Retina Keypoint}
 
-FREAK é um descritor binário, composto por três etapas:
+FREAK \cite{FREAK} é um descritor binário, composto por três etapas:
 
 \textbf{Amostragem de padrão}
 
-FREAK propõe uma abordagem biológica para o reconhecimento de características, emulando o funcionamento
- da retina para amostragem de padrão, como demonstrado na imagem \ref{fig:freak-sampler} que é um padrão
-  circular com maior densidade de pontos próximo do centro, decrescendo
-  exponencialmente.
+Propõe uma abordagem biológica para o reconhecimento de características,
+emulando o funcionamento da retina para amostragem de padrões, como demonstrado
+na imagem \ref{fig:freak-sampler}, sendo um padrão circular com maior densidade
+de pontos próximo do centro, decrescendo exponencialmente.
 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=1.0]{images/freak-sampler}
-\caption{Padrão de amostradem do descritor FREAK}
+\caption{Padrão de amostragem do descritor FREAK. Fonte \cite{FREAK}}
 \label{fig:freak-sampler}
 \end{figure}
 
 
-Cada amostra é suavizada com um kernel Gaussiano em que o raio do circulo ilustra o tamanho do desvio padrão do kernel.
-Como pode ser observado na figura~\ref{fig:freak-retina} o padrão de amostragem corresponde com a distribuição de receptores
- na retina.
+Cada amostra é suavizada com um filtro kernel Gaussiano em que o raio do círculo
+ilustra o tamanho do desvio padrão do kernel.
+Como pode ser observado na figura~\ref{fig:freak-retina} o padrão de amostragem
+corresponde à distribuição de receptores na retina.
 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=1.0]{images/freak-retina}
-\caption{Distribuição de receptores na retina}
+\caption{Distribuição de receptores na retina. Fonte \cite{FREAK}}
 \label{fig:freak-retina}
 \end{figure}
 
@@ -40,12 +41,13 @@ figura~\ref{fig:freak-rotation}
 \begin{figure}[H]
 \centering
 \includegraphics[scale=1.0]{images/freak-rotation}
-\caption{Pares selecionados para calcular a orientação}
+\caption{Pares selecionados para calcular a orientação. Fonte \cite{FREAK}}
 \label{fig:freak-rotation}
 \end{figure}
 
-Apesar de ter menos precisão para recuperar informações de rotação, como o número de pontos 
-é bem menor do que BRISK a quantidade de memória armazenada é em geral 5 vezes menor.
+Apesar de ter menos precisão para recuperar informações de rotação, como o
+número de pontos, o descritor é bem menor do que BRISK e a quantidade de memória
+armazenada é em geral 5 vezes menor.
 
 
 
@@ -55,6 +57,7 @@ Os pares de pontos são selecionados considerando a densidade maior no centro,
 como podemos observar na figura~\ref{fig:freak-retina} (a). 
 Os pares começam a ser comparados pelas extremidades e para dentro do centro, 
 dessa forma otimizamos o reconhecimento pois com menos pontos podemos descartar casos em que 
-a distância estiverem maiores do que um threshold, caso contrário prosseguimos para os outros 128 bits do descritor.
+a distância estiverem maiores do que um \emph{threshold}, caso contrário
+prosseguimos para os outros 128 bits do descritor.
 
 

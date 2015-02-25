@@ -1,8 +1,8 @@
 \subsection{SIFT - Scale-Invariant Feature Transform}
 \label{sec:sift}
 
-De acordo com \cite{SIFT}, é um método baseado em detecção de arestas que tem
-como proposta garantir a invariância à variação de escala. Um problema que nos
+SIFT \cite{SIFT} é um método baseado em detecção de arestas tendo
+como proposta garantir a invariância à escala, um problema que nos
 métodos de reconhecimento de arestas se não tratado pode causar diminuição na robustes do algoritmo. 
 A figura~\ref{fig:sift01} ilustra bem o efeito que a mudança de escala pode
 fazer.
@@ -10,12 +10,12 @@ fazer.
 \begin{figure}[h!]
 \centering
 \includegraphics[scale=1.0]{images/SIFT01}
-\caption{SIFT}
+\caption{Variação de escala. Fonte \cite{SIFT}}
 \label{fig:sift01}
 \end{figure}
 
 Observando a imagem~\ref{fig:sift01} é possível notar que não podemos utilizar a
-mesma janela de inspeção independente da escala do objeto, para objetos maiores
+mesma janela de inspeção independente da escala do objeto. Para objetos maiores
 temos que utilizar janelas maiores. Nesse contexto, o filtro de espaço de
 escalas é utilizado e são calculados Laplacianos de Gaucianos com diversos valores de
 $\sigma$.
@@ -26,24 +26,25 @@ como uma forma de aproximação são utilizados diferenças de Gaucianas.
 \begin{figure}[h!]
 \centering
 \includegraphics[scale=1.0]{images/DoG}
-\caption{Difference of Gaussian}
+\caption{\emph{Difference of Gaussian}. Fonte \cite{SIFT}}
 \label{fig:dog01}
 \end{figure}
 
 Uma vez que as diferenças de gaucianas são calculadas, é necessário procurar por
-máximos entre espaços de escala diferentes. Por exemplo como mostrado na
-figura~\ref{fig:dog01}, um pixel na imagem é comparado com seus 8 vizinhos e com
+máximos entre espaços de escala diferentes, como mostrado na
+figura~\ref{fig:dog01}. Um pixel na imagem é comparado com seus 8 vizinhos e com
 níveis de escala próximos e anteriores.
 O que representa que o \emph{keypoint} encontrado é melhor representado naquela
 escala.
 
 \subsubsection{Keypoint Localization}
-Uma vez que \emph{keypoints} potenciais são localizados é importante selecionar
-pontos de interesse com contraste alto.
-A localização dos pontos é refinada utilizando uma expansão de Taylor  e se as intensidades dos máximos forem 
-menores do que um threshold são rejeitados.
+Uma vez que \emph{keypoints} potenciais são localizados, são selecionados pontos
+de interesse com contraste alto.
+A localização dos pontos é refinada utilizando uma expansão de Taylor e caso as
+intensidades dos máximos forem menores do que um \emph{threshold}, rejeitados.
 Uma característica do DoG é a alta resposta a arestas gerando falsos positivos. Portanto é necessário eliminar 
 algumas arestas identificadas erroneamente.
+
 \subsubsection{Orientation Assignment}
 
 Para obter descritores que são invariantes a rotação, um histograma de
@@ -52,11 +53,11 @@ do DoG ao redor dos \emph{keypoints}.
 
 \subsubsection{Keypoint Descriptor}
 
-O descritor é construído por um vetor de características considerando a
- direção do keypoint cujo peso no gradiente é máximo.
+O descritor é construído por um vetor de características, considerando a
+ direção do \emph{keypoint} cujo peso no gradiente é máximo.
  Como mostrado na figura~\ref{fig:sift-keypoint-descriptor}, tipicamente, uma
- região de adjacentes 16x16 é determinada partindo do keypoint no centro. Depois da região ser selecionada,
- SIFT divide em sub regiões de 4x4 com 8 representações de orientações em cada.
+ região de adjacentes 16x16 é determinada partindo do \emph{keypoint} no centro.
+ Depois da região ser selecionada, SIFT divide em sub regiões de 4x4 com 8 representações de orientações em cada.
 Como obtemos 4x4 = 16 histogramas, cada um com 8 items, o vetor tem 128 elementos,
  o que torna o descritor significativo, compacto e ainda assim robusto o suficiente
   para mudanças de iluminação e variações de câmera.
@@ -64,16 +65,18 @@ Como obtemos 4x4 = 16 histogramas, cada um com 8 items, o vetor tem 128 elemento
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.6]{images/sift-keypoint-descriptor}
-\caption{Formação do descritor SIFT}
+\includegraphics[scale=0.4]{images/sift-keypoint-descriptor}
+\caption{Formação do descritor SIFT. Fonte \cite{SIFT}}
 \label{fig:sift-keypoint-descriptor}
 \end{figure}
 
 \subsubsection{Casamento de Padrões}
-O casamento entre dois pontos é feito identificando pontos próximos. Entretando em algumas cituações existem
- pontos muito próximos que podem ser causados por ruidos na detecção de pontos de interesse, nesse caso é calculada
-  uma razão de distância entre o ponto de interesse com o mais próximo, e com o segundo mais próximo, se a razão for
-   maior do que 80 são rejeitados. Tal abordagem elimina cerca de 90 de falsos positivos e 5 de pontos corretos.
+O casamento entre dois pontos é feito identificando pontos próximos. Entretando
+em algumas situações existem pontos muito próximos que podem ser causados por
+ruídos na detecção de pontos de interesse, nesse caso é calculada
+  uma razão de distância entre o ponto de interesse com o mais próximo, e com o
+  segundo mais próximo, se a razão for maior do que 80, são rejeitados. Tal
+  abordagem elimina cerca de 90 de falsos positivos e 5 de pontos corretos.
 
 
 

@@ -1,31 +1,32 @@
 \subsection{FAST - Features from Accelerated Segment Test}
 
 
-Segundo \cite{FAST}, é um método de reconhecimento baseado em detecção de
-arestas originalmente desenvolvido por Edward Rosten e Tom Drummond. A maior
-promessa do método é a eficiência computacional. O método considera um círculo
+FAST é um método de reconhecimento baseado em detecção de
+arestas originalmente desenvolvido por Edward Rosten e Tom Drummond 
+\cite{FAST}. A maior promessa do método é a eficiência computacional. O método considera um círculo
 de dezesseis pixels ao redor da aresta considerada p.
-O detector original \cite{FusingPoints},\cite{VideoAnotation} classifica p como
-uma aresta se existirem n pixels contíguos em um círculo que são mais brilhantes
-do que o pixel candidato de intensidade Ip mais um threshold t ou mais escuros do que Ip-t
+O detector original \cite{FusingPoints},\cite{VideoAnotation} classifica
+\emph{p} como uma aresta se existirem \emph{n} pixels contíguos em um círculo
+que são mais brilhantes do que o pixel candidato de intensidade Ip mais um threshold t ou mais escuros do que Ip-t
 
  \begin{figure}[H]
 \centering
 \includegraphics[scale=0.8]{images/fast01}
-\caption{FAST}
+\caption{Detector FAST. Fonte \cite{FAST} }
 \label{fig:fast01}
 \end{figure}
 
 
-Na imagem~\ref{fig:fast01} foi escolhido n=12. Um teste rápido é
+Na imagem~\ref{fig:fast01} foi escolhido n=12 e seguido o seguinte algoritmo:
 \begin{enumerate}
-	\item Selecionar o ponto é testar primeiro as extremidades. No caso da imagem,
+	\item Selecionar o ponto e testar primeiro as extremidades. No caso da imagem,
 	escolhido o ponto p
 	\item Comparar os pontos 1 e 9, e verificar se o ponto p tem intensidade
 	com diferença de módulo t, ou seja os pontos 1 e 9 são mais claros ou mais escuros do que o ponto p pelo fator de t
-	\item Avaliar se o ponto p continue sendo um candidato considerando os pontos 5
+	\item Avaliar se o ponto p continua sendo um candidato considerando os pontos 5
 	e 13
-	\item Analisar se p é uma aresta, sendo pelo menos 3 desses pontos devem ser
-	mais brilhantes ou mais escuros do que p então o teste pode ser feito nos demais pontos.
+	\item Analisar se p é uma aresta, sendo que para isso, pelo menos 3 desses
+	pontos devem ser mais brilhantes ou mais escuros do que p, para que então o
+	teste pode ser feito nos demais pontos.
 \end{enumerate}
 

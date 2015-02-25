@@ -1,54 +1,53 @@
 \section{Realidade Virtual}
 
-A Realidade Virtual (RV) é uma “interface avançada do usuário”
+A Realidade Virtual é uma ''interface avançada do usuário''
 para acessar aplicações executadas no computador, propiciando a
 visualização, movimentação e interação do usuário, em tempo real,
 em ambientes tridimensionais gerados por computador, como mostra a
 figura~\ref{fig:realidadevirtual}.
 O sentido da visão costuma ser preponderante em aplicações de realidade
 virtual, mas os outros sentidos, como tato, audição, etc. também
-podem ser usados para enriquecer a experiência do usuário.\cite{realidadevirtual}
+podem ser usados para enriquecer a experiência do usuário
+\cite{realidadevirtual}.
 
 \begin{figure}[h!]
 \centering
 \includegraphics[scale=0.5]{images/realidade-virtual}
-\caption{Aplicação de realidade virtual}
+\caption{Aplicação de realidade virtual. Fonte\cite{realidadevirtual}}
 \label{fig:realidadevirtual}
 \end{figure}
 
 
 \section{Realidade Aumentada}
-A realidade aumentada como citado em \cite{SurveyAR} é uma técnica de visão
-computacional em que valendo-se de artefatos do mundo real tem por objetivo causar sensação de imersão 
-do usuário em um ambiente aumentado por artefatos virtuais, ao contrário de ambientes puramente virtuais 
-como é comum em aplicações de realidade virtual.
+A realidade aumentada é uma técnica de visão
+computacional em que valendo-se de artefatos do mundo real, tem por objetivo
+causar sensação de imersão do usuário em um ambiente aumentado por artefatos virtuais, ao contrário de ambientes puramente virtuais 
+como é comum em aplicações de realidade virtual  \cite{SurveyAR}.
 Idealmente o mundo virtual se torna imersivo o suficiente para que o usuário não consiga distinguir o real do virtual.
-Alguns autores definem AR como tendo a necessidade de utilizar-se interfaces visuais portáteis para que a 
-usabilidade tenha mais coerência com a proposta inicial de garantir uma experiência imersiva.
+Alguns autores definem AR como tendo a necessidade de utilizar-se de interfaces
+visuais portáteis para que a usabilidade tenha mais coerência com a proposta inicial de garantir uma experiência imersiva.
 As imagens são obtidas por câmeras e o resultado apresentado em dispositivos como projetores ou 
 displays como monitores, tablets ou \emph{head-mounted display} (HMD).
 Realidade aumentada pode ser realizada com ou sem marcadores para facilitar o
 reconhecimento e posicionamento de entidades. No presente trabalho é utilizada a
 abordagem sem marcadores para que aplicações no cenários de manutenção se torne
 mais flexível no que tange à aplicabilidade e configuração inicial, não sendo
-necessário modificar o ambiente.A figura~\ref{diagram:pipelinera} apresenta um
-pipeline básico de realidade aumentada de forma canônica. O presente trabalho,
-trata de aspectos até a etapa de reconhecimento.
-As etapas são representadas por:
+necessário modificar o ambiente. A figura~\ref{diagram:pipelinera} apresenta um
+processo básico de realidade aumentada de forma canônica. Esta tese trata de
+aspectos até a etapa de reconhecimento, que são representadas por:
 \begin{itemize}
   \item \textbf{Captura:} Etapa de obtenção de imagens, feita por sensores como
   câmeras;
   \item \textbf{Preparação:} Etapa de preparação da imagem, aplicando filtros
-  para a etapa de detecção; 
-  \item \textbf{Detecção:} Etapa de detecção de padrões, em que são removido
-  informações das imagems;
+  preparando para a etapa de detecção; 
+  \item \textbf{Detecção:} Etapa de detecção de padrões, em que são removidas
+  informações das imagens;
   \item \textbf{Reconhecimento:} Etapa de reconhecimento de padrões e comparação
   das características reconhecidas na etapa anterior;
-  \item \textbf{Rastreio:} Etapa que garante-se que a imagem reconhecida
-  continua no contexto, reconhecendo apesar de movimentações ou outras
-  variações;
-  \item \textbf{Apresentaçao:} Etapa em que são desenhado na tela representações
-  dos objetos reconhecidos de acordo com a aplicação.
+  \item \textbf{Rastreio:} Etapa que garante que a imagem reconhecida
+  continua no contexto, apesar de movimentações ou outras variações;
+  \item \textbf{Apresentação:} Etapa em que são desenhadas na tela
+  representações dos objetos reconhecidos de acordo com a aplicação.
 \end{itemize}
 
 \begin{figure}[H]
@@ -80,7 +79,7 @@ As etapas são representadas por:
   % Note: If you have no branches, the 2nd pass is not needed
 
 \end{tikzpicture}
-  \caption{Pipeline Canônico de Realidade Aumentada}
+  \caption{Processo Canônico de Realidade Aumentada}
   \label{diagram:pipelinera}
 
 \end{figure}
