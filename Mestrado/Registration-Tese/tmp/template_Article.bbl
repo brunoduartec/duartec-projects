@@ -27,11 +27,6 @@
 {BAY TINNE~TUYTELAARS, L. V.~G. H. Surf : Speeded up robust features.
 \textbf{ETH Zurich}, 2008.}
 
-\bibitem[Bradski 2008]{OpenCvOReilly}
-\abntrefinfo{Bradski}{BRADSKI}{2008}
-{BRADSKI, A.~K. G. \textbf{Learning OpenCv Computer vision with the Opencv
-  Library}. [S.l.]: O´REILLY, 2008.}
-
 \bibitem[Comparison of the OpenCV feature detection algorithms
   2014]{opencv-comparing-1}
 \abntrefinfo{Comparison\ldots}{COMPARISON\ldots}{2014a}
@@ -48,10 +43,12 @@ Available at
   \url{http://computer-vision-talks.com/articles/2011-07-13-comparison-of-the-opencv-feature-detection-algorithms/}
   (2015/19/01).}
 
-\bibitem[E. e J.-M. 2012]{binaryfeatures}
-\abntrefinfo{E. e J.-M.}{E.; J.-M.}{2012}
-{E., H. J.~D.; J.-M., F. Comparative evaluation of binary features.
-\textbf{Computer Vision–ECCV, Springer}, 2012.}
+\bibitem[El-gayar H.~Soliman 2013]{lowlevelfeature}
+\abntrefinfo{El-gayar H.~Soliman}{EL-GAYAR H.~SOLIMAN}{2013}
+{EL-GAYAR H.~SOLIMAN, N.~m. M. A comparative study of image low level feature
+  extraction algorithms.
+\textbf{of image low level feature extraction algorithms, Egyptian Informatics
+  Journal}, 2013.}
 
 \bibitem[Feature descriptor comparison report 2014]{descriptor-comparing}
 \abntrefinfo{Feature\ldots}{FEATURE\ldots}{2014}
@@ -60,9 +57,10 @@ Available at
   \url{http://computer-vision-talks.com/articles/2011-08-19-feature-descriptor-comparison-report/}
   (2015/19/01).}
 
-\bibitem[GIL 2010]{ElaborarPesquisa}
-\abntrefinfo{GIL}{GIL}{2010}
-{GIL, A.~C. \textbf{Como elaborar projetos de pesquisa}. [S.l.]: Atlas, 2010.}
+\bibitem[Heinly e Frahm 2012]{binaryfeatures}
+\abntrefinfo{Heinly e Frahm}{HEINLY; FRAHM}{2012}
+{HEINLY, E.~D. J.; FRAHM, J.-M. Comparative evaluation of binary features.
+\textbf{Computer Vision–ECCV, Springer}, 2012.}
 
 \bibitem[KIRNER C.;~SISCOUTTO 2007]{realidadevirtual}
 \abntrefinfo{KIRNER C.;~SISCOUTTO}{KIRNER C.;~SISCOUTTO}{2007}
@@ -81,13 +79,6 @@ Available at
 \textbf{Computer Science Department University of British Columbia Vancouver,
   B.C., Canada}, 2004.}
 
-\bibitem[M. e H. 2013]{lowlevelfeature}
-\abntrefinfo{M. e H.}{M.; H.}{2013}
-{M., E. gayar; H., S. A comparative study of image low level feature extraction
-  algorithms.
-\textbf{of image low level feature extraction algorithms, Egyptian Informatics
-  Journal}, 2013.}
-
 \bibitem[Matas J. 2002]{MSER}
 \abntrefinfo{Matas J.}{MATAS J.}{2002}
 {MATAS J., e.~a. Robust wide baseline stereo from maximally stable extremal
@@ -104,13 +95,6 @@ feb 2005.}
 {OZKAN, S.~I. \textbf{A Comparative Evaluation of Well-known Feature Detectors
   and Descriptors}. [S.l.]: International Journal of Applied Mathematics,
   Electronics and Computers, 2014.}
-
-\bibitem[Prodanov Cleber Cristiano;~Freitas 2013]{MetodologiaCientifica}
-\abntrefinfo{Prodanov Cleber Cristiano;~Freitas}{PRODANOV CLEBER
-  CRISTIANO;~FREITAS}{2013}
-{PRODANOV CLEBER CRISTIANO;~FREITAS, E.~C. \textbf{Metodologia do Trabalho
-  Cientifico: Metodos e Tecnicas da Pesquisa e do Trabalho Academico}. [S.l.]:
-  Universidade FEEVALE, 2013.}
 
 \bibitem[Rosten e Drummond 2005]{FusingPoints}
 \abntrefinfo{Rosten e Drummond}{ROSTEN; DRUMMOND}{2005}
@@ -151,12 +135,6 @@ feb 2005.}
 \abntrefinfo{Shi J.}{SHI J.}{1994}
 {SHI J., e.~a. Good features to track.
 \textbf{IEEE}, 1994.}
-
-\bibitem[Silva \textit{et al.} 2003]{Devices}
-\abntrefinfo{Silva \textit{et al.}}{SILVA \textit{et al.}}{2003}
-{SILVA, R.; OLIVEIRA, J.~C.; GIRALDI, G.~A. \textbf{Introduction to augmented
-  reality}.
-[S.l.], 2003.}
 
 \bibitem[Tang \textit{et al.} 1993]{Tang93whydo}
 \abntrefinfo{Tang \textit{et al.}}{TANG \textit{et al.}}{1993}

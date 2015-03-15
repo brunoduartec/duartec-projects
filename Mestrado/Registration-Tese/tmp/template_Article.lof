@@ -1,35 +1,34 @@
 \select@language {brazil}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Posicionamento da LRU\relax }}{19}{figure.caption.8}
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Categorias de pesquisas cient\IeC {\'\i }ficas. Fonte \cite {MetodologiaCientifica} \relax }}{20}{figure.caption.9}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Posicionamento da janela de inspe\c c\~ao. Fonte http://www.aero-news.net/\relax }}{18}{figure.caption.8}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Aplica\c c\~ao de realidade virtual. Fonte\cite {realidadevirtual}\relax }}{24}{figure.caption.12}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Processo Can\^onico de Realidade Aumentada\relax }}{25}{figure.caption.13}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Ilustra\c c\~ao do procedimento de reconhecimento com caracter\IeC {\'\i }sticas locais. Fonte \cite {localfeaturedetector}\relax }}{26}{figure.caption.14}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Reconhecimento de padr\~oes. Fonte \cite {understandingfeatures}\relax }}{27}{figure.caption.15}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Regi\~oes de reconhecimento de padr\~oes. Fonte \cite {understandingfeatures}\relax }}{28}{figure.caption.16}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Regi\~ao da imagem integral. Fonte \cite {integralimage} \relax }}{31}{figure.caption.17}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Detector FAST. Fonte \cite {FAST} \relax }}{32}{figure.caption.18}
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Padr\~ao de amostras no BRISK. Fonte \cite {BRISK}\relax }}{33}{figure.caption.19}
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Padr\~ao de amostragem do descritor FREAK. Fonte \cite {FREAK}\relax }}{34}{figure.caption.20}
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Distribui\c c\~ao de receptores na retina. Fonte \cite {FREAK}\relax }}{35}{figure.caption.21}
-\contentsline {figure}{\numberline {2.11}{\ignorespaces Pares selecionados para calcular a orienta\c c\~ao. Fonte \cite {FREAK}\relax }}{35}{figure.caption.22}
-\contentsline {figure}{\numberline {2.12}{\ignorespaces Regi\~oes MSER. Fonte \cite {MSER}\relax }}{37}{figure.caption.23}
-\contentsline {figure}{\numberline {2.13}{\ignorespaces Varia\c c\~ao de escala. Fonte \cite {SIFT}\relax }}{38}{figure.caption.24}
-\contentsline {figure}{\numberline {2.14}{\ignorespaces \emph {Difference of Gaussian}. Fonte \cite {SIFT}\relax }}{39}{figure.caption.25}
-\contentsline {figure}{\numberline {2.15}{\ignorespaces Forma\c c\~ao do descritor SIFT. Fonte \cite {SIFT}\relax }}{40}{figure.caption.26}
-\contentsline {figure}{\numberline {2.16}{\ignorespaces \emph {Box Filtering}. Fonte \cite {SURF} \relax }}{41}{figure.caption.27}
-\contentsline {figure}{\numberline {2.17}{\ignorespaces Janela do Descritor. Fonte \cite {SURF} \relax }}{42}{figure.caption.28}
-\contentsline {figure}{\numberline {2.18}{\ignorespaces Filtro bi-level aplicado \`a formas de n lados. Fonte \cite {STAR}\relax }}{43}{figure.caption.29}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Aplica\c c\~ao de realidade virtual. Fonte\cite {realidadevirtual}\relax }}{22}{figure.caption.10}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Processo de Realidade Aumentada\relax }}{23}{figure.caption.11}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Ilustra\c c\~ao do procedimento de reconhecimento com caracter\IeC {\'\i }sticas locais. Fonte \cite {localfeaturedetector}\relax }}{24}{figure.caption.12}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Reconhecimento de padr\~oes. Fonte \cite {understandingfeatures}\relax }}{26}{figure.caption.13}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Regi\~oes de reconhecimento de padr\~oes. Fonte \cite {understandingfeatures}\relax }}{27}{figure.caption.14}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Regi\~ao da imagem integral. Fonte \cite {integralimage} \relax }}{30}{figure.caption.15}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Detector FAST. Fonte \cite {FAST} \relax }}{31}{figure.caption.16}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Padr\~ao de amostras no BRISK. Fonte \cite {BRISK}\relax }}{32}{figure.caption.17}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Padr\~ao de amostragem do descritor FREAK. Fonte \cite {FREAK}\relax }}{33}{figure.caption.18}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Distribui\c c\~ao de receptores na retina. Fonte \cite {FREAK}\relax }}{34}{figure.caption.19}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Pares selecionados para calcular a orienta\c c\~ao. Fonte \cite {FREAK}\relax }}{34}{figure.caption.20}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Regi\~oes MSER. Fonte \cite {MSER}\relax }}{36}{figure.caption.21}
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Varia\c c\~ao de escala. Fonte \cite {SIFT}\relax }}{37}{figure.caption.22}
+\contentsline {figure}{\numberline {2.14}{\ignorespaces \emph {Difference of Gaussian}. Fonte \cite {SIFT}\relax }}{38}{figure.caption.23}
+\contentsline {figure}{\numberline {2.15}{\ignorespaces Forma\c c\~ao do descritor SIFT. Fonte \cite {SIFT}\relax }}{39}{figure.caption.24}
+\contentsline {figure}{\numberline {2.16}{\ignorespaces \emph {Box Filtering}. Fonte \cite {SURF} \relax }}{40}{figure.caption.25}
+\contentsline {figure}{\numberline {2.17}{\ignorespaces Janela do Descritor. Fonte \cite {SURF} \relax }}{41}{figure.caption.26}
+\contentsline {figure}{\numberline {2.18}{\ignorespaces Filtro bi-level aplicado \`a formas de n lados. Fonte \cite {STAR}\relax }}{42}{figure.caption.27}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Imagem utilizada no prot\'otipo\relax }}{46}{figure.caption.30}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Imagem utilizada no prot\'otipo\relax }}{45}{figure.caption.28}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Resultado de performance de varia\c c\~ao de escala\relax }}{49}{figure.caption.31}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Resultado de performance de varia\c c\~ao de rota\c c\~ao\relax }}{50}{figure.caption.32}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Resultado de performance de varia\c c\~ao de \emph {blur}\relax }}{51}{figure.caption.33}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Resultado de performance de varia\c c\~ao de ilumina\c c\~ao\relax }}{52}{figure.caption.34}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces An\'alise de tempo de varia\c c\~ao de escala\relax }}{53}{figure.caption.35}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces An\'alise de tempo de varia\c c\~ao de rota\c c\~ao\relax }}{54}{figure.caption.36}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces An\'alise de tempo de varia\c c\~ao de blur\relax }}{55}{figure.caption.37}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces An\'alise de tempo de varia\c c\~ao de ilumina\c c\~ao\relax }}{56}{figure.caption.38}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Resultado de performance de varia\c c\~ao de escala\relax }}{48}{figure.caption.29}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Resultado de performance de varia\c c\~ao de rota\c c\~ao\relax }}{49}{figure.caption.30}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Resultado de performance de varia\c c\~ao de \emph {blur}\relax }}{50}{figure.caption.31}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Resultado de performance de varia\c c\~ao de ilumina\c c\~ao\relax }}{51}{figure.caption.32}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces An\'alise de tempo de varia\c c\~ao de escala\relax }}{52}{figure.caption.33}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces An\'alise de tempo de varia\c c\~ao de rota\c c\~ao\relax }}{53}{figure.caption.34}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces An\'alise de tempo de varia\c c\~ao de blur\relax }}{54}{figure.caption.35}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces An\'alise de tempo de varia\c c\~ao de ilumina\c c\~ao\relax }}{55}{figure.caption.36}
 \addvspace {10\p@ }

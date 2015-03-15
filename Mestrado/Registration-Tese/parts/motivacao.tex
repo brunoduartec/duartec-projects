@@ -1,8 +1,8 @@
 \section{Motivação}
 
 O reconhecimento de estruturas e sistemas de forma automática no campo da
-manutenção, pode propiciar a construção de ferramentas de capacitação dentre
-várias outras possibilidades, auxiliando na garantir de maior confiabilidade
+manutenção pode propiciar a construção de ferramentas de capacitação dentre
+várias outras possibilidades, auxiliando na garanta de maior confiabilidade
 no diagnóstico de problemas, na agilidade e precisão de execução das tarefas. 
 Um dos mais básicos problemas atualmente, limitando o ramo da Realidade
 Aumentada, é a etapa de reconhecimento.
@@ -11,7 +11,7 @@ isso, para que a experiência seja coerente, é necessário que os dois mundos
 estejam bem sincronizados e propriamente alinhados.
 Em algumas situações, tal sincronia aumenta a experiência, entretanto o
 alinhamento é primordial, por exemplo, em aplicações médicas como uma
-aplicação de biopsia. Se o objeto não estiver no espaço e tempo real, a
+aplicação de biópsia. Se o objeto não estiver no espaço e tempo real, a
 informação fornecida ao cirurgião poderá por em risco a vida do paciente. Na maioria das aplicações de tempo real, 
 problemas de reconhecimento podem invalidar o uso da Realidade Aumentada.
 Um outro problema que pode ocorrer com falhas de reconhecimento é a tendência do
@@ -19,8 +19,8 @@ cérebro em capturar com mais qualidade estímulos visuais, do que qualquer outro
 sentido e isso é  acentuado por um fenômeno conhecido por \emph{visual capture}
 \cite{Welch78}. Neste caso o sentido da visão tende a sobrepor os outros
 sentidos.
-Assim como um ventríloco consegue enganar quem assiste um show, acreditando que
-o som sai da boca do boneco, o usuário de uma aplicação de realidade aumentada
+Assim como um ventríloquo consegue enganar quem assiste um \emph{show},
+acreditando que o som sai da boca do boneco, o usuário de uma aplicação de realidade aumentada
 tende a acreditar no que vê, mesmo que esteja defasado no espaço/tempo.
 No caso do erro se tornar sistemático o usuário tende a se acostumar e
 inconscientemente adaptar-se ao erro, corrigindo o efeito.
@@ -28,14 +28,15 @@ Erros de reconhecimento são difíceis de controlar adequadamente devido à grande
 precisão requerida das diversas fontes de erro, que podem ser divididas em
 estáticas e dinâmicas sendo as estáticas contornadas com calibração
  prévia de sensores, entretanto os erros dinâmicos são mais difíceis porque são
- susceptíveis a tempo e diferença de tempo entre o real e o apresentado na tela.
+ susceptíveis a instantes e intervalos de tempo entre o real e o apresentado na tela.
 O reconhecimento de objetos na cena permeia também:
 \begin{itemize}
   \item O contexto da cena facilitado pelo prévio conhecimento;
   \item O material do qual os objetos são constituídos;
   \item Informações suficientes em cada objeto, garantindo precisão de
   reconhecimento;
-  \item Transformações afins como rotação, escala e brilho.
+  \item Transformações afins como rotação, escala
+  \item Variação de iluminação por meio de adição de intensidade, pixel a pixel.
 \end{itemize}
 
 Portanto para que as diversas fontes de erros dinâmicos não sejam um impeditivo para o reconhecimento, de 

@@ -1,6 +1,6 @@
 \section{Características Locais}
 Características locais são padrões em imagens que diferenciam padrões de seu
-vizinho imediato, sendo as mais comuns são intensidade, cor e texturas.
+vizinho imediato, sendo que as mais comuns são intensidade, cor e texturas.
 
 \subsection{Características}
 Antes de compreender como é feito o reconhecimento e registro de imagens é importante nos perguntar
@@ -12,16 +12,16 @@ Na imagem~\ref{fig:padroes} temos uma imagem de um prédio e seis recortes, dos q
 conseguimos facilmente reconhecer com precisão a de letra E e F, as de letra A,B,C,D
  podemos identificar possíveis localizações mas não podemos dizer com certeza onde estão na imagem.
 
-\begin{figure}[h!]
+\begin{figure}[H]
 \centering
 \includegraphics[scale=1.0]{images/features}
 \caption{Reconhecimento de padrões. Fonte \cite{understandingfeatures}}
 \label{fig:padroes}
 \end{figure}
-As características E e F são o que chamamos de good features pois o nível de
-certeza é bem alto.
+As características E e F são o que consideramos boas características, pois o
+nível de certeza é bem alto.
 
-\begin{figure}[h!]
+\begin{figure}[H]
 \centering
 \includegraphics[scale=1.0]{images/featuresregioes}
 \caption{Regiões de reconhecimento de padrões. Fonte
@@ -57,7 +57,7 @@ seguintes propriedades:
 \begin{itemize}
 	\item \textbf{Repetibilidade}: Dadas duas imagens do mesmo objeto ou cena,
 	tomadas em condições ou pontos de vista diferentes, uma porcentagem alta de características deve
-	 ser reconhecidas se estiverem visíveis.
+	 ser reconhecida se estiverem visíveis.
 	\item \textbf{Distinção}: Os padrões reconhecidos têm de ser possíveis de serem
 	distinguidos entre si para facilitar o casamento.
 	\item \textbf{Localidade}: As características devem ser locais para reduzir a

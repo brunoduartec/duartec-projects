@@ -4,7 +4,7 @@
 SIFT \cite{SIFT} é um método baseado em detecção de arestas tendo
 como proposta garantir a invariância à escala, um problema que nos
 métodos de reconhecimento de arestas se não tratado pode causar diminuição na robustes do algoritmo. 
-A figura~\ref{fig:sift01} ilustra bem o efeito que a mudança de escala pode
+A Figura~\ref{fig:sift01} ilustra bem o efeito que a mudança de escala pode
 fazer.
 
 \begin{figure}[h!]
@@ -32,7 +32,7 @@ como uma forma de aproximação são utilizados diferenças de Gaucianas.
 
 Uma vez que as diferenças de gaucianas são calculadas, é necessário procurar por
 máximos entre espaços de escala diferentes, como mostrado na
-figura~\ref{fig:dog01}. Um pixel na imagem é comparado com seus 8 vizinhos e com
+Figura~\ref{fig:dog01}. Um pixel na imagem é comparado com seus 8 vizinhos e com
 níveis de escala próximos e anteriores.
 O que representa que o \emph{keypoint} encontrado é melhor representado naquela
 escala.
@@ -55,7 +55,7 @@ do DoG ao redor dos \emph{keypoints}.
 
 O descritor é construído por um vetor de características, considerando a
  direção do \emph{keypoint} cujo peso no gradiente é máximo.
- Como mostrado na figura~\ref{fig:sift-keypoint-descriptor}, tipicamente, uma
+ Como mostrado na Figura~\ref{fig:sift-keypoint-descriptor}, tipicamente, uma
  região de adjacentes 16x16 é determinada partindo do \emph{keypoint} no centro.
  Depois da região ser selecionada, SIFT divide em sub regiões de 4x4 com 8 representações de orientações em cada.
 Como obtemos 4x4 = 16 histogramas, cada um com 8 items, o vetor tem 128 elementos,

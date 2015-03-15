@@ -18,13 +18,35 @@ Fonte \cite{localfeaturedetector}}
 
 Processo de reconhecimento como ilustrado na
 imagem~\ref{fig:reconhecimento}:
-\begin{itemize}
-	\item Encontrar um grupo de \emph{keypoints} distintos;
-	\item Definir uma região em torno de cada \emph{keypoint};
-	\item Extrair e normalizar o conteúdo da região;
-	\item Calcular um descritor para a região normalizada;
-	\item Encontrar correspondências de descritores.  
-\end{itemize}
+\begin{description}
+	\item [Encontrar um grupo de \emph{keypoints} distintos]\hfill \\
+	Etapa em que são encontrados pontos de interesse, selecionando-se, arestas,
+	pontos ou vertices
+	
+	
+	\item [Definir uma região em torno de cada \emph{keypoint}]\hfill \\
+	Em torno do ponto selecionado é delimitada uma janela de informação.
+	
+	\item [Extrair e normalizar o conteúdo da região] \hfill \\
+	A região selecionada deve então ser extraída e abstraída, tornando-se em
+	informação por meio de uma função
+	
+	
+	\item [Calcular um descritor para a região normalizada]\hfill \\
+	Uma vez a informação da região recuperada e normalizada é importante por meio
+	de modelagem matemática transformar a informação em uma função capaz de ser
+	comparada com outra região e decidir se a informação pertence ou não a um mesmo
+	objeto.
+	
+	
+	\item [Encontrar correspondências de descritores] \hfill \\
+	A ultima etapa do reconhecimento, não abordada nessa dissertação, recupera
+	todos os descritores e por meio de distâncias Hamming determinar se as
+	informações podem ser consideradas iguais.
+	
+	
+	
+\end{description}
 
 
 \input{parts/basicos/caracteristicaslocais}
@@ -32,15 +54,18 @@ imagem~\ref{fig:reconhecimento}:
 
 \subsection{Detecção de características}
 O primeiro passo para o reconhecimento de objetos é a detecção de características.Para que possa ser feita a comparação da
- imagem referência com a imagem sentida. A abstração de informações a ser
- reconhecida tem que ser suficiente para lidar com escalas diferentes, rotações entre as imagens, e pequenas distorções.
+ imagem referência com a imagem sentida, a abstração de informações a ser
+ reconhecidas tem que ser suficiente para lidar com escalas diferentes, rotações
+ entre as imagens e pequenas distorções.
 Para que o reconhecimento seja eficiente e eficaz é necessário que uma massa de pontos mínima seja selecionada e feita
  a correspondência entre as imagens sentidas e a imagem referência.
 As características utilizadas são em geral cantos, linhas, curvas, padrões ou regiões.
 O tipo de característica selecionada é dependente do tipo de imagem provida. Imagens de cenas
  feitas a mão geralmente são compostas de segmentos de retas enquanto imagens de satélite são geralmente compostas de 
  contornos e regiões.
-Quanto mais invariantes forem as características encontradas, mais robusto e preciso é o processo de comparação.
+Quanto mais invariantes, ou seja, que as variações não influenciem nos
+resultados encontrados, forem as características, mais robusto e preciso é o
+processo de comparação.
 
 \subsection{Correspondência de características}
 A fase de correspondência de características é feita tanto selecionando características na imagem referência e procurando a 
@@ -51,25 +76,25 @@ cada par de correspondências que pelo menos um ponto seja determinado para que
 seja utilizado para determinar posteriormente os parâmetros de transformação. Por exemplo, se forem selecionados 
 padrões como tipo de característica, o centro do padrão é considerado o ponto, se for selecionado 
 uma região, o centro de massa da região é o ponto de apoio, se linhas forem tomadas como tipo de característica, devem 
-ser tomados intersecções como ponto de apoio e finalmente se forem selecionadas curvas, os máximos locais são considerados
- os pontos correspondentes.
+ser tomadas intersecções como ponto de apoio e finalmente se forem selecionadas
+curvas, os máximos locais são considerados os pontos correspondentes.
  
  \section{Imagem Integral}
  
- Uma representação intermediária da imagem \cite{integralimage}, calculado
- rapidamente de uma imagem referência. Dado uma imagem $ I $ e o ponto $(x,y)$,
- a imagem integral é calculada como a soma dos valores entre o ponto dado e a
- origem. Formalmente pode ser definido pela equação~\ref{eq:integralequation}:
+ Uma representação intermediária da imagem \cite{integralimage}, pode ser 
+ calculada rapidamente a partir de uma imagem de referência. Dada uma imagem $ I
+ $ e o ponto $(x,y)$, a imagem integral é calculada como a soma dos valores entre o ponto dado e a
+ origem. Formalmente pode ser definida pela equação~\ref{eq:integralequation}:
  
   \begin{equation}
  I_{\sum (x,y) }= \sum_{i=0}^{i\leqslant x}\sum_{j=0}^{j\leqslant y}I(x,y)
  \label{eq:integralequation}
  \end{equation}
  
- Utilizando a abordagem da imagem integral, o area pode ser calculada com quatro
+ Utilizando a abordagem da imagem integral, a area pode ser calculada com quatro
  operações. Se considerarmos uma região retangular constituída pelos vértices
- A,B,C e D como na figura~\ref{fig:integralimage}, a soma dos pixels é
- aproximado pela equação~\ref{eq:integralequationaprox}:
+ A,B,C e D como na Figura~\ref{fig:integralimage}, a soma dos pixels é
+ aproximada pela equação~\ref{eq:integralequationaprox}:
  
    \begin{equation}
 \sum (x,y)=A + D - (C + B)
@@ -86,7 +111,7 @@ ser tomados intersecções como ponto de apoio e finalmente se forem selecionadas 
 \end{figure}
   
  Como o gasto computacional é invariante ao tamanho da imagem, essa abordagem é
- particularmente útil quando utilizadas imagem grandes.
+ particularmente útil quando são utilizadas imagens grandes.
  
  
  \input{parts/algoritmos/algoritmos}
