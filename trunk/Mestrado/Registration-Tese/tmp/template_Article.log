@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=latex 2015.2.10)  9 MAR 2015 22:02
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=latex 2015.2.10)  14 MAR 2015 13:28
 entering extended mode
 **template_Article.tex
 (C:\Projects\duartec-projects\Mestrado\Registration-Tese\template_Article.tex
@@ -1379,15 +1379,6 @@ Package hyperref Info: Reference (link) `chapter.6' on input line 54.
 
 Package xcolor Warning: Incompatible color definition on input line 54.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 55--55
- [][]  
- []
-
-Package hyperref Info: Reference (link) `chapter.7' on input line 55.
-
-Package xcolor Warning: Incompatible color definition on input line 55.
-
 )
 \tf@toc=\write6
 Package hyperref Info: Anchor `page.x' on input line 164.
@@ -1396,7 +1387,6 @@ Package `hyperref' Info: End of reference (link) `chapter.5', line 51.
 Package `hyperref' Info: End of reference (link) `section.5.1', line 52.
 Package `hyperref' Info: End of reference (link) `section.5.2', line 53.
 Package `hyperref' Info: End of reference (link) `chapter.6', line 54.
-Package `hyperref' Info: End of reference (link) `chapter.7', line 55.
 ]
 Package hyperref Info: Anchor `chapter*.4' on input line 164.
 
@@ -1407,59 +1397,59 @@ Package hyperref Info: Reference (link) `figure.caption.8' on input line 3.
 
 Package xcolor Warning: Incompatible color definition on input line 3.
 
-Package hyperref Info: Reference (link) `figure.caption.9' on input line 4.
 
-Package xcolor Warning: Incompatible color definition on input line 4.
-
-Package hyperref Info: Reference (cite) `cite.MetodologiaCientifica' on input l
-ine 4.
-
-Package xcolor Warning: Incompatible color definition on input line 4.
-
-Package hyperref Info: Reference (cite) `cite.MetodologiaCientifica' on input l
-ine 4.
-
-Package xcolor Warning: Incompatible color definition on input line 4.
-
-
-Overfull \hbox (1.6245pt too wide) in paragraph at lines 4--4
- [][][] [][][]\T1/aer/m/n/12 Categorias de pes-qui-sas ci-en-tí-fi-cas. Fonte (
-[][]\T1/aer/m/n/10 PRO-DA-NOV CLE-BER CRIS- 
+Overfull \hbox (11.09012pt too wide) in paragraph at lines 3--3
+ [][][] [][][]\T1/aer/m/n/12 Posicionamento da ja-nela de ins-pe-ção. Fonte htt
+p://www.aero-news.net/[][][] [][]  
  []
 
-Package hyperref Info: Reference (link) `figure.caption.12' on input line 6.
+Package hyperref Info: Reference (link) `figure.caption.10' on input line 5.
 
-Package xcolor Warning: Incompatible color definition on input line 6.
+Package xcolor Warning: Incompatible color definition on input line 5.
 
-Package hyperref Info: Reference (cite) `cite.realidadevirtual' on input line 6
+Package hyperref Info: Reference (cite) `cite.realidadevirtual' on input line 5
 .
 
-Package xcolor Warning: Incompatible color definition on input line 6.
+Package xcolor Warning: Incompatible color definition on input line 5.
 
-Package hyperref Info: Reference (cite) `cite.realidadevirtual' on input line 6
+Package hyperref Info: Reference (cite) `cite.realidadevirtual' on input line 5
 .
 
+Package xcolor Warning: Incompatible color definition on input line 5.
+
+Package hyperref Info: Reference (link) `figure.caption.11' on input line 6.
+
 Package xcolor Warning: Incompatible color definition on input line 6.
 
-Package hyperref Info: Reference (link) `figure.caption.13' on input line 7.
+Package hyperref Info: Reference (link) `figure.caption.12' on input line 7.
 
 Package xcolor Warning: Incompatible color definition on input line 7.
 
-Package hyperref Info: Reference (link) `figure.caption.14' on input line 8.
+Package hyperref Info: Reference (cite) `cite.localfeaturedetector' on input li
+ne 7.
 
-Package xcolor Warning: Incompatible color definition on input line 8.
+Package xcolor Warning: Incompatible color definition on input line 7.
 
 Package hyperref Info: Reference (cite) `cite.localfeaturedetector' on input li
-ne 8.
+ne 7.
+
+Package xcolor Warning: Incompatible color definition on input line 7.
+
+Package hyperref Info: Reference (link) `figure.caption.13' on input line 8.
 
 Package xcolor Warning: Incompatible color definition on input line 8.
 
-Package hyperref Info: Reference (cite) `cite.localfeaturedetector' on input li
-ne 8.
+Package hyperref Info: Reference (cite) `cite.understandingfeatures' on input l
+ine 8.
 
 Package xcolor Warning: Incompatible color definition on input line 8.
 
-Package hyperref Info: Reference (link) `figure.caption.15' on input line 9.
+Package hyperref Info: Reference (cite) `cite.understandingfeatures' on input l
+ine 8.
+
+Package xcolor Warning: Incompatible color definition on input line 8.
+
+Package hyperref Info: Reference (link) `figure.caption.14' on input line 9.
 
 Package xcolor Warning: Incompatible color definition on input line 9.
 
@@ -1473,75 +1463,73 @@ ine 9.
 
 Package xcolor Warning: Incompatible color definition on input line 9.
 
-Package hyperref Info: Reference (link) `figure.caption.16' on input line 10.
+Package hyperref Info: Reference (link) `figure.caption.15' on input line 10.
 
 Package xcolor Warning: Incompatible color definition on input line 10.
 
-Package hyperref Info: Reference (cite) `cite.understandingfeatures' on input l
-ine 10.
+Package hyperref Info: Reference (cite) `cite.integralimage' on input line 10.
 
 Package xcolor Warning: Incompatible color definition on input line 10.
 
-Package hyperref Info: Reference (cite) `cite.understandingfeatures' on input l
-ine 10.
+Package hyperref Info: Reference (cite) `cite.integralimage' on input line 10.
 
 Package xcolor Warning: Incompatible color definition on input line 10.
 
-Package hyperref Info: Reference (link) `figure.caption.17' on input line 11.
+Package hyperref Info: Reference (link) `figure.caption.16' on input line 11.
 
 Package xcolor Warning: Incompatible color definition on input line 11.
 
-Package hyperref Info: Reference (cite) `cite.integralimage' on input line 11.
+Package hyperref Info: Reference (cite) `cite.FAST' on input line 11.
 
 Package xcolor Warning: Incompatible color definition on input line 11.
 
-Package hyperref Info: Reference (cite) `cite.integralimage' on input line 11.
+Package hyperref Info: Reference (cite) `cite.FAST' on input line 11.
 
 Package xcolor Warning: Incompatible color definition on input line 11.
 
-Package hyperref Info: Reference (link) `figure.caption.18' on input line 12.
+Package hyperref Info: Reference (link) `figure.caption.17' on input line 12.
 
 Package xcolor Warning: Incompatible color definition on input line 12.
 
-Package hyperref Info: Reference (cite) `cite.FAST' on input line 12.
+Package hyperref Info: Reference (cite) `cite.BRISK' on input line 12.
 
 Package xcolor Warning: Incompatible color definition on input line 12.
 
-Package hyperref Info: Reference (cite) `cite.FAST' on input line 12.
+Package hyperref Info: Reference (cite) `cite.BRISK' on input line 12.
 
 Package xcolor Warning: Incompatible color definition on input line 12.
 
-Package hyperref Info: Reference (link) `figure.caption.19' on input line 13.
+Package hyperref Info: Reference (link) `figure.caption.18' on input line 13.
 
 Package xcolor Warning: Incompatible color definition on input line 13.
 
-Package hyperref Info: Reference (cite) `cite.BRISK' on input line 13.
+Package hyperref Info: Reference (cite) `cite.FREAK' on input line 13.
 
 Package xcolor Warning: Incompatible color definition on input line 13.
 
-Package hyperref Info: Reference (cite) `cite.BRISK' on input line 13.
+Package hyperref Info: Reference (cite) `cite.FREAK' on input line 13.
 
 Package xcolor Warning: Incompatible color definition on input line 13.
 
-Package hyperref Info: Reference (link) `figure.caption.20' on input line 14.
 
-Package xcolor Warning: Incompatible color definition on input line 14.
-
-Package hyperref Info: Reference (cite) `cite.FREAK' on input line 14.
-
-Package xcolor Warning: Incompatible color definition on input line 14.
-
-Package hyperref Info: Reference (cite) `cite.FREAK' on input line 14.
-
-Package xcolor Warning: Incompatible color definition on input line 14.
-
-
-Overfull \hbox (23.08366pt too wide) in paragraph at lines 14--14
+Overfull \hbox (23.08366pt too wide) in paragraph at lines 13--13
  [][][] [][][]\T1/aer/m/n/12 Padrão de amos-tra-gem do des-cri-tor FREAK. Fonte
  ([][]\T1/aer/m/n/10 ALAHI RAPHAEL OR- 
  []
 
-Package hyperref Info: Reference (link) `figure.caption.21' on input line 15.
+Package hyperref Info: Reference (link) `figure.caption.19' on input line 14.
+
+Package xcolor Warning: Incompatible color definition on input line 14.
+
+Package hyperref Info: Reference (cite) `cite.FREAK' on input line 14.
+
+Package xcolor Warning: Incompatible color definition on input line 14.
+
+Package hyperref Info: Reference (cite) `cite.FREAK' on input line 14.
+
+Package xcolor Warning: Incompatible color definition on input line 14.
+
+Package hyperref Info: Reference (link) `figure.caption.20' on input line 15.
 
 Package xcolor Warning: Incompatible color definition on input line 15.
 
@@ -1553,37 +1541,37 @@ Package hyperref Info: Reference (cite) `cite.FREAK' on input line 15.
 
 Package xcolor Warning: Incompatible color definition on input line 15.
 
-Package hyperref Info: Reference (link) `figure.caption.22' on input line 16.
 
-Package xcolor Warning: Incompatible color definition on input line 16.
-
-Package hyperref Info: Reference (cite) `cite.FREAK' on input line 16.
-
-Package xcolor Warning: Incompatible color definition on input line 16.
-
-Package hyperref Info: Reference (cite) `cite.FREAK' on input line 16.
-
-Package xcolor Warning: Incompatible color definition on input line 16.
-
-
-Overfull \hbox (27.07951pt too wide) in paragraph at lines 16--16
+Overfull \hbox (27.07951pt too wide) in paragraph at lines 15--15
  [][][] [][][]\T1/aer/m/n/12 Pares se-le-ci-o-na-dos para cal-cu-lar a ori-en-t
 a-ção. Fonte ([][]\T1/aer/m/n/10 ALAHI RAPHAEL OR- 
  []
 
-Package hyperref Info: Reference (link) `figure.caption.23' on input line 17.
+Package hyperref Info: Reference (link) `figure.caption.21' on input line 16.
+
+Package xcolor Warning: Incompatible color definition on input line 16.
+
+Package hyperref Info: Reference (cite) `cite.MSER' on input line 16.
+
+Package xcolor Warning: Incompatible color definition on input line 16.
+
+Package hyperref Info: Reference (cite) `cite.MSER' on input line 16.
+
+Package xcolor Warning: Incompatible color definition on input line 16.
+
+Package hyperref Info: Reference (link) `figure.caption.22' on input line 17.
 
 Package xcolor Warning: Incompatible color definition on input line 17.
 
-Package hyperref Info: Reference (cite) `cite.MSER' on input line 17.
+Package hyperref Info: Reference (cite) `cite.SIFT' on input line 17.
 
 Package xcolor Warning: Incompatible color definition on input line 17.
 
-Package hyperref Info: Reference (cite) `cite.MSER' on input line 17.
+Package hyperref Info: Reference (cite) `cite.SIFT' on input line 17.
 
 Package xcolor Warning: Incompatible color definition on input line 17.
 
-Package hyperref Info: Reference (link) `figure.caption.24' on input line 18.
+Package hyperref Info: Reference (link) `figure.caption.23' on input line 18.
 
 Package xcolor Warning: Incompatible color definition on input line 18.
 
@@ -1595,86 +1583,87 @@ Package hyperref Info: Reference (cite) `cite.SIFT' on input line 18.
 
 Package xcolor Warning: Incompatible color definition on input line 18.
 
-Package hyperref Info: Anchor `page.xi' on input line 19.
+Package hyperref Info: Reference (link) `figure.caption.24' on input line 19.
+
+Package xcolor Warning: Incompatible color definition on input line 19.
+
+Package hyperref Info: Reference (cite) `cite.SIFT' on input line 19.
+
+Package xcolor Warning: Incompatible color definition on input line 19.
+
+Package hyperref Info: Reference (cite) `cite.SIFT' on input line 19.
+
+Package xcolor Warning: Incompatible color definition on input line 19.
+
+Package hyperref Info: Anchor `page.xi' on input line 20.
 [11
 
 Package `hyperref' Info: End of reference (link) `figure.caption.8', line 3.
-Package `hyperref' Info: End of reference (cite) `cite.MetodologiaCientifica', 
-line 4.
-Package `hyperref' Info: End of reference (cite) `cite.MetodologiaCientifica', 
-line 4.
-Package `hyperref' Info: End of reference (link) `figure.caption.9', line 4.
 Package `hyperref' Info: End of reference (cite) `cite.realidadevirtual', line 
-6.
+5.
 Package `hyperref' Info: End of reference (cite) `cite.realidadevirtual', line 
-6.
-Package `hyperref' Info: End of reference (link) `figure.caption.12', line 6.
-Package `hyperref' Info: End of reference (link) `figure.caption.13', line 7.
+5.
+Package `hyperref' Info: End of reference (link) `figure.caption.10', line 5.
+Package `hyperref' Info: End of reference (link) `figure.caption.11', line 6.
 Package `hyperref' Info: End of reference (cite) `cite.localfeaturedetector', l
-ine 8.
+ine 7.
 Package `hyperref' Info: End of reference (cite) `cite.localfeaturedetector', l
-ine 8.
-Package `hyperref' Info: End of reference (link) `figure.caption.14', line 8.
+ine 7.
+Package `hyperref' Info: End of reference (link) `figure.caption.12', line 7.
+Package `hyperref' Info: End of reference (cite) `cite.understandingfeatures', 
+line 8.
+Package `hyperref' Info: End of reference (cite) `cite.understandingfeatures', 
+line 8.
+Package `hyperref' Info: End of reference (link) `figure.caption.13', line 8.
 Package `hyperref' Info: End of reference (cite) `cite.understandingfeatures', 
 line 9.
 Package `hyperref' Info: End of reference (cite) `cite.understandingfeatures', 
 line 9.
-Package `hyperref' Info: End of reference (link) `figure.caption.15', line 9.
-Package `hyperref' Info: End of reference (cite) `cite.understandingfeatures', 
-line 10.
-Package `hyperref' Info: End of reference (cite) `cite.understandingfeatures', 
-line 10.
-Package `hyperref' Info: End of reference (link) `figure.caption.16', line 10.
-Package `hyperref' Info: End of reference (cite) `cite.integralimage', line 11.
+Package `hyperref' Info: End of reference (link) `figure.caption.14', line 9.
+Package `hyperref' Info: End of reference (cite) `cite.integralimage', line 10.
 
-Package `hyperref' Info: End of reference (cite) `cite.integralimage', line 11.
+Package `hyperref' Info: End of reference (cite) `cite.integralimage', line 10.
 
-Package `hyperref' Info: End of reference (link) `figure.caption.17', line 11.
-Package `hyperref' Info: End of reference (cite) `cite.FAST', line 12.
-Package `hyperref' Info: End of reference (cite) `cite.FAST', line 12.
-Package `hyperref' Info: End of reference (link) `figure.caption.18', line 12.
-Package `hyperref' Info: End of reference (cite) `cite.BRISK', line 13.
-Package `hyperref' Info: End of reference (cite) `cite.BRISK', line 13.
-Package `hyperref' Info: End of reference (link) `figure.caption.19', line 13.
+Package `hyperref' Info: End of reference (link) `figure.caption.15', line 10.
+Package `hyperref' Info: End of reference (cite) `cite.FAST', line 11.
+Package `hyperref' Info: End of reference (cite) `cite.FAST', line 11.
+Package `hyperref' Info: End of reference (link) `figure.caption.16', line 11.
+Package `hyperref' Info: End of reference (cite) `cite.BRISK', line 12.
+Package `hyperref' Info: End of reference (cite) `cite.BRISK', line 12.
+Package `hyperref' Info: End of reference (link) `figure.caption.17', line 12.
+Package `hyperref' Info: End of reference (cite) `cite.FREAK', line 13.
+Package `hyperref' Info: End of reference (cite) `cite.FREAK', line 13.
+Package `hyperref' Info: End of reference (link) `figure.caption.18', line 13.
 Package `hyperref' Info: End of reference (cite) `cite.FREAK', line 14.
 Package `hyperref' Info: End of reference (cite) `cite.FREAK', line 14.
-Package `hyperref' Info: End of reference (link) `figure.caption.20', line 14.
+Package `hyperref' Info: End of reference (link) `figure.caption.19', line 14.
 Package `hyperref' Info: End of reference (cite) `cite.FREAK', line 15.
 Package `hyperref' Info: End of reference (cite) `cite.FREAK', line 15.
-Package `hyperref' Info: End of reference (link) `figure.caption.21', line 15.
-Package `hyperref' Info: End of reference (cite) `cite.FREAK', line 16.
-Package `hyperref' Info: End of reference (cite) `cite.FREAK', line 16.
-Package `hyperref' Info: End of reference (link) `figure.caption.22', line 16.
-Package `hyperref' Info: End of reference (cite) `cite.MSER', line 17.
-Package `hyperref' Info: End of reference (cite) `cite.MSER', line 17.
-Package `hyperref' Info: End of reference (link) `figure.caption.23', line 17.
+Package `hyperref' Info: End of reference (link) `figure.caption.20', line 15.
+Package `hyperref' Info: End of reference (cite) `cite.MSER', line 16.
+Package `hyperref' Info: End of reference (cite) `cite.MSER', line 16.
+Package `hyperref' Info: End of reference (link) `figure.caption.21', line 16.
+Package `hyperref' Info: End of reference (cite) `cite.SIFT', line 17.
+Package `hyperref' Info: End of reference (cite) `cite.SIFT', line 17.
+Package `hyperref' Info: End of reference (link) `figure.caption.22', line 17.
+Package `hyperref' Info: End of reference (cite) `cite.SIFT', line 18.
+Package `hyperref' Info: End of reference (cite) `cite.SIFT', line 18.
+Package `hyperref' Info: End of reference (link) `figure.caption.23', line 18.
 ]
-Package hyperref Info: Reference (link) `figure.caption.25' on input line 19.
+Package hyperref Info: Reference (link) `figure.caption.25' on input line 20.
 
-
-Package xcolor Warning: Incompatible color definition on input line 19.
-
-Package hyperref Info: Reference (cite) `cite.SIFT' on input line 19.
-
-Package xcolor Warning: Incompatible color definition on input line 19.
-
-Package hyperref Info: Reference (cite) `cite.SIFT' on input line 19.
-
-Package xcolor Warning: Incompatible color definition on input line 19.
-
-Package hyperref Info: Reference (link) `figure.caption.26' on input line 20.
 
 Package xcolor Warning: Incompatible color definition on input line 20.
 
-Package hyperref Info: Reference (cite) `cite.SIFT' on input line 20.
+Package hyperref Info: Reference (cite) `cite.SURF' on input line 20.
 
 Package xcolor Warning: Incompatible color definition on input line 20.
 
-Package hyperref Info: Reference (cite) `cite.SIFT' on input line 20.
+Package hyperref Info: Reference (cite) `cite.SURF' on input line 20.
 
 Package xcolor Warning: Incompatible color definition on input line 20.
 
-Package hyperref Info: Reference (link) `figure.caption.27' on input line 21.
+Package hyperref Info: Reference (link) `figure.caption.26' on input line 21.
 
 Package xcolor Warning: Incompatible color definition on input line 21.
 
@@ -1686,128 +1675,100 @@ Package hyperref Info: Reference (cite) `cite.SURF' on input line 21.
 
 Package xcolor Warning: Incompatible color definition on input line 21.
 
-Package hyperref Info: Reference (link) `figure.caption.28' on input line 22.
+Package hyperref Info: Reference (link) `figure.caption.27' on input line 22.
 
 Package xcolor Warning: Incompatible color definition on input line 22.
 
-Package hyperref Info: Reference (cite) `cite.SURF' on input line 22.
+Package hyperref Info: Reference (cite) `cite.STAR' on input line 22.
 
 Package xcolor Warning: Incompatible color definition on input line 22.
 
-Package hyperref Info: Reference (cite) `cite.SURF' on input line 22.
+Package hyperref Info: Reference (cite) `cite.STAR' on input line 22.
 
 Package xcolor Warning: Incompatible color definition on input line 22.
 
-Package hyperref Info: Reference (link) `figure.caption.29' on input line 23.
+Package hyperref Info: Reference (link) `figure.caption.28' on input line 24.
 
-Package xcolor Warning: Incompatible color definition on input line 23.
+Package xcolor Warning: Incompatible color definition on input line 24.
 
-Package hyperref Info: Reference (cite) `cite.STAR' on input line 23.
+Package hyperref Info: Reference (link) `figure.caption.29' on input line 26.
 
-Package xcolor Warning: Incompatible color definition on input line 23.
+Package xcolor Warning: Incompatible color definition on input line 26.
 
-Package hyperref Info: Reference (cite) `cite.STAR' on input line 23.
-
-Package xcolor Warning: Incompatible color definition on input line 23.
-
-Package hyperref Info: Reference (link) `figure.caption.30' on input line 25.
-
-Package xcolor Warning: Incompatible color definition on input line 25.
-
-Package hyperref Info: Reference (link) `figure.caption.31' on input line 27.
+Package hyperref Info: Reference (link) `figure.caption.30' on input line 27.
 
 Package xcolor Warning: Incompatible color definition on input line 27.
 
-Package hyperref Info: Reference (link) `figure.caption.32' on input line 28.
+Package hyperref Info: Reference (link) `figure.caption.31' on input line 28.
 
 Package xcolor Warning: Incompatible color definition on input line 28.
 
-Package hyperref Info: Reference (link) `figure.caption.33' on input line 29.
+Package hyperref Info: Reference (link) `figure.caption.32' on input line 29.
 
 Package xcolor Warning: Incompatible color definition on input line 29.
 
-Package hyperref Info: Reference (link) `figure.caption.34' on input line 30.
+Package hyperref Info: Reference (link) `figure.caption.33' on input line 30.
 
 Package xcolor Warning: Incompatible color definition on input line 30.
 
-Package hyperref Info: Reference (link) `figure.caption.35' on input line 31.
+Package hyperref Info: Reference (link) `figure.caption.34' on input line 31.
 
 Package xcolor Warning: Incompatible color definition on input line 31.
 
-Package hyperref Info: Reference (link) `figure.caption.36' on input line 32.
+Package hyperref Info: Reference (link) `figure.caption.35' on input line 32.
 
 Package xcolor Warning: Incompatible color definition on input line 32.
 
-Package hyperref Info: Reference (link) `figure.caption.37' on input line 33.
+Package hyperref Info: Reference (link) `figure.caption.36' on input line 33.
 
 Package xcolor Warning: Incompatible color definition on input line 33.
-
-Package hyperref Info: Reference (link) `figure.caption.38' on input line 34.
-
-Package xcolor Warning: Incompatible color definition on input line 34.
 
 )
 \tf@lof=\write7
 Package hyperref Info: Anchor `page.xii' on input line 166.
  [12
-Package `hyperref' Info: End of reference (cite) `cite.SIFT', line 18.
-Package `hyperref' Info: End of reference (cite) `cite.SIFT', line 18.
-Package `hyperref' Info: End of reference (link) `figure.caption.24', line 18.
 Package `hyperref' Info: End of reference (cite) `cite.SIFT', line 19.
 Package `hyperref' Info: End of reference (cite) `cite.SIFT', line 19.
-Package `hyperref' Info: End of reference (link) `figure.caption.25', line 19.
-Package `hyperref' Info: End of reference (cite) `cite.SIFT', line 20.
-Package `hyperref' Info: End of reference (cite) `cite.SIFT', line 20.
-Package `hyperref' Info: End of reference (link) `figure.caption.26', line 20.
+Package `hyperref' Info: End of reference (link) `figure.caption.24', line 19.
+Package `hyperref' Info: End of reference (cite) `cite.SURF', line 20.
+Package `hyperref' Info: End of reference (cite) `cite.SURF', line 20.
+Package `hyperref' Info: End of reference (link) `figure.caption.25', line 20.
 Package `hyperref' Info: End of reference (cite) `cite.SURF', line 21.
 Package `hyperref' Info: End of reference (cite) `cite.SURF', line 21.
-Package `hyperref' Info: End of reference (link) `figure.caption.27', line 21.
-Package `hyperref' Info: End of reference (cite) `cite.SURF', line 22.
-Package `hyperref' Info: End of reference (cite) `cite.SURF', line 22.
-Package `hyperref' Info: End of reference (link) `figure.caption.28', line 22.
-Package `hyperref' Info: End of reference (cite) `cite.STAR', line 23.
-Package `hyperref' Info: End of reference (cite) `cite.STAR', line 23.
-Package `hyperref' Info: End of reference (link) `figure.caption.29', line 23.
-Package `hyperref' Info: End of reference (link) `figure.caption.30', line 25.
-Package `hyperref' Info: End of reference (link) `figure.caption.31', line 27.
-Package `hyperref' Info: End of reference (link) `figure.caption.32', line 28.
-Package `hyperref' Info: End of reference (link) `figure.caption.33', line 29.
-Package `hyperref' Info: End of reference (link) `figure.caption.34', line 30.
-Package `hyperref' Info: End of reference (link) `figure.caption.35', line 31.
-Package `hyperref' Info: End of reference (link) `figure.caption.36', line 32.
-Package `hyperref' Info: End of reference (link) `figure.caption.37', line 33.
-Package `hyperref' Info: End of reference (link) `figure.caption.38', line 34.
+Package `hyperref' Info: End of reference (link) `figure.caption.26', line 21.
+Package `hyperref' Info: End of reference (cite) `cite.STAR', line 22.
+Package `hyperref' Info: End of reference (cite) `cite.STAR', line 22.
+Package `hyperref' Info: End of reference (link) `figure.caption.27', line 22.
+Package `hyperref' Info: End of reference (link) `figure.caption.28', line 24.
+Package `hyperref' Info: End of reference (link) `figure.caption.29', line 26.
+Package `hyperref' Info: End of reference (link) `figure.caption.30', line 27.
+Package `hyperref' Info: End of reference (link) `figure.caption.31', line 28.
+Package `hyperref' Info: End of reference (link) `figure.caption.32', line 29.
+Package `hyperref' Info: End of reference (link) `figure.caption.33', line 30.
+Package `hyperref' Info: End of reference (link) `figure.caption.34', line 31.
+Package `hyperref' Info: End of reference (link) `figure.caption.35', line 32.
+Package `hyperref' Info: End of reference (link) `figure.caption.36', line 33.
 ]
 Package hyperref Info: Anchor `chapter*.5' on input line 166.
 
 pdftex: bookmark at 166: {0} {Lista de Tabelas} {chapter*.5}{0}{toc}
 (C:\Projects\duartec-projects\Mestrado\Registration-Tese\template_Article.lot
-Package hyperref Info: Reference (link) `table.caption.7' on input line 2.
+Package hyperref Info: Reference (link) `table.caption.9' on input line 3.
 
 
-Package xcolor Warning: Incompatible color definition on input line 2.
+Package xcolor Warning: Incompatible color definition on input line 3.
 
-Package hyperref Info: Reference (link) `table.caption.10' on input line 4.
+Package hyperref Info: Reference (link) `table.caption.37' on input line 7.
 
-Package xcolor Warning: Incompatible color definition on input line 4.
-
-Package hyperref Info: Reference (link) `table.caption.11' on input line 5.
-
-Package xcolor Warning: Incompatible color definition on input line 5.
-
-Package hyperref Info: Reference (link) `table.caption.39' on input line 9.
-
-Package xcolor Warning: Incompatible color definition on input line 9.
+Package xcolor Warning: Incompatible color definition on input line 7.
 
 )
 \tf@lot=\write8
 Package hyperref Info: Anchor `page.xiii' on input line 168.
  [13
 
-Package `hyperref' Info: End of reference (link) `table.caption.7', line 2.
-Package `hyperref' Info: End of reference (link) `table.caption.10', line 4.
-Package `hyperref' Info: End of reference (link) `table.caption.11', line 5.
-Package `hyperref' Info: End of reference (link) `table.caption.39', line 9.
+Package `hyperref' Info: End of reference (link) `table.caption.9', line 3.
+Package `hyperref' Info: End of reference (link) `table.caption.37', line 7.
 ]
 Package hyperref Info: Anchor `chapter*.6' on input line 168.
 
@@ -1818,12 +1779,10 @@ oc}
 
 (C:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/acronimos.tex
 Package hyperref Info: Anchor `table.caption.7' on input line 1.
-
-pdftex: bookmark at 3: {1} {\numberline{1}{\ignorespaces Lista de Acr\^onimos\r
-elax }} {table.caption.7}{0}{lot}
 )
 Package hyperref Info: Anchor `page.xiv' on input line 174.
- [14
+
+[14
 
 ]
 Package hyperref Info: Anchor `chapter.1' on input line 177.
@@ -1969,189 +1928,59 @@ Package `hyperref' Info: End of reference (cite) `cite.localfeaturedetector', l
 ine 23.
 Package `hyperref' Info: End of reference (cite) `cite.Well-Known', line 29.
 Package `hyperref' Info: End of reference (cite) `cite.Well-Known', line 29.
-]
-(C:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/variaveiscontorn
-o.tex
+] (C:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/cenario.tex
 Package hyperref Info: Anchor `subsection.1.4.1' on input line 1.
-
-pdftex: bookmark at 1: {1.4.1} {\numberline{1.4.1}Vari\'aveis de contorno} {sub
-section.1.4.1}{2}{toc}
-) (C:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/cenario.tex
-Package hyperref Info: Anchor `subsection.1.4.2' on input line 1.
-
-pdftex: bookmark at 1: {1.4.2} {\numberline{1.4.2}Cen\'ario} {subsection.1.4.2}
+pdftex: bookmark at 1: {1.4.1} {\numberline{1.4.1}Cen\'ario} {subsection.1.4.1}
 {2}{toc}
 Package hyperref Info: Reference (link) `figure.caption.8' on input line 8.
 
 Package xcolor Warning: Incompatible color definition on input line 8.
 
 Package hyperref Info: Anchor `figure.caption.8' on input line 10.
-<images/ERJ190.jpg, id=507, 531.9875pt x 192.72pt>
+<images/ERJ190.jpg, id=493, 531.9875pt x 192.72pt>
 File: images/ERJ190.jpg Graphic file (type jpg)
  <use images/ERJ190.jpg>
 Package pdftex.def Info: images/ERJ190.jpg used on input line 12.
 (pdftex.def)             Requested size: 425.59058pt x 154.1762pt.
 
 pdftex: bookmark at 13: {1.1} {\numberline{1.1}{\ignorespaces Posicionamento da
- LRU\relax }} {figure.caption.8}{0}{lof}
+ janela de inspe\c c\~ao. Fonte http://www.aero-news.net/\relax }} {figure.capt
+ion.8}{0}{lof}
+)
+(C:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/variaveiscontorn
+o.tex
+Package hyperref Info: Anchor `subsection.1.4.2' on input line 1.
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+pdftex: bookmark at 1: {1.4.2} {\numberline{1.4.2}Vari\'aveis de contorno} {sub
+section.1.4.2}{2}{toc}
+Package hyperref Info: Anchor `page.18' on input line 6.
+[18
+Package `hyperref' Info: End of reference (link) `figure.caption.8', line 8.
+ <C:/Projects/duartec-projects/Mestrado/Registration-Tese/images/ERJ190.jpg>]))
 
-))
 (C:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/recursosemetodos
 .tex
-Package hyperref Info: Anchor `page.18' on input line 1.
- [18
-Package `hyperref' Info: End of reference (link) `figure.caption.8', line 8.
-]
 Package hyperref Info: Anchor `section.1.5' on input line 1.
 
 pdftex: bookmark at 1: {1.5} {\numberline{1.5}Recursos e M\'etodos} {section.1.
 5}{1}{toc}
-Package hyperref Info: Reference (cite) `cite.MetodologiaCientifica' on input l
-ine 8.
+Package hyperref Info: Reference (link) `table.caption.9' on input line 8.
 
 Package xcolor Warning: Incompatible color definition on input line 8.
 
-Package hyperref Info: Reference (cite) `cite.MetodologiaCientifica' on input l
-ine 8.
+Package hyperref Info: Anchor `table.caption.9' on input line 12.
+pdftex: bookmark at 14: {1.1} {\numberline{1.1}{\ignorespaces Resumo de Recurso
+s e M\'etodos\relax }} {table.caption.9}{0}{lot}
 
-Package xcolor Warning: Incompatible color definition on input line 8.
-
-Package hyperref Info: Reference (link) `figure.caption.9' on input line 18.
-
-Package xcolor Warning: Incompatible color definition on input line 18.
-
-Package hyperref Info: Reference (cite) `cite.MetodologiaCientifica' on input l
-ine 19.
-
-Package xcolor Warning: Incompatible color definition on input line 19.
-
-Package hyperref Info: Reference (cite) `cite.MetodologiaCientifica' on input l
-ine 19.
-
-Package xcolor Warning: Incompatible color definition on input line 19.
-
-Package hyperref Info: Anchor `figure.caption.9' on input line 22.
-<images/tiposdepesquisa.jpg, id=517, 982.67125pt x 552.0625pt>
-File: images/tiposdepesquisa.jpg Graphic file (type jpg)
-
-<use images/tiposdepesquisa.jpg>
-Package pdftex.def Info: images/tiposdepesquisa.jpg used on input line 24.
-(pdftex.def)             Requested size: 491.33443pt x 276.03056pt.
-
-Overfull \hbox (36.09032pt too wide) in paragraph at lines 24--26
- [][][] 
- []
-
-pdftex: bookmark at 26: {1.2} {\numberline{1.2}{\ignorespaces Categorias de pes
-quisas cient\IeC {\'\i }ficas. Fonte \cite {MetodologiaCientifica} \relax }} {f
-igure.caption.9}{0}{lof}
-Package hyperref Info: Reference (cite) `cite.MetodologiaCientifica' on input l
-ine 26.
-
-Package xcolor Warning: Incompatible color definition on input line 26.
-
-Package hyperref Info: Reference (cite) `cite.MetodologiaCientifica' on input l
-ine 26.
-
-Package xcolor Warning: Incompatible color definition on input line 26.
-
-Package hyperref Info: Reference (cite) `cite.MetodologiaCientifica' on input l
-ine 26.
-
-Package xcolor Warning: Incompatible color definition on input line 26.
-
-Package hyperref Info: Reference (cite) `cite.MetodologiaCientifica' on input l
-ine 26.
-
-Package xcolor Warning: Incompatible color definition on input line 26.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package hyperref Info: Reference (link) `table.caption.10' on input line 31.
-
-Package xcolor Warning: Incompatible color definition on input line 31.
-
-Package hyperref Info: Anchor `table.caption.10' on input line 38.
-pdftex: bookmark at 40: {1.1} {\numberline{1.1}{\ignorespaces Classifica\c c\~a
-o da pesquisa\relax }} {table.caption.10}{0}{lot}
-Package hyperref Info: Anchor `page.19' on input line 57.
-[19
-Package `hyperref' Info: End of reference (cite) `cite.MetodologiaCientifica', 
-line 8.
-Package `hyperref' Info: End of reference (cite) `cite.MetodologiaCientifica', 
-line 8.
-Package `hyperref' Info: End of reference (link) `figure.caption.9', line 18.
-Package `hyperref' Info: End of reference (cite) `cite.MetodologiaCientifica', 
-line 19.
-Package `hyperref' Info: End of reference (cite) `cite.MetodologiaCientifica', 
-line 19.
-Package `hyperref' Info: End of reference (link) `table.caption.10', line 31.
- <C:/Projects/duartec-projects/Mestrado/Registration-Tese/images/ERJ190.jpg>]
-Package hyperref Info: Anchor `Item.1' on input line 60.
-Package hyperref Info: Reference (cite) `cite.MetodologiaCientifica' on input l
-ine 62.
-
-
-Package xcolor Warning: Incompatible color definition on input line 62.
-
-Package hyperref Info: Reference (cite) `cite.MetodologiaCientifica' on input l
-ine 62.
-
-Package xcolor Warning: Incompatible color definition on input line 62.
-
-Package hyperref Info: Anchor `Item.2' on input line 68.
-Package hyperref Info: Anchor `page.20' on input line 77.
-[20
-Package `hyperref' Info: End of reference (cite) `cite.MetodologiaCientifica', 
-line 26.
-Package `hyperref' Info: End of reference (cite) `cite.MetodologiaCientifica', 
-line 26.
-Package `hyperref' Info: End of reference (cite) `cite.MetodologiaCientifica', 
-line 62.
-Package `hyperref' Info: End of reference (cite) `cite.MetodologiaCientifica', 
-line 62.
- <C:/Projects/duartec-projects/Mestrado/Registration-Tese/images/tiposdepesquis
-a.jpg>]
-Package hyperref Info: Anchor `Item.3' on input line 78.
-Package hyperref Info: Reference (cite) `cite.ElaborarPesquisa' on input line 8
-4.
-
-
-Package xcolor Warning: Incompatible color definition on input line 84.
-
-Package hyperref Info: Reference (cite) `cite.ElaborarPesquisa' on input line 8
-4.
-
-Package xcolor Warning: Incompatible color definition on input line 84.
-
-Package hyperref Info: Anchor `Item.4' on input line 87.
-Package hyperref Info: Reference (link) `table.caption.11' on input line 110.
-
-Package xcolor Warning: Incompatible color definition on input line 110.
-
-Package hyperref Info: Anchor `table.caption.11' on input line 112.
-pdftex: bookmark at 114: {1.2} {\numberline{1.2}{\ignorespaces Resumo de Recurs
-os e M\'etodos\relax }} {table.caption.11}{0}{lot}
-
-Underfull \hbox (badness 10000) in paragraph at lines 129--129
+Underfull \hbox (badness 10000) in paragraph at lines 29--29
 []|[]\T1/aer/m/n/12 Selecionar al-go-ritmo mais
  []
 
-Package hyperref Info: Anchor `page.21' on input line 134.
-[21
-Package `hyperref' Info: End of reference (cite) `cite.ElaborarPesquisa', line 
-84.
-Package `hyperref' Info: End of reference (cite) `cite.ElaborarPesquisa', line 
-84.
-Package `hyperref' Info: End of reference (link) `table.caption.11', line 110.
-])
-(C:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/estrutura.tex
+) (C:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/estrutura.tex
 Package hyperref Info: Anchor `section.1.6' on input line 1.
 
-pdftex: bookmark at 1: {1.6} {\numberline{1.6}Estrutura} {section.1.6}{1}{toc}
+pdftex: bookmark at 1: {1.6} {\numberline{1.6}Estrutura do Texto} {section.1.6}
+{1}{toc}
 Package hyperref Info: Reference (link) `chapter.1' on input line 5.
 
 Package xcolor Warning: Incompatible color definition on input line 5.
@@ -2160,7 +1989,13 @@ Package hyperref Info: Reference (link) `chapter.2' on input line 11.
 
 Package xcolor Warning: Incompatible color definition on input line 11.
 
+Package hyperref Info: Anchor `page.19' on input line 14.
+[19
+Package `hyperref' Info: End of reference (link) `table.caption.9', line 8.
+Package `hyperref' Info: End of reference (link) `chapter.1', line 5.
+]
 Package hyperref Info: Reference (link) `chapter.3' on input line 15.
+
 
 Package xcolor Warning: Incompatible color definition on input line 15.
 
@@ -2173,9 +2008,8 @@ Package hyperref Info: Reference (link) `chapter.5' on input line 22.
 Package xcolor Warning: Incompatible color definition on input line 22.
 
 )
-Package hyperref Info: Anchor `page.22' on input line 186.
- [22
-Package `hyperref' Info: End of reference (link) `chapter.1', line 5.
+Package hyperref Info: Anchor `page.20' on input line 186.
+ [20
 Package `hyperref' Info: End of reference (link) `chapter.2', line 11.
 Package `hyperref' Info: End of reference (link) `chapter.3', line 15.
 Package `hyperref' Info: End of reference (link) `chapter.4', line 18.
@@ -2195,94 +2029,94 @@ Package hyperref Info: Anchor `section.2.1' on input line 1.
 
 pdftex: bookmark at 1: {2.1} {\numberline{2.1}Realidade Virtual} {section.2.1}{
 1}{toc}
-Package hyperref Info: Reference (link) `figure.caption.12' on input line 7.
+Package hyperref Info: Reference (link) `figure.caption.10' on input line 7.
 
 Package xcolor Warning: Incompatible color definition on input line 7.
 
 Package hyperref Info: Reference (cite) `cite.realidadevirtual' on input line 1
-1.
+0.
 
-Package xcolor Warning: Incompatible color definition on input line 11.
+Package xcolor Warning: Incompatible color definition on input line 10.
 
 Package hyperref Info: Reference (cite) `cite.realidadevirtual' on input line 1
-1.
+0.
 
-Package xcolor Warning: Incompatible color definition on input line 11.
+Package xcolor Warning: Incompatible color definition on input line 10.
 
-Package hyperref Info: Anchor `figure.caption.12' on input line 13.
-<images/realidade-virtual.jpg, id=561, 752.8125pt x 501.875pt>
+Package hyperref Info: Anchor `figure.caption.10' on input line 12.
+<images/realidade-virtual.jpg, id=516, 752.8125pt x 501.875pt>
 File: images/realidade-virtual.jpg Graphic file (type jpg)
 
 <use images/realidade-virtual.jpg>
-Package pdftex.def Info: images/realidade-virtual.jpg used on input line 15.
+Package pdftex.def Info: images/realidade-virtual.jpg used on input line 14.
 (pdftex.def)             Requested size: 376.40532pt x 250.93687pt.
 
-pdftex: bookmark at 16: {2.1} {\numberline{2.1}{\ignorespaces Aplica\c c\~ao de
- realidade virtual. Fonte\cite {realidadevirtual}\relax }} {figure.caption.12}{
+pdftex: bookmark at 15: {2.1} {\numberline{2.1}{\ignorespaces Aplica\c c\~ao de
+ realidade virtual. Fonte\cite {realidadevirtual}\relax }} {figure.caption.10}{
 0}{lof}
 Package hyperref Info: Reference (cite) `cite.realidadevirtual' on input line 1
-6.
+5.
 
-Package xcolor Warning: Incompatible color definition on input line 16.
-
-Package hyperref Info: Reference (cite) `cite.realidadevirtual' on input line 1
-6.
-
-Package xcolor Warning: Incompatible color definition on input line 16.
+Package xcolor Warning: Incompatible color definition on input line 15.
 
 Package hyperref Info: Reference (cite) `cite.realidadevirtual' on input line 1
-6.
+5.
 
-Package xcolor Warning: Incompatible color definition on input line 16.
+Package xcolor Warning: Incompatible color definition on input line 15.
 
 Package hyperref Info: Reference (cite) `cite.realidadevirtual' on input line 1
-6.
+5.
 
-Package xcolor Warning: Incompatible color definition on input line 16.
+Package xcolor Warning: Incompatible color definition on input line 15.
+
+Package hyperref Info: Reference (cite) `cite.realidadevirtual' on input line 1
+5.
+
+Package xcolor Warning: Incompatible color definition on input line 15.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-Package hyperref Info: Anchor `page.23' on input line 21.
-[23
+Package hyperref Info: Anchor `page.21' on input line 20.
+[21
 
-Package `hyperref' Info: End of reference (link) `figure.caption.12', line 7.
+Package `hyperref' Info: End of reference (link) `figure.caption.10', line 7.
 Package `hyperref' Info: End of reference (cite) `cite.realidadevirtual', line 
-11.
+10.
 Package `hyperref' Info: End of reference (cite) `cite.realidadevirtual', line 
-11.
+10.
 ]
-Package hyperref Info: Anchor `section.2.2' on input line 21.
+Package hyperref Info: Anchor `section.2.2' on input line 20.
 
-pdftex: bookmark at 21: {2.2} {\numberline{2.2}Realidade Aumentada} {section.2.
+pdftex: bookmark at 20: {2.2} {\numberline{2.2}Realidade Aumentada} {section.2.
 2}{1}{toc}
-Package hyperref Info: Reference (cite) `cite.SurveyAR' on input line 25.
+Package hyperref Info: Reference (cite) `cite.SurveyAR' on input line 24.
 
-Package xcolor Warning: Incompatible color definition on input line 25.
+Package xcolor Warning: Incompatible color definition on input line 24.
 
-Package hyperref Info: Reference (cite) `cite.SurveyAR' on input line 25.
+Package hyperref Info: Reference (cite) `cite.SurveyAR' on input line 24.
 
-Package xcolor Warning: Incompatible color definition on input line 25.
+Package xcolor Warning: Incompatible color definition on input line 24.
 
-Package hyperref Info: Reference (link) `figure.caption.13' on input line 35.
+Package hyperref Info: Reference (link) `figure.caption.11' on input line 35.
 
 Package xcolor Warning: Incompatible color definition on input line 35.
 
-Package hyperref Info: Anchor `page.24' on input line 41.
-[24
+Package hyperref Info: Anchor `page.22' on input line 41.
+[22
 Package `hyperref' Info: End of reference (cite) `cite.realidadevirtual', line 
-16.
+15.
 Package `hyperref' Info: End of reference (cite) `cite.realidadevirtual', line 
-16.
-Package `hyperref' Info: End of reference (cite) `cite.SurveyAR', line 25.
-Package `hyperref' Info: End of reference (cite) `cite.SurveyAR', line 25.
-Package `hyperref' Info: End of reference (link) `figure.caption.13', line 35.
+15.
+Package `hyperref' Info: End of reference (cite) `cite.SurveyAR', line 24.
+Package `hyperref' Info: End of reference (cite) `cite.SurveyAR', line 24.
+Package `hyperref' Info: End of reference (link) `figure.caption.11', line 35.
  <C:/Projects/duartec-projects/Mestrado/Registration-Tese/images/realidade-virt
 ual.jpg>]
-Package hyperref Info: Anchor `figure.caption.13' on input line 53.
+Package hyperref Info: Anchor `figure.caption.11' on input line 53.
 
-pdftex: bookmark at 82: {2.2} {\numberline{2.2}{\ignorespaces Processo Can\^oni
-co de Realidade Aumentada\relax }} {figure.caption.13}{0}{lof}
+pdftex: bookmark at 82: {2.2} {\numberline{2.2}{\ignorespaces Processo de Reali
+dade Aumentada\relax }} {figure.caption.11}{0}{lof}
 )
 (C:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/basicos/reconhec
 imento.tex
@@ -2300,8 +2134,8 @@ ne 4.
 
 Package xcolor Warning: Incompatible color definition on input line 4.
 
-Package hyperref Info: Anchor `figure.caption.14' on input line 7.
-<images/reconhecimento.jpg, id=580, 402.50375pt x 334.24875pt>
+Package hyperref Info: Anchor `figure.caption.12' on input line 7.
+<images/reconhecimento.jpg, id=535, 402.50375pt x 334.24875pt>
 File: images/reconhecimento.jpg Graphic file (type jpg)
 
 <use images/reconhecimento.jpg>
@@ -2310,7 +2144,7 @@ Package pdftex.def Info: images/reconhecimento.jpg used on input line 9.
 
 pdftex: bookmark at 12: {2.3} {\numberline{2.3}{\ignorespaces Ilustra\c c\~ao d
 o procedimento de reconhecimento com caracter\IeC {\'\i }sticas locais. Fonte \
-cite {localfeaturedetector}\relax }} {figure.caption.14}{0}{lof}
+cite {localfeaturedetector}\relax }} {figure.caption.12}{0}{lof}
 Package hyperref Info: Reference (cite) `cite.localfeaturedetector' on input li
 ne 12.
 
@@ -2331,19 +2165,27 @@ ne 12.
 
 Package xcolor Warning: Incompatible color definition on input line 12.
 
-Package hyperref Info: Anchor `page.25' on input line 15.
-[25
+Package hyperref Info: Anchor `page.23' on input line 15.
+[23
 Package `hyperref' Info: End of reference (cite) `cite.localfeaturedetector', l
 ine 4.
 Package `hyperref' Info: End of reference (cite) `cite.localfeaturedetector', l
 ine 4.
 ]
-Package hyperref Info: Reference (link) `figure.caption.14' on input line 20.
+Package hyperref Info: Reference (link) `figure.caption.12' on input line 20.
 
 
 Package xcolor Warning: Incompatible color definition on input line 20.
 
-
+Package hyperref Info: Anchor `page.24' on input line 46.
+[24
+Package `hyperref' Info: End of reference (cite) `cite.localfeaturedetector', l
+ine 12.
+Package `hyperref' Info: End of reference (cite) `cite.localfeaturedetector', l
+ine 12.
+Package `hyperref' Info: End of reference (link) `figure.caption.12', line 20.
+ <C:/Projects/duartec-projects/Mestrado/Registration-Tese/images/reconhecimento
+.jpg>]
 (C:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/basicos/caracter
 isticaslocais.tex
 Package hyperref Info: Anchor `section.2.4' on input line 1.
@@ -2353,29 +2195,19 @@ pdftex: bookmark at 1: {2.4} {\numberline{2.4}Caracter\IeC {\'\i }sticas Locais
 Package hyperref Info: Anchor `subsection.2.4.1' on input line 5.
 pdftex: bookmark at 5: {2.4.1} {\numberline{2.4.1}Caracter\IeC {\'\i }sticas} {
 subsection.2.4.1}{2}{toc}
-Package hyperref Info: Reference (link) `figure.caption.15' on input line 11.
+Package hyperref Info: Reference (link) `figure.caption.13' on input line 11.
 
 Package xcolor Warning: Incompatible color definition on input line 11.
 
-Package hyperref Info: Anchor `page.26' on input line 14.
-[26
-Package `hyperref' Info: End of reference (cite) `cite.localfeaturedetector', l
-ine 12.
-Package `hyperref' Info: End of reference (cite) `cite.localfeaturedetector', l
-ine 12.
-Package `hyperref' Info: End of reference (link) `figure.caption.14', line 20.
- <C:/Projects/duartec-projects/Mestrado/Registration-Tese/images/reconhecimento
-.jpg>]
-Package hyperref Info: Anchor `figure.caption.15' on input line 15.
- <images/features.jpg, id=596, 451.6875pt x 401.5pt>
+Package hyperref Info: Anchor `figure.caption.13' on input line 15.
+<images/features.jpg, id=551, 451.6875pt x 401.5pt>
 File: images/features.jpg Graphic file (type jpg)
-
-<use images/features.jpg>
+ <use images/features.jpg>
 Package pdftex.def Info: images/features.jpg used on input line 17.
 (pdftex.def)             Requested size: 451.68639pt x 401.49901pt.
 
 pdftex: bookmark at 18: {2.4} {\numberline{2.4}{\ignorespaces Reconhecimento de
- padr\~oes. Fonte \cite {understandingfeatures}\relax }} {figure.caption.15}{0}
+ padr\~oes. Fonte \cite {understandingfeatures}\relax }} {figure.caption.13}{0}
 {lof}
 Package hyperref Info: Reference (cite) `cite.understandingfeatures' on input l
 ine 18.
@@ -2397,16 +2229,12 @@ ine 18.
 
 Package xcolor Warning: Incompatible color definition on input line 18.
 
-Package hyperref Info: Anchor `page.27' on input line 23.
-[27
-Package `hyperref' Info: End of reference (link) `figure.caption.15', line 11.
-Package `hyperref' Info: End of reference (cite) `cite.understandingfeatures', 
-line 18.
-Package `hyperref' Info: End of reference (cite) `cite.understandingfeatures', 
-line 18.
- <C:/Projects/duartec-projects/Mestrado/Registration-Tese/images/features.jpg>]
-Package hyperref Info: Anchor `figure.caption.16' on input line 24.
- <images/featuresregioes.jpg, id=605, 238.64156pt x 202.50656pt>
+Package hyperref Info: Anchor `page.25' on input line 21.
+[25
+Package `hyperref' Info: End of reference (link) `figure.caption.13', line 11.
+]
+Package hyperref Info: Anchor `figure.caption.14' on input line 24.
+ <images/featuresregioes.jpg, id=561, 238.64156pt x 202.50656pt>
 File: images/featuresregioes.jpg Graphic file (type jpg)
 
 <use images/featuresregioes.jpg>
@@ -2415,7 +2243,7 @@ Package pdftex.def Info: images/featuresregioes.jpg used on input line 26.
 
 pdftex: bookmark at 28: {2.5} {\numberline{2.5}{\ignorespaces Regi\~oes de reco
 nhecimento de padr\~oes. Fonte \cite {understandingfeatures}\relax }} {figure.c
-aption.16}{0}{lof}
+aption.14}{0}{lof}
 Package hyperref Info: Reference (cite) `cite.understandingfeatures' on input l
 ine 28.
 
@@ -2436,11 +2264,19 @@ ine 28.
 
 Package xcolor Warning: Incompatible color definition on input line 28.
 
-Package hyperref Info: Reference (link) `figure.caption.16' on input line 32.
+Package hyperref Info: Anchor `page.26' on input line 31.
+[26
+Package `hyperref' Info: End of reference (cite) `cite.understandingfeatures', 
+line 18.
+Package `hyperref' Info: End of reference (cite) `cite.understandingfeatures', 
+line 18.
+ <C:/Projects/duartec-projects/Mestrado/Registration-Tese/images/features.jpg>]
+Package hyperref Info: Reference (link) `figure.caption.14' on input line 32.
+
 
 Package xcolor Warning: Incompatible color definition on input line 32.
 
-Package hyperref Info: Reference (link) `figure.caption.15' on input line 40.
+Package hyperref Info: Reference (link) `figure.caption.13' on input line 40.
 
 Package xcolor Warning: Incompatible color definition on input line 40.
 
@@ -2457,49 +2293,48 @@ ne 54.
 
 Package xcolor Warning: Incompatible color definition on input line 54.
 
-Package hyperref Info: Anchor `page.28' on input line 56.
-[28
+Package hyperref Info: Anchor `page.27' on input line 61.
+[27
 Package `hyperref' Info: End of reference (cite) `cite.understandingfeatures', 
 line 28.
 Package `hyperref' Info: End of reference (cite) `cite.understandingfeatures', 
 line 28.
-Package `hyperref' Info: End of reference (link) `figure.caption.16', line 32.
-Package `hyperref' Info: End of reference (link) `figure.caption.15', line 40.
+Package `hyperref' Info: End of reference (link) `figure.caption.14', line 32.
+Package `hyperref' Info: End of reference (link) `figure.caption.13', line 40.
+Package `hyperref' Info: End of reference (cite) `cite.localfeaturedetector', l
+ine 54.
+Package `hyperref' Info: End of reference (cite) `cite.localfeaturedetector', l
+ine 54.
  <C:/Projects/duartec-projects/Mestrado/Registration-Tese/images/featuresregioe
 s.jpg>])
-Package hyperref Info: Anchor `subsection.2.4.3' on input line 33.
+Package hyperref Info: Anchor `subsection.2.4.3' on input line 55.
 
-pdftex: bookmark at 33: {2.4.3} {\numberline{2.4.3}Detec\c c\~ao de caracter\Ie
+pdftex: bookmark at 55: {2.4.3} {\numberline{2.4.3}Detec\c c\~ao de caracter\Ie
 C {\'\i }sticas} {subsection.2.4.3}{2}{toc}
-Package hyperref Info: Anchor `subsection.2.4.4' on input line 45.
-pdftex: bookmark at 45: {2.4.4} {\numberline{2.4.4}Correspond\^encia de caracte
+Package hyperref Info: Anchor `subsection.2.4.4' on input line 70.
+pdftex: bookmark at 70: {2.4.4} {\numberline{2.4.4}Correspond\^encia de caracte
 r\IeC {\'\i }sticas} {subsection.2.4.4}{2}{toc}
-Package hyperref Info: Anchor `page.29' on input line 56.
-[29
-Package `hyperref' Info: End of reference (cite) `cite.localfeaturedetector', l
-ine 54.
-Package `hyperref' Info: End of reference (cite) `cite.localfeaturedetector', l
-ine 54.
-]
-Package hyperref Info: Anchor `section.2.5' on input line 57.
+Package hyperref Info: Anchor `page.28' on input line 81.
+[28]
+Package hyperref Info: Anchor `section.2.5' on input line 82.
 
-pdftex: bookmark at 57: {2.5} {\numberline{2.5}Imagem Integral} {section.2.5}{1
+pdftex: bookmark at 82: {2.5} {\numberline{2.5}Imagem Integral} {section.2.5}{1
 }{toc}
-Package hyperref Info: Reference (cite) `cite.integralimage' on input line 59.
+Package hyperref Info: Reference (cite) `cite.integralimage' on input line 84.
 
-Package xcolor Warning: Incompatible color definition on input line 59.
+Package xcolor Warning: Incompatible color definition on input line 84.
 
-Package hyperref Info: Reference (cite) `cite.integralimage' on input line 59.
+Package hyperref Info: Reference (cite) `cite.integralimage' on input line 84.
 
-Package xcolor Warning: Incompatible color definition on input line 59.
+Package xcolor Warning: Incompatible color definition on input line 84.
 
-Package hyperref Info: Reference (link) `equation.2.5.1' on input line 62.
+Package hyperref Info: Reference (link) `equation.2.5.1' on input line 87.
 
-Package xcolor Warning: Incompatible color definition on input line 62.
+Package xcolor Warning: Incompatible color definition on input line 87.
 
-Package hyperref Info: Anchor `equation.2.5.1' on input line 64.
+Package hyperref Info: Anchor `equation.2.5.1' on input line 89.
 ! Undefined control sequence.
-l.65  I_{\sum (x,y) }= \sum_{i=0}^{i\leqslant
+l.90  I_{\sum (x,y) }= \sum_{i=0}^{i\leqslant
                                               x}\sum_{j=0}^{j\leqslant y}I(x,y)
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2508,7 +2343,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.65 ...{i=0}^{i\leqslant x}\sum_{j=0}^{j\leqslant
+l.90 ...{i=0}^{i\leqslant x}\sum_{j=0}^{j\leqslant
                                                    y}I(x,y)
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2516,50 +2351,54 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-Package hyperref Info: Reference (link) `figure.caption.17' on input line 71.
+Package hyperref Info: Reference (link) `figure.caption.15' on input line 96.
 
-Package xcolor Warning: Incompatible color definition on input line 71.
+Package xcolor Warning: Incompatible color definition on input line 96.
 
-Package hyperref Info: Reference (link) `equation.2.5.2' on input line 72.
+Package hyperref Info: Reference (link) `equation.2.5.2' on input line 97.
 
-Package xcolor Warning: Incompatible color definition on input line 72.
+Package xcolor Warning: Incompatible color definition on input line 97.
 
-Package hyperref Info: Anchor `equation.2.5.2' on input line 74.
-Package hyperref Info: Anchor `figure.caption.17' on input line 81.
-<images/integralimage.jpg, id=628, 453.695pt x 304.13625pt>
+Package hyperref Info: Anchor `equation.2.5.2' on input line 99.
+Package hyperref Info: Anchor `figure.caption.15' on input line 106.
+<images/integralimage.jpg, id=587, 453.695pt x 304.13625pt>
 File: images/integralimage.jpg Graphic file (type jpg)
 
 <use images/integralimage.jpg>
-Package pdftex.def Info: images/integralimage.jpg used on input line 83.
+Package pdftex.def Info: images/integralimage.jpg used on input line 108.
 (pdftex.def)             Requested size: 272.2191pt x 182.48315pt.
 
-pdftex: bookmark at 84: {2.6} {\numberline{2.6}{\ignorespaces Regi\~ao da image
-m integral. Fonte \cite {integralimage} \relax }} {figure.caption.17}{0}{lof}
-Package hyperref Info: Reference (cite) `cite.integralimage' on input line 84.
+pdftex: bookmark at 109: {2.6} {\numberline{2.6}{\ignorespaces Regi\~ao da imag
+em integral. Fonte \cite {integralimage} \relax }} {figure.caption.15}{0}{lof}
+Package hyperref Info: Reference (cite) `cite.integralimage' on input line 109.
 
-Package xcolor Warning: Incompatible color definition on input line 84.
 
-Package hyperref Info: Reference (cite) `cite.integralimage' on input line 84.
+Package xcolor Warning: Incompatible color definition on input line 109.
 
-Package xcolor Warning: Incompatible color definition on input line 84.
+Package hyperref Info: Reference (cite) `cite.integralimage' on input line 109.
 
-Package hyperref Info: Reference (cite) `cite.integralimage' on input line 84.
 
-Package xcolor Warning: Incompatible color definition on input line 84.
+Package xcolor Warning: Incompatible color definition on input line 109.
 
-Package hyperref Info: Reference (cite) `cite.integralimage' on input line 84.
+Package hyperref Info: Reference (cite) `cite.integralimage' on input line 109.
 
-Package xcolor Warning: Incompatible color definition on input line 84.
 
-Package hyperref Info: Anchor `page.30' on input line 87.
-[30
-Package `hyperref' Info: End of reference (cite) `cite.integralimage', line 59.
+Package xcolor Warning: Incompatible color definition on input line 109.
 
-Package `hyperref' Info: End of reference (cite) `cite.integralimage', line 59.
+Package hyperref Info: Reference (cite) `cite.integralimage' on input line 109.
 
-Package `hyperref' Info: End of reference (link) `equation.2.5.1', line 62.
-Package `hyperref' Info: End of reference (link) `figure.caption.17', line 71.
-Package `hyperref' Info: End of reference (link) `equation.2.5.2', line 72.
+
+Package xcolor Warning: Incompatible color definition on input line 109.
+
+Package hyperref Info: Anchor `page.29' on input line 112.
+[29
+Package `hyperref' Info: End of reference (cite) `cite.integralimage', line 84.
+
+Package `hyperref' Info: End of reference (cite) `cite.integralimage', line 84.
+
+Package `hyperref' Info: End of reference (link) `equation.2.5.1', line 87.
+Package `hyperref' Info: End of reference (link) `figure.caption.15', line 96.
+Package `hyperref' Info: End of reference (link) `equation.2.5.2', line 97.
 ]
 (C:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/algoritmos/algor
 itmos.tex
@@ -2567,6 +2406,11 @@ Package hyperref Info: Anchor `section.2.6' on input line 1.
 
 pdftex: bookmark at 1: {2.6} {\numberline{2.6}Algoritmos de Reconhecimento} {se
 ction.2.6}{1}{toc}
+Package hyperref Info: Reference (link) `subsubsection.3.2.1.3' on input line 9
+.
+
+Package xcolor Warning: Incompatible color definition on input line 9.
+
 
 (C:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/algoritmos/fast.
 tex
@@ -2598,15 +2442,15 @@ Package hyperref Info: Reference (cite) `cite.VideoAnotation' on input line 8.
 
 Package xcolor Warning: Incompatible color definition on input line 8.
 
-Package hyperref Info: Anchor `figure.caption.18' on input line 12.
-<images/fast01.jpg, id=650, 338.01282pt x 166.37157pt>
+Package hyperref Info: Anchor `figure.caption.16' on input line 12.
+<images/fast01.jpg, id=610, 338.01282pt x 166.37157pt>
 File: images/fast01.jpg Graphic file (type jpg)
  <use images/fast01.jpg>
 Package pdftex.def Info: images/fast01.jpg used on input line 14.
 (pdftex.def)             Requested size: 270.41061pt x 133.09741pt.
 
 pdftex: bookmark at 15: {2.7} {\numberline{2.7}{\ignorespaces Detector FAST. Fo
-nte \cite {FAST} \relax }} {figure.caption.18}{0}{lof}
+nte \cite {FAST} \relax }} {figure.caption.16}{0}{lof}
 Package hyperref Info: Reference (cite) `cite.FAST' on input line 15.
 
 Package xcolor Warning: Incompatible color definition on input line 15.
@@ -2623,12 +2467,14 @@ Package hyperref Info: Reference (cite) `cite.FAST' on input line 15.
 
 Package xcolor Warning: Incompatible color definition on input line 15.
 
-Package hyperref Info: Anchor `page.31' on input line 18.
-[31
-Package `hyperref' Info: End of reference (cite) `cite.integralimage', line 84.
-
-Package `hyperref' Info: End of reference (cite) `cite.integralimage', line 84.
-
+Package hyperref Info: Anchor `page.30' on input line 18.
+[30
+Package `hyperref' Info: End of reference (cite) `cite.integralimage', line 109
+.
+Package `hyperref' Info: End of reference (cite) `cite.integralimage', line 109
+.
+Package `hyperref' Info: End of reference (link) `subsubsection.3.2.1.3', line 
+9.
 Package `hyperref' Info: End of reference (cite) `cite.FAST', line 6.
 Package `hyperref' Info: End of reference (cite) `cite.FAST', line 6.
 Package `hyperref' Info: End of reference (cite) `cite.FusingPoints', line 8.
@@ -2639,15 +2485,15 @@ Package `hyperref' Info: End of reference (cite) `cite.VideoAnotation', line 8.
 
  <C:/Projects/duartec-projects/Mestrado/Registration-Tese/images/integralimage.
 jpg>]
-Package hyperref Info: Reference (link) `figure.caption.18' on input line 20.
+Package hyperref Info: Reference (link) `figure.caption.16' on input line 20.
 
 
 Package xcolor Warning: Incompatible color definition on input line 20.
 
-Package hyperref Info: Anchor `Item.5' on input line 22.
-Package hyperref Info: Anchor `Item.6' on input line 24.
-Package hyperref Info: Anchor `Item.7' on input line 26.
-Package hyperref Info: Anchor `Item.8' on input line 28.
+Package hyperref Info: Anchor `Item.1' on input line 22.
+Package hyperref Info: Anchor `Item.2' on input line 24.
+Package hyperref Info: Anchor `Item.3' on input line 26.
+Package hyperref Info: Anchor `Item.4' on input line 28.
 )
 (C:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/algoritmos/brisk
 .tex
@@ -2663,16 +2509,16 @@ Package hyperref Info: Reference (cite) `cite.BRISK' on input line 3.
 
 Package xcolor Warning: Incompatible color definition on input line 3.
 
-Package hyperref Info: Anchor `page.32' on input line 18.
-[32
+Package hyperref Info: Anchor `page.31' on input line 18.
+[31
 Package `hyperref' Info: End of reference (cite) `cite.FAST', line 15.
 Package `hyperref' Info: End of reference (cite) `cite.FAST', line 15.
-Package `hyperref' Info: End of reference (link) `figure.caption.18', line 20.
+Package `hyperref' Info: End of reference (link) `figure.caption.16', line 20.
 Package `hyperref' Info: End of reference (cite) `cite.BRISK', line 3.
 Package `hyperref' Info: End of reference (cite) `cite.BRISK', line 3.
  <C:/Projects/duartec-projects/Mestrado/Registration-Tese/images/fast01.jpg>]
-Package hyperref Info: Anchor `figure.caption.19' on input line 25.
- <images/brisk-descriptor.jpg, id=674, 389.455pt x 391.4625pt>
+Package hyperref Info: Anchor `figure.caption.17' on input line 25.
+ <images/brisk-descriptor.jpg, id=635, 389.455pt x 391.4625pt>
 File: images/brisk-descriptor.jpg Graphic file (type jpg)
 
 <use images/brisk-descriptor.jpg>
@@ -2680,7 +2526,7 @@ Package pdftex.def Info: images/brisk-descriptor.jpg used on input line 27.
 (pdftex.def)             Requested size: 311.5644pt x 313.17041pt.
 
 pdftex: bookmark at 28: {2.8} {\numberline{2.8}{\ignorespaces Padr\~ao de amost
-ras no BRISK. Fonte \cite {BRISK}\relax }} {figure.caption.19}{0}{lof}
+ras no BRISK. Fonte \cite {BRISK}\relax }} {figure.caption.17}{0}{lof}
 Package hyperref Info: Reference (cite) `cite.BRISK' on input line 28.
 
 Package xcolor Warning: Incompatible color definition on input line 28.
@@ -2697,11 +2543,11 @@ Package hyperref Info: Reference (cite) `cite.BRISK' on input line 28.
 
 Package xcolor Warning: Incompatible color definition on input line 28.
 
-Package hyperref Info: Reference (link) `figure.caption.19' on input line 33.
+Package hyperref Info: Reference (link) `figure.caption.17' on input line 33.
 
 Package xcolor Warning: Incompatible color definition on input line 33.
 
-Package hyperref Info: Reference (link) `figure.caption.19' on input line 35.
+Package hyperref Info: Reference (link) `figure.caption.17' on input line 35.
 
 Package xcolor Warning: Incompatible color definition on input line 35.
 
@@ -2720,21 +2566,21 @@ Package hyperref Info: Reference (cite) `cite.FREAK' on input line 3.
 
 Package xcolor Warning: Incompatible color definition on input line 3.
 
-Package hyperref Info: Anchor `page.33' on input line 5.
-[33
+Package hyperref Info: Anchor `page.32' on input line 5.
+[32
 Package `hyperref' Info: End of reference (cite) `cite.BRISK', line 28.
 Package `hyperref' Info: End of reference (cite) `cite.BRISK', line 28.
-Package `hyperref' Info: End of reference (link) `figure.caption.19', line 33.
-Package `hyperref' Info: End of reference (link) `figure.caption.19', line 35.
+Package `hyperref' Info: End of reference (link) `figure.caption.17', line 33.
+Package `hyperref' Info: End of reference (link) `figure.caption.17', line 35.
  <C:/Projects/duartec-projects/Mestrado/Registration-Tese/images/brisk-descript
 or.jpg>]
-Package hyperref Info: Reference (link) `figure.caption.20' on input line 9.
+Package hyperref Info: Reference (link) `figure.caption.18' on input line 9.
 
 
 Package xcolor Warning: Incompatible color definition on input line 9.
 
-Package hyperref Info: Anchor `figure.caption.20' on input line 12.
-<images/freak-sampler.png, id=688, 234.1247pt x 213.79875pt>
+Package hyperref Info: Anchor `figure.caption.18' on input line 12.
+<images/freak-sampler.png, id=649, 234.1247pt x 213.79875pt>
 File: images/freak-sampler.png Graphic file (type png)
 
 <use images/freak-sampler.png>
@@ -2742,7 +2588,7 @@ Package pdftex.def Info: images/freak-sampler.png used on input line 14.
 (pdftex.def)             Requested size: 234.12411pt x 213.79822pt.
 
 pdftex: bookmark at 15: {2.9} {\numberline{2.9}{\ignorespaces Padr\~ao de amost
-ragem do descritor FREAK. Fonte \cite {FREAK}\relax }} {figure.caption.20}{0}{l
+ragem do descritor FREAK. Fonte \cite {FREAK}\relax }} {figure.caption.18}{0}{l
 of}
 Package hyperref Info: Reference (cite) `cite.FREAK' on input line 15.
 
@@ -2760,12 +2606,12 @@ Package hyperref Info: Reference (cite) `cite.FREAK' on input line 15.
 
 Package xcolor Warning: Incompatible color definition on input line 15.
 
-Package hyperref Info: Reference (link) `figure.caption.21' on input line 22.
+Package hyperref Info: Reference (link) `figure.caption.19' on input line 22.
 
 Package xcolor Warning: Incompatible color definition on input line 22.
 
-Package hyperref Info: Anchor `figure.caption.21' on input line 25.
-<images/freak-retina.jpg, id=694, 466.74374pt x 264.99pt>
+Package hyperref Info: Anchor `figure.caption.19' on input line 25.
+<images/freak-retina.jpg, id=655, 466.74374pt x 264.99pt>
 File: images/freak-retina.jpg Graphic file (type jpg)
 
 <use images/freak-retina.jpg>
@@ -2777,7 +2623,7 @@ Overfull \hbox (11.49849pt too wide) in paragraph at lines 27--28
  []
 
 pdftex: bookmark at 28: {2.10} {\numberline{2.10}{\ignorespaces Distribui\c c\~
-ao de receptores na retina. Fonte \cite {FREAK}\relax }} {figure.caption.21}{0}
+ao de receptores na retina. Fonte \cite {FREAK}\relax }} {figure.caption.19}{0}
 {lof}
 Package hyperref Info: Reference (cite) `cite.FREAK' on input line 28.
 
@@ -2795,23 +2641,23 @@ Package hyperref Info: Reference (cite) `cite.FREAK' on input line 28.
 
 Package xcolor Warning: Incompatible color definition on input line 28.
 
-Package hyperref Info: Anchor `page.34' on input line 31.
-[34
+Package hyperref Info: Anchor `page.33' on input line 31.
+[33
 Package `hyperref' Info: End of reference (cite) `cite.FREAK', line 3.
 Package `hyperref' Info: End of reference (cite) `cite.FREAK', line 3.
-Package `hyperref' Info: End of reference (link) `figure.caption.20', line 9.
+Package `hyperref' Info: End of reference (link) `figure.caption.18', line 9.
 Package `hyperref' Info: End of reference (cite) `cite.FREAK', line 15.
 Package `hyperref' Info: End of reference (cite) `cite.FREAK', line 15.
-Package `hyperref' Info: End of reference (link) `figure.caption.21', line 22.
+Package `hyperref' Info: End of reference (link) `figure.caption.19', line 22.
  <C:/Projects/duartec-projects/Mestrado/Registration-Tese/images/freak-sampler.
 png>]
-Package hyperref Info: Reference (link) `figure.caption.22' on input line 38.
+Package hyperref Info: Reference (link) `figure.caption.20' on input line 38.
 
 
 Package xcolor Warning: Incompatible color definition on input line 38.
 
-Package hyperref Info: Anchor `figure.caption.22' on input line 41.
-<images/freak-rotation.jpg, id=705, 260.975pt x 224.84pt>
+Package hyperref Info: Anchor `figure.caption.20' on input line 41.
+<images/freak-rotation.jpg, id=666, 260.975pt x 224.84pt>
 File: images/freak-rotation.jpg Graphic file (type jpg)
 
 <use images/freak-rotation.jpg>
@@ -2820,7 +2666,7 @@ Package pdftex.def Info: images/freak-rotation.jpg used on input line 43.
 
 pdftex: bookmark at 44: {2.11} {\numberline{2.11}{\ignorespaces Pares seleciona
 dos para calcular a orienta\c c\~ao. Fonte \cite {FREAK}\relax }} {figure.capti
-on.22}{0}{lof}
+on.20}{0}{lof}
 Package hyperref Info: Reference (cite) `cite.FREAK' on input line 44.
 
 Package xcolor Warning: Incompatible color definition on input line 44.
@@ -2837,17 +2683,17 @@ Package hyperref Info: Reference (cite) `cite.FREAK' on input line 44.
 
 Package xcolor Warning: Incompatible color definition on input line 44.
 
-Package hyperref Info: Anchor `page.35' on input line 51.
-[35
+Package hyperref Info: Anchor `page.34' on input line 51.
+[34
 Package `hyperref' Info: End of reference (cite) `cite.FREAK', line 28.
 Package `hyperref' Info: End of reference (cite) `cite.FREAK', line 28.
-Package `hyperref' Info: End of reference (link) `figure.caption.22', line 38.
+Package `hyperref' Info: End of reference (link) `figure.caption.20', line 38.
 Package `hyperref' Info: End of reference (cite) `cite.FREAK', line 44.
 Package `hyperref' Info: End of reference (cite) `cite.FREAK', line 44.
  <C:/Projects/duartec-projects/Mestrado/Registration-Tese/images/freak-retina.j
 pg> <C:/Projects/duartec-projects/Mestrado/Registration-Tese/images/freak-rotat
 ion.jpg>]
-Package hyperref Info: Reference (link) `figure.caption.21' on input line 57.
+Package hyperref Info: Reference (link) `figure.caption.19' on input line 57.
 
 
 Package xcolor Warning: Incompatible color definition on input line 57.
@@ -2887,19 +2733,19 @@ Package hyperref Info: Reference (cite) `cite.MSER' on input line 6.
 
 Package xcolor Warning: Incompatible color definition on input line 6.
 
-Package hyperref Info: Reference (link) `figure.caption.23' on input line 12.
+Package hyperref Info: Reference (link) `figure.caption.21' on input line 12.
 
 Package xcolor Warning: Incompatible color definition on input line 12.
 
-Package hyperref Info: Anchor `page.36' on input line 13.
-[36
-Package `hyperref' Info: End of reference (link) `figure.caption.21', line 57.
+Package hyperref Info: Anchor `page.35' on input line 13.
+[35
+Package `hyperref' Info: End of reference (link) `figure.caption.19', line 57.
 Package `hyperref' Info: End of reference (cite) `cite.GFTT', line 3.
 Package `hyperref' Info: End of reference (cite) `cite.GFTT', line 3.
 Package `hyperref' Info: End of reference (link) `equation.2.6.3', line 4.
 ]
-Package hyperref Info: Anchor `figure.caption.23' on input line 14.
- <images/mserregion.jpg, id=728, 728.7225pt x 183.68625pt>
+Package hyperref Info: Anchor `figure.caption.21' on input line 14.
+ <images/mserregion.jpg, id=689, 728.7225pt x 183.68625pt>
 File: images/mserregion.jpg Graphic file (type jpg)
 
 <use images/mserregion.jpg>
@@ -2907,7 +2753,7 @@ Package pdftex.def Info: images/mserregion.jpg used on input line 16.
 (pdftex.def)             Requested size: 364.36035pt x 91.84288pt.
 
 pdftex: bookmark at 17: {2.12} {\numberline{2.12}{\ignorespaces Regi\~oes MSER.
- Fonte \cite {MSER}\relax }} {figure.caption.23}{0}{lof}
+ Fonte \cite {MSER}\relax }} {figure.caption.21}{0}{lof}
 Package hyperref Info: Reference (cite) `cite.MSER' on input line 17.
 
 Package xcolor Warning: Incompatible color definition on input line 17.
@@ -2960,23 +2806,23 @@ Package hyperref Info: Reference (cite) `cite.SIFT' on input line 4.
 
 Package xcolor Warning: Incompatible color definition on input line 4.
 
-Package hyperref Info: Reference (link) `figure.caption.24' on input line 7.
+Package hyperref Info: Reference (link) `figure.caption.22' on input line 7.
 
 Package xcolor Warning: Incompatible color definition on input line 7.
 
-Package hyperref Info: Anchor `page.37' on input line 9.
-[37
+Package hyperref Info: Anchor `page.36' on input line 9.
+[36
 Package `hyperref' Info: End of reference (cite) `cite.MSER', line 6.
 Package `hyperref' Info: End of reference (cite) `cite.MSER', line 6.
-Package `hyperref' Info: End of reference (link) `figure.caption.23', line 12.
+Package `hyperref' Info: End of reference (link) `figure.caption.21', line 12.
 Package `hyperref' Info: End of reference (cite) `cite.MSER', line 17.
 Package `hyperref' Info: End of reference (cite) `cite.MSER', line 17.
 Package `hyperref' Info: End of reference (cite) `cite.ORB', line 5.
 Package `hyperref' Info: End of reference (cite) `cite.ORB', line 5.
  <C:/Projects/duartec-projects/Mestrado/Registration-Tese/images/mserregion.jpg
 >]
-Package hyperref Info: Anchor `figure.caption.24' on input line 10.
- <images/SIFT01.jpg, id=744, 337.26pt x 145.54375pt>
+Package hyperref Info: Anchor `figure.caption.22' on input line 10.
+ <images/SIFT01.jpg, id=704, 337.26pt x 145.54375pt>
 File: images/SIFT01.jpg Graphic file (type jpg)
 
 <use images/SIFT01.jpg>
@@ -2984,7 +2830,7 @@ Package pdftex.def Info: images/SIFT01.jpg used on input line 12.
 (pdftex.def)             Requested size: 337.25917pt x 145.54338pt.
 
 pdftex: bookmark at 13: {2.13} {\numberline{2.13}{\ignorespaces Varia\c c\~ao d
-e escala. Fonte \cite {SIFT}\relax }} {figure.caption.24}{0}{lof}
+e escala. Fonte \cite {SIFT}\relax }} {figure.caption.22}{0}{lof}
 Package hyperref Info: Reference (cite) `cite.SIFT' on input line 13.
 
 Package xcolor Warning: Incompatible color definition on input line 13.
@@ -3001,19 +2847,19 @@ Package hyperref Info: Reference (cite) `cite.SIFT' on input line 13.
 
 Package xcolor Warning: Incompatible color definition on input line 13.
 
-Package hyperref Info: Reference (link) `figure.caption.24' on input line 17.
+Package hyperref Info: Reference (link) `figure.caption.22' on input line 17.
 
 Package xcolor Warning: Incompatible color definition on input line 17.
 
-Package hyperref Info: Anchor `figure.caption.25' on input line 26.
-<images/DoG.jpg, id=750, 379.4175pt x 275.0275pt>
+Package hyperref Info: Anchor `figure.caption.23' on input line 26.
+<images/DoG.jpg, id=710, 379.4175pt x 275.0275pt>
 File: images/DoG.jpg Graphic file (type jpg)
  <use images/DoG.jpg>
 Package pdftex.def Info: images/DoG.jpg used on input line 28.
 (pdftex.def)             Requested size: 379.41656pt x 275.02682pt.
 
 pdftex: bookmark at 29: {2.14} {\numberline{2.14}{\ignorespaces \emph {Differen
-ce of Gaussian}. Fonte \cite {SIFT}\relax }} {figure.caption.25}{0}{lof}
+ce of Gaussian}. Fonte \cite {SIFT}\relax }} {figure.caption.23}{0}{lof}
 Package hyperref Info: Reference (cite) `cite.SIFT' on input line 29.
 
 Package xcolor Warning: Incompatible color definition on input line 29.
@@ -3033,7 +2879,7 @@ Package xcolor Warning: Incompatible color definition on input line 29.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-Package hyperref Info: Reference (link) `figure.caption.25' on input line 35.
+Package hyperref Info: Reference (link) `figure.caption.23' on input line 35.
 
 Package xcolor Warning: Incompatible color definition on input line 35.
 
@@ -3043,26 +2889,26 @@ subsubsection.2.6.7.1}{3}{toc}
 Package hyperref Info: Anchor `subsubsection.2.6.7.2' on input line 48.
 pdftex: bookmark at 48: {2.6.7.2} {\numberline{2.6.7.2}Orientation Assignment} 
 {subsubsection.2.6.7.2}{3}{toc}
-Package hyperref Info: Anchor `page.38' on input line 53.
-[38
+Package hyperref Info: Anchor `page.37' on input line 53.
+[37
 Package `hyperref' Info: End of reference (cite) `cite.SIFT', line 4.
 Package `hyperref' Info: End of reference (cite) `cite.SIFT', line 4.
-Package `hyperref' Info: End of reference (link) `figure.caption.24', line 7.
+Package `hyperref' Info: End of reference (link) `figure.caption.22', line 7.
 Package `hyperref' Info: End of reference (cite) `cite.SIFT', line 13.
 Package `hyperref' Info: End of reference (cite) `cite.SIFT', line 13.
-Package `hyperref' Info: End of reference (link) `figure.caption.24', line 17.
-Package `hyperref' Info: End of reference (link) `figure.caption.25', line 35.
+Package `hyperref' Info: End of reference (link) `figure.caption.22', line 17.
+Package `hyperref' Info: End of reference (link) `figure.caption.23', line 35.
  <C:/Projects/duartec-projects/Mestrado/Registration-Tese/images/SIFT01.jpg>]
 Package hyperref Info: Anchor `subsubsection.2.6.7.3' on input line 54.
 
 pdftex: bookmark at 54: {2.6.7.3} {\numberline{2.6.7.3}Keypoint Descriptor} {su
 bsubsection.2.6.7.3}{3}{toc}
-Package hyperref Info: Reference (link) `figure.caption.26' on input line 58.
+Package hyperref Info: Reference (link) `figure.caption.24' on input line 58.
 
 Package xcolor Warning: Incompatible color definition on input line 58.
 
-Package hyperref Info: Anchor `figure.caption.26' on input line 66.
-<images/sift-keypoint-descriptor.jpg, id=762, 889.3225pt x 395.4775pt>
+Package hyperref Info: Anchor `figure.caption.24' on input line 66.
+<images/sift-keypoint-descriptor.jpg, id=723, 889.3225pt x 395.4775pt>
 File: images/sift-keypoint-descriptor.jpg Graphic file (type jpg)
 
 <use images/sift-keypoint-descriptor.jpg>
@@ -3071,7 +2917,7 @@ Package pdftex.def Info: images/sift-keypoint-descriptor.jpg used on input line
 (pdftex.def)             Requested size: 355.72269pt x 158.18819pt.
 
 pdftex: bookmark at 69: {2.15} {\numberline{2.15}{\ignorespaces Forma\c c\~ao d
-o descritor SIFT. Fonte \cite {SIFT}\relax }} {figure.caption.26}{0}{lof}
+o descritor SIFT. Fonte \cite {SIFT}\relax }} {figure.caption.24}{0}{lof}
 Package hyperref Info: Reference (cite) `cite.SIFT' on input line 69.
 
 Package xcolor Warning: Incompatible color definition on input line 69.
@@ -3088,11 +2934,11 @@ Package hyperref Info: Reference (cite) `cite.SIFT' on input line 69.
 
 Package xcolor Warning: Incompatible color definition on input line 69.
 
-Package hyperref Info: Anchor `page.39' on input line 72.
-[39
+Package hyperref Info: Anchor `page.38' on input line 72.
+[38
 Package `hyperref' Info: End of reference (cite) `cite.SIFT', line 29.
 Package `hyperref' Info: End of reference (cite) `cite.SIFT', line 29.
-Package `hyperref' Info: End of reference (link) `figure.caption.26', line 58.
+Package `hyperref' Info: End of reference (link) `figure.caption.24', line 58.
  <C:/Projects/duartec-projects/Mestrado/Registration-Tese/images/DoG.jpg>]
 Package hyperref Info: Anchor `subsubsection.2.6.7.4' on input line 73.
 
@@ -3127,12 +2973,12 @@ Package xcolor Warning: Incompatible color definition on input line 11.
 
 Package hyperref Info: Anchor `equation.2.6.4' on input line 12.
 Package hyperref Info: Anchor `equation.2.6.5' on input line 21.
-Package hyperref Info: Reference (link) `figure.caption.27' on input line 29.
+Package hyperref Info: Reference (link) `figure.caption.25' on input line 29.
 
 Package xcolor Warning: Incompatible color definition on input line 29.
 
-Package hyperref Info: Anchor `page.40' on input line 33.
-[40
+Package hyperref Info: Anchor `page.39' on input line 33.
+[39
 Package `hyperref' Info: End of reference (cite) `cite.SIFT', line 69.
 Package `hyperref' Info: End of reference (cite) `cite.SIFT', line 69.
 Package `hyperref' Info: End of reference (cite) `cite.SURF', line 5.
@@ -3142,8 +2988,8 @@ Package `hyperref' Info: End of reference (link) `equation.2.6.4', line 10.
 Package `hyperref' Info: End of reference (link) `equation.2.6.5', line 11.
  <C:/Projects/duartec-projects/Mestrado/Registration-Tese/images/sift-keypoint-
 descriptor.jpg>]
-Package hyperref Info: Anchor `figure.caption.27' on input line 34.
- <images/SURF01.jpg, id=787, 247.92625pt x 270.00874pt>
+Package hyperref Info: Anchor `figure.caption.25' on input line 34.
+ <images/SURF01.jpg, id=748, 247.92625pt x 270.00874pt>
 File: images/SURF01.jpg Graphic file (type jpg)
 
 <use images/SURF01.jpg>
@@ -3151,7 +2997,7 @@ Package pdftex.def Info: images/SURF01.jpg used on input line 36.
 (pdftex.def)             Requested size: 247.92564pt x 270.00807pt.
 
 pdftex: bookmark at 37: {2.16} {\numberline{2.16}{\ignorespaces \emph {Box Filt
-ering}. Fonte \cite {SURF} \relax }} {figure.caption.27}{0}{lof}
+ering}. Fonte \cite {SURF} \relax }} {figure.caption.25}{0}{lof}
 Package hyperref Info: Reference (cite) `cite.SURF' on input line 37.
 
 Package xcolor Warning: Incompatible color definition on input line 37.
@@ -3168,18 +3014,18 @@ Package hyperref Info: Reference (cite) `cite.SURF' on input line 37.
 
 Package xcolor Warning: Incompatible color definition on input line 37.
 
-Package hyperref Info: Reference (link) `figure.caption.28' on input line 62.
+Package hyperref Info: Reference (link) `figure.caption.26' on input line 62.
 
 Package xcolor Warning: Incompatible color definition on input line 62.
 
-Package hyperref Info: Anchor `page.41' on input line 63.
-[41
-Package `hyperref' Info: End of reference (link) `figure.caption.27', line 29.
+Package hyperref Info: Anchor `page.40' on input line 63.
+[40
+Package `hyperref' Info: End of reference (link) `figure.caption.25', line 29.
 Package `hyperref' Info: End of reference (cite) `cite.SURF', line 37.
 Package `hyperref' Info: End of reference (cite) `cite.SURF', line 37.
  <C:/Projects/duartec-projects/Mestrado/Registration-Tese/images/SURF01.jpg>]
-Package hyperref Info: Anchor `figure.caption.28' on input line 64.
- <images/surfdescriptor.jpg, id=797, 594.22pt x 483.8075pt>
+Package hyperref Info: Anchor `figure.caption.26' on input line 64.
+ <images/surfdescriptor.jpg, id=758, 594.22pt x 483.8075pt>
 File: images/surfdescriptor.jpg Graphic file (type jpg)
 
 <use images/surfdescriptor.jpg>
@@ -3187,7 +3033,7 @@ Package pdftex.def Info: images/surfdescriptor.jpg used on input line 66.
 (pdftex.def)             Requested size: 356.53474pt x 290.28674pt.
 
 pdftex: bookmark at 67: {2.17} {\numberline{2.17}{\ignorespaces Janela do Descr
-itor. Fonte \cite {SURF} \relax }} {figure.caption.28}{0}{lof}
+itor. Fonte \cite {SURF} \relax }} {figure.caption.26}{0}{lof}
 Package hyperref Info: Reference (cite) `cite.SURF' on input line 67.
 
 Package xcolor Warning: Incompatible color definition on input line 67.
@@ -3223,12 +3069,12 @@ Package hyperref Info: Reference (link) `subsection.2.6.8' on input line 4.
 
 Package xcolor Warning: Incompatible color definition on input line 4.
 
-Package hyperref Info: Reference (link) `figure.caption.29' on input line 6.
+Package hyperref Info: Reference (link) `figure.caption.27' on input line 6.
 
 Package xcolor Warning: Incompatible color definition on input line 6.
 
-Package hyperref Info: Anchor `figure.caption.29' on input line 10.
-<images/bilevelfilter.jpg, id=806, 846.16125pt x 262.9825pt>
+Package hyperref Info: Anchor `figure.caption.27' on input line 10.
+<images/bilevelfilter.jpg, id=767, 846.16125pt x 262.9825pt>
 File: images/bilevelfilter.jpg Graphic file (type jpg)
 
 <use images/bilevelfilter.jpg>
@@ -3236,7 +3082,7 @@ Package pdftex.def Info: images/bilevelfilter.jpg used on input line 12.
 (pdftex.def)             Requested size: 338.45851pt x 105.19113pt.
 
 pdftex: bookmark at 13: {2.18} {\numberline{2.18}{\ignorespaces Filtro bi-level
- aplicado \`a formas de n lados. Fonte \cite {STAR}\relax }} {figure.caption.29
+ aplicado \`a formas de n lados. Fonte \cite {STAR}\relax }} {figure.caption.27
 }{0}{lof}
 Package hyperref Info: Reference (cite) `cite.STAR' on input line 13.
 
@@ -3254,15 +3100,15 @@ Package hyperref Info: Reference (cite) `cite.STAR' on input line 13.
 
 Package xcolor Warning: Incompatible color definition on input line 13.
 
-Package hyperref Info: Anchor `page.42' on input line 16.
-[42
-Package `hyperref' Info: End of reference (link) `figure.caption.28', line 62.
+Package hyperref Info: Anchor `page.41' on input line 16.
+[41
+Package `hyperref' Info: End of reference (link) `figure.caption.26', line 62.
 Package `hyperref' Info: End of reference (cite) `cite.SURF', line 67.
 Package `hyperref' Info: End of reference (cite) `cite.SURF', line 67.
 Package `hyperref' Info: End of reference (cite) `cite.STAR', line 3.
 Package `hyperref' Info: End of reference (cite) `cite.STAR', line 3.
 Package `hyperref' Info: End of reference (link) `subsection.2.6.8', line 4.
-Package `hyperref' Info: End of reference (link) `figure.caption.29', line 6.
+Package `hyperref' Info: End of reference (link) `figure.caption.27', line 6.
  <C:/Projects/duartec-projects/Mestrado/Registration-Tese/images/surfdescriptor
 .jpg>]
 Package hyperref Info: Reference (link) `equation.2.6.3' on input line 25.
@@ -3286,8 +3132,8 @@ Package hyperref Info: Reference (cite) `cite.Tang93whydo' on input line 8.
 Package xcolor Warning: Incompatible color definition on input line 8.
 
 ))
-Package hyperref Info: Anchor `page.43' on input line 190.
- [43
+Package hyperref Info: Anchor `page.42' on input line 190.
+ [42
 Package `hyperref' Info: End of reference (cite) `cite.STAR', line 13.
 Package `hyperref' Info: End of reference (cite) `cite.STAR', line 13.
 Package `hyperref' Info: End of reference (link) `equation.2.6.3', line 25.
@@ -3323,8 +3169,8 @@ Package hyperref Info: Reference (cite) `cite.Tang93whydo' on input line 28.
 
 Package xcolor Warning: Incompatible color definition on input line 28.
 
-Package hyperref Info: Anchor `page.44' on input line 31.
-[44
+Package hyperref Info: Anchor `page.43' on input line 31.
+[43
 
 Package `hyperref' Info: End of reference (link) `section.1.4', line 24.
 Package `hyperref' Info: End of reference (cite) `cite.Tang93whydo', line 28.
@@ -3335,7 +3181,7 @@ Package hyperref Info: Anchor `subsection.3.2.1' on input line 1.
 
 pdftex: bookmark at 1: {3.2.1} {\numberline{3.2.1}Prot\'otipo} {subsection.3.2.
 1}{2}{toc}
-Package hyperref Info: Reference (link) `subsection.1.4.1' on input line 4.
+Package hyperref Info: Reference (link) `subsection.1.4.2' on input line 4.
 
 Package xcolor Warning: Incompatible color definition on input line 4.
 
@@ -3346,27 +3192,27 @@ Package hyperref Info: Reference (link) `section.3.2' on input line 9.
 
 Package xcolor Warning: Incompatible color definition on input line 9.
 
-Package hyperref Info: Reference (link) `figure.caption.30' on input line 15.
+Package hyperref Info: Reference (link) `figure.caption.28' on input line 15.
 
 Package xcolor Warning: Incompatible color definition on input line 15.
 
-Package hyperref Info: Anchor `figure.caption.30' on input line 17.
-<images/LRUTEST.jpg, id=834, 513.92pt x 513.92pt>
+Package hyperref Info: Anchor `figure.caption.28' on input line 17.
+<images/LRUTEST.jpg, id=795, 513.92pt x 513.92pt>
 File: images/LRUTEST.jpg Graphic file (type jpg)
  <use images/LRUTEST.jpg>
 Package pdftex.def Info: images/LRUTEST.jpg used on input line 19.
 (pdftex.def)             Requested size: 256.95937pt x 256.95937pt.
 
 pdftex: bookmark at 20: {3.1} {\numberline{3.1}{\ignorespaces Imagem utilizada 
-no prot\'otipo\relax }} {figure.caption.30}{0}{lof}
-Package hyperref Info: Anchor `page.45' on input line 23.
-[45
-Package `hyperref' Info: End of reference (link) `subsection.1.4.1', line 4.
+no prot\'otipo\relax }} {figure.caption.28}{0}{lof}
+Package hyperref Info: Anchor `page.44' on input line 23.
+[44
+Package `hyperref' Info: End of reference (link) `subsection.1.4.2', line 4.
 Package `hyperref' Info: End of reference (link) `section.3.2', line 9.
-Package `hyperref' Info: End of reference (link) `figure.caption.30', line 15.
+Package `hyperref' Info: End of reference (link) `figure.caption.28', line 15.
 ]
-Package hyperref Info: Anchor `page.46' on input line 48.
- [46 <C:/Projects/duartec-projects/Mestrado/Registration-Tese/images/LRUTEST.jp
+Package hyperref Info: Anchor `page.45' on input line 48.
+ [45 <C:/Projects/duartec-projects/Mestrado/Registration-Tese/images/LRUTEST.jp
 g>]
 Package hyperref Info: Anchor `subsubsection.3.2.1.2' on input line 55.
 
@@ -3380,8 +3226,8 @@ Package hyperref Info: Anchor `subsubsection.3.2.1.3' on input line 69.
 pdftex: bookmark at 69: {3.2.1.3} {\numberline{3.2.1.3}OpenCV} {subsubsection.3
 .2.1.3}{3}{toc}
 )
-Package hyperref Info: Anchor `page.47' on input line 196.
- [47
+Package hyperref Info: Anchor `page.46' on input line 196.
+ [46
 Package `hyperref' Info: End of reference (link) `section.3.2', line 57.
 ]
 Package hyperref Info: Anchor `chapter.4' on input line 196.
@@ -3410,11 +3256,11 @@ Package xcolor Warning: Incompatible color definition on input line 27.
 Package hyperref Info: Anchor `section.4.1' on input line 39.
 pdftex: bookmark at 39: {4.1} {\numberline{4.1}Taxa de Acertos} {section.4.1}{1
 }{toc}
-Package hyperref Info: Reference (link) `figure.caption.31' on input line 50.
+Package hyperref Info: Reference (link) `figure.caption.29' on input line 50.
 
 Package xcolor Warning: Incompatible color definition on input line 50.
 
-Package hyperref Info: Anchor `figure.caption.31' on input line 53.
+Package hyperref Info: Anchor `figure.caption.29' on input line 53.
 PGFPlots: reading {graphs/scale-all-pres.csv}
 
 Package pgfplots Warning: Table 'graphs/scale-all-pres.csv' has an empty column
@@ -3583,23 +3429,23 @@ I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
 
 pdftex: bookmark at 97: {4.1} {\numberline{4.1}{\ignorespaces Resultado de perf
-ormance de varia\c c\~ao de escala\relax }} {figure.caption.31}{0}{lof}
-Package hyperref Info: Anchor `page.48' on input line 100.
-[48
+ormance de varia\c c\~ao de escala\relax }} {figure.caption.29}{0}{lof}
+Package hyperref Info: Anchor `page.47' on input line 100.
+[47
 
 Package `hyperref' Info: End of reference (cite) `cite.performance_evaluation',
  line 27.
 Package `hyperref' Info: End of reference (cite) `cite.performance_evaluation',
  line 27.
 Package `hyperref' Info: End of reference (link) `section.3.2', line 27.
-Package `hyperref' Info: End of reference (link) `figure.caption.31', line 50.
+Package `hyperref' Info: End of reference (link) `figure.caption.29', line 50.
 ]
-Package hyperref Info: Reference (link) `figure.caption.32' on input line 102.
+Package hyperref Info: Reference (link) `figure.caption.30' on input line 102.
 
 
 Package xcolor Warning: Incompatible color definition on input line 102.
 
-Package hyperref Info: Anchor `figure.caption.32' on input line 108.
+Package hyperref Info: Anchor `figure.caption.30' on input line 108.
 PGFPlots: reading {graphs/rot-all-pres.csv}
 
 Package pgfplots Warning: Table 'graphs/rot-all-pres.csv' has an empty column n
@@ -3655,18 +3501,18 @@ ame; replacing it by '10'' on input line 129.
 
  [warning /pgfplots/warning/empty column name]
 pdftex: bookmark at 153: {4.2} {\numberline{4.2}{\ignorespaces Resultado de per
-formance de varia\c c\~ao de rota\c c\~ao\relax }} {figure.caption.32}{0}{lof}
-Package hyperref Info: Anchor `page.49' on input line 156.
-[49
-Package `hyperref' Info: End of reference (link) `figure.caption.32', line 102.
+formance de varia\c c\~ao de rota\c c\~ao\relax }} {figure.caption.30}{0}{lof}
+Package hyperref Info: Anchor `page.48' on input line 156.
+[48
+Package `hyperref' Info: End of reference (link) `figure.caption.30', line 102.
 
 ]
-Package hyperref Info: Reference (link) `figure.caption.33' on input line 158.
+Package hyperref Info: Reference (link) `figure.caption.31' on input line 158.
 
 
 Package xcolor Warning: Incompatible color definition on input line 158.
 
-Package hyperref Info: Anchor `figure.caption.33' on input line 164.
+Package hyperref Info: Anchor `figure.caption.31' on input line 164.
 PGFPlots: reading {graphs/blur-all-pres.csv}
 
 Package pgfplots Warning: Table 'graphs/blur-all-pres.csv' has an empty column 
@@ -4070,19 +3916,19 @@ I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
 
 pdftex: bookmark at 205: {4.3} {\numberline{4.3}{\ignorespaces Resultado de per
-formance de varia\c c\~ao de \emph {blur}\relax }} {figure.caption.33}{0}{lof}
-Package hyperref Info: Anchor `page.50' on input line 208.
-[50
-Package `hyperref' Info: End of reference (link) `figure.caption.33', line 158.
+formance de varia\c c\~ao de \emph {blur}\relax }} {figure.caption.31}{0}{lof}
+Package hyperref Info: Anchor `page.49' on input line 208.
+[49
+Package `hyperref' Info: End of reference (link) `figure.caption.31', line 158.
 
 ]
-Package hyperref Info: Reference (link) `figure.caption.34' on input line 210.
+Package hyperref Info: Reference (link) `figure.caption.32' on input line 210.
 
 
 Package xcolor Warning: Incompatible color definition on input line 210.
 
-Package hyperref Info: Anchor `figure.caption.34' on input line 216.
-<images/bright-dummy.png, id=873, 689.57625pt x 514.92375pt>
+Package hyperref Info: Anchor `figure.caption.32' on input line 216.
+<images/bright-dummy.png, id=833, 689.57625pt x 514.92375pt>
 File: images/bright-dummy.png Graphic file (type png)
 
 <use images/bright-dummy.png>
@@ -4094,11 +3940,11 @@ Overfull \hbox (27.45596pt too wide) in paragraph at lines 259--260
  []
 
 pdftex: bookmark at 260: {4.4} {\numberline{4.4}{\ignorespaces Resultado de per
-formance de varia\c c\~ao de ilumina\c c\~ao\relax }} {figure.caption.34}{0}{lo
+formance de varia\c c\~ao de ilumina\c c\~ao\relax }} {figure.caption.32}{0}{lo
 f}
-Package hyperref Info: Anchor `page.51' on input line 263.
-[51
-Package `hyperref' Info: End of reference (link) `figure.caption.34', line 210.
+Package hyperref Info: Anchor `page.50' on input line 263.
+[50
+Package `hyperref' Info: End of reference (link) `figure.caption.32', line 210.
 
 ]
 Package hyperref Info: Anchor `section.4.2' on input line 263.
@@ -4113,11 +3959,11 @@ Package hyperref Info: Reference (cite) `cite.Tang93whydo' on input line 266.
 
 Package xcolor Warning: Incompatible color definition on input line 266.
 
-Package hyperref Info: Reference (link) `figure.caption.35' on input line 283.
+Package hyperref Info: Reference (link) `figure.caption.33' on input line 283.
 
 Package xcolor Warning: Incompatible color definition on input line 283.
 
-Package hyperref Info: Anchor `figure.caption.35' on input line 289.
+Package hyperref Info: Anchor `figure.caption.33' on input line 289.
 PGFPlots: reading {graphs/scale-all-time.csv}
 
 Package pgfplots Warning: Table 'graphs/scale-all-time.csv' has an empty column
@@ -4291,21 +4137,21 @@ I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
 
 pdftex: bookmark at 331: {4.5} {\numberline{4.5}{\ignorespaces An\'alise de tem
-po de varia\c c\~ao de escala\relax }} {figure.caption.35}{0}{lof}
-Package hyperref Info: Anchor `page.52' on input line 335.
-[52
+po de varia\c c\~ao de escala\relax }} {figure.caption.33}{0}{lof}
+Package hyperref Info: Anchor `page.51' on input line 335.
+[51
 Package `hyperref' Info: End of reference (cite) `cite.Tang93whydo', line 266.
 Package `hyperref' Info: End of reference (cite) `cite.Tang93whydo', line 266.
-Package `hyperref' Info: End of reference (link) `figure.caption.35', line 283.
+Package `hyperref' Info: End of reference (link) `figure.caption.33', line 283.
 
  <C:/Projects/duartec-projects/Mestrado/Registration-Tese/images/bright-dummy.p
 ng>]
-Package hyperref Info: Reference (link) `figure.caption.35' on input line 336.
+Package hyperref Info: Reference (link) `figure.caption.33' on input line 336.
 
 
 Package xcolor Warning: Incompatible color definition on input line 336.
 
-Package hyperref Info: Anchor `figure.caption.36' on input line 340.
+Package hyperref Info: Anchor `figure.caption.34' on input line 340.
 PGFPlots: reading {graphs/rot-all-time.csv}
 
 Package pgfplots Warning: Table 'graphs/rot-all-time.csv' has an empty column n
@@ -4361,18 +4207,18 @@ ame; replacing it by '10'' on input line 361.
 
  [warning /pgfplots/warning/empty column name]
 pdftex: bookmark at 387: {4.6} {\numberline{4.6}{\ignorespaces An\'alise de tem
-po de varia\c c\~ao de rota\c c\~ao\relax }} {figure.caption.36}{0}{lof}
-Package hyperref Info: Anchor `page.53' on input line 391.
-[53
-Package `hyperref' Info: End of reference (link) `figure.caption.35', line 336.
+po de varia\c c\~ao de rota\c c\~ao\relax }} {figure.caption.34}{0}{lof}
+Package hyperref Info: Anchor `page.52' on input line 391.
+[52
+Package `hyperref' Info: End of reference (link) `figure.caption.33', line 336.
 
 ]
-Package hyperref Info: Reference (link) `figure.caption.37' on input line 393.
+Package hyperref Info: Reference (link) `figure.caption.35' on input line 393.
 
 
 Package xcolor Warning: Incompatible color definition on input line 393.
 
-Package hyperref Info: Anchor `figure.caption.37' on input line 397.
+Package hyperref Info: Anchor `figure.caption.35' on input line 397.
 PGFPlots: reading {graphs/blur-all-time.csv}
 
 Package pgfplots Warning: Table 'graphs/blur-all-time.csv' has an empty column 
@@ -4452,18 +4298,18 @@ I can't work with sizes bigger than about 19 feet.
 Continue and I'll use the largest value I can.
 
 pdftex: bookmark at 440: {4.7} {\numberline{4.7}{\ignorespaces An\'alise de tem
-po de varia\c c\~ao de blur\relax }} {figure.caption.37}{0}{lof}
-Package hyperref Info: Anchor `page.54' on input line 444.
-[54
-Package `hyperref' Info: End of reference (link) `figure.caption.37', line 393.
+po de varia\c c\~ao de blur\relax }} {figure.caption.35}{0}{lof}
+Package hyperref Info: Anchor `page.53' on input line 444.
+[53
+Package `hyperref' Info: End of reference (link) `figure.caption.35', line 393.
 
 ]
-Package hyperref Info: Reference (link) `figure.caption.38' on input line 446.
+Package hyperref Info: Reference (link) `figure.caption.36' on input line 446.
 
 
 Package xcolor Warning: Incompatible color definition on input line 446.
 
-Package hyperref Info: Anchor `figure.caption.38' on input line 450.
+Package hyperref Info: Anchor `figure.caption.36' on input line 450.
 PGFPlots: reading {graphs/bright-all-time.csv}
 
 Package pgfplots Warning: Table 'graphs/bright-all-time.csv' has an empty colum
@@ -4519,27 +4365,27 @@ n name; replacing it by '10'' on input line 471.
 
  [warning /pgfplots/warning/empty column name]
 pdftex: bookmark at 493: {4.8} {\numberline{4.8}{\ignorespaces An\'alise de tem
-po de varia\c c\~ao de ilumina\c c\~ao\relax }} {figure.caption.38}{0}{lof}
-Package hyperref Info: Anchor `page.55' on input line 496.
-[55
-Package `hyperref' Info: End of reference (link) `figure.caption.38', line 446.
+po de varia\c c\~ao de ilumina\c c\~ao\relax }} {figure.caption.36}{0}{lof}
+Package hyperref Info: Anchor `page.54' on input line 496.
+[54
+Package `hyperref' Info: End of reference (link) `figure.caption.36', line 446.
 
 ]
 Package hyperref Info: Anchor `section.4.3' on input line 498.
 
 pdftex: bookmark at 498: {4.3} {\numberline{4.3}Sele\c c\~ao da T\'ecnica} {sec
 tion.4.3}{1}{toc}
-Package hyperref Info: Reference (link) `table.caption.39' on input line 503.
+Package hyperref Info: Reference (link) `table.caption.37' on input line 503.
 
 Package xcolor Warning: Incompatible color definition on input line 503.
 
-Package hyperref Info: Anchor `table.caption.39' on input line 507.
+Package hyperref Info: Anchor `table.caption.37' on input line 507.
 pdftex: bookmark at 509: {4.1} {\numberline{4.1}{\ignorespaces Decis\~ao de t\'
-ecnica a utilizar\relax }} {table.caption.39}{0}{lot}
+ecnica a utilizar\relax }} {table.caption.37}{0}{lot}
 )
-Package hyperref Info: Anchor `page.56' on input line 201.
- [56
-Package `hyperref' Info: End of reference (link) `table.caption.39', line 503.
+Package hyperref Info: Anchor `page.55' on input line 201.
+ [55
+Package `hyperref' Info: End of reference (link) `table.caption.37', line 503.
 ]
 Package hyperref Info: Anchor `chapter.5' on input line 201.
 
@@ -4598,8 +4444,14 @@ Overfull \hbox (3.74982pt too wide) in paragraph at lines 27--31
 de-sen-vol-vido em C++ e OpenCV,
  []
 
-Package hyperref Info: Anchor `page.57' on input line 33.
-[57
+
+Overfull \hbox (2.81648pt too wide) in paragraph at lines 27--31
+\T1/aer/m/n/12 con-Fi-gu-rado para ro-dar si-mu-la-ções dos al-go-rit-mos BRISK
+, FAST, FREAK, GFTT, MSER,
+ []
+
+Package hyperref Info: Anchor `page.56' on input line 33.
+[56
 
 Package `hyperref' Info: End of reference (cite) `cite.opencv-comparing-1', lin
 e 3.
@@ -4625,10 +4477,10 @@ ection.5.2}{1}{toc}
 ) (C:\Projects\duartec-projects\Mestrado\Registration-Tese\template_Article.bbl
 (C:\Projects\duartec-projects\Mestrado\Registration-Tese\template_Article.brf)
 \tf@brf=\write10
-Package hyperref Info: Anchor `page.58' on input line 3.
+Package hyperref Info: Anchor `page.57' on input line 3.
 
-[58]
-Package hyperref Info: Anchor `chapter*.40' on input line 3.
+[57]
+Package hyperref Info: Anchor `chapter*.38' on input line 3.
 Package hyperref Info: Anchor `chapter.6' on input line 3.
 
 pdftex: bookmark at 3: {6} {Refer\^encias Bibliogr\'aficas} {chapter.6}{0}{toc}
@@ -4637,21 +4489,25 @@ Package hyperref Info: Anchor `cite.STAR' on input line 13.
 Package hyperref Info: Anchor `cite.FREAK' on input line 19.
 Package hyperref Info: Anchor `cite.SurveyAR' on input line 24.
 Package hyperref Info: Anchor `cite.SURF' on input line 29.
-Package hyperref Info: Anchor `cite.OpenCvOReilly' on input line 34.
-Package hyperref Info: Anchor `cite.opencv-comparing-1' on input line 42.
+Package hyperref Info: Anchor `cite.opencv-comparing-1' on input line 37.
 
-Package xcolor Warning: Incompatible color definition on input line 42.
+Package xcolor Warning: Incompatible color definition on input line 37.
 
-LaTeX Font Info:    Try loading font information for T1+aett on input line 42.
+LaTeX Font Info:    Try loading font information for T1+aett on input line 37.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ae\t1aett.fd"
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 )
-Package hyperref Info: Anchor `cite.opencv-comparing-2' on input line 50.
+Package hyperref Info: Anchor `cite.opencv-comparing-2' on input line 45.
 
 
-Package xcolor Warning: Incompatible color definition on input line 50.
+Package xcolor Warning: Incompatible color definition on input line 45.
 
-Package hyperref Info: Anchor `cite.binaryfeatures' on input line 55.
+Package hyperref Info: Anchor `cite.lowlevelfeature' on input line 52.
+Package hyperref Info: Anchor `cite.descriptor-comparing' on input line 59.
+
+Package xcolor Warning: Incompatible color definition on input line 59.
+
+Package hyperref Info: Anchor `cite.binaryfeatures' on input line 64.
 
 ! Package inputenc Error: Keyboard character used is undefined
 (inputenc)                in inputencoding `latin1'.
@@ -4660,7 +4516,7 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.55 
+l.64 
      
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
@@ -4673,21 +4529,16 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.55 
+l.64 
      
 You need to provide a definition with \DeclareInputText 
 or \DeclareInputMath before using this key.
 
-Package hyperref Info: Anchor `cite.descriptor-comparing' on input line 62.
-
-Package xcolor Warning: Incompatible color definition on input line 62.
-
-Package hyperref Info: Anchor `cite.ElaborarPesquisa' on input line 66.
-Package hyperref Info: Anchor `cite.realidadevirtual' on input line 71.
+Package hyperref Info: Anchor `cite.realidadevirtual' on input line 69.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.71 
+l.69 
      
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -4695,7 +4546,7 @@ you left one out. Proceed, with fingers crossed.
 ! Extra }, or forgotten $.
 <recently read> \egroup 
                         
-l.71 
+l.69 
      
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -4706,7 +4557,7 @@ deleted material, e.g., by typing `I$}'.
 ! Extra }, or forgotten $.
 <argument> ...Ã§Ãµes}. [S.l.]: Editora SBC, 2007.}
                                                    
-l.71 
+l.69 
      
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -4717,7 +4568,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.71 
+l.69 
      
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -4725,7 +4576,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.71 
+l.69 
      
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -4733,46 +4584,38 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-Package hyperref Info: Anchor `cite.BRISK' on input line 77.
-Package hyperref Info: Anchor `cite.SIFT' on input line 83.
-Package hyperref Info: Anchor `cite.lowlevelfeature' on input line 90.
-Package hyperref Info: Anchor `page.59' on input line 90.
-[59
+Package hyperref Info: Anchor `cite.BRISK' on input line 75.
+Package hyperref Info: Anchor `cite.SIFT' on input line 81.
+Package hyperref Info: Anchor `cite.MSER' on input line 87.
+Package hyperref Info: Anchor `page.58' on input line 87.
+[58
 
 Package `hyperref' Info: End of reference (link) `section.2.6', line 22.
 Package `hyperref' Info: End of reference (link) `section.2.6', line 22.
 Package `hyperref' Info: End of reference (link) `section.2.6', line 22.
 ]
-Package hyperref Info: Anchor `cite.MSER' on input line 96.
-Package hyperref Info: Anchor `cite.performance_evaluation' on input line 101.
-Package hyperref Info: Anchor `cite.Well-Known' on input line 107.
-Package hyperref Info: Anchor `cite.MetodologiaCientifica' on input line 114.
-Package hyperref Info: Anchor `cite.FusingPoints' on input line 120.
-Package hyperref Info: Anchor `cite.FAST' on input line 126.
-Package hyperref Info: Anchor `cite.VideoAnotation' on input line 132.
-Package hyperref Info: Anchor `cite.ORB' on input line 137.
-Package hyperref Info: Anchor `cite.Pedestrian' on input line 143.
-Package hyperref Info: Anchor `cite.robotnavigation' on input line 149.
-Package hyperref Info: Anchor `cite.GFTT' on input line 154.
-Package hyperref Info: Anchor `cite.Devices' on input line 160.
-Package hyperref Info: Anchor `cite.Tang93whydo' on input line 166.
-Package hyperref Info: Anchor `cite.localfeaturedetector' on input line 171.
-Package hyperref Info: Anchor `cite.understandingfeatures' on input line 178.
+Package hyperref Info: Anchor `cite.performance_evaluation' on input line 92.
+Package hyperref Info: Anchor `cite.Well-Known' on input line 98.
+Package hyperref Info: Anchor `cite.FusingPoints' on input line 104.
+Package hyperref Info: Anchor `cite.FAST' on input line 110.
+Package hyperref Info: Anchor `cite.VideoAnotation' on input line 116.
+Package hyperref Info: Anchor `cite.ORB' on input line 121.
+Package hyperref Info: Anchor `cite.Pedestrian' on input line 127.
+Package hyperref Info: Anchor `cite.robotnavigation' on input line 133.
+Package hyperref Info: Anchor `cite.GFTT' on input line 138.
+Package hyperref Info: Anchor `cite.Tang93whydo' on input line 144.
+Package hyperref Info: Anchor `cite.localfeaturedetector' on input line 149.
+Package hyperref Info: Anchor `cite.understandingfeatures' on input line 156.
 
 
-Package xcolor Warning: Incompatible color definition on input line 178.
+Package xcolor Warning: Incompatible color definition on input line 156.
 
-Package hyperref Info: Anchor `cite.integralimage' on input line 184.
-Package hyperref Info: Anchor `page.60' on input line 190.
-[60
-Package `hyperref' Info: End of reference (link) `section.2.6', line 22.
-]
-Package hyperref Info: Anchor `cite.Welch78' on input line 190.
-
+Package hyperref Info: Anchor `cite.integralimage' on input line 162.
+Package hyperref Info: Anchor `cite.Welch78' on input line 168.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.191 \end{thebibliography}
+l.169 \end{thebibliography}
                            
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -4781,15 +4624,14 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 )
-Package hyperref Info: Anchor `page.61' on input line 231.
- [61]
-Package hyperref Info: Anchor `chapter.7' on input line 231.
-
-pdftex: bookmark at 232: {7} {Gloss\'ario} {chapter.7}{0}{toc}
-No file template_Article.gls
+Package hyperref Info: Anchor `page.59' on input line 246.
+ [59
+Package `hyperref' Info: End of reference (link) `section.2.6', line 22.
+]
 \bottommargin=\skip70
 \rightmarginn=\skip71
 Package hyperref Info: Anchor `bla.0' on input line 246.
+
 (C:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/resumo.tex)
 (C:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/resumo.tex)
 (C:\Projects\duartec-projects\Mestrado\Registration-Tese\parts/resumo.tex)
@@ -4799,10 +4641,8 @@ Overfull \hbox (74.53033pt too wide) in paragraph at lines 246--246
 
 
 AED: lastpage setting LastPage
-Package hyperref Info: Anchor `page.62' on input line 248.
-[62
-
-
+Package hyperref Info: Anchor `page.60' on input line 248.
+[60
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 248.
@@ -4812,7 +4652,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 248.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 248.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 248.
 Package rerunfilecheck Info: File `template_Article.out' has not changed.
-(rerunfilecheck)             Checksum: 34D9F641C40FC358ACDD4BBDE08B750F;3972.
+(rerunfilecheck)             Checksum: 98F7955BA1B44900FCBDE8D4CB462BFD;3933.
 Package rerunfilecheck Info: File `template_Article.brf' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -4822,10 +4662,10 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 248.
  ) 
 Here is how much of TeX's memory you used:
- 29770 strings out of 493922
- 690476 string characters out of 3144899
- 924013 words of memory out of 3000000
- 32082 multiletter control sequences out of 15000+200000
+ 29716 strings out of 493922
+ 689455 string characters out of 3144899
+ 922887 words of memory out of 3000000
+ 32043 multiletter control sequences out of 15000+200000
  59883 words of font info for 119 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  62i,19n,103p,730b,2331s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -4850,9 +4690,9 @@ eX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2
 fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fo
 nts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files (x86)/MiKTeX 2.9/font
 s/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on template_Article.pdf (62 pages, 2310821 bytes).
+Output written on template_Article.pdf (60 pages, 2129374 bytes).
 PDF statistics:
- 1069 PDF objects out of 1200 (max. 8388607)
- 207 named destinations out of 1000 (max. 500000)
- 566 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1020 PDF objects out of 1200 (max. 8388607)
+ 194 named destinations out of 1000 (max. 500000)
+ 553 words of extra memory for PDF output out of 10000 (max. 10000000)
 

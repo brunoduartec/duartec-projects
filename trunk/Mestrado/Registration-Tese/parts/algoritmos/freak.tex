@@ -19,7 +19,7 @@ de pontos próximo do centro, decrescendo exponencialmente.
 
 Cada amostra é suavizada com um filtro kernel Gaussiano em que o raio do círculo
 ilustra o tamanho do desvio padrão do kernel.
-Como pode ser observado na figura~\ref{fig:freak-retina} o padrão de amostragem
+Como pode ser observado na Figura~\ref{fig:freak-retina} o padrão de amostragem
 corresponde à distribuição de receptores na retina.
 
 \begin{figure}[H]
@@ -35,7 +35,7 @@ corresponde à distribuição de receptores na retina.
 Para estimar a rotação dos \emph{keypoints}, são somados os gradientes locais
 assim como no BRISK, entretanto ao invés de considerar os pontos de longa
 distância, é considerado um padrão de 45 pontos como mostrado na
-figura~\ref{fig:freak-rotation}
+Figura~\ref{fig:freak-rotation}
 
 
 \begin{figure}[H]
@@ -54,7 +54,7 @@ armazenada é em geral 5 vezes menor.
 \textbf{Comparação de pares de amostragem}
 
 Os pares de pontos são selecionados considerando a densidade maior no centro, 
-como podemos observar na figura~\ref{fig:freak-retina} (a). 
+como podemos observar na Figura~\ref{fig:freak-retina} (a). 
 Os pares começam a ser comparados pelas extremidades e para dentro do centro, 
 dessa forma otimizamos o reconhecimento pois com menos pontos podemos descartar casos em que 
 a distância estiverem maiores do que um \emph{threshold}, caso contrário
