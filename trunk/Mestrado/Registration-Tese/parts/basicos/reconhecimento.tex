@@ -17,7 +17,7 @@ Fonte \cite{localfeaturedetector}}
 
 
 Processo de reconhecimento como ilustrado na
-imagem~\ref{fig:reconhecimento}:
+Figura~\ref{fig:reconhecimento}:
 \begin{description}
 	\item [Encontrar um grupo de \emph{keypoints} distintos]\hfill \\
 	Etapa em que são encontrados pontos de interesse, selecionando-se, arestas,
@@ -54,13 +54,13 @@ imagem~\ref{fig:reconhecimento}:
 
 \subsection{Detecção de características}
 O primeiro passo para o reconhecimento de objetos é a detecção de características.Para que possa ser feita a comparação da
- imagem referência com a imagem sentida, a abstração de informações a ser
+ Figura referência com a Figura sentida, a abstração de informações a ser
  reconhecidas tem que ser suficiente para lidar com escalas diferentes, rotações
  entre as imagens e pequenas distorções.
 Para que o reconhecimento seja eficiente e eficaz é necessário que uma massa de pontos mínima seja selecionada e feita
- a correspondência entre as imagens sentidas e a imagem referência.
+ a correspondência entre as imagens sentidas e a Figura referência.
 As características utilizadas são em geral cantos, linhas, curvas, padrões ou regiões.
-O tipo de característica selecionada é dependente do tipo de imagem provida. Imagens de cenas
+O tipo de característica selecionada é dependente do tipo de Figura provida. Imagens de cenas
  feitas a mão geralmente são compostas de segmentos de retas enquanto imagens de satélite são geralmente compostas de 
  contornos e regiões.
 Quanto mais invariantes, ou seja, que as variações não influenciem nos
@@ -68,8 +68,8 @@ resultados encontrados, forem as características, mais robusto e preciso é o
 processo de comparação.
 
 \subsection{Correspondência de características}
-A fase de correspondência de características é feita tanto selecionando características na imagem referência e procurando a 
-correspondente na imagem sentida ou mesmo selecionando características nas duas imagens independentemente e procurando a 
+A fase de correspondência de características é feita tanto selecionando características na Figura referência e procurando a 
+correspondente na Figura sentida ou mesmo selecionando características nas duas imagens independentemente e procurando a 
 correspondência entre elas.
 Quando a característica selecionada não for do tipo ponto, é importante para
 cada par de correspondências que pelo menos um ponto seja determinado para que
@@ -81,9 +81,9 @@ curvas, os máximos locais são considerados os pontos correspondentes.
  
  \section{Imagem Integral}
  
- Uma representação intermediária da imagem \cite{integralimage}, pode ser 
- calculada rapidamente a partir de uma imagem de referência. Dada uma imagem $ I
- $ e o ponto $(x,y)$, a imagem integral é calculada como a soma dos valores entre o ponto dado e a
+ Uma representação intermediária da Figura \cite{integralimage}, pode ser 
+ calculada rapidamente a partir de uma Figura de referência. Dada uma Figura $ I
+ $ e o ponto $(x,y)$, a Figura integral é calculada como a soma dos valores entre o ponto dado e a
  origem. Formalmente pode ser definida pela equação~\ref{eq:integralequation}:
  
   \begin{equation}
@@ -91,7 +91,7 @@ curvas, os máximos locais são considerados os pontos correspondentes.
  \label{eq:integralequation}
  \end{equation}
  
- Utilizando a abordagem da imagem integral, a area pode ser calculada com quatro
+ Utilizando a abordagem da Figura integral, a area pode ser calculada com quatro
  operações. Se considerarmos uma região retangular constituída pelos vértices
  A,B,C e D como na Figura~\ref{fig:integralimage}, a soma dos pixels é
  aproximada pela equação~\ref{eq:integralequationaprox}:
@@ -106,11 +106,11 @@ curvas, os máximos locais são considerados os pontos correspondentes.
  \begin{figure}[H]
 \centering
 \includegraphics[scale=0.6]{images/integralimage}
-\caption{Região da imagem integral. Fonte \cite{integralimage} }
+\caption{Região da Figura integral. Fonte \cite{integralimage} }
 \label{fig:integralimage}
 \end{figure}
   
- Como o gasto computacional é invariante ao tamanho da imagem, essa abordagem é
+ Como o gasto computacional é invariante ao tamanho da Figura, essa abordagem é
  particularmente útil quando são utilizadas imagens grandes.
  
  

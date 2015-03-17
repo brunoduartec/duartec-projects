@@ -1,11 +1,11 @@
-\subsection{FAST - Features from Accelerated Segment Test}
+\subsection{FAST - \emph{Features from Accelerated Segment Test}}
 
 
 FAST é um método de reconhecimento baseado em detecção de
 arestas originalmente desenvolvido por Edward Rosten e Tom Drummond 
 \cite{FAST}. A maior promessa do método é a eficiência computacional. O método considera um círculo
 de dezesseis pixels ao redor da aresta considerada p.
-O detector original \cite{FusingPoints},\cite{VideoAnotation} classifica
+O detector original \cite{FusingPoints}, classifica
 \emph{p} como uma aresta se existirem \emph{n} pixels contíguos em um círculo
 que são mais brilhantes do que o pixel candidato de intensidade Ip mais um threshold t ou mais escuros do que Ip-t
 
@@ -17,9 +17,9 @@ que são mais brilhantes do que o pixel candidato de intensidade Ip mais um thres
 \end{figure}
 
 
-Na imagem~\ref{fig:fast01} foi escolhido n=12 e seguido o seguinte algoritmo:
+Na Figura~\ref{fig:fast01} foi escolhido n=12 e seguido o seguinte algoritmo:
 \begin{enumerate}
-	\item Selecionar o ponto e testar primeiro as extremidades. No caso da imagem,
+	\item Selecionar o ponto e testar primeiro as extremidades. No caso da Figura,
 	escolhido o ponto p
 	\item Comparar os pontos 1 e 9, e verificar se o ponto p tem intensidade
 	com diferença de módulo t, ou seja os pontos 1 e 9 são mais claros ou mais escuros do que o ponto p pelo fator de t

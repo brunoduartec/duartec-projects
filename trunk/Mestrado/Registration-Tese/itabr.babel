@@ -35,8 +35,7 @@
 %--------------------------------------------------------
 \gdef\itatitletextbabel{\nh{\itaworklevel\ apresentada {\`a} Pr{\'o}-Reitoria de 
           P{\'o}s-Gradua{\c{c}}{\~a}o e Pesquisa do Instituto Tecnol{\'o}gico de Aeron{\'a}utica, como parte dos requisitos para obten{\c{c}}{\~a}o do 
-	  t{\'\i}tulo de \itaauthortitle\ em Ci{\^e}ncias no Curso de \itaworkcourse, 
-	  {\'A}rea de \itaworkarea}.}
+	  t{\'\i}tulo de \itaauthortitle\ em Engenharia no Curso de \itaworkcourse.}
 	  
 \gdef\itathesisapprovedmembersbabel{\itaworklevel\ aprovada em sua vers\~{a}o final 
           pelos abaixo assinados:}
@@ -110,7 +109,7 @@
 	\@cipkw\ I. Centro T\'{e}cnico Aeroespacial. Instituto Tecnol\'{o}gico de Aeron\'{a}utica. Divis\~{a}o de
 	\itaworkdept. II.~T\'{\i}tulo.\par}
 
-\gdef\itarefbibnamecipbabel{REFER\^{E}NCIA BIBLIOGR\'{A}FICA}
+\gdef\itarefbibnamecipbabel{REFER\^{E}NCIAS}
 
 \gdef\itacip2babel {\itaworklevel\ de \itaoptioncourse\ -- Instituto Tecnol\'{o}gico de Aeron\'{a}utica, 
         S\~{a}o Jos\'{e} dos Campos.}

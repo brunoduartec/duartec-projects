@@ -1,4 +1,4 @@
-\subsection{FREAK - Fast Retina Keypoint}
+\subsection{FREAK - \emph{Fast Retina Keypoint}}
 
 FREAK \cite{FREAK} é um descritor binário, composto por três etapas:
 
@@ -6,7 +6,7 @@ FREAK \cite{FREAK} é um descritor binário, composto por três etapas:
 
 Propõe uma abordagem biológica para o reconhecimento de características,
 emulando o funcionamento da retina para amostragem de padrões, como demonstrado
-na imagem \ref{fig:freak-sampler}, sendo um padrão circular com maior densidade
+na Figura \ref{fig:freak-sampler}, sendo um padrão circular com maior densidade
 de pontos próximo do centro, decrescendo exponencialmente.
 
 \begin{figure}[H]
@@ -17,9 +17,9 @@ de pontos próximo do centro, decrescendo exponencialmente.
 \end{figure}
 
 
-Cada amostra é suavizada com um filtro kernel Gaussiano em que o raio do círculo
+Cada amostra é suavizada por um filtro kernel Gaussiano em que o raio do círculo
 ilustra o tamanho do desvio padrão do kernel.
-Como pode ser observado na Figura~\ref{fig:freak-retina} o padrão de amostragem
+Como pode ser observado na Figura~\ref{fig:freak-retina}, o padrão de amostragem
 corresponde à distribuição de receptores na retina.
 
 \begin{figure}[H]
@@ -57,7 +57,8 @@ Os pares de pontos são selecionados considerando a densidade maior no centro,
 como podemos observar na Figura~\ref{fig:freak-retina} (a). 
 Os pares começam a ser comparados pelas extremidades e para dentro do centro, 
 dessa forma otimizamos o reconhecimento pois com menos pontos podemos descartar casos em que 
-a distância estiverem maiores do que um \emph{threshold}, caso contrário
-prosseguimos para os outros 128 bits do descritor.
+a distância estiver maior do que um \emph{threshold}, caso contrário, devemos
+recuperar a informação integral do descritor e utilizar os outros 128
+bits do descritor.
 
 

@@ -1,9 +1,9 @@
 \subsection{STAR}
 
-Derivado de CenSurR(\emph{Center Surround Extrema}), STAR\cite{STAR}, assim como
+Derivado de CenSurE(\emph{Center Surround Extrema}), STAR\cite{STAR}, assim como
 SURF citado na Seção~\ref{sec:surf} é baseado em \emph{box filters}. Entretanto,
 enquanto DoB não é invariante à rotação, é introduzido o filtro
-\emph{center surroung} que são bi-level. A Figura~\ref{fig:bilevelfilter} mostra
+\emph{center surround} que são bi-level. A Figura~\ref{fig:bilevelfilter} mostra
 o padrão do filtro bi-level em vários níveis, sendo o quanto mais circular, mais
 preciso, entretanto também mais difícil de se calcular.
  
@@ -17,10 +17,10 @@ preciso, entretanto também mais difícil de se calcular.
 
 O detector de características de STAR em contrapartida à proposta do CenSurE,
 usa um filtro composto de dois quadrados rotacionados. A resposta do filtro é calculada para sete escalas em cada pixel
-da imagem. Em contraste com SIFT e SURF, o tamanho da amostra é constante em
+da Figura. Em contraste com SIFT e SURF, o tamanho da amostra é constante em
 cada escala e tende à resolução total em cada escala.
 Um passo de pós processamento é realizado para suprimir os não máximos e as
 linhas.
-Características que estão ao longo de linhas são detectador devido à matriz de
+Características que estão ao longo de linhas são detectadas devido à matriz de
 gradientes, como apresentado na equação~\ref{eq:gftt}.
 

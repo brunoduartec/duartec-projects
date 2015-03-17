@@ -1,13 +1,13 @@
-\subsection{SURF - Speeded Up Robust Feature}
+\subsection{SURF - \emph{Speeded Up Robust Feature}}
 \label{sec:surf}
 
 
 O descritor de características de SURF\cite{SURF} é bem parecido com o descrito
 em SIFT na Seção~\ref{sec:sift}, sendo SURF desenvolvido para tentar suprir as
-principais fraquesas, alta complexidade computacional e  baixa velocidade de
+principais fraquezas: alta complexidade computacional e  baixa velocidade de
 execução.
 A detecção de SURF utiliza aproximações baseadas no determinante da matriz
-Hessiana da equação~\ref{eq:hessiana}  mostrado na
+hessiana da equação~\ref{eq:hessiana}  mostrado na
 equação~\ref{eq:determinantehessiana}.
 \begin{equation}
 H(f(x,y)) = \begin{bmatrix}
@@ -24,12 +24,12 @@ det(H) = \frac{\partial^2f }{\partial x^2}\frac{\partial^2f }{\partial y^2} -
 \label{eq:determinantehessiana}
 \end{equation}
 
-Aproximando as segundas derivadas sendo muito mais arrojado do que o algoritmo
-SIFT que aproxima LoG por Diferenças de Gaucianas(DoG), aproximando LoG por
-\emph{Box-type Filter}, como mostrado na Figura~\ref{fig:surf01}, não sendo
+Aproximando as segundas derivadas, sendo muito mais arrojado do que o algoritmo
+SIFT que aproxima Laplacianas de Gaussianas(LoG) por Diferenças de
+Gaussianas(DoG), aproximando LoG por \emph{Box-type Filter}, como mostrado na Figura~\ref{fig:surf01}, não sendo
 utilizado nenhum tipo de suavização entre escalas , o que garante mais agilidade nos resultados
- porque a convolução com \emph{box filters} são muito mais rápidos com o uso de
- imagens integrais.
+ porque as convoluções com \emph{box filters} são muito mais rápidas com o uso
+ de imagens integrais.
 
 \begin{figure}[H]
 \centering
@@ -49,7 +49,7 @@ rotação.
 O processo inicia calculando-se as respostas à \emph{Haar wavelet} em duas
 direções dominantes para cada ponto em um raio próximo da característica, sendo
 que o tamanho da máscara adotada é ajustada de acordo com o tamanho da
-característica. Os resultados são então pesados segundo uma Gaussiana
+característica. Os resultados são então pesados segundo uma gaussiana
 centralizada na característica encontrada.Cada uma das respostas é responsável
 por um ponto no vetor espacial, com x respostas nas abcissas e y respostas nas
 ordenadas. Em seguida, um segmento de círculo de $ \frac{\pi}{3} $ é rotacionado
@@ -68,13 +68,13 @@ como pode ser observado no exemplo da Figura~\ref{fig:surfdescriptor}.
 \label{fig:surfdescriptor}
 \end{figure}
 
-A janela é então dividida em $ 4 \times 4$ sub regiões regulares. Cada sub
-região é dividida em $5 \times 5$ pontos amostrais distribuidos uniformemente.
+A janela é então dividida em $ 4 \times 4$ sub regiões regulares. Cada
+sub-região é dividida em $5 \times 5$ pontos amostrais distribuidos uniformemente.
 Para cada ponto, Haar \emph{wavelets} são calculados para as as duas principais
 direções. Cada sub região contribui para o descritor com componentes: a
 soma das respostas nas duas principais regiões e seus valores absolutos. A
-resposta das 16 sub regiões é então pesada com uma Gaussiana. Para 16
-sub regiões, o tamanho do descritor é 64.
+resposta das 16 sub-regiões é então pesada com uma gaussiana. Para 16
+sub-regiões, o tamanho do descritor é 64.
 
 
 

@@ -104,7 +104,7 @@
 			\@cipkw\ I. Instituto Tecnol\'{o}gico de Aeron\'{a}utica. II.~Title.\par}
 
 
-\gdef\itarefbibnamecipbabel{BIBLIOGRAPHIC REFERENCE}
+\gdef\itarefbibnamecipbabel{REFERENCES}
 
 \gdef\itacip2babel {\itaworklevel\ of \itaauthortitle\ -- Instituto Tecnol\'{o}gico de Aeron\'{a}utica, S\~{a}o Jos\'{e} dos Campos.}
 

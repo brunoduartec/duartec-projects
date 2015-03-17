@@ -8,9 +8,9 @@ Antes de compreender como é feito o reconhecimento e registro de imagens é impor
  imagens distintas. Somos treinados desde cedo a diferenciar formas geométricas, perceber escalas diferentes 
  ou mesmo reconhecer o mesmo objeto independente de como está posicionado na cena buscando padrões que 
  categorizem e diferenciem o objeto. Instintivamente conseguimos reconhecer boas características e localizar objetos.
-Na imagem~\ref{fig:padroes} temos uma imagem de um prédio e seis recortes, dos quais
+Na Figura~\ref{fig:padroes} temos uma Figura de um prédio e seis recortes, dos quais
 conseguimos facilmente reconhecer com precisão a de letra E e F, as de letra A,B,C,D
- podemos identificar possíveis localizações mas não podemos dizer com certeza onde estão na imagem.
+ podemos identificar possíveis localizações mas não podemos dizer com certeza onde estão na Figura.
 
 \begin{figure}[H]
 \centering
@@ -30,14 +30,14 @@ nível de certeza é bem alto.
 \end{figure}
 
 A Imagem~\ref{fig:featuresregioes} ilustra tipos de características. A região
-azul não possibilita diferenciar onde está na imagem, a região preta pode ser confundida com qualquer uma das regiões
- ao deslocarmos horizontalmente, a imagem vermelha nos possibilita diferenciar e reconhecer o canto da imagem verde 
+azul não possibilita diferenciar onde está na Figura, a região preta pode ser confundida com qualquer uma das regiões
+ ao deslocarmos horizontalmente, a Figura vermelha nos possibilita diferenciar e reconhecer o canto da Figura verde 
  com precisão milimétrica.
 Podemos então concluir que uma característica é boa para ser utilizada como parâmetro de entrada
  para algoritmos de reconhecimento, quanto maior foi o nível de certeza da sua localização, 
  o que facilita o \emph{\textbf{Feature Detection}}.
-Para localizar o mesmo objeto em outra imagem é necessário identificarmos a região onde se encontra, 
-caso contrário no exemplo da imagem~\ref{fig:padroes} seria impossível
+Para localizar o mesmo objeto em outra Figura é necessário identificarmos a região onde se encontra, 
+caso contrário no exemplo da Figura~\ref{fig:padroes} seria impossível
 localizar uma janela específica. Tal descrição de contexto é chamada de
 \emph{\textbf{Feature Description}}. Uma vez de posse da característica e do seu
 contexto é possível reconhecer o objeto de fato.
