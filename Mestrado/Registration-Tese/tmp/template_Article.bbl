@@ -14,8 +14,7 @@
 \bibitem[Alahi Raphael~Ortiz 2012]{FREAK}
 \abntrefinfo{Alahi Raphael~Ortiz}{ALAHI RAPHAEL~ORTIZ}{2012}
 {ALAHI RAPHAEL~ORTIZ, P.~V. A. Freak: Fast retina keypoint.
-\textbf{Ecole Polytechnique Fed´ erale de Lausanne (EPFL), Switzerland´},
-  2012.}
+\textbf{Ecole Polytechnique Federale de Lausanne (EPFL), Switzerland}, 2012.}
 
 \bibitem[Azuma 1997]{SurveyAR}
 \abntrefinfo{Azuma}{AZUMA}{1997}
@@ -65,7 +64,7 @@ Available at
 \bibitem[KIRNER C.;~SISCOUTTO 2007]{realidadevirtual}
 \abntrefinfo{KIRNER C.;~SISCOUTTO}{KIRNER C.;~SISCOUTTO}{2007}
 {KIRNER C.;~SISCOUTTO, R. \textbf{Realidade Virtual e Aumentada: Conceitos,
-  Projeto e Aplicações}. [S.l.]: Editora SBC, 2007.}
+  Projeto e Aplicacoes}. [S.l.]: Editora SBC, 2007.}
 
 \bibitem[Leutenegger \textit{et al.} 2011]{BRISK}
 \abntrefinfo{Leutenegger \textit{et al.}}{LEUTENEGGER \textit{et al.}}{2011}
@@ -107,12 +106,6 @@ feb 2005.}
 {ROSTEN, E.; DRUMMOND, T. Machine learning for high-speed corner detection. In:
    \textbf{In European Conference on Computer Vision}. [S.l.: s.n.], 2006. p.
   430--443.}
-
-\bibitem[Rosten e Drummond 2005]{VideoAnotation}
-\abntrefinfo{Rosten e Drummond}{ROSTEN; DRUMMOND}{2005}
-{ROSTEN, G.~R. E.; DRUMMOND, T. Real-time video annotations for augmented
-  reality.
-\textbf{International Symposium on Visual Computing}, 2005.}
 
 \bibitem[Rublee 2011]{ORB}
 \abntrefinfo{Rublee}{RUBLEE}{2011}

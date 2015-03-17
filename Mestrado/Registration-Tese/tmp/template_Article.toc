@@ -22,18 +22,18 @@
 \contentsline {subsection}{\numberline {2.4.4}Correspond\^encia de caracter\IeC {\'\i }sticas}{29}{subsection.2.4.4}
 \contentsline {section}{\numberline {2.5}Imagem Integral}{29}{section.2.5}
 \contentsline {section}{\numberline {2.6}Algoritmos de Reconhecimento}{30}{section.2.6}
-\contentsline {subsection}{\numberline {2.6.1}FAST - Features from Accelerated Segment Test}{30}{subsection.2.6.1}
-\contentsline {subsection}{\numberline {2.6.2}BRISK - Binary Robust Invariant Scalable Keypoints}{31}{subsection.2.6.2}
-\contentsline {subsection}{\numberline {2.6.3}FREAK - Fast Retina Keypoint}{33}{subsection.2.6.3}
-\contentsline {subsection}{\numberline {2.6.4}GFTT - Good Features To Track}{35}{subsection.2.6.4}
-\contentsline {subsection}{\numberline {2.6.5}MSER - Maximal Stable Extremal Regions}{35}{subsection.2.6.5}
-\contentsline {subsection}{\numberline {2.6.6}ORB - Oriented Fast and Rotated Brief}{36}{subsection.2.6.6}
-\contentsline {subsection}{\numberline {2.6.7}SIFT - Scale-Invariant Feature Transform}{37}{subsection.2.6.7}
-\contentsline {subsubsection}{\numberline {2.6.7.1}Keypoint Localization}{37}{subsubsection.2.6.7.1}
+\contentsline {subsection}{\numberline {2.6.1}FAST - \emph {Features from Accelerated Segment Test}}{30}{subsection.2.6.1}
+\contentsline {subsection}{\numberline {2.6.2}BRISK - \emph {Binary Robust Invariant Scalable Keypoints}}{31}{subsection.2.6.2}
+\contentsline {subsection}{\numberline {2.6.3}FREAK - \emph {Fast Retina Keypoint}}{33}{subsection.2.6.3}
+\contentsline {subsection}{\numberline {2.6.4}GFTT - \emph {Good Features To Track}}{35}{subsection.2.6.4}
+\contentsline {subsection}{\numberline {2.6.5}MSER - \emph {Maximal Stable Extremal Regions}}{35}{subsection.2.6.5}
+\contentsline {subsection}{\numberline {2.6.6}ORB - \emph {Oriented Fast and Rotated Brief}}{36}{subsection.2.6.6}
+\contentsline {subsection}{\numberline {2.6.7}SIFT - \emph {Scale-Invariant Feature Transform}}{37}{subsection.2.6.7}
+\contentsline {subsubsection}{\numberline {2.6.7.1}\emph {Keypoint} Localization}{37}{subsubsection.2.6.7.1}
 \contentsline {subsubsection}{\numberline {2.6.7.2}Orientation Assignment}{38}{subsubsection.2.6.7.2}
-\contentsline {subsubsection}{\numberline {2.6.7.3}Keypoint Descriptor}{38}{subsubsection.2.6.7.3}
+\contentsline {subsubsection}{\numberline {2.6.7.3}\emph {Keypoint} Descriptor}{38}{subsubsection.2.6.7.3}
 \contentsline {subsubsection}{\numberline {2.6.7.4}Casamento de Padr\~oes}{39}{subsubsection.2.6.7.4}
-\contentsline {subsection}{\numberline {2.6.8}SURF - Speeded Up Robust Feature}{39}{subsection.2.6.8}
+\contentsline {subsection}{\numberline {2.6.8}SURF - \emph {Speeded Up Robust Feature}}{39}{subsection.2.6.8}
 \contentsline {subsection}{\numberline {2.6.9}STAR}{41}{subsection.2.6.9}
 \contentsline {section}{\numberline {2.7}Cad\^encia}{42}{section.2.7}
 \contentsline {chapter}{\numberline {3}Aplica\c c\~ao e Sele\c c\~ao de Algoritmos}{43}{chapter.3}
@@ -52,3 +52,4 @@
 \contentsline {section}{\numberline {5.1}Atendimento dos objetivos}{56}{section.5.1}
 \contentsline {section}{\numberline {5.2}Proposta de Trabalhos Futuros}{57}{section.5.2}
 \contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{58}{chapter.6}
+\contentsline {chapter}{Gloss\'ario}{60}{chapter.7}
