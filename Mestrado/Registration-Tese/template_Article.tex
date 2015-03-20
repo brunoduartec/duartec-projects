@@ -28,16 +28,21 @@
 %   eng   = para teses em inglês
 %++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-
 \documentclass[msc]{ita}    % ITA.cls based on standard book.cls
 \usepackage[section]{placeins}
 
- \usepackage{amsmath}
+ \usepackage{ae}
+\usepackage{graphics}
+\usepackage{epsfig}
+\usepackage{amsmath}
+\usepackage{amssymb} 
+\usepackage{subfig}
+\usepackage{multirow}
 \usepackage{float}
 \usepackage{pgfplots}
 \usepackage{tikz}
 \usetikzlibrary{arrows, decorations.markings}
-
+  
 % for double arrows a la chef
 % adapt line thickness and line width, if needed
 \tikzstyle{vecArrow} = [thick, decoration={markings,mark=at position
@@ -47,7 +52,13 @@
    postaction = {draw,line width=1.4pt, white,shorten >= 4.5pt}]
 \tikzstyle{innerWhite} = [semithick, white,line width=1.4pt, shorten >= 4.5pt]
 
+%\usepackage[portuguese]{babel}
+%\usepackage[utf8]{inputenc}
+%\usepackage[round]{natbib}
 
+%\usepackage[brazilian]{babel} 
+%\usepackage{babelbib} 
+  
 \usepackage{xcolor,colortbl}
 \pgfplotsset{compat=1.8}
 \usepackage{pgfkeys}
@@ -139,7 +150,7 @@ resultados que esperava.
 \begin{spacing}{1}
 \mbox{}\vfill
 {\sffamily\itshape
-
+ 
 ``Persistence is the shortest path to success.''\\}
 --- \textsc{Charles Chaplin}
 \end{spacing}
@@ -206,14 +217,15 @@ resultados que esperava.
 	\input{parts/conclusao}
 	\input{parts/futuros}
 
-
+ 
 % Referencias
-\begin{spacing}{1.0}
-\begin{flushleft}
+%\begin{spacing}{1.0}
+%\begin{flushleft}
 %\bibliographystyle{alpha}%Choose a bibliograhpic style
+ \renewcommand\bibname{Referências}
 \bibliography{bibliography}
-\end{flushleft}
-\end{spacing}
+%\end{flushleft}
+%\end{spacing}
 
 
 % Apendices
@@ -227,24 +239,25 @@ resultados que esperava.
 %\input{anexoA}
 
 % Referencias
-
-
-
 % Glossario
 \itaglossary
-\printglossary
-
+%\printglossary
+ 
 % Folha de Registro do Documento
 % Valores dos campos do formulario
-\FRDitadata{24 de dezembro de 1969}
-\FRDitadocnro{CTA/ITA - IEC/TM-002/1969}
+\FRDitadata{17 de março de 2015}
+\FRDitadocnro{DCTA/ITA/DP-005/2015}
 \FRDitaorgaointerno{Divisão de Engenharia da Computação -- ITA/IEC}
 \FRDitapalavrasautor{augmented reality,opencv,computer vision,maintenance,feature matching,descriptors,markerless}
-\FRDitapalavrasresult{Teses e Dissertações; Estilos; Usuários}
+\FRDitapalavrasresult{Manutenção de aeronaves; Realidade virtual; Visão por computadores; Algorítmos; Sistemas homem-
+máquina; Engenharia aeronáutica; Computação.}
+\FRDitapalavraapresentacao{ITA, São José dos Campos. Curso de Mestrado
+Profissional em Engenharia Aeronáutica. Programa de Pós-Graduação em Engenharia Aeronáutica e Mecânica. Orientador: Luís Gonzaga Trabasso;
+coorientador: Nelson José Issa de Macedo. Defesa em 03/03/2015. Publicada em 2015.}
 \FRDitaresumo{\input{parts/resumo}}
 %  Primeiro Parametro: Nacional ou Internacional -- N/I
 %  Segundo parametro: Ostensivo, Reservado, Confidencial ou Secreto -- O/R/C/S
-\FRDitaOpcoes{N}{S}
+\FRDitaOpcoes{N}{S}{O}
 % Cria o formulario
 \itaFRD
 

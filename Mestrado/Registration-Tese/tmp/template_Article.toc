@@ -48,8 +48,7 @@
 \contentsline {section}{\numberline {4.1}Taxa de Acertos}{47}{section.4.1}
 \contentsline {section}{\numberline {4.2}An\'alise de Tempo}{51}{section.4.2}
 \contentsline {section}{\numberline {4.3}Sele\c c\~ao da T\'ecnica}{55}{section.4.3}
-\contentsline {chapter}{\numberline {5}Conclus\~ao}{56}{chapter.5}
-\contentsline {section}{\numberline {5.1}Atendimento dos objetivos}{56}{section.5.1}
-\contentsline {section}{\numberline {5.2}Proposta de Trabalhos Futuros}{57}{section.5.2}
-\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{58}{chapter.6}
-\contentsline {chapter}{Gloss\'ario}{60}{chapter.7}
+\contentsline {chapter}{\numberline {5}Conclus\~ao}{57}{chapter.5}
+\contentsline {section}{\numberline {5.1}Atendimento dos objetivos}{57}{section.5.1}
+\contentsline {section}{\numberline {5.2}Proposta de Trabalhos Futuros}{58}{section.5.2}
+\contentsline {chapter}{Refer\^encias}{59}{chapter.6}
