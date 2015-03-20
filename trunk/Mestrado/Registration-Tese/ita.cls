@@ -943,7 +943,7 @@
 %  Opcoes para: 
 %  Nacional ou Internacional -- N/I
 %  Ostensivo, Reservado, Confidencial ou Secreto -- O/R/C/S
-\newcommand{\FRDitaOpcoes}[2]{
+\newcommand{\FRDitaOpcoes}[3]{
       \gdef\N{\ } \gdef\I{\ }      
       \gdef\O{\ } \gdef\R{\ } \gdef\C{\ } \gdef\S{\ }      
       
@@ -954,6 +954,15 @@
       \ifthenelse{\equal{#2}{R}}{\gdef\R{\textbf{X}}}{}
       \ifthenelse{\equal{#2}{C}}{\gdef\C{\textbf{X}}}{}
       \ifthenelse{\equal{#2}{S}}{\gdef\S{\textbf{X}}}{}
+      
+      \ifthenelse{\equal{#3}{O}}{\gdef\O{\textbf{X}}}{}
+      \ifthenelse{\equal{#3}{R}}{\gdef\R{\textbf{X}}}{}
+      \ifthenelse{\equal{#3}{C}}{\gdef\C{\textbf{X}}}{}
+      \ifthenelse{\equal{#3}{S}}{\gdef\S{\textbf{X}}}{}   
+      
+      
+     
+      
 }
 
 % Folha de Registro de Documento
@@ -1006,7 +1015,7 @@
 	$^{3.}$ \scriptsize DOCUMENTO Nº       & 
 	$^{4.}$ \scriptsize Nº DE PÁGINAS             \tabularnewline 
 	
-	\centering{\ifthenelse{\equal{\itaoptionlevel}{msc}}{TM}{TD}}  & 
+	\centering{\ifthenelse{\equal{\itaoptionlevel}{msc}}{DP}{TD}}  & 
 	\centering{\FRDitadatababel}   & 
 	\centering\scriptsize \FRDitadocnrobabel  &  
 	\centering\NumPenultimaPagina                  \tabularnewline[\esp]
