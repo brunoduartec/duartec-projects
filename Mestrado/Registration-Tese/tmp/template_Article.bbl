@@ -33,6 +33,11 @@
 \textbf{Egyptian Informatics Journal of image low level feature extraction
   algorithms}, 2013.}
 
+\bibitem[Forsyth e Ponce 2012]{forsyth2012computer}
+\abntrefinfo{Forsyth e Ponce}{FORSYTH; PONCE}{2012}
+{FORSYTH, D.; PONCE, J. \textbf{Computer Vision: A Modern Approach}. [S.l.]:
+  Pearson, 2012.  (Always learning).}
+
 \bibitem[Heinly \textit{et al.} 2012]{binaryfeatures}
 \abntrefinfo{Heinly \textit{et al.}}{HEINLY \textit{et al.}}{2012}
 {HEINLY, J.; DUNN, E.; FRAHM, J.-M. Comparative evaluation of binary features.
@@ -120,13 +125,19 @@ Dispon{\'\i}vel em:
 \bibitem[Rublee 2011]{ORB}
 \abntrefinfo{Rublee}{RUBLEE}{2011}
 {RUBLEE, E. Orb: an efficient alternative to sift or surf.
-2011.}
+\textbf{Computer Vision (ICCV), 2011 IEEE International Conference on}, 2011.}
 
 \bibitem[Schaeffer 2013]{Pedestrian}
 \abntrefinfo{Schaeffer}{SCHAEFFER}{2013}
 {SCHAEFFER, C. \textbf{A Comparison of Keypoint Descriptors in the Context of
   Pedestrian Detection: FREAK vs. SURF vs. BRISK}. [S.l.]: Stanford University
   CS Department, 2013.}
+
+\bibitem[Schmidt \textit{et al.} 2012]{robotnavigation}
+\abntrefinfo{Schmidt \textit{et al.}}{SCHMIDT \textit{et al.}}{2012}
+{SCHMIDT, A.; KRAFT, M.; FULARZ, M.; DOMAGALA, Z. The comparison of point
+  feature detectors and descriptors in the context of robot navigation.
+\textbf{Workshop on Perception for Mobil e Rob ots Autonomy}, 2012.}
 
 \bibitem[Shi e Tomasi 1994]{GFTT}
 \abntrefinfo{Shi e Tomasi}{SHI; TOMASI}{1994}
@@ -142,7 +153,7 @@ Dispon{\'\i}vel em:
 \bibitem[Tuytelaars e Mikolajczyk 2007]{localfeaturedetector}
 \abntrefinfo{Tuytelaars e Mikolajczyk}{TUYTELAARS; MIKOLAJCZYK}{2007}
 {TUYTELAARS, T.; MIKOLAJCZYK, K. Local invariant feature detectors: A survey.
-2007.}
+\textbf{FnT Comp. Graphics and Vision}, 2007.}
 
 \bibitem[Viola e Jones. 2001]{integralimage}
 \abntrefinfo{Viola e Jones.}{VIOLA; JONES.}{2001}
