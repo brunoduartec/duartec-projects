@@ -10,7 +10,7 @@ public class SimpleWorld implements IWorld {
 	
 	
 	private Map<Integer,IObject> Objs = new HashMap<Integer,IObject>();
-	private ICamera cam;
+	//private ICamera cam;
 	
 	@Override
 	public Map<Integer,IObject> getObjectsList() {
@@ -57,6 +57,7 @@ public class SimpleWorld implements IWorld {
 		}
 	}
 
+	/*
 	@Override
 	public ICamera getCamera() {
 		// TODO Auto-generated method stub
@@ -68,5 +69,6 @@ public class SimpleWorld implements IWorld {
 		// TODO Auto-generated method stub
 		cam = c;
 	}
+	*/
 
 }

@@ -33,8 +33,8 @@ public class MyGLSurfaceView extends GLSurfaceView {
         
         
         
-        Cube.localContext = context;
-
+        GraphicFactory.getInstance().setGraphicContext(context);
+        
         
         
         // Create an OpenGL ES 2.0 context.

@@ -13,7 +13,7 @@ public interface IWorld {
 	IObject RemoveObject(int ID);
 	void Update();
 	
-	ICamera getCamera();
-	void setCamera(ICamera c);
+	//ICamera getCamera();
+	//void setCamera(ICamera c);
 
 }

@@ -116,32 +116,7 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
  
     }
     
-    /*
-    int count =0;
-    
-    private void createBoard(int n,int m)
-    {
-    	
-    	float offsetX=-(m+1)*(scale+delta)/2;
-    	float offsetY=-(n+1)*(scale+delta)/2;;
-    	
-    	
-    	for (int i = 0; i < m; i++)
-    	{
-    		for (int j = 0; j < n; j++) {
-    			
-    			float xx = offsetX + 2*i*(scale + delta);
-    			float yy = offsetY + 2*j*(scale + delta);
-    			mSquare[count++]   = new Cube(scale,xx,yy);
-			}
-			
-		}
-    	
-    	
-    }
-    
-    */
-    
+   
     @Override
     public void onDrawFrame(GL10 unused) {
     
@@ -149,48 +124,11 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
     	GLES30.glClear(GLES30.GL_COLOR_BUFFER_BIT);
               	  // Set the camera position (View matrix)
         
-        //float eyeX,eyeY,eyeZ;
-        //eyeX = eyeY = eyeZ = (10.0f);
-        
-    
-           // Matrix.setLookAtM(mViewMatrix, 0 ,changeVarX, changeVarY, eyeZ, 0f, 0f, 0f, 0f, 1.0f, 0.0f);
 
            scene.Update();
            scene.Draw();
            
         
-        /*
-        for (int i = 0; i < count; i++) 
-        {
-        	
- // Calculate the projection and view transformation
-         //   Matrix.multiplyMM(mMVPMatrix, 0, mProjectionMatrix, 0, mViewMatrix, 0);
-
-        
-        Matrix.setIdentityM(mModelMatrix, 0); // initialize to identity matrix
-       
-        
-        float[] b = mSquare[i].getPosition();
-    
-        mSquare[i].setPosition(b[0]+posx, b[1]+posy);
-        
-        
-        Matrix.translateM(mModelMatrix, 0, b[0]+posx, b[1]+posy, 0); // translation to the left
-
-              
-        // Combine the rotation matrix with the projection and camera view
-        // Note that the mMVPMatrix factor *must be first* in order
-        // for the matrix multiplication product to be correct.
-        
-     // Combine the model matrix with the projection and camera view
-        mTempMatrix = mMVPMatrix.clone();
-        Matrix.multiplyMM(mMVPMatrix, 0, mTempMatrix, 0, mModelMatrix, 0);
-           
-        
-        	mSquare[i].draw(mMVPMatrix);
-		}
-        
-        */
     }
 
     @Override
@@ -208,9 +146,6 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
         camera.Update();
       
         
-      //  Matrix.orthoM(mProjectionMatrix,  0, -width/2, width/2,-height/2, height/2, -1, 100);
-        //Matrix.frustumM(mProjectionMatrix, 0, -width/2, width/2, -height/2, height/2, 3, 30);
-       // Matrix.frustumM(mProjectionMatrix, 0, -2, 2, -2, 2, 3, 30);
     }
 
   

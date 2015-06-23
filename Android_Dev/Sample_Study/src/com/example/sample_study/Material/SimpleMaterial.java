@@ -2,6 +2,7 @@ package com.example.sample_study.Material;
 
 import java.nio.Buffer;
 
+import com.example.sample_study.GraphicFactory;
 import com.example.sample_study.IObject;
 import com.example.sample_study.MyGLRenderer;
 import com.example.sample_study.R;
@@ -15,7 +16,7 @@ import android.opengl.Matrix;
 
 public class SimpleMaterial implements IMaterial
 {
-	public static Context localContext;
+
 	int vertexShaderHandle=-1;
 	int fragmentShaderHandle=-1;
 	 private final int mProgram;
@@ -31,6 +32,8 @@ public class SimpleMaterial implements IMaterial
     
 public SimpleMaterial()
 {
+
+	Context localContext = GraphicFactory.getInstance().getGraphicContext();
 	
 	String frag = RawResourceReader.readTextFileFromRawResource(localContext, R.raw.shader_fragment);
 	String vert = RawResourceReader.readTextFileFromRawResource(localContext, R.raw.shader_vertex);
