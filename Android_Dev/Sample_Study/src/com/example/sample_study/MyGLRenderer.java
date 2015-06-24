@@ -50,15 +50,6 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
     private IScene scene;
     
     
-    //private Triangle mTriangle;
-    //private Cube[]   mSquare = new Cube[40];
-
-    
-    
-    
-  //  private final float[] mModelMatrix = new float[16];
-    //private float[] mTempMatrix = new float[16];
-    
     
     
 
@@ -80,18 +71,6 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
         // Set the background frame color
     	GLES30.glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
 
-        //mTriangle = new Triangle();
-       
-        /*
-        mSquare[0]   = new Square(scale,0.0f,0.0f);
-        mSquare[1]   = new Square(scale,0.0f,2*scale+delta);
-       mSquare[2]   = new Square(scale,0.0f,-2*scale-delta);
-        mSquare[3]   = new Square(scale,2*scale+delta,0.0f);
-      mSquare[4]   = new Square(scale,-2*scale-delta,0.0f);
-        */
-
-    	// mSquare[0]   = new Cube(scale,0.0f,0.0f);
-    	// count++;
 
 		world = new SimpleWorld();
 
@@ -105,10 +84,23 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
     	
 		SimpleObject o1 = (SimpleObject) ObjectFactory.getInstance().getBoxObject("o1", scale);
 		
-    	
+		SimpleObject o2 = (SimpleObject) ObjectFactory.getInstance().getBoxObject("o2", scale);
+		
+		SimpleObject o3 = (SimpleObject) ObjectFactory.getInstance().getBoxObject("o3", scale);
+		
+		
+		float[] pos2 = {0.0f,0.0f,0.5f};
+		o2.setPosition(pos2);
+		
+		
+		float[] pos3 = {0.5f,0.0f,0.5f};
+		o3.setPosition(pos3);
+		
     	
     	
     	world.AddObject(o1);
+    	world.AddObject(o2);
+    	world.AddObject(o3);
     	
     	
     	scene = new SimpleScene(world,camera);
