@@ -22,12 +22,12 @@ public class SimpleMaterial implements IMaterial
 	 private final int mProgram;
 	private int mPositionHandle;
 	private int mColorHandle;
-	private float[] color;
+	private float color[] = { 0.2f, 0.709803922f, 0.898039216f, 1.0f };
 	private int mMVPMatrixHandle;
     // number of coordinates per vertex in this array
     static final int COORDS_PER_VERTEX = 3;
     private final int vertexStride = COORDS_PER_VERTEX * 4; // 4 bytes per vertex
-	private float[] mMVPMatrix;
+	private float[] mMVPMatrix =new float[16];
 
     
 public SimpleMaterial()
@@ -38,7 +38,7 @@ public SimpleMaterial()
 	String frag = RawResourceReader.readTextFileFromRawResource(localContext, R.raw.shader_fragment);
 	String vert = RawResourceReader.readTextFileFromRawResource(localContext, R.raw.shader_vertex);
 	 int vertexShaderHandle = Utils.loadShader(	GLES30.GL_VERTEX_SHADER, vert);
-	 int fragmentShaderHandle = Utils.loadShader(	GLES30.GL_VERTEX_SHADER, frag);
+	 int fragmentShaderHandle = Utils.loadShader(	GLES30.GL_FRAGMENT_SHADER, frag);
 	
 	 mProgram = GLES30.glCreateProgram();             // create empty OpenGL Program
       GLES30.glAttachShader(mProgram, vertexShaderHandle);   // add the vertex shader to program
@@ -93,7 +93,7 @@ public SimpleMaterial()
         mMVPMatrixHandle = GLES30.glGetUniformLocation(mProgram, "uMVPMatrix");
         MyGLRenderer.checkGlError("glGetUniformLocation");
 
-        
+       // Matrix.setIdentityM(mMVPMatrix, 0);
         
      // This multiplies the view matrix by the model matrix, and stores the result in the MVP matrix
         // (which currently contains model * view).
