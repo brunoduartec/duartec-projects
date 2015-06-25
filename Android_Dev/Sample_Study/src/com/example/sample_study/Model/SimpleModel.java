@@ -17,5 +17,17 @@ public class SimpleModel implements IModel
 		// TODO Auto-generated method stub
 		return null;
 	}
+
+	@Override
+	public float[] getNormals() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public FloatBuffer getNormalsBuffer() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	
 }

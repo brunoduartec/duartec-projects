@@ -33,6 +33,9 @@ public class SimpleMaterial implements IMaterial
 public SimpleMaterial()
 {
 
+	
+	color = Utils.RandColor();
+	
 	Context localContext = GraphicFactory.getInstance().getGraphicContext();
 	
 	String frag = RawResourceReader.readTextFileFromRawResource(localContext, R.raw.shader_fragment);

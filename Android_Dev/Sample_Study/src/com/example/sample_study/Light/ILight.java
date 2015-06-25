@@ -1,41 +1,44 @@
 package com.example.sample_study.Light;
 
+import com.example.sample_study.IObject;
 import com.example.sample_study.Material.IMaterial;
 import com.example.sample_study.Model.IModel;
 
-public class ILight
+public abstract class ILight extends IObject
 {
-private int intensity;
-private float[] color;
+	
+	private int Intensity;
+	private float[] color = new float[4];
+	
+	
+	private float[] getColor()
+	{
+		
+		return this.color;
+	}
+	private void setColor(float[] color)
+	{
+		
+		this.color = color;
+		
+	}
+	
+	
+	
+	
+	
+	int getIntensity()
+	{
+		return this.Intensity;
+	}
+	void setIntensity(int intens)
+	{
+		this.Intensity = intens;
+	}
+	
 
 
-public float[] getPosition() {
-	// TODO Auto-generated method stub
-	return null;
-}
 
 
-public boolean getEnabled() {
-	// TODO Auto-generated method stub
-	return false;
-}
-
-
-public boolean getVisible() {
-	// TODO Auto-generated method stub
-	return false;
-}
-
-
-public String getName() {
-	// TODO Auto-generated method stub
-	return null;
-}
-
-
-public int getID() {
-	// TODO Auto-generated method stub
-	return 0;
-}
 
 }

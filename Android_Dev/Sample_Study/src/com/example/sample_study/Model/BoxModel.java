@@ -10,7 +10,9 @@ public class BoxModel implements IModel
 {
 
 	float[] squareCoords;
-	private FloatBuffer vertexBuffer;
+	private final FloatBuffer vertexBuffer;
+	private final FloatBuffer mCubeNormals;
+	
 	 private final ShortBuffer drawListBuffer;
 	  private final short[] drawOrder = { // Vertex indices of the 4 Triangles
     	      2, 4, 3,   // front face (CCW)
@@ -18,6 +20,66 @@ public class BoxModel implements IModel
     	      0, 4, 1,   // back face
     	      4, 0, 3    // left face
     	   };
+	  
+	  /** Size of the normal data in elements. */
+		private final int mNormalDataSize = 3;
+		
+		/** How many bytes per float. */
+		private final int mBytesPerFloat = 4;	
+		// X, Y, Z
+		// The normal is used in light calculations and is a vector which points
+		// orthogonal to the plane of the surface. For a cube model, the normals
+		// should be orthogonal to the points of each face.
+		final float[] cubeNormalData =
+		{												
+				// Front face
+				0.0f, 0.0f, 1.0f,				
+				0.0f, 0.0f, 1.0f,
+				0.0f, 0.0f, 1.0f,
+				0.0f, 0.0f, 1.0f,				
+				0.0f, 0.0f, 1.0f,
+				0.0f, 0.0f, 1.0f,
+				
+				// Right face 
+				1.0f, 0.0f, 0.0f,				
+				1.0f, 0.0f, 0.0f,
+				1.0f, 0.0f, 0.0f,
+				1.0f, 0.0f, 0.0f,				
+				1.0f, 0.0f, 0.0f,
+				1.0f, 0.0f, 0.0f,
+				
+				// Back face 
+				0.0f, 0.0f, -1.0f,				
+				0.0f, 0.0f, -1.0f,
+				0.0f, 0.0f, -1.0f,
+				0.0f, 0.0f, -1.0f,				
+				0.0f, 0.0f, -1.0f,
+				0.0f, 0.0f, -1.0f,
+				
+				// Left face 
+				-1.0f, 0.0f, 0.0f,				
+				-1.0f, 0.0f, 0.0f,
+				-1.0f, 0.0f, 0.0f,
+				-1.0f, 0.0f, 0.0f,				
+				-1.0f, 0.0f, 0.0f,
+				-1.0f, 0.0f, 0.0f,
+				
+				// Top face 
+				0.0f, 1.0f, 0.0f,			
+				0.0f, 1.0f, 0.0f,
+				0.0f, 1.0f, 0.0f,
+				0.0f, 1.0f, 0.0f,				
+				0.0f, 1.0f, 0.0f,
+				0.0f, 1.0f, 0.0f,
+				
+				// Bottom face 
+				0.0f, -1.0f, 0.0f,			
+				0.0f, -1.0f, 0.0f,
+				0.0f, -1.0f, 0.0f,
+				0.0f, -1.0f, 0.0f,				
+				0.0f, -1.0f, 0.0f,
+				0.0f, -1.0f, 0.0f
+		};
 	
 	@Override
 	public float[] getVertices() {
@@ -30,7 +92,9 @@ public class BoxModel implements IModel
 		
 		
 		calculateSquareCoords(scale);
-		 // initialize vertex byte buffer for shape coordinates
+		
+		/*
+		// initialize vertex byte buffer for shape coordinates
         ByteBuffer bb = ByteBuffer.allocateDirect(
         // (# of coordinate values * 4 bytes per float)
                 squareCoords.length * 4);
@@ -38,7 +102,13 @@ public class BoxModel implements IModel
         vertexBuffer = bb.asFloatBuffer();
         vertexBuffer.put(squareCoords);
         vertexBuffer.position(0);
-
+*/
+        vertexBuffer = ByteBuffer.allocateDirect(squareCoords.length * mBytesPerFloat)
+		        .order(ByteOrder.nativeOrder()).asFloatBuffer();							
+        vertexBuffer.put(squareCoords).position(0);	
+        
+        
+        
         // initialize byte buffer for the draw list
         ByteBuffer dlb = ByteBuffer.allocateDirect(
                 // (# of coordinate values * 2 bytes per short)
@@ -47,6 +117,12 @@ public class BoxModel implements IModel
         drawListBuffer = dlb.asShortBuffer();
         drawListBuffer.put(drawOrder);
         drawListBuffer.position(0);
+        
+        
+        
+		mCubeNormals = ByteBuffer.allocateDirect(cubeNormalData.length * mBytesPerFloat)
+		        .order(ByteOrder.nativeOrder()).asFloatBuffer();							
+				mCubeNormals.put(cubeNormalData).position(0);
 		
 	}
 	
@@ -96,6 +172,18 @@ public class BoxModel implements IModel
 	public FloatBuffer getVertexBuffer() {
 		// TODO Auto-generated method stub
 		return vertexBuffer;
+	}
+
+	@Override
+	public float[] getNormals() {
+		// TODO Auto-generated method stub
+		return cubeNormalData;
+	}
+
+	@Override
+	public FloatBuffer getNormalsBuffer() {
+		// TODO Auto-generated method stub
+		return mCubeNormals;
 	}
 
 	

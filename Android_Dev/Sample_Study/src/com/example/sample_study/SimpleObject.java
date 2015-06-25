@@ -7,24 +7,12 @@ import com.example.sample_study.Material.IMaterial;
 import com.example.sample_study.Model.IModel;
 
 
-public class SimpleObject implements IObject
+public class SimpleObject extends IObject
 {
 	private IMaterial material;
 	private IModel model;
 	
-	float position[] = new float[3];
-	float rotation[] = new float[3];
-	float scale[] = new float[3];
-	
-	float[] localTransformation = new float[16];
-	boolean Enabled=true;
-	boolean Visible=true;
 
-	public String name=null;
-	//The object must be unique
-	static int ID=0;
-	
-	int localID=-1;
 
 	
 	

@@ -6,6 +6,9 @@ public interface IModel
 {
 	
 float[] getVertices();
+float[] getNormals();
+
 FloatBuffer getVertexBuffer();
+FloatBuffer getNormalsBuffer();
 
 }

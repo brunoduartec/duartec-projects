@@ -1,5 +1,7 @@
 package com.example.sample_study;
 
+import java.util.Random;
+
 import android.opengl.GLES30;
 
 public class Utils {
@@ -14,6 +16,17 @@ public class Utils {
      * @param shaderCode - String containing the shader code.
      * @return - Returns an id for the shader.
      */
+	
+	public static float[] RandColor()
+	{
+		Random rnd = new Random();
+		float color[] = { rnd.nextFloat(), rnd.nextFloat(),rnd.nextFloat(), rnd.nextFloat() };
+		return color;
+	
+		
+	}
+	
+	
     public static int loadShader(int type, String shaderCode){
 
         // create a vertex shader type (GLES20.GL_VERTEX_SHADER)

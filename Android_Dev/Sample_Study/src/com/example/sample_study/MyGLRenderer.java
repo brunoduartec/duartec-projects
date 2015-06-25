@@ -88,6 +88,13 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
 		
 		SimpleObject o3 = (SimpleObject) ObjectFactory.getInstance().getBoxObject("o3", scale);
 		
+		SimpleObject o4 = (SimpleObject) ObjectFactory.getInstance().getBoxObject("o4", scale);
+		
+		
+		
+		float[] pos1 = {0.0f,0.0f,0.0f};
+		o1.setPosition(pos1);
+		
 		
 		float[] pos2 = {0.0f,0.0f,0.5f};
 		o2.setPosition(pos2);
@@ -96,11 +103,15 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
 		float[] pos3 = {0.5f,0.0f,0.5f};
 		o3.setPosition(pos3);
 		
+		float[] pos4 = {0.5f,0.0f,0.0f};
+		o4.setPosition(pos4);
+		
     	
     	
     	world.AddObject(o1);
     	world.AddObject(o2);
     	world.AddObject(o3);
+    	world.AddObject(o4);
     	
     	
     	scene = new SimpleScene(world,camera);
@@ -193,6 +204,17 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
 		
 		changeVarX+= dx;
 		changeVarY+= dy;
+	
+	float[] cpos = camera.getPosition();
+	
+	cpos[0]+=dy;
+	cpos[1]+=dy;
+	//cpos[2]+=dy;
+	
+	camera.setPosition(cpos);
+	
+	
+	
 	}
     
 
