@@ -8,7 +8,6 @@ import com.example.sample_study.Camera.SimpleCamera;
 public class SimpleScene implements IScene {
 
 	private IWorld world;
-	private ICamera camera;
 	@Override
 	public void Draw() {
 		// TODO Auto-generated method stub
@@ -17,13 +16,13 @@ public class SimpleScene implements IScene {
 		Map<Integer,IObject> ot = world.getObjectsList();
 		for (int i = 0; i < ot.size(); i++) {
 			IObject o1 = (IObject) ot.get(i);
-			o1.Draw(camera);
+			o1.Draw(world);
 		}
 	}
 	
-	public SimpleScene(IWorld w, ICamera c)
+	public SimpleScene(IWorld w)
 	{
-		this.camera = c;
+
 		this.world = w;
 		
 	}
@@ -33,7 +32,7 @@ public class SimpleScene implements IScene {
 	public void Update() {
 		// TODO Auto-generated method stub
 		world.Update();
-		camera.Update();
+		
 	}
 
 	@Override

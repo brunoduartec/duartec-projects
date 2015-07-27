@@ -106,7 +106,7 @@ int getID()
 {
 	return ID;	
 }
-public abstract void Draw(ICamera cam);public abstract void Update();
+public abstract void Draw(IWorld world);public abstract void Update();
 
 
 public IMaterial getMaterial()

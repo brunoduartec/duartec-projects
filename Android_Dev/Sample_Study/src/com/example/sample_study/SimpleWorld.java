@@ -1,16 +1,23 @@
 package com.example.sample_study;
 
 import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.List;
 import java.util.Map;
+
 import android.annotation.SuppressLint;
+
 import com.example.sample_study.Camera.ICamera;
+import com.example.sample_study.Light.ILight;
 
 public class SimpleWorld implements IWorld {
 
 	
 	
 	private Map<Integer,IObject> Objs = new HashMap<Integer,IObject>();
-	//private ICamera cam;
+	private List<ILight> lights = new LinkedList<ILight>();
+	
+	private ICamera cam;
 	
 	@Override
 	public Map<Integer,IObject> getObjectsList() {
@@ -55,9 +62,30 @@ public class SimpleWorld implements IWorld {
 			IObject o = (IObject) Objs.get(i);
 			o.Update();
 		}
+		
+		
+		cam.Update();
 	}
 
-	/*
+	@Override
+	public void AddLight(ILight l) {
+		// TODO Auto-generated method stub
+		lights.add(l);
+	}
+
+	@Override
+	public void RemoveLight(ILight l) {
+		// TODO Auto-generated method stub
+		lights.remove(l);
+	}
+
+	@Override
+	public List<ILight> getLights() {
+		// TODO Auto-generated method stub
+		return lights;
+	}
+
+	
 	@Override
 	public ICamera getCamera() {
 		// TODO Auto-generated method stub
@@ -69,6 +97,6 @@ public class SimpleWorld implements IWorld {
 		// TODO Auto-generated method stub
 		cam = c;
 	}
-	*/
+	
 
 }

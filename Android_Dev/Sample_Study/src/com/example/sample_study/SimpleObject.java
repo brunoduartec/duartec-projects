@@ -30,9 +30,9 @@ public class SimpleObject extends IObject
 	}
 
 	@Override
-	public void Draw(ICamera cam) {
+	public void Draw(IWorld world) {
 		// TODO Auto-generated method stub
-	material.Draw(this,cam);	
+	material.Draw(this,world);	
 	}
 
 	@Override

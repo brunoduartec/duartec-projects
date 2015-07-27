@@ -15,7 +15,7 @@ import android.content.Context;
 import android.opengl.GLES30;
 import android.opengl.Matrix;
 
-public class SimpleMaterial implements IMaterial
+public class PointLightMaterial implements IMaterial
 {
 
 	int vertexShaderHandle=-1;
@@ -31,7 +31,27 @@ public class SimpleMaterial implements IMaterial
 	private float[] mMVPMatrix =new float[16];
 
     
-public SimpleMaterial()
+	 // Define a simple shader program for our point.
+    final String pointVertexShader =
+    	"uniform mat4 uMVPMatrix;      \n"		
+      +	"attribute vec4 vPosition;     \n"		
+      + "void main()                    \n"
+      + "{                              \n"
+      + "   gl_Position = uMVPMatrix   \n"
+      + "               * vPosition;   \n"
+      + "   gl_PointSize = 5.0;         \n"
+      + "}                              \n";
+    
+    final String pointFragmentShader = 
+    	"precision mediump float;       \n"					          
+      + "void main()                    \n"
+      + "{                              \n"
+      + "   gl_FragColor = vec4(1.0,    \n" 
+      + "   1.0, 1.0, 1.0);             \n"
+      + "}                              \n";
+	
+	
+public PointLightMaterial()
 {
 
 	
@@ -39,10 +59,9 @@ public SimpleMaterial()
 	
 	Context localContext = GraphicFactory.getInstance().getGraphicContext();
 	
-	String frag = RawResourceReader.readTextFileFromRawResource(localContext, R.raw.shader_fragment);
-	String vert = RawResourceReader.readTextFileFromRawResource(localContext, R.raw.shader_vertex);
-	 int vertexShaderHandle = Utils.loadShader(	GLES30.GL_VERTEX_SHADER, vert);
-	 int fragmentShaderHandle = Utils.loadShader(	GLES30.GL_FRAGMENT_SHADER, frag);
+
+	 int vertexShaderHandle = Utils.loadShader(	GLES30.GL_VERTEX_SHADER, pointVertexShader);
+	 int fragmentShaderHandle = Utils.loadShader(	GLES30.GL_FRAGMENT_SHADER, pointFragmentShader);
 	
 	 mProgram = GLES30.glCreateProgram();             // create empty OpenGL Program
       GLES30.glAttachShader(mProgram, vertexShaderHandle);   // add the vertex shader to program
@@ -78,7 +97,7 @@ public SimpleMaterial()
         // get handle to vertex shader's vPosition member
         mPositionHandle = GLES30.glGetAttribLocation(mProgram, "vPosition");
         // get handle to fragment shader's vColor member
-        mColorHandle = GLES30.glGetUniformLocation(mProgram, "v_Color");
+        mColorHandle = GLES30.glGetUniformLocation(mProgram, "vColor");
         // get handle to shape's transformation matrix
         mMVPMatrixHandle = GLES30.glGetUniformLocation(mProgram, "uMVPMatrix");
         MyGLRenderer.checkGlError("glGetUniformLocation");        

@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Map;
 
 import com.example.sample_study.Camera.ICamera;
+import com.example.sample_study.Light.ILight;
 
 public interface IWorld {
 	
@@ -13,7 +14,12 @@ public interface IWorld {
 	IObject RemoveObject(int ID);
 	void Update();
 	
-	//ICamera getCamera();
-	//void setCamera(ICamera c);
+	
+	void AddLight(ILight l);
+	void RemoveLight(ILight l);
+	List<ILight> getLights();
+	
+	ICamera getCamera();
+	void setCamera(ICamera c);
 
 }

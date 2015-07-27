@@ -78,6 +78,9 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
     	float[] pos =  {10.0f, 10.0f, 10.0f};
 		float[] target =  {0.0f, 0.0f, 0.0f};
 		camera = new SimpleCamera("CAM1",30,0,100,pos,target);
+		
+		
+		world.setCamera(camera);
     	
 	//	SimpleObject o1 = (SimpleObject) objFact.getBoxObject("O1", scale);
     	
@@ -114,7 +117,7 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
     	world.AddObject(o4);
     	
     	
-    	scene = new SimpleScene(world,camera);
+    	scene = new SimpleScene(world);
     	
  
     }
