@@ -3,6 +3,7 @@ package com.example.sample_study.Material;
 import android.content.Context;
 import android.opengl.GLES20;
 import android.opengl.GLES30;
+import android.opengl.Matrix;
 
 import com.example.sample_study.GraphicFactory;
 import com.example.sample_study.IObject;
@@ -10,6 +11,7 @@ import com.example.sample_study.IWorld;
 import com.example.sample_study.R;
 import com.example.sample_study.RawResourceReader;
 import com.example.sample_study.Utils;
+import com.example.sample_study.Camera.ICamera;
 import com.example.sample_study.Light.ILight;
 
 public class DiffuseMaterial extends IMaterial {
@@ -27,6 +29,7 @@ public class DiffuseMaterial extends IMaterial {
 	private int mMVMatrixHandle;
 	private int mLightPosHandle;
 	private int mNormalHandle;
+	private float[] mMVMatrix;
 
 	
 	public DiffuseMaterial()
@@ -61,7 +64,7 @@ public class DiffuseMaterial extends IMaterial {
 	        mColorHandle = GLES20.glGetAttribLocation(mProgram, "a_Color");
 	        mNormalHandle = GLES20.glGetAttribLocation(mProgram, "a_Normal"); 
 	
-	        ILight l1 = world.getLights().get(0);
+	       
 	        
 	        // Enable a handle to the triangle vertices
 	        GLES30.glEnableVertexAttribArray(mPositionHandle);
@@ -82,6 +85,23 @@ public class DiffuseMaterial extends IMaterial {
 	                GLES30.GL_FLOAT, false,
 	                vertexStride,obj.getModel().getNormalsBuffer());
 
+		ICamera cam = world.getCamera();
+		
+		//Multiply the ViewMatrix by the Object local position to obtain position in worldspace
+		Matrix.multiplyMM(mMVMatrix, 0, cam.getViewMatrix(), 0, obj.getLocalTransformation(), 0);
+        // Apply the projection and view transformation
+        GLES30.glUniformMatrix4fv(mMVMatrixHandle, 1, false,mMVMatrix, 0);
+		
+		
+		//Multiply the worldspace position by the projection matrix and obtain the screen position
+		Matrix.multiplyMM(mMVPMatrix, 0, cam.getProjectionMatrix(), 0, mMVMatrix, 0);
+        // Apply the projection and view transformation
+        GLES30.glUniformMatrix4fv(mMVPMatrixHandle, 1, false,mMVPMatrix, 0);
+		
+        ILight l1 = world.getLights().get(0);
+        
+        Matrix.multiplyMV(mLightPosInWorldSpace, 0, mLightModelMatrix, 0, l1.getLocalTransformation(), 0);
+        Matrix.multiplyMV(mLightPosInEyeSpace, 0, mViewMatrix, 0, mLightPosInWorldSpace, 0);     
 		
 		
 	}
