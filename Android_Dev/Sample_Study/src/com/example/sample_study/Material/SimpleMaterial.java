@@ -15,11 +15,10 @@ import android.content.Context;
 import android.opengl.GLES30;
 import android.opengl.Matrix;
 
-public class SimpleMaterial implements IMaterial
+public class SimpleMaterial extends IMaterial
 {
 
-	int vertexShaderHandle=-1;
-	int fragmentShaderHandle=-1;
+
 	 private final int mProgram;
 	private int mPositionHandle;
 	private int mColorHandle;
@@ -33,37 +32,23 @@ public class SimpleMaterial implements IMaterial
     
 public SimpleMaterial()
 {
-
 	
 	color = Utils.RandColor();
-	
 	Context localContext = GraphicFactory.getInstance().getGraphicContext();
-	
 	String frag = RawResourceReader.readTextFileFromRawResource(localContext, R.raw.shader_fragment);
 	String vert = RawResourceReader.readTextFileFromRawResource(localContext, R.raw.shader_vertex);
 	 int vertexShaderHandle = Utils.loadShader(	GLES30.GL_VERTEX_SHADER, vert);
 	 int fragmentShaderHandle = Utils.loadShader(	GLES30.GL_FRAGMENT_SHADER, frag);
-	
 	 mProgram = GLES30.glCreateProgram();             // create empty OpenGL Program
       GLES30.glAttachShader(mProgram, vertexShaderHandle);   // add the vertex shader to program
       GLES30.glAttachShader(mProgram, fragmentShaderHandle); // add the fragment shader to program
       GLES30.glLinkProgram(mProgram);        
-     
 
 }
 	
 	
 	
-	@Override
-	public int getVertexShader() {
-		// TODO Auto-generated method stub
-		return vertexShaderHandle;
-	}
-	@Override
-	public int getFragmentShader() {
-		// TODO Auto-generated method stub
-		return fragmentShaderHandle;
-	}
+
 
 
 
@@ -82,9 +67,6 @@ public SimpleMaterial()
         // get handle to shape's transformation matrix
         mMVPMatrixHandle = GLES30.glGetUniformLocation(mProgram, "uMVPMatrix");
         MyGLRenderer.checkGlError("glGetUniformLocation");        
-        
-        
-        
         
         // Enable a handle to the triangle vertices
         GLES30.glEnableVertexAttribArray(mPositionHandle);
@@ -130,14 +112,6 @@ ICamera cam = world.getCamera();
         
         // Disable vertex array
         GLES30.glDisableVertexAttribArray(mPositionHandle);
-		
-	}
-
-
-
-	@Override
-	public void initShader() {
-		// TODO Auto-generated method stub
 		
 	}
 

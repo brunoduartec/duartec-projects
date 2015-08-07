@@ -4,13 +4,25 @@ import com.example.sample_study.IObject;
 import com.example.sample_study.IWorld;
 import com.example.sample_study.Camera.ICamera;
 
-public interface IMaterial
+public abstract class IMaterial
 {
 	
-int getVertexShader();
-int getFragmentShader();
-void Draw(IObject obj, IWorld world);
-void initShader();
+	
+	int vertexShaderHandle=-1;
+	int fragmentShaderHandle=-1;
+	int mProgram;
+	
+	public int getVertexShader() {
+		// TODO Auto-generated method stub
+		return vertexShaderHandle;
+	}
+	
+	public int getFragmentShader() {
+		// TODO Auto-generated method stub
+		return fragmentShaderHandle;
+	}
+public abstract void Draw(IObject obj, IWorld world);
+
 
 
 

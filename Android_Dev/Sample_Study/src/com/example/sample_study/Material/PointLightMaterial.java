@@ -12,15 +12,13 @@ import com.example.sample_study.Utils;
 import com.example.sample_study.Camera.ICamera;
 
 import android.content.Context;
+import android.opengl.GLES20;
 import android.opengl.GLES30;
 import android.opengl.Matrix;
 
-public class PointLightMaterial implements IMaterial
+public class PointLightMaterial extends IMaterial
 {
 
-	int vertexShaderHandle=-1;
-	int fragmentShaderHandle=-1;
-	 private final int mProgram;
 	private int mPositionHandle;
 	private int mColorHandle;
 	private float color[] = { 0.2f, 0.709803922f, 0.898039216f, 1.0f };
@@ -63,26 +61,19 @@ public PointLightMaterial()
 	 int vertexShaderHandle = Utils.loadShader(	GLES30.GL_VERTEX_SHADER, pointVertexShader);
 	 int fragmentShaderHandle = Utils.loadShader(	GLES30.GL_FRAGMENT_SHADER, pointFragmentShader);
 	
-	 mProgram = GLES30.glCreateProgram();             // create empty OpenGL Program
-      GLES30.glAttachShader(mProgram, vertexShaderHandle);   // add the vertex shader to program
-      GLES30.glAttachShader(mProgram, fragmentShaderHandle); // add the fragment shader to program
-      GLES30.glLinkProgram(mProgram);        
+	 
+   
+	 mProgram = Utils.createAndLinkProgram(vertexShaderHandle, fragmentShaderHandle, 
+     		new String[] {"a_Position"}); 
+	 
+	 
+      
      
 
 }
 	
 	
 	
-	@Override
-	public int getVertexShader() {
-		// TODO Auto-generated method stub
-		return vertexShaderHandle;
-	}
-	@Override
-	public int getFragmentShader() {
-		// TODO Auto-generated method stub
-		return fragmentShaderHandle;
-	}
 
 
 
@@ -153,12 +144,6 @@ ICamera cam = world.getCamera();
 	}
 
 
-
-	@Override
-	public void initShader() {
-		// TODO Auto-generated method stub
-		
-	}
 
 
 
