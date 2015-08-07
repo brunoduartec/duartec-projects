@@ -24,6 +24,15 @@ public class AmbientLight extends ILight
    private IMaterial pLightMaterial = new PointLightMaterial();
 	
 
+   
+   public AmbientLight(float[] color, int intens, float[] position)
+   {
+	   
+	   this.setColor(color);
+	   this.setIntensity(intens);
+	   this.setPosition(position);
+	   
+   }
 	
 
 	@Override
@@ -40,6 +49,8 @@ public class AmbientLight extends ILight
 	}
 
 
+	
+	
 
 	
 

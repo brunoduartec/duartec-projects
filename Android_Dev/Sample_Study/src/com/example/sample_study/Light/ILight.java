@@ -11,12 +11,12 @@ public abstract class ILight extends IObject
 	private float[] color = new float[4];
 	
 	
-	private float[] getColor()
+	public float[] getColor()
 	{
 		
 		return this.color;
 	}
-	private void setColor(float[] color)
+	public void setColor(float[] color)
 	{
 		
 		this.color = color;
@@ -27,11 +27,11 @@ public abstract class ILight extends IObject
 	
 	
 	
-	int getIntensity()
+	public int getIntensity()
 	{
 		return this.Intensity;
 	}
-	void setIntensity(int intens)
+	public void setIntensity(int intens)
 	{
 		this.Intensity = intens;
 	}

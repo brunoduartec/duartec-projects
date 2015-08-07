@@ -24,37 +24,37 @@ public abstract class IObject
 	int localID=-1;
 
 	
-float[] getPosition()
+public float[] getPosition()
 {
 	return position;
 }
 
- void setPosition(float[] pos)
+public  void setPosition(float[] pos)
 {
 	 this.position = pos;
 }
  
 
-float[] getRotation()
+public float[] getRotation()
 {
 	return this.rotation;
 }
 
 
 
-void setRotation(float[] rot)
+public void setRotation(float[] rot)
 {
 	this.rotation=rot;	
 }
 
-float[] getScale()
+public float[] getScale()
 {
 	return this.scale;	
 }
 
 
 
-void setScale(float[] scale)
+public void setScale(float[] scale)
 {
 	this.scale = scale;	
 }
@@ -74,20 +74,20 @@ public float[] getLocalTransformation()
 	
 }
 
-void setLocalTransformation(float[] trans)
+public void setLocalTransformation(float[] trans)
 {
 	this.localTransformation = trans;
 
 }
 
-boolean getEnabled()
+public boolean getEnabled()
 {
 	
 	return this.Enabled;
 
 }
 
-boolean getVisible()
+public boolean getVisible()
 {
 	
 	return this.Visible;
@@ -97,12 +97,12 @@ boolean getVisible()
 
 
 
-String getName()
+public String getName()
 {
 return name;	
 }
 
-int getID()
+public int getID()
 {
 	return ID;	
 }

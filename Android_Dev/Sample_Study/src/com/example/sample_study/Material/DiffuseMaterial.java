@@ -30,6 +30,7 @@ public class DiffuseMaterial extends IMaterial {
 	private int mLightPosHandle;
 	private int mNormalHandle;
 	private float[] mMVMatrix;
+	private float[] mLightPosInEyeSpace;
 
 	
 	public DiffuseMaterial()
@@ -100,10 +101,24 @@ public class DiffuseMaterial extends IMaterial {
 		
         ILight l1 = world.getLights().get(0);
         
-        Matrix.multiplyMV(mLightPosInWorldSpace, 0, mLightModelMatrix, 0, l1.getLocalTransformation(), 0);
-        Matrix.multiplyMV(mLightPosInEyeSpace, 0, mViewMatrix, 0, mLightPosInWorldSpace, 0);     
-		
-		
+        Matrix.multiplyMV(mLightPosInEyeSpace, 0, cam.getViewMatrix(), 0, l1.getLocalTransformation(), 0);
+        
+        // Apply the projection and view transformation
+        GLES30.glUniformMatrix4fv(mLightPosHandle, 1, false,mLightPosInEyeSpace, 0);
+	
+        // Draw the square
+        
+        // Render all the faces
+           for (int face = 0; face < 6; face++) {
+              // Set the color for each of the faces
+              //gl.glColor4f(colors[face][0], colors[face][1], colors[face][2], colors[face][3]);
+              // Draw the primitive from the vertex-array directly
+              GLES30.glDrawArrays(GLES30.GL_TRIANGLE_STRIP, face*4, 4);
+           }
+           
+           
+           // Disable vertex array
+           GLES30.glDisableVertexAttribArray(mPositionHandle);
 	}
 
 

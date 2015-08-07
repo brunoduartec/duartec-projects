@@ -22,7 +22,11 @@ import javax.microedition.khronos.opengles.GL10;
 
 
 
+
+
 import com.example.sample_study.Camera.SimpleCamera;
+import com.example.sample_study.Light.AmbientLight;
+import com.example.sample_study.Light.ILight;
 
 import android.content.Context;
 import android.opengl.GLES30;
@@ -115,6 +119,8 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
     	world.AddObject(o2);
     	world.AddObject(o3);
     	world.AddObject(o4);
+    	
+    	ILight l1 = new AmbientLight(color,);
     	
     	
     	scene = new SimpleScene(world);
