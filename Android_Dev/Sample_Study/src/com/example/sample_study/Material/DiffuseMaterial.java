@@ -29,8 +29,8 @@ public class DiffuseMaterial extends IMaterial {
 	private int mMVMatrixHandle;
 	private int mLightPosHandle;
 	private int mNormalHandle;
-	private float[] mMVMatrix;
-	private float[] mLightPosInEyeSpace;
+	private float[] mMVMatrix = new float[16];
+	private float[] mLightPosInEyeSpace = new float[16];
 
 	
 	public DiffuseMaterial()
@@ -107,7 +107,7 @@ public class DiffuseMaterial extends IMaterial {
         GLES30.glUniformMatrix4fv(mLightPosHandle, 1, false,mLightPosInEyeSpace, 0);
 	
         // Draw the square
-        
+        /*
         // Render all the faces
            for (int face = 0; face < 6; face++) {
               // Set the color for each of the faces
@@ -115,10 +115,13 @@ public class DiffuseMaterial extends IMaterial {
               // Draw the primitive from the vertex-array directly
               GLES30.glDrawArrays(GLES30.GL_TRIANGLE_STRIP, face*4, 4);
            }
-           
+           */
+        
+        // Draw the cube.
+        GLES20.glDrawArrays(GLES20.GL_TRIANGLES, 0, 36);   
            
            // Disable vertex array
-           GLES30.glDisableVertexAttribArray(mPositionHandle);
+          // GLES30.glDisableVertexAttribArray(mPositionHandle);
 	}
 
 

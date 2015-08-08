@@ -50,12 +50,14 @@ public class SimpleObject extends IObject
 		return position;
 	}
 
+	
+	/*
 	@Override
 	public float[] getLocalTransformation() {
 		// TODO Auto-generated method stub
 		return localTransformation;
 	}
-
+*/
 	@Override
 	public boolean getEnabled() {
 		// TODO Auto-generated method stub

@@ -24,6 +24,8 @@ import javax.microedition.khronos.opengles.GL10;
 
 
 
+
+import com.example.sample_study.Color.COLORNAME;
 import com.example.sample_study.Camera.SimpleCamera;
 import com.example.sample_study.Light.AmbientLight;
 import com.example.sample_study.Light.ILight;
@@ -120,8 +122,9 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
     	world.AddObject(o3);
     	world.AddObject(o4);
     	
-    	ILight l1 = new AmbientLight(color,);
+    	ILight l1 = new AmbientLight(Color.enumtoColor(COLORNAME.WHITE),2,new float[]{0.0f,4.0f,0.0f});
     	
+    	world.AddLight(l1);
     	
     	scene = new SimpleScene(world);
     	

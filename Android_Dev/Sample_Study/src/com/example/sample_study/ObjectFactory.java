@@ -1,5 +1,6 @@
 package com.example.sample_study;
 
+import com.example.sample_study.Material.DiffuseMaterial;
 import com.example.sample_study.Material.IMaterial;
 import com.example.sample_study.Material.SimpleMaterial;
 import com.example.sample_study.Model.BoxModel;
@@ -31,7 +32,7 @@ public class ObjectFactory {
 		
 		IModel m1 = new BoxModel(scale);		
 		
-		IMaterial mat1 = new SimpleMaterial();
+		IMaterial mat1 = new DiffuseMaterial();
 		obj = new SimpleObject(mat1,m1, name);
 		
 		return obj;
