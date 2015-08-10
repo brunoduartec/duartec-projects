@@ -1,18 +1,13 @@
 package com.example.sample_study.Material;
 
-import java.nio.Buffer;
-
 import com.example.sample_study.GraphicFactory;
 import com.example.sample_study.IObject;
 import com.example.sample_study.IWorld;
 import com.example.sample_study.MyGLRenderer;
-import com.example.sample_study.R;
-import com.example.sample_study.RawResourceReader;
 import com.example.sample_study.Utils;
 import com.example.sample_study.Camera.ICamera;
 
 import android.content.Context;
-import android.opengl.GLES20;
 import android.opengl.GLES30;
 import android.opengl.Matrix;
 

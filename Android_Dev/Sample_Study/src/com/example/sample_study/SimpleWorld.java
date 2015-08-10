@@ -5,8 +5,6 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
-import android.annotation.SuppressLint;
-
 import com.example.sample_study.Camera.ICamera;
 import com.example.sample_study.Light.ILight;
 

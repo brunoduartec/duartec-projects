@@ -2,7 +2,6 @@ package com.example.sample_study;
 
 import android.opengl.Matrix;
 
-import com.example.sample_study.Camera.ICamera;
 import com.example.sample_study.Material.IMaterial;
 import com.example.sample_study.Model.IModel;
 

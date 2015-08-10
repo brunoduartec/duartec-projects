@@ -2,7 +2,6 @@ package com.example.sample_study.Material;
 
 import com.example.sample_study.IObject;
 import com.example.sample_study.IWorld;
-import com.example.sample_study.Camera.ICamera;
 
 public abstract class IMaterial
 {

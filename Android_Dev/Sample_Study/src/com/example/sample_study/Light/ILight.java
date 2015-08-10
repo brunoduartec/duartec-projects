@@ -1,8 +1,6 @@
 package com.example.sample_study.Light;
 
 import com.example.sample_study.IObject;
-import com.example.sample_study.Material.IMaterial;
-import com.example.sample_study.Model.IModel;
 
 public abstract class ILight extends IObject
 {

@@ -2,9 +2,6 @@ package com.example.sample_study;
 
 import java.util.Map;
 
-import com.example.sample_study.Camera.ICamera;
-import com.example.sample_study.Camera.SimpleCamera;
-
 public class SimpleScene implements IScene {
 
 	private IWorld world;

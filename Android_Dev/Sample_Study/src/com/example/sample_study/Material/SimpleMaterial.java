@@ -1,7 +1,5 @@
 package com.example.sample_study.Material;
 
-import java.nio.Buffer;
-
 import com.example.sample_study.GraphicFactory;
 import com.example.sample_study.IObject;
 import com.example.sample_study.IWorld;

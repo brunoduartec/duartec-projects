@@ -30,12 +30,9 @@ import com.example.sample_study.Camera.SimpleCamera;
 import com.example.sample_study.Light.AmbientLight;
 import com.example.sample_study.Light.ILight;
 
-import android.content.Context;
 import android.opengl.GLES30;
 import android.opengl.GLSurfaceView;
-import android.opengl.Matrix;
 import android.util.Log;
-import android.view.animation.TranslateAnimation;
 
 /**
  * Provides drawing instructions for a GLSurfaceView object. This class
@@ -101,18 +98,18 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
 		
 		
 		
-		float[] pos1 = {0.0f,0.0f,0.0f};
+		float[] pos1 = {0.0f,0.0f,0.0f,1.0f};
 		o1.setPosition(pos1);
 		
 		
-		float[] pos2 = {0.0f,0.0f,0.5f};
+		float[] pos2 = {0.0f,0.0f,0.5f,1,0f};
 		o2.setPosition(pos2);
 		
 		
-		float[] pos3 = {0.5f,0.0f,0.5f};
+		float[] pos3 = {0.5f,0.0f,0.5f,1,0f};
 		o3.setPosition(pos3);
 		
-		float[] pos4 = {0.5f,0.0f,0.0f};
+		float[] pos4 = {0.5f,0.0f,0.0f,1.0f};
 		o4.setPosition(pos4);
 		
     	
@@ -122,7 +119,7 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
     	world.AddObject(o3);
     	world.AddObject(o4);
     	
-    	ILight l1 = new AmbientLight(Color.enumtoColor(COLORNAME.WHITE),2,new float[]{0.0f,4.0f,0.0f});
+    	ILight l1 = new AmbientLight(Color.enumtoColor(COLORNAME.WHITE),2,new float[]{0.0f,0.0f,0.0f,1.0f});
     	
     	world.AddLight(l1);
     	

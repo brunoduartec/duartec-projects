@@ -1,8 +1,5 @@
 package com.example.sample_study.Camera;
 
-import com.example.sample_study.Material.IMaterial;
-import com.example.sample_study.Model.IModel;
-
 
 public interface ICamera
 {

@@ -2,10 +2,8 @@ package com.example.sample_study;
 
 import com.example.sample_study.Material.DiffuseMaterial;
 import com.example.sample_study.Material.IMaterial;
-import com.example.sample_study.Material.SimpleMaterial;
 import com.example.sample_study.Model.BoxModel;
 import com.example.sample_study.Model.IModel;
-import com.example.sample_study.Model.SimpleModel;
 
 public class ObjectFactory {
 	

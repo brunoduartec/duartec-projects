@@ -9,22 +9,20 @@ varying vec4 v_Color;          		// This will be passed into the fragment shader
 		  
 void main()                     	// The entry point for our vertex shader.
 {                              		
-		// Transform the vertex into eye space.
-   vec3 modelViewVertex = vec3(u_MVMatrix * a_Position);              
-		// Transform the normal's orientation into eye space.
-   vec3 modelViewNormal = vec3(u_MVMatrix * vec4(a_Normal, 0.0));     
-		// Will be used for attenuation.
-   float distance = length(u_LightPos - modelViewVertex);             
-		// Get a lighting direction vector from the light to the vertex.
-   vec3 lightVector = normalize(u_LightPos - modelViewVertex);        
-		// Calculate the dot product of the light vector and vertex normal. If the normal and light vector are
-		// pointing in the same direction then it will get max illumination.
-   float diffuse = max(dot(modelViewNormal, lightVector), 0.1);        	  		  													  
-		// Attenuate the light based on distance.
-   diffuse = diffuse * (1.0 / (1.0 + (0.25 * distance * distance)));  
-		// Multiply the color by the illumination level. It will be interpolated across the triangle.
-   v_Color = a_Color * diffuse;                                        	 
-		// gl_Position is a special variable used to store the final position.
-		// Multiply the vertex by the matrix to get the final point in normalized screen coordinates.		
-   gl_Position = u_MVPMatrix * a_Position;                                 
+
+	// Transform the vertex into eye space.
+   //vec3 modelViewVertex = vec3(u_MVMatrix * a_Position);              
+
+				
+   gl_Position = u_MVPMatrix * a_Position;  
+
+float distance = 1.0;
+
+float diffuse = 0.05;
+
+//float diffuse = diffuse * (1.0/ (1.0+(0.25*distance*distance) ) );
+
+ 
+v_Color = a_Color * diffuse;	
+                              
 }    

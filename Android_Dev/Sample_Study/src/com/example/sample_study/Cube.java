@@ -28,7 +28,6 @@ import com.example.sample_study.R;
 import com.example.sample_study.RawResourceReader;
 
 import android.content.Context;
-import android.opengl.GLES20;
 import android.opengl.GLES30;
 
 
