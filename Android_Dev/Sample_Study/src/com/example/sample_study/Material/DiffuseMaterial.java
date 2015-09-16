@@ -57,27 +57,29 @@ public class DiffuseMaterial extends IMaterial {
 		 GLES30.glUseProgram(mProgram);
 		 
 		// Set program handles for cube drawing.
-	        mMVPMatrixHandle = GLES20.glGetUniformLocation(mProgram, "u_MVPMatrix");
-	        mMVMatrixHandle = GLES20.glGetUniformLocation(mProgram, "u_MVMatrix"); 
+	        mMVPMatrixHandle = GLES30.glGetUniformLocation(mProgram, "u_MVPMatrix");
+	        mMVMatrixHandle = GLES30.glGetUniformLocation(mProgram, "u_MVMatrix"); 
 	        
-	        mLightPosHandle = GLES20.glGetUniformLocation(mProgram, "u_LightPos");
+	        mLightPosHandle = GLES30.glGetUniformLocation(mProgram, "u_LightPos");
 	        
-	        mPositionHandle = GLES20.glGetAttribLocation(mProgram, "a_Position");
-	        mColorHandle = GLES20.glGetAttribLocation(mProgram, "a_Color");
-	        mNormalHandle = GLES20.glGetAttribLocation(mProgram, "a_Normal"); 
+	        mPositionHandle = GLES30.glGetAttribLocation(mProgram, "a_Position");
+	        mColorHandle = GLES30.glGetAttribLocation(mProgram, "a_Color");
+	        mNormalHandle = GLES30.glGetAttribLocation(mProgram, "a_Normal"); 
 	
 	       
 	        
 	        // Enable a handle to the triangle vertices
-	        GLES30.glEnableVertexAttribArray(mPositionHandle);
+
 
 	        // Prepare the triangle coordinate data
-	        GLES30.glVertexAttribPointer(
-	                mPositionHandle, COORDS_PER_VERTEX,
-	                GLES30.GL_FLOAT, false,
-	                vertexStride,obj.getModel().getVertexBuffer());
+	        GLES30.glVertexAttribPointer(mPositionHandle, COORDS_PER_VERTEX,GLES30.GL_FLOAT, false,
+	                //vertexStride,obj.getModel().getVertexBuffer());
+	        		0,obj.getModel().getVertexBuffer());
 	        
-
+	        GLES30.glEnableVertexAttribArray(mPositionHandle);    
+	        
+	        
+	        
 	        // Set color for drawing the triangle
 	        GLES30.glUniform4fv(mColorHandle, 1, color, 0);
 	        

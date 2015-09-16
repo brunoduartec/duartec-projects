@@ -102,11 +102,11 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
 		o1.setPosition(pos1);
 		
 		
-		float[] pos2 = {0.0f,0.0f,0.5f,1,0f};
+		float[] pos2 = {0.0f,0.0f,0.5f,1.0f};
 		o2.setPosition(pos2);
 		
 		
-		float[] pos3 = {0.5f,0.0f,0.5f,1,0f};
+		float[] pos3 = {0.5f,0.0f,0.5f,1.0f};
 		o3.setPosition(pos3);
 		
 		float[] pos4 = {0.5f,0.0f,0.0f,1.0f};
