@@ -1,0 +1,18 @@
+<scene>
+	<object>
+		<id>cube01</id>
+		<collision type="box">
+			<position>
+				<x>0</x>
+				<y>0</y>
+				<z>0</z>
+			</position>
+			<width>0.1</width>
+			<height>0.1</height>
+			<length>0.1</length>
+		</collision>
+		<material type = "SimpleMaterial">
+			<mass>0</mass>
+		</material>
+	</object>
+</scene>
