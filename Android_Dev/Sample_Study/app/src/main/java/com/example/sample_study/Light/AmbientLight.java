@@ -4,6 +4,7 @@ import com.example.sample_study.IWorld;
 import com.example.sample_study.Material.IMaterial;
 import com.example.sample_study.Material.PointLightMaterial;
 
+import org.w3c.dom.Node;
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 
@@ -42,8 +43,10 @@ public class AmbientLight extends ILight
 	}
 
 
+
+
 	@Override
-	public Object Parse(XmlPullParser parser) throws IOException, XmlPullParserException {
+	public Object Parse(Node childnode) {
 		return null;
 	}
 }

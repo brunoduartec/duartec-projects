@@ -68,7 +68,13 @@ public float[] getLocalTransformation()
 	 float[] position = getPosition();
 	 
 	Matrix.setIdentityM(localTransformation, 0); // initialize to identity matrix
-	 Matrix.translateM(localTransformation, 0, position[0], position[1],position[2]); // Multiply by translation to the position
+
+
+	Matrix.scaleM(localTransformation, 0, scale[0], scale[1], scale[2]);
+
+
+	 Matrix.translateM(localTransformation, 0, position[0], position[1], position[2]); // Multiply by translation to the position
+
 
 	return localTransformation;
 	

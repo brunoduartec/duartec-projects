@@ -28,7 +28,7 @@ public abstract class IMaterial implements ISerializable
 	}
 public abstract void Draw(IObject obj, IWorld world);
 
-public abstract Object Parse(XmlPullParser parser) throws IOException, XmlPullParserException;
+
 
 
 

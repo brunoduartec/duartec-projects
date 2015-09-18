@@ -11,10 +11,7 @@ import android.content.Context;
 import android.opengl.GLES30;
 import android.opengl.Matrix;
 
-import org.xmlpull.v1.XmlPullParser;
-import org.xmlpull.v1.XmlPullParserException;
-
-import java.io.IOException;
+import org.w3c.dom.Node;
 
 public class PointLightMaterial extends IMaterial
 {
@@ -143,10 +140,9 @@ ICamera cam = world.getCamera();
 		
 	}
 
+
     @Override
-    public Object Parse(XmlPullParser parser) throws IOException, XmlPullParserException {
+    public Object Parse(Node childnode) {
         return null;
     }
-
-
 }

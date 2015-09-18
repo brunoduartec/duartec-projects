@@ -3,15 +3,11 @@ package com.example.sample_study;
 import android.opengl.Matrix;
 
 import com.example.sample_study.Material.IMaterial;
-import com.example.sample_study.Material.SimpleMaterial;
 import com.example.sample_study.Model.BoxModel;
 import com.example.sample_study.Model.IModel;
-import com.example.sample_study.Model.SimpleModel;
 
-import org.xmlpull.v1.XmlPullParser;
-import org.xmlpull.v1.XmlPullParserException;
-
-import java.io.IOException;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
 
 
 public class SimpleObject extends IObject
@@ -19,7 +15,7 @@ public class SimpleObject extends IObject
 	// used to xmlparse
 	public SimpleObject()
 	{
-
+		localID = ID++;
 	}
 
 	public SimpleObject(IMaterial mat, IModel mod, String nm)
@@ -39,7 +35,7 @@ public class SimpleObject extends IObject
 	public void Draw(IWorld world) {
 		// TODO Auto-generated method stub
 
-		getMaterial().Draw(this,world);
+		getMaterial().Draw(this, world);
 	}
 
 	@Override
@@ -128,125 +124,88 @@ public class SimpleObject extends IObject
 
 
 	@Override
-	public Object Parse(XmlPullParser parser) throws IOException, XmlPullParserException {
-
-
-		parser.require(XmlPullParser.START_TAG,null,"object");
-
-	float width,height,length;
-
-		width=height=length=0;
-
-//parser.next();
-
-
-        //branching out when the close node is reached
-		while (parser.next()!= XmlPullParser.END_DOCUMENT && !parser.getName().equalsIgnoreCase("object") ){
-
-			if (parser.getEventType() != XmlPullParser.START_TAG) {
-                parser.next();
-                continue;
-            }
-
-
-            String nodename = parser.getName();
+	public Object Parse(Node childnode) {
 
 
 
-            switch (nodename)
-			{
-				case "id":
-					name=Utils.readText(parser);
-					parser.require(XmlPullParser.END_TAG,null,"id");
-					break;
-				case "collision":
+
+                                NodeList collisionchildnodeList = childnode.getChildNodes();
+
+                                for (int w = 0; w < collisionchildnodeList.getLength(); w++) {
+                                    Node collisionchildnode = collisionchildnodeList.item(w);
+                                    String collisionchildnodename = collisionchildnode.getNodeName();
 
 
-                    String modeltype = (String) parser.getAttributeValue(0);
-                    float pp[] = new float[3];
-                    parser.next();
 
-                    while (  !parser.getName().equalsIgnoreCase("collision") )
-                    {
-                            //to retrieve the x,y,z
-                        if (parser.getEventType() != XmlPullParser.START_TAG) {
-                            parser.next();
-                            continue;
+                                switch(collisionchildnodename) {
+                                    case "position": {
+                                       // Node positionnode = collisionchildnode.getChildNodes().item(1);
+                                        NodeList posnodes = collisionchildnode.getChildNodes();
+                                        float pp[] = new float[3];
+
+                                        for (int k = 0; k < posnodes.getLength(); k++) {
+
+                                            if (posnodes.item(k) instanceof org.w3c.dom.Element) {
+
+                                                switch (posnodes.item(k).getNodeName()) {
+                                                    case "x":
+
+
+                                                        pp[0] = Float.parseFloat(posnodes.item(k).getLastChild().getTextContent().trim());
+                                                        break;
+                                                    case "y":
+                                                        pp[1] = Float.parseFloat(posnodes.item(k).getLastChild().getTextContent().trim());
+                                                        break;
+                                                    case "z":
+                                                        pp[2] = Float.parseFloat(posnodes.item(k).getLastChild().getTextContent().trim());
+                                                        break;
+
+                                                }
+                                            }
+                                        }
+                                        this.setPosition(pp);
+                                    }
+                                    break;
+
+                                    case "scale": {
+                                        // Node positionnode = collisionchildnode.getChildNodes().item(1);
+                                        NodeList scalenodes = collisionchildnode.getChildNodes();
+                                        float pp[] = new float[3];
+
+                                        for (int k = 0; k < scalenodes.getLength(); k++) {
+
+                                            if (scalenodes.item(k) instanceof org.w3c.dom.Element) {
+
+                                                switch (scalenodes.item(k).getNodeName()) {
+                                                    case "x":
+                                                        pp[0] = Float.parseFloat(scalenodes.item(k).getLastChild().getTextContent().trim());
+                                                        break;
+                                                    case "y":
+                                                        pp[1] = Float.parseFloat(scalenodes.item(k).getLastChild().getTextContent().trim());
+                                                        break;
+                                                    case "z":
+                                                        pp[2] = Float.parseFloat(scalenodes.item(k).getLastChild().getTextContent().trim());
+                                                        break;
+
+                                                }
+                                            }
+                                        }
+                                        this.setScale(pp);
+
+                                        IModel m1 = new BoxModel(pp[0]);
+                                        this.setModel(m1);
+
+                                    }
+                                    break;
+
+
+                                }
                         }
 
-                        switch(parser.getName()) {
-
-                            case "position":
-
-                                parser.next();
-                                String vv = Utils.readText(parser);
-                                pp[0] = Float.parseFloat(vv);
-                                parser.next();
-                                pp[1] = Float.parseFloat(Utils.readText(parser));
-                                parser.next();
-                                pp[2] = Float.parseFloat(Utils.readText(parser));
-                                setPosition(pp);
-                                parser.next();
-
-                            break;
-
-                            case "width":
-                                width = Float.parseFloat(Utils.readText(parser));
-                                parser.next();
-                                break;
-
-                            case "height":
-                                height = Float.parseFloat(Utils.readText(parser));
-                                parser.next();
-                                break;
-
-                            case "length":
-                                length = Float.parseFloat(Utils.readText(parser));
-
-                                parser.next();
-
-								setModel(new BoxModel(width));
-                                break;
-                        }
-
-                    }
-
-					break;
-
-				case "material":
-
-
-					String materialtype = (String) parser.getAttributeValue(0);
-					IMaterial mat = new SimpleMaterial();
-
-
-
-					switch (materialtype)
-					{
-
-						case "SimpleMaterial":
-							mat = (SimpleMaterial)mat.Parse(parser);
-                            parser.next();
-							break;
-					}
 
 
 
 
-					break;
-
-			}
-			
-			//if (nodename.equals("id")){
-				
-			//}else
-				//Utils.skip(parser);
-            parser.next();
-		}
-
-
-
-	return this;
-
+		return this;
 	}
 }

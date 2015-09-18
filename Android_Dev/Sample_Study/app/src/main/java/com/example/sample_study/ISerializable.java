@@ -1,5 +1,7 @@
 package com.example.sample_study;
 
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 
@@ -10,7 +12,7 @@ import java.io.IOException;
  */
 public interface ISerializable {
 
-  abstract Object Parse(XmlPullParser parser) throws IOException, XmlPullParserException;
+  abstract Object Parse(Node childnode);
 
 
 

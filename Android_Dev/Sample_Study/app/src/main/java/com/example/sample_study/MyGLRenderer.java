@@ -88,7 +88,7 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
 		world = new SimpleWorld();
 
     	
-    	float[] pos =  {10.0f, 10.0f, 10.0f};
+    	float[] pos =  {20.0f, 20.0f, 20.0f};
 		float[] target =  {0.0f, 0.0f, 0.0f};
 		camera = new SimpleCamera("CAM1",30,0,100,pos,target);
 		

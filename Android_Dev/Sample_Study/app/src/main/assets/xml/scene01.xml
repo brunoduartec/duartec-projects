@@ -7,12 +7,40 @@
 				<y>0</y>
 				<z>0</z>
 			</position>
-			<width>0.1</width>
-			<height>0.1</height>
-			<length>0.1</length>
+			<scale>
+				<x>.3</x>
+				<y>.3</y>
+				<z>.3</z>			
+			</scale>
+			<mass>0</mass>
 		</collision>
 		<material type = "SimpleMaterial">
-			<mass>0</mass>
+			<color>
+				<r>100</r>
+				<g>0</g>
+				<b>0</b>
+				<a>255</a>
+			</color>
 		</material>
 	</object>
+	
+		<object>
+		<id>cube02</id>
+		<collision type="box">
+			<position>
+				<x>0</x>
+				<y>.5</y>
+				<z>0</z>
+			</position>
+			<scale>
+				<x>.3</x>
+				<y>.3</y>
+				<z>.3</z>			
+			</scale>
+			<mass>0</mass>
+		</collision>
+		
+	</object>
+	
+	
 </scene>

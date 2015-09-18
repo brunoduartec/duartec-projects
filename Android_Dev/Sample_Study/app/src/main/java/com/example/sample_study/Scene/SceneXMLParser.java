@@ -70,7 +70,7 @@ public class SceneXMLParser {
                 {
 
                     SimpleObject obj = new SimpleObject();
-
+                    SimpleMaterial mat = new SimpleMaterial();
                     NodeList childs = node.getChildNodes();
 
                     for (int j = 0; j < childs.getLength(); j++) {
@@ -86,80 +86,23 @@ public class SceneXMLParser {
 
                             case "collision":
 
-                                NodeList collisionchildnodeList = childnode.getChildNodes();
-
-                                for (int w = 0; w < collisionchildnodeList.getLength(); w++) {
-                                    Node collisionchildnode = collisionchildnodeList.item(w);
-                                    String collisionchildnodename = collisionchildnode.getNodeName();
-
-
-
-                                switch(collisionchildnodename) {
-                                    case "position": {
-                                       // Node positionnode = collisionchildnode.getChildNodes().item(1);
-                                        NodeList posnodes = collisionchildnode.getChildNodes();
-                                        float pp[] = new float[3];
-
-                                        for (int k = 0; k < posnodes.getLength(); k++) {
-
-                                            if (posnodes.item(k) instanceof org.w3c.dom.Element) {
-
-                                                switch (posnodes.item(k).getNodeName()) {
-                                                    case "x":
-
-
-                                                        pp[0] = Float.parseFloat(posnodes.item(k).getLastChild().getTextContent().trim());
-                                                        break;
-                                                    case "y":
-                                                        pp[1] = Float.parseFloat(posnodes.item(k).getLastChild().getTextContent().trim());
-                                                        break;
-                                                    case "z":
-                                                        pp[2] = Float.parseFloat(posnodes.item(k).getLastChild().getTextContent().trim());
-                                                        break;
-
-                                                }
-                                            }
-                                        }
-                                        obj.setPosition(pp);
-                                    }
-                                    break;
-
-                                    case "width":
-                                        float width = Float.parseFloat(collisionchildnode.getLastChild().getTextContent().trim());
-                                        IModel m1 = new BoxModel(width);
-                                        obj.setModel(m1);
-                                        break;
-                                }
-                        }
-
-
+                                obj.Parse(childnode);
+                                obj.setMaterial(mat);
 
                                 break;
 
                             case "material":
-                                SimpleMaterial mat = new SimpleMaterial();
+
+                                mat.Parse(childnode);
                                 obj.setMaterial(mat);
-                                Obj.add(obj);
+
                                 break;
-
-
-
                         }
-
-
                     }
 
-
-
-
+                    Obj.add(obj);
                 }
-
-
-
-
             }
-
-
         }
         scene.getWorld().AddObjectList(Obj);
 
@@ -169,70 +112,7 @@ public class SceneXMLParser {
 
 
 
-    public IScene parseScene(int id, IScene scene)
-    {
 
-        Context localContext = GraphicFactory.getInstance().getGraphicContext();
-        XmlResourceParser xpp = localContext.getResources().getXml(id);
-
-        try {
-           scene.getWorld().AddObjectList(readObjects(xpp));
-
-
-        } catch (XmlPullParserException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    return scene;
-
-    }
-
-
-    public List parse(InputStream in) throws XmlPullParserException, IOException {
-
-        try {
-            XmlPullParser parser = Xml.newPullParser();
-            parser.setFeature(XmlPullParser.FEATURE_PROCESS_NAMESPACES,false);
-            parser.setInput(in,null);
-            parser.nextTag();
-            return readObjects(parser);
-
-        }finally {
-            in.close();
-        }
-
-    }
-
-    public List readObjects(XmlPullParser parser) throws XmlPullParserException, IOException{
-
-        List objects = new ArrayList();
-
-       // parser.require(XmlPullParser.START_TAG,ns,"scene");
-
-        parser.next();
-        String vlaus = parser.getName();
-
-
-        while (parser.next()!= XmlPullParser.END_TAG){
-            if ( parser.getEventType()!= XmlPullParser.START_TAG)
-                continue;
-            String name = parser.getName();
-
-            if (name.equals("object")){
-
-                SimpleObject obj = new SimpleObject();
-                objects.add(obj.Parse(parser));
-            }
-            //else
-              //  Utils.skip(parser);
-        }
-
-
-
-
-        return objects;
-    }
 
 
 
