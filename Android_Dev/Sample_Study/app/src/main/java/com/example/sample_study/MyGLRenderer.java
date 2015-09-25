@@ -73,7 +73,7 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
     private float posx;
     private float posy;
 
-	private SimpleCamera camera;
+//	private SimpleCamera camera;
     
 
     
@@ -83,17 +83,25 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
 
         // Set the background frame color
     	GLES30.glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
+// Use culling to remove back faces.
+        GLES30.glEnable(GLES30.GL_CULL_FACE);
 
+        // Enable depth testing
+        GLES30.glEnable(GLES30.GL_DEPTH_TEST);
 
 		world = new SimpleWorld();
 
     	
-    	float[] pos =  {20.0f, 20.0f, 20.0f};
-		float[] target =  {0.0f, 0.0f, 0.0f};
-		camera = new SimpleCamera("CAM1",30,0,100,pos,target);
+    //	float[] pos =  {20.0f, 20.0f, 20.0f};
+	//	float[] target =  {0.0f, 0.0f, 0.0f};
+
+
+      //  	float[] pos =  {5.0f, 5.0f, -5.0f};
+       // 	float[] target =  {0.0f, 0.0f, 0.0f};
+		//camera = new SimpleCamera("CAM1",30,1,10,pos,target);
 		
 		
-		world.setCamera(camera);
+		//world.setCamera(camera);
     	
 
     	
@@ -144,7 +152,7 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
     public void onDrawFrame(GL10 unused) {
     
         // Draw background color
-    	GLES30.glClear(GLES30.GL_COLOR_BUFFER_BIT);
+    	GLES30.glClear(GLES30.GL_DEPTH_BUFFER_BIT | GLES30.GL_COLOR_BUFFER_BIT);
               	  // Set the camera position (View matrix)
         
 
@@ -165,8 +173,13 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
         // this projection matrix is applied to object coordinates
         // in the onDrawFrame() method
       //  Matrix.frustumM(mProjectionMatrix, 0, -ratio, ratio, -1, 1, 1, 200);
-        
-        camera.Update();
+
+
+        scene.getWorld().getCamera().Update();
+        //camera.width = width;
+        //camera.height = height;
+
+        //camera.Update();
       
         
     }
@@ -225,13 +238,13 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
 		changeVarX+= dx;
 		changeVarY+= dy;
 	
-	float[] cpos = camera.getPosition();
+	//float[] cpos = camera.getPosition();
 	
-	cpos[0]+=dy;
-	cpos[1]+=dy;
+	//cpos[0]+=dy;
+	//cpos[1]+=dy;
 	//cpos[2]+=dy;
 	
-	camera.setPosition(cpos);
+	//camera.setPosition(cpos);
 	
 	
 	

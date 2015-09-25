@@ -42,8 +42,9 @@ public class SimpleObject extends IObject
 	public void Update() {
 		// TODO Auto-generated method stub
 		
-		 Matrix.setIdentityM(localTransformation, 0); // initialize to identity matrix
-		 Matrix.translateM(localTransformation, 0, position[0], position[1], position[2]); // Multiply by translation to the position
+	//	 Matrix.setIdentityM(localTransformation, 0); // initialize to identity matrix
+	//	Matrix.scaleM(localTransformation,0,scale[0],scale[1],scale[2]);
+	//	 Matrix.translateM(localTransformation, 0, position[0], position[1], position[2]); // Multiply by translation to the position
 
 	}
 
@@ -192,7 +193,7 @@ public class SimpleObject extends IObject
                                         }
                                         this.setScale(pp);
 
-                                        IModel m1 = new BoxModel(pp[0]);
+                                        IModel m1 = new BoxModel(1);
                                         this.setModel(m1);
 
                                     }

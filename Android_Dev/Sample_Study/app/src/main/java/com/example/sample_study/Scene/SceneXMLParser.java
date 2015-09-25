@@ -5,6 +5,7 @@ import android.content.res.XmlResourceParser;
 import android.renderscript.Element;
 import android.util.Xml;
 
+import com.example.sample_study.Camera.SimpleCamera;
 import com.example.sample_study.GraphicFactory;
 
 import com.example.sample_study.IObject;
@@ -66,41 +67,58 @@ public class SceneXMLParser {
             if (node instanceof org.w3c.dom.Element)
             {
                String nodename =  node.getNodeName();
-                if (nodename.equalsIgnoreCase("object"))
-                {
-
-                    SimpleObject obj = new SimpleObject();
-                    SimpleMaterial mat = new SimpleMaterial();
-                    NodeList childs = node.getChildNodes();
-
-                    for (int j = 0; j < childs.getLength(); j++) {
-                        Node childnode = childs.item(j);
-                        String childnodename =  childnode.getNodeName();
-
-                        switch (childnodename){
-                            case "id":
 
 
-                               obj.setName(childnode.getLastChild().getTextContent().trim());
-                                break;
+                switch (nodename) {
 
-                            case "collision":
+                    case "camera":
+                        SimpleCamera cam = new SimpleCamera();
+                        cam.Parse(node);
+                        scene.getWorld().setCamera(cam);
 
-                                obj.Parse(childnode);
-                                obj.setMaterial(mat);
+                        break;
 
-                                break;
 
-                            case "material":
 
-                                mat.Parse(childnode);
-                                obj.setMaterial(mat);
+                    case "object":
 
-                                break;
+                        // if (nodename.equalsIgnoreCase("object"))
+                    {
+
+                        SimpleObject obj = new SimpleObject();
+                        SimpleMaterial mat = new SimpleMaterial();
+                        NodeList childs = node.getChildNodes();
+
+                        for (int j = 0; j < childs.getLength(); j++) {
+                            Node childnode = childs.item(j);
+                            String childnodename = childnode.getNodeName();
+
+                            switch (childnodename) {
+                                case "id":
+
+
+                                    obj.setName(childnode.getLastChild().getTextContent().trim());
+                                    break;
+
+                                case "collision":
+
+                                    obj.Parse(childnode);
+                                    obj.setMaterial(mat);
+
+                                    break;
+
+                                case "material":
+
+                                    mat.Parse(childnode);
+                                    obj.setMaterial(mat);
+
+                                    break;
+                            }
                         }
-                    }
 
-                    Obj.add(obj);
+                        Obj.add(obj);
+                    }
+                    break;
                 }
             }
         }

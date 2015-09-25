@@ -1,8 +1,15 @@
 package com.example.sample_study.Camera;
 
 
-public interface ICamera
+import com.example.sample_study.ISerializable;
+
+public interface ICamera extends ISerializable
 {
+
+void setRatio(float ratio);
+
+float getRatio();
+
 float getFOV();
 void setFOV(float f);
 void Update();

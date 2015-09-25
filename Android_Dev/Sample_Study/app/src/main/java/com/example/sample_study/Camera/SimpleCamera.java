@@ -2,9 +2,14 @@ package com.example.sample_study.Camera;
 
 import android.opengl.Matrix;
 
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+
 
 public class SimpleCamera implements ICamera {
 
+
+	private float ratio;
 	private float fov;
 	private float nearPlane;
 	private float farPlane;
@@ -16,6 +21,15 @@ public class SimpleCamera implements ICamera {
 	
 	private String name;
 	private float _aspectRatio = 4f / 3f;
+
+
+	public float width;
+	public float height;
+
+	public SimpleCamera()
+	{}
+
+
 
 	public SimpleCamera(String name,float FOV,float NearPlane, float FarPlane, float[] position, float[] target)
 	{
@@ -46,10 +60,37 @@ public class SimpleCamera implements ICamera {
 	}
 	void CalcProjectionMatrix()
 	{
-		Matrix.orthoM(mProjectionMatrix, 0, -_aspectRatio, _aspectRatio, -1.0f, 1.0f, nearPlane,farPlane);
+		//Matrix.orthoM(mProjectionMatrix, 0, -_aspectRatio, _aspectRatio, -1.0f, 1.0f, nearPlane,farPlane);
+
+		// Set the OpenGL viewport to the same size as the surface.
+		//GLES30.glViewport(0, 0, width, height);
+
+		// Create a new perspective projection matrix. The height will stay the same
+		// while the width will vary as per aspect ratio.
+		//float ratio = (float) width / height;
+		float left = -ratio;
+		float right = ratio;
+		float bottom = -1.0f;
+		float top = 1.0f;
+		//float near = 1.0f;
+		//float far = 10.0f;
+
+		Matrix.frustumM(mProjectionMatrix, 0, left, right, bottom, top, nearPlane, farPlane);
+
+
 		
 	}
-	
+
+	@Override
+	public void setRatio(float ratio) {
+		this.ratio = ratio;
+	}
+
+	@Override
+	public float getRatio() {
+		return ratio;
+	}
+
 	@Override
 	public float getFOV() {
 		// TODO Auto-generated method stub
@@ -157,4 +198,90 @@ public class SimpleCamera implements ICamera {
 		return mViewProjectionMatrix;
 	}
 
+	@Override
+	public Object Parse(Node childnode) {
+		NodeList collisionchildnodeList = childnode.getChildNodes();
+
+		for (int w = 0; w < collisionchildnodeList.getLength(); w++) {
+			Node collisionchildnode = collisionchildnodeList.item(w);
+			String collisionchildnodename = collisionchildnode.getNodeName();
+
+
+			switch (collisionchildnodename) {
+
+
+				case "id":
+					this.setName(collisionchildnode.getLastChild().getTextContent().trim());
+					break;
+				case "fov":
+					float vlaus = Float.parseFloat(collisionchildnode.getLastChild().getTextContent().trim());
+					this.setFOV(vlaus);
+					break;
+				case "nearplane":
+					this.setNearPlane(Float.parseFloat(collisionchildnode.getLastChild().getTextContent().trim()));
+					break;
+				case "ratio":
+					this.setRatio(Float.parseFloat(collisionchildnode.getLastChild().getTextContent().trim()));
+					break;
+				case "farplane":
+					this.setFarPlane(Float.parseFloat(collisionchildnode.getLastChild().getTextContent().trim()));
+					break;
+
+				case "position": {
+					// Node positionnode = collisionchildnode.getChildNodes().item(1);
+					NodeList posnodes = collisionchildnode.getChildNodes();
+					float pp[] = new float[3];
+
+					for (int k = 0; k < posnodes.getLength(); k++) {
+
+						if (posnodes.item(k) instanceof org.w3c.dom.Element) {
+
+							switch (posnodes.item(k).getNodeName()) {
+								case "x":
+									pp[0] = Float.parseFloat(posnodes.item(k).getLastChild().getTextContent().trim());
+									break;
+								case "y":
+									pp[1] = Float.parseFloat(posnodes.item(k).getLastChild().getTextContent().trim());
+									break;
+								case "z":
+									pp[2] = Float.parseFloat(posnodes.item(k).getLastChild().getTextContent().trim());
+									break;
+
+							}
+						}
+					}
+					this.setPosition(pp);
+				}
+
+				case "target": {
+					// Node positionnode = collisionchildnode.getChildNodes().item(1);
+					NodeList posnodes = collisionchildnode.getChildNodes();
+					float pp[] = new float[3];
+
+					for (int k = 0; k < posnodes.getLength(); k++) {
+
+						if (posnodes.item(k) instanceof org.w3c.dom.Element) {
+
+							switch (posnodes.item(k).getNodeName()) {
+								case "x":
+									pp[0] = Float.parseFloat(posnodes.item(k).getLastChild().getTextContent().trim());
+									break;
+								case "y":
+									pp[1] = Float.parseFloat(posnodes.item(k).getLastChild().getTextContent().trim());
+									break;
+								case "z":
+									pp[2] = Float.parseFloat(posnodes.item(k).getLastChild().getTextContent().trim());
+									break;
+
+							}
+						}
+					}
+					this.setTarget(pp);
+				}
+
+
+			}
+		}
+		return this;
+	}
 }
