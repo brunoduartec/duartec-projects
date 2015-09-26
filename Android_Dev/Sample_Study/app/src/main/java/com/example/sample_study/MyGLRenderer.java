@@ -27,6 +27,7 @@ import javax.microedition.khronos.opengles.GL10;
 
 import com.example.sample_study.Color.COLORNAME;
 import com.example.sample_study.Camera.SimpleCamera;
+import com.example.sample_study.Gameplay.Board;
 import com.example.sample_study.Light.AmbientLight;
 import com.example.sample_study.Light.ILight;
 import com.example.sample_study.Scene.IScene;
@@ -96,12 +97,12 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
 	//	float[] target =  {0.0f, 0.0f, 0.0f};
 
 
-      //  	float[] pos =  {5.0f, 5.0f, -5.0f};
-       // 	float[] target =  {0.0f, 0.0f, 0.0f};
-		//camera = new SimpleCamera("CAM1",30,1,10,pos,target);
+       	float[] pos =  {2.0f, 2.0f, -2.0f};
+       	float[] target =  {0.0f, 0.0f, 0.0f};
+        SimpleCamera camera = new SimpleCamera("CAM1", 30, 1, 10, pos, target);
 		
 		
-		//world.setCamera(camera);
+		world.setCamera(camera);
     	
 
     	
@@ -141,9 +142,13 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
     	world.AddLight(l1);*/
     	
     	scene = new SimpleScene(world);
-        SceneXMLParser sceneparser = new SceneXMLParser();
-      //  sceneparser.parseScene(R.xml.scene01,scene);
-        sceneparser.DOMparseScene(R.xml.scene01,scene);
+
+        Board board1 = new Board();
+        world.AddObjectList(board1.CreateBoard(20,0.5f));
+
+        //SceneXMLParser sceneparser = new SceneXMLParser();
+      
+        //sceneparser.DOMparseScene(R.xml.scene01,scene);
 
     }
     
