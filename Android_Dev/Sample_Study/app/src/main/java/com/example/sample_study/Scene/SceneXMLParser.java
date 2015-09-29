@@ -1,36 +1,23 @@
 package com.example.sample_study.Scene;
 
 import android.content.Context;
-import android.content.res.XmlResourceParser;
-import android.renderscript.Element;
-import android.util.Xml;
 
 import com.example.sample_study.Camera.SimpleCamera;
 import com.example.sample_study.GraphicFactory;
 
 import com.example.sample_study.IObject;
 import com.example.sample_study.Material.SimpleMaterial;
-import com.example.sample_study.Model.BoxModel;
-import com.example.sample_study.Model.IModel;
-import com.example.sample_study.Model.SimpleModel;
 import com.example.sample_study.SimpleObject;
-import com.example.sample_study.Utils;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
-import org.xml.sax.SAXException;
-import org.xmlpull.v1.XmlPullParser;
-import org.xmlpull.v1.XmlPullParserException;
 
-import java.io.IOException;
-import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.ParserConfigurationException;
 
 /**
  * Created by Bruno on 09/09/2015.
@@ -74,7 +61,7 @@ public class SceneXMLParser {
                     case "camera":
                         SimpleCamera cam = new SimpleCamera();
                         cam.Parse(node);
-                        scene.getWorld().setCamera(cam);
+                        scene.getWorld().getCameraManager().addCamera(cam);
 
                         break;
 

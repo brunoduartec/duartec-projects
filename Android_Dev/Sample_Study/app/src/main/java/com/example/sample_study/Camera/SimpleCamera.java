@@ -9,18 +9,18 @@ import org.w3c.dom.NodeList;
 public class SimpleCamera implements ICamera {
 
 
-	private float ratio;
+
 	private float fov;
-	private float nearPlane;
-	private float farPlane;
+	protected float nearPlane;
+	protected float farPlane;
 	private float[] position;
 	private float[] target;
-	private final float[] mViewMatrix = new float[16];
-	private final float[] mProjectionMatrix = new float[16];
-	private final float[] mViewProjectionMatrix = new float[16];
+	private float[] mViewMatrix = new float[16];
+	protected float[] mProjectionMatrix = new float[16];
+	private float[] mViewProjectionMatrix = new float[16];
 	
 	private String name;
-	private float _aspectRatio = 4f / 3f;
+	protected float ratio = 4f / 3f;
 
 
 	public float width;
@@ -58,7 +58,7 @@ public class SimpleCamera implements ICamera {
 		 Matrix.setLookAtM(mViewMatrix, 0 ,position[0], position[1], position[2], target[0],target[1],target[2], 0f, 1.0f, 0.0f);
 		
 	}
-	void CalcProjectionMatrix()
+	private void CalcProjectionMatrix()
 	{
 		//Matrix.orthoM(mProjectionMatrix, 0, -_aspectRatio, _aspectRatio, -1.0f, 1.0f, nearPlane,farPlane);
 

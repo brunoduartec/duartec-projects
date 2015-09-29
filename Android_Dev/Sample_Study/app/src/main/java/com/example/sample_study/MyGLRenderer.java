@@ -19,31 +19,16 @@ import javax.microedition.khronos.egl.EGLConfig;
 import javax.microedition.khronos.opengles.GL10;
 
 
-
-
-
-
-
-
-import com.example.sample_study.Color.COLORNAME;
+import com.example.sample_study.Camera.Camera2D;
 import com.example.sample_study.Camera.SimpleCamera;
 import com.example.sample_study.Gameplay.Board;
-import com.example.sample_study.Light.AmbientLight;
-import com.example.sample_study.Light.ILight;
 import com.example.sample_study.Scene.IScene;
-import com.example.sample_study.Scene.SceneXMLParser;
 import com.example.sample_study.Scene.SimpleScene;
 
-import android.content.Context;
-import android.content.res.XmlResourceParser;
 import android.opengl.GLES30;
 import android.opengl.GLSurfaceView;
 import android.util.Log;
-
-import org.xmlpull.v1.XmlPullParserException;
-
-import java.io.IOException;
-import java.io.InputStream;
+import android.view.MotionEvent;
 
 /**
  * Provides drawing instructions for a GLSurfaceView object. This class
@@ -100,10 +85,13 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
        	float[] pos =  {2.0f, 2.0f, -2.0f};
        	float[] target =  {0.0f, 0.0f, 0.0f};
         SimpleCamera camera = new SimpleCamera("CAM1", 30, 1, 10, pos, target);
+
+
+        Camera2D cam2D = new Camera2D("CAM2",1,10,3/4);
 		
-		
-		world.setCamera(camera);
-    	
+
+		world.getCameraManager().addCamera(camera);
+      //  world.getCameraManager().addCamera(cam2D);
 
     	
 	/*	SimpleObject o1 = (SimpleObject) ObjectFactory.getInstance().getBoxObject("o1", scale);
@@ -144,7 +132,7 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
     	scene = new SimpleScene(world);
 
         Board board1 = new Board();
-        world.AddObjectList(board1.CreateBoard(20,0.5f));
+        world.AddObjectList(board1.CreateBoard(3,0.5f));
 
         //SceneXMLParser sceneparser = new SceneXMLParser();
       
@@ -180,7 +168,7 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
       //  Matrix.frustumM(mProjectionMatrix, 0, -ratio, ratio, -1, 1, 1, 200);
 
 
-        scene.getWorld().getCamera().Update();
+        scene.getWorld().getCameraManager().getActualCamera().Update();
         //camera.width = width;
         //camera.height = height;
 
@@ -234,6 +222,18 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
     	posy= -dy;  // the y axys is inverted    	
     }
 
+
+    public void changeCamera()
+    {
+
+        String actualname = world.getCameraManager().getActualCamera().getName();
+        if (actualname.equals("CAM1"))
+            world.getCameraManager().setActualCamera("CAM2");
+        else
+            world.getCameraManager().setActualCamera("CAM1");
+
+
+    }
     
     float changeVarX=0.0f;
     float changeVarY=0.0f;

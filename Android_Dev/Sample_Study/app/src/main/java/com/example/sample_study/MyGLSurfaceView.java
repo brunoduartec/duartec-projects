@@ -66,6 +66,12 @@ public class MyGLSurfaceView extends GLSurfaceView {
         float y = e.getY();
 
         switch (e.getAction()) {
+
+            case MotionEvent.ACTION_UP:
+                mRenderer.changeCamera();
+
+
+                break;
              
             case MotionEvent.ACTION_MOVE:
 

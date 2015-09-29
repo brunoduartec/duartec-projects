@@ -3,8 +3,6 @@ package com.example.sample_study.Material;
 import com.example.sample_study.GraphicFactory;
 import com.example.sample_study.IObject;
 import com.example.sample_study.IWorld;
-import com.example.sample_study.Model.BoxModel;
-import com.example.sample_study.Model.IModel;
 import com.example.sample_study.MyGLRenderer;
 import com.example.sample_study.R;
 import com.example.sample_study.RawResourceReader;
@@ -90,7 +88,7 @@ public SimpleMaterial()
         // Set color for drawing the triangle
         GLES30.glUniform4fv(mColorHandle, 1, color, 0);
 
-        ICamera cam = world.getCamera();
+        ICamera cam = world.getCameraManager().getActualCamera();
 
        // Matrix.setIdentityM(mMVPMatrix, 0);
         

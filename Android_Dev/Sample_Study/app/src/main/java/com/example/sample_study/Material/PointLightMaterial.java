@@ -107,7 +107,7 @@ public PointLightMaterial()
         // Set color for drawing the triangle
         GLES30.glUniform4fv(mColorHandle, 1, color, 0);
 
-ICamera cam = world.getCamera();
+ICamera cam = world.getCameraManager().getActualCamera();
 
        // Matrix.setIdentityM(mMVPMatrix, 0);
         

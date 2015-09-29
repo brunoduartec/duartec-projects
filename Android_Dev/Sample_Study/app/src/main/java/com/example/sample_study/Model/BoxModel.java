@@ -127,7 +127,9 @@ public class BoxModel implements IModel
 	
 	private void calculateSquareCoords(float size)
     {
-    	
+
+		// fixing the box size to have
+    	size = size/2;
        	
     	 float squareTemp[] = {  // Vertices of the 6 faces
     		      // FRONT

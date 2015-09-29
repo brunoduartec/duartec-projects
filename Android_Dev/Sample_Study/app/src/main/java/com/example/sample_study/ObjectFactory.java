@@ -33,6 +33,7 @@ public class ObjectFactory {
 		
 		IMaterial mat1 = new SimpleMaterial();//DiffuseMaterial();
 		obj = new SimpleObject(mat1,m1, name);
+		obj.setScale(new float[]{1, 1, 1});
 		
 		return obj;
 		

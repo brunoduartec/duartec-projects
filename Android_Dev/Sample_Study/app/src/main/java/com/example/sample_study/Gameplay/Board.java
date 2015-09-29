@@ -1,9 +1,11 @@
 package com.example.sample_study.Gameplay;
 
 import com.example.sample_study.IObject;
+import com.example.sample_study.Light.ILight;
 import com.example.sample_study.ObjectFactory;
 import com.example.sample_study.SimpleObject;
 
+import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -12,31 +14,43 @@ import java.util.List;
 public class Board {
 
     private String name;
-private List<IObject> obj;
+private List<IObject> obj= new LinkedList<>();
 
 
 
+    public Board()
+    {    }
 
-
-    public Board(int size, float cellsize)
+    public List<IObject> CreateBoard(int size, float cellsize)
     {
+        float x,z;
+
+        x = -(size/2)*cellsize;
+        z = -(size/2)*cellsize;
+
 
         for (int i=0;i<size;i++)
         {
-           SimpleObject b1 =  ObjectFactory.getInstance().getBoxObject("box"+i,cellsize);
+            //x = -(size/2)*cellsize;
+            //z = -(size/2)*cellsize;
+            x = x+  cellsize;
+            z = -(size/2)*cellsize;
 
-            float[] pos3 = {0.5f,0.0f,0.5f,1.0f};
-            b1.setPosition(pos3);
-           
+            for (int j=0;j<size;j++) {
+                SimpleObject b1 = ObjectFactory.getInstance().getBoxObject("box" + i+"_"+j, cellsize);
 
+            //    x = x+ i * cellsize;
+                z = z +  cellsize;
+
+                float[] pos3 = {x, 0, z, 1.0f};
+                b1.setPosition(pos3);
+                b1.setScale(new float[]{cellsize,cellsize,cellsize});
+                obj.add(b1);
+            }
 
 
         }
-
-
-
-
-
+        return obj;
     }
 
     public String getName() {
@@ -47,11 +61,5 @@ private List<IObject> obj;
         this.name = name;
     }
 
-    public List<IObject> getObj() {
-        return obj;
-    }
 
-    public void setObj(List<IObject> obj) {
-        this.obj = obj;
-    }
 }

@@ -5,17 +5,18 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
+import com.example.sample_study.Camera.SceneCameraManager;
 import com.example.sample_study.Camera.ICamera;
 import com.example.sample_study.Light.ILight;
 
 public class SimpleWorld implements IWorld {
 
 	
-	
+	private SceneCameraManager camManager;
 	private Map<Integer,IObject> Objs = new HashMap<Integer,IObject>();
 	private List<ILight> lights = new LinkedList<ILight>();
 	
-	private ICamera cam;
+
 	
 	@Override
 	public Map<Integer,IObject> getObjectsList() {
@@ -45,7 +46,8 @@ public class SimpleWorld implements IWorld {
 	{
 		
 		//Objs= new HashMap<Integer,IObject>();
-		int a=0;
+		camManager = new SceneCameraManager();
+
 	}
 	
 	
@@ -74,7 +76,7 @@ public class SimpleWorld implements IWorld {
 		}
 		
 		
-		cam.Update();
+	getCameraManager().getActualCamera().Update();
 	}
 
 	@Override
@@ -97,16 +99,11 @@ public class SimpleWorld implements IWorld {
 
 	
 	@Override
-	public ICamera getCamera() {
+	public SceneCameraManager getCameraManager() {
 		// TODO Auto-generated method stub
-		return cam;
+		return camManager;
 	}
 
-	@Override
-	public void setCamera(ICamera c) {
-		// TODO Auto-generated method stub
-		cam = c;
-	}
 	
 
 }

@@ -90,7 +90,7 @@ public class DiffuseMaterial extends IMaterial {
 	                GLES30.GL_FLOAT, false,
 	                vertexStride,obj.getModel().getNormalsBuffer());
 
-		ICamera cam = world.getCamera();
+		ICamera cam = world.getCameraManager().getActualCamera();
 		
 		//Multiply the ViewMatrix by the Object local position to obtain position in worldspace
 		Matrix.multiplyMM(mMVMatrix, 0, cam.getViewMatrix(), 0, obj.getLocalTransformation(), 0);
