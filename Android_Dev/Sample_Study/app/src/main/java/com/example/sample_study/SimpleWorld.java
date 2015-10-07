@@ -52,10 +52,19 @@ public class SimpleWorld implements IWorld {
 	
 	
 	@Override
-	public void AddObject(IObject obj) {
+	public int AddObject(IObject obj) {
 		// TODO Auto-generated method stub
 		
 		Objs.put(obj.getID(),obj);
+		return obj.getID();
+	}
+
+	@Override
+	public IObject getObjectbyID(int ID) {
+
+
+
+		return (IObject) Objs.get(ID);
 	}
 
 	@Override

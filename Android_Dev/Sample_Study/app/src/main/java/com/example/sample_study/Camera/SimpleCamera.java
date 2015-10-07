@@ -11,8 +11,8 @@ public class SimpleCamera implements ICamera {
 
 
 	private float fov;
-	protected float nearPlane;
-	protected float farPlane;
+	private float nearPlane;
+	private float farPlane;
 	private float[] position;
 	private float[] target;
 	private float[] mViewMatrix = new float[16];
@@ -20,11 +20,11 @@ public class SimpleCamera implements ICamera {
 	private float[] mViewProjectionMatrix = new float[16];
 	
 	private String name;
-	protected float ratio = 4f / 3f;
+	private float ratio = 4f / 3f;
 
 
-	public float width;
-	public float height;
+	private float width;
+	private float height;
 
 	public SimpleCamera()
 	{}
@@ -35,8 +35,8 @@ public class SimpleCamera implements ICamera {
 	{
 		this.name=name;
 		this.fov=FOV;
-		this.nearPlane = NearPlane;
-		this.farPlane = FarPlane;
+		this.setNearPlane(NearPlane);
+		this.setFarPlane(FarPlane);
 		this.position = position;
 		this.target = target;
 		
@@ -58,25 +58,15 @@ public class SimpleCamera implements ICamera {
 		 Matrix.setLookAtM(mViewMatrix, 0 ,position[0], position[1], position[2], target[0],target[1],target[2], 0f, 1.0f, 0.0f);
 		
 	}
-	private void CalcProjectionMatrix()
+	public void CalcProjectionMatrix()
 	{
-		//Matrix.orthoM(mProjectionMatrix, 0, -_aspectRatio, _aspectRatio, -1.0f, 1.0f, nearPlane,farPlane);
-
-		// Set the OpenGL viewport to the same size as the surface.
-		//GLES30.glViewport(0, 0, width, height);
-
-		// Create a new perspective projection matrix. The height will stay the same
-		// while the width will vary as per aspect ratio.
-		//float ratio = (float) width / height;
-		float left = -ratio;
-		float right = ratio;
+		float left = -getRatio();
+		float right = getRatio();
 		float bottom = -1.0f;
 		float top = 1.0f;
-		//float near = 1.0f;
-		//float far = 10.0f;
 
-		Matrix.frustumM(mProjectionMatrix, 0, left, right, bottom, top, nearPlane, farPlane);
-
+		Matrix.frustumM(mProjectionMatrix, 0, left, right, bottom, top, getNearPlane(), getFarPlane());
+	//	Matrix.orthoM(mProjectionMatrix, 0, 0f, this.getWidth(), 0.0f, this.getHeight(), this.getNearPlane(),this.getFarPlane());
 
 		
 	}
@@ -283,5 +273,21 @@ public class SimpleCamera implements ICamera {
 			}
 		}
 		return this;
+	}
+
+	public float getWidth() {
+		return width;
+	}
+
+	public void setWidth(float width) {
+		this.width = width;
+	}
+
+	public float getHeight() {
+		return height;
+	}
+
+	public void setHeight(float height) {
+		this.height = height;
 	}
 }

@@ -45,7 +45,7 @@ public class MyGLSurfaceView extends GLSurfaceView {
         setRenderer(mRenderer);
 
         // Render the view only when there is a change in the drawing data
-        setRenderMode(GLSurfaceView.RENDERMODE_WHEN_DIRTY);
+        setRenderMode(GLSurfaceView.RENDERMODE_CONTINUOUSLY);
         
         
         
@@ -68,36 +68,23 @@ public class MyGLSurfaceView extends GLSurfaceView {
         switch (e.getAction()) {
 
             case MotionEvent.ACTION_UP:
-                mRenderer.changeCamera();
+              //  mRenderer.changeCamera();
 
 
                 break;
-             
+
+
+
             case MotionEvent.ACTION_MOVE:
 
                 float dx = x - mPreviousX;
                 float dy = y - mPreviousY;
 
-                // reverse direction of rotation above the mid-line
-               
-                
-                if (y > getHeight() / 2) {
-                    dx = dx * -1 ;
-                }
 
-                // reverse direction of rotation to left of the mid-line
-                if (x < getWidth() / 2) {
-                    dy = dy * -1 ;
-                }
+                mRenderer.DirectionMade(dx,dy);
 
-                 
-               //mRenderer.setAngle( mRenderer.getAngle() +((dx + dy) * TOUCH_SCALE_FACTOR));  // = 180.0f / 320
                 
-                //mRenderer.setPositionDelta(dx*TOUCH_SCALE_FACTOR, dy*TOUCH_SCALE_FACTOR);
-                
-                mRenderer.setVar(TOUCH_SCALE_FACTOR*dx,TOUCH_SCALE_FACTOR*dy);
-                
-                requestRender();
+               // requestRender();
         }
 
         mPreviousX = x;

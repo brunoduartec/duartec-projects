@@ -10,6 +10,8 @@ public class Color {
 		BLUE,
 		GREEN		
 	};
+
+	public float[] color;
 	
 	public static float[] enumtoColor(COLORNAME cc)
 	{
@@ -37,8 +39,6 @@ public class Color {
 	
 	float[] getColor()
 	{
-					
-		float[] color =  {10.0f, 10.0f, 10.0f,1.0f};
 		return color;
 	}
 	

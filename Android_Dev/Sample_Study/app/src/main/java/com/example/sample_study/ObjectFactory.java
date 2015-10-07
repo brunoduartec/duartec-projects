@@ -29,11 +29,11 @@ public class ObjectFactory {
 		SimpleObject obj;
 
 		
-		IModel m1 = new BoxModel(scale);		
+		IModel m1 = new BoxModel(scale);
 		
 		IMaterial mat1 = new SimpleMaterial();//DiffuseMaterial();
 		obj = new SimpleObject(mat1,m1, name);
-		obj.setScale(new float[]{1, 1, 1});
+		obj.setScale(new float[]{scale, scale, scale});
 		
 		return obj;
 		

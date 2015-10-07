@@ -9,19 +9,38 @@ public class Camera2D extends SimpleCamera {
 
 
 
-    public Camera2D(String name,float nearPlane,float farPlane,float ratio)
+
+
+    public Camera2D(String name,float width,float height,float nearplane, float farplane,float ratio)
     {
         this.setName(name);
-this.ratio=ratio;
-        this.nearPlane=nearPlane;
-        this.farPlane = farPlane;
+        this.setRatio(ratio);
+        this.setWidth(width);
+        this.setHeight(height);
+        this.setNearPlane(nearplane);
+        this.setFarPlane(farplane);
 
+
+        float[] pos =  {0.0f, 0.0f, 10.0f};
+        float[] target =  {0.0f, 0.0f, 0.0f};
+
+
+
+        this.setPosition(pos);
+        this.setTarget(target);
+
+
+        CalcViewMatrix();
+        CalcProjectionMatrix();
+        CalcViewProjectionMatrix();
 
     }
-    private void CalcProjectionMatrix()
+
+    @Override
+    public void CalcProjectionMatrix()
     {
 
-        Matrix.orthoM(mProjectionMatrix, 0, -ratio, ratio, -1.0f, 1.0f, nearPlane,farPlane);
+        Matrix.orthoM(mProjectionMatrix, 0, 0f, this.getWidth(), 0.0f, this.getHeight(), this.getNearPlane(),this.getFarPlane());
 
     }
 

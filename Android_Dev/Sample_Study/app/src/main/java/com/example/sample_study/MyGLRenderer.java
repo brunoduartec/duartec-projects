@@ -21,6 +21,8 @@ import javax.microedition.khronos.opengles.GL10;
 
 import com.example.sample_study.Camera.Camera2D;
 import com.example.sample_study.Camera.SimpleCamera;
+import com.example.sample_study.Component.FpsCounterComponent;
+import com.example.sample_study.Component.TimerComponent;
 import com.example.sample_study.Gameplay.Board;
 import com.example.sample_study.Scene.IScene;
 import com.example.sample_study.Scene.SimpleScene;
@@ -28,7 +30,6 @@ import com.example.sample_study.Scene.SimpleScene;
 import android.opengl.GLES30;
 import android.opengl.GLSurfaceView;
 import android.util.Log;
-import android.view.MotionEvent;
 
 /**
  * Provides drawing instructions for a GLSurfaceView object. This class
@@ -49,18 +50,22 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
     private IScene scene;
     
     
-    
+    private float width,height;
     
 
     private float mAngle;
-    float scale = 0.1f;
+    float scale = 0.7f;
     float delta = 0.01f;
+
+    int size = 5;
+    float cameradistance = 1.3f;
     
     private float posx;
     private float posy;
-
+    FpsCounterComponent fps;
+    TimerComponent timer;
 //	private SimpleCamera camera;
-    
+    Board board1;
 
     
   
@@ -68,12 +73,17 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
     public void onSurfaceCreated(GL10 unused, EGLConfig config) {
 
         // Set the background frame color
-    	GLES30.glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
+    	GLES30.glClearColor(59/255, 176/255, 199/255, 1.0f);
 // Use culling to remove back faces.
         GLES30.glEnable(GLES30.GL_CULL_FACE);
 
         // Enable depth testing
         GLES30.glEnable(GLES30.GL_DEPTH_TEST);
+
+
+        fps = new FpsCounterComponent(30);
+        timer = new TimerComponent(5000);
+
 
 		world = new SimpleWorld();
 
@@ -82,64 +92,37 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
 	//	float[] target =  {0.0f, 0.0f, 0.0f};
 
 
-       	float[] pos =  {2.0f, 2.0f, -2.0f};
+       	float[] pos =  {cameradistance, cameradistance*1.5f, cameradistance};
        	float[] target =  {0.0f, 0.0f, 0.0f};
-        SimpleCamera camera = new SimpleCamera("CAM1", 30, 1, 10, pos, target);
+        SimpleCamera camera = new SimpleCamera("CAM1",60, 1, 10, pos, target);
 
-
-        Camera2D cam2D = new Camera2D("CAM2",1,10,3/4);
+//String name,float width,float height,float nearplane, float farplane,float ratio
+        Camera2D cam2D = new Camera2D("CAM2",720,1118,0,50,(float)(3/4));
 		
 
 		world.getCameraManager().addCamera(camera);
-      //  world.getCameraManager().addCamera(cam2D);
+        world.getCameraManager().addCamera(cam2D);
 
-    	
-	/*	SimpleObject o1 = (SimpleObject) ObjectFactory.getInstance().getBoxObject("o1", scale);
-		
-		SimpleObject o2 = (SimpleObject) ObjectFactory.getInstance().getBoxObject("o2", scale);
-		
-		SimpleObject o3 = (SimpleObject) ObjectFactory.getInstance().getBoxObject("o3", scale);
-		
-		SimpleObject o4 = (SimpleObject) ObjectFactory.getInstance().getBoxObject("o4", scale);
-		
-		
-		
-		float[] pos1 = {0.0f,0.0f,0.0f,1.0f};
-		o1.setPosition(pos1);
-		
-		
-		float[] pos2 = {0.0f,0.0f,0.5f,1.0f};
-		o2.setPosition(pos2);
-		
-		
-		float[] pos3 = {0.5f,0.0f,0.5f,1.0f};
-		o3.setPosition(pos3);
-		
-		float[] pos4 = {0.5f,0.0f,0.0f,1.0f};
-		o4.setPosition(pos4);
-		
-    	
-    	
-    	world.AddObject(o1);
-    	world.AddObject(o2);
-    	world.AddObject(o3);
-    	world.AddObject(o4);
-    	
-    	ILight l1 = new AmbientLight(Color.enumtoColor(COLORNAME.WHITE),2,new float[]{0.0f,0.0f,0.0f,1.0f});
-    	
-    	world.AddLight(l1);*/
+        world.getCameraManager().setActualCamera("CAM1");
     	
     	scene = new SimpleScene(world);
 
-        Board board1 = new Board();
-        world.AddObjectList(board1.CreateBoard(3,0.5f));
+        board1 = new Board(world,scale);
+
+
+        board1.CreateBoard(size);
+
+       // board1.PlaceRandonBlock();
+
+        board1.PlaceBlockat(4,1);
 
         //SceneXMLParser sceneparser = new SceneXMLParser();
       
         //sceneparser.DOMparseScene(R.xml.scene01,scene);
 
     }
-    
+
+
    
     @Override
     public void onDrawFrame(GL10 unused) {
@@ -149,7 +132,23 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
               	  // Set the camera position (View matrix)
         
 
-           scene.Update();
+
+       // if (timer.Update())
+        {
+
+          //  board1.PlaceRandonBlock();
+
+
+
+
+
+        }
+
+
+
+        if (fps.Update()) {
+            scene.Update();
+        }
            scene.Draw();
            
         
@@ -160,6 +159,7 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
         // Adjust the viewport based on geometry changes,
         // such as screen rotation
     	GLES30.glViewport(0, 0, width, height);
+
 
      
 
@@ -254,6 +254,15 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
 	
 	
 	}
-    
+
+    public void DirectionMade(float dx,float dy)
+    {
+
+        if (dx<0)
+            board1.MoveBoard(Board.DIRECTION.LEFT);
+
+
+    }
+
 
 }

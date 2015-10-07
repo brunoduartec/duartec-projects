@@ -14,7 +14,8 @@ public interface IWorld {
 
 
 	void AddObjectList(List<IObject> obj);
-	void AddObject(IObject obj);
+	int AddObject(IObject obj);
+	IObject getObjectbyID(int ID);
 	IObject RemoveObject(int ID);
 	void Update();
 	
