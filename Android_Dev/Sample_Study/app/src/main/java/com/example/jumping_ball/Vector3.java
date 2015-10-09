@@ -16,27 +16,27 @@ public class Vector3
 
 	public  Vector3(float x, float y, float z)
 	{
-		this.x=x;
-		this.y=y;
-		this.z=z;
+		this.setX(x);
+		this.setY(y);
+		this.setZ(z);
 		normalized = new float[3];
 	}
 	
 	
 	public void Set(float x, float y, float z)
 	{
-		this.x=x;
-		this.y=y;
-		this.z=z;
+		this.setX(x);
+		this.setY(y);
+		this.setZ(z);
 	}
 	
 	public float[] Get()
 	{
 		float[] ret = new float[3];
 		
-		ret[0] = x;
-		ret[1] = y;
-		ret[2] = z;
+		ret[0] = getX();
+		ret[1] = getY();
+		ret[2] = getZ();
 		
 		return ret;
 	
@@ -46,7 +46,7 @@ public class Vector3
 	
 	public float getMagnitude()
 	{
-		magnitude =sqrt(x * x + y * y + z * z); 
+		magnitude =sqrt(getX() * getX() + getY() * getY() + getZ() * getZ());
 		return magnitude;
 	}
 	
@@ -61,7 +61,7 @@ public class Vector3
 	
 	public float[] getNormalized()
 	{
-		normalized[0] = x/magnitude;
+		normalized[0] = getX() /magnitude;
 		return normalized;
 	
 	}
@@ -69,15 +69,15 @@ public class Vector3
 	
 	
     public Vector3 add(Vector3 other) {
-        return new Vector3(x + other.x, y + other.y,z + other.z);
+        return new Vector3(getX() + other.getX(), getY() + other.getY(), getZ() + other.getZ());
     }
 
     public Vector3 sub(Vector3 other) {
-        return new Vector3(x - other.x, y - other.y,z - other.z);
+        return new Vector3(getX() - other.getX(), getY() - other.getY(), getZ() - other.getZ());
     }
 
     public Vector3 mul(Vector3 other) {
-        return new Vector3(x * other.x, y * other.y,z * other.z);
+        return new Vector3(getX() * other.getX(), getY() * other.getY(), getZ() * other.getZ());
     }
 
 	
@@ -87,15 +87,37 @@ public class Vector3
 	// basically the length of the difference of
 	// the two vectors)
 	public float distanceSquared(Vector3 other) {
-		float dx = this.x - other.x;
-		float dy = this.y - other.y;
-		float dz = this.z - other.z;
+		float dx = this.getX() - other.getX();
+		float dy = this.getY() - other.getY();
+		float dz = this.getZ() - other.getZ();
 		return dx*dx+dy*dy+dz*dz;
 	}
 	public float distance(Vector3 other) {
 		return sqrt(distanceSquared(other));
 	}
 
-	
 
+	public float getX() {
+		return x;
+	}
+
+	public void setX(float x) {
+		this.x = x;
+	}
+
+	public float getY() {
+		return y;
+	}
+
+	public void setY(float y) {
+		this.y = y;
+	}
+
+	public float getZ() {
+		return z;
+	}
+
+	public void setZ(float z) {
+		this.z = z;
+	}
 }

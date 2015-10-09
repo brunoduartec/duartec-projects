@@ -6,6 +6,7 @@ import com.example.jumping_ball.Material.SimpleMaterial;
 import com.example.jumping_ball.ObjectFactory;
 import com.example.jumping_ball.SimpleObject;
 
+import java.util.List;
 import java.util.Random;
 
 /**
@@ -62,6 +63,12 @@ public class Board {
 
 
     private String[][] blocks;
+
+
+    private List<Block> bk;
+
+
+
     private int size;
     private IWorld localWorld;
 
