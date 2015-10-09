@@ -122,7 +122,7 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
 
        // board1.PlaceRandonBlock();
 
-        board1.PlaceBlocksat(1,4, 0);
+        board1.PlaceBlocksat(2,4, 0);
         board1.PlaceBlocksat(1,3, 0);
 
         board1.PlaceRandonBlock();
@@ -269,8 +269,16 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
     public void DirectionMade(float dx,float dy)
     {
 
+
+
         if (dx<0)
-            board1.MoveBoard(Board.DIRECTION.LEFT);
+            board1.MoveBlocks( new Vector3(-1,0,0));
+
+        if(dx>0)
+            board1.MoveBlocks( new Vector3(1,0,0));
+
+
+            //board1.MoveBoard(Board.DIRECTION.LEFT);
 
 
     }

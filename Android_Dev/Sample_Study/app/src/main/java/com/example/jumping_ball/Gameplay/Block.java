@@ -1,9 +1,7 @@
 package com.example.jumping_ball.Gameplay;
 
-import com.example.jumping_ball.Vector2;
 import com.example.jumping_ball.Vector3;
 
-import java.util.Enumeration;
 import java.util.Stack;
 
 /**
@@ -13,7 +11,16 @@ public class Block {
 
     private int objectID;
     private Vector3 localposition;
-    Stack<Block> child;
+    Stack<Block> child = new Stack<>();
+
+public Block(){}
+    public Block(int ID, Vector3 localposition)
+    {
+        this.objectID = ID;
+        this.setLocalposition(localposition);
+
+    }
+
 
     public Object[] getChildreen()
     {
@@ -26,13 +33,14 @@ public class Block {
     void MoveTo(Vector3 localpos)
     {
 
-        localposition =localpos;
+        setLocalposition(localpos);
+
 
         for (Block b:child) {
 
 
-            b.localposition.setX(localpos.getX());
-            b.localposition.setZ(localpos.getZ());
+            b.getLocalposition().setX(localpos.getX());
+            b.getLocalposition().setZ(localpos.getZ());
 
 
         }
@@ -43,9 +51,9 @@ public class Block {
 
     void StackBlock(Block b)
     {
-        b.localposition.setX(localposition.getX());
-        b.localposition.setY(localposition.getX() + 1);
-        b.localposition.setZ(localposition.getZ());
+        b.getLocalposition().setX(getLocalposition().getX());
+        b.getLocalposition().setY(getLocalposition().getX() + 1);
+        b.getLocalposition().setZ(getLocalposition().getZ());
 
         child.push(b);
 
@@ -74,5 +82,13 @@ public class Block {
 
     public void setObjectID(int objectID) {
         this.objectID = objectID;
+    }
+
+    public Vector3 getLocalposition() {
+        return localposition;
+    }
+
+    public void setLocalposition(Vector3 localposition) {
+        this.localposition = localposition;
     }
 }

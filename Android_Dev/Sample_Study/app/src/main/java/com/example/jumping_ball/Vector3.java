@@ -14,6 +14,15 @@ public class Vector3
 
 
 
+	public Vector3(float[] p)
+	{
+		this.setX(p[0]);
+		this.setY(p[1]);
+		this.setZ(p[2]);
+		normalized = new float[3];
+	}
+
+
 	public  Vector3(float x, float y, float z)
 	{
 		this.setX(x);
@@ -71,6 +80,8 @@ public class Vector3
     public Vector3 add(Vector3 other) {
         return new Vector3(getX() + other.getX(), getY() + other.getY(), getZ() + other.getZ());
     }
+
+
 
     public Vector3 sub(Vector3 other) {
         return new Vector3(getX() - other.getX(), getY() - other.getY(), getZ() - other.getZ());

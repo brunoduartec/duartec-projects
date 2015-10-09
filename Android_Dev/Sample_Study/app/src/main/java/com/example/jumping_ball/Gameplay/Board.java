@@ -5,7 +5,10 @@ import com.example.jumping_ball.IWorld;
 import com.example.jumping_ball.Material.SimpleMaterial;
 import com.example.jumping_ball.ObjectFactory;
 import com.example.jumping_ball.SimpleObject;
+import com.example.jumping_ball.Vector2;
+import com.example.jumping_ball.Vector3;
 
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Random;
 
@@ -65,7 +68,7 @@ public class Board {
     private String[][] blocks;
 
 
-    private List<Block> bk;
+    private List<Block> bk = new LinkedList<>();
 
 
 
@@ -147,7 +150,7 @@ public class Board {
     }
 
 
-    private float[] convertLocalPosWorldPos(int[] localpos)
+    private float[] convertLocalPosWorldPos(float[] localpos)
     {
 
         float x = localpos[0]*scale - (this.size/2)*scale;
@@ -159,6 +162,52 @@ public class Board {
 
 
     }
+
+    public void MoveBlocks(Vector3 dir)
+    {
+        for (int i=0; i< bk.size();i++)
+        {
+            Block b = bk.get(i);
+            Vector3 posA = b.getLocalposition();
+            boolean trymove=true;
+            for (int j=0; j< bk.size();j++)
+            {
+                Vector3 posB = bk.get(j).getLocalposition();
+                if ( posA.add(dir) == posB )
+                {
+                trymove = false;
+                    break;
+                }
+            }
+
+            if (trymove) {
+                b.MoveTo(posA.add(dir));
+
+                IObject ob = localWorld.getObjectbyID(b.getObjectID());
+                float[] newpos = convertLocalPosWorldPos(b.getLocalposition().Get());
+                ob.setPosition(newpos);
+
+                Object[] chilren = b.getChildreen();
+
+                for (int k =0;k<chilren.length;k++)
+                {
+                    Block bb = (Block)chilren[k];
+                    IObject ob1 = localWorld.getObjectbyID(bb.getObjectID());
+                    float[] newpos1 = convertLocalPosWorldPos(bb.getLocalposition().Get());
+                    ob1.setPosition(newpos1);
+
+
+
+                }
+
+
+
+            }
+        }
+
+
+    }
+
 
 
     public void MoveBoard(DIRECTION dir)
@@ -229,7 +278,7 @@ public class Board {
 
 
                                float[] oldpos = ob.getPosition();
-                                int[] newposlocal = new int[3];
+                                float[] newposlocal = new float[3];
 
                                 newposlocal[0] = x-1;
                                 newposlocal[1] = 0;
@@ -293,7 +342,7 @@ public class Board {
                // x = i*scale - (this.size/2)*scale;
                // z = j*scale - (this.size/2)*scale;
 
-                b1.setPosition( convertLocalPosWorldPos(new int[]{i,0,j}));
+                b1.setPosition( convertLocalPosWorldPos(new float[]{i,0,j}));
 
                 localWorld.AddObject(b1);
 
@@ -310,7 +359,7 @@ public class Board {
     public void PlaceBlocksat(int n, int x, int y)
     {
 
-
+        Block b1 = new Block();
 
         for (int i=0;i<n;i++)
         {
@@ -318,7 +367,7 @@ public class Board {
             String obname = Integer.toString(count);
 
 
-            int[] localposition = new int[3];
+            float[] localposition = new float[3];
             localposition[0] = x;
             localposition[1] = i+1;
             localposition[2] = y;
@@ -339,9 +388,24 @@ public class Board {
 
             String lastblock = blocks[x][y];
             lastblock.trim();
-            blocks[x][y] = lastblock;
 
-            blocks[x][y] += (id + "; ");
+
+
+
+            if(i==0) {
+                b1 = new Block(id, new Vector3(localposition));
+                bk.add(b1);
+            }
+            else
+            {
+                Block bn = new Block(id,new Vector3(localposition));
+                b1.StackBlock(bn);
+
+            }
+
+//            blocks[x][y] = lastblock;
+
+  //          blocks[x][y] += (id + "; ");
 
 
         }
