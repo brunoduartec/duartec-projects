@@ -10,7 +10,9 @@ public class Vector2
 	private float x;
 	private float y;
 
-
+	public final static Vector2 X = new Vector2(1, 0);
+	public final static Vector2 Y = new Vector2(0, 1);
+	public final static Vector2 Zero = new Vector2(0, 0);
 
 
 

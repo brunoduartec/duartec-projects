@@ -62,6 +62,9 @@ public class MyGLSurfaceView extends GLSurfaceView {
         // and other input controls. In this case, you are only
         // interested in events where the touch position changed.
 
+        float centerx = GraphicFactory.getInstance().getWidth()/2;
+        float centery = GraphicFactory.getInstance().getHeight()/2;
+
         float x = e.getX();
         float y = e.getY();
 
@@ -77,13 +80,14 @@ public class MyGLSurfaceView extends GLSurfaceView {
 
             case MotionEvent.ACTION_MOVE:
 
-                float dx = x - mPreviousX;
-                float dy = y - mPreviousY;
+                float dx = mPreviousX -x;
+                float dy = mPreviousY -y;
+
+                Vector2 dir = new Vector2(dx,dy);//B-A
 
 
 
-
-                mRenderer.DirectionMade(dx,dy);
+                mRenderer.DirectionMade(dir);
 
                 
                // requestRender();

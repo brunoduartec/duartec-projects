@@ -58,7 +58,7 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
     float scale = 0.7f;
     float delta = 0.01f;
 
-    int size = 5;
+    int size = 10;
     float cameradistance = 2.3f;
     
     private float posx;
@@ -74,7 +74,7 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
     public void onSurfaceCreated(GL10 unused, EGLConfig config) {
 
         // set the background frame color
-    	GLES30.glClearColor(59 / 255, 176 / 255, 199 / 255, 1.0f);
+    	GLES30.glClearColor(0.29f, 0.95f, 0.88f, 1.0f);
 // Use culling to remove back faces.
         GLES30.glEnable(GLES30.GL_CULL_FACE);
 
@@ -256,10 +256,23 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
 	
 	}
 
-    public void DirectionMade(float dx,float dy)
+    public void DirectionMade(Vector2 dir)
     {
 
+        float angle = dir.angle(Vector2.Y);
 
+        angle = Math.abs(angle);
+
+        if (angle > 0 && angle <=90)
+            board1.MoveBlocks(new Vector3(0, 0, -1));
+        else if (angle > 90 && angle <=180)
+            board1.MoveBlocks(new Vector3(1, 0, 0));
+        else if (angle > 180 && angle <=270)
+            board1.MoveBlocks(new Vector3(0, 0, 1));
+        else
+            board1.MoveBlocks(new Vector3(-1, 0, 0));
+
+        /*
     if((Math.abs(dx) > Math.abs(dy))) {
         if (dx < 0 )
             board1.MoveBlocks(new Vector3(-1, 0, 0));
@@ -275,9 +288,9 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
         if (dy > 0 )
             board1.MoveBlocks(new Vector3(0, 0, 1));
     }
+*/
 
 
-                //board1.MoveBoard(Board.DIRECTION.LEFT);
 
 
     }
