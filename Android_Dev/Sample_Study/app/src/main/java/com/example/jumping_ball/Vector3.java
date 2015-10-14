@@ -11,7 +11,10 @@ public class Vector3
 	private float y;
 	private float z;
 
-
+	public final static Vector3 X = new Vector3(1, 0, 0);
+	public final static Vector3 Y = new Vector3(0, 1, 0);
+	public final static Vector3 Z = new Vector3(0, 0, 1);
+	public final static Vector3 Zero = new Vector3(0, 0, 0);
 
 
 	public Vector3(float[] p)
@@ -32,14 +35,15 @@ public class Vector3
 	}
 	
 	
-	public void Set(float x, float y, float z)
+	public Vector3 set(float x, float y, float z)
 	{
 		this.setX(x);
 		this.setY(y);
 		this.setZ(z);
+		return this;
 	}
 	
-	public float[] Get()
+	public float[] get()
 	{
 		float[] ret = new float[3];
 		
@@ -91,6 +95,14 @@ public class Vector3
         return new Vector3(getX() * other.getX(), getY() * other.getY(), getZ() * other.getZ());
     }
 
+	public boolean equals(Object object)
+	{
+		if (object == null) return false;
+		if (this == object) return true;
+		if (!(object instanceof Vector3)) return false;
+		Vector3 other = (Vector3)object;
+		return this.x == other.x && this.y == other.y && this.z == other.z;
+	}
 	
 	// When the vectors are interpreted as points, 
 	// you'll often need these:
@@ -105,6 +117,55 @@ public class Vector3
 	}
 	public float distance(Vector3 other) {
 		return sqrt(distanceSquared(other));
+	}
+
+	/** @return The dot product between the two vectors */
+	public static float dot (float x1, float y1, float z1, float x2, float y2, float z2) {
+		return x1 * x2 + y1 * y2 + z1 * z2;
+	}
+
+
+	public float dot (final Vector3 vector) {
+		return x * vector.x + y * vector.y + z * vector.z;
+	}
+
+	/** Returns the dot product between this and the given vector.
+	 * @param x The x-component of the other vector
+	 * @param y The y-component of the other vector
+	 * @param z The z-component of the other vector
+	 * @return The dot product */
+	public float dot (float x, float y, float z) {
+		return this.x * x + this.y * y + this.z * z;
+	}
+
+	/** Sets this vector to the cross product between it and the other vector.
+	 * @param vector The other vector
+	 * @return This vector for chaining */
+	public Vector3 cross (final Vector3 vector) {
+		return this.set(y * vector.z - z * vector.y, z * vector.x - x * vector.z, x * vector.y - y * vector.x);
+	}
+
+	/** Sets this vector to the cross product between it and the other vector.
+	 * @param x The x-component of the other vector
+	 * @param y The y-component of the other vector
+	 * @param z The z-component of the other vector
+	 * @return This vector for chaining */
+	public Vector3 cross (float x, float y, float z) {
+		return this.set(this.y * z - this.z * y, this.z * x - this.x * z, this.x * y - this.y * x);
+	}
+
+	public Vector3 lerp (final Vector3 target, float alpha) {
+		x += alpha * (target.x - x);
+		y += alpha * (target.y - y);
+		z += alpha * (target.z - z);
+		return this;
+	}
+
+	/** Converts this {@code Vector3} to a string in the format {@code (x,y,z)}.
+	 * @return a string representation of this object. */
+	@Override
+	public String toString () {
+		return "(" + x + "," + y + "," + z + ")";
 	}
 
 

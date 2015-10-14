@@ -57,7 +57,7 @@ public class DiffuseMaterial extends IMaterial {
 	public void Draw(IObject obj, IWorld world) {
 		 GLES30.glUseProgram(mProgram);
 		 
-		// Set program handles for cube drawing.
+		// set program handles for cube drawing.
 	        mMVPMatrixHandle = GLES30.glGetUniformLocation(mProgram, "u_MVPMatrix");
 	        mMVMatrixHandle = GLES30.glGetUniformLocation(mProgram, "u_MVMatrix"); 
 	        
@@ -81,7 +81,7 @@ public class DiffuseMaterial extends IMaterial {
 	        
 	        
 	        
-	        // Set color for drawing the triangle
+	        // set color for drawing the triangle
 	        GLES30.glUniform4fv(mColorHandle, 1, color, 0);
 	        
 	        // Prepare the triangle coordinate data

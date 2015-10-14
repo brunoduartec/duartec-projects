@@ -21,6 +21,12 @@ public Block(){}
 
     }
 
+    public int getChildreenCount()
+    {
+
+        return child.size();
+
+    }
 
     public Object[] getChildreen()
     {
@@ -52,7 +58,7 @@ public Block(){}
     void StackBlock(Block b)
     {
         b.getLocalposition().setX(getLocalposition().getX());
-        b.getLocalposition().setY(getLocalposition().getX() + 1);
+        b.getLocalposition().setY(getLocalposition().getY() + 1);
         b.getLocalposition().setZ(getLocalposition().getZ());
 
         child.push(b);
@@ -60,6 +66,22 @@ public Block(){}
     }
     Block[] UnStrackBlocks(int n)
     {
+
+        // to don´t unstack more than the stack, to avoid overflow
+        if (n>child.size())
+            n=child.size();
+
+
+        Stack<Block> btemp = new Stack<>();
+
+        for (int i=0;i<n;i++)
+        {
+            btemp.push(child.pop());
+
+        }
+
+     /*
+        if (n==1)n=2;
         Block[] bret = new Block[n];
 
         if (n>child.size())
@@ -67,11 +89,11 @@ public Block(){}
 
         for (int i=0;i<n;i++)
         {
-
-            bret[n-i] = child.pop();
+            Block tt = child.pop();
+            bret[n-i] = tt;
         }
-
-        return bret;
+*/
+        return btemp.toArray(new Block[btemp.size()]);
 
     }
 

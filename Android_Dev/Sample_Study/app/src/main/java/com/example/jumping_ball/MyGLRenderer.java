@@ -73,7 +73,7 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
     @Override
     public void onSurfaceCreated(GL10 unused, EGLConfig config) {
 
-        // Set the background frame color
+        // set the background frame color
     	GLES30.glClearColor(59 / 255, 176 / 255, 199 / 255, 1.0f);
 // Use culling to remove back faces.
         GLES30.glEnable(GLES30.GL_CULL_FACE);
@@ -140,7 +140,7 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
     
         // Draw background color
     	GLES30.glClear(GLES30.GL_DEPTH_BUFFER_BIT | GLES30.GL_COLOR_BUFFER_BIT);
-              	  // Set the camera position (View matrix)
+              	  // set the camera position (View matrix)
         
 
 
@@ -172,19 +172,9 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
     	GLES30.glViewport(0, 0, width, height);
 
 
-     
-
-        // this projection matrix is applied to object coordinates
-        // in the onDrawFrame() method
-      //  Matrix.frustumM(mProjectionMatrix, 0, -ratio, ratio, -1, 1, 1, 200);
-
 
         scene.getWorld().getCameraManager().getActualCamera().Update();
-        //camera.width = width;
-        //camera.height = height;
 
-        //camera.Update();
-      
         
     }
 
@@ -270,15 +260,24 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
     {
 
 
+    if((Math.abs(dx) > Math.abs(dy))) {
+        if (dx < 0 )
+            board1.MoveBlocks(new Vector3(-1, 0, 0));
 
-        if (dx<0)
-            board1.MoveBlocks( new Vector3(-1,0,0));
+        if (dx > 0 )
+            board1.MoveBlocks(new Vector3(1, 0, 0));
+    }
+        else
+    {
+        if (dy < 0 )
+            board1.MoveBlocks(new Vector3(0, 0, -1));
 
-        if(dx>0)
-            board1.MoveBlocks( new Vector3(1,0,0));
+        if (dy > 0 )
+            board1.MoveBlocks(new Vector3(0, 0, 1));
+    }
 
 
-            //board1.MoveBoard(Board.DIRECTION.LEFT);
+                //board1.MoveBoard(Board.DIRECTION.LEFT);
 
 
     }

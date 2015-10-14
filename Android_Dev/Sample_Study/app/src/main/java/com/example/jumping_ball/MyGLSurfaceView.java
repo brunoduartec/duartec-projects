@@ -40,7 +40,7 @@ public class MyGLSurfaceView extends GLSurfaceView {
         // Create an OpenGL ES 2.0 context.
         setEGLContextClientVersion(3);
 
-        // Set the Renderer for drawing on the GLSurfaceView
+        // set the Renderer for drawing on the GLSurfaceView
         mRenderer = new MyGLRenderer();
         setRenderer(mRenderer);
 
@@ -79,6 +79,8 @@ public class MyGLSurfaceView extends GLSurfaceView {
 
                 float dx = x - mPreviousX;
                 float dy = y - mPreviousY;
+
+
 
 
                 mRenderer.DirectionMade(dx,dy);

@@ -85,7 +85,7 @@ public SimpleMaterial()
 
 
 
-        // Set color for drawing the triangle
+        // set color for drawing the triangle
         GLES30.glUniform4fv(mColorHandle, 1, color, 0);
 
         ICamera cam = world.getCameraManager().getActualCamera();
@@ -109,7 +109,7 @@ public SimpleMaterial()
          
      // Render all the faces
         for (int face = 0; face < 6; face++) {
-           // Set the color for each of the faces
+           // set the color for each of the faces
            //gl.glColor4f(colors[face][0], colors[face][1], colors[face][2], colors[face][3]);
            // Draw the primitive from the vertex-array directly
            GLES30.glDrawArrays(GLES30.GL_TRIANGLE_STRIP, face*4, 4);

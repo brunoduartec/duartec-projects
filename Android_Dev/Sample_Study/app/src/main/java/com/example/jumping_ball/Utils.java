@@ -66,7 +66,7 @@ public class Utils {
 			// Link the two shaders together into a program.
 			GLES30.glLinkProgram(programHandle);
 
-			// Get the link status.
+			// get the link status.
 			final int[] linkStatus = new int[1];
 			GLES30.glGetProgramiv(programHandle, GLES30.GL_LINK_STATUS, linkStatus, 0);
 
@@ -106,7 +106,7 @@ public class Utils {
 			// Compile the shader.
 			GLES30.glCompileShader(shader);
 
-			// Get the compilation status.
+			// get the compilation status.
 			final int[] compileStatus = new int[1];
 			GLES30.glGetShaderiv(shader, GLES30.GL_COMPILE_STATUS, compileStatus, 0);
 

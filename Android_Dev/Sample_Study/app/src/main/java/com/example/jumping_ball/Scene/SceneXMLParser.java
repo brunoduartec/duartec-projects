@@ -30,10 +30,10 @@ public class SceneXMLParser {
     public IScene DOMparseScene(int id, IScene scene) {
 
         Context localContext = GraphicFactory.getInstance().getGraphicContext();
-        // Get the DOM Builder Factory
+        // get the DOM Builder Factory
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 
-        //Get the DOM Builder
+        //get the DOM Builder
         DocumentBuilder builder = null;
         Document document = null;
         try {

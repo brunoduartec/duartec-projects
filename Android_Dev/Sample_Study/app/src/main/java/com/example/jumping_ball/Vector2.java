@@ -23,14 +23,16 @@ public class Vector2
 	}
 	
 	
-	public void Set(float x, float y)
+	public Vector2 set(float x, float y)
 	{
 		this.x=x;
 		this.y=y;
 
+		return this;
+
 	}
 	
-	public float[] Get()
+	public float[] get()
 	{
 		float[] ret = new float[2];
 		
@@ -96,6 +98,60 @@ public class Vector2
 		return sqrt(distanceSquared(other));
 	}
 
-	
+
+	public static float dot (float x1, float y1, float x2, float y2) {
+		return x1 * x2 + y1 * y2;
+	}
+
+
+	public float dot (Vector2 v) {
+		return x * v.x + y * v.y;
+	}
+
+	public float dot (float ox, float oy) {
+		return x * ox + y * oy;
+	}
+
+
+	/** Calculates the 2D cross product between this and the given vector.
+	 * @param v the other vector
+	 * @return the cross product */
+	public float crs (Vector2 v) {
+		return this.x * v.y - this.y * v.x;
+	}
+	/** Calculates the 2D cross product between this and the given vector.
+	 * @param x the x-coordinate of the other vector
+	 * @param y the y-coordinate of the other vector
+	 * @return the cross product */
+	public float crs (float x, float y) {
+		return this.x * y - this.y * x;
+	}
+
+	/** @return the angle in degrees of this vector (point) relative to the x-axis. Angles are towards the positive y-axis (typically
+	 *         counter-clockwise) and between 0 and 360. */
+	public float angle () {
+		float angle = (float)Math.atan2(y, x) * MathUtils.radiansToDegrees;
+		if (angle < 0) angle += 360;
+		return angle;
+	}
+
+	/** @return the angle in degrees of this vector (point) relative to the given vector. Angles are towards the positive y-axis
+	 *         (typically counter-clockwise.) between -180 and +180 */
+	public float angle (Vector2 reference) {
+		return (float)Math.atan2(crs(reference), dot(reference)) * MathUtils.radiansToDegrees;
+	}
+
+	/** @return the angle in radians of this vector (point) relative to the x-axis. Angles are towards the positive y-axis.
+	 *         (typically counter-clockwise) */
+	public float angleRad () {
+		return (float)Math.atan2(y, x);
+	}
+
+	/** @return the angle in radians of this vector (point) relative to the given vector. Angles are towards the positive y-axis.
+	 *         (typically counter-clockwise.) */
+	public float angleRad (Vector2 reference) {
+		return (float)Math.atan2(crs(reference), dot(reference));
+	}
+
 
 }
