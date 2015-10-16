@@ -59,7 +59,7 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
     float delta = 0.01f;
 
     int size = 10;
-    float cameradistance = 2.3f;
+    float cameradistance = 4f;
     
     private float posx;
     private float posy;
@@ -90,7 +90,7 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
         GraphicFactory.getInstance().setHeight(this.height);
 
         fps = new FpsCounterComponent(30);
-        timer = new TimerComponent(5000);
+        timer = new TimerComponent(2000);
 
 
 		world = new SimpleWorld();
@@ -144,10 +144,10 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
         
 
 
-       // if (timer.Update())
+       if (timer.Update())
         {
 
-          //  board1.PlaceRandonBlock();
+           board1.PlaceRandonBlock();
 
 
 
@@ -259,38 +259,14 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
     public void DirectionMade(Vector2 dir)
     {
 
-        float angle = dir.angle(Vector2.Y);
-
-        angle = Math.abs(angle);
-
-        if (angle > 0 && angle <=90)
+          if(dir.x > 0 && dir.y <0)
             board1.MoveBlocks(new Vector3(0, 0, -1));
-        else if (angle > 90 && angle <=180)
-            board1.MoveBlocks(new Vector3(1, 0, 0));
-        else if (angle > 180 && angle <=270)
+        else if(dir.x<0 && dir.y>0)
             board1.MoveBlocks(new Vector3(0, 0, 1));
+        else if (dir.x > 0 && dir.y >0)
+            board1.MoveBlocks(new Vector3(1, 0, 0));
         else
             board1.MoveBlocks(new Vector3(-1, 0, 0));
-
-        /*
-    if((Math.abs(dx) > Math.abs(dy))) {
-        if (dx < 0 )
-            board1.MoveBlocks(new Vector3(-1, 0, 0));
-
-        if (dx > 0 )
-            board1.MoveBlocks(new Vector3(1, 0, 0));
-    }
-        else
-    {
-        if (dy < 0 )
-            board1.MoveBlocks(new Vector3(0, 0, -1));
-
-        if (dy > 0 )
-            board1.MoveBlocks(new Vector3(0, 0, 1));
-    }
-*/
-
-
 
 
     }

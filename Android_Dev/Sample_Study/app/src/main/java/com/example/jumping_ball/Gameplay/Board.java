@@ -231,7 +231,14 @@ public class Board {
 
         Block b1 = new Block();
 
-        for (int i=0;i<n;i++)
+        Block b2 = BlockExistAt(x,y);
+        int init=0;
+        if ( b2 != null ) {
+            b1 = b2;
+            init = b2.getChildreenCount()+1;
+        }
+
+        for (int i=init;i<(n+init);i++)
         {
             count++;
             String obname = Integer.toString(count);
@@ -278,14 +285,16 @@ public class Board {
 
     }
 
-    public boolean BlockExistAt(float x, float y)
+    public Block BlockExistAt(float x, float y)
     {
+        Block i = null;
         for (Block b:bk ) {
             if (b.getLocalposition().getX() == x && b.getLocalposition().getZ() == y)
-                return true;
+               i=b;
+                //return i;
         }
 
-        return false;
+        return i;
     }
 
 
@@ -295,11 +304,11 @@ public class Board {
         Random rnd = new Random();
         int x,y;
 
-        do {
+       // do {
             x = rnd.nextInt(size);
             y = rnd.nextInt(size);
 
-        }while (BlockExistAt(x,y));
+        //}while (BlockExistAt(x,y));
 
         PlaceBlocksat(1,x, y);
 

@@ -65,14 +65,25 @@ public class SimpleCamera implements ICamera {
 	}
 	public void CalcProjectionMatrix()
 	{
-		float left = -getRatio();
-		float right = getRatio();
-		float bottom = -1.0f;
-		float top = 1.0f;
 
-		Matrix.frustumM(mProjectionMatrix, 0, left, right, bottom, top, getNearPlane(), getFarPlane());
 
-		//Matrix.orthoM(mProjectionMatrix, 0, -ratio, ratio, -1.0f, 1.0f, nearPlane,farPlane);
+
+
+
+		// Create a new perspective projection matrix. The height will stay the same
+		// while the width will vary as per aspect ratio.
+		final float ratio = (float) width / height;
+		final float left = -ratio;
+		final float right = ratio;
+		final float bottom = -1.0f;
+		final float top = 1.0f;
+		final float near = 1.0f;
+		final float far = 1000.0f;
+
+		Matrix.frustumM(mProjectionMatrix, 0, left, right, bottom, top, near, far);
+	//	Matrix.frustumM(mProjectionMatrix, 0, left, right, bottom, top, getNearPlane(), getFarPlane());
+
+//		Matrix.orthoM(mProjectionMatrix, 0, 0, width,0, height, -10,100);
 
 		
 	}
