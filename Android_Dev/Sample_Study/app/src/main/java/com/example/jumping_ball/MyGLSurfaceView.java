@@ -85,8 +85,8 @@ public class MyGLSurfaceView extends GLSurfaceView {
 
 
 
-                mRenderer.DirectionMade(dir);
-
+               // mRenderer.DirectionMade(dir);
+                mRenderer.StartMovement(dir);
                 
                // requestRender();
         }

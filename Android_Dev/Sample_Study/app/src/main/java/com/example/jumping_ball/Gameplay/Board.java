@@ -149,7 +149,7 @@ public class Board {
             if(intotheBoard(b, dir)) {
                 for (int j = 0; j < bk.size(); j++) {
                     Vector3 posB = bk.get(j).getLocalposition();
-                    if (posA.add(dir).equals(posB)) {//there is a Block blocking it
+                    if (posA.add(dir).equals(posB) && !b.equals(bk.get(j))) {//there is a Block blocking it
 
                         if (b.getChildreenCount()>bk.get(j).getChildreenCount())
                         {

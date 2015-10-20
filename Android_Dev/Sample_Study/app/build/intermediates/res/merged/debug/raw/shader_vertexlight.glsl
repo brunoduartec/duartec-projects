@@ -10,23 +10,22 @@ varying vec4 v_Color;          		// This will be passed into the fragment shader
 void main()                     	// The entry point for our vertex shader.
 {                              		
 
-vec4 vlaus = u_MVMatrix * a_Position;
-vec3 bla = vec3(vlaus);
+
 	// Transform the vertex into eye space.
-   //vec3 modelViewVertex = vec3(u_MVMatrix * a_Position);              
+   vec3 modelViewVertex = vec3(u_MVMatrix * a_Position);
 
 //vec4 vlaus = u_MVPMatrix * a_Position;
 
 
    gl_Position = u_MVPMatrix * a_Position;  
 
-float distance = 1.0;
+//float distance = 1.0;
 
-float diffuse = 1.0;
+//float diffuse = 1.0;
 
-diffuse = diffuse * (1.0/ (1.0+(0.25*distance*distance) ) );
+//diffuse = diffuse * (1.0/ (1.0+(0.25*distance*distance) ) );
 
  
-v_Color = a_Color*diffuse;	
+v_Color = a_Color;//*diffuse;
                               
 }    

@@ -89,6 +89,9 @@ public class DiffuseMaterial extends IMaterial {
 	        		mNormalHandle, COORDS_PER_VERTEX,
 	                GLES30.GL_FLOAT, false,
 	                vertexStride,obj.getModel().getNormalsBuffer());
+			GLES30.glEnableVertexAttribArray(mNormalHandle);
+
+
 
 		ICamera cam = world.getCameraManager().getActualCamera();
 		
@@ -103,16 +106,16 @@ public class DiffuseMaterial extends IMaterial {
         // Apply the projection and view transformation
         GLES30.glUniformMatrix4fv(mMVPMatrixHandle, 1, false,mMVPMatrix, 0);
 		
-        ILight l1 = world.getLights().get(0);
+     //   ILight l1 = world.getLights().get(0);
         
-        Matrix.multiplyMV(mLightPosInEyeSpace, 0, cam.getViewMatrix(), 0, l1.getLocalTransformation(), 0);
+       // Matrix.multiplyMV(mLightPosInEyeSpace, 0, cam.getViewMatrix(), 0, l1.getLocalTransformation(), 0);
         
         // Apply the projection and view transformation
-        GLES30.glUniformMatrix4fv(mLightPosHandle, 1, false,mLightPosInEyeSpace, 0);
+      //  GLES30.glUniformMatrix4fv(mLightPosHandle, 1, false,mLightPosInEyeSpace, 0);
 	
                 
         // Draw the cube.
-        GLES30.glDrawArrays(GLES30.GL_TRIANGLE_STRIP, 0, 24);   
+        GLES30.glDrawArrays(GLES30.GL_TRIANGLE_STRIP, 0, 24);
            
            // Disable vertex array
          GLES30.glDisableVertexAttribArray(mPositionHandle);

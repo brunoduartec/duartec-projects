@@ -28,6 +28,15 @@ public Block(){}
 
     }
 
+    public boolean equals(Block b)
+    {
+
+        return this.getObjectID()==b.getObjectID();
+
+
+    }
+
+
     public Object[] getChildreen()
     {
         return child.toArray();
@@ -57,8 +66,11 @@ public Block(){}
 
     void StackBlock(Block b)
     {
+
+        int topstack = child.size()+1;
+
         b.getLocalposition().setX(getLocalposition().getX());
-        b.getLocalposition().setY(getLocalposition().getY() + 1);
+        b.getLocalposition().setY(getLocalposition().getY() + topstack);
         b.getLocalposition().setZ(getLocalposition().getZ());
 
         child.push(b);
