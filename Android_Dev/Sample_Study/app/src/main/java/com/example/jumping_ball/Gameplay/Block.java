@@ -7,13 +7,20 @@ import java.util.Stack;
 /**
  * Created by Bruno on 08/10/2015.
  */
-public class Block {
+public  abstract class Block {
 
     private int objectID;
     private Vector3 localposition;
     Stack<Block> child = new Stack<>();
 
+    public abstract float[] getColor();
+    public abstract boolean canMove();
+    public abstract boolean canStack();
+    public abstract void onCollide(Block b);
+
+
 public Block(){}
+
     public Block(int ID, Vector3 localposition)
     {
         this.objectID = ID;

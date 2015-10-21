@@ -91,11 +91,6 @@ public class Board {
 
         int delta = originlenght - destinylenght;
 
-        //changed items vector
-//        String[] partsChanged = new String[delta];
-
-  //      changed = new ChangedBlocks(delta);
-
         int count = 0;
 
         Block[] bchanged =    origin.UnStrackBlocks(delta);
@@ -142,6 +137,10 @@ public class Board {
         for (int i=0; i< bk.size();i++)
         {
             Block b = bk.get(i);
+
+            if (!b.canMove())//in the case the block cannot move
+                continue;
+
             Vector3 posA = b.getLocalposition();
             boolean trymove=true;
 
@@ -149,9 +148,9 @@ public class Board {
             if(intotheBoard(b, dir)) {
                 for (int j = 0; j < bk.size(); j++) {
                     Vector3 posB = bk.get(j).getLocalposition();
-                    if (posA.add(dir).equals(posB) && !b.equals(bk.get(j))) {//there is a Block blocking it
+                    if (posA.add(dir).equals(posB) && !b.equals(bk.get(j)) ) {//there is a Block blocking it
 
-                        if (b.getChildreenCount()>bk.get(j).getChildreenCount())
+                        if (b.getChildreenCount()>bk.get(j).getChildreenCount() && bk.get(j).canStack())
                         {
                             swapTopBlocks(b,bk.get(j));
                         }
@@ -226,16 +225,28 @@ public class Board {
 
 
 
-    public void PlaceBlocksat(int n, int x, int y)
+    public void PlaceBlocksat(Class<?> t, int n, int x, int y)
     {
 
-        Block b1 = new Block();
+        Block b1=new NormalBlock();
+
+        if (t == StoneBlock.class)
+            b1 = new StoneBlock();
+
+
+
 
         Block b2 = BlockExistAt(x,y);
+
+
         int init=0;
         if ( b2 != null ) {
             b1 = b2;
             init = b2.getChildreenCount()+1;
+
+            if (!b2.canStack())// in the case the block cannot be stacked
+                return;
+
         }
 
         for (int i=init;i<(n+init);i++)
@@ -252,7 +263,10 @@ public class Board {
 
             IObject ob1 = ObjectFactory.getInstance().getBoxObject(obname, scale);
             SimpleMaterial m1 = (SimpleMaterial) ob1.getMaterial();
-            m1.setColor(new float[]{0.5f, 0.5f, 0.5f, 1.0f});
+
+
+
+            m1.setColor(b1.getColor());
 
 
             float[] position = new float[3];
@@ -268,13 +282,24 @@ public class Board {
 
 
             if(i==0) {
-                b1 = new Block(id, new Vector3(localposition));
+
+                if (t == NormalBlock.class)
+                    b1 = new NormalBlock(id, new Vector3(localposition));
+                else if (t == StoneBlock.class)
+                    b1 = new StoneBlock(id, new Vector3(localposition));
+
                 bk.add(b1);
             }
             else
             {
-                Block bn = new Block(id,new Vector3(localposition));
-                b1.StackBlock(bn);
+                Block bn = new NormalBlock();
+
+                if (t == NormalBlock.class)
+                    bn = new NormalBlock(id,new Vector3(localposition));
+
+
+
+                     b1.StackBlock(bn);
 
             }
 
@@ -310,7 +335,7 @@ public class Board {
 
         //}while (BlockExistAt(x,y));
 
-        PlaceBlocksat(1,x, y);
+        PlaceBlocksat(NormalBlock.class,1,x, y);
 
     }
 

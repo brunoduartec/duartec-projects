@@ -24,6 +24,7 @@ import com.example.jumping_ball.Camera.SimpleCamera;
 import com.example.jumping_ball.Component.FpsCounterComponent;
 import com.example.jumping_ball.Component.TimerComponent;
 import com.example.jumping_ball.Gameplay.Board;
+import com.example.jumping_ball.Gameplay.StoneBlock;
 import com.example.jumping_ball.Scene.IScene;
 import com.example.jumping_ball.Scene.SimpleScene;
 
@@ -57,8 +58,8 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
     float scale = 0.7f;
     float delta = 0.01f;
 
-    int size = 8;
-    float cameradistance = 4f;
+    int size = 5;
+    float cameradistance = 2f;
 
     Vector2 direction = new Vector2(0, 0);
 
@@ -124,10 +125,10 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
 
         // board1.PlaceRandonBlock();
 
-        board1.PlaceBlocksat(4, 4, 0);
-        board1.PlaceBlocksat(1, 3, 0);
+       // board1.PlaceBlocksat(4, 4, 0);
+        board1.PlaceBlocksat(StoneBlock.class,1, 3, 0);
 
-        board1.PlaceRandonBlock();
+      //  board1.PlaceRandonBlock();
 
         //SceneXMLParser sceneparser = new SceneXMLParser();
 
