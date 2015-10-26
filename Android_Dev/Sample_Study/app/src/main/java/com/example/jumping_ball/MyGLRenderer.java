@@ -128,7 +128,7 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
        // board1.PlaceBlocksat(4, 4, 0);
         board1.PlaceBlocksat(StoneBlock.class,1, 3, 0);
 
-      //  board1.PlaceRandonBlock();
+        board1.PlaceRandonBlock();
 
         //SceneXMLParser sceneparser = new SceneXMLParser();
 
@@ -145,12 +145,13 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
         // set the camera position (View matrix)
 
 
-        if (timer.Update()) {
+      //  if (timer.Update())
+      // {
 
-            board1.PlaceRandonBlock();
+           // board1.PlaceRandonBlock();
 
 
-        }
+      //  }
 
 
         if (fps.Update()) {
@@ -159,11 +160,11 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
            if (startmove)
            {
                DirectionMade(direction);
-               iter++;
-
+               //iter++;
+               startmove=false;
                if (iter == size)
                {
-                   startmove=false;
+                   //startmove=false;
                    iter = 0;
                }
            }
@@ -273,6 +274,9 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
                 board1.MoveBlocks(new Vector3(1, 0, 0));
             else
                 board1.MoveBlocks(new Vector3(-1, 0, 0));
+
+        board1.PlaceRandonBlock();
+
     }
 
     public void StartMovement(Vector2 dir)

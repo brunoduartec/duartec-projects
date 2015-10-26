@@ -2,6 +2,7 @@ package com.example.jumping_ball.Gameplay;
 
 import com.example.jumping_ball.IObject;
 import com.example.jumping_ball.IWorld;
+import com.example.jumping_ball.Material.DiffuseMaterial;
 import com.example.jumping_ball.Material.SimpleMaterial;
 import com.example.jumping_ball.ObjectFactory;
 import com.example.jumping_ball.SimpleObject;
@@ -203,10 +204,12 @@ public class Board {
         {
             for (int j=0;j<size;j++) {
                 SimpleObject b1 = ObjectFactory.getInstance().getBoxObject("box" + i+"_"+j, scale);
-                SimpleMaterial m1 = (SimpleMaterial)b1.getMaterial();
+
+
+               // SimpleMaterial m1 = (SimpleMaterial)b1.getMaterial();
+                //m1.setColor(new float[]{0.2695f,0.921875f , 0.109375f,1.0f});
+                DiffuseMaterial m1 = (DiffuseMaterial)b1.getMaterial();
                 m1.setColor(new float[]{0.2695f,0.921875f , 0.109375f,1.0f});
-
-
 
                // x = i*scale - (this.size/2)*scale;
                // z = j*scale - (this.size/2)*scale;
@@ -262,12 +265,12 @@ public class Board {
 
 
             IObject ob1 = ObjectFactory.getInstance().getBoxObject(obname, scale);
-            SimpleMaterial m1 = (SimpleMaterial) ob1.getMaterial();
+          //  SimpleMaterial m1 = (SimpleMaterial) ob1.getMaterial();
+//
 
 
-
+            DiffuseMaterial m1 = (DiffuseMaterial) ob1.getMaterial();
             m1.setColor(b1.getColor());
-
 
             float[] position = new float[3];
 

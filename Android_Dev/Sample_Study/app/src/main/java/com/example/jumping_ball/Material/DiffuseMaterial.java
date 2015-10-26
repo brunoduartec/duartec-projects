@@ -11,7 +11,6 @@ import com.example.jumping_ball.R;
 import com.example.jumping_ball.RawResourceReader;
 import com.example.jumping_ball.Utils;
 import com.example.jumping_ball.Camera.ICamera;
-import com.example.jumping_ball.Light.ILight;
 
 import org.w3c.dom.Node;
 
@@ -21,7 +20,7 @@ public class DiffuseMaterial extends IMaterial {
 	 
 	private int mPositionHandle;
 	private int mColorHandle;
-	private float color[] = { 0.2f, 0.709803922f, 0.898039216f, 1.0f };
+	private float[] color = { 0.2f, 0.709803922f, 0.898039216f, 1.0f };
 	private int mMVPMatrixHandle;
     // number of coordinates per vertex in this array
     static final int COORDS_PER_VERTEX = 3;
@@ -37,7 +36,7 @@ public class DiffuseMaterial extends IMaterial {
 	public DiffuseMaterial()
 	{
 		
-		color = Utils.RandColor();
+		setColor(Utils.RandColor());
 		Context localContext = GraphicFactory.getInstance().getGraphicContext();
 		String frag = RawResourceReader.readTextFileFromRawResource(localContext, R.raw.shader_fragment);
 		String vert = RawResourceReader.readTextFileFromRawResource(localContext, R.raw.shader_vertexlight);
@@ -82,13 +81,19 @@ public class DiffuseMaterial extends IMaterial {
 	        
 	        
 	        // set color for drawing the triangle
-	        GLES30.glUniform4fv(mColorHandle, 1, color, 0);
+
+
+	        GLES30.glUniform4f(mColorHandle, color[0],color[1],color[2],color[3]);
+		//GLES30.glEnableVertexAttribArray(mColorHandle);
 	        
 	        // Prepare the triangle coordinate data
 	        GLES30.glVertexAttribPointer(
 	        		mNormalHandle, COORDS_PER_VERTEX,
 	                GLES30.GL_FLOAT, false,
 	                vertexStride,obj.getModel().getNormalsBuffer());
+
+
+
 			GLES30.glEnableVertexAttribArray(mNormalHandle);
 
 
@@ -125,5 +130,13 @@ public class DiffuseMaterial extends IMaterial {
 	@Override
 	public Object Parse(Node childnode) {
 		return null;
+	}
+
+	public float[] getColor() {
+		return color;
+	}
+
+	public void setColor(float[] color) {
+		this.color = color;
 	}
 }

@@ -27,5 +27,5 @@ void main()                     	// The entry point for our vertex shader.
 
  
 v_Color = a_Color;//*diffuse;
-                              
+
 }    

@@ -55,6 +55,7 @@ public class MyGLSurfaceView extends GLSurfaceView {
     private final float TOUCH_SCALE_FACTOR = 0.02f;
     private float mPreviousX;
     private float mPreviousY;
+    private boolean makeMovement = false;
 
     @Override
     public boolean onTouchEvent(MotionEvent e) {
@@ -70,7 +71,7 @@ public class MyGLSurfaceView extends GLSurfaceView {
 
             case MotionEvent.ACTION_UP:
               //  mRenderer.changeCamera();
-
+                makeMovement = true;
 
                 break;
 
@@ -78,17 +79,18 @@ public class MyGLSurfaceView extends GLSurfaceView {
 
             case MotionEvent.ACTION_MOVE:
 
-                float dx = x- mPreviousX;
-                float dy = y- mPreviousY;
+                if(makeMovement) {
+                    float dx = x - mPreviousX;
+                    float dy = y - mPreviousY;
 
-                Vector2 dir = new Vector2(dx,dy);//B-A
+                    Vector2 dir = new Vector2(dx, dy);//B-A
 
 
+                 makeMovement = false;
+                    mRenderer.StartMovement(dir);
+                }
 
-               // mRenderer.DirectionMade(dir);
-                mRenderer.StartMovement(dir);
                 
-               // requestRender();
         }
 
         mPreviousX = x;
