@@ -31,7 +31,7 @@ public class ObjectFactory {
 		
 		IModel m1 = new BoxModel(scale);
 		
-		IMaterial mat1 = new DiffuseMaterial();//SimpleMaterial();////
+		IMaterial mat1 = new SimpleMaterial();////DiffuseMaterial();
 		obj = new SimpleObject(mat1,m1, name);
 		obj.setScale(new float[]{scale, scale, scale});
 		

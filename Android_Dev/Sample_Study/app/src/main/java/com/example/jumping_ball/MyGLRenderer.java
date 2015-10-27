@@ -24,6 +24,7 @@ import com.example.jumping_ball.Camera.SimpleCamera;
 import com.example.jumping_ball.Component.FpsCounterComponent;
 import com.example.jumping_ball.Component.TimerComponent;
 import com.example.jumping_ball.Gameplay.Board;
+import com.example.jumping_ball.Gameplay.NormalBlock;
 import com.example.jumping_ball.Gameplay.StoneBlock;
 import com.example.jumping_ball.Scene.IScene;
 import com.example.jumping_ball.Scene.SimpleScene;
@@ -125,7 +126,7 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
 
         // board1.PlaceRandonBlock();
 
-       // board1.PlaceBlocksat(4, 4, 0);
+       board1.PlaceBlocksat(NormalBlock.class,2, 4, 0);
         board1.PlaceBlocksat(StoneBlock.class,1, 3, 0);
 
         board1.PlaceRandonBlock();
@@ -275,7 +276,7 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
             else
                 board1.MoveBlocks(new Vector3(-1, 0, 0));
 
-        board1.PlaceRandonBlock();
+        //board1.PlaceRandonBlock();
 
     }
 

@@ -14,6 +14,10 @@ import com.example.jumping_ball.Camera.ICamera;
 
 import org.w3c.dom.Node;
 
+import java.nio.ByteBuffer;
+import java.nio.ByteOrder;
+import java.nio.FloatBuffer;
+
 public class DiffuseMaterial extends IMaterial {
 
 	
@@ -21,6 +25,62 @@ public class DiffuseMaterial extends IMaterial {
 	private int mPositionHandle;
 	private int mColorHandle;
 	private float[] color = { 0.2f, 0.709803922f, 0.898039216f, 1.0f };
+
+
+	// R, G, B, A
+	final float[] cubeColorData =
+			{
+					// Front face (red)
+					1.0f, 0.0f, 0.0f, 1.0f,
+					1.0f, 0.0f, 0.0f, 1.0f,
+					1.0f, 0.0f, 0.0f, 1.0f,
+					1.0f, 0.0f, 0.0f, 1.0f,
+					1.0f, 0.0f, 0.0f, 1.0f,
+					1.0f, 0.0f, 0.0f, 1.0f,
+
+					// Right face (green)
+					0.0f, 1.0f, 0.0f, 1.0f,
+					0.0f, 1.0f, 0.0f, 1.0f,
+					0.0f, 1.0f, 0.0f, 1.0f,
+					0.0f, 1.0f, 0.0f, 1.0f,
+					0.0f, 1.0f, 0.0f, 1.0f,
+					0.0f, 1.0f, 0.0f, 1.0f,
+
+					// Back face (blue)
+					0.0f, 0.0f, 1.0f, 1.0f,
+					0.0f, 0.0f, 1.0f, 1.0f,
+					0.0f, 0.0f, 1.0f, 1.0f,
+					0.0f, 0.0f, 1.0f, 1.0f,
+					0.0f, 0.0f, 1.0f, 1.0f,
+					0.0f, 0.0f, 1.0f, 1.0f,
+
+					// Left face (yellow)
+					1.0f, 1.0f, 0.0f, 1.0f,
+					1.0f, 1.0f, 0.0f, 1.0f,
+					1.0f, 1.0f, 0.0f, 1.0f,
+					1.0f, 1.0f, 0.0f, 1.0f,
+					1.0f, 1.0f, 0.0f, 1.0f,
+					1.0f, 1.0f, 0.0f, 1.0f,
+
+					// Top face (cyan)
+					0.0f, 1.0f, 1.0f, 1.0f,
+					0.0f, 1.0f, 1.0f, 1.0f,
+					0.0f, 1.0f, 1.0f, 1.0f,
+					0.0f, 1.0f, 1.0f, 1.0f,
+					0.0f, 1.0f, 1.0f, 1.0f,
+					0.0f, 1.0f, 1.0f, 1.0f,
+
+					// Bottom face (magenta)
+					1.0f, 0.0f, 1.0f, 1.0f,
+					1.0f, 0.0f, 1.0f, 1.0f,
+					1.0f, 0.0f, 1.0f, 1.0f,
+					1.0f, 0.0f, 1.0f, 1.0f,
+					1.0f, 0.0f, 1.0f, 1.0f,
+					1.0f, 0.0f, 1.0f, 1.0f
+			};
+
+
+
 	private int mMVPMatrixHandle;
     // number of coordinates per vertex in this array
     static final int COORDS_PER_VERTEX = 3;
@@ -32,6 +92,8 @@ public class DiffuseMaterial extends IMaterial {
 	private float[] mMVMatrix = new float[16];
 	private float[] mLightPosInEyeSpace = new float[16];
 
+
+	private final FloatBuffer mCubeColors;
 	
 	public DiffuseMaterial()
 	{
@@ -40,13 +102,18 @@ public class DiffuseMaterial extends IMaterial {
 		Context localContext = GraphicFactory.getInstance().getGraphicContext();
 		String frag = RawResourceReader.readTextFileFromRawResource(localContext, R.raw.shader_fragment);
 		String vert = RawResourceReader.readTextFileFromRawResource(localContext, R.raw.shader_vertexlight);
+
 		 int vertexShaderHandle = Utils.loadShader(	GLES30.GL_VERTEX_SHADER, vert);
 		 int fragmentShaderHandle = Utils.loadShader(	GLES30.GL_FRAGMENT_SHADER, frag);
 			
 			mProgram = Utils.createAndLinkProgram(vertexShaderHandle, fragmentShaderHandle, 
 					new String[] {"a_Position",  "a_Color", "a_Normal"});
 
-		 
+
+
+		mCubeColors = ByteBuffer.allocateDirect(cubeColorData.length * 4)
+				.order(ByteOrder.nativeOrder()).asFloatBuffer();
+		mCubeColors.put(cubeColorData).position(0);
 
 		
 	}
@@ -81,10 +148,18 @@ public class DiffuseMaterial extends IMaterial {
 	        
 	        
 	        // set color for drawing the triangle
+		// set color for drawing the triangle
+		//GLES30.glUniform4fv(mColorHandle, 1, color, 0);
 
-
-	        GLES30.glUniform4f(mColorHandle, color[0],color[1],color[2],color[3]);
+	      //  GLES30.glUniform4f(mColorHandle, color[0],color[1],color[2],color[3]);
 		//GLES30.glEnableVertexAttribArray(mColorHandle);
+// Pass in the color information
+		mCubeColors.position(0);
+		GLES30.glVertexAttribPointer(mColorHandle, 4, GLES30.GL_FLOAT, false,
+				0, mCubeColors);
+
+		GLES30.glEnableVertexAttribArray(mColorHandle);
+
 	        
 	        // Prepare the triangle coordinate data
 	        GLES30.glVertexAttribPointer(

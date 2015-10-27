@@ -18,43 +18,6 @@ import java.util.Random;
 public class Board {
 
 
-    private class ChangedBlocks
-    {
-        private String origin;
-        private String destiny;
-        private String[] changed;
-
-        public ChangedBlocks(int amount)
-        {
-            setChanged(new String[amount]);
-
-        }
-
-
-        public String getOrigin() {
-            return origin;
-        }
-
-        public void setOrigin(String origin) {
-            this.origin = origin;
-        }
-
-        public String getDestiny() {
-            return destiny;
-        }
-
-        public void setDestiny(String destiny) {
-            this.destiny = destiny;
-        }
-
-        public String[] getChanged() {
-            return changed;
-        }
-
-        public void setChanged(String[] changed) {
-            this.changed = changed;
-        }
-    }
 
 
     public enum DIRECTION {LEFT, RIGHT, UP, DOWN};
@@ -72,6 +35,9 @@ public class Board {
 
 
     private int size;
+    private int maxheight;
+
+
     private IWorld localWorld;
 
     public Board(IWorld w, float scale) {
@@ -83,7 +49,7 @@ public class Board {
 //considering that the origin > destiny
     private void swapTopBlocks(Block origin,Block destiny)
     {
-        ChangedBlocks changed;
+
         Object[] partsOrigin = origin.getChildreen();//retrieving childreen
 
 
@@ -135,6 +101,9 @@ public class Board {
     }
     public void MoveBlocks(Vector3 dir)
     {
+
+        boolean moved = false;
+
         for (int i=0; i< bk.size();i++)
         {
             Block b = bk.get(i);
@@ -154,13 +123,16 @@ public class Board {
                         if (b.getChildreenCount()>bk.get(j).getChildreenCount() && bk.get(j).canStack())
                         {
                             swapTopBlocks(b,bk.get(j));
+                            moved = true;
                         }
-                        trymove = false;
+
+                           trymove = false;
                         break;
                     }
                 }
 
                 if (trymove) {
+                    moved=true;
                     b.MoveTo(posA.add(dir));
                 }
             }
@@ -185,6 +157,12 @@ public class Board {
         }
 
 
+
+        if (moved)
+            PlaceRandonBlock();
+
+
+
     }
 
 
@@ -194,6 +172,7 @@ public class Board {
     public void CreateBoard(int size)
     {
         this.size = size;
+        this.maxheight = 3;
 
         float x,z;
 
@@ -207,8 +186,9 @@ public class Board {
 
 
                // SimpleMaterial m1 = (SimpleMaterial)b1.getMaterial();
-                //m1.setColor(new float[]{0.2695f,0.921875f , 0.109375f,1.0f});
-                DiffuseMaterial m1 = (DiffuseMaterial)b1.getMaterial();
+
+                //DiffuseMaterial m1 = (DiffuseMaterial)b1.getMaterial();
+                SimpleMaterial m1 = (SimpleMaterial)b1.getMaterial();
                 m1.setColor(new float[]{0.2695f,0.921875f , 0.109375f,1.0f});
 
                // x = i*scale - (this.size/2)*scale;
@@ -269,7 +249,9 @@ public class Board {
 //
 
 
-            DiffuseMaterial m1 = (DiffuseMaterial) ob1.getMaterial();
+            //DiffuseMaterial m1 = (DiffuseMaterial) ob1.getMaterial();
+            SimpleMaterial m1 = (SimpleMaterial)ob1.getMaterial();
+
             m1.setColor(b1.getColor());
 
             float[] position = new float[3];
@@ -331,12 +313,29 @@ public class Board {
 
         Random rnd = new Random();
         int x,y;
+        boolean canplace = false;
 
-       // do {
+
+        do {
             x = rnd.nextInt(size);
             y = rnd.nextInt(size);
+            Block bb = BlockExistAt(x,y);
 
-        //}while (BlockExistAt(x,y));
+            if (bb ==null)
+                canplace=true;
+            else {
+                if ((bb.getChildreenCount() + 1) <= maxheight)
+                    canplace = true;
+            }
+
+
+        }while(!canplace);
+
+
+
+
+
+
 
         PlaceBlocksat(NormalBlock.class,1,x, y);
 
