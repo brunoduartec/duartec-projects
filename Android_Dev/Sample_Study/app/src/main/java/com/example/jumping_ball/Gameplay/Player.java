@@ -1,35 +1,84 @@
 package com.example.jumping_ball.Gameplay;
 
+import com.example.jumping_ball.Material.IMaterial;
+import com.example.jumping_ball.Model.IModel;
+import com.example.jumping_ball.SimpleObject;
 import com.example.jumping_ball.Vector3;
 
 /**
  * Created by Bruno on 21/10/2015.
  */
-public class Player {
+public class Player extends SimpleObject {
 
 
     private int objectID;
-    private Vector3 localposition = new Vector3(0,3,0);
+
+
 
     private Vector3 velocity = new Vector3(0,0,0);
+    private Vector3 g = new Vector3(0,-9.81f,0);
+
     private float mass;
+
+private float minimunY=0;
+
     private boolean isColiding;
 
 
-    public Player(int ID, Vector3 localposition)
+    public Player(IMaterial mat, IModel mod, String nm)
     {
-        this.objectID = ID;
-        this.setLocalposition(localposition);
+        //public SimpleObject(IMaterial mat, IModel mod, String nm)
+        super(mat,mod,nm);
+    }
+
+    boolean checkCollideY(float minimunY)
+    {
+        boolean ret = false;
+
+
+
+        return ret;
+
+    }
+
+    public void Collide(float min)
+    {
+
+        //velocity.setY(-velocity.getY());
+this.minimunY = min;
 
     }
 
 
-    void Collide()
+    @Override
+    public void Update()
     {
+        float dt = 0.1f;
 
-        velocity.setY(-velocity.getY());
+        Vector3 V1t = velocity.mul(0.5f*dt);
+        Vector3 gt = g.mul(dt);
+        Vector3 Vft = velocity.add(gt);
+
+        Vector3 dx = V1t.add(Vft);
+        velocity = Vft;
+
+        float[] pp = this.getPosition();
+
+        pp[0] += dx.getX();
+        pp[1] += dx.getY();
+        pp[2] += dx.getZ();
+
+        this.setPosition(pp);
+
+        if ( pp[1]<=minimunY)
+            g = g.mul(-1);
+
+
+
+
+
+
     }
-
 
     void Jump()
     {
@@ -41,25 +90,5 @@ public class Player {
     }
 
 
-    void MoveTo(Vector3 localpos)
-    {
 
-
-    }
-
-    public int getObjectID() {
-        return objectID;
-    }
-
-    public void setObjectID(int objectID) {
-        this.objectID = objectID;
-    }
-
-    public Vector3 getLocalposition() {
-        return localposition;
-    }
-
-    public void setLocalposition(Vector3 localposition) {
-        this.localposition = localposition;
-    }
 }

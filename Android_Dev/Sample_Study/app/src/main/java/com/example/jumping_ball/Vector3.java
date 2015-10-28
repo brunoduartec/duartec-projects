@@ -95,6 +95,13 @@ public class Vector3
         return new Vector3(getX() * other.getX(), getY() * other.getY(), getZ() * other.getZ());
     }
 
+	public Vector3 mul(float scalar)
+	{
+		return new Vector3(getX()*scalar,getY()*scalar,getZ()*scalar);
+
+	}
+
+
 	public boolean equals(Object object)
 	{
 		if (object == null) return false;

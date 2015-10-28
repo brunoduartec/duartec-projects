@@ -1,5 +1,6 @@
 package com.example.jumping_ball;
 
+import com.example.jumping_ball.Gameplay.Player;
 import com.example.jumping_ball.Material.DiffuseMaterial;
 import com.example.jumping_ball.Material.IMaterial;
 import com.example.jumping_ball.Material.SimpleMaterial;
@@ -22,7 +23,21 @@ public class ObjectFactory {
 	  public static ObjectFactory getInstance() {
 		    return SingletonHolder.INSTANCE;
 		  }
-	  
+
+	public Player getPlayer(String name,float scale)
+	{
+		Player obj;
+
+
+		IModel m1 = new BoxModel(scale);
+
+		IMaterial mat1 = new SimpleMaterial();////DiffuseMaterial();
+		obj = new Player(mat1,m1, name);
+		obj.setScale(new float[]{scale, scale, scale});
+
+		return obj;
+
+	}
 	
 	public SimpleObject getBoxObject(String name,float scale)
 	{

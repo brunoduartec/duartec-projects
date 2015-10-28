@@ -43,6 +43,11 @@ public class Board {
     public Board(IWorld w, float scale) {
         this.localWorld = w;
         this.scale = scale;
+
+    Player p1 = ObjectFactory.getInstance().getPlayer("P1", scale);
+    p1.setPosition(new float[]{0,10,0});
+    //    localWorld.AddObject(p1);
+
     }
 
 
@@ -158,8 +163,8 @@ public class Board {
 
 
 
-        if (moved)
-            PlaceRandonBlock();
+      //  if (moved)
+        //    PlaceRandonBlock();
 
 
 
