@@ -60,7 +60,7 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
     float delta = 0.01f;
 
     int size = 5;
-    float cameradistance = 1.7f;
+    float cameradistance = 2.0f;
 
     Vector2 direction = new Vector2(0, 0);
 

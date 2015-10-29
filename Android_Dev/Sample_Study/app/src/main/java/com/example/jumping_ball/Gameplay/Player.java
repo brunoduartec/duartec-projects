@@ -16,11 +16,12 @@ public class Player extends SimpleObject {
 
 
     private Vector3 velocity = new Vector3(0,0,0);
+    private Vector3 vref = new Vector3(0,0.2f,0);
     private Vector3 g = new Vector3(0,-9.81f,0);
 
     private float mass;
 
-private float minimunY=0;
+private float minimunY=0.7f;
 
     private boolean isColiding;
 
@@ -31,21 +32,13 @@ private float minimunY=0;
         super(mat,mod,nm);
     }
 
-    boolean checkCollideY(float minimunY)
-    {
-        boolean ret = false;
 
-
-
-        return ret;
-
-    }
 
     public void Collide(float min)
     {
 
         //velocity.setY(-velocity.getY());
-this.minimunY = min;
+    this.minimunY = min;
 
     }
 
@@ -53,13 +46,13 @@ this.minimunY = min;
     @Override
     public void Update()
     {
-        float dt = 0.1f;
+        float dt = 0.001f;
 
         Vector3 V1t = velocity.mul(0.5f*dt);
         Vector3 gt = g.mul(dt);
         Vector3 Vft = velocity.add(gt);
 
-        Vector3 dx = V1t.add(Vft);
+        Vector3 dx = Vft;//V1t.add(Vft);
         velocity = Vft;
 
         float[] pp = this.getPosition();
@@ -71,7 +64,7 @@ this.minimunY = min;
         this.setPosition(pp);
 
         if ( pp[1]<=minimunY)
-            g = g.mul(-1);
+            velocity = vref;
 
 
 

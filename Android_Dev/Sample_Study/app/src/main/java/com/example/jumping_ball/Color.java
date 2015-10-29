@@ -8,7 +8,8 @@ public class Color {
 		WHITE,
 		RED,
 		BLUE,
-		GREEN		
+		GREEN,
+		YELLOW
 	};
 
 	public float[] color;
@@ -26,8 +27,12 @@ public class Color {
 			color = new float[]{1.0f,1.0f,1.0f,1.0f};
 		break;
 
-			
-		default:
+			case YELLOW:
+				color = new float[]{1.0f,1.0f,0.0f,1.0f};
+				break;
+
+
+			default:
 			break;
 		}
 		

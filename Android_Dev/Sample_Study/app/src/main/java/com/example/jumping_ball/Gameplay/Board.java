@@ -1,5 +1,6 @@
 package com.example.jumping_ball.Gameplay;
 
+import com.example.jumping_ball.Color;
 import com.example.jumping_ball.IObject;
 import com.example.jumping_ball.IWorld;
 import com.example.jumping_ball.Material.DiffuseMaterial;
@@ -8,6 +9,8 @@ import com.example.jumping_ball.ObjectFactory;
 import com.example.jumping_ball.SimpleObject;
 import com.example.jumping_ball.Vector3;
 
+import java.util.Collection;
+import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Random;
@@ -30,7 +33,7 @@ public class Board {
 
 
 
-    private List<Block> bk = new LinkedList<>();
+    private LinkedList<Block> bk = new LinkedList<Block>();
 
 
 
@@ -44,9 +47,11 @@ public class Board {
         this.localWorld = w;
         this.scale = scale;
 
-    Player p1 = ObjectFactory.getInstance().getPlayer("P1", scale);
-    p1.setPosition(new float[]{0,10,0});
-    //    localWorld.AddObject(p1);
+
+
+
+   // p1.setPosition(new float[]{0,10,0});
+   // localWorld.AddObject(p1);
 
     }
 
@@ -107,6 +112,21 @@ public class Board {
     public void MoveBlocks(Vector3 dir)
     {
 
+
+      if (dir.getX()>0)
+            Collections.sort(bk, new BlockXDESCComparator());
+
+      if (dir.getX()<0)
+            Collections.sort(bk, new BlockXASCComparator());
+
+        if (dir.getZ()>0)
+            Collections.sort(bk, new BlockZDESCComparator());
+
+        if (dir.getZ()<0)
+            Collections.sort(bk, new BlockZASCComparator());
+
+
+
         boolean moved = false;
 
         for (int i=0; i< bk.size();i++)
@@ -163,8 +183,8 @@ public class Board {
 
 
 
-      //  if (moved)
-        //    PlaceRandonBlock();
+        if (moved)
+            PlaceRandonBlock();
 
 
 
@@ -190,14 +210,13 @@ public class Board {
                 SimpleObject b1 = ObjectFactory.getInstance().getBoxObject("box" + i+"_"+j, scale);
 
 
-               // SimpleMaterial m1 = (SimpleMaterial)b1.getMaterial();
-
-                //DiffuseMaterial m1 = (DiffuseMaterial)b1.getMaterial();
                 SimpleMaterial m1 = (SimpleMaterial)b1.getMaterial();
-                m1.setColor(new float[]{0.2695f,0.921875f , 0.109375f,1.0f});
+                m1.setColor(new float[]{0.2695f, 0.921875f, 0.109375f, 1.0f});
 
-               // x = i*scale - (this.size/2)*scale;
-               // z = j*scale - (this.size/2)*scale;
+                if ( i == size/2 && j == size/2) {
+                    float dark = -0.2f;
+                    m1.setColor(new float[]{0.2695f+dark, 0.921875f+dark, 0.109375f+dark, 1.0f});
+                }
 
                 b1.setPosition( convertLocalPosWorldPos(new float[]{i,0,j}));
 
@@ -208,6 +227,52 @@ public class Board {
 
 
         }
+
+//Adding Plateau
+        SimpleObject b1 = ObjectFactory.getInstance().getBoxObject("box" + size + "_" + size, scale);
+
+
+        SimpleMaterial m1 = (SimpleMaterial)b1.getMaterial();
+        m1.setColor(new float[]{0.2695f,0.921875f , 0.109375f,1.0f});
+
+        b1.setPosition(convertLocalPosWorldPos(new float[]{size - 1, 0, size}));
+
+        localWorld.AddObject(b1);
+
+            CreatePlayer();
+        CreateGema();
+
+        //SimpleObject p1 = ObjectFactory.getInstance().getBoxObject("box111_1",scale);
+    }
+
+    private void CreateGema()
+    {
+        SimpleObject b1 = ObjectFactory.getInstance().getBoxObject("box" + size + "_" + size, scale);
+
+
+        SimpleMaterial m1 = (SimpleMaterial)b1.getMaterial();
+
+        float[] co = Color.enumtoColor(Color.COLORNAME.YELLOW);
+        co[3] = 0.2f;
+        m1.setColor(co);
+
+        b1.setPosition( convertLocalPosWorldPos(new float[]{size/2,size,size/2}));
+
+        localWorld.AddObject(b1);
+
+    }
+
+    private void CreatePlayer()
+    {
+        Player p1 = ObjectFactory.getInstance().getPlayer("box", scale);
+
+
+        SimpleMaterial mt1 = (SimpleMaterial)p1.getMaterial();
+        mt1.setColor(Color.enumtoColor(Color.COLORNAME.WHITE));
+
+        p1.setPosition( convertLocalPosWorldPos(new float[]{size-1,3,size}));
+
+        localWorld.AddObject(p1);
 
     }
 

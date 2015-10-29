@@ -199,4 +199,41 @@ public class Vector3
 	public void setZ(float z) {
 		this.z = z;
 	}
+
+
+	public void rotateX(float angle)
+	{
+		Vector3 _temp = new Vector3(this.x, this.y, this.z);
+		float cosRY = (float) Math.cos(angle);
+		float sinRY = (float) Math.sin(angle);
+
+
+
+		this.y = (_temp.y*cosRY)-(_temp.z*sinRY);
+		this.z = (_temp.y*sinRY)+(_temp.z*cosRY);
+	}
+
+	public void rotateY(float angle)
+	{
+		Vector3 _temp = new Vector3(this.x, this.y, this.z);
+		float cosRY = (float) Math.cos(angle);
+		float sinRY = (float) Math.sin(angle);
+
+
+
+		this.x = (_temp.x*cosRY)+(_temp.z*sinRY);
+		this.z = (_temp.x*-sinRY)+(_temp.z*cosRY);
+	}
+
+	public void rotateZ(float angle)
+	{
+		Vector3 _temp = new Vector3(this.x, this.y, this.z);
+		float cosRY = (float) Math.cos(angle);
+		float sinRY = (float) Math.sin(angle);
+
+
+
+		this.x = (_temp.x*cosRY)-(_temp.y*sinRY);
+		this.y = (_temp.x*sinRY)+(_temp.y*cosRY);
+	}
 }

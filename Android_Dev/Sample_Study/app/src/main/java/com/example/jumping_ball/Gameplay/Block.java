@@ -2,6 +2,7 @@ package com.example.jumping_ball.Gameplay;
 
 import com.example.jumping_ball.Vector3;
 
+import java.util.Comparator;
 import java.util.Stack;
 
 /**
@@ -131,5 +132,88 @@ public Block(){}
 
     public void setLocalposition(Vector3 localposition) {
         this.localposition = localposition;
+    }
+}
+
+
+class BlockXASCComparator implements Comparator<Block>
+{
+    @Override
+    public int compare(Block lhs, Block rhs) {
+
+        float X1 = lhs.getLocalposition().getX();
+        float X2 = rhs.getLocalposition().getX();
+        int ret = (int)(X1-X2);
+
+        return ret;
+    }
+}
+
+class BlockXDESCComparator implements Comparator<Block>
+{
+    @Override
+    public int compare(Block lhs, Block rhs) {
+
+        float X1 = lhs.getLocalposition().getX();
+        float X2 = rhs.getLocalposition().getX();
+        int ret = (int)(X2-X1);
+
+        return ret;
+    }
+}
+
+
+
+class BlockYASCComparator implements Comparator<Block>
+{
+    @Override
+    public int compare(Block lhs, Block rhs) {
+
+        float Y1 = lhs.getLocalposition().getY();
+        float Y2 = rhs.getLocalposition().getY();
+        int ret = (int)(Y1-Y2);
+
+        return ret;
+    }
+}
+class BlockYDESCComparator implements Comparator<Block>
+{
+    @Override
+    public int compare(Block lhs, Block rhs) {
+
+        float Y1 = lhs.getLocalposition().getY();
+        float Y2 = rhs.getLocalposition().getY();
+        int ret = (int)(Y2-Y1);
+
+        return ret;
+    }
+}
+
+class BlockZASCComparator implements Comparator<Block>
+{
+
+
+    @Override
+    public int compare(Block lhs, Block rhs) {
+
+        float Z1 = lhs.getLocalposition().getZ();
+        float Z2 = rhs.getLocalposition().getZ();
+        int ret = (int)(Z1-Z2);
+
+        return ret;
+    }
+}
+class BlockZDESCComparator implements Comparator<Block>
+{
+
+
+    @Override
+    public int compare(Block lhs, Block rhs) {
+
+        float Z1 = lhs.getLocalposition().getZ();
+        float Z2 = rhs.getLocalposition().getZ();
+        int ret = (int)(Z2-Z1);
+
+        return ret;
     }
 }

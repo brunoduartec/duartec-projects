@@ -1,3 +1,8 @@
+
+
+
+#version 300 es
+
 uniform mat4 u_MVPMatrix;      		// A constant representing the combined model/view/projection matrix.
 uniform mat4 u_MVMatrix;       		// A constant representing the combined model/view matrix.	
 uniform vec3 u_LightPos;       	    // The position of the light in eye space.
