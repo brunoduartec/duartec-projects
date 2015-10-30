@@ -17,6 +17,8 @@ public class Vector3
 	public final static Vector3 Zero = new Vector3(0, 0, 0);
 
 
+	public Vector3(){}
+
 	public Vector3(float[] p)
 	{
 		this.setX(p[0]);

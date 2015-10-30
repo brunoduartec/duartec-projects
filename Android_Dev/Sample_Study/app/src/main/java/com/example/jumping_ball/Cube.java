@@ -58,7 +58,7 @@ public class Cube {
             "}";
 
     private final FloatBuffer vertexBuffer;
-    private final ShortBuffer drawListBuffer;
+   // private final ShortBuffer drawListBuffer;
     private final int mProgram;
     private int mPositionHandle;
     private int mColorHandle;
@@ -67,29 +67,13 @@ public class Cube {
     // number of coordinates per vertex in this array
     static final int COORDS_PER_VERTEX = 3;
    
-    /*
-    static float squareCoords[] = {
-            -0.5f,  0.5f, 0.0f,   // top left
-            -0.5f, -0.5f, 0.0f,   // bottom left
-             0.5f, -0.5f, 0.0f,   // bottom right
-             0.5f,  0.5f, 0.0f }; // top right
-    */
+
     
     float[] squareCoords;
     float size;
     
     
-   // private final short drawOrder[] = { 0, 1, 2, 0, 2, 3 }; // order to draw vertices
-    
-   // private final short drawOrder[] = { 0, 1, 2, 0, 2, 3,0, 4, 5, 0, 5, 1};
-    
-    private final short[] drawOrder = { // Vertex indices of the 4 Triangles
-    	      2, 4, 3,   // front face (CCW)
-    	      1, 4, 2,   // right face
-    	      0, 4, 1,   // back face
-    	      4, 0, 3    // left face
-    	   };
-    
+
 
     private final int vertexStride = COORDS_PER_VERTEX * 4; // 4 bytes per vertex
 
@@ -126,36 +110,58 @@ public class Cube {
     	
        	
     	 float squareTemp[] = {  // Vertices of the 6 faces
-    		      // FRONT
-    		      -size, -size,  size,  // 0. left-bottom-front
-    		       size, -size,  size,  // 1. right-bottom-front
-    		      -size,  size,  size,  // 2. left-top-front
-    		       size,  size,  size,  // 3. right-top-front
-    		      // BACK
-    		       size, -size, -size,  // 6. right-bottom-back
-    		      -size, -size, -size,  // 4. left-bottom-back
-    		       size,  size, -size,  // 7. right-top-back
-    		      -size,  size, -size,  // 5. left-top-back
-    		      // LEFT
-    		      -size, -size, -size,  // 4. left-bottom-back
-    		      -size, -size,  size,  // 0. left-bottom-front 
-    		      -size,  size, -size,  // 5. left-top-back
-    		      -size,  size,  size,  // 2. left-top-front
-    		      // RIGHT
-    		       size, -size,  size,  // 1. right-bottom-front
-    		       size, -size, -size,  // 6. right-bottom-back
-    		       size,  size,  size,  // 3. right-top-front
-    		       size,  size, -size,  // 7. right-top-back
-    		      // TOP
-    		      -size,  size,  size,  // 2. left-top-front
-    		       size,  size,  size,  // 3. right-top-front
-    		      -size,  size, -size,  // 5. left-top-back
-    		       size,  size, -size,  // 7. right-top-back
-    		      // BOTTOM
-    		      -size, -size, -size,  // 4. left-bottom-back
-    		       size, -size, -size,  // 6. right-bottom-back
-    		      -size, -size,  size,  // 0. left-bottom-front
-    		       size, -size,  size   // 1. right-bottom-front
+                 // In OpenGL counter-clockwise winding is default. This means that when we look at a triangle,
+                 // if the points are counter-clockwise we are looking at the "front". If not we are looking at
+                 // the back. OpenGL has an optimization where all back-facing triangles are culled, since they
+                 // usually represent the backside of an object and aren't visible anyways.
+
+                 // Front face
+                 -size, size, size,
+                 -size, -size, size,
+                 size, size, size,
+                 -size, -size, size,
+                 size, -size, size,
+                 size, size, size,
+
+                 // Right face
+                 size, size, size,
+                 size, -size, size,
+                 size, size, -size,
+                 size, -size, size,
+                 size, -size, -size,
+                 size, size, -size,
+
+                 // Back face
+                 size, size, -size,
+                 size, -size, -size,
+                 -size, size, -size,
+                 size, -size, -size,
+                 -size, -size, -size,
+                 -size, size, -size,
+
+                 // Left face
+                 -size, size, -size,
+                 -size, -size, -size,
+                 -size, size, size,
+                 -size, -size, -size,
+                 -size, -size, size,
+                 -size, size, size,
+
+                 // Top face
+                 -size, size, -size,
+                 -size, size, size,
+                 size, size, -size,
+                 -size, size, size,
+                 size, size, size,
+                 size, size, -size,
+
+                 // Bottom face
+                 size, -size, -size,
+                 size, -size, size,
+                 -size, -size, -size,
+                 size, -size, size,
+                 -size, -size, size,
+                 -size, -size, -size,
     		   };
     	squareCoords = squareTemp;
      	 	
@@ -181,6 +187,8 @@ public class Cube {
         vertexBuffer.put(squareCoords);
         vertexBuffer.position(0);
 
+
+       /*
         // initialize byte buffer for the draw list
         ByteBuffer dlb = ByteBuffer.allocateDirect(
                 // (# of coordinate values * 2 bytes per short)
@@ -189,9 +197,9 @@ public class Cube {
         drawListBuffer = dlb.asShortBuffer();
         drawListBuffer.put(drawOrder);
         drawListBuffer.position(0);
-
+*/
         // prepare shaders and OpenGL program
-        int vertexShader = Utils.loadShader(	GLES30.GL_VERTEX_SHADER, vertexShaderCode);
+        int vertexShader = Utils.loadShader(	GLES30.GL_VERTEX_SHADER, getVertexShader());
       // int vertexShader = MyGLRenderer.loadShader(	GLES30.GL_VERTEX_SHADER, getVertexShader());        
         
         int fragmentShader = Utils.loadShader(GLES30.GL_FRAGMENT_SHADER, getFragmentShader());

@@ -146,8 +146,14 @@ public SimpleMaterial()
 	public void Draw(IObject obj, IWorld world) {
 		
 		// TODO Auto-generated method stub
-		
-		 // Add program to OpenGL environment
+
+// Use culling to remove back faces.
+        GLES30.glEnable(GLES30.GL_CULL_FACE);
+
+        // Enable depth testing
+        GLES30.glEnable(GLES30.GL_DEPTH_TEST);
+
+		   // Add program to OpenGL environment
     	GLES30.glUseProgram(mProgram);
 
 
@@ -207,13 +213,8 @@ public SimpleMaterial()
 
         // Draw the square
          
-     // Render all the faces
-        for (int face = 0; face < 6; face++) {
-           // set the color for each of the faces
-           //gl.glColor4f(colors[face][0], colors[face][1], colors[face][2], colors[face][3]);
-           // Draw the primitive from the vertex-array directly
-           GLES30.glDrawArrays(GLES30.GL_TRIANGLE_STRIP, face*4, 4);
-        }
+
+        GLES30.glDrawArrays(GLES30.GL_TRIANGLES,0,36);
         
         
         // Disable vertex array

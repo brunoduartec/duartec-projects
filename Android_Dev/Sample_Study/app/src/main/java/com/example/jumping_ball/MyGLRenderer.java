@@ -46,6 +46,12 @@ import android.util.Log;
 public class MyGLRenderer implements GLSurfaceView.Renderer {
 
 
+    private enum GAMECONTEXT{PLAYER,BLOCK};
+
+
+    private GAMECONTEXT _gamecontext = GAMECONTEXT.BLOCK;
+
+
     private static final String TAG = "MyGLRenderer";
 
     private IWorld world;
@@ -158,7 +164,7 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
         if (fps.Update()) {
             scene.Update();
 
-           if (startmove)
+           if (startmove && _gamecontext == GAMECONTEXT.BLOCK)
            {
                DirectionMade(direction);
                //iter++;
@@ -169,6 +175,12 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
                    iter = 0;
                }
            }
+           else if (_gamecontext == GAMECONTEXT.PLAYER)
+           {
+
+             //   board1.MovePlayer(direction);
+
+           }
 
 
 
@@ -176,6 +188,15 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
         }
         scene.Draw();
 
+
+    }
+
+    public void ChangeGameContext()
+    {
+        if (_gamecontext == GAMECONTEXT.BLOCK)
+            _gamecontext = GAMECONTEXT.PLAYER;
+        else
+            _gamecontext = GAMECONTEXT.BLOCK;
 
     }
 

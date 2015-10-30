@@ -18,6 +18,7 @@ package com.example.jumping_ball;
 import android.content.Context;
 import android.opengl.GLSurfaceView;
 import android.view.MotionEvent;
+import android.widget.Toast;
 
 /**
  * A view container where OpenGL ES graphics can be drawn on screen.
@@ -27,11 +28,19 @@ import android.view.MotionEvent;
 public class MyGLSurfaceView extends GLSurfaceView {
 
     private final MyGLRenderer mRenderer;
+    //variable for counting two successive up-down events
+    int clickCount = 0;
+    //variable for storing the time of first click
+    long startTime;
+    //variable for calculating the total time
+    long duration;
+    //constant for defining the time duration between the click that can be considered as double-tap
+    static final int MAX_DURATION = 250;
 
     public MyGLSurfaceView(Context context) {
         super(context);
-        
-        
+
+
         
         GraphicFactory.getInstance().setGraphicContext(context);
         
@@ -46,16 +55,21 @@ public class MyGLSurfaceView extends GLSurfaceView {
 
         // Render the view only when there is a change in the drawing data
         setRenderMode(GLSurfaceView.RENDERMODE_CONTINUOUSLY);
-        
-        
-        
-        
+
+
+
+
     }
 
     private final float TOUCH_SCALE_FACTOR = 0.02f;
     private float mPreviousX;
     private float mPreviousY;
     private boolean makeMovement = false;
+
+
+
+
+
 
     @Override
     public boolean onTouchEvent(MotionEvent e) {
@@ -69,9 +83,30 @@ public class MyGLSurfaceView extends GLSurfaceView {
 
         switch (e.getAction()) {
 
+
+            case MotionEvent.ACTION_DOWN:
+                startTime = System.currentTimeMillis();
+                clickCount++;
+
+                break;
+
             case MotionEvent.ACTION_UP:
               //  mRenderer.changeCamera();
                 makeMovement = true;
+
+                long time = System.currentTimeMillis() - startTime;
+                duration=  duration + time;
+                if(clickCount == 2)
+                {
+                    if(duration<= MAX_DURATION)
+                    {
+                     //   Toast.makeText(captureActivity.this, "double tap", Toast.LENGTH_LONG).show();
+                        mRenderer.ChangeGameContext();
+                    }
+                    clickCount = 0;
+                    duration = 0;
+                    break;
+                }
 
                 break;
 

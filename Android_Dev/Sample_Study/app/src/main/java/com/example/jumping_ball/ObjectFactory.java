@@ -6,6 +6,7 @@ import com.example.jumping_ball.Material.IMaterial;
 import com.example.jumping_ball.Material.SimpleMaterial;
 import com.example.jumping_ball.Model.BoxModel;
 import com.example.jumping_ball.Model.IModel;
+import com.example.jumping_ball.Model.SphereModel;
 
 public class ObjectFactory {
 	
@@ -27,7 +28,10 @@ public class ObjectFactory {
 	public Player getPlayer(String name,float scale)
 	{
 		Player obj;
-		IModel m1 = new BoxModel(scale);
+		//IModel m1 = new BoxModel(scale);
+		//
+		IModel m1 = new SphereModel(scale,8,8);
+
 		SimpleMaterial mat1 = new SimpleMaterial();////DiffuseMaterial();
 		mat1.setColor(Color.enumtoColor(Color.COLORNAME.WHITE));
 		obj = new Player(mat1,m1, name);

@@ -14,6 +14,8 @@ public class Vector2
 	public final static Vector2 Y = new Vector2(0, 1);
 	public final static Vector2 Zero = new Vector2(0, 0);
 
+	public float getX(){return x;}
+	public float getY(){return y;}
 
 
 	public Vector2(float x, float y)

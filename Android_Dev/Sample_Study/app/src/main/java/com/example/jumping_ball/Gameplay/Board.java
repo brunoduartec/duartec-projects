@@ -5,8 +5,10 @@ import com.example.jumping_ball.IObject;
 import com.example.jumping_ball.IWorld;
 import com.example.jumping_ball.Material.DiffuseMaterial;
 import com.example.jumping_ball.Material.SimpleMaterial;
+import com.example.jumping_ball.MyGLRenderer;
 import com.example.jumping_ball.ObjectFactory;
 import com.example.jumping_ball.SimpleObject;
+import com.example.jumping_ball.Vector2;
 import com.example.jumping_ball.Vector3;
 
 import java.util.Collection;
@@ -23,7 +25,7 @@ public class Board {
 
 
 
-    public enum DIRECTION {LEFT, RIGHT, UP, DOWN};
+
 
     private float scale;
     private String name;
@@ -31,10 +33,12 @@ public class Board {
     int count = 0; // used to name objects
 
 
+    Vector2 _direction = new Vector2(0,0);
+    Vector2 _playerpos;
 
 
     private LinkedList<Block> bk = new LinkedList<Block>();
-
+    Player p1;
 
 
     private int size;
@@ -47,7 +51,7 @@ public class Board {
         this.localWorld = w;
         this.scale = scale;
 
-
+        _playerpos = new Vector2((float)(size-1),(float)size);
 
 
    // p1.setPosition(new float[]{0,10,0});
@@ -109,6 +113,74 @@ public class Board {
 
 
     }
+
+    public void MovePlayer(Vector2 dir)
+    {
+
+        this._direction = dir;
+
+        p1.setDirection(dir);
+
+
+        //p1.setKernelMoviment(kernel);
+
+
+
+    }
+
+    private void CreateKernel()
+    {
+
+        float[] kernel= new float[9];
+
+        int xtry = (int)_playerpos.getX();
+        int ytry = (int)_playerpos.getY();
+
+        int kval = 100;// very high value
+        int count=0;
+
+
+        for (int i=0;i>size;i++)
+        {
+
+            for (int j=0;j>size;j++)
+            {
+                if (xtry<size)
+                    kernel[count] = 100;
+                else if (xtry<0)
+                    kernel[count] = 100;
+                else if (ytry<size)
+                    kernel[count] = 100;
+                else if (ytry<0)
+                    kernel[count] = 100;
+                else{
+
+                    kval = BlockExistAt(_playerpos.getX(), _playerpos.getY()).getChildreenCount()+1;
+
+
+                }
+
+
+
+                count++;
+            }
+
+        }
+
+
+
+
+
+
+     //   kernel[0] =
+
+
+
+
+
+    }
+
+
     public void MoveBlocks(Vector3 dir)
     {
 
@@ -264,7 +336,7 @@ public class Board {
 
     private void CreatePlayer()
     {
-        Player p1 = ObjectFactory.getInstance().getPlayer("box", scale);
+        p1 = ObjectFactory.getInstance().getPlayer("P1", scale);
 
 
         SimpleMaterial mt1 = (SimpleMaterial)p1.getMaterial();
