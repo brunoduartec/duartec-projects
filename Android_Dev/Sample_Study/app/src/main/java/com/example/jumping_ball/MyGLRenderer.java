@@ -49,7 +49,7 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
     private enum GAMECONTEXT{PLAYER,BLOCK};
 
 
-    private GAMECONTEXT _gamecontext = GAMECONTEXT.BLOCK;
+    private GAMECONTEXT _gamecontext = GAMECONTEXT.PLAYER;
 
 
     private static final String TAG = "MyGLRenderer";
@@ -68,7 +68,7 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
     int size = 5;
     float cameradistance = 2.0f;
 
-    Vector2 direction = new Vector2(0, 0);
+    Vector2 direction = new Vector2(0, -1);
 
     private float posx;
     private float posy;
@@ -178,7 +178,7 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
            else if (_gamecontext == GAMECONTEXT.PLAYER)
            {
 
-             //   board1.MovePlayer(direction);
+                board1.MovePlayer(direction);
 
            }
 

@@ -9,5 +9,13 @@
         android:layout_height="wrap_content"
         android:text="@string/hello_world" />
 
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:background="#855757" />
+
 </RelativeLayout>
 <!-- From: file:/C:/Users/Bruno/Documents/GitHub/duartec-projects/Android_Dev/Sample_Study/app/src/main/res/layout/activity_open_gles20.xml -->

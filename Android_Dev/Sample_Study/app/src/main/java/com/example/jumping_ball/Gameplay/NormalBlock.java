@@ -17,10 +17,10 @@ public NormalBlock(){}
 
     }
 
-    @Override
-    public float[] getColor() {
-        return new float[]{0.5f, 0.5f, 0.5f, 1.0f};
-    }
+    //@Override
+   // public float[] getColor() {
+    //    return new float[]{0.5f, 0.5f, 0.5f, 1.0f};
+    //}
 
     @Override
     public boolean canMove() {

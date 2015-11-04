@@ -28,9 +28,9 @@ public class ObjectFactory {
 	public Player getPlayer(String name,float scale)
 	{
 		Player obj;
-		//IModel m1 = new BoxModel(scale);
+		IModel m1 = new BoxModel(scale);
 		//
-		IModel m1 = new SphereModel(scale,8,8);
+		//IModel m1 = new SphereModel(scale,4,4);
 
 		SimpleMaterial mat1 = new SimpleMaterial();////DiffuseMaterial();
 		mat1.setColor(Color.enumtoColor(Color.COLORNAME.WHITE));
@@ -39,6 +39,44 @@ public class ObjectFactory {
 		return obj;
 
 	}
+
+	public SimpleObject getNormalBoxObject(String name, float scale)
+	{
+		SimpleObject obj;
+		IModel m1 = new BoxModel(scale);
+		SimpleMaterial mat1 = new SimpleMaterial();////DiffuseMaterial();
+
+		mat1.setColor(new float[]{0.2695f, 0.921875f, 0.109375f, 1.0f});
+		obj = new SimpleObject(mat1,m1, name);
+		obj.setScale(new float[]{scale, scale, scale});
+		return obj;
+	}
+
+	public SimpleObject getStoneBoxObject(String name, float scale)
+	{
+		SimpleObject obj;
+		IModel m1 = new BoxModel(scale);
+		SimpleMaterial mat1 = new SimpleMaterial();////DiffuseMaterial();
+
+		mat1.setColor(new float[]{.1f, .1f, .1f, 1.0f});
+		obj = new SimpleObject(mat1,m1, name);
+		obj.setScale(new float[]{scale, scale, scale});
+		return obj;
+	}
+
+	public SimpleObject getGemaObject(String name, float scale)
+	{
+		SimpleObject obj;
+		IModel m1 = new BoxModel(scale);
+		SimpleMaterial mat1 = new SimpleMaterial();////DiffuseMaterial();
+
+		mat1.setColor(Color.enumtoColor(Color.COLORNAME.YELLOW));
+		obj = new SimpleObject(mat1,m1, name);
+		obj.setScale(new float[]{scale, scale, scale});
+		return obj;
+	}
+
+
 	
 	public SimpleObject getBoxObject(String name,float scale)
 	{

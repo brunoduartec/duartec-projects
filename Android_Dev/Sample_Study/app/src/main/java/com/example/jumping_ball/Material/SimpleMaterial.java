@@ -213,8 +213,9 @@ public SimpleMaterial()
 
         // Draw the square
          
+    int verticescount = obj.getModel().getVertices().length/3;
 
-        GLES30.glDrawArrays(GLES30.GL_TRIANGLES,0,36);
+        GLES30.glDrawArrays(GLES30.GL_TRIANGLES,0,verticescount);
         
         
         // Disable vertex array

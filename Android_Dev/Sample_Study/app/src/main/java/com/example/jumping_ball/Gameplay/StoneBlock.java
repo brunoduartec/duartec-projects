@@ -17,10 +17,10 @@ public class StoneBlock extends Block {
 
 
 
-    @Override
-    public float[] getColor() {
-        return new float[]{0.1f, 0.1f, 0.1f, 1.0f};
-    }
+   // @Override
+    //public float[] getColor() {
+      //  return new float[]{0.1f, 0.1f, 0.1f, 1.0f};
+    //}
 
     @Override
     public boolean canMove() {

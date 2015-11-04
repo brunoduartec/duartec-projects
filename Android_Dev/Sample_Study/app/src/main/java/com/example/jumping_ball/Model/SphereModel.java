@@ -73,11 +73,11 @@ public class SphereModel implements IModel {
         Vector3 pos = new Vector3();
         Vector3 posFull = new Vector3();
 
-        vertices = new float[_rows*_cols*3];
+        vertices = new float[(_rows+1)*(_cols+1)*3];
 
         //if( defaultColor() == null ) defaultColor(new Color4());
         // Build vertices
-
+int count = -1;
         for (r = 0; r <= _rows; r++)
         {
             float v = (float)r / (float)_rows; // [0,1]
@@ -98,10 +98,12 @@ public class SphereModel implements IModel {
                 posFull = pos;
                 posFull = posFull.mul(_radius);
 
-
-                vertices[3*c  ] = posFull.getX();
-                vertices[3*c+1] = posFull.getY();
-                vertices[3*c+2] = posFull.getZ();
+                count++;
+                vertices[count] = posFull.getX();
+                count++;
+                vertices[count] = posFull.getY();
+                count++;
+                vertices[count] = posFull.getZ();
 
 
                 //this.vertices().addVertex(posFull.x,posFull.y,posFull.z,  u,v,  pos.x,pos.y,pos.z,  defaultColor().r,defaultColor().g,defaultColor().b,defaultColor().a);

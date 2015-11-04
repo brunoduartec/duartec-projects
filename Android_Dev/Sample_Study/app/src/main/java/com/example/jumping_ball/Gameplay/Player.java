@@ -15,17 +15,16 @@ public class Player extends SimpleObject {
     private int objectID;
 private Vector2 _direction;
 
+    private Vector3 localPos = new Vector3();
 
     private Vector3 velocity = new Vector3(0,0,0);
 
     private Vector3 g = new Vector3(0,-9.81f,0);
 
-    //stores a 3X3 Matrix of the board height around the player
-    private float[] _kernel = new float[9];
 
     private float mass;
 
-private float minimunY=0.7f;
+    private float minimunY=0.7f;
 
     private boolean isColiding;
 
@@ -48,15 +47,22 @@ private float minimunY=0.7f;
 
 
 
-    public  void setKernelMoviment(float[] kernel)
-    {
-        this._kernel = kernel;
 
-    }
-
-    public void setDirection(Vector2 dir)
+//the direction is assincronous
+    public void setDirection(Vector2 dir,float after)
     {
        this._direction = dir;
+
+
+        if (getPosition()[1]>= after)
+        {
+            float[] oldpos = getPosition();
+            oldpos[0] += dir.getX();
+            oldpos[2] += dir.getY();
+
+            setPosition(oldpos);
+
+        }
     }
 
 
@@ -69,7 +75,7 @@ private float minimunY=0.7f;
 
 
         Jump();
-      ///  Move();
+        Move();
 
 
 
@@ -78,38 +84,6 @@ private float minimunY=0.7f;
     void Move()
     {
 
-        float nextHeight=0;
-        float playerpos = _kernel[4];
-
-        if (_direction.getX() > 0 ) //pos5
-        {
-
-            nextHeight = _kernel[5] - playerpos;
-
-        }
-        else if (_direction.getX()<0) //pos3
-        {
-            nextHeight = _kernel[3] - playerpos;
-
-        }
-        else if (_direction.getY() >0)
-        {
-            nextHeight = _kernel[1] - playerpos;
-        }
-        else if (_direction.getY() <0)
-        {
-            nextHeight = _kernel[7] - playerpos;
-
-        }
-
-
-        if (getPosition()[1] > nextHeight)
-        {
-            float[] pos = getPosition();
-            pos[1] = nextHeight;
-
-
-        }
 
 
     }
@@ -146,5 +120,11 @@ private float minimunY=0.7f;
     }
 
 
+    public Vector3 getLocalPos() {
+        return localPos;
+    }
 
+    public void setLocalPos(Vector3 localPos) {
+        this.localPos = localPos;
+    }
 }

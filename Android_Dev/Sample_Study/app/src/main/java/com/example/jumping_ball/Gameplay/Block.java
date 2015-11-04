@@ -14,7 +14,7 @@ public  abstract class Block {
     private Vector3 localposition;
     Stack<Block> child = new Stack<>();
 
-    public abstract float[] getColor();
+
     public abstract boolean canMove();
     public abstract boolean canStack();
     public abstract void onCollide(Block b);

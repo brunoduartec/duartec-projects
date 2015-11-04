@@ -87,6 +87,7 @@ public class Board {
     }
 
 
+
     private float[] convertLocalPosWorldPos(float[] localpos)
     {
 
@@ -119,7 +120,26 @@ public class Board {
 
         this._direction = dir;
 
-        p1.setDirection(dir);
+
+        int h1,h2;
+
+        float[] actualpos = p1.getPosition();
+
+        float x,y;
+
+        x = p1.getLocalPos().getX()+ dir.getX();
+        y = p1.getLocalPos().getZ()+ dir.getY();
+
+
+        Block btemp =BlockExistAt(x,y);
+        if (btemp != null)
+            h2 = btemp.getChildreenCount();
+        else
+            h2 = 0;
+
+
+
+        p1.setDirection(dir,h2*size);
 
 
         //p1.setKernelMoviment(kernel);
@@ -128,57 +148,6 @@ public class Board {
 
     }
 
-    private void CreateKernel()
-    {
-
-        float[] kernel= new float[9];
-
-        int xtry = (int)_playerpos.getX();
-        int ytry = (int)_playerpos.getY();
-
-        int kval = 100;// very high value
-        int count=0;
-
-
-        for (int i=0;i>size;i++)
-        {
-
-            for (int j=0;j>size;j++)
-            {
-                if (xtry<size)
-                    kernel[count] = 100;
-                else if (xtry<0)
-                    kernel[count] = 100;
-                else if (ytry<size)
-                    kernel[count] = 100;
-                else if (ytry<0)
-                    kernel[count] = 100;
-                else{
-
-                    kval = BlockExistAt(_playerpos.getX(), _playerpos.getY()).getChildreenCount()+1;
-
-
-                }
-
-
-
-                count++;
-            }
-
-        }
-
-
-
-
-
-
-     //   kernel[0] =
-
-
-
-
-
-    }
 
 
     public void MoveBlocks(Vector3 dir)
@@ -279,14 +248,18 @@ public class Board {
         for (int i=0;i<size;i++)
         {
             for (int j=0;j<size;j++) {
-                SimpleObject b1 = ObjectFactory.getInstance().getBoxObject("box" + i+"_"+j, scale);
+//                SimpleObject b1 = ObjectFactory.getInstance().getBoxObject("box" + i+"_"+j, scale);
+                SimpleObject b1 = ObjectFactory.getInstance().getNormalBoxObject("box" + i+"_"+j, scale);
 
-
-                SimpleMaterial m1 = (SimpleMaterial)b1.getMaterial();
-                m1.setColor(new float[]{0.2695f, 0.921875f, 0.109375f, 1.0f});
+                //SimpleMaterial m1 = (SimpleMaterial)b1.getMaterial();
+                //m1.setColor(new float[]{0.2695f, 0.921875f, 0.109375f, 1.0f});
 
                 if ( i == size/2 && j == size/2) {
                     float dark = -0.2f;
+                    SimpleMaterial m1 = (SimpleMaterial)b1.getMaterial();
+                    //m1.setColor(new float[]{0.2695f, 0.921875f, 0.109375f, 1.0f});
+
+
                     m1.setColor(new float[]{0.2695f+dark, 0.921875f+dark, 0.109375f+dark, 1.0f});
                 }
 
@@ -301,11 +274,12 @@ public class Board {
         }
 
 //Adding Plateau
-        SimpleObject b1 = ObjectFactory.getInstance().getBoxObject("box" + size + "_" + size, scale);
 
+     //   SimpleObject b1 = ObjectFactory.getInstance().getBoxObject("box" + size + "_" + size, scale);
+        SimpleObject b1 = ObjectFactory.getInstance().getNormalBoxObject("box" + size + "_" + size, scale);
 
-        SimpleMaterial m1 = (SimpleMaterial)b1.getMaterial();
-        m1.setColor(new float[]{0.2695f,0.921875f , 0.109375f,1.0f});
+        //SimpleMaterial m1 = (SimpleMaterial)b1.getMaterial();
+        //m1.setColor(new float[]{0.2695f,0.921875f , 0.109375f,1.0f});
 
         b1.setPosition(convertLocalPosWorldPos(new float[]{size - 1, 0, size}));
 
@@ -319,14 +293,9 @@ public class Board {
 
     private void CreateGema()
     {
-        SimpleObject b1 = ObjectFactory.getInstance().getBoxObject("box" + size + "_" + size, scale);
 
+        SimpleObject b1 = ObjectFactory.getInstance().getGemaObject("gema" + size + "_" + size, scale);
 
-        SimpleMaterial m1 = (SimpleMaterial)b1.getMaterial();
-
-        float[] co = Color.enumtoColor(Color.COLORNAME.YELLOW);
-        co[3] = 0.2f;
-        m1.setColor(co);
 
         b1.setPosition( convertLocalPosWorldPos(new float[]{size/2,size,size/2}));
 
@@ -342,7 +311,8 @@ public class Board {
         SimpleMaterial mt1 = (SimpleMaterial)p1.getMaterial();
         mt1.setColor(Color.enumtoColor(Color.COLORNAME.WHITE));
 
-        p1.setPosition( convertLocalPosWorldPos(new float[]{size-1,3,size}));
+        p1.setPosition(convertLocalPosWorldPos(new float[]{size - 1, 3, size}));
+        p1.setLocalPos( new Vector3(size-1,3,size));
 
         localWorld.AddObject(p1);
 
@@ -385,16 +355,13 @@ public class Board {
             localposition[1] = i+1;
             localposition[2] = y;
 
+            IObject ob1 = null;
+            if (t == NormalBlock.class)
+                ob1 = ObjectFactory.getInstance().getNormalBoxObject(obname, scale);
+            else if (t == StoneBlock.class)
+                ob1 = ObjectFactory.getInstance().getStoneBoxObject(obname, scale);
 
-            IObject ob1 = ObjectFactory.getInstance().getBoxObject(obname, scale);
-          //  SimpleMaterial m1 = (SimpleMaterial) ob1.getMaterial();
-//
 
-
-            //DiffuseMaterial m1 = (DiffuseMaterial) ob1.getMaterial();
-            SimpleMaterial m1 = (SimpleMaterial)ob1.getMaterial();
-
-            m1.setColor(b1.getColor());
 
             float[] position = new float[3];
 
@@ -404,15 +371,13 @@ public class Board {
             int id = localWorld.AddObject(ob1);
 
 
-
-
-
-
             if(i==0) {
 
                 if (t == NormalBlock.class)
+
                     b1 = new NormalBlock(id, new Vector3(localposition));
                 else if (t == StoneBlock.class)
+
                     b1 = new StoneBlock(id, new Vector3(localposition));
 
                 bk.add(b1);
@@ -423,10 +388,7 @@ public class Board {
 
                 if (t == NormalBlock.class)
                     bn = new NormalBlock(id,new Vector3(localposition));
-
-
-
-                     b1.StackBlock(bn);
+                    b1.StackBlock(bn);
 
             }
 
