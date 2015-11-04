@@ -59,7 +59,7 @@ private Vector2 _direction;
             float[] oldpos = getPosition();
             oldpos[0] += dir.getX();
             oldpos[2] += dir.getY();
-
+            this.minimunY = after;
             setPosition(oldpos);
 
         }
