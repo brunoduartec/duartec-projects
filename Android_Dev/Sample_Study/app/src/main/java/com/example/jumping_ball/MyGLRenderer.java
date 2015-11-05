@@ -100,7 +100,7 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
         GraphicFactory.getInstance().setHeight(this.height);
 
         fps = new FpsCounterComponent(60);
-        timer = new TimerComponent(2000);
+        timer = new TimerComponent(1000);
 
 
         world = new SimpleWorld();
@@ -175,7 +175,7 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
                    iter = 0;
                }
            }
-           else if (_gamecontext == GAMECONTEXT.PLAYER)
+           else if (_gamecontext == GAMECONTEXT.PLAYER && timer.Update())
            {
 
                 board1.MovePlayer(direction);

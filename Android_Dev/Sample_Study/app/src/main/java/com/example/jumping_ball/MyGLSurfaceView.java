@@ -17,8 +17,8 @@ package com.example.jumping_ball;
 
 import android.content.Context;
 import android.opengl.GLSurfaceView;
+import android.util.AttributeSet;
 import android.view.MotionEvent;
-import android.widget.Toast;
 
 /**
  * A view container where OpenGL ES graphics can be drawn on screen.
@@ -28,17 +28,35 @@ import android.widget.Toast;
 public class MyGLSurfaceView extends GLSurfaceView {
 
     private final MyGLRenderer mRenderer;
-    //variable for counting two successive up-down events
-    int clickCount = 0;
-    //variable for storing the time of first click
-    long startTime;
-    //variable for calculating the total time
-    long duration;
-    //constant for defining the time duration between the click that can be considered as double-tap
-    static final int MAX_DURATION = 250;
+
+
+
+    public MyGLSurfaceView(Context context, AttributeSet attrs) {
+        super(context, attrs);
+        GraphicFactory.getInstance().setGraphicContext(context);
+
+
+
+        // Create an OpenGL ES 2.0 context.
+        setEGLContextClientVersion(3);
+
+        // set the Renderer for drawing on the GLSurfaceView
+        mRenderer = new MyGLRenderer();
+        setRenderer(getmRenderer());
+
+        // Render the view only when there is a change in the drawing data
+        setRenderMode(GLSurfaceView.RENDERMODE_CONTINUOUSLY);
+    }
+
+  //  public MyGLSurfaceView(Context context, AttributeSet attrs, int defStyle) {
+    //    super(context, attrs, defStyle);
+       // init(context);
+   // }
 
     public MyGLSurfaceView(Context context) {
         super(context);
+
+
 
 
         
@@ -51,7 +69,7 @@ public class MyGLSurfaceView extends GLSurfaceView {
 
         // set the Renderer for drawing on the GLSurfaceView
         mRenderer = new MyGLRenderer();
-        setRenderer(mRenderer);
+        setRenderer(getmRenderer());
 
         // Render the view only when there is a change in the drawing data
         setRenderMode(GLSurfaceView.RENDERMODE_CONTINUOUSLY);
@@ -85,8 +103,7 @@ public class MyGLSurfaceView extends GLSurfaceView {
 
 
             case MotionEvent.ACTION_DOWN:
-                startTime = System.currentTimeMillis();
-                clickCount++;
+
 
                 break;
 
@@ -94,19 +111,7 @@ public class MyGLSurfaceView extends GLSurfaceView {
               //  mRenderer.changeCamera();
                 makeMovement = true;
 
-                long time = System.currentTimeMillis() - startTime;
-                duration=  duration + time;
-                if(clickCount == 2)
-                {
-                    if(duration<= MAX_DURATION)
-                    {
-                     //   Toast.makeText(captureActivity.this, "double tap", Toast.LENGTH_LONG).show();
-                        mRenderer.ChangeGameContext();
-                    }
-                    clickCount = 0;
-                    duration = 0;
-                    break;
-                }
+
 
                 break;
 
@@ -122,7 +127,7 @@ public class MyGLSurfaceView extends GLSurfaceView {
 
 
                  makeMovement = false;
-                    mRenderer.StartMovement(dir);
+                    getmRenderer().StartMovement(dir);
                 }
 
                 
@@ -133,4 +138,7 @@ public class MyGLSurfaceView extends GLSurfaceView {
         return true;
     }
 
+    public MyGLRenderer getmRenderer() {
+        return mRenderer;
+    }
 }

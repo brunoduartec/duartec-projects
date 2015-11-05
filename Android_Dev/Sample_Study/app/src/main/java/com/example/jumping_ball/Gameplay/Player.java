@@ -45,10 +45,7 @@ private Vector2 _direction;
 
     }
 
-
-
-
-//the direction is assincronous
+    //The direction is assincronous
     public void setDirection(Vector2 dir,float after)
     {
        this._direction = dir;

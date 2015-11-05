@@ -1,21 +1,23 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="${relativePackage}.${activityClass}" >
+<?xml version="1.0" encoding="utf-8"?>
 
-    <TextView
-        android:layout_width="wrap_content"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:id="@+id/layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <com.example.jumping_ball.MyGLSurfaceView
+        android:id="@+id/MyGlSurfaceView"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_weight="0.23" />
 
     <ImageButton
-        android:layout_width="wrap_content"
+        android:layout_width="482dp"
         android:layout_height="wrap_content"
         android:id="@+id/imageButton"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:background="#855757" />
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.03"
+        android:src="@drawable/boxcontext"/>
 
-</RelativeLayout>
-<!-- From: file:/C:/Users/Bruno/Documents/GitHub/duartec-projects/Android_Dev/Sample_Study/app/src/main/res/layout/activity_open_gles20.xml -->
+</LinearLayout><!-- From: file:/C:/Users/Bruno/Documents/GitHub/duartec-projects/Android_Dev/Sample_Study/app/src/main/res/layout/activity_open_gles20.xml -->
