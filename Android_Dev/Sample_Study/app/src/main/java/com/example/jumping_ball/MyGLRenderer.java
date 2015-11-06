@@ -24,6 +24,7 @@ import com.example.jumping_ball.Camera.SimpleCamera;
 import com.example.jumping_ball.Component.FpsCounterComponent;
 import com.example.jumping_ball.Component.TimerComponent;
 import com.example.jumping_ball.Gameplay.Board;
+import com.example.jumping_ball.Gameplay.GameConstants;
 import com.example.jumping_ball.Gameplay.NormalBlock;
 import com.example.jumping_ball.Gameplay.StoneBlock;
 import com.example.jumping_ball.Scene.IScene;
@@ -62,7 +63,7 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
 
 
     private float mAngle;
-    float scale = 0.7f;
+    float scale;
     float delta = 0.01f;
 
     int size = 5;
@@ -82,6 +83,9 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
 
     @Override
     public void onSurfaceCreated(GL10 unused, EGLConfig config) {
+
+
+        this.scale = GameConstants.scale;
 
         // set the background frame color
         GLES30.glClearColor(0.29f, 0.95f, 0.88f, 1.0f);
@@ -132,10 +136,11 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
 
         // board1.PlaceRandonBlock();
 
-       board1.PlaceBlocksat(NormalBlock.class,2, 4, 0);
-        board1.PlaceBlocksat(StoneBlock.class,1, 3, 0);
+       board1.PlaceBlocksat(NormalBlock.class,1, size-1, size-1);
+        board1.PlaceBlocksat(NormalBlock.class,2, size-1, size-2);
+        board1.PlaceBlocksat(StoneBlock.class, 1, 3, 0);
 
-        board1.PlaceRandonBlock();
+     //   board1.PlaceRandonBlock();
 
         //SceneXMLParser sceneparser = new SceneXMLParser();
 

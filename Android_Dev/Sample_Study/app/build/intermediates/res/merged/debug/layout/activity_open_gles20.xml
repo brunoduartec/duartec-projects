@@ -1,23 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 
+
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
    android:id="@+id/layout"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:weightSum="1">
 
     <com.example.jumping_ball.MyGLSurfaceView
         android:id="@+id/MyGlSurfaceView"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="0.23" />
+        android:layout_height="fill_parent" />
 
-    <ImageButton
-        android:layout_width="482dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageButton"
-        android:layout_gravity="center_horizontal"
-        android:layout_weight="0.03"
-        android:src="@drawable/boxcontext"/>
+
+
 
 </LinearLayout><!-- From: file:/C:/Users/Bruno/Documents/GitHub/duartec-projects/Android_Dev/Sample_Study/app/src/main/res/layout/activity_open_gles20.xml -->

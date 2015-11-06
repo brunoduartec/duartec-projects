@@ -101,6 +101,15 @@ public class Board {
 
     }
 
+    public boolean testposintheBoard(Vector2 p)
+    {
+
+        if (p.getX()-1 ==  size && p.getY()==size)
+            return true;
+
+        return (p.getX()<=(size-1))&&(p.getY()<=(size-1))&&(p.getX()>=0)&&(p.getY()>=0);
+    }
+
     public boolean intotheBoard(Block b, Vector3 dir)
     {
 
@@ -118,7 +127,10 @@ public class Board {
     public void MovePlayer(Vector2 dir)
     {
 
-        this._direction = dir;
+        Vector3 playerpos = p1.getLocalPos();
+
+
+
 
 
         int h1,h2;
@@ -127,19 +139,24 @@ public class Board {
 
         float x,y;
 
-        x = p1.getLocalPos().getX()+ dir.getX();
-        y = p1.getLocalPos().getZ()+ dir.getY();
+        x = playerpos.getX()+ dir.getX();
+        y = playerpos.getZ()+ dir.getY();
 
 
+            if (!testposintheBoard(new Vector2(x, y)))
+                return;
+
+
+        this._direction = dir;
         Block btemp =BlockExistAt(x,y);
         if (btemp != null)
-            h2 = btemp.getChildreenCount();
+            h2 = btemp.getChildreenCount()+1;
         else
             h2 = 0;
 
 
 
-        p1.setDirection(dir,h2*size);
+        p1.setDirection(dir,(h2)*scale);
 
 
         //p1.setKernelMoviment(kernel);
@@ -311,7 +328,7 @@ public class Board {
         SimpleMaterial mt1 = (SimpleMaterial)p1.getMaterial();
         mt1.setColor(Color.enumtoColor(Color.COLORNAME.WHITE));
 
-        p1.setPosition(convertLocalPosWorldPos(new float[]{size - 1, 3, size}));
+        p1.setPosition(convertLocalPosWorldPos(new float[]{size - 1, 4, size}));
         p1.setLocalPos( new Vector3(size-1,3,size));
 
         localWorld.AddObject(p1);

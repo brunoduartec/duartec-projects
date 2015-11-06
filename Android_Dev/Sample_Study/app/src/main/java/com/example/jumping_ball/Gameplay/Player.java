@@ -25,6 +25,7 @@ private Vector2 _direction;
     private float mass;
 
     private float minimunY=0.7f;
+    private float scale;
 
     private boolean isColiding;
 
@@ -32,7 +33,9 @@ private Vector2 _direction;
     public Player(IMaterial mat, IModel mod, String nm)
     {
         //public SimpleObject(IMaterial mat, IModel mod, String nm)
+
         super(mat,mod,nm);
+        this.scale = GameConstants.scale;
     }
 
 
@@ -54,10 +57,14 @@ private Vector2 _direction;
         if (getPosition()[1]>= after)
         {
             float[] oldpos = getPosition();
-            oldpos[0] += dir.getX();
-            oldpos[2] += dir.getY();
-            this.minimunY = after;
+            oldpos[0] += (dir.getX()*scale);
+            oldpos[2] += (dir.getY()*scale);
+            this.minimunY = after+scale;
+
             setPosition(oldpos);
+            setLocalPos( new Vector3(localPos.getX()+dir.getX(),this.minimunY,localPos.getZ()+dir.getY()));
+
+
 
         }
     }
@@ -90,11 +97,7 @@ private Vector2 _direction;
 
         float dt = 0.05f;
 
-        // Vector3 V1t = velocity.mul(0.5f*dt);
-        // Vector3 gt = g.mul(dt);
-        // Vector3 Vft = velocity.add(gt);
 
-        // Vector3 dx = Vft;//V1t.add(Vft);
         Vector3 Vft = velocity.add(g.mul(dt));
         Vector3 dx = velocity.mul(dt).add(g.mul(0.5f*dt*dt));
         velocity = Vft;
@@ -107,9 +110,11 @@ private Vector2 _direction;
 
         this.setPosition(pp);
 
-        if ( pp[1]<=minimunY)
-            velocity = velocity.mul(new Vector3(0,-1,0));
+        if ( pp[1]<=minimunY) {
 
+            float Vinit = (float)Math.sqrt(-2*g.getY()*2*scale);
+            velocity = new Vector3(0, Vinit, 0);
+        }
 
 
 
