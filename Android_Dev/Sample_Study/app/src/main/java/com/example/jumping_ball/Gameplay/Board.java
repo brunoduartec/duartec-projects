@@ -130,9 +130,6 @@ public class Board {
         Vector3 playerpos = p1.getLocalPos();
 
 
-
-
-
         int h1,h2;
 
         float[] actualpos = p1.getPosition();
@@ -159,7 +156,7 @@ public class Board {
         p1.setDirection(dir,(h2)*scale);
 
 
-        //p1.setKernelMoviment(kernel);
+
 
 
 

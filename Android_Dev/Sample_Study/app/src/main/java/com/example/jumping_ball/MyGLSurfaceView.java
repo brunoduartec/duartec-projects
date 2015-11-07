@@ -102,12 +102,17 @@ public class MyGLSurfaceView extends GLSurfaceView {
         switch (e.getAction()) {
 
 
-            //case MotionEvent.ACTION_DOWN:
+            case MotionEvent.ACTION_DOWN:
+
+                break;
+
+            case MotionEvent.ACTION_UP:
+                //  mRenderer.changeCamera();
+                makeMovement = true;
 
 
-              //  break;
 
-
+                break;
 
 
 
@@ -123,13 +128,7 @@ public class MyGLSurfaceView extends GLSurfaceView {
                  makeMovement = false;
                     getmRenderer().StartMovement(dir);
                 }
-            case MotionEvent.ACTION_UP:
-                //  mRenderer.changeCamera();
-                makeMovement = true;
 
-
-
-                break;
                 
         }
 

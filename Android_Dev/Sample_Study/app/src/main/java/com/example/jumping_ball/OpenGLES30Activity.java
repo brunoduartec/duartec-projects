@@ -8,16 +8,17 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 public class OpenGLES30Activity extends Activity {
 
 	
 	private MyGLSurfaceView mGLView;
-	
+	private ImageView b;
 
-	
-	
+
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -26,15 +27,18 @@ public class OpenGLES30Activity extends Activity {
 		// as the ContentView for this Activity
 		mGLView = new MyGLSurfaceView(this);
 		//setContentView(mGLView);
-		setContentView(R.layout.activity_open_gles20);
-/*
+		//setContentView(R.layout.activity_open_gles20);
+		setContentView(mGLView);
+
 		LinearLayout ll = new LinearLayout(this);
 
 		//ImageButton b = new ImageButton(this);
 
-
-		Button b = new Button(this);//(Button) findViewById(R.id.button); //new Button(this);
-		b.setText("Change Context");
+		b = new ImageButton(this);
+		b.setBackgroundColor(0);
+		//Button b = new Button(this);//(Button) findViewById(R.id.button); //new Button(this);
+		b.setImageResource(R.drawable.boxcontext);
+		//b.setText("Change Context");
 
 		ll.addView(b);
 		ll.setGravity(Gravity.CENTER_HORIZONTAL | Gravity.BOTTOM);
@@ -44,12 +48,24 @@ public class OpenGLES30Activity extends Activity {
 		b.setOnClickListener(new Button.OnClickListener() {
 								 public void onClick(View v)
 								 {
-									 mGLView.getmRenderer().ChangeGameContext();
+									MyGLRenderer.GAMECONTEXT gt =  mGLView.getmRenderer().ChangeGameContext();
+
+									 switch (gt)
+									 {
+										 case BLOCK:
+											 b.setImageResource(R.drawable.boxcontext);
+											 break;
+
+										 case PLAYER:
+											 b.setImageResource(R.drawable.ballcontext);
+											 break;
+
+									 }
 								 }
 							 }	);
 
 
-*/
+
 	}
 	
 	

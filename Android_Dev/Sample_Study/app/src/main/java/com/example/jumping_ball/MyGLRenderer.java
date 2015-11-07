@@ -47,10 +47,10 @@ import android.util.Log;
 public class MyGLRenderer implements GLSurfaceView.Renderer {
 
 
-    private enum GAMECONTEXT{PLAYER,BLOCK};
+    public enum GAMECONTEXT{PLAYER,BLOCK};
 
 
-    private GAMECONTEXT _gamecontext = GAMECONTEXT.PLAYER;
+    private GAMECONTEXT _gamecontext = GAMECONTEXT.BLOCK;
 
 
     private static final String TAG = "MyGLRenderer";
@@ -66,10 +66,11 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
     float scale;
     float delta = 0.01f;
 
-    int size = 5;
-    float cameradistance = 2.0f;
+    int size = 8;
+    float cameradistance = 3.0f;
 
     Vector2 direction = new Vector2(0, -1);
+    Vector3 normalizeddirection = new Vector3(0,0,0);
 
     private float posx;
     private float posy;
@@ -169,23 +170,28 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
         if (fps.Update()) {
             scene.Update();
 
-           if (startmove && _gamecontext == GAMECONTEXT.BLOCK)
+           if (startmove)
            {
                DirectionMade(direction);
-               //iter++;
-               startmove=false;
-               if (iter == size)
+               startmove = false;
+                if ( _gamecontext == GAMECONTEXT.BLOCK)
                {
-                   //startmove=false;
-                   iter = 0;
-               }
-           }
-           else if (_gamecontext == GAMECONTEXT.PLAYER && timer.Update())
-           {
+                   board1.MoveBlocks(normalizeddirection);
+                   //iter++;
 
-                board1.MovePlayer(direction);
+                   if (iter == size) {
+                       //startmove=false;
+                       iter = 0;
+                   }
+               }else if (_gamecontext == GAMECONTEXT.PLAYER)
+                {
 
+                    Vector2 tdir = new Vector2(normalizeddirection.getX(), normalizeddirection.getZ());
+                    board1.MovePlayer(tdir);
+
+                }
            }
+
 
 
 
@@ -196,13 +202,13 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
 
     }
 
-    public void ChangeGameContext()
+    public GAMECONTEXT ChangeGameContext()
     {
         if (_gamecontext == GAMECONTEXT.BLOCK)
             _gamecontext = GAMECONTEXT.PLAYER;
         else
             _gamecontext = GAMECONTEXT.BLOCK;
-
+    return _gamecontext;
     }
 
     @Override
@@ -293,14 +299,19 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
     }
 
     public void DirectionMade(Vector2 dir) {
-           if (dir.x > 0 && dir.y < 0)
-                board1.MoveBlocks(new Vector3(0, 0, -1));
+
+            if (dir.x > 0 && dir.y < 0)
+                normalizeddirection = new Vector3(0, 0, -1);
+               // board1.MoveBlocks(new Vector3(0, 0, -1));
             else if (dir.x < 0 && dir.y > 0)
-                board1.MoveBlocks(new Vector3(0, 0, 1));
+                normalizeddirection = new Vector3(0, 0, 1);
+               // board1.MoveBlocks(new Vector3(0, 0, 1));
             else if (dir.x > 0 && dir.y > 0)
-                board1.MoveBlocks(new Vector3(1, 0, 0));
+                normalizeddirection = new Vector3(1, 0, 0);
+               // board1.MoveBlocks(new Vector3(1, 0, 0));
             else
-                board1.MoveBlocks(new Vector3(-1, 0, 0));
+                normalizeddirection = new Vector3(-1, 0, 0);
+               // board1.MoveBlocks(new Vector3(-1, 0, 0));
 
         //board1.PlaceRandonBlock();
 
