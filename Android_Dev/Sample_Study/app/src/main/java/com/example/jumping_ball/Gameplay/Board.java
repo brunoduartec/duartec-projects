@@ -37,8 +37,9 @@ public class Board {
     Vector2 _playerpos;
 
 
-    private LinkedList<Block> bk = new LinkedList<Block>();
+    private LinkedList<Block> bk;// = new LinkedList<Block>();
     Player p1;
+    SimpleObject gema;
 
 
     private int size;
@@ -47,11 +48,34 @@ public class Board {
 
     private IWorld localWorld;
 
+
+    public void Initialize()
+    {
+        bk = new LinkedList<>();
+        this.localWorld.Initialize();
+        this.p1 = null;
+        this.gema = null;
+
+
+    }
+
+    public boolean TestEnd()
+    {
+
+        Vector3 ppos = new Vector3(p1.getPosition());
+        Vector3 gemapos = new Vector3(gema.getPosition());
+
+         return ppos.distance(gemapos) <= GameConstants.scale;
+
+
+    }
+
     public Board(IWorld w, float scale) {
         this.localWorld = w;
         this.scale = scale;
 
         _playerpos = new Vector2((float)(size-1),(float)size);
+        Initialize();
 
 
    // p1.setPosition(new float[]{0,10,0});
@@ -226,9 +250,8 @@ public class Board {
 
             Object[] chilren = b.getChildreen();
 
-            for (int k =0;k<chilren.length;k++)
-            {
-                Block bb = (Block)chilren[k];
+            for (Object aChilren : chilren) {
+                Block bb = (Block) aChilren;
                 IObject ob1 = localWorld.getObjectbyID(bb.getObjectID());
                 float[] newpos1 = convertLocalPosWorldPos(bb.getLocalposition().get());
                 ob1.setPosition(newpos1);
@@ -308,12 +331,12 @@ public class Board {
     private void CreateGema()
     {
 
-        SimpleObject b1 = ObjectFactory.getInstance().getGemaObject("gema" + size + "_" + size, scale);
+        gema =  ObjectFactory.getInstance().getGemaObject("gema" + size + "_" + size, scale);
 
 
-        b1.setPosition( convertLocalPosWorldPos(new float[]{size/2,size,size/2}));
+        gema.setPosition( convertLocalPosWorldPos(new float[]{size/2,size,size/2}));
 
-        localWorld.AddObject(b1);
+        localWorld.AddObject(gema);
 
     }
 
@@ -377,7 +400,7 @@ public class Board {
 
 
 
-            float[] position = new float[3];
+            float[] position;
 
             position = convertLocalPosWorldPos(localposition);
 

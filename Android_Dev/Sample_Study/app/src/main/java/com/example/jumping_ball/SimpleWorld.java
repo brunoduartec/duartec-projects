@@ -12,7 +12,7 @@ public class SimpleWorld implements IWorld {
 
 	
 	private SceneCameraManager camManager;
-	private Map<Integer,IObject> Objs = new HashMap<Integer,IObject>();
+	private Map<Integer,IObject> Objs = new HashMap<>();
 	private List<ILight> lights = new LinkedList<ILight>();
 	
 
@@ -26,6 +26,11 @@ public class SimpleWorld implements IWorld {
 	@Override
 	public void Initialize() {
 		// TODO Auto-generated method stub
+		Objs.clear();
+		IObject.ID=0;
+
+
+		lights.clear();
 	}
 
 	@Override
@@ -47,6 +52,7 @@ public class SimpleWorld implements IWorld {
 		//Objs= new HashMap<Integer,IObject>();
 		camManager = new SceneCameraManager();
 
+		Initialize();
 	}
 	
 	
@@ -63,15 +69,16 @@ public class SimpleWorld implements IWorld {
 
 
 
-		return (IObject) Objs.get(ID);
+		return  Objs.get(ID);
 	}
 
 	@Override
 	public IObject RemoveObject(int ID) {
 		// TODO Auto-generated method stub
 		
-		IObject o = (IObject) Objs.get(ID);
-		Objs.remove(o);
+		IObject o =  Objs.get(ID);
+		if (o != null)
+			Objs.remove(o);
 		return o;
 	}
 
@@ -79,7 +86,7 @@ public class SimpleWorld implements IWorld {
 	public void Update() {
 		// TODO Auto-generated method stub
 		for (int i = 0; i < Objs.size(); i++) {
-			IObject o = (IObject) Objs.get(i);
+			IObject o = Objs.get(i);
 			o.Update();
 		}
 		

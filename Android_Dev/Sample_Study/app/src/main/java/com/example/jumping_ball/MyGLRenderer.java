@@ -47,7 +47,7 @@ import android.util.Log;
 public class MyGLRenderer implements GLSurfaceView.Renderer {
 
 
-    public enum GAMECONTEXT{PLAYER,BLOCK};
+    public enum GAMECONTEXT{PLAYER,BLOCK}
 
 
     private GAMECONTEXT _gamecontext = GAMECONTEXT.BLOCK;
@@ -130,22 +130,69 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
 
         scene = new SimpleScene(world);
 
-        board1 = new Board(world, scale);
+        CreateStage1();
 
-
-        board1.CreateBoard(size);
-
-        // board1.PlaceRandonBlock();
-
-       board1.PlaceBlocksat(NormalBlock.class,1, size-1, size-1);
-        board1.PlaceBlocksat(NormalBlock.class,2, size-1, size-2);
-        board1.PlaceBlocksat(StoneBlock.class, 1, 3, 0);
-
-     //   board1.PlaceRandonBlock();
 
         //SceneXMLParser sceneparser = new SceneXMLParser();
 
         //sceneparser.DOMparseScene(R.xml.scene01,scene);
+
+    }
+
+
+    private void CreateStage1()
+    {
+
+        GameConstants.size = 4;
+        size = GameConstants.size;
+
+        board1 = new Board(world, scale);
+
+        cameradistance = 2f;
+
+        float[] pos = {cameradistance, cameradistance * 1.5f, cameradistance};
+
+        world.getCameraManager().getActualCamera().setPosition(pos);
+
+
+
+
+        board1.CreateBoard(size);
+
+
+
+        board1.PlaceBlocksat(NormalBlock.class,1, size-1, size-1);
+        board1.PlaceBlocksat(NormalBlock.class,2, size-1, size-2);
+        board1.PlaceBlocksat(StoneBlock.class, 1, 3, 0);
+
+
+
+
+    }
+    private void CreateStage2()
+    {
+        GameConstants.size = 5;
+        size = GameConstants.size;
+
+        board1 = new Board(world, scale);
+
+
+        cameradistance = 2f;
+
+        float[] pos = {cameradistance, cameradistance * 1.5f, cameradistance};
+
+        world.getCameraManager().getActualCamera().setPosition(pos);
+
+
+
+        board1.CreateBoard(size);
+
+
+
+        board1.PlaceRandonBlock();
+        board1.PlaceBlocksat(StoneBlock.class, 1, 3, 0);
+
+        board1.PlaceBlocksat(StoneBlock.class, 1, 2, 2);
 
     }
 
@@ -165,6 +212,14 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
 
 
       //  }
+
+
+        //Here in the Prototype 1 i will implement a simple scene management
+        if (board1.TestEnd())
+            CreateStage2();
+
+
+
 
 
         if (fps.Update()) {
