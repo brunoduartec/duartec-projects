@@ -17,7 +17,19 @@ public class OpenGLES30Activity extends Activity {
 	private MyGLSurfaceView mGLView;
 	private ImageView b;
 
+public void setContextImage(MyGLRenderer.GAMECONTEXT cc)
+{
+	switch (cc) {
+		case PLAYER:
+			b.setImageResource(R.drawable.ballcontext);
+			break;
+		case BLOCK:
+			b.setImageResource(R.drawable.boxcontext);
+			break;
+	}
 
+
+}
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -30,15 +42,17 @@ public class OpenGLES30Activity extends Activity {
 		//setContentView(R.layout.activity_open_gles20);
 		setContentView(mGLView);
 
+		mGLView.getmRenderer().set_activityhandle(this);
+
 		LinearLayout ll = new LinearLayout(this);
 
-		//ImageButton b = new ImageButton(this);
+
 
 		b = new ImageButton(this);
 		b.setBackgroundColor(0);
-		//Button b = new Button(this);//(Button) findViewById(R.id.button); //new Button(this);
+
 		b.setImageResource(R.drawable.boxcontext);
-		//b.setText("Change Context");
+
 
 		ll.addView(b);
 		ll.setGravity(Gravity.CENTER_HORIZONTAL | Gravity.BOTTOM);
@@ -50,17 +64,8 @@ public class OpenGLES30Activity extends Activity {
 								 {
 									MyGLRenderer.GAMECONTEXT gt =  mGLView.getmRenderer().ChangeGameContext();
 
-									 switch (gt)
-									 {
-										 case BLOCK:
-											 b.setImageResource(R.drawable.boxcontext);
-											 break;
+									 setContextImage(gt);
 
-										 case PLAYER:
-											 b.setImageResource(R.drawable.ballcontext);
-											 break;
-
-									 }
 								 }
 							 }	);
 

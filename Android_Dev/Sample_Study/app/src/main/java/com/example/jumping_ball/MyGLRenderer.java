@@ -47,11 +47,21 @@ import android.util.Log;
 public class MyGLRenderer implements GLSurfaceView.Renderer {
 
 
+    public OpenGLES30Activity get_activityhandle() {
+        return _activityhandle;
+    }
+
+    public void set_activityhandle(OpenGLES30Activity _activityhandle) {
+        this._activityhandle = _activityhandle;
+    }
+
     public enum GAMECONTEXT{PLAYER,BLOCK}
 
 
     private GAMECONTEXT _gamecontext = GAMECONTEXT.BLOCK;
 
+
+    private OpenGLES30Activity _activityhandle;
 
     private static final String TAG = "MyGLRenderer";
 
@@ -143,8 +153,14 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
     private void CreateStage1()
     {
 
+
+        _gamecontext = GAMECONTEXT.BLOCK;
+
+        _activityhandle.setContextImage(_gamecontext);
+
         GameConstants.size = 4;
         size = GameConstants.size;
+
 
         board1 = new Board(world, scale);
 
@@ -171,6 +187,8 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
     }
     private void CreateStage2()
     {
+        _gamecontext = GAMECONTEXT.BLOCK;
+      //  _activityhandle.setContextImage(_gamecontext);
         GameConstants.size = 5;
         size = GameConstants.size;
 

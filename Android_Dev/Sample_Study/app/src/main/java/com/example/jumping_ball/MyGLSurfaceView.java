@@ -82,7 +82,7 @@ public class MyGLSurfaceView extends GLSurfaceView {
     private final float TOUCH_SCALE_FACTOR = 0.02f;
     private float mPreviousX;
     private float mPreviousY;
-    private boolean makeMovement = false;
+    private boolean makeMovement = true;
 
 
 
