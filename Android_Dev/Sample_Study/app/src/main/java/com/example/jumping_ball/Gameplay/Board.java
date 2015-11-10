@@ -38,6 +38,9 @@ public class Board {
 
 
     private LinkedList<Block> bk;// = new LinkedList<Block>();
+
+    Block higherblock;
+
     Player p1;
     SimpleObject gema;
 
@@ -169,7 +172,7 @@ public class Board {
 
 
         this._direction = dir;
-        Block btemp =BlockExistAt(x,y);
+        Block btemp =BlockExistAt(x, y);
         if (btemp != null)
             h2 = btemp.getChildreenCount()+1;
         else
@@ -261,10 +264,13 @@ public class Board {
 
 
 
-        if (moved)
-            PlaceRandonBlock();
 
 
+        if (moved) {
+            HigherBlock();
+           // PlaceRandonBlock();
+            PlaceHeuristicBlock();
+        }
 
     }
 
@@ -285,16 +291,15 @@ public class Board {
         for (int i=0;i<size;i++)
         {
             for (int j=0;j<size;j++) {
-//                SimpleObject b1 = ObjectFactory.getInstance().getBoxObject("box" + i+"_"+j, scale);
+
                 SimpleObject b1 = ObjectFactory.getInstance().getNormalBoxObject("box" + i+"_"+j, scale);
 
-                //SimpleMaterial m1 = (SimpleMaterial)b1.getMaterial();
-                //m1.setColor(new float[]{0.2695f, 0.921875f, 0.109375f, 1.0f});
+
 
                 if ( i == size/2 && j == size/2) {
                     float dark = -0.2f;
                     SimpleMaterial m1 = (SimpleMaterial)b1.getMaterial();
-                    //m1.setColor(new float[]{0.2695f, 0.921875f, 0.109375f, 1.0f});
+
 
 
                     m1.setColor(new float[]{0.2695f+dark, 0.921875f+dark, 0.109375f+dark, 1.0f});
@@ -312,11 +317,10 @@ public class Board {
 
 //Adding Plateau
 
-     //   SimpleObject b1 = ObjectFactory.getInstance().getBoxObject("box" + size + "_" + size, scale);
+
         SimpleObject b1 = ObjectFactory.getInstance().getNormalBoxObject("box" + size + "_" + size, scale);
 
-        //SimpleMaterial m1 = (SimpleMaterial)b1.getMaterial();
-        //m1.setColor(new float[]{0.2695f,0.921875f , 0.109375f,1.0f});
+
 
         b1.setPosition(convertLocalPosWorldPos(new float[]{size - 1, 0, size}));
 
@@ -325,7 +329,7 @@ public class Board {
             CreatePlayer();
         CreateGema();
 
-        //SimpleObject p1 = ObjectFactory.getInstance().getBoxObject("box111_1",scale);
+
     }
 
     private void CreateGema()
@@ -334,7 +338,7 @@ public class Board {
         gema =  ObjectFactory.getInstance().getGemaObject("gema" + size + "_" + size, scale);
 
 
-        gema.setPosition( convertLocalPosWorldPos(new float[]{size/2,size,size/2}));
+        gema.setPosition(convertLocalPosWorldPos(new float[]{size / 2, size, size / 2}));
 
         localWorld.AddObject(gema);
 
@@ -349,7 +353,7 @@ public class Board {
         mt1.setColor(Color.enumtoColor(Color.COLORNAME.WHITE));
 
         p1.setPosition(convertLocalPosWorldPos(new float[]{size - 1, 4, size}));
-        p1.setLocalPos( new Vector3(size-1,3,size));
+        p1.setLocalPos(new Vector3(size - 1, 3, size));
 
         localWorld.AddObject(p1);
 
@@ -434,7 +438,27 @@ public class Board {
 
 
 
+
+
     }
+
+public void HigherBlock()
+{
+
+    for (Block b:bk) {
+
+        if (higherblock == null)
+            higherblock = b;
+        else if (b.getChildreenCount() > higherblock.getChildreenCount())
+            higherblock = b;
+
+    }
+
+
+
+}
+
+
 
     public Block BlockExistAt(float x, float y)
     {
@@ -448,6 +472,50 @@ public class Board {
         return i;
     }
 
+
+
+    public void PlaceHeuristicBlock()
+    {
+        Random rnd = new Random();
+        int x,y;
+        int kernelsize = 2;
+        boolean canplace = false;
+
+
+        do {
+            x = rnd.nextInt(kernelsize);
+            boolean signal = rnd.nextBoolean();
+            if (!signal)
+                x = -x;
+
+            y = rnd.nextInt(kernelsize);
+            signal = rnd.nextBoolean();
+            if (!signal)
+                y = -y;
+
+
+
+            x = (int)higherblock.getLocalposition().getX()+ x;
+            y = (int)higherblock.getLocalposition().getY()+ y;
+
+
+            Block bb = BlockExistAt(x,y);
+
+            if (bb ==null)
+                canplace=true;
+            else {
+                if ((bb.getChildreenCount() + 1) <= maxheight)
+                    canplace = true;
+            }
+
+
+        }while(!canplace);
+
+        PlaceBlocksat(NormalBlock.class,1,x, y);
+
+
+
+    }
 
     public void PlaceRandonBlock()
     {
@@ -471,12 +539,6 @@ public class Board {
 
 
         }while(!canplace);
-
-
-
-
-
-
 
         PlaceBlocksat(NormalBlock.class,1,x, y);
 

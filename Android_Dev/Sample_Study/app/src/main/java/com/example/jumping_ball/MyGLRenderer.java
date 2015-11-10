@@ -215,6 +215,36 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
     }
 
 
+    private void CreateStage3()
+    {
+        _gamecontext = GAMECONTEXT.BLOCK;
+        //  _activityhandle.setContextImage(_gamecontext);
+        GameConstants.size = 10;
+        size = GameConstants.size;
+
+        board1 = new Board(world, scale);
+
+
+        cameradistance = 3f;
+
+        float[] pos = {cameradistance, cameradistance * 1.5f, cameradistance};
+
+        world.getCameraManager().getActualCamera().setPosition(pos);
+
+
+
+        board1.CreateBoard(size);
+
+
+
+        board1.PlaceRandonBlock();
+        board1.PlaceBlocksat(StoneBlock.class, 1, 3, 0);
+
+        board1.PlaceBlocksat(StoneBlock.class, 1, 2, 2);
+
+    }
+
+
     @Override
     public void onDrawFrame(GL10 unused) {
 
