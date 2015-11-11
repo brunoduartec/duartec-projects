@@ -189,7 +189,10 @@ public class Board {
 
     }
 
-
+public void MergeBlock(Block origin, Block destiny)
+{
+    destiny.StackBlock(origin);
+}
 
     public void MoveBlocks(Vector3 dir)
     {
@@ -207,7 +210,7 @@ public class Board {
         if (dir.getZ()<0)
             Collections.sort(bk, new BlockZASCComparator());
 
-
+        List<Block> marktoremove = new LinkedList<>();
 
         boolean moved = false;
 
@@ -227,9 +230,12 @@ public class Board {
                     Vector3 posB = bk.get(j).getLocalposition();
                     if (posA.add(dir).equals(posB) && !b.equals(bk.get(j)) ) {//there is a Block blocking it
 
-                        if (b.getChildreenCount()>bk.get(j).getChildreenCount() && bk.get(j).canStack())
+                        //if (b.getChildreenCount()>bk.get(j).getChildreenCount() && bk.get(j).canStack())
+                        if(b.getChildreenCount() == bk.get(j).getChildreenCount() && bk.get(j).canStack())
                         {
-                            swapTopBlocks(b,bk.get(j));
+                          //  swapTopBlocks(b,bk.get(j));
+                            MergeBlock(b,bk.get(j));
+                            marktoremove.add(bk.get(j));
                             moved = true;
                         }
 
@@ -245,16 +251,20 @@ public class Board {
             }
         }
 
+        for (Block b:marktoremove) {
+            bk.remove(b);
+        }
+
         for (Block b:bk ) {//updating the IObject instance
 
             IObject ob = localWorld.getObjectbyID(b.getObjectID());
             float[] newpos = convertLocalPosWorldPos(b.getLocalposition().get());
             ob.setPosition(newpos);
 
-            Object[] chilren = b.getChildreen();
+            Object[] children = b.getChildreen();
 
-            for (Object aChilren : chilren) {
-                Block bb = (Block) aChilren;
+            for (Object aChildren : children) {
+                Block bb = (Block) aChildren;
                 IObject ob1 = localWorld.getObjectbyID(bb.getObjectID());
                 float[] newpos1 = convertLocalPosWorldPos(bb.getLocalposition().get());
                 ob1.setPosition(newpos1);
@@ -267,9 +277,10 @@ public class Board {
 
 
         if (moved) {
-            HigherBlock();
+          //  HigherBlock();
            // PlaceRandonBlock();
-            PlaceHeuristicBlock();
+          //  PlaceHeuristicBlock();
+            Place0x0Block();
         }
 
     }
@@ -472,7 +483,31 @@ public void HigherBlock()
         return i;
     }
 
+public void Place0x0Block()
+{
 
+
+
+    float[] localposition = new float[3];
+    localposition[0] =0 ;
+    localposition[1] = 0+1;
+    localposition[2] = 0;
+
+
+    String obname = Integer.toString(count);
+    IObject ob1 = ObjectFactory.getInstance().getNormalBoxObject(obname, scale);
+
+    float[] position;
+
+    position = convertLocalPosWorldPos(localposition);
+    ob1.setPosition(position);
+    int id = localWorld.AddObject(ob1);
+
+    Block b1 = new NormalBlock(id, new Vector3(localposition));
+    bk.add(b1);
+
+
+}
 
     public void PlaceHeuristicBlock()
     {

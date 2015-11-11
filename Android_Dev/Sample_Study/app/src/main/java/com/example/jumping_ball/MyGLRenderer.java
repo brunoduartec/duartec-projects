@@ -177,9 +177,9 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
 
 
 
-        board1.PlaceBlocksat(NormalBlock.class,1, size-1, size-1);
-        board1.PlaceBlocksat(NormalBlock.class,2, size-1, size-2);
-        board1.PlaceBlocksat(StoneBlock.class, 1, 3, 0);
+       board1.PlaceBlocksat(NormalBlock.class,1, size-1, size-1);
+    //    board1.PlaceBlocksat(NormalBlock.class,2, size-1, size-2);
+     //   board1.PlaceBlocksat(StoneBlock.class, 1, 3, 0);
 
 
 
