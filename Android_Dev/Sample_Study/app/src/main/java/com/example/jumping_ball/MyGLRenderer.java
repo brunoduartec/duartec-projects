@@ -26,6 +26,7 @@ import com.example.jumping_ball.Component.TimerComponent;
 import com.example.jumping_ball.Gameplay.Board;
 import com.example.jumping_ball.Gameplay.GameConstants;
 import com.example.jumping_ball.Gameplay.NormalBlock;
+import com.example.jumping_ball.Gameplay.StageManager;
 import com.example.jumping_ball.Gameplay.StoneBlock;
 import com.example.jumping_ball.Scene.IScene;
 import com.example.jumping_ball.Scene.SimpleScene;
@@ -87,9 +88,11 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
     FpsCounterComponent fps;
     TimerComponent timer;
     //	private SimpleCamera camera;
-    Board board1;
+   // Board board1;
     private boolean startmove = false;
     private int iter = 0;//used to made N moves
+
+    StageManager stages;
 
 
     @Override
@@ -140,7 +143,11 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
 
         scene = new SimpleScene(world);
 
-        CreateStage1();
+        stages = new StageManager(world,_gamecontext);
+
+        stages.NextStage();
+
+        //CreateStage1();
 
 
         //SceneXMLParser sceneparser = new SceneXMLParser();
@@ -150,99 +157,7 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
     }
 
 
-    private void CreateStage1()
-    {
 
-
-        _gamecontext = GAMECONTEXT.BLOCK;
-
-        _activityhandle.setContextImage(_gamecontext);
-
-        GameConstants.size = 4;
-        size = GameConstants.size;
-
-
-        board1 = new Board(world, scale);
-
-        cameradistance = 2f;
-
-        float[] pos = {cameradistance, cameradistance * 1.5f, cameradistance};
-
-        world.getCameraManager().getActualCamera().setPosition(pos);
-
-
-
-
-        board1.CreateBoard(size);
-
-
-
-       board1.PlaceBlocksat(NormalBlock.class,1, size-1, size-1);
-    //    board1.PlaceBlocksat(NormalBlock.class,2, size-1, size-2);
-     //   board1.PlaceBlocksat(StoneBlock.class, 1, 3, 0);
-
-
-
-
-    }
-    private void CreateStage2()
-    {
-        _gamecontext = GAMECONTEXT.BLOCK;
-      //  _activityhandle.setContextImage(_gamecontext);
-        GameConstants.size = 5;
-        size = GameConstants.size;
-
-        board1 = new Board(world, scale);
-
-
-        cameradistance = 2f;
-
-        float[] pos = {cameradistance, cameradistance * 1.5f, cameradistance};
-
-        world.getCameraManager().getActualCamera().setPosition(pos);
-
-
-
-        board1.CreateBoard(size);
-
-
-
-        board1.PlaceRandonBlock();
-        board1.PlaceBlocksat(StoneBlock.class, 1, 3, 0);
-
-        board1.PlaceBlocksat(StoneBlock.class, 1, 2, 2);
-
-    }
-
-
-    private void CreateStage3()
-    {
-        _gamecontext = GAMECONTEXT.BLOCK;
-        //  _activityhandle.setContextImage(_gamecontext);
-        GameConstants.size = 10;
-        size = GameConstants.size;
-
-        board1 = new Board(world, scale);
-
-
-        cameradistance = 3f;
-
-        float[] pos = {cameradistance, cameradistance * 1.5f, cameradistance};
-
-        world.getCameraManager().getActualCamera().setPosition(pos);
-
-
-
-        board1.CreateBoard(size);
-
-
-
-        board1.PlaceRandonBlock();
-        board1.PlaceBlocksat(StoneBlock.class, 1, 3, 0);
-
-        board1.PlaceBlocksat(StoneBlock.class, 1, 2, 2);
-
-    }
 
 
     @Override
@@ -263,8 +178,8 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
 
 
         //Here in the Prototype 1 i will implement a simple scene management
-        if (board1.TestEnd())
-            CreateStage2();
+        if (stages.getBoard1().TestEnd())
+           stages.NextStage();
 
 
 
@@ -279,7 +194,7 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
                startmove = false;
                 if ( _gamecontext == GAMECONTEXT.BLOCK)
                {
-                   board1.MoveBlocks(normalizeddirection);
+                   stages.getBoard1().MoveBlocks(normalizeddirection);
                    //iter++;
 
                    if (iter == size) {
@@ -290,7 +205,7 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
                 {
 
                     Vector2 tdir = new Vector2(normalizeddirection.getX(), normalizeddirection.getZ());
-                    board1.MovePlayer(tdir);
+                    stages.getBoard1().MovePlayer(tdir);
 
                 }
            }

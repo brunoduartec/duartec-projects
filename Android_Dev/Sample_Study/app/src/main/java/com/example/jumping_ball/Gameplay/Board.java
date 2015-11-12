@@ -73,9 +73,9 @@ public class Board {
 
     }
 
-    public Board(IWorld w, float scale) {
+    public Board(IWorld w) {
         this.localWorld = w;
-        this.scale = scale;
+        this.scale = GameConstants.scale;
 
         _playerpos = new Vector2((float)(size-1),(float)size);
         Initialize();
@@ -214,28 +214,36 @@ public void MergeBlock(Block origin, Block destiny)
 
         boolean moved = false;
 
-        for (int i=0; i< bk.size();i++)
-        {
-            Block b = bk.get(i);
+       // for (int i=0; i< bk.size();i++)
+        for (Block bOrigin:bk )
 
-            if (!b.canMove())//in the case the block cannot move
+        {
+
+
+           // Block b = bk.get(i);
+
+            if (!bOrigin.canMove())//in the case the block cannot move
                 continue;
 
-            Vector3 posA = b.getLocalposition();
+            Vector3 posA = bOrigin.getLocalposition();
             boolean trymove=true;
 
 
-            if(intotheBoard(b, dir)) {
-                for (int j = 0; j < bk.size(); j++) {
-                    Vector3 posB = bk.get(j).getLocalposition();
-                    if (posA.add(dir).equals(posB) && !b.equals(bk.get(j)) ) {//there is a Block blocking it
+            if(intotheBoard(bOrigin, dir)) {
+                for (Block bdestiny:bk)
+                {
+
+                //for (int j = 0; j < bk.size(); j++) {
+                    Vector3 posB = bdestiny.getLocalposition();
+                    if (posA.add(dir).equals(posB) && !bOrigin.equals(bdestiny) ) {//there is a Block blocking it
 
                         //if (b.getChildreenCount()>bk.get(j).getChildreenCount() && bk.get(j).canStack())
-                        if(b.getChildreenCount() == bk.get(j).getChildreenCount() && bk.get(j).canStack())
+                        if(bOrigin.getChildreenCount() == bdestiny.getChildreenCount() && bdestiny.canStack())
                         {
                           //  swapTopBlocks(b,bk.get(j));
-                            MergeBlock(b,bk.get(j));
-                            marktoremove.add(bk.get(j));
+                            MergeBlock(bOrigin,bdestiny);
+                            marktoremove.add(bOrigin);
+                            //bk.remove(bdestiny);
                             moved = true;
                         }
 
@@ -246,12 +254,12 @@ public void MergeBlock(Block origin, Block destiny)
 
                 if (trymove) {
                     moved=true;
-                    b.MoveTo(posA.add(dir));
+                    bOrigin.MoveTo(posA.add(dir));
                 }
             }
         }
 
-        for (Block b:marktoremove) {
+       for (Block b:marktoremove) {
             bk.remove(b);
         }
 
