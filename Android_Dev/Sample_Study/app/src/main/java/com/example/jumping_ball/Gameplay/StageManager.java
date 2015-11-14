@@ -65,10 +65,12 @@ IWorld _localworld;
        // _activityhandle.setContextImage(_gamecontext);
 
         GameConstants.size = 4;
-size = GameConstants.size;
+        size = GameConstants.size;
 
 
         getBoard1().Initialize();
+
+getBoard1().setGemaheight(3);
 
         cameradistance = 2f;
 
@@ -83,8 +85,9 @@ size = GameConstants.size;
 
 
 
-        getBoard1().PlaceBlocksat(NormalBlock.class, 1, size - 1, size - 1);
-        //    board1.PlaceBlocksat(NormalBlock.class,2, size-1, size-2);
+        getBoard1().PlaceBlocksat(NormalBlock.class, 1, size - 1, size - 2);
+        getBoard1().PlaceBlocksat(NormalBlock.class, 2, 1, 1);
+
         //   board1.PlaceBlocksat(StoneBlock.class, 1, 3, 0);
 
 
@@ -102,6 +105,7 @@ size = GameConstants.size;
 
 
         cameradistance = 2f;
+        getBoard1().setGemaheight(3);
 
         float[] pos = {cameradistance, cameradistance * 1.5f, cameradistance};
 
@@ -118,6 +122,10 @@ size = GameConstants.size;
 
         getBoard1().PlaceBlocksat(StoneBlock.class, 1, 2, 2);
 
+
+        getBoard1().PlaceBlocksat(NormalBlock.class, 1, size - 1, size - 2);
+        getBoard1().PlaceBlocksat(NormalBlock.class, 2, 1, 1);
+
     }
 
 
@@ -129,7 +137,7 @@ size = GameConstants.size;
         size = GameConstants.size;
 
         getBoard1().Initialize();
-
+        getBoard1().setGemaheight(3);
 
         cameradistance = 3f;
 

@@ -86,6 +86,12 @@ public class Vector2
         return new Vector2(x * other.x, y * other.y);
     }
 
+	public Vector2 mul(float v)
+	{
+
+		return new Vector2(x*v,y*v);
+	}
+
 	
 	// When the vectors are interpreted as points, 
 	// you'll often need these:

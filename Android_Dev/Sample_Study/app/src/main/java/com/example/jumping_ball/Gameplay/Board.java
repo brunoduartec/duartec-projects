@@ -3,15 +3,12 @@ package com.example.jumping_ball.Gameplay;
 import com.example.jumping_ball.Color;
 import com.example.jumping_ball.IObject;
 import com.example.jumping_ball.IWorld;
-import com.example.jumping_ball.Material.DiffuseMaterial;
 import com.example.jumping_ball.Material.SimpleMaterial;
-import com.example.jumping_ball.MyGLRenderer;
 import com.example.jumping_ball.ObjectFactory;
 import com.example.jumping_ball.SimpleObject;
 import com.example.jumping_ball.Vector2;
 import com.example.jumping_ball.Vector3;
 
-import java.util.Collection;
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
@@ -50,6 +47,7 @@ public class Board {
 
 
     private IWorld localWorld;
+    private int gemaheight;
 
 
     public void Initialize()
@@ -75,14 +73,14 @@ public class Board {
 
     public Board(IWorld w) {
         this.localWorld = w;
-        this.scale = GameConstants.scale;
+        this.setScale(GameConstants.scale);
+        this.size= GameConstants.size;
+        this.setGemaheight(size);
 
         _playerpos = new Vector2((float)(size-1),(float)size);
         Initialize();
 
 
-   // p1.setPosition(new float[]{0,10,0});
-   // localWorld.AddObject(p1);
 
     }
 
@@ -118,9 +116,9 @@ public class Board {
     private float[] convertLocalPosWorldPos(float[] localpos)
     {
 
-        float x = localpos[0]*scale - (this.size/2)*scale;
-        float y = localpos[1]*scale;
-        float z = localpos[2]*scale - (this.size/2)*scale;
+        float x = localpos[0]* getScale() - (this.size/2)* getScale();
+        float y = localpos[1]* getScale();
+        float z = localpos[2]* getScale() - (this.size/2)* getScale();
 
         return new float[]{x,y,z,1};
 
@@ -179,8 +177,10 @@ public class Board {
             h2 = 0;
 
 
-
-        p1.setDirection(dir,(h2)*scale);
+        if (h2==0)
+         p1.setDirection(dir,(h2)* getScale());
+        else
+            PushBlock(dir);
 
 
 
@@ -294,13 +294,54 @@ public void MergeBlock(Block origin, Block destiny)
     }
 
 
+    public void PushBlock(Vector2 dir)
+    {
+        /*
+        Vector3 blockpos = new Vector3(localWorld.getObjectbyID(btemp.getObjectID()).getPosition());
+        Vector3 playerpos = new Vector3(p1.getPosition());
+
+        Vector3 direction = playerpos.sub(blockpos);
+        direction = new Vector3(direction.getNormalized());
+*/
+
+        Vector2 doubledir = dir.mul(2);
+        Block bb =BlockExistAt(p1.getLocalPos().getX()+dir.x,p1.getLocalPos().getZ()+dir.y);
+        if (BlockExistAt(p1.getLocalPos().getX()+doubledir.x,p1.getLocalPos().getZ()+doubledir.y)==null)
+        {
+            Vector3 pv = bb.getLocalposition();
+
+            //moving visualblock
+            bb.MoveTo(new Vector3(pv.getX()+dir.getX(), pv.getY() , pv.getZ()+dir.getY()));
+
+            IObject ob = localWorld.getObjectbyID(bb.getObjectID());
+            float[] newpos = convertLocalPosWorldPos(bb.getLocalposition().get());
+            ob.setPosition(newpos);
+
+
+            Object[] children = bb.getChildreen();
+
+            for (Object aChildren : children) {
+                Block bt = (Block) aChildren;
+                IObject ob1 = localWorld.getObjectbyID(bt.getObjectID());
+                float[] newpos1 = convertLocalPosWorldPos(bt.getLocalposition().get());
+                ob1.setPosition(newpos1);
+            }
+
+
+
+            p1.setDirection(dir,0);
+
+        }
+
+
+    }
 
 
 
     public void CreateBoard(int size)
     {
         this.size = size;
-        this.maxheight = 3;
+        this.setMaxheight(3);
 
         float x,z;
 
@@ -311,7 +352,7 @@ public void MergeBlock(Block origin, Block destiny)
         {
             for (int j=0;j<size;j++) {
 
-                SimpleObject b1 = ObjectFactory.getInstance().getNormalBoxObject("box" + i+"_"+j, scale);
+                SimpleObject b1 = ObjectFactory.getInstance().getNormalBoxObject("box" + i+"_"+j, getScale());
 
 
 
@@ -337,7 +378,7 @@ public void MergeBlock(Block origin, Block destiny)
 //Adding Plateau
 
 
-        SimpleObject b1 = ObjectFactory.getInstance().getNormalBoxObject("box" + size + "_" + size, scale);
+        SimpleObject b1 = ObjectFactory.getInstance().getNormalBoxObject("box" + size + "_" + size, getScale());
 
 
 
@@ -354,10 +395,10 @@ public void MergeBlock(Block origin, Block destiny)
     private void CreateGema()
     {
 
-        gema =  ObjectFactory.getInstance().getGemaObject("gema" + size + "_" + size, scale);
+        gema =  ObjectFactory.getInstance().getGemaObject("gema" + size + "_" + size, getScale());
 
 
-        gema.setPosition(convertLocalPosWorldPos(new float[]{size / 2, size, size / 2}));
+        gema.setPosition(convertLocalPosWorldPos(new float[]{size / 2, getGemaheight(), size / 2}));
 
         localWorld.AddObject(gema);
 
@@ -365,13 +406,13 @@ public void MergeBlock(Block origin, Block destiny)
 
     private void CreatePlayer()
     {
-        p1 = ObjectFactory.getInstance().getPlayer("P1", scale);
+        p1 = ObjectFactory.getInstance().getPlayer("P1", getScale());
 
 
         SimpleMaterial mt1 = (SimpleMaterial)p1.getMaterial();
         mt1.setColor(Color.enumtoColor(Color.COLORNAME.WHITE));
 
-        p1.setPosition(convertLocalPosWorldPos(new float[]{size - 1, 4, size}));
+        p1.setPosition(convertLocalPosWorldPos(new float[]{size - 1, 1, size}));
         p1.setLocalPos(new Vector3(size - 1, 3, size));
 
         localWorld.AddObject(p1);
@@ -417,9 +458,9 @@ public void MergeBlock(Block origin, Block destiny)
 
             IObject ob1 = null;
             if (t == NormalBlock.class)
-                ob1 = ObjectFactory.getInstance().getNormalBoxObject(obname, scale);
+                ob1 = ObjectFactory.getInstance().getNormalBoxObject(obname, getScale());
             else if (t == StoneBlock.class)
-                ob1 = ObjectFactory.getInstance().getStoneBoxObject(obname, scale);
+                ob1 = ObjectFactory.getInstance().getStoneBoxObject(obname, getScale());
 
 
 
@@ -503,7 +544,7 @@ public void Place0x0Block()
 
 
     String obname = Integer.toString(count);
-    IObject ob1 = ObjectFactory.getInstance().getNormalBoxObject(obname, scale);
+    IObject ob1 = ObjectFactory.getInstance().getNormalBoxObject(obname, getScale());
 
     float[] position;
 
@@ -547,7 +588,7 @@ public void Place0x0Block()
             if (bb ==null)
                 canplace=true;
             else {
-                if ((bb.getChildreenCount() + 1) <= maxheight)
+                if ((bb.getChildreenCount() + 1) <= getMaxheight())
                     canplace = true;
             }
 
@@ -576,7 +617,7 @@ public void Place0x0Block()
             if (bb ==null)
                 canplace=true;
             else {
-                if ((bb.getChildreenCount() + 1) <= maxheight)
+                if ((bb.getChildreenCount() + 1) <= getMaxheight())
                     canplace = true;
             }
 
@@ -597,4 +638,27 @@ public void Place0x0Block()
     }
 
 
+    public float getScale() {
+        return scale;
+    }
+
+    public void setScale(float scale) {
+        this.scale = scale;
+    }
+
+    public int getMaxheight() {
+        return maxheight;
+    }
+
+    public void setMaxheight(int maxheight) {
+        this.maxheight = maxheight;
+    }
+
+    public int getGemaheight() {
+        return gemaheight;
+    }
+
+    public void setGemaheight(int gemaheight) {
+        this.gemaheight = gemaheight;
+    }
 }

@@ -78,7 +78,7 @@ private Vector2 _direction;
     {
 
 
-        Jump();
+       //  Jump();
         Move();
 
 
