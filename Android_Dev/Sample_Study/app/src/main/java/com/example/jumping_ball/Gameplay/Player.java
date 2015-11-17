@@ -30,6 +30,9 @@ private Vector2 _direction;
     private boolean isColiding;
 
 
+    private boolean jumping;
+
+
     public Player(IMaterial mat, IModel mod, String nm)
     {
         //public SimpleObject(IMaterial mat, IModel mod, String nm)
@@ -78,8 +81,10 @@ private Vector2 _direction;
     {
 
 
+        if (jumping || this.getPosition()[1]>=minimunY)
+            Jump();
        //  Jump();
-        Move();
+       // Move();
 
 
 
@@ -128,5 +133,13 @@ private Vector2 _direction;
 
     public void setLocalPos(Vector3 localPos) {
         this.localPos = localPos;
+    }
+
+    public boolean isJumping() {
+        return jumping;
+    }
+
+    public void setJumping(boolean jumping) {
+        this.jumping = jumping;
     }
 }

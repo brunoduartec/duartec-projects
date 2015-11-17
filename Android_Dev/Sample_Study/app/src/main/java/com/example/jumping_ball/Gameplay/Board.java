@@ -4,6 +4,7 @@ import com.example.jumping_ball.Color;
 import com.example.jumping_ball.IObject;
 import com.example.jumping_ball.IWorld;
 import com.example.jumping_ball.Material.SimpleMaterial;
+import com.example.jumping_ball.MyGLRenderer;
 import com.example.jumping_ball.ObjectFactory;
 import com.example.jumping_ball.SimpleObject;
 import com.example.jumping_ball.Vector2;
@@ -177,12 +178,17 @@ public class Board {
             h2 = 0;
 
 
-        if (h2==0)
-         p1.setDirection(dir,(h2)* getScale());
-        else
-            PushBlock(dir);
 
+        if (p1.isJumping())
+            p1.setDirection(dir,(h2)* getScale());
+        else {
 
+            if (h2 == 0)
+                p1.setDirection(dir, (h2) * getScale());
+            else if (!p1.isJumping())
+                PushBlock(dir);
+
+        }
 
 
 
@@ -293,43 +299,58 @@ public void MergeBlock(Block origin, Block destiny)
 
     }
 
+    public void setPlayerAction(MyGLRenderer.PLAYERRACTION act)
+    {
+
+        switch (act) {
+            case JUMP:
+                p1.setJumping(true);
+                break;
+            case PUSH:
+                p1.setJumping(false);
+                break;
+        }
+
+    }
+
 
     public void PushBlock(Vector2 dir)
     {
-        /*
-        Vector3 blockpos = new Vector3(localWorld.getObjectbyID(btemp.getObjectID()).getPosition());
-        Vector3 playerpos = new Vector3(p1.getPosition());
 
-        Vector3 direction = playerpos.sub(blockpos);
-        direction = new Vector3(direction.getNormalized());
-*/
 
         Vector2 doubledir = dir.mul(2);
-        Block bb =BlockExistAt(p1.getLocalPos().getX()+dir.x,p1.getLocalPos().getZ()+dir.y);
-        if (BlockExistAt(p1.getLocalPos().getX()+doubledir.x,p1.getLocalPos().getZ()+doubledir.y)==null)
+        Block bb =BlockExistAt(p1.getLocalPos().getX() + dir.x, p1.getLocalPos().getZ() + dir.y);
+
+        float xtry = p1.getLocalPos().getX()+doubledir.x;
+        float ytry = p1.getLocalPos().getZ()+doubledir.y;
+
+Block bprox = BlockExistAt(xtry,ytry);
+        if (bprox==null && testposintheBoard(new Vector2(xtry,ytry)) )
         {
-            Vector3 pv = bb.getLocalposition();
+            if (bb.canMove())
+            {
+                Vector3 pv = bb.getLocalposition();
 
-            //moving visualblock
-            bb.MoveTo(new Vector3(pv.getX()+dir.getX(), pv.getY() , pv.getZ()+dir.getY()));
+                //moving visualblock
+                bb.MoveTo(new Vector3(pv.getX() + dir.getX(), pv.getY(), pv.getZ() + dir.getY()));
 
-            IObject ob = localWorld.getObjectbyID(bb.getObjectID());
-            float[] newpos = convertLocalPosWorldPos(bb.getLocalposition().get());
-            ob.setPosition(newpos);
+                IObject ob = localWorld.getObjectbyID(bb.getObjectID());
+                float[] newpos = convertLocalPosWorldPos(bb.getLocalposition().get());
+                ob.setPosition(newpos);
 
 
-            Object[] children = bb.getChildreen();
+                Object[] children = bb.getChildreen();
 
-            for (Object aChildren : children) {
-                Block bt = (Block) aChildren;
-                IObject ob1 = localWorld.getObjectbyID(bt.getObjectID());
-                float[] newpos1 = convertLocalPosWorldPos(bt.getLocalposition().get());
-                ob1.setPosition(newpos1);
+                for (Object aChildren : children) {
+                    Block bt = (Block) aChildren;
+                    IObject ob1 = localWorld.getObjectbyID(bt.getObjectID());
+                    float[] newpos1 = convertLocalPosWorldPos(bt.getLocalposition().get());
+                    ob1.setPosition(newpos1);
+                }
+
+
+                p1.setDirection(dir, 0);
             }
-
-
-
-            p1.setDirection(dir,0);
 
         }
 
@@ -345,9 +366,16 @@ public void MergeBlock(Block origin, Block destiny)
 
         float x,z;
 
+        Vector3 scale = new Vector3(getScale()*size,getScale(),getScale()*size);
 
 
 
+        SimpleObject bbd = ObjectFactory.getInstance().getNormalBoxObject("board", getScale());
+        bbd.setScale(scale.get());
+        bbd.setPosition( new Vector3(0,0,0).get() );
+
+        localWorld.AddObject(bbd);
+/*
         for (int i=0;i<size;i++)
         {
             for (int j=0;j<size;j++) {
@@ -374,6 +402,7 @@ public void MergeBlock(Block origin, Block destiny)
 
 
         }
+    */
 
 //Adding Plateau
 

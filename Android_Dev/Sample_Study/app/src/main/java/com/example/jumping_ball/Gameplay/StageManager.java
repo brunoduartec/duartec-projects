@@ -24,14 +24,20 @@ IWorld _localworld;
 
     }
 
+    public void RestartStage()
+    {
 
-    public void NextStage() {
-        actualstage++;
+        StartStage();
+
+    }
+
+    private void StartStage()
+    {
 
         switch(actualstage)
         {
             case 1:
-               CreateStage1();
+                CreateStage1();
                 break;
             case 2:
                 CreateStage2();
@@ -40,16 +46,16 @@ IWorld _localworld;
                 CreateStage3();
                 break;
 
-
-
-
         }
 
-        
-            
-            
 
 
+    }
+
+    public void NextStage() {
+        actualstage++;
+
+        StartStage();
 
     }
 
@@ -64,13 +70,13 @@ IWorld _localworld;
 
        // _activityhandle.setContextImage(_gamecontext);
 
-        GameConstants.size = 4;
+        GameConstants.size =5;
         size = GameConstants.size;
 
 
         getBoard1().Initialize();
 
-getBoard1().setGemaheight(3);
+getBoard1().setGemaheight(4);
 
         cameradistance = 2f;
 
@@ -105,7 +111,7 @@ getBoard1().setGemaheight(3);
 
 
         cameradistance = 2f;
-        getBoard1().setGemaheight(3);
+        getBoard1().setGemaheight(4);
 
         float[] pos = {cameradistance, cameradistance * 1.5f, cameradistance};
 
@@ -117,7 +123,7 @@ getBoard1().setGemaheight(3);
 
 
 
-        getBoard1().PlaceRandonBlock();
+      //  getBoard1().PlaceRandonBlock();
         getBoard1().PlaceBlocksat(StoneBlock.class, 1, 3, 0);
 
         getBoard1().PlaceBlocksat(StoneBlock.class, 1, 2, 2);
@@ -133,11 +139,11 @@ getBoard1().setGemaheight(3);
     {
         _gamecontext = MyGLRenderer.GAMECONTEXT.BLOCK;
         //  _activityhandle.setContextImage(_gamecontext);
-        GameConstants.size = 10;
+        GameConstants.size = 9;
         size = GameConstants.size;
 
         getBoard1().Initialize();
-        getBoard1().setGemaheight(3);
+        getBoard1().setGemaheight(4);
 
         cameradistance = 3f;
 
@@ -151,10 +157,13 @@ getBoard1().setGemaheight(3);
 
 
 
-        getBoard1().PlaceRandonBlock();
+        //getBoard1().PlaceRandonBlock();
         getBoard1().PlaceBlocksat(StoneBlock.class, 1, 3, 0);
+        //getBoard1().PlaceBlocksat(StoneBlock.class, 2, 3, 1);
+        getBoard1().PlaceBlocksat(StoneBlock.class, 3, 2, 2);
 
-        getBoard1().PlaceBlocksat(StoneBlock.class, 1, 2, 2);
+        getBoard1().PlaceBlocksat(NormalBlock.class, 1, size - 1, size - 2);
+        getBoard1().PlaceBlocksat(NormalBlock.class, 2, 1, 1);
 
     }
 

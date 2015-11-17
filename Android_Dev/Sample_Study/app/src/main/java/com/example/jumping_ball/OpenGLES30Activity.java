@@ -15,8 +15,8 @@ public class OpenGLES30Activity extends Activity {
 
 	
 	private MyGLSurfaceView mGLView;
-	private ImageView b;
-
+	private ImageView bpush,bjump,brestart;
+/*
 public void setContextImage(MyGLRenderer.GAMECONTEXT cc)
 {
 	switch (cc) {
@@ -30,7 +30,7 @@ public void setContextImage(MyGLRenderer.GAMECONTEXT cc)
 
 
 }
-
+*/
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -46,30 +46,77 @@ public void setContextImage(MyGLRenderer.GAMECONTEXT cc)
 
 		LinearLayout ll = new LinearLayout(this);
 
+// specifying vertical orientation
+		ll.setOrientation(LinearLayout.HORIZONTAL);
 
 
-		b = new ImageButton(this);
-		b.setBackgroundColor(0);
+		bjump = new ImageButton(this);
+		bjump.setBackgroundColor(0);
 
-		b.setImageResource(R.drawable.boxcontext);
+		bjump.setImageResource(R.drawable.ball);
 
 
-		ll.addView(b);
+		ll.addView(bjump);
 		ll.setGravity(Gravity.CENTER_HORIZONTAL | Gravity.BOTTOM);
-		this.addContentView(ll,
-				new ViewGroup.LayoutParams(ViewGroup.LayoutParams.FILL_PARENT, ViewGroup.LayoutParams.FILL_PARENT));
-
-		b.setOnClickListener(new Button.OnClickListener() {
-								 public void onClick(View v)
-								 {
-									MyGLRenderer.GAMECONTEXT gt =  mGLView.getmRenderer().ChangeGameContext();
-
-									 setContextImage(gt);
-
-								 }
-							 }	);
 
 
+		bjump.setOnClickListener(new Button.OnClickListener() {
+			public void onClick(View v) {
+				mGLView.getmRenderer().setAction(MyGLRenderer.PLAYERRACTION.JUMP);
+
+				// setContextImage(gt);
+
+			}
+		});
+
+
+		bpush = new ImageButton(this);
+		bpush.setBackgroundColor(0);
+
+		bpush.setImageResource(R.drawable.box);
+
+
+		ll.addView(bpush);
+		//ll.setGravity(Gravity.CENTER_HORIZONTAL | Gravity.BOTTOM);
+
+		bpush.setOnClickListener(new Button.OnClickListener() {
+			public void onClick(View v) {
+				mGLView.getmRenderer().setAction(MyGLRenderer.PLAYERRACTION.PUSH);
+
+
+			}
+		});
+
+
+
+
+
+
+		this.addContentView(ll, new ViewGroup.LayoutParams(ViewGroup.LayoutParams.FILL_PARENT, ViewGroup.LayoutParams.FILL_PARENT));
+
+
+		LinearLayout llr = new LinearLayout(this);
+
+// specifying vertical orientation
+		llr.setOrientation(LinearLayout.HORIZONTAL);
+
+		brestart = new ImageButton(this);
+		brestart.setBackgroundColor(0);
+
+		brestart.setImageResource(R.drawable.restart);
+
+
+		llr.addView(brestart);
+		llr.setGravity(Gravity.CENTER_HORIZONTAL | Gravity.TOP);
+
+		brestart.setOnClickListener(new Button.OnClickListener() {
+			public void onClick(View v) {
+				mGLView.getmRenderer().RestartStage();
+
+
+			}
+		});
+		//this.addContentView(llr, new ViewGroup.LayoutParams(ViewGroup.LayoutParams.FILL_PARENT, ViewGroup.LayoutParams.FILL_PARENT));
 
 	}
 	

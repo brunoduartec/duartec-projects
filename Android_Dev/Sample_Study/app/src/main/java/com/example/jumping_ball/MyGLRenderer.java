@@ -58,8 +58,10 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
 
     public enum GAMECONTEXT{PLAYER,BLOCK}
 
+    public enum PLAYERRACTION{JUMP,PUSH}
 
-    private GAMECONTEXT _gamecontext = GAMECONTEXT.BLOCK;
+
+    private GAMECONTEXT _gamecontext = GAMECONTEXT.PLAYER;
 
 
     private OpenGLES30Activity _activityhandle;
@@ -192,16 +194,16 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
            {
                DirectionMade(direction);
                startmove = false;
-                if ( _gamecontext == GAMECONTEXT.BLOCK)
-               {
-                   stages.getBoard1().MoveBlocks(normalizeddirection);
+                //if ( _gamecontext == GAMECONTEXT.BLOCK)
+              // {
+                 //  stages.getBoard1().MoveBlocks(normalizeddirection);
                    //iter++;
 
-                   if (iter == size) {
-                       //startmove=false;
-                       iter = 0;
-                   }
-               }else if (_gamecontext == GAMECONTEXT.PLAYER)
+                //   if (iter == size) {
+                 //      //startmove=false;
+                 //      iter = 0;
+                //   }
+                if (_gamecontext == GAMECONTEXT.PLAYER)
                 {
 
                     Vector2 tdir = new Vector2(normalizeddirection.getX(), normalizeddirection.getZ());
@@ -220,6 +222,12 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
 
     }
 
+    public void RestartStage()
+    {
+
+        stages.RestartStage();
+    }
+
     public GAMECONTEXT ChangeGameContext()
     {
         if (_gamecontext == GAMECONTEXT.BLOCK)
@@ -228,6 +236,14 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
             _gamecontext = GAMECONTEXT.BLOCK;
     return _gamecontext;
     }
+
+
+    public void setAction(PLAYERRACTION act)
+    {
+
+        stages.getBoard1().setPlayerAction(act);
+    }
+
 
     @Override
     public void onSurfaceChanged(GL10 unused, int width, int height) {
