@@ -55,8 +55,8 @@ public class Board {
     {
         bk = new LinkedList<>();
         this.localWorld.Initialize();
-        this.p1 = null;
-        this.gema = null;
+       // this.p1 = null;
+      //  this.gema = null;
 
 
     }
@@ -179,9 +179,18 @@ public class Board {
 
 
 
-        if (p1.isJumping())
-            p1.setDirection(dir,(h2)* getScale());
-        else {
+        if (p1.isJumping() ) {
+
+            boolean validpos = true;
+            if (btemp !=null)
+            {
+                validpos = btemp.canStack();
+            }
+            if (validpos)
+                p1.setDirection(dir, (h2) * getScale());
+
+        }
+            else {
 
             if (h2 == 0)
                 p1.setDirection(dir, (h2) * getScale());
@@ -501,24 +510,17 @@ Block bprox = BlockExistAt(xtry,ytry);
             int id = localWorld.AddObject(ob1);
 
 
-            if(i==0) {
+            if(i==0) {//the first block
 
-                if (t == NormalBlock.class)
 
-                    b1 = new NormalBlock(id, new Vector3(localposition));
-                else if (t == StoneBlock.class)
-
-                    b1 = new StoneBlock(id, new Vector3(localposition));
+                b1 = getBlockbytype(t,id,new Vector3(localposition));
 
                 bk.add(b1);
             }
-            else
+            else // stacking blocks
             {
-                Block bn = new NormalBlock();
-
-                if (t == NormalBlock.class)
-                    bn = new NormalBlock(id,new Vector3(localposition));
-                    b1.StackBlock(bn);
+                Block bn = getBlockbytype(t,id,new Vector3(localposition));
+                b1.StackBlock(bn);
 
             }
 
@@ -527,6 +529,21 @@ Block bprox = BlockExistAt(xtry,ytry);
 
 
 
+
+
+    }
+
+    private Block getBlockbytype(Class<?> t, int id, Vector3 lpos)
+    {
+        Block b1 = null;
+        if (t == NormalBlock.class)
+
+            b1 = new NormalBlock(id, lpos);
+        else if (t == StoneBlock.class)
+            b1 = new StoneBlock(id, lpos);
+
+
+        return b1;
 
 
     }

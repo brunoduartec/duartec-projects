@@ -194,15 +194,7 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
            {
                DirectionMade(direction);
                startmove = false;
-                //if ( _gamecontext == GAMECONTEXT.BLOCK)
-              // {
-                 //  stages.getBoard1().MoveBlocks(normalizeddirection);
-                   //iter++;
 
-                //   if (iter == size) {
-                 //      //startmove=false;
-                 //      iter = 0;
-                //   }
                 if (_gamecontext == GAMECONTEXT.PLAYER)
                 {
 

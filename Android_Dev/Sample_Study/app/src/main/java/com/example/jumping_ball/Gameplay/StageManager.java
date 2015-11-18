@@ -76,7 +76,7 @@ IWorld _localworld;
 
         getBoard1().Initialize();
 
-getBoard1().setGemaheight(4);
+        getBoard1().setGemaheight(4);
 
         cameradistance = 2f;
 
@@ -91,7 +91,7 @@ getBoard1().setGemaheight(4);
 
 
 
-        getBoard1().PlaceBlocksat(NormalBlock.class, 1, size - 1, size - 2);
+        getBoard1().PlaceBlocksat(NormalBlock.class, 1, size - 2, size - 2);
         getBoard1().PlaceBlocksat(NormalBlock.class, 2, 1, 1);
 
         //   board1.PlaceBlocksat(StoneBlock.class, 1, 3, 0);
@@ -126,10 +126,10 @@ getBoard1().setGemaheight(4);
       //  getBoard1().PlaceRandonBlock();
         getBoard1().PlaceBlocksat(StoneBlock.class, 1, 3, 0);
 
-        getBoard1().PlaceBlocksat(StoneBlock.class, 1, 2, 2);
+        getBoard1().PlaceBlocksat(StoneBlock.class, 1, 2, 1);
 
 
-        getBoard1().PlaceBlocksat(NormalBlock.class, 1, size - 1, size - 2);
+        getBoard1().PlaceBlocksat(NormalBlock.class, 1, size - 2, size - 2);
         getBoard1().PlaceBlocksat(NormalBlock.class, 2, 1, 1);
 
     }
@@ -160,7 +160,7 @@ getBoard1().setGemaheight(4);
         //getBoard1().PlaceRandonBlock();
         getBoard1().PlaceBlocksat(StoneBlock.class, 1, 3, 0);
         //getBoard1().PlaceBlocksat(StoneBlock.class, 2, 3, 1);
-        getBoard1().PlaceBlocksat(StoneBlock.class, 3, 2, 2);
+        getBoard1().PlaceBlocksat(StoneBlock.class, 2, 2, 2);
 
         getBoard1().PlaceBlocksat(NormalBlock.class, 1, size - 1, size - 2);
         getBoard1().PlaceBlocksat(NormalBlock.class, 2, 1, 1);

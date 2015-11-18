@@ -81,10 +81,16 @@ private Vector2 _direction;
     {
 
 
-        if (jumping || this.getPosition()[1]>=minimunY)
+        if (jumping) //|| this.getPosition()[1]>=minimunY)
             Jump();
-       //  Jump();
-       // Move();
+        else
+        {
+            float[] pp = this.getPosition();
+            pp[1] = minimunY;
+            this.setPosition(pp);
+
+        }
+
 
 
 
@@ -104,7 +110,7 @@ private Vector2 _direction;
 
 
         Vector3 Vft = velocity.add(g.mul(dt));
-        Vector3 dx = velocity.mul(dt).add(g.mul(0.5f*dt*dt));
+        Vector3 dx = velocity.mul(dt).add(g.mul(0.5f * dt * dt));
         velocity = Vft;
 
         float[] pp = this.getPosition();
@@ -113,13 +119,17 @@ private Vector2 _direction;
         pp[1] += dx.getY();
         pp[2] += dx.getZ();
 
-        this.setPosition(pp);
 
         if ( pp[1]<=minimunY) {
 
-            float Vinit = (float)Math.sqrt(-2*g.getY()*2*scale);
+            pp[1] = minimunY;
+
+
+
+            float Vinit = (float)Math.sqrt(-2*g.getY()*1.3f*scale);
             velocity = new Vector3(0, Vinit, 0);
         }
+        this.setPosition(pp);
 
 
 

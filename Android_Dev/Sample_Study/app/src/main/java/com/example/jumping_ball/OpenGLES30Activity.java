@@ -116,7 +116,7 @@ public void setContextImage(MyGLRenderer.GAMECONTEXT cc)
 
 			}
 		});
-		//this.addContentView(llr, new ViewGroup.LayoutParams(ViewGroup.LayoutParams.FILL_PARENT, ViewGroup.LayoutParams.FILL_PARENT));
+		this.addContentView(llr, new ViewGroup.LayoutParams(ViewGroup.LayoutParams.FILL_PARENT, ViewGroup.LayoutParams.FILL_PARENT));
 
 	}
 	
