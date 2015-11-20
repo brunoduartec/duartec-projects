@@ -147,7 +147,7 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
         scene = new SimpleScene(world);
 
 
-        AmbientLight light1 = new AmbientLight(Color.enumtoColor(Color.COLORNAME.WHITE),2, new Vector3(0,0,0));
+        AmbientLight light1 = new AmbientLight(Color.enumtoColor(Color.COLORNAME.WHITE),4.0f, new Vector3(0,2,0));
 
         world.AddLight(light1);
 

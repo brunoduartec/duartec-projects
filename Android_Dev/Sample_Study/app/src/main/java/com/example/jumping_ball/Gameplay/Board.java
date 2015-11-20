@@ -442,6 +442,8 @@ Block bprox = BlockExistAt(xtry,ytry);
 
         gema.setPosition(convertLocalPosWorldPos(new float[]{size / 2, getGemaheight(), size / 2}));
 
+        localWorld.getLights().get(0).setPosition(gema.getPosition());
+
         localWorld.AddObject(gema);
 
     }

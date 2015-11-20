@@ -41,14 +41,18 @@ public class DiffuseMaterial extends IMaterial {
 	private float[] mMVMatrix = new float[16];
 
 	private int mMVMatrixHandle;
-	private int mLightPosHandle;
+
 	private int mNormalHandle;
+
+
+	private int mLightIntensityHandle;
+	private int mLightPosHandle;
+	private int mLightColorHandle;
 
 	private float[] mLightPosInEyeSpace = new float[16];
 
 
 
-	
 	public DiffuseMaterial()
 	{
 		color = Utils.RandColor();
@@ -164,6 +168,8 @@ public class DiffuseMaterial extends IMaterial {
 	        mMVMatrixHandle = GLES30.glGetUniformLocation(mProgram, "u_MVMatrix"); 
 	        
 	        mLightPosHandle = GLES30.glGetUniformLocation(mProgram, "u_LightPos");
+		mLightIntensityHandle = GLES30.glGetUniformLocation(mProgram, "u_LightIntensity");
+
 	        
 	        mPositionHandle = GLES30.glGetAttribLocation(mProgram, "a_Position");
 	        mColorHandle = GLES30.glGetAttribLocation(mProgram, "a_Color");
@@ -219,13 +225,15 @@ public class DiffuseMaterial extends IMaterial {
 		//Multiply the worldspace position by the projection matrix and obtain the screen position
 		Matrix.multiplyMM(mMVPMatrix, 0, cam.getProjectionMatrix(), 0, mMVMatrix, 0);
         // Apply the projection and view transformation
-        GLES30.glUniformMatrix4fv(mMVPMatrixHandle, 1, false,mMVPMatrix, 0);
+		GLES30.glUniformMatrix4fv(mMVPMatrixHandle, 1, false, mMVPMatrix, 0);
 		
 
         ILight l1 = world.getLights().get(0);
         
         Matrix.multiplyMV(mLightPosInEyeSpace, 0, cam.getViewMatrix(), 0, l1.getLocalTransformation(), 0);
-        
+
+
+		GLES30.glUniform1f(mLightIntensityHandle,l1.getIntensity());
         // Apply the projection and view transformation
         GLES30.glUniformMatrix4fv(mLightPosHandle, 1, false,mLightPosInEyeSpace, 0);
 	

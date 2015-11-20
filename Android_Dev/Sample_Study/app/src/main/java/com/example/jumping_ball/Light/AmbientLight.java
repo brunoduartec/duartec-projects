@@ -16,7 +16,7 @@ public class AmbientLight extends ILight
 	
 
    
-   public AmbientLight(float[] color, int intens, Vector3 position)
+   public AmbientLight(float[] color, float intens, Vector3 position)
    {
 	   
 	   this.setColor(color);

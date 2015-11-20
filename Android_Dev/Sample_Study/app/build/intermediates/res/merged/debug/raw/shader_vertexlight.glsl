@@ -6,6 +6,8 @@
 uniform mat4 u_MVPMatrix;      		// A constant representing the combined model/view/projection matrix.
 uniform mat4 u_MVMatrix;       		// A constant representing the combined model/view matrix.	
 uniform vec3 u_LightPos;       	    // The position of the light in eye space.
+uniform float u_LightIntensity;
+
 
 in vec4 a_Position;     		// Per-vertex position information we will pass in.
 in vec4 a_Color;        		// Per-vertex color information we will pass in.
@@ -32,8 +34,8 @@ void main()                     	// The entry point for our vertex shader.
    float diffuse = max(dot(modelViewNormal,lightVector),0.1);
    diffuse = diffuse * (1.0/(1.0+(0.25*distance*distance)));
 
-   v_Color = a_Color * diffuse;
-   gl_Position = u_MVPMatrix * a_Position;  
+   v_Color = a_Color * diffuse * u_LightIntensity;
+   gl_Position = u_MVPMatrix * a_Position;
 
 //float distance = 1.0;
 

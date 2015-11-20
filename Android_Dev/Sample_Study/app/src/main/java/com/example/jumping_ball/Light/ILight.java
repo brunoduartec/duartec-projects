@@ -5,7 +5,7 @@ import com.example.jumping_ball.IObject;
 public abstract class ILight extends IObject
 {
 	
-	private int Intensity;
+	private float Intensity;
 	private float[] color = new float[4];
 	
 	
@@ -25,11 +25,11 @@ public abstract class ILight extends IObject
 	
 	
 	
-	public int getIntensity()
+	public float getIntensity()
 	{
 		return this.Intensity;
 	}
-	public void setIntensity(int intens)
+	public void setIntensity(float intens)
 	{
 		this.Intensity = intens;
 	}
