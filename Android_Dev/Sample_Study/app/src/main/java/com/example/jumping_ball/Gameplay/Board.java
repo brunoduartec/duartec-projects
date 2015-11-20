@@ -3,6 +3,7 @@ package com.example.jumping_ball.Gameplay;
 import com.example.jumping_ball.Color;
 import com.example.jumping_ball.IObject;
 import com.example.jumping_ball.IWorld;
+import com.example.jumping_ball.Light.ILight;
 import com.example.jumping_ball.Material.SimpleMaterial;
 import com.example.jumping_ball.MyGLRenderer;
 import com.example.jumping_ball.ObjectFactory;
@@ -54,7 +55,10 @@ public class Board {
     public void Initialize()
     {
         bk = new LinkedList<>();
+
+        List<ILight> ll = this.localWorld.getLights();
         this.localWorld.Initialize();
+    //    this.localWorld.AddLightList(ll);
        // this.p1 = null;
       //  this.gema = null;
 
@@ -447,8 +451,8 @@ Block bprox = BlockExistAt(xtry,ytry);
         p1 = ObjectFactory.getInstance().getPlayer("P1", getScale());
 
 
-        SimpleMaterial mt1 = (SimpleMaterial)p1.getMaterial();
-        mt1.setColor(Color.enumtoColor(Color.COLORNAME.WHITE));
+     //   SimpleMaterial mt1 = (SimpleMaterial)p1.getMaterial();
+      //  mt1.setColor(Color.enumtoColor(Color.COLORNAME.WHITE));
 
         p1.setPosition(convertLocalPosWorldPos(new float[]{size - 1, 1, size}));
         p1.setLocalPos(new Vector3(size - 1, 3, size));

@@ -32,8 +32,10 @@ public class ObjectFactory {
 		//
 		//IModel m1 = new SphereModel(scale,4,4);
 
-		SimpleMaterial mat1 = new SimpleMaterial();////DiffuseMaterial();
+		//SimpleMaterial mat1 = new SimpleMaterial();////DiffuseMaterial();
+		DiffuseMaterial mat1 = new DiffuseMaterial();
 		mat1.setColor(Color.enumtoColor(Color.COLORNAME.WHITE));
+
 		obj = new Player(mat1,m1, name);
 		obj.setScale(new float[]{scale, scale, scale});
 		return obj;
@@ -44,7 +46,9 @@ public class ObjectFactory {
 	{
 		SimpleObject obj;
 		IModel m1 = new BoxModel(scale);
-		SimpleMaterial mat1 = new SimpleMaterial();////DiffuseMaterial();
+		//SimpleMaterial mat1 = new SimpleMaterial();////DiffuseMaterial();
+		DiffuseMaterial mat1 = new DiffuseMaterial();
+
 
 		mat1.setColor(new float[]{0.2695f, 0.921875f, 0.109375f, 1.0f});
 		obj = new SimpleObject(mat1,m1, name);
@@ -56,7 +60,7 @@ public class ObjectFactory {
 	{
 		SimpleObject obj;
 		IModel m1 = new BoxModel(scale);
-		SimpleMaterial mat1 = new SimpleMaterial();////DiffuseMaterial();
+		DiffuseMaterial mat1 = new DiffuseMaterial();////DiffuseMaterial();
 
 		mat1.setColor(new float[]{.1f, .1f, .1f, 1.0f});
 		obj = new SimpleObject(mat1,m1, name);
@@ -68,8 +72,8 @@ public class ObjectFactory {
 	{
 		SimpleObject obj;
 		IModel m1 = new BoxModel(scale);
-		SimpleMaterial mat1 = new SimpleMaterial();////DiffuseMaterial();
-
+		//SimpleMaterial mat1 = new SimpleMaterial();////DiffuseMaterial();
+		DiffuseMaterial mat1 = new DiffuseMaterial();
 		mat1.setColor(Color.enumtoColor(Color.COLORNAME.YELLOW));
 		obj = new SimpleObject(mat1,m1, name);
 		obj.setScale(new float[]{scale, scale, scale});

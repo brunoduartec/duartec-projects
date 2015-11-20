@@ -30,7 +30,7 @@ public class SimpleWorld implements IWorld {
 		IObject.ID=0;
 
 
-		lights.clear();
+	//	lights.clear();
 	}
 
 	@Override
@@ -93,6 +93,14 @@ public class SimpleWorld implements IWorld {
 		
 	getCameraManager().getActualCamera().Update();
 	}
+
+	@Override
+	public void AddLightList(List<ILight> obj) {
+		for (ILight oo :obj) {
+			AddLight(oo);
+		}
+	}
+
 
 	@Override
 	public void AddLight(ILight l) {

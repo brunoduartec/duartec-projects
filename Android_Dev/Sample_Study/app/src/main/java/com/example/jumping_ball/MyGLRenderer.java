@@ -28,6 +28,7 @@ import com.example.jumping_ball.Gameplay.GameConstants;
 import com.example.jumping_ball.Gameplay.NormalBlock;
 import com.example.jumping_ball.Gameplay.StageManager;
 import com.example.jumping_ball.Gameplay.StoneBlock;
+import com.example.jumping_ball.Light.AmbientLight;
 import com.example.jumping_ball.Scene.IScene;
 import com.example.jumping_ball.Scene.SimpleScene;
 
@@ -144,6 +145,12 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
         world.getCameraManager().setActualCamera("CAM1");
 
         scene = new SimpleScene(world);
+
+
+        AmbientLight light1 = new AmbientLight(Color.enumtoColor(Color.COLORNAME.WHITE),2, new Vector3(0,0,0));
+
+        world.AddLight(light1);
+
 
         stages = new StageManager(world,_gamecontext);
 

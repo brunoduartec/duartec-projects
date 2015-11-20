@@ -7,6 +7,7 @@ import android.opengl.Matrix;
 import com.example.jumping_ball.GraphicFactory;
 import com.example.jumping_ball.IObject;
 import com.example.jumping_ball.IWorld;
+import com.example.jumping_ball.Light.ILight;
 import com.example.jumping_ball.R;
 import com.example.jumping_ball.RawResourceReader;
 import com.example.jumping_ball.Utils;
@@ -28,57 +29,8 @@ public class DiffuseMaterial extends IMaterial {
 
 
 	// R, G, B, A
-	final float[] cubeColorData =
-			{
-					// Front face (red)
-					1.0f, 0.0f, 0.0f, 1.0f,
-					1.0f, 0.0f, 0.0f, 1.0f,
-					1.0f, 0.0f, 0.0f, 1.0f,
-					1.0f, 0.0f, 0.0f, 1.0f,
-					1.0f, 0.0f, 0.0f, 1.0f,
-					1.0f, 0.0f, 0.0f, 1.0f,
-
-					// Right face (green)
-					0.0f, 1.0f, 0.0f, 1.0f,
-					0.0f, 1.0f, 0.0f, 1.0f,
-					0.0f, 1.0f, 0.0f, 1.0f,
-					0.0f, 1.0f, 0.0f, 1.0f,
-					0.0f, 1.0f, 0.0f, 1.0f,
-					0.0f, 1.0f, 0.0f, 1.0f,
-
-					// Back face (blue)
-					0.0f, 0.0f, 1.0f, 1.0f,
-					0.0f, 0.0f, 1.0f, 1.0f,
-					0.0f, 0.0f, 1.0f, 1.0f,
-					0.0f, 0.0f, 1.0f, 1.0f,
-					0.0f, 0.0f, 1.0f, 1.0f,
-					0.0f, 0.0f, 1.0f, 1.0f,
-
-					// Left face (yellow)
-					1.0f, 1.0f, 0.0f, 1.0f,
-					1.0f, 1.0f, 0.0f, 1.0f,
-					1.0f, 1.0f, 0.0f, 1.0f,
-					1.0f, 1.0f, 0.0f, 1.0f,
-					1.0f, 1.0f, 0.0f, 1.0f,
-					1.0f, 1.0f, 0.0f, 1.0f,
-
-					// Top face (cyan)
-					0.0f, 1.0f, 1.0f, 1.0f,
-					0.0f, 1.0f, 1.0f, 1.0f,
-					0.0f, 1.0f, 1.0f, 1.0f,
-					0.0f, 1.0f, 1.0f, 1.0f,
-					0.0f, 1.0f, 1.0f, 1.0f,
-					0.0f, 1.0f, 1.0f, 1.0f,
-
-					// Bottom face (magenta)
-					1.0f, 0.0f, 1.0f, 1.0f,
-					1.0f, 0.0f, 1.0f, 1.0f,
-					1.0f, 0.0f, 1.0f, 1.0f,
-					1.0f, 0.0f, 1.0f, 1.0f,
-					1.0f, 0.0f, 1.0f, 1.0f,
-					1.0f, 0.0f, 1.0f, 1.0f
-			};
-
+	float[] cubeColorData;
+	private final FloatBuffer mCubeColors;
 
 
 	private int mMVPMatrixHandle;
@@ -86,19 +38,21 @@ public class DiffuseMaterial extends IMaterial {
     static final int COORDS_PER_VERTEX = 3;
     private final int vertexStride = COORDS_PER_VERTEX * 4; // 4 bytes per vertex
 	private float[] mMVPMatrix =new float[16];
+	private float[] mMVMatrix = new float[16];
+
 	private int mMVMatrixHandle;
 	private int mLightPosHandle;
 	private int mNormalHandle;
-	private float[] mMVMatrix = new float[16];
+
 	private float[] mLightPosInEyeSpace = new float[16];
 
 
-	private final FloatBuffer mCubeColors;
+
 	
 	public DiffuseMaterial()
 	{
-		
-		setColor(Utils.RandColor());
+		color = Utils.RandColor();
+		//setColor(Utils.RandColor());
 		Context localContext = GraphicFactory.getInstance().getGraphicContext();
 		String frag = RawResourceReader.readTextFileFromRawResource(localContext, R.raw.shader_fragment);
 		String vert = RawResourceReader.readTextFileFromRawResource(localContext, R.raw.shader_vertexlight);
@@ -106,22 +60,104 @@ public class DiffuseMaterial extends IMaterial {
 		 int vertexShaderHandle = Utils.loadShader(	GLES30.GL_VERTEX_SHADER, vert);
 		 int fragmentShaderHandle = Utils.loadShader(	GLES30.GL_FRAGMENT_SHADER, frag);
 			
-			mProgram = Utils.createAndLinkProgram(vertexShaderHandle, fragmentShaderHandle, 
-					new String[] {"a_Position",  "a_Color", "a_Normal"});
+			mProgram = Utils.createAndLinkProgram(vertexShaderHandle, fragmentShaderHandle,
+					new String[]{"a_Position", "a_Color", "a_Normal"});
 
 
-
-		mCubeColors = ByteBuffer.allocateDirect(cubeColorData.length * 4)
+		mCubeColors = ByteBuffer.allocateDirect(144 * 4)
 				.order(ByteOrder.nativeOrder()).asFloatBuffer();
-		mCubeColors.put(cubeColorData).position(0);
+
+		//mCubeColors.put(cubeColorData).position(0);
 
 		
 	}
-	
+	public void setColor(float[] color)
+	{
+
+		this.color = color;
+		this.cubeColorData = setColorCubeData(color);
+		mCubeColors.put(cubeColorData).position(0);
+
+	}
+
+	private float[] setColorCubeData(float[] cc)
+	{
+
+		float frontfactor = -0.2f;
+		float topfactor = 0.3f;
+		float leftfactor = 0.4f;
+
+		float[] cubeColor =
+				{
+						// Front face (color)
+						cc[0]+frontfactor, cc[1]+frontfactor, cc[2]+frontfactor, 1.0f,
+						cc[0]+frontfactor, cc[1]+frontfactor, cc[2]+frontfactor, 1.0f,
+						cc[0]+frontfactor, cc[1]+frontfactor, cc[2]+frontfactor, 1.0f,
+						cc[0]+frontfactor, cc[1]+frontfactor, cc[2]+frontfactor, 1.0f,
+						cc[0]+frontfactor, cc[1]+frontfactor, cc[2]+frontfactor, 1.0f,
+						cc[0]+frontfactor, cc[1]+frontfactor, cc[2]+frontfactor, 1.0f,
+
+
+
+						// Right face (green)
+						cc[0], cc[1], cc[2], 1.0f,
+						cc[0], cc[1], cc[2], 1.0f,
+						cc[0], cc[1], cc[2], 1.0f,
+						cc[0], cc[1], cc[2], 1.0f,
+						cc[0], cc[1], cc[2], 1.0f,
+						cc[0], cc[1], cc[2], 1.0f,
+
+						// Back face (blue)
+						cc[0], cc[1], cc[2], 1.0f,
+						cc[0], cc[1], cc[2], 1.0f,
+						cc[0], cc[1], cc[2], 1.0f,
+						cc[0], cc[1], cc[2], 1.0f,
+						cc[0], cc[1], cc[2], 1.0f,
+						cc[0], cc[1], cc[2], 1.0f,
+
+						// Left face (yellow)
+						cc[0]+leftfactor, cc[1]+leftfactor, cc[2]+leftfactor, 1.0f,
+						cc[0]+leftfactor, cc[1]+leftfactor, cc[2]+leftfactor, 1.0f,
+						cc[0]+leftfactor, cc[1]+leftfactor, cc[2]+leftfactor, 1.0f,
+						cc[0]+leftfactor, cc[1]+leftfactor, cc[2]+leftfactor, 1.0f,
+						cc[0]+leftfactor, cc[1]+leftfactor, cc[2]+leftfactor, 1.0f,
+						cc[0]+leftfactor, cc[1]+leftfactor, cc[2]+leftfactor, 1.0f,
+
+
+						// Top face (cyan)
+						cc[0]+topfactor, cc[1]+topfactor, cc[2]+topfactor, 1.0f,
+						cc[0]+topfactor, cc[1]+topfactor, cc[2]+topfactor, 1.0f,
+						cc[0]+topfactor, cc[1]+topfactor, cc[2]+topfactor, 1.0f,
+						cc[0]+topfactor, cc[1]+topfactor, cc[2]+topfactor, 1.0f,
+						cc[0]+topfactor, cc[1]+topfactor, cc[2]+topfactor, 1.0f,
+						cc[0]+topfactor, cc[1]+topfactor, cc[2]+topfactor, 1.0f,
+
+
+						// Bottom face (magenta)
+						cc[0], cc[1], cc[2], 1.0f,
+						cc[0], cc[1], cc[2], 1.0f,
+						cc[0], cc[1], cc[2], 1.0f,
+						cc[0], cc[1], cc[2], 1.0f,
+						cc[0], cc[1], cc[2], 1.0f,
+						cc[0], cc[1], cc[2], 1.0f
+				};
+		return cubeColor;
+
+
+	}
+
+
 
 	@Override
 	public void Draw(IObject obj, IWorld world) {
-		 GLES30.glUseProgram(mProgram);
+
+
+// Use culling to remove back faces.
+		GLES30.glEnable(GLES30.GL_CULL_FACE);
+
+		// Enable depth testing
+		GLES30.glEnable(GLES30.GL_DEPTH_TEST);
+		GLES30.glUseProgram(mProgram);
 		 
 		// set program handles for cube drawing.
 	        mMVPMatrixHandle = GLES30.glGetUniformLocation(mProgram, "u_MVPMatrix");
@@ -137,17 +173,15 @@ public class DiffuseMaterial extends IMaterial {
 	        
 	        // Enable a handle to the triangle vertices
 
+			GLES30.glEnableVertexAttribArray(mPositionHandle);
+		// Prepare the triangle coordinate data
+		GLES30.glVertexAttribPointer(
+				mPositionHandle, COORDS_PER_VERTEX,
+				GLES30.GL_FLOAT, false,
+				vertexStride, obj.getModel().getVertexBuffer());
 
-	        // Prepare the triangle coordinate data
-	        GLES30.glVertexAttribPointer(mPositionHandle, COORDS_PER_VERTEX,GLES30.GL_FLOAT, false,
-	                //vertexStride,obj.getModel().getVertexBuffer());
-	        		0,obj.getModel().getVertexBuffer());
-	        
-	        GLES30.glEnableVertexAttribArray(mPositionHandle);    
-	        
-	        
-	        
-	        // set color for drawing the triangle
+
+		// set color for drawing the triangle
 		// set color for drawing the triangle
 		//GLES30.glUniform4fv(mColorHandle, 1, color, 0);
 
@@ -160,16 +194,17 @@ public class DiffuseMaterial extends IMaterial {
 
 		GLES30.glEnableVertexAttribArray(mColorHandle);
 
-	        
+
+		GLES30.glEnableVertexAttribArray(mNormalHandle);
 	        // Prepare the triangle coordinate data
-	        GLES30.glVertexAttribPointer(
-	        		mNormalHandle, COORDS_PER_VERTEX,
-	                GLES30.GL_FLOAT, false,
-	                vertexStride,obj.getModel().getNormalsBuffer());
+		GLES30.glVertexAttribPointer(
+					mNormalHandle, COORDS_PER_VERTEX,
+					GLES30.GL_FLOAT, false,
+					vertexStride, obj.getModel().getNormalsBuffer());
 
 
 
-			GLES30.glEnableVertexAttribArray(mNormalHandle);
+
 
 
 
@@ -186,19 +221,28 @@ public class DiffuseMaterial extends IMaterial {
         // Apply the projection and view transformation
         GLES30.glUniformMatrix4fv(mMVPMatrixHandle, 1, false,mMVPMatrix, 0);
 		
-     //   ILight l1 = world.getLights().get(0);
+
+        ILight l1 = world.getLights().get(0);
         
-       // Matrix.multiplyMV(mLightPosInEyeSpace, 0, cam.getViewMatrix(), 0, l1.getLocalTransformation(), 0);
+        Matrix.multiplyMV(mLightPosInEyeSpace, 0, cam.getViewMatrix(), 0, l1.getLocalTransformation(), 0);
         
         // Apply the projection and view transformation
-      //  GLES30.glUniformMatrix4fv(mLightPosHandle, 1, false,mLightPosInEyeSpace, 0);
+        GLES30.glUniformMatrix4fv(mLightPosHandle, 1, false,mLightPosInEyeSpace, 0);
 	
                 
         // Draw the cube.
-        GLES30.glDrawArrays(GLES30.GL_TRIANGLE_STRIP, 0, 24);
+      //  GLES30.glDrawArrays(GLES30.GL_TRIANGLE_STRIP, 0, 24);
            
            // Disable vertex array
-         GLES30.glDisableVertexAttribArray(mPositionHandle);
+       //  GLES30.glDisableVertexAttribArray(mPositionHandle);
+
+		int verticescount = obj.getModel().getVertices().length/3;
+
+		GLES30.glDrawArrays(GLES30.GL_TRIANGLES,0,verticescount);
+
+
+		// Disable vertex array
+		GLES30.glDisableVertexAttribArray(mPositionHandle);
 	}
 
 
@@ -211,7 +255,9 @@ public class DiffuseMaterial extends IMaterial {
 		return color;
 	}
 
-	public void setColor(float[] color) {
-		this.color = color;
-	}
+
+
+
+
+
 }

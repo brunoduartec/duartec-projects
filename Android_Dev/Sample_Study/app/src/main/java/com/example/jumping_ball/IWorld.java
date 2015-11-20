@@ -17,8 +17,8 @@ public interface IWorld {
 	IObject getObjectbyID(int ID);
 	IObject RemoveObject(int ID);
 	void Update();
-	
-	
+
+	void AddLightList(List<ILight> obj);
 	void AddLight(ILight l);
 	void RemoveLight(ILight l);
 	List<ILight> getLights();
