@@ -85,7 +85,9 @@ public class SimpleWorld implements IWorld {
 	@Override
 	public void Update() {
 		// TODO Auto-generated method stub
-		for (int i = 0; i < Objs.size(); i++) {
+
+
+			for (int i = 0; i < Objs.size(); i++) {
 			IObject o = Objs.get(i);
 			o.Update();
 		}

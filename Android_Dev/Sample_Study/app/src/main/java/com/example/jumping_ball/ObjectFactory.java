@@ -3,10 +3,12 @@ package com.example.jumping_ball;
 import com.example.jumping_ball.Gameplay.Player;
 import com.example.jumping_ball.Material.DiffuseMaterial;
 import com.example.jumping_ball.Material.IMaterial;
-import com.example.jumping_ball.Material.SimpleMaterial;
-import com.example.jumping_ball.Model.BoxModel;
+import com.example.jumping_ball.Material.FaceShadedCubeMaterial;
+import com.example.jumping_ball.Material.SimpleSquareMaterial;
+import com.example.jumping_ball.Model.Model2D.Square;
+import com.example.jumping_ball.Model.Model2D.SquareModel;
+import com.example.jumping_ball.Model.Model3D.BoxModel;
 import com.example.jumping_ball.Model.IModel;
-import com.example.jumping_ball.Model.SphereModel;
 
 public class ObjectFactory {
 	
@@ -32,7 +34,7 @@ public class ObjectFactory {
 		//
 		//IModel m1 = new SphereModel(scale,4,4);
 
-		//SimpleMaterial mat1 = new SimpleMaterial();////DiffuseMaterial();
+		//FaceShadedCubeMaterial mat1 = new FaceShadedCubeMaterial();////DiffuseMaterial();
 		DiffuseMaterial mat1 = new DiffuseMaterial();
 		mat1.setColor(Color.enumtoColor(Color.COLORNAME.WHITE));
 
@@ -46,7 +48,7 @@ public class ObjectFactory {
 	{
 		SimpleObject obj;
 		IModel m1 = new BoxModel(scale);
-		//SimpleMaterial mat1 = new SimpleMaterial();////DiffuseMaterial();
+		//FaceShadedCubeMaterial mat1 = new FaceShadedCubeMaterial();////DiffuseMaterial();
 		DiffuseMaterial mat1 = new DiffuseMaterial();
 
 
@@ -72,7 +74,7 @@ public class ObjectFactory {
 	{
 		SimpleObject obj;
 		IModel m1 = new BoxModel(scale);
-		//SimpleMaterial mat1 = new SimpleMaterial();////DiffuseMaterial();
+		//FaceShadedCubeMaterial mat1 = new FaceShadedCubeMaterial();////DiffuseMaterial();
 		DiffuseMaterial mat1 = new DiffuseMaterial();
 		mat1.setColor(Color.enumtoColor(Color.COLORNAME.YELLOW));
 		obj = new SimpleObject(mat1,m1, name);
@@ -86,11 +88,28 @@ public class ObjectFactory {
 	{
 		SimpleObject obj;
 		IModel m1 = new BoxModel(scale);
-		IMaterial mat1 = new SimpleMaterial();////DiffuseMaterial();
+		IMaterial mat1 = new FaceShadedCubeMaterial();////DiffuseMaterial();
 		obj = new SimpleObject(mat1,m1, name);
 		obj.setScale(new float[]{scale, scale, scale});
 		return obj;
 		
 	}
+
+
+	public SimpleObject getSquareObject(String name, float size, Vector2 pos)
+	{
+		Square sq;
+
+		SimpleObject obj;
+		IModel m1 = new SquareModel(size);
+		SimpleSquareMaterial mat1 = new SimpleSquareMaterial();////DiffuseMaterial();
+		mat1.setColor(Color.enumtoColor(Color.COLORNAME.YELLOW));
+		obj = new SimpleObject(mat1,m1, name);
+		obj.setScale(new float[]{size, size, size});
+
+
+		return obj;
+	}
+
 
 }

@@ -8,16 +8,31 @@ import java.util.Map;
 public class SimpleScene implements IScene {
 
 	private IWorld world;
+	private IWorld world2d;
+
 	@Override
 	public void Draw() {
 		// TODO Auto-generated method stub
-		
-		
-		Map<Integer,IObject> ot = world.getObjectsList();
-		for (int i = 0; i < ot.size(); i++) {
-			IObject o1 = (IObject) ot.get(i);
-			o1.Draw(world);
+
+		if (world!=null) {
+			Map<Integer, IObject> ot = world.getObjectsList();
+			for (int i = 0; i < ot.size(); i++) {
+				IObject o1 = (IObject) ot.get(i);
+				o1.Draw(world);
+			}
 		}
+
+		if (world2d !=null)
+		{
+			Map<Integer, IObject> ot = getWorld2d().getObjectsList();
+			for (int i = 0; i < ot.size(); i++) {
+				IObject o1 = (IObject) ot.get(i);
+				o1.Draw(world2d);
+			}
+
+		}
+
+
 	}
 	
 	public SimpleScene(IWorld w)
@@ -26,12 +41,23 @@ public class SimpleScene implements IScene {
 		this.world = w;
 		
 	}
-	
+
+	public SimpleScene(IWorld d3, IWorld w2)
+	{
+		this.world2d = w2;
+		this.world = d3;
+
+	}
+
 
 	@Override
 	public void Update() {
 		// TODO Auto-generated method stub
-		world.Update();
+		if (world !=null)
+			world.Update();
+		if (world2d!=null)
+			world2d.Update();
+
 		
 	}
 
@@ -48,4 +74,11 @@ public class SimpleScene implements IScene {
 		return world;
 	}
 
+	public IWorld getWorld2d() {
+		return world2d;
+	}
+
+	public void setWorld2d(IWorld world2d) {
+		this.world2d = world2d;
+	}
 }

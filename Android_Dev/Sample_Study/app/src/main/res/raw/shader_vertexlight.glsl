@@ -13,8 +13,8 @@ in vec4 a_Position;     		// Per-vertex position information we will pass in.
 in vec4 a_Color;        		// Per-vertex color information we will pass in.
 in vec3 a_Normal;       		// Per-vertex normal information we will pass in.
 		  
-//varying vec4 v_Color;          		// This will be passed into the fragment shader.
-out vec4 v_Color;
+
+out vec4 v_Color;                // This will be passed into the fragment shader.
 
 void main()                     	// The entry point for our vertex shader.
 {                              		
@@ -36,12 +36,6 @@ void main()                     	// The entry point for our vertex shader.
 
    v_Color = a_Color * diffuse * u_LightIntensity;
    gl_Position = u_MVPMatrix * a_Position;
-
-//float distance = 1.0;
-
-//float diffuse = 1.0;
-
-//diffuse = diffuse * (1.0/ (1.0+(0.25*distance*distance) ) );
 
  
 

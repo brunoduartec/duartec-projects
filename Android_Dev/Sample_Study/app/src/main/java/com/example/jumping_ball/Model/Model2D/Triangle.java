@@ -13,13 +13,16 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.jumping_ball;
+package com.example.jumping_ball.Model.Model2D;
 
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.nio.FloatBuffer;
 
 import android.opengl.GLES20;
+
+import com.example.jumping_ball.MyGLRenderer;
+import com.example.jumping_ball.Utils;
 
 /**
  * A two-dimensional triangle for use as a drawn object in OpenGL ES 2.0.

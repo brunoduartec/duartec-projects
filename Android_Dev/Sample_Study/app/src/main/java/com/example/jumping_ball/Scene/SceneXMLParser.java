@@ -6,7 +6,7 @@ import com.example.jumping_ball.Camera.SimpleCamera;
 import com.example.jumping_ball.GraphicFactory;
 
 import com.example.jumping_ball.IObject;
-import com.example.jumping_ball.Material.SimpleMaterial;
+import com.example.jumping_ball.Material.FaceShadedCubeMaterial;
 import com.example.jumping_ball.SimpleObject;
 
 import org.w3c.dom.Document;
@@ -73,7 +73,7 @@ public class SceneXMLParser {
                     {
 
                         SimpleObject obj = new SimpleObject();
-                        SimpleMaterial mat = new SimpleMaterial();
+                        FaceShadedCubeMaterial mat = new FaceShadedCubeMaterial();
                         NodeList childs = node.getChildNodes();
 
                         for (int j = 0; j < childs.getLength(); j++) {

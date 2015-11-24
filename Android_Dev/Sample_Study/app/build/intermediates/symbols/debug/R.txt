@@ -557,8 +557,9 @@ int layout support_simple_spinner_dropdown_item 0x7f030025
 int menu main 0x7f0e0000
 int menu test 0x7f0e0001
 int raw shader_fragment 0x7f060000
-int raw shader_vertex 0x7f060001
-int raw shader_vertexlight 0x7f060002
+int raw shader_fragmentlight 0x7f060001
+int raw shader_vertex 0x7f060002
+int raw shader_vertexlight 0x7f060003
 int string abc_action_bar_home_description 0x7f070000
 int string abc_action_bar_home_description_format 0x7f07000d
 int string abc_action_bar_home_subtitle_description_format 0x7f07000e

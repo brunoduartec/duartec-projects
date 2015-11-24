@@ -1,7 +1,7 @@
 package com.example.jumping_ball;
 
 import com.example.jumping_ball.Material.IMaterial;
-import com.example.jumping_ball.Model.BoxModel;
+import com.example.jumping_ball.Model.Model3D.BoxModel;
 import com.example.jumping_ball.Model.IModel;
 
 import org.w3c.dom.Node;

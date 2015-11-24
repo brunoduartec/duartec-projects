@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.jumping_ball;
+package com.example.jumping_ball.Model.Model2D;
 
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
@@ -21,6 +21,9 @@ import java.nio.FloatBuffer;
 import java.nio.ShortBuffer;
 
 import android.opengl.GLES30;
+
+import com.example.jumping_ball.MyGLRenderer;
+import com.example.jumping_ball.Utils;
 
 /**
  * A two-dimensional square for use as a drawn object in OpenGL ES 2.0.
@@ -134,7 +137,7 @@ public class Square {
 
         // prepare shaders and OpenGL program
         int vertexShader = Utils.loadShader(
-        		GLES30.GL_VERTEX_SHADER,
+                GLES30.GL_VERTEX_SHADER,
                 vertexShaderCode);
         int fragmentShader = Utils.loadShader(
         		GLES30.GL_FRAGMENT_SHADER,

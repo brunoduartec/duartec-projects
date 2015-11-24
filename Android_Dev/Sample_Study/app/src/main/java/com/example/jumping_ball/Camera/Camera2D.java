@@ -21,8 +21,8 @@ public class Camera2D extends SimpleCamera {
         this.setFarPlane(farplane);
 
 
-        float[] pos =  {0.0f, 0.0f, 10.0f};
-        float[] target =  {0.0f, 0.0f, 0.0f};
+        float[] pos =  {0.0f, 0.0f, 1.5f};
+        float[] target =  {0.0f, 0.0f, -5.0f};
 
 
 
@@ -37,10 +37,12 @@ public class Camera2D extends SimpleCamera {
     }
 
     @Override
-    public void CalcProjectionMatrix()
+    public void CalcViewMatrix()
     {
+        float[] position = this.getPosition();
+        float[] target = this.getTarget();
 
-        Matrix.orthoM(mProjectionMatrix, 0, 0f, this.getWidth(), 0.0f, this.getHeight(), this.getNearPlane(),this.getFarPlane());
+        Matrix.setLookAtM(this.getViewMatrix(), 0 ,position[0], position[1], position[2], target[0],target[1],target[2], 0f, 1.0f, 0.0f);
 
     }
 

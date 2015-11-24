@@ -1,4 +1,6 @@
-package com.example.jumping_ball.Model;
+package com.example.jumping_ball.Model.Model3D;
+
+import com.example.jumping_ball.Model.IModel;
 
 import java.nio.FloatBuffer;
 

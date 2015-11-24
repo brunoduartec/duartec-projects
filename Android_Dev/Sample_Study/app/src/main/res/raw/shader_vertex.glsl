@@ -18,8 +18,6 @@ void main() {
 
   
   v_Color = a_Color;
-
- // v_Color = vec4(0,1.0,0,1);
   gl_Position = uMVPMatrix * a_Position;
 
 

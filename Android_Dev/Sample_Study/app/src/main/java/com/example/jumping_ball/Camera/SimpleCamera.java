@@ -58,7 +58,7 @@ public class SimpleCamera implements ICamera {
 		
 	}
 	
-	void CalcViewMatrix()
+	public void CalcViewMatrix()
 	{
 		 Matrix.setLookAtM(mViewMatrix, 0 ,position[0], position[1], position[2], target[0],target[1],target[2], 0f, 1.0f, 0.0f);
 		

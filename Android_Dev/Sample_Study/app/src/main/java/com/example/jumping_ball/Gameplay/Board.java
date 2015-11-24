@@ -1,10 +1,8 @@
 package com.example.jumping_ball.Gameplay;
 
-import com.example.jumping_ball.Color;
 import com.example.jumping_ball.IObject;
 import com.example.jumping_ball.IWorld;
 import com.example.jumping_ball.Light.ILight;
-import com.example.jumping_ball.Material.SimpleMaterial;
 import com.example.jumping_ball.MyGLRenderer;
 import com.example.jumping_ball.ObjectFactory;
 import com.example.jumping_ball.SimpleObject;
@@ -399,7 +397,7 @@ Block bprox = BlockExistAt(xtry,ytry);
 
                 if ( i == size/2 && j == size/2) {
                     float dark = -0.2f;
-                    SimpleMaterial m1 = (SimpleMaterial)b1.getMaterial();
+                    FaceShadedCubeMaterial m1 = (FaceShadedCubeMaterial)b1.getMaterial();
 
 
 
@@ -453,7 +451,7 @@ Block bprox = BlockExistAt(xtry,ytry);
         p1 = ObjectFactory.getInstance().getPlayer("P1", getScale());
 
 
-     //   SimpleMaterial mt1 = (SimpleMaterial)p1.getMaterial();
+     //   FaceShadedCubeMaterial mt1 = (FaceShadedCubeMaterial)p1.getMaterial();
       //  mt1.setColor(Color.enumtoColor(Color.COLORNAME.WHITE));
 
         p1.setPosition(convertLocalPosWorldPos(new float[]{size - 1, 1, size}));

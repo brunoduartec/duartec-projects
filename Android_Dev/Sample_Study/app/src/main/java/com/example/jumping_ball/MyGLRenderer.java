@@ -70,6 +70,9 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
     private static final String TAG = "MyGLRenderer";
 
     private IWorld world;
+    private IWorld world2d;
+
+
     private IScene scene;
 
 
@@ -125,6 +128,7 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
 
 
         world = new SimpleWorld();
+        world2d = new SimpleWorld();
 
 
         //	float[] pos =  {20.0f, 20.0f, 20.0f};
@@ -135,17 +139,22 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
         float[] target = {0.0f, 0.0f, 0.0f};
         SimpleCamera camera = new SimpleCamera("CAM1", 60, 1, 10, pos, target);
 
-//String name,float width,float height,float nearplane, float farplane,float ratio
-        Camera2D cam2D = new Camera2D("CAM2", 720, 1118, 0, 50, (float) (3 / 4));
+
+
 
 
         world.getCameraManager().addCamera(camera);
-        world.getCameraManager().addCamera(cam2D);
-
         world.getCameraManager().setActualCamera("CAM1");
 
-        scene = new SimpleScene(world);
 
+        Camera2D cam2D = new Camera2D("CAM2", 720, 1118, 0, 50, (float) (3 / 4));
+        world2d.getCameraManager().addCamera(cam2D);
+        world2d.getCameraManager().setActualCamera("CAM2");
+        world2d.AddObject(ObjectFactory.getInstance().getSquareObject("button", 0.4f, new Vector2(0, GraphicFactory.getInstance().getHeight()/2)));
+
+
+        scene = new SimpleScene(world,world2d);
+       // scene = new SimpleScene(world2d);
 
         AmbientLight light1 = new AmbientLight(Color.enumtoColor(Color.COLORNAME.WHITE),4.0f, new Vector3(0,2,0));
 
@@ -216,6 +225,8 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
 
 
         }
+
+
         scene.Draw();
 
 

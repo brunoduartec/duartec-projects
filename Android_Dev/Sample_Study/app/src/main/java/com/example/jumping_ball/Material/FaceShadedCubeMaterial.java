@@ -20,7 +20,7 @@ import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.nio.FloatBuffer;
 
-public class SimpleMaterial extends IMaterial
+public class FaceShadedCubeMaterial extends IMaterial
 {
 
 
@@ -41,7 +41,7 @@ public class SimpleMaterial extends IMaterial
 	private float[] mMVPMatrix =new float[16];
 
     
-public SimpleMaterial()
+public FaceShadedCubeMaterial()
 {
 	
 	color = Utils.RandColor();
@@ -160,12 +160,6 @@ public SimpleMaterial()
 
         mPositionHandle = GLES30.glGetAttribLocation(mProgram, "a_Position");
         mColorHandle = GLES30.glGetAttribLocation(mProgram, "a_Color");
-        // get handle to vertex shader's vPosition member
-       // mPositionHandle = GLES30.glGetAttribLocation(mProgram, "vPosition");
-        // get handle to fragment shader's vColor member
-       // mColorHandle = GLES30.glGetUniformLocation(mProgram, "v_Color");
-      //  mColorHandle = GLES30.glGetUniformLocation(mProgram, "a");
-        // get handle to shape's transformation matrix
         mMVPMatrixHandle = GLES30.glGetUniformLocation(mProgram, "uMVPMatrix");
 
 
