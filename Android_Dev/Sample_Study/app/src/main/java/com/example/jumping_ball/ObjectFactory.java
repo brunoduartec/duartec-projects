@@ -102,7 +102,7 @@ public class ObjectFactory {
 
 		SimpleObject obj;
 		IModel m1 = new SquareModel(size);
-		SimpleSquareMaterial mat1 = new SimpleSquareMaterial();////DiffuseMaterial();
+		SimpleSquareMaterial mat1 = new SimpleSquareMaterial(R.drawable.box);////DiffuseMaterial();
 		mat1.setColor(Color.enumtoColor(Color.COLORNAME.YELLOW));
 		obj = new SimpleObject(mat1,m1, name);
 		obj.setScale(new float[]{size, size, size});

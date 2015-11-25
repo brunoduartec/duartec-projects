@@ -14,30 +14,35 @@ public class SquareModel implements IModel {
 
     private FloatBuffer vertexBuffer;
     private ShortBuffer drawListBuffer;
-    private int mProgram;
-    private int mPositionHandle;
-    private int mColorHandle;
-    private int mMVPMatrixHandle;
+    //private int mProgram;
+    //private int mPositionHandle;
+    //private int mColorHandle;
+    //private int mMVPMatrixHandle;
 
     private float[] squareCoords;
     float size;
 
 
-    private final short drawOrder[] = { 0, 1, 2, 0, 2, 3 }; // order to draw vertices
+
     float color[] = { 0.2f, 0.709803922f, 0.898039216f, 1.0f };
+
+
 
 
     private void calculateSquareCoords(float size)
     {
 
-        /*
+
         float squareTemp[] = {
-                -size,  size, size,   // top left
-                -size, -size, 0.0f,   // bottom left
+                0.0f,  0.0f, 0.0f,   // top left
+                0.0f, -size, 0.0f,   // bottom left
                 size, -size, 0.0f,   // bottom right
-                size, size, 0.0f }; // top right
-*/
+                size, 0.0f, 0.0f }; // top right
+
         // Front face
+
+
+      /*
         float squareTemp[] = {
                 -size, size, size,
                 -size, -size, size,
@@ -46,7 +51,7 @@ public class SquareModel implements IModel {
                 size, -size, size,
                 size, size, size,
         };
-
+*/
 
         squareCoords = squareTemp;
 
@@ -87,4 +92,6 @@ public class SquareModel implements IModel {
     public FloatBuffer getNormalsBuffer() {
         return null;
     }
+
+
 }

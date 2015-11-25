@@ -115,6 +115,10 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
         // Enable depth testing
         GLES30.glEnable(GLES30.GL_DEPTH_TEST);
 
+        GLES30.glEnable(GLES30.GL_BLEND);
+        GLES30.glBlendFunc(GL10.GL_ONE, GL10.GL_ONE_MINUS_SRC_ALPHA);
+
+
         DisplayMetrics metrics = GraphicFactory.getInstance().getGraphicContext().getResources().getDisplayMetrics();
         width = metrics.widthPixels;
         height = metrics.heightPixels;
@@ -150,7 +154,7 @@ public class MyGLRenderer implements GLSurfaceView.Renderer {
         Camera2D cam2D = new Camera2D("CAM2", 720, 1118, 0, 50, (float) (3 / 4));
         world2d.getCameraManager().addCamera(cam2D);
         world2d.getCameraManager().setActualCamera("CAM2");
-        world2d.AddObject(ObjectFactory.getInstance().getSquareObject("button", 0.4f, new Vector2(0, GraphicFactory.getInstance().getHeight()/2)));
+        world2d.AddObject(ObjectFactory.getInstance().getSquareObject("button", 1.0f, new Vector2(0, 0)));
 
 
         scene = new SimpleScene(world,world2d);

@@ -1,9 +1,13 @@
 package com.example.jumping_ball.Scene;
 
+import android.opengl.GLES30;
+
 import com.example.jumping_ball.IObject;
 import com.example.jumping_ball.IWorld;
 
 import java.util.Map;
+
+import javax.microedition.khronos.opengles.GL10;
 
 public class SimpleScene implements IScene {
 
@@ -22,6 +26,8 @@ public class SimpleScene implements IScene {
 			}
 		}
 
+		GLES30.glEnable(GLES30.GL_BLEND);
+		GLES30.glBlendFunc(GL10.GL_ONE, GL10.GL_ONE_MINUS_SRC_ALPHA);
 		if (world2d !=null)
 		{
 			Map<Integer, IObject> ot = getWorld2d().getObjectsList();
@@ -31,6 +37,7 @@ public class SimpleScene implements IScene {
 			}
 
 		}
+		GLES30.glDisable(GLES30.GL_BLEND);
 
 
 	}

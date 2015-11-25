@@ -100,7 +100,8 @@ public void setContextImage(MyGLRenderer.GAMECONTEXT cc)
 // specifying vertical orientation
 		llr.setOrientation(LinearLayout.HORIZONTAL);
 
-		brestart = new ImageButton(this);
+	/*
+			brestart = new ImageButton(this);
 		brestart.setBackgroundColor(0);
 
 		brestart.setImageResource(R.drawable.restart);
@@ -117,7 +118,7 @@ public void setContextImage(MyGLRenderer.GAMECONTEXT cc)
 			}
 		});
 		this.addContentView(llr, new ViewGroup.LayoutParams(ViewGroup.LayoutParams.FILL_PARENT, ViewGroup.LayoutParams.FILL_PARENT));
-
+*/
 	}
 	
 	

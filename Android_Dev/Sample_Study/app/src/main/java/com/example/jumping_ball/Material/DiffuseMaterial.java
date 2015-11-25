@@ -58,7 +58,7 @@ public class DiffuseMaterial extends IMaterial {
 		color = Utils.RandColor();
 		//setColor(Utils.RandColor());
 		Context localContext = GraphicFactory.getInstance().getGraphicContext();
-		String frag = RawResourceReader.readTextFileFromRawResource(localContext, R.raw.shader_fragment);
+		String frag = RawResourceReader.readTextFileFromRawResource(localContext, R.raw.shader_fragmentlight);
 		String vert = RawResourceReader.readTextFileFromRawResource(localContext, R.raw.shader_vertexlight);
 
 		 int vertexShaderHandle = Utils.loadShader(	GLES30.GL_VERTEX_SHADER, vert);

@@ -24,9 +24,13 @@ public class SimpleSquareMaterial extends IMaterial
 
 
 	 private final int mProgram;
-	private int mPositionHandle;
+    private final FloatBuffer textureCoordinates;
+    private int mPositionHandle;
 	private int mColorHandle;
-	private float color[] = { 0.2f, 0.709803922f, 0.898039216f, 1.0f };
+    private int mTextureCoordinateHandle;
+    private int mTextureUniformHandle;
+
+    private float color[] = { 0.2f, 0.709803922f, 0.898039216f, 1.0f };
 
    private float[] squareColorData;
 
@@ -40,12 +44,27 @@ public class SimpleSquareMaterial extends IMaterial
 	private float[] mMVPMatrix =new float[16];
 
 
-public SimpleSquareMaterial()
+    private final float[] textureCoordinateData =
+            {
+                    // Front face
+                    0.0f, 0.0f,
+                    0.0f, 1.0f,
+                    1.0f, 1.0f,
+                    1.0f, 0.0f
+                   // 1.0f, 1.0f,
+                   // 1.0f, 0.0f
+            };
+    /** This is a handle to our texture data. */
+    private int mTextureDataHandle;
+    private int mTextureCoordinateDataSize = 2;
+
+
+    public SimpleSquareMaterial(final int resourceId)
 {
 	
 	color = Utils.RandColor();
 	Context localContext = GraphicFactory.getInstance().getGraphicContext();
-	String frag = RawResourceReader.readTextFileFromRawResource(localContext, R.raw.shader_fragment);
+	String frag = RawResourceReader.readTextFileFromRawResource(localContext, R.raw.shader_fragment_tex);
 	String vert = RawResourceReader.readTextFileFromRawResource(localContext, R.raw.shader_vertex);
 	 int vertexShaderHandle = Utils.loadShader(	GLES30.GL_VERTEX_SHADER, vert);
 	 int fragmentShaderHandle = Utils.loadShader(	GLES30.GL_FRAGMENT_SHADER, frag);
@@ -54,10 +73,17 @@ public SimpleSquareMaterial()
       GLES30.glAttachShader(mProgram, fragmentShaderHandle); // add the fragment shader to program
       GLES30.glLinkProgram(mProgram);
 
-    mSquareColors = ByteBuffer.allocateDirect(24 * 4)
+    mSquareColors = ByteBuffer.allocateDirect(4*4 * 4)
             .order(ByteOrder.nativeOrder()).asFloatBuffer();
 
 
+    textureCoordinates = ByteBuffer.allocateDirect(textureCoordinateData.length * GraphicFactory.getInstance().mBytesPerFloat)
+            .order(ByteOrder.nativeOrder()).asFloatBuffer();
+    textureCoordinates.put(textureCoordinateData).position(0);
+
+
+    // Load the texture
+    mTextureDataHandle = Utils.loadTexture(GraphicFactory.getInstance().getGraphicContext(), resourceId);
 
 }
 	
@@ -81,16 +107,16 @@ public SimpleSquareMaterial()
                         cc[0], cc[1], cc[2], 1.0f,
                         cc[0], cc[1], cc[2], 1.0f,
                         cc[0], cc[1], cc[2], 1.0f,
-                        cc[0], cc[1], cc[2], 1.0f,
-                        cc[0], cc[1], cc[2], 1.0f,
                         cc[0], cc[1], cc[2], 1.0f
+                       // cc[0], cc[1], cc[2], 1.0f,
+                      //  cc[0], cc[1], cc[2], 1.0f
 
                 };
         return cubeColor;
 
 
     }
-	
+
 
 
 
@@ -114,10 +140,28 @@ public SimpleSquareMaterial()
         mPositionHandle = GLES30.glGetAttribLocation(mProgram, "a_Position");
         mColorHandle = GLES30.glGetAttribLocation(mProgram, "a_Color");
         mMVPMatrixHandle = GLES30.glGetUniformLocation(mProgram, "uMVPMatrix");
+        mTextureCoordinateHandle = GLES30.glGetAttribLocation(mProgram, "a_TexCoordinate");
+        mTextureUniformHandle = GLES30.glGetUniformLocation(mProgram, "u_Texture");
 
 
-       // MyGLRenderer.checkGlError("glGetUniformLocation");
-        
+
+        // Set the active texture unit to texture unit 0.
+        GLES30.glActiveTexture(GLES30.GL_TEXTURE0);
+
+        // Bind the texture to this unit.
+        GLES30.glBindTexture(GLES30.GL_TEXTURE_2D, mTextureDataHandle);
+        // Tell the texture uniform sampler to use this texture in the shader by binding to texture unit 0.
+        GLES30.glUniform1i(mTextureUniformHandle, 0);
+
+        // Pass in the texture coordinate information
+        textureCoordinates.position(0);
+        GLES30.glVertexAttribPointer(mTextureCoordinateHandle, mTextureCoordinateDataSize, GLES30.GL_FLOAT, false,
+                0, textureCoordinates);
+
+        GLES30.glEnableVertexAttribArray(mTextureCoordinateHandle);
+
+
+
         // Enable a handle to the triangle vertices
         GLES30.glEnableVertexAttribArray(mPositionHandle);
 
@@ -162,7 +206,7 @@ public SimpleSquareMaterial()
          
     int verticescount = obj.getModel().getVertices().length/3;
 
-        GLES30.glDrawArrays(GLES30.GL_TRIANGLES,0,verticescount);
+        GLES30.glDrawArrays(GLES30.GL_TRIANGLE_FAN,0,verticescount);
         
         
         // Disable vertex array

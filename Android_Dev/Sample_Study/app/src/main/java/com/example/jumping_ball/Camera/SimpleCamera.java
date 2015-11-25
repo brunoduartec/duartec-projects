@@ -25,8 +25,8 @@ public class SimpleCamera implements ICamera {
 	private float ratio = 4f / 3f;
 
 
-	private float width;
-	private float height;
+	protected float width;
+	protected float height;
 
 	public SimpleCamera()
 	{}

@@ -7,6 +7,9 @@ uniform mat4 uMVPMatrix;
 in vec4 a_Position;
 in vec4 a_Color;        		// Per-vertex color information we will pass in.
 
+in vec2 a_TexCoordinate;
+out vec2 v_TexCoordinate;
+
 
 out vec4 v_Color;          		// This will be passed into the fragment shader.
 
@@ -19,6 +22,7 @@ void main() {
   
   v_Color = a_Color;
   gl_Position = uMVPMatrix * a_Position;
+  v_TexCoordinate = a_TexCoordinate;
 
 
 }

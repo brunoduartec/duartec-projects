@@ -412,9 +412,10 @@ int drawable ball 0x7f02003b
 int drawable ballcontext 0x7f02003c
 int drawable box 0x7f02003d
 int drawable boxcontext 0x7f02003e
-int drawable ic_launcher 0x7f02003f
-int drawable notification_template_icon_bg 0x7f020041
-int drawable restart 0x7f020040
+int drawable bumpy_bricks_public_domain 0x7f02003f
+int drawable ic_launcher 0x7f020040
+int drawable notification_template_icon_bg 0x7f020042
+int drawable restart 0x7f020041
 int id MyGlSurfaceView 0x7f0d0050
 int id action0 0x7f0d0052
 int id action_bar 0x7f0d0040
@@ -557,9 +558,10 @@ int layout support_simple_spinner_dropdown_item 0x7f030025
 int menu main 0x7f0e0000
 int menu test 0x7f0e0001
 int raw shader_fragment 0x7f060000
-int raw shader_fragmentlight 0x7f060001
-int raw shader_vertex 0x7f060002
-int raw shader_vertexlight 0x7f060003
+int raw shader_fragment_tex 0x7f060001
+int raw shader_fragmentlight 0x7f060002
+int raw shader_vertex 0x7f060003
+int raw shader_vertexlight 0x7f060004
 int string abc_action_bar_home_description 0x7f070000
 int string abc_action_bar_home_description_format 0x7f07000d
 int string abc_action_bar_home_subtitle_description_format 0x7f07000e

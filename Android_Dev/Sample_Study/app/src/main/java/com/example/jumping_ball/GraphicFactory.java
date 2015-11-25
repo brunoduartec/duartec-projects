@@ -23,6 +23,8 @@ public class GraphicFactory {
 		this.height = height;
 	}
 
+	public int mBytesPerFloat= 4;
+
 	/**
 	   * SingletonHolder is loaded on the first execution of Singleton.getInstance() 
 	   * or the first access to SingletonHolder.INSTANCE, not before.
